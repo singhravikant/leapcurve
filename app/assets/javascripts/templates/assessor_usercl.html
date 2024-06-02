@@ -1,0 +1,44 @@
+
+
+
+<style>
+    .csstransforms3d .app-container{
+        overflow: hidden !important;
+    }
+    .navbar-brand{
+        height: 60px;
+    }
+    iframe{
+        margin-top: 6%;
+        height: 100vh;
+    }
+</style>
+<header id="header">
+    <nav class="navbar navbar-default navbar-fixed-top hidden-xs top-nav">
+        <div class="row">
+            <div class="navbar-header col-sm-2 col-md-2 ">
+                <img src="assets/logo1.png" class="navbar-brand logo-1" class="img-responsive">
+            </div>
+
+            <div class="   col-md-8 col-lg-8  top-nav-div">
+
+            </div>
+            <div class="   col-md-2 col-lg-2  top-nav-div" style="padding: 15px 15px;">
+                <a ng-click="showPopup('AM')" style="cursor: pointer;color: black;text-decoration: underline;">Know Your Career Level</a>
+                <!--                <a type="button" ng-click="showPopup('AM')" class="btn btn-block  assess-btn mob-assess-btn">GET STARTED</a>-->
+
+            </div>
+            <div class="col-md-1 hidden-xs"></div>
+        </div>
+    </nav>
+</header>
+
+<!--<iframe  id = 'google_frame' src="https://docs.google.com/forms/d/e/1FAIpQLSfy2ikrbi7NTBx3-WcLaN0MUFjcIePcJDSD66cSw1FjKvcHeA/viewform?embedded=true" width="100%"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>-->
+<script>
+    $(window).on('load', function() {
+        // var x = document.getElementById("google_frame");
+        // var y = (x.contentWindow || x.contentDocument);
+        x.style.overflow = "hidden";
+    });
+
+</script>

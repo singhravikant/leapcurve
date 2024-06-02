@@ -1,0 +1,141 @@
+<section>
+<div class="modal-header">
+    <button type="button" data-dismiss="modal" aria-hidden="true" ng-click="close()" style="float: right">x</button>
+    <h4  class="modal-title">Change Personal Information</h4>
+</div>
+<div class="modal-body">
+    <div class="row" ng-init="getUserInfo();">
+        <form class="form-group">
+            <div class="row">
+                <!--<div class="col-lg-1"></div>-->
+                <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-6 col-lg-5">
+                    <label style="color: #ff8466">Name</label>
+                    <input type="text" placeholder="Name" class="form-control"
+                           onkeypress="return ((event.charCode >= 65 && event.charCode <=90)|| (event.charCode >= 97 && event.charCode <=122)|| (event.charCode == 32))|| event.charCode==0"
+                           ng-model="userInfo.Name" required="required"/>
+                    <br class="visible-xs">
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 col-lg-offset-0 col-sm-12 col-md-6 col-lg-5">
+                    <label style="color: #ff8466">Contact</label>
+
+                    <input type="text" placeholder="Contact" class="form-control" ng-model="userInfo.Contact"
+                           onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode==0"
+                           required="required" pattern="[0-9]{10}" minlength="10" maxlength="10"/>
+                </div>
+            </div><br>
+
+            <div class="row">
+                <!--<div class="col-lg-1"></div>-->
+
+                <div class="col-xs-10 col-xs-offset-1  col-sm-12 col-md-6 col-lg-5">
+                    <label style="color: #ff8466">Email</label>
+
+                    <input autocomplete="off"
+                           class="form-control" name="email" readonly placeholder="Email"
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                           required="required" type="email" ng-model="userInfo.Email"/>
+                    <br class="visible-xs">
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 col-lg-offset-0 col-sm-12 col-md-6 col-lg-5">
+                    <label style="color: #ff8466">Salary In Lacs Per Annum</label>
+
+                    <input autocomplete="off"
+                           class="form-control" name="number" placeholder="Salary in Lacs per Annum"
+                           min="0" max="50" interval=".5"
+                           required="required" type="text" ng-model="userInfo.Salary"/>
+                </div>
+            </div><br>
+
+            <div class="row">
+                <!--<div class="col-lg-1"></div>-->
+
+                <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-6 col-lg-5">
+                    <label style="color: #ff8466">Institute</label>
+
+                    <input type="text" class="form-control" placeholder="Institute of Highest Education" ng-model="userInfo.Institute">
+                    <br class="visible-xs">
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 col-lg-offset-0 col-sm-12 col-md-6 col-lg-5">
+                    <label style="color: #ff8466">Highest Education</label>
+
+                    <select autocomplete="off"
+                            class="form-control" placeholder="Education"
+                            required="required" ng-model="userInfo.Education">
+                        <option selected>Select Highest Education</option>
+                        <option value="Graduate">Graduate</option>
+                        <option value="Post Graduate">Post Graduate</option>
+                    </select>
+                    <br class="visible-xs">
+                </div>
+
+            </div><br class="hidden-xs">
+
+            <div class="row">
+
+                <!--<div class="col-lg-1"></div>-->
+
+                <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-6 col-lg-5">
+                    <label style="color: #ff8466">Year of Graduation</label>
+
+                    <!--<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">-->
+                    <input class="form-control" type="text"placeholder=" Year of Graduation" ng-model="userInfo.YOG">
+                    <!--</div>-->
+                    <br class="visible-xs">
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 col-lg-offset-0 col-sm-12 col-md-6 col-lg-5">
+                    <label style="color: #ff8466">Industry</label>
+
+                    <select autocomplete="off"
+                            class="form-control" placeholder="Working Industry"
+                            required="required" ng-model="userInfo.Industry">
+                        <option selected>Select Industry</option>
+                        <option value="IT">IT</option>
+                        <option value="Infrastructure">Infrastructure</option>
+                        <option value="Telecommunication">Telecommunication</option>
+                    </select>
+                </div>
+
+            </div><br>
+
+            <div class="row">
+                <!--<div class="col-lg-1"></div>-->
+
+                <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-6 col-lg-5">
+                    <label style="color: #ff8466">Designation</label>
+
+                    <select autocomplete="off"
+                            class="form-control"                                   required="required" ng-model="userInfo.Designation">
+                        <option selected="selected">Select Designation</option>
+                        <option value="IT">IT</option>
+                        <option value="HR">HR</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Administrator">Administrator</option>
+                    </select>
+                    <br class="visible-xs">
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 col-lg-offset-0 col-sm-12 col-md-6 col-lg-5">
+                    <label style="color: #ff8466">Experience</label>
+
+                    <select class="form-control" placeholder="Working experience"
+
+                            required="required" ng-model="userInfo.Experience">
+                        <option selected>Years Of Experience</option>
+                        <option value="0-5">0-5</option>
+                        <option value="5-9">5-9</option>
+                        <option value="9-17">9-17</option>
+                        <option value="17+">17+</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <button class ="btn " ng-click="updateUserInfo()" type="submit" >Update</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+</section>

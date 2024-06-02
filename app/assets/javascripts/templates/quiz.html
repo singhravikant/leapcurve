@@ -1,0 +1,391 @@
+<script>
+    $(document).ready(function () {
+        {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                slideshowSpeed: "2000",
+            });
+        }
+    })
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("mySidenavUl").style.width = "200px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    function gotolink(id) {
+//        var ele=document.getElementById(id);
+//        $("html, body").animate({ scrollTop: $('#'+id).position().top-50}, 1000);
+//        ele.scrollIntoView(true,{behavior:'smooth',block:'start'});
+//        closeNav();
+
+    }
+</script>
+<style>
+    .btn-primary:focus, .btn-primary.focus {
+        color: #fff;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .dropdown-menu li span:hover{
+        color:#ff8466;
+    }
+    body.modal-open {
+        padding-right: 0px;
+        overflow: auto;
+    }
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(250px);
+        }
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color:rgba(0,0,0,0.3);
+        overflow: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        /*animation: 1s ease-out 0s 1 slideInFromLeft;*/
+    }
+    .sidenav ul{padding-left: 0px}
+    .sidenav ul li {
+        list-style: none !important;
+        padding: 0px ;
+        font-size: 13px;
+        display: block;
+        float: none;
+        position: static;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover, .offcanvas a:focus{
+        color:#ff8466;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        /*right: 25px;*/
+        font-size: 36px;
+        /*margin-left: 50px;*/
+    }
+
+    @media screen and (max-height: 768px) {
+        .sidenav {padding-top: 0px;}
+        .sidenav a {font-size: 16px;}
+    }
+@media only screen and (max-width: 425px) {
+    #report {
+        padding: 0px 0px 0 !important;
+    }
+    .question-content h3 {
+        font-size: 18px;
+        /*color: #ff8466;*/
+        font-weight: 400;
+    }
+    .question-content p {
+        font-size: 14px !important;
+    }
+    .question-content li {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        color: #999999;
+        line-height: 24px;
+        margin: 10px 0 0 0;
+    }
+    #report.question.impact .impact-box .col-md-10 {
+        border-left: 1px solid #d6d6d6;
+        padding-right: 0px;
+        border: none;
+    }
+    .responsibility-page ul li, .effectiveness ul li {
+        font-size: 14px;
+    }
+   
+}
+
+</style>
+<div >
+    <toaster-container toaster-options="{'close-button':true }"></toaster-container>
+
+    <div ng-controller="quizController" onclick="closeNav()">
+        <div class="question-range" style="margin-top: 120px;" ng-if="!alldone">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12"> <div class="processbar col-md-11 col-sm-11"><img src="/assets/progress-bar2.png" alt="" title=""  ng-if="que['factor']=='complexity'"> <img src="/assets/progress-bar3.png" alt="" title=""ng-if="que['factor']=='impact'"> <img src="/assets/progress-bar4.png" alt="" title="" ng-if="que['factor']=='responsibility'" ><img src="/assets/progress-bar5.png" alt="" title="" ng-if="que['factor']=='effectiveness'"></div>
+                        <div class="processbar-right col-md-1 col-sm-1">
+                            <!--<div class="progress" style="height: 50px;">-->
+                                <!--<div class="progress-bar" role="progressbar" aria-valuenow="70"-->
+                                     <!--aria-valuemin="0" aria-valuemax="100" style="width:100%;border-radius: 50%">-->
+                                    <!--<span class="sr-only">70% Complete</span>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <canvas style="height: 60px;width: 120px;"></canvas>
+                        </div>
+
+                    </div>
+                </div>
+            </div></div>
+        <!--<div class="container" style="margin-top: 115px;">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-3 col-sm-6">-->
+                    <!--<div class="container">-->
+                        <!--<canvas style="height: 100px;width: 100px;"></canvas>-->
+                    <!--</div>-->
+
+                <!--</div></div></div>-->
+        <div id="report" class="question organization-complexity1"  ng-if="que['factor']=='complexity'" >
+            <!--<div class="question-range" >-->
+                <!--<div class="container">-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-md-12 col-sm-12"> <div class="processbar col-md-11 col-sm-11"><img src="/assets/progress-bar2.png" alt="" title=""> </div>-->
+                            <!--<div class="processbar-right col-md-1 col-sm-1"> <canvas style="height: 50px;width: 100px;"></canvas> </div>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div></div>-->
+            <div class="question-content"  >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12" ng-if="que['view']!='boxH'">
+                            <h3 > Q{{que['index']+1}}.{{que['queTxt']}} </h3>
+                            <p>{{que['queHint']}}</p>
+                        </div>
+                        <div class="col-md-8" style="height: auto;overflow: auto" ng-if="que['view']=='normal'">
+                            <!--<form >-->
+                            <ul>
+                                <li ng-repeat="opt in queOptions">
+                                    <label for="radio-{{$index}}"  class=""  id="label-{{$index}}" ng-class="{activeLabel: que['slelectIndex']==$index}">
+                                        <input type="radio" class="button" id="radio-{{$index}}" name="options" ng-change="getChoice({{que['index']}},{{$index}})"  value="{{que['optionWeigth'][$index]}}" ng-model="$parent.selectedOption" checked="">
+                                        <span>{{opt}}</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <!--</form>-->
+                            <!--<h1>{{selectedOption}}</h1>-->
+
+
+
+                        </div>
+                        <div class="col-md-12 col-sm-12" style="height: 450px;overflow: auto"  ng-if="que['view']=='boxH' && queOptions.length==3">
+                            <div class="col-md-12 col-sm-12" ng-if="que['view']=='boxH'" style="padding: 0">
+                                <h3 > Q3a. {{que['queTxt']}} </h3>
+                                <p>{{que['queHint']}}</p>
+                            </div>
+                            <div class="col-md-4 box" id="label-{{$index}}" ng-class="{active: que['slelectIndex']==$index}" ng-click="getChoice(que['index'],$index,'boxH')" ng-repeat="opt in queOptions">
+                                <h3>{{opt[0]}}</h3>
+                                <p>{{opt[1]}}</p>
+                                <!--<ul class="list-group">-->
+                                <!--<li class="active"> {{opt[1]}}</li>-->
+                                <!--</ul>-->
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12"style="height: 450px;overflow: auto"  ng-if="que['view']=='boxH' && queOptions.length==4">
+                            <div class="col-md-12 col-sm-12" ng-if="que['view']=='boxH'" style="padding: 0">
+                                <h3 > Q3b. {{que['queTxt']}} </h3>
+                                <p>{{que['queHint']}}</p>
+                            </div>
+                            <div class="col-md-3 box" id="label-{{$index}}" ng-class="{active: que['slelectIndex']==$index}" ng-click="getChoice(que['index'],$index,'boxH')"  ng-repeat="opt in queOptions">
+                                <h3>{{opt[0]}}</h3>
+                                <ul class="list-group">
+                                    <li> {{opt[1]}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="arrow">
+                                <a ng-if="que['index']>0" ng-click="prevQues(que.index)" class="prev" style="cursor: pointer;margin-right: -4px"></a>
+                                <a ng-click="nextQues(que.index)" class="next" style="cursor: pointer">
+                                </a>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="report" class="question impact" ng-if="que['factor']=='impact'"  >
+            <div >
+                <div class="question-content" >
+                    <!--<div class="question-range"  >-->
+                        <!--<div class="container">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-md-12 col-sm-12"> <div class="processbar col-md-11 col-sm-11"><img src="/assets/progress-bar3.png" alt="" title=""> </div>-->
+                                    <!--<div class="processbar-right col-md-1 col-sm-1">  <canvas style="height: 50px;width: 100px;"></canvas> </div>-->
+
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div></div>-->
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <h3> Q{{que['index']}}.{{que['queTxt']}} </h3>
+                                <p>{{que['queHint']}}</p>
+                            </div>
+                            <div class="col-md-12 col-sm-12" style="height: 450px;overflow: auto" ng-if="que['view']=='boxV'">
+                                <div  ng-repeat="opt in queOptions">
+                                    <div class="col-md-12 impact-box" ng-class="{active: que['slelectIndex']==$index}" id="impt-{{que['index']}}{{$index}}">
+                                        <div class="col-md-2 box">
+                                            <p> {{opt[0]}}</p>
+                                        </div>
+                                        <div class="col-md-10 box ">
+                                            <p ng-click="getChoice(que['index'],$index)"> {{opt[1]}} </p>
+                                        </div>          </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="question-block-wrp">   <div class="arrow"><a ng-click="prevQues(que.index)" class="prev" style="cursor: pointer"></a><a ng-click="nextQues(que.index)" class="next" style="cursor: pointer">
+                                </a></div> </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="report" class="question impact" ng-if="que['factor']=='responsibility'"  >
+            <div class="question-content">
+                <!--<div class="question-range"  >-->
+                    <!--<div class="container">-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-md-12 col-sm-12"> <div class="processbar col-md-11 col-sm-11"><img src="/assets/progress-bar4.png" alt="" title=""> </div><div class="processbar-right col-md-1 col-sm-1"> <canvas style="height: 100px;width: 100px;"></canvas></div>-->
+
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div></div>-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h3> Q{{que['index']}}.{{que['queTxt']}} </h3>
+                            <p>{{que['queHint']}}</p>        </div>
+                        <div class="col-md-12 col-sm-12 responsibility-page" style="height: auto;overflow: auto">
+                            <div class="col-md-8" ng-if="que['view']=='normal'">
+                                <ul>
+                                    <li ng-repeat="opt in queOptions">
+                                        <label for="radio-{{$index}}" ng-class="{active: que['slelectIndex']==$index}" ng-click="addClass($index)">
+                                            <input type="radio" class="button" id="radio-{{$index}}" name="options" ng-change="getChoice({{que['index']}},{{$index}})"  value="{{que['optionWeigth'][$index]}}" ng-model="$parent.selectedOption" checked="">
+                                            <span>{{opt}}</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <!--</form>-->
+
+
+                            </div>
+                            <div ng-if="que['view']=='row'" ng-repeat="opt in queOptions">
+                                <div class="col-md-12 impact-box" ng-class="{active: que['slelectIndex']==$index}" id="resp-{{que['index']}}{{$index}}" >
+                                    <ul>
+                                        <li ng-repeat="list in opt" ng-click="getChoice(que['index'],$parent.$index)">{{list}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="question-block-wrp">   <div class="arrow"><a ng-click="prevQues(que.index)" class="prev" style="cursor: pointer"></a><a ng-click="nextQues(que.index)" class="next" style="cursor: pointer">
+                            </a></div> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="report" class="question impact" ng-if="que['factor']=='effectiveness'"  >
+            <div class="question-content">
+                <!--<div class="question-range"  >-->
+                    <!--<div class="container">-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-md-12 col-sm-12"> <div class="processbar col-md-11 col-sm-11"><img src="/assets/progress-bar5.png" alt="" title=""> </div>-->
+                                <!--<div class="processbar-right col-md-1 col-sm-1"><canvas style="height: 50px;width: 100px;"></canvas> </div>-->
+
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div></div>-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h3> Q{{que['index']}}.{{que['queTxt']}} </h3>
+                            <p>{{que['queHint']}}</p>        </div>
+                        <div class="col-md-12 col-sm-12 responsibility-page" style="height: 450px;overflow: auto">
+                            <div class="col-md-12 col-sm-12" ng-if="que['view']=='boxV'">
+                                <div class="col-md-12 impact-box" ng-class="{active: que['slelectIndex']==$index}" id="eff-{{que['index']}}{{$index}}" ng-repeat="opt in queOptions">
+                                    <div class="col-md-2 box">
+                                        <p> {{opt[0]}}</p>
+                                    </div>
+                                    <div class="col-md-10 box ">
+                                        <p ng-click="getChoice(que['index'],$index)"> {{opt[1]}} </p>
+                                    </div>          </div>
+
+                            </div>
+                            <div class="col-md-12 impact-box" ng-class="{active: que['slelectIndex']==$index}" id="eff-{{que['index']}}{{$index}}"  ng-if="que['view']=='row'" ng-repeat="opt in queOptions">
+                                <ul>
+                                    <li ng-repeat="list in opt" ng-click="getChoice(que['index'],$parent.$index)">{{list}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="question-block-wrp"><div class="arrow"><a ng-click="prevQues(que.index)" class="prev" style="cursor: pointer"></a><a ng-click="nextQues(que.index)" class="next" style="cursor: pointer">
+                            </a></div> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="report" class="question organization-complexity1 congratulations" ng-if="alldone" style="margin-top: 100px;">
+            <div class="question-range organization-complexity-set3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12"> <div class="processbar col-md-11 col-sm-11"><img src="/assets/progress-bar6.png" alt="" title=""> </div><div class="processbar-right col-md-1 col-sm-1"><img src="/assets/like-icon-prog.png" alt="" title=""></div></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="question-content progress-congratulations-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 progress-congratulations-page">
+                            <h2>Congratulations! </h2>
+                            <h3>You have successfully completed the questionnaire.</h3>
+                            <p>Please wait a moment while your Report is generated.</p>
+                            <div class="col-md-12">
+                                <a ng-click="getScore()" ng-if="!isLogin" class="btn">Get Your Report</a>
+                                <a ng-click="openForm()" ng-if="isLogin" class="btn">Log In</a>
+                                <!--<%#=link_to "Get Your Report",{:controller => "qustioner", :action => "report", :score => 20 },class: "btn"%>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+
+    $('[data-toggle="collapse"]').on('click', function() {
+        $navMenuCont = $($(this).data('target'));
+        $navMenuCont.animate({'height':'toggle'}, 600);
+    });
+
+</script>

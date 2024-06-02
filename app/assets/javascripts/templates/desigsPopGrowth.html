@@ -1,0 +1,123 @@
+<style>
+    .mb-lg {
+        margin-bottom: 10px;
+    }
+
+    .modal-open {
+        overflow: auto;
+    }
+
+    .modal-open .modal {
+        overflow-x: scroll;
+        overflow-y: auto;
+    }
+    .img-height{
+        height: 50px !important;
+    }
+    .button-style {
+        float: right;
+        background: transparent;
+        border: none;
+        font-size: 18px;
+    }
+    .h4-style{
+        font-family:Poppins-Regular;
+        word-spacing:2px;
+        text-transform: uppercase;
+    }
+    .div-style{
+        font-family:Montserrat-Regular;
+        overflow-y: auto;
+        height:auto;
+    }
+    .span-style{
+        font-size:11px;
+    }
+    .row-top-margin{
+        margin-top:2%;
+    }
+    @media(max-width:991px) {
+        .mob-view {
+            text-align: center !important;
+        }
+        .img-height{
+            height: 55px !important;
+        }
+    }
+
+    @media(max-width:767px) {
+        .mob-view {
+            text-align: center !important;
+        }
+        .img-height{
+            height: 45px !important;
+        }
+    }
+    .pad-0{
+        padding: 0;
+    }
+    .margin-0{
+        margin: 0;
+    }
+    @media(max-width:991px) {
+        .mob-center {
+            text-align: center;
+        }  }
+</style>
+<section>
+    <div class="modal-header">
+
+        <div class="col-md-12 col-xs-12">
+            <img src="assets/logo1.png" class="img-rsponsive img-height">
+            <button type="button" class="button-style" data-dismiss="modal" aria-hidden="true" ng-click="close()">x</button>
+        </div>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <!--row1-->
+                <div class="row">
+                    <div class="col-md-2 hidden-xs hidden-sm"></div>
+                    <div class="col-sm-12 col-xs-12 col-md-8 col-lg-8 mob-view pad-0">
+                        <h4 class="h4-style mob-center"><b>{{headText}}{{filterText}}</b></h4>
+                    </div>
+                    <div class="col-md-2 hidden-xs hidden-sm"></div>
+                </div>
+                <!--row3-->
+                <div class="row">
+                    <div class="col-md-2 hidden-xs hidden-sm"></div>
+                    <div class=" col-sm-12 col-xs-12 col-md-8 col-lg-8 pad-0" >
+                        <div class="col-sm-12 col-xs-12 col-md-12 div-style pad-0">
+                            <h5 ng-if="des.length>3" ng-repeat="des in alldesigs" class="mob-center">{{des.toString().split('+')[2]}}
+                                <!--<span class="span-style">({{des.toString().split('+')[0]}} , {{des.toString().split('+')[1] }})</span>-->
+                                <span class="span-style">({{des.toString().split('+')[1] }})</span>
+                                </span></h5>
+                        </div>
+                    </div>
+                    <div class="col-md-2 hidden-xs hidden-sm"></div>
+                </div>
+                <!--row1-->
+                <div class="row row-top-margin" ng-if="alldesigsUser.length>0">
+                    <div class="col-md-2 hidden-xs hidden-sm"></div>
+                    <div class="col-sm-12 col-xs-12 col-md-8 col-lg-8 pad-0 mob-view">
+                        <h4 class="h4-style mob-center"><b>{{headTextUser}}{{filterText}}</b></h4>
+                    </div>
+                    <div col-md-2 hidden-xs hidden-sm></div>
+                </div>
+                <!--row3-->
+                <div class="row row-top-margin margin-0" ng-if="alldesigsUser.length>0">
+                    <div class="col-md-2 hidden-xs hidden-sm"></div>
+                    <div class=" col-sm-12 col-xs-12 col-md-8 col-lg-8 pad-0" >
+                        <div class="col-sm-12 col-xs-12 col-md-12 pad-0 div-style">
+                            <h5 ng-if="des.length>3" ng-repeat="des in alldesigsUser" class="mob-center">{{des.toString().split('+')[2]}}
+                                <!--<span class="span-style"> ({{des.toString().split('+')[0]}} , {{des.toString().split('+')[1] }})</span>-->
+                                <span class="span-style"> ({{des.toString().split('+')[1] }})</span>
+                                </span></h5>
+                        </div>
+                    </div>
+                    <div class="col-md-2 hidden-xs hidden-sm"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

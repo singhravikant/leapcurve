@@ -1,0 +1,507 @@
+<% if browser.device.mobile? %>
+
+
+    <style>
+      .section {
+        position: relative;
+        display: block;
+        padding-top: 6%;
+        padding-right: 10%;
+        padding-left: 10%;
+        text-align: center;
+        width: 80%;
+        float: left;
+      }
+
+      form {
+        position: relative;
+        display: block;
+        float: left;
+        width: 100%;
+      }
+
+      .article {
+        padding-left: 0%;
+        padding-right: 0%;
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+        padding-bottom: 15%;
+
+      }
+
+      .form-div {
+        /*border:2px solid  #0d305f;*/
+        text-align: center;
+        display: block;
+        position: relative;
+        float: left;
+        width: 100%;
+      }
+
+      .form-div h2 {
+        margin-bottom: 10px;
+        margin-top: 0;
+        text-align: center;
+        font-size: 17px;
+
+      }
+
+      .txt-field {
+        border-bottom: 1px solid #0d305f !important;
+        padding: 45px 0 0 0;
+        margin-bottom: 0;
+        position: relative;
+        color: black;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        outline: none;
+        font-size: 15px;
+      }
+
+      @media screen and (max-width: 1300px) {
+        .form-coll {
+          width: 29% !important;
+        }
+      }
+
+      .form-coll {
+        display: block;
+        position: relative;
+        float: left;
+        width: 100% !important;
+        padding: 1% 0% 1.5%;
+        min-height: 1px;
+      }
+
+      .submit-btn {
+        background: #eeeeee;
+        cursor: pointer;
+        margin-top: 7.5%;
+        width: 50%;
+        padding: 4% 0 4% 0;
+        border: none;
+        font-size: 16px;
+      }
+
+      .form-row {
+        width: 100%;
+        position: relative;
+        float: left;
+        display: block;
+      }
+
+      .form-coll-a {
+        text-align: left;
+        text-align: left;
+        display: block;
+        float: left;
+        position: relative;
+      }
+
+      .form-coll-a a {
+        text-decoration: none;
+        color: #2d2b2b;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        border-bottom: 1px solid silver;
+        font-size: 12px;
+      }
+
+      ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-size: 15px;
+        text-align: left;
+      }
+      .form-coll a{
+        position: absolute;
+        font-size: 10px;
+        left: 0px;
+        margin-top: 4px;
+        z-index: 999;
+        text-decoration: none;
+        color: #2d2b2b;
+        font-weight: bold;
+        border-bottom: 1px solid silver;
+      }
+      .border-dark{
+        border-bottom: 2px solid #464646 !important;
+      }
+      .border-light{
+        border-bottom: 2px solid #bfbcbc !important;
+      }
+    </style>
+
+    <section class="section">
+      <article class="article">
+        <div class="form-div">
+          <h2>NEW TEAM MEMBER REGISTRATION</h2>
+
+          <%= form_tag({:action => :new_member_registration}, {:method => :post}) %>
+
+
+          <div class="form-row">
+            <div class="form-coll">
+              <%= text_field_tag "first_name", params['first_name'], :placeholder => 'First Name', :class => "txt-field border-dark", :size => 15 , :required => true %>
+            </div>
+            <div class="form-coll">
+              <%= text_field_tag "last_name", params['last_name'], :placeholder => 'Last Name', :class => "txt-field border-dark", :size => 15  %>
+            </div>
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-coll">
+
+              <%= text_field_tag "designation", params['designation'], :placeholder => 'Designation', :class => "txt-field border-dark", :size => 15 %>
+            </div>
+            <div class="form-coll">
+
+              <%= email_field_tag "email", params['email'], :placeholder => 'Email', :class => "txt-field border-dark", :size => 15 ,:required => true %>
+            </div>
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-coll">
+
+              <%= password_field_tag "password", params['password'], :placeholder => 'Password', :class => "txt-field border-dark", :size => 15, :required => true %>
+            </div>
+            <div class="form-coll">
+
+              <%= password_field_tag "conf_pass", params['conf_pass'], :placeholder => 'Confirm Password', :class => "txt-field border-dark", :size => 15 %>
+            </div>
+          </div>
+
+
+
+          <div class="form-row">
+            <%= submit_tag 'REGISTER', :class => "submit-btn" %>
+          </div>
+
+
+        </div>
+
+      </article>
+    </section>
+
+<% elsif browser.device.tablet? %>
+
+
+    <style>
+      .section {
+        position: relative;
+        display: block;
+        padding-right: 10%;
+        padding-left: 10%;
+        text-align: center;
+        width: 80%;
+        float: left;
+      }
+
+      form {
+        position: relative;
+        display: block;
+        float: left;
+        width: 100%;
+      }
+
+      .article {
+        padding-left: 0%;
+        padding-right: 0%;
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+        padding-bottom: 5%;
+
+      }
+
+      .form-div {
+        /*border:2px solid  #0d305f;*/
+        text-align: center;
+        display: block;
+        position: relative;
+        float: left;
+        width: 100%;
+      }
+
+      .form-div h2 {
+        margin-bottom: 45px;
+        margin-top: 0;
+        text-align: center;
+      }
+
+      .txt-field {
+        border-bottom: 1px solid #0d305f !important;
+        padding: 5px 0;
+        margin-bottom: 0;
+        position: relative;
+        color: black;
+        border: none;
+        box-shadow: none;
+        width: 90%;
+        outline: none;
+        float: left;
+        margin-left: 5%;
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 1300px) {
+        .form-coll {
+          width: 29% !important;
+        }
+      }
+
+      .form-coll {
+        display: block;
+        position: relative;
+        float: left;
+        width: 50% !important;
+        padding: 1% 0% 1.5%;
+        min-height: 1px;
+      }
+
+      .submit-btn {
+        background: #eeeeee;
+        cursor: pointer;
+        margin-top: 3.5%;
+        width: 33.33%;
+        padding: 1% 0 1% 0;
+        border: none;
+        font-size: 22px;
+      }
+
+      .form-row {
+        width: 100%;
+        position: relative;
+        float: left;
+        display: block;
+      }
+
+
+      ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-size: 15px;
+        text-align: left;
+      }
+
+      .border-dark{
+        border-bottom: 2px solid #464646 !important;
+      }
+
+    </style>
+
+    <section class="section">
+      <article class="article">
+        <div class="form-div">
+          <h2>NEW TEAM MEMBER REGISTRATION</h2>
+
+          <%= form_tag({:action => :new_member_registration}, {:method => :post}) %>
+
+
+          <div class="form-row">
+            <div class="form-coll">
+              <%= text_field_tag "first_name", params['first_name'], :placeholder => 'First Name', :class => "txt-field border-dark", :size => 15 , :required => true %>
+            </div>
+            <div class="form-coll">
+              <%= text_field_tag "last_name", params['last_name'], :placeholder => 'Last Name', :class => "txt-field border-dark", :size => 15   %>
+            </div>
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-coll">
+
+              <%= text_field_tag "designation", params['designation'], :placeholder => 'Designation', :class => "txt-field border-dark", :size => 15  %>
+            </div>
+            <div class="form-coll">
+
+              <%= email_field_tag "email", params['email'], :placeholder => 'Email', :class => "txt-field border-dark", :size => 15,:required => true %>
+            </div>
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-coll">
+
+              <%= password_field_tag "password", params['password'], :placeholder => 'Password', :class => "txt-field border-dark", :size => 15, :required => true %>
+            </div>
+            <div class="form-coll">
+
+              <%= password_field_tag "conf_pass", params['conf_pass'], :placeholder => 'Confirm Password', :class => "txt-field border-dark", :size => 15 %>
+            </div>
+          </div>
+
+
+
+          <div class="form-row">
+              <%= submit_tag 'REGISTER', :class => "submit-btn" %>
+          </div>
+
+
+        </div>
+
+      </article>
+    </section>
+<% else %>
+
+
+    <style>
+      .section {
+        position: relative;
+        display: block;
+        padding-right: 15%;
+        padding-left: 15%;
+        text-align: center;
+        width: 70%;
+        float: left;
+      }
+
+      form {
+        position: relative;
+        display: block;
+        float: left;
+        width: 100%;
+      }
+
+      .article {
+        padding-left: 0%;
+        padding-right: 0%;
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+        padding-bottom: 5%;
+
+      }
+
+      .form-div {
+        /*border:2px solid  #0d305f;*/
+        text-align: center;
+        display: block;
+        position: relative;
+        float: left;
+        width: 100%;
+      }
+
+      .form-div h2 {
+        margin-bottom: 45px;
+        padding-left: 3%;
+        margin-top: 0;
+        text-align: left;
+      }
+
+      .txt-field {
+        border-bottom: 1px solid #0d305f !important;
+        padding: 5px 0;
+        margin-bottom: 0;
+        position: relative;
+        margin-left: 10%;
+        color: black;
+        border: none;
+        box-shadow: none;
+        width: 80%;
+        outline: none;
+        float: left;
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 1300px) {
+        .form-coll {
+          width: 29% !important;
+        }
+      }
+
+      .form-coll {
+        display: block;
+        position: relative;
+        float: left;
+        width: 33.33%;
+        padding: 1% 0% 1.5%;
+        min-height: 1px;
+      }
+
+      .submit-btn {
+        background: #c3bbbb38;
+        cursor: pointer;
+        margin-top: 3.5%;
+        width: 80%;
+        margin-left: 10%;
+        padding: 5% 23% 5% 23%;
+        border: none;
+        font-size: 22px;
+        float: left;
+      }
+
+      .form-row {
+        width: 100%;
+        position: relative;
+        float: left;
+        display: block;
+      }
+
+
+      ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-size: 15px;
+        text-align: left;
+      }
+      .border-dark{
+        border-bottom: 2px solid #464646 !important;
+      }
+
+    </style>
+
+    <section class="section">
+      <article class="article">
+        <div class="form-div">
+          <h2>NEW TEAM MEMBER REGISTRATION</h2>
+
+          <%= form_tag({:action => :new_member_registration}, {:method => :post}) %>
+
+
+          <div class="form-row">
+            <div class="form-coll">
+              <%= text_field_tag "first_name", params['first_name'], :placeholder => 'First Name', :class => "txt-field border-dark", :size => 15 , :required => true %>
+            </div>
+            <div class="form-coll">
+              <%= text_field_tag "last_name", params['last_name'], :placeholder => 'Last Name', :class => "txt-field border-dark", :size => 15   %>
+            </div>
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-coll">
+
+              <%= text_field_tag "designation", params['designation'], :placeholder => 'Designation', :class => "txt-field border-dark", :size => 15 %>
+            </div>
+            <div class="form-coll">
+
+              <%= email_field_tag "email", params['email'], :placeholder => 'Email', :class => "txt-field border-dark", :size => 15, :required => true %>
+            </div>
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-coll">
+
+              <%= password_field_tag "password", params['password'], :placeholder => 'Password', :class => "txt-field border-dark", :size => 15, :required => true %>
+            </div>
+            <div class="form-coll">
+
+              <%= password_field_tag "conf_pass", params['conf_pass'], :placeholder => 'Confirm Password', :class => "txt-field border-dark", :size => 15 %>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-coll">
+              <%= submit_tag 'REGISTER', :class => "submit-btn" %>
+            </div>
+          </div>
+
+
+        </div>
+
+      </article>
+    </section>
+<% end %>

@@ -1,0 +1,54 @@
+<style>
+    .your-profile-div{
+        margin-left: 2%
+    }
+    .your-profile-div p{
+        font-family: verdana;font-size: 20px;color: #000288; letter-spacing: 3px;
+    }
+    .your-profile-div b{
+        font-family: verdana;font-size: 30px;
+    }
+    .estimate-up-div{
+        margin-left: -15%;margin-top: 14%;
+    }
+    .estimate-up-div p{
+        letter-spacing:2px;font-family: verdana;font-size: 20px;
+    }
+    .estimate-up-div b {
+        letter-spacing:2px;font-family: verdana;font-size: 30px;
+    }
+    .estimate-up-div div{
+        margin-left: 33%; margin-top: 5%; width: 33%;
+    }
+    .btn-1{
+        font-family: verdana;border-radius: 0;background-color: #eec371;color: black;
+    }
+    .btn-2{
+        font-family: verdana;border-radius: 0;background-color: #eec371;color: black;margin-top: 8%;
+    }
+</style>
+
+<div class="row">
+    <div class="col-sm-offset-1 col-sm-4 col-md-4 col-lg-4">
+        <img src="assets/progress.png">
+    </div>
+    <div class="col-sm-7 col-md-7 col-lg-7">
+        <div class="row">
+            <div class="col-sm-5 col-md-5 your-profile-div">
+                <p>Your Profile<br/>is
+                    <b>35%</b><br/>complete</p>
+            </div>
+            <div class="col-sm-7 col-md-7"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 text-center estimate-up-div">
+                <p>Estimated time left:</p>
+                <b>5 minutes</b><br class="hidden-xs"/>
+                <div>
+                    <button class="btn btn-block  btn-lg btn-1" ng-click="ques.showQues=true ; ques.Progress=false;">Next</button>
+                    <button class="btn btn-block  btn-lg btn-2" ng-click="ques.saveUserInfo()">Save & come back<br/>later</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

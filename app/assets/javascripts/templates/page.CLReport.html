@@ -1,0 +1,1063 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .highcharts-tooltip > span {
+            font-size: 90% !important;
+            padding: -10px !important;
+            height: 22px !important;
+            width: auto !important;
+        }
+        .layout-boxed .app-container >section{
+            max-width: 100% !important;
+        }
+
+        .highcharts-axis-title {
+            visibility: hidden;
+        }
+
+        .highcharts-legend-box {
+            fill: none !important;
+            stroke-width: 0 !important;
+        }
+
+        .font_size {
+            font-family: Verdana;
+            word-spacing: 2px;
+        }
+
+        .label {
+            padding-left: 1%;
+        }
+
+        .col-md-12.btn-a a {
+            text-decoration: underline;
+            color: black;
+        }
+
+        .col-md-12.btn-a a:hover {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        p.font_size.ng-binding {
+            font-family: Montserrat-Regular;
+            font-size: 16px;
+            margin-bottom: -20px;
+            margin-top: 8px;
+
+        }
+
+        h2.font_size.text-center {
+            font-family: Poppins-SemiBold;
+            font-size: 22px;
+        }
+
+        .font_size {
+            font-family: Verdana;
+            word-spacing: 2px;
+        }
+
+        .label {
+            padding-left: 1%;
+        }
+
+        #chart1-point {
+            stroke-width: 20px;
+        }
+
+        @media (max-width: 1200px) {
+            .heigh {
+                margin: 12px 0px 0px -12px !important;
+
+            }
+        }
+
+        .font_size {
+            font-family: Verdana;
+            word-spacing: 2px;
+        }
+
+        .label {
+            padding-left: 1%;
+        }
+
+        .top-chart {
+            margin-top: -8px;
+            padding: 0px 0px 0px 5px;
+        }
+
+        .col-md-4 .font_size {
+            font-size: 11px;
+
+            font-family: " Poppins-Bold";
+        }
+
+        .col-md-4 .font_size span {
+            font-size: 9px;
+
+        }
+
+        @media (max-width: 1200px) {
+            .top-row {
+
+                margin-top: 8% !important;
+            }
+
+        }
+
+        .col-md-12.btn-a a {
+
+            color: black;
+        }
+
+        @media (min-width: 1000px) {
+            .first-a a {
+                margin-left: 14%;
+            }
+        }
+
+        @media only screen and (width: 768px) {
+            .main-div {
+                margin-top: 20% !important;
+            }
+        }
+
+        @media (max-width: 375px) {
+
+            .sec-para {
+                padding: 10px;
+                padding-top: 60px !important;
+                margin-left: 5% !important;
+            }
+        }
+        @media only screen and (max-width: 767px) {
+            .navbar-header {
+                width: 100% !important;
+            }
+        }
+
+        @media only screen and (width: 320px) {
+            .sec-para {
+                padding: 10px;
+                padding-top: 100px !important;
+                margin-left: 5% !important;
+            }
+        }
+        .salary-margin {
+            font-size: 20px;
+            font-family: Poppins-Regular;
+        }
+
+        @media only screen and (width: 768px) {
+
+            .salary-margin {
+                margin-left: 0px !important;
+
+            }
+        }
+
+        .btn.active, .btn:hover, .btn:focus {
+            box-shadow: none;
+            color: blue !important;
+        }
+        .btn1.active, .btn1:hover, .btn1:focus {
+            box-shadow: none;
+            color: blue !important;
+        }
+        .btn2.active, .btn2:hover, .btn2:focus {
+            box-shadow: none;
+            color: blue !important;
+        }
+
+        a.btn {
+            border-right: 1px solid silver;
+            padding: 0px 10px 0px 0px;
+            border-radius: 0px;
+        }
+
+        a.btn1 {
+            padding: 0px 10px 0px 0px;
+            border-radius: 0px;
+        }
+        a.btn2 {
+            padding: 0px 0px 0px 0px;
+            border-radius: 0px;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .highcharts-background {
+            fill: transparent;
+        }
+
+        .btn-div {
+            display: inline;
+        }
+
+        @media (max-width: 790px) {
+
+            .btn-div a {
+                font-size: 9px !important;
+                line-height: 10px;
+            }
+        }
+
+        @media (max-width: 790px) {
+            .min-row {
+                margin-bottom: 40px;
+            }
+            .min-row-1{
+                margin-top: 0% !important;
+            }
+        }
+
+        @media (max-width: 790px) {
+
+            .min-text li a {
+                display: inline !important;
+                text-align: center !important;
+
+            }
+        }
+
+        .row{
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+
+        @media (max-width: 991px) {
+            .top-min-div {
+                margin-top: 0px !important;
+                text-align: center;
+                padding: 0;
+            }
+            .hrr{
+                border-bottom: 2px solid silver !important;
+            }
+            .comp-div-style{
+                padding: 0px 0px 0px 0px !important;
+            }
+            .top-chart{
+                margin-top: -12px;
+                padding: 0px 0px 0px 0px;
+            }
+            #min-1 {
+                border: none !important;
+                padding: 0;
+            }
+
+            .salary-sub-div p {
+                text-align: center !important;
+            }
+        }
+        @media (min-width: 767px) {
+            .top-margin{
+                margin-top: 2% !important;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            .top-min {
+                margin-top: -4% !important;
+            }
+            .top-min-div-1{
+                margin-top: 30px !important;
+            }
+
+        }
+        @media (max-width: 600px){
+            .top-min-div-1 {
+                margin-top: 35px !important;
+            }
+        }
+        @media (max-width: 500px){
+            .top-min-div-1 {
+                margin-top: 44px !important;
+            }
+        }
+        @media (max-width: 400px){
+             .top-min-div-1 {
+                 margin-top: 40px !important;
+             }
+       }
+@media (min-width: 1500px){
+            .min-row-new {
+                width: 65.666667%;
+            }}
+        .higher-a {
+            text-decoration: underline;
+            font-size: 12px;
+        }
+
+        .higher-a:hover {
+            text-decoration: underline;
+        }
+
+        @media (min-width: 768px) {
+            .min-text {
+                float: right !important;
+            }
+        }
+
+        .career-level-row {
+            margin-top: 1%;
+        }
+
+        .career-level-row .font_size {
+            text-align: center;
+            font-size: 22px;
+            font-family: Poppins-Bold;
+        }
+
+        /*.font_size .highcharts-tracker .highcharts-point{*/
+        /*display: none;*/
+        /*}*/
+        /*.highcharts-root .highcharts-color-undefined{*/
+        /*display: none;*/
+        /*}*/
+
+        .career-highchart .div-highchart {
+            margin-top: 2%;
+            padding:0;
+        }
+
+        .career-highchart .div-highchart #chart {
+            height: 180px;
+        }
+
+        .career-highchart .div-highchart #chart .highcharts-container {
+            width: auto !important;
+            text-align: center !important;
+        }
+
+        .change-view-para p {
+            margin-bottom: 0px;
+            font-family: Montserrat-Regular;
+        }
+
+        .btn-div {
+            display: inline;
+        }
+
+        .btn-div a {
+            font-size: 11px;
+        }
+
+        .newtext-para {
+            margin-top: 4%;
+            font-family: Montserrat-Regular;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-align: justify;
+        }
+
+        @media (min-width: 1400px) {
+            .cr-padd {
+                padding: 0% 16% 0 16%!important;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .app-container.ng-scope {
+                width: 100%;
+                overflow-y: initial !important;
+            }
+
+            .app {
+                padding: 0px !important;
+            }
+        }
+        .app {
+            padding: 15px;
+        }
+        @media (min-width: 991px) {
+            .cr-padd{
+                padding: 0 8% 0 8%;
+            }
+            .top-row-margin {
+                margin-top: 3%;
+            }
+            .comp-style {
+                font-size: 14px !important;
+                margin-top: 0px !important;
+                font-family: Poppins-Regular !important;
+            }
+            .salary-margin {
+                font-size: 20px;
+                font-family: Poppins-Regular;
+                margin-top: 0px;
+            }
+            .career-style{
+                font-size: 20px;
+                font-family: Poppins-Regular;
+                margin-top: 0px;
+            }
+        }
+
+        .change-view-highchart {
+            margin-bottom: 0px;
+            font-family: Montserrat-Regular;
+        }
+        .change-view-highchart p{
+    margin: 0;
+         }
+        .in-your-industry {
+            margin-bottom: 2%;
+        }
+
+        .font_size_1_pera {
+            margin: 0px !important;
+        }
+
+        .font_size .b-1 {
+            font-size: 17px;
+            font-family: Poppins-SemiBold;
+        }
+
+        .min-row #rot {
+            z-index: 1;
+            text-align: center;
+            margin-left: -25%;
+            width: 50%;
+            margin-top: -25%;
+            font-family: Montserrat-Regular;
+        }
+
+        .min-row h6 {
+            font-family: Poppins-Bold;
+        }
+ .min-row-new .font_size  svg:not(:root) {
+            overflow: hidden;
+            padding: 5px;
+        }
+
+        .min-row-new {
+            padding: 0 !important;
+            margin-top: 2%;
+            height: auto !important;
+            /*border: 1px solid #9d9da7;*/
+            font-family: Montserrat-Regular;
+        }
+
+        .salary-com-h2 {
+            font-family: Poppins-Bold;
+        }
+
+        .min-row-1 {
+            margin-top: 5%;
+            font-family: Montserrat-Regular;
+        }
+
+        /*.min-row-1 .text-left*/
+        /*{*/
+        /*margin-bottom: 11%*/
+        /*}*/
+        .min-row-1 .text-left .b-2 {
+            font-family: Poppins-SemiBold;
+            font-size: 17px;
+        }
+
+        /*.salary-sub-div{*/
+        /*margin-top: 1%;*/
+        /*!*padding-right: 100px;*!*/
+        /*}*/
+
+        .salary-sub-div p {
+            text-align: right
+        }
+
+        .salary-sub-div .font_size {
+            height: 40px !important;
+        }
+
+        .last-para_where {
+            margin-top: 4%;
+            font-family: Montserrat-Regular;
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        .perc-padd{
+            padding: 0;
+        }
+
+        .margin-btom {
+            margin-bottom: 3%;
+        }
+        .nav-style{
+            margin:0% !important;
+            background-color:#ffffff !important;
+            border-color: #ffffff  !important;
+            border-bottom: 1px solid #ffffff !important;
+        }
+        .img-height{
+            height: 70px ;
+        }
+        .div-width{
+            width:100% !important;
+        }
+        .nav-ul-style{
+            list-style:none !important;
+            color:#66b6bf !important;
+        }
+        .li-style-1{
+            display:inline !important;
+            font-size:15px !important;
+            font-family:Montserrat-Regular !important;
+            /* border-right: 1px solid black; */
+        }
+        .li-style-2{
+            display:inline !important;
+            font-size:15px !important;
+            font-family:Montserrat-Regular !important;
+            margin-top:1px !important;
+        }
+        .li-style-a-1{
+            display:inline-block !important;
+            color:#66b6bf !important;
+            padding: 0px 7px 0px 7px !important;
+            cursor: pointer !important;
+            text-decoration: underline !important;
+        }
+        .border-right{
+            border-right: 1px solid #66b6bf !important;
+        }
+        .li-style-a-2{
+            color:#66b6bf !important;
+            padding: 0px 7px 0px 7px !important;
+            text-decoration: underline !important;
+            cursor: pointer !important;
+        }
+        .container-top-margin{
+            margin-top: 3%;
+        }
+
+        .right-border{
+            border-right: 1px solid silver;
+            height: 80px;
+        }
+        .career-style{
+            font-size: 20px;
+            font-family: Poppins-Regular;
+        }
+        .career-span{
+            font-family:  Poppins-Bold;
+        }
+        .career-p-style{
+            font-size: 10.4px;
+            font-family:  Poppins-Regular;
+            margin-bottom: 5px;
+        }
+        @media(max-width:991px){
+            .career-p-style{
+                padding: 0 10px 0px 10px !important;
+            }
+        }
+        .career-chart-margin{
+            margin-top:1%;
+        }
+        .career-chart-style{
+            height: 40px !important;
+            margin-bottom: 5px !important;
+        }
+        .comp-div-style{
+            font-family:  Poppins-Regular;
+            padding: 0px 0px 0px 12px;
+        }
+        .comp-style {
+            font-size: 14px !important;
+            font-family: Poppins-Regular !important;
+        }
+        .comp-p-style{
+            font-size:11px !important;
+            font-family: poppins-regular !important;
+            margin:0px !important;
+        }
+        .industry-span{
+            font-size:11px !important;
+            color:black !important;
+        }
+        .font-weight{
+            font-weight: normal;
+        }
+        .a-style{
+            color: black !important;
+            cursor: pointer !important;
+        }
+        .industry-decoration{
+            text-decoration: underline !important;
+        }
+        .function-style{
+            font-size:11px !important;
+            margin:0px !important;
+            font-family: poppins-regular !important;
+        }
+        .function-span{
+            font-size:11px !important;
+            color:black !important;
+        }   
+ </style>
+</head>
+</html>
+
+<header id="header" class="hidden-lg hidden-md">
+    <nav class="navbar navbar-default navbar-fixed-top nav-style">
+        <div class="row">
+            <div class="navbar-header col-sm-3 col-xs-12 ">
+                <img src="assets/logo1.png" class="navbar-brand img-responsive img-height">
+            </div>
+
+            <div class=" col-md-8 col-sm-9 col-xs-12 top-min top-margin">
+
+                <div class="col-xs-12 text-center div-width">
+
+                    <ul class="nav navbar-nav min-text nav-ul-style">
+
+                        <!--<i class="fa fa-angle-left" style="    font-size: 59px;"></i>  <a type="submit" style="position: relative;top: -13px;cursor: pointer"ui-sref="app.briefreport">BACK</a>-->
+                        <li class="li-style-1">
+                            <i class="fa fa-angle-left"></i><a class="li-style-a-1 border-right" ui-sref="app.briefreport">BACK</a>
+                        </li>
+
+                        <li class="li-style-2 ng-scope toltip" ng-if="!clreport.isGuest">
+                            <a class="li-style-a-2 border-right" ng-click="logout()">LOGOUT</a>
+                            <div class="tooltipText" style="">
+                                {{ShowEmail}}
+                            </div>
+                        </li><!-- end ngIf: isLogin -->
+
+                        <li class="li-style-2 ng-scope" ng-if="clreport.isGuest">
+                            <a class="li-style-a-2 border-right" ng-click="clreport.OpenLogin()">SAVE</a>
+                        </li><!-- end ngIf: isLogin -->
+
+                        <li ng-if="UserInfo.showGrowthPage" class="li-style-1">
+                            <a class="li-style-a-1" ui-sref="app.Growthreport">NEXT</a>
+                            <i class="fa fa-angle-right"></i>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+
+
+<header id="header" class="hidden-sm hidden-xs">
+    <nav class="navbar navbar-default navbar-fixed-top nav-style">
+        <div class="row">
+            <div class="navbar-header col-sm-3 col-md-3">
+                <img src="assets/logo1.png" class="navbar-brand img-responsive img-height">
+            </div>
+
+            <div class=" col-md-8 col-sm-9 col-xs-12 top-min top-margin">
+
+                <div class="col-md-12 text-center div-width">
+
+                    <ul class="nav navbar-nav min-text nav-ul-style">
+
+                        <!--<i class="fa fa-angle-left" style="    font-size: 59px;"></i>  <a type="submit" style="position: relative;top: -13px;cursor: pointer"ui-sref="app.briefreport">BACK</a>-->
+                        <li class="li-style-1">
+                            <i class="fa fa-angle-left"></i><a class="li-style-a-1 border-right" ui-sref="app.briefreport">BACK</a>
+                        </li>
+
+                        <li class="li-style-2 ng-scope toltip" ng-if="!clreport.isGuest">
+                            <a class="li-style-a-2 border-right" ng-click="logout()">LOGOUT</a>
+                            <div class="tooltipText" style="">
+                               {{ShowEmail}}
+                            </div>
+                        </li><!-- end ngIf: isLogin -->
+
+                        <li class="li-style-2 ng-scope" ng-if="clreport.isGuest">
+                            <a class="li-style-a-2 border-right" ng-click="clreport.OpenLogin()">SAVE</a>
+                        </li><!-- end ngIf: isLogin -->
+
+                        <li ng-if="UserInfo.showGrowthPage" class="li-style-1">
+                            <a class="li-style-a-1" ui-sref="app.Growthreport">NEXT</a>
+                            <i class="fa fa-angle-right"></i>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+
+
+
+<div class="container container-top-margin hidden-xs hidden-sm">
+
+    <toaster-container toaster-options="{'close-button':true }"></toaster-container>
+    <div class="row top-row top-row-margin cr-padd">
+        <div class="col-md-4 right-border">
+            <div class=" col-md-12  "id="min-1">
+                <h3 class="career-style">CAREER LEVEL: <span class="career-span">{{UserInfo.Level}}</span></h3>
+                <p class="career-p-style">
+                    You are above {{initalBar['levelVal']}}% of the people in {{highestFilter | CamelCase}}
+                </p>
+            </div>
+            <div class="row career-chart-margin">
+                <div class="col-md-12 top-chart">
+                    <highchart id="chart" class="career-chart-style font_size" config="chartConfig_bar"></highchart>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 right-border" >
+            <div class=" col-md-12 " id="min-1">
+                <h3 class="salary-margin">SALARY: <span class="career-span">INR {{UserInfo.Salary}} Lakhs</span></h3>
+                <p class="career-p-style">You are above {{initalBar['SalaryVal']}}% of the people in {{highestFilter | CamelCase}}</p>
+            </div>
+            <div class="row career-chart-margin">
+                <div class="col-md-12 top-chart" ng-if="showChart">
+                    <highchart id="chart" class="font_size career-chart-style" config="chartConfig_barSalary"></highchart>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 comp-div-style" >
+            <div class="col-md-12">
+            <h3 class="comp-style">Company: <span>{{UserInfo.Company}}</span></h3>
+            <p class="font_size show-p comp-p-style">Industry<span class="industry-span">:</span>
+                <strong class="font-weight" ng-if="UserInfo.Industry.split(' ').length>3" tooltip-placement="bottom"
+                        uib-tooltip="{{UserInfo.Industry}}"> {{UserInfo.Industry.split(' ')[0]}} {{UserInfo.Industry.split(' ')[1]}}... </strong>
+                <strong class="font-weight" ng-if="UserInfo.Industry.split(' ').length<=3" >{{UserInfo.Industry}}</strong>
+
+                <a class="show-a a-style" ng-if="changeindustry" ng-click="openIndustry()"><span class="industry-decoration">(view industry group)</span></a>
+            </p>
+            <p class="font_size show-p1 function-style">Function<span class="function-span">:</span>
+                <strong  class="font-weight" ng-if="UserInfo.Role.split(' ').length>3" tooltip-placement="bottom"
+                         uib-tooltip="{{UserInfo.Role}}">{{UserInfo.Role.split(' ')[0]}} {{UserInfo.Role.split(' ')[1]}}...</strong>
+                <strong  class="font-weight" ng-if="UserInfo.Role.split(' ').length<=3">{{UserInfo.Role}}</strong>
+                <a class="show-a1 a-style"  ng-if="changefunction" ng-click="openFunction()"><span
+                        style="    text-decoration: underline;">(view function group)</span></a>
+            </p></div>
+    </div>
+
+    </div>
+</div>
+<div class="container container-top-margin hidden-md hidden-lg">
+
+    <toaster-container toaster-options="{'close-button':true }"></toaster-container>
+    <div class="row top-row top-row-margin">
+        <div class="col-xs-12 top-min-div top-min-div-1 hrr">
+            <div class="col-xs-12 "id="min-1">
+                <h3 class="career-style">CAREER LEVEL: <span class="career-span">{{UserInfo.Level}}</span></h3>
+                <p class="career-p-style">
+                    You are above {{initalBar['levelVal']}}% of the people in {{highestFilter | CamelCase}}
+                </p>
+            </div>
+            <div class="row career-chart-margin">
+                <div class="col-xs-12 top-chart">
+                    <highchart id="chart" class="career-chart-style font_size" config="chartConfig_bar"></highchart>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 top-min-div hrr" >
+            <div class=" col-xs-12 hrr"  id="min-1">
+                <h3 class="salary-margin">SALARY: <span class="career-span">INR {{UserInfo.Salary}} Lakhs</span></h3>
+                <p class="career-p-style">You are above {{initalBar['SalaryVal']}}% of the people in {{highestFilter | CamelCase}}</p>
+            </div>
+            <div class="row career-chart-margin">
+                <div class="col-xs-12 top-chart" ng-if="showChart">
+                    <highchart id="chart" class="font_size career-chart-style" config="chartConfig_barSalary"></highchart>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 comp-div-style top-min-div" >
+            <div class="col-xs-12">
+                <h3 class="comp-style">Company: <span>{{UserInfo.Company}}</span></h3>
+                <p class="font_size show-p comp-p-style">Industry<span class="industry-span">:</span>
+                    <strong class="font-weight" ng-if="UserInfo.Industry.split(' ').length>3" tooltip-placement="bottom"
+                            uib-tooltip="{{UserInfo.Industry}}"> {{UserInfo.Industry.split(' ')[0]}} {{UserInfo.Industry.split(' ')[1]}}... </strong>
+                    <strong class="font-weight" ng-if="UserInfo.Industry.split(' ').length<=3" >{{UserInfo.Industry}}</strong>
+
+                    <a class="show-a a-style" ng-click="openIndustry()"><span class="industry-decoration">(view industry group)</span></a>
+                </p>
+                <p class="font_size show-p1 function-style">Function<span class="function-span">:</span>
+                    <strong  class="font-weight" ng-if="UserInfo.Role.split(' ').length>3" tooltip-placement="bottom"
+                             uib-tooltip="{{UserInfo.Role}}">{{UserInfo.Role.split(' ')[0]}} {{UserInfo.Role.split(' ')[1]}}...</strong>
+                    <strong  class="font-weight" ng-if="UserInfo.Role.split(' ').length<=3">{{UserInfo.Role}}</strong>
+                    <a class="show-a1 a-style" ng-click="openFunction()"><span class="industry-decoration">(view function group)</span></a>
+                </p></div>
+        </div>
+
+    </div>
+</div>
+
+    <div class="row career-level-row">
+        <div class="col-md-12 col-sm-12 ">
+            <h3 class="font_size">CAREER LEVEL COMPARISON</h3>
+        </div>
+    </div>
+
+    <div class="row career-highchart cr-padd text-center hidden-sm hidden-xs">
+        <div class="col-lg-1 col-md-1  "></div>
+        <div class="col-md-10 col-lg-10 col-sm-12 col-xs-12 div-highchart">
+            <highchart id="chart" config="chartConfig_barUserPercent"></highchart>
+        </div>
+        <div class="col-lg-1 col-md-1"></div>
+    </div>
+
+    <div class="row career-highchart text-center hidden-md hidden-lg">
+    <div class="col-xs-12 div-highchart">
+        <highchart id="chart" config="chartConfig_barUserPercent_mob"></highchart>
+    </div>
+
+</div>
+    <!--<div class="row career-highchart text-center hidden-md hidden-lg">-->
+    <!--<div class="col-lg-1 col-md-1  hidden-sm hidden-xs"></div>-->
+    <!--<div class="col-md-10 col-lg-10 col-sm-12 col-xs-12 div-highchart">-->
+    <!--<highchart id="chart" config="chartConfig_barUserPercent_mob"></highchart>-->
+    <!--</div>-->
+    <!--<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>-->
+    <!--</div>-->
+
+
+<div class="row cr-padd">
+    <div class="col-md-12 col-sm-12 col-xs-12 text-center change-view-para" ng-if="btnStatus.length>1">
+        <p> CHANGE VIEW</p>
+    </div>
+
+    <div class="col-md-12 btn-a text-center">
+        <div ng-if="btnCmpPromotion2" class="btn-div">
+            <a type="submit" ng-class="comp1" class="btn " href="" ng-click="changecl_graph('Your Company')">COMPANY</a>
+        </div>
+        <div ng-if="btnIndFunPromotion2" class="btn-div">
+            <a type="submit" ng-class="indfun1" class="btn" href=""
+               ng-click="changecl_graph('Your Industry and Function')">INDUSTRY & FUNCTION</a>
+        </div>
+        <div ng-if="btnFunPromotion2" class="btn-div">
+            <a type="submit" ng-class="fun1" class="btn" href="" ng-click="changecl_graph('Your Function')">FUNCTION</a>
+        </div>
+        <div ng-if="btnIndPromotion2" class="btn-div">
+            <a type="submit" ng-class="ind1" class="btn" href="" ng-click="changecl_graph('Your Industry')">INDUSTRY</a>
+        </div>
+
+        <div ng-if="btnFunGrpPromotion2 && changefunction" class="btn-div">
+            <a type="submit" ng-class="fungrp1" class="btn" href="" ng-click="changecl_graph('Your Function Group')">FUNCTION
+                GROUP</a>
+        </div>
+        <div ng-if="btnIndGrpPromotion2 && changeindustry" class="btn-div">
+            <a type="submit" ng-class="indgrp1" class="btn" href="" ng-click="changecl_graph('Your Industry Group')">INDUSTRY
+                GROUP</a>
+        </div>
+        <div class="btn-div">
+            <a type="submit" ng-class="all" class="btn1" href="" ng-click="changecl_graph('All_Questions')">ALL</a>
+        </div>
+    </div>
+
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center col-sm-12 col-xs-12">
+        <p class="newtext-para">{{newtext}}</p>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+
+<div class="container" ng-if="showChart">
+    <div class="row cr-padd">
+        <div class="col-md-12">
+            <h2 class="font_size text-center salary-com-h2">SALARY COMPARISON</h2>
+            <div class="col-md-2 col-lg-2 hidden-xs hidden-sm"></div>
+            <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 min-row min-row-new ">
+                <h6 align="center">IN YOUR {{head}}</h6>
+                <highchart id="chart" class="font_size" config="chartConfig_comp"></highchart>
+                <div class="col-md-12 font_size hidden-sm hidden-xs" id="rot">Compensation (INR Lakhs)</div>
+                <p class=" col-md-12 text-center font_size font_size_1 font_size_1_pera">{{CompensatioXaxisTitle}}</p>
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center change-view-highchart" ng-if="btnStatus.length>1">
+                    <p> CHANGE VIEW</p>
+                </div>
+                <div class="col-md-12 col-xs-12 col-sm-12 btn-a text-center in-your-industry">
+                    <div ng-if="btnComany" class="btn-div">
+                        <a type="submit" ng-class="comp" class="btn " href=""
+                           ng-click="getChartCompensation('Company')">COMPANY <span></span></a>
+                    </div>
+                    <div ng-if="btnFunInd" class="btn-div">
+                        <a type="submit" ng-class="indfun" class="btn" href=""
+                           ng-click="getChartCompensation('Industry and Function')">INDUSTRY & FUNCTION <span
+                                onclick='return false'></span></a>
+                    </div>
+                    <div ng-if="btnFun" class="btn-div">
+                        <a type="submit" ng-class="fun" class="btn" href="" ng-click="getChartCompensation('Function')">FUNCTION
+                            <span onclick='return false'></span></a>
+                    </div>
+                    <div ng-if="btnInd" class="btn-div">
+                        <a type="submit" ng-class="ind" class="btn" href="" ng-click="getChartCompensation('Industry')">INDUSTRY
+                            <span onclick='return false'></span></a>
+                    </div>
+
+                    <div ng-if="btnFunGrp && changefunction" class="btn-div">
+                        <a type="submit" ng-class="fungrp" class="btn" href=""
+                           ng-click="getChartCompensation('Function Group')">FUNCTION GROUP <span
+                                onclick='return false'></span></a>
+                    </div>
+                    <div ng-if="btnIndGrp && changeindustry" class="btn-div">
+                        <a type="submit" ng-class="indgrp" class="btn2" href=""
+                           ng-click="getChartCompensation('Industry Group')">INDUSTRY GROUP <span
+                                onclick='return false'></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-lg-2 hidden-xs hidden-sm"></div>
+        </div>
+
+
+        <div class="row hidden-lg hidden-md ">
+
+                <div class="col-sm-12 col-xs-12 perc-padd min-row-1">
+                    <div class="col-xs-12 font_size text-center">
+                        <b class="b-2">Salary Percentile Summary</b>
+                    </div>
+                    <div class="row salary-sub-div" ng-if="chartConfig_barCom.xAxis.categories[0]!=null&&btnComany">
+                        <div class="col-xs-12">
+                            <p class="font_size">{{chartConfig_barCom.xAxis.categories[0]}}</p>
+                            <highchart id="chart" class="font_size" config="chartConfig_barCom"></highchart>
+                        </div>
+                    </div>
+
+                    <div class="row salary-sub-div" ng-if="chartConfig_barInFn.xAxis.categories[0]!=null&&btnFunInd">
+                        <div class="col-xs-12">
+                            <p class="font_size">{{chartConfig_barInFn.xAxis.categories[0]}}</p>
+                            <highchart id="chart" class="font_size" config="chartConfig_barInFn"></highchart>
+                        </div>
+                    </div>
+
+                    <div class="row salary-sub-div" ng-if="chartConfig_barFn.xAxis.categories[0]!=null&&btnFun">
+                        <div class="col-xs-12">
+                            <p class="font_size">{{chartConfig_barFn.xAxis.categories[0]}}</p>
+                            <highchart id="chart" class="font_size" config="chartConfig_barFn"></highchart>
+                        </div>
+                    </div>
+
+                    <div class="row salary-sub-div" ng-if="chartConfig_barIn.xAxis.categories[0]!=null&&btnInd">
+                        <div class="col-xs-12">
+                            <p class="font_size">{{chartConfig_barIn.xAxis.categories[0]}}</p>
+                            <highchart id="chart" class="font_size" config="chartConfig_barIn"></highchart>
+                        </div>
+                    </div>
+
+                    <div class="row salary-sub-div" ng-if="chartConfig_barFnGrp.xAxis.categories[0]!=null && btnFunGrp && changefunction">
+                        <div class="col-xs-12">
+                            <p class="font_size">{{chartConfig_barFnGrp.xAxis.categories[0]}}</p>
+                            <highchart id="chart" class="font_size" config="chartConfig_barFnGrp"></highchart>
+                        </div>
+                    </div>
+
+                    <div class="row salary-sub-div" ng-if="chartConfig_barInGrp.xAxis.categories[0]!=null && btnIndGrp && changeindustry">
+                        <div class="col-xs-12">
+                            <p class="font_size">{{chartConfig_barInGrp.xAxis.categories[0]}}</p>
+                            <highchart id="chart" class="font_size" config="chartConfig_barInGrp"></highchart>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+        <div class="row hidden-sm hidden-xs">
+
+            <div class="col-md-12 font_size margin-btom  min-row-1 text-center">
+                <b class="b-1">Salary Percentile Summary</b>
+            </div>
+
+            <div class="col-md-12 col-lg-12 salary-sub-div" ng-if="chartConfig_barCom.xAxis.categories[0]!=null&&btnComany">
+                <div class="col-lg-2 col-md-2"></div>
+                <div class="col-lg-3 col-md-3 text-right">
+                    <p class="font_size">{{chartConfig_barCom.xAxis.categories[0]}}</p>
+                </div>
+                <div class="col-lg-4 col-md-4 text-left">
+                    <highchart id="chart" class="font_size" config="chartConfig_barCom"></highchart>
+                </div>
+                <div class="col-lg-3 col-md-3"></div>
+            </div>
+
+
+            <div class="col-md-12 col-lg-12  salary-sub-div" ng-if="chartConfig_barInFn.xAxis.categories[0]!=null&&btnFunInd">
+                <div class="col-lg-2 col-md-2"></div>
+                <div class="col-lg-3 col-md-3 text-right">
+                    <p class="font_size">{{chartConfig_barInFn.xAxis.categories[0]}}</p>
+                </div>
+                <div class="col-lg-4 col-md-4 text-left">
+                    <highchart id="chart" class="font_size" config="chartConfig_barInFn"></highchart>
+                </div>
+                <div class="col-lg-3 col-md-3"></div>
+            </div>
+
+            <div class="col-md-12 col-lg-12 salary-sub-div" ng-if="chartConfig_barFn.xAxis.categories[0]!=null&&btnFun">
+                <div class="col-lg-2 col-md-2"></div>
+                <div class="col-lg-3 col-md-3 text-right">
+                    <p class="font_size">{{chartConfig_barFn.xAxis.categories[0]}}</p></div>
+                <div class="col-lg-4 col-md-4 text-left">
+                    <highchart id="chart" class="font_size" config="chartConfig_barFn"></highchart>
+                </div>
+                <div class="col-lg-3 col-md-3"></div>
+            </div>
+
+
+            <div class="col-md-12 col-lg-12 salary-sub-div" ng-if="chartConfig_barIn.xAxis.categories[0]!=null&&btnInd">
+                <div class="col-lg-2 col-md-2"></div>
+                <div class="col-lg-3 col-md-3 text-right">
+                    <p class="font_size">{{chartConfig_barIn.xAxis.categories[0]}}</p></div>
+                <div class="col-lg-4 col-md-4 text-leftt">
+                    <highchart id="chart" class="font_size" config="chartConfig_barIn"></highchart>
+                </div>
+                <div class="col-lg-3 col-md-3"></div>
+            </div>
+
+
+            <div class="col-md-12 col-lg-12 salary-sub-div"
+                 ng-if="chartConfig_barFnGrp.xAxis.categories[0]!=null && btnFunGrp && changefunction">
+                <div class="col-lg-2 col-md-2"></div>
+
+                <div class="col-lg-3 col-md-3 text-right">
+                    <p class="font_size">{{chartConfig_barFnGrp.xAxis.categories[0]}}</p>
+                </div>
+                <div class="col-lg-4 col-md-4 text-left">
+
+                    <highchart id="chart" class="font_size" config="chartConfig_barFnGrp"></highchart>
+                </div>
+                <div class="col-lg-3 col-md-3"></div>
+
+            </div>
+
+            <div class="col-md-12 col-lg-12 salary-sub-div"
+                 ng-if="chartConfig_barInGrp.xAxis.categories[0]!=null && btnIndGrp && changeindustry">
+                <div class="col-lg-2 col-md-2"></div>
+
+                <div class="col-lg-3 col-md-3 text-right">
+
+                    <p class="font_size">{{chartConfig_barInGrp.xAxis.categories[0]}}</p></div>
+                <div class="col-lg-4 col-md-4 text-left">
+
+                    <highchart id="chart" class="font_size" config="chartConfig_barInGrp"></highchart>
+                </div>
+                <div class="col-lg-3 col-md-3"></div>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 text center col-sm-12 col-xs-12">
+                <p class="last-para_where">
+                    {{CL_Text}} <a class="higher-a" ui-sref="app.ranking">
+
+                                    <span class="col-xs-12 col-md 12 text-center">Where can I get higher pay?</span>
+				</a>
+                </p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>

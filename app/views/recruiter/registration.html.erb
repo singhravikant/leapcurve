@@ -1,0 +1,798 @@
+<% if browser.device.mobile? %>
+
+
+  <style>
+    .section {
+      position: relative;
+      display: block;
+      padding-top: 6%;
+      padding-right: 10%;
+      padding-left: 10%;
+      text-align: center;
+      width: 80%;
+      float: left;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 15%;
+
+    }
+
+    .form-div {
+      text-align: center;
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+    }
+
+    .form-div p {
+      margin-bottom: 10px;
+      margin-top: 0;
+      letter-spacing: 1px;
+      font-family: Poppins-SemiBold;
+      text-align: center;
+      font-size: 17px;
+
+    }
+
+    .txt-field {
+      border-bottom: 1px solid #0d305f !important;
+      padding: 45px 0 0 0;
+      margin-bottom: 0;
+      position: relative;
+      color: black;
+      border: none;
+      box-shadow: none;
+      width: 100%;
+      outline: none;
+      font-size: 15px;
+    }
+
+    @media screen and (max-width: 1300px) {
+      .form-coll {
+        width: 29% !important;
+      }
+    }
+
+    .form-coll {
+      display: block;
+      position: relative;
+      float: left;
+      width: 100% !important;
+      padding: 1% 0% 1.5%;
+      min-height: 1px;
+    }
+
+    .submit-btn {
+      background: #eeeeee;
+      cursor: pointer;
+      margin-top: 3.5%;
+      color: #4c4c4c;
+      width: 80%;
+      margin-left: 10%;
+      font-family: Poppins-SemiBold;
+      padding: 5% 23% 5% 23%;
+      border: none;
+      font-size: 22px;
+      float: left;
+    }
+
+    .form-row {
+      width: 100%;
+      position: relative;
+      float: left;
+      display: block;
+    }
+
+    .form-coll-a {
+      text-align: left;
+      text-align: left;
+      display: block;
+      float: left;
+      position: relative;
+    }
+
+    .form-coll-a a {
+      text-decoration: none;
+      color: #2d2b2b;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid silver;
+      font-size: 12px;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      font-size: 15px;
+      text-align: left;
+      color: black;
+      font-family: Montserrat-Regular;
+    }
+
+    .form-coll a {
+      position: absolute;
+      font-size: 10px;
+      left: 0px;
+      margin-top: 4px;
+      z-index: 999;
+      text-decoration: none;
+      font-family: Montserrat-Regular;
+      color: #2d2b2b;
+      font-weight: bold;
+      border-bottom: 1px solid silver;
+    }
+
+    .form-coll-a button {
+      font-family: poppins-regular;
+    }
+
+    .border-dark {
+      border-bottom: 2px solid #464646 !important;
+    }
+
+    .border-light {
+      border-bottom: 2px solid #464646 !important;
+    }
+
+    .add-btn {
+      font-family: Poppins-SemiBold;
+    }
+  </style>
+
+  <section class="section">
+    <article class="article">
+      <div class="form-div">
+        <p>RECRUITER REGISTRATION</p>
+        <%= form_tag({:action => :sign_up}, {:method => :post}) %>
+
+
+        <div class="form-row">
+          <div class="form-coll">
+            <%= text_field_tag "company_name", params['company_name'], :placeholder => 'Company Name', :class => "txt-field border-light", :size => 15, :oninvalid => "this.setCustomValidity('Please Enter valid email')", :required => ""%>
+          </div>
+        </div>
+        <div class="form-row">
+
+          <div class="form-coll">
+            <%= text_field_tag "industry_name", params['industry_name'], :list => 'industry_names', :placeholder => 'Industry Name', :class => "txt-field border-light", :required => true %>
+            <datalist id="industry_names">
+              <% @allInd.each do |value| %>
+                <option value="<%= value %>"></option>
+              <% end %>
+            </datalist>            <%= link_to "ADD MORE INDUSTRYES", :class => "add-more-a" %>
+          </div>
+
+        </div>
+
+        <div class="form-row">
+          <div class="form-coll">
+
+            <%= number_field_tag "no_of_emp", params['no_of_emp'], :min => "0", :placeholder => 'Number Of Employees', :class => "txt-field border-light", :size => 15, :required => true %>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-coll">
+
+            <%= number_field_tag "annual_revenue", params['annual_revenue'], :min => "0", :placeholder => 'Annual Revenue (INR Crore)', :class => "txt-field border-light", :size => 15, :required => true %>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-coll">
+
+            <%= text_field_tag "first_name", params['first_name'], :placeholder => 'First Name', :class => "txt-field border-dark", :size => 15, :required => true %>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-coll">
+
+            <%= text_field_tag "last_name", params['last_name'], :placeholder => 'Last Name', :class => "txt-field  border-dark", :size => 15, :required => true %>
+          </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+
+          <div class="form-coll">
+
+            <%= text_field_tag "designation", params['designation'], :placeholder => 'Designation', :class => "txt-field border-dark", :size => 15, :required => true %>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-coll">
+
+            <%= email_field_tag "email", params['email'], :placeholder => 'Email', :class => "txt-field border-dark", :size => 15, :required => true %>
+          </div>
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-coll">
+
+            <%= password_field_tag "password", params['password'], :placeholder => 'Password', :class => "txt-field border-dark", :size => 15, :required => true %>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-coll">
+
+            <%= password_field_tag "conf_pass", params['conf_pass'], :placeholder => 'Confirm Password', :class => "txt-field border-dark", :size => 15, :required => true %>
+          </div>
+
+        </div>
+
+        <div class="form-row">
+          <%= submit_tag 'REGISTER', :onclick => "return submitform()", :class => "submit-btn" %>
+        </div>
+
+
+      </div>
+
+    </article>
+  </section>
+
+<% elsif browser.device.tablet? %>
+
+
+  <style>
+    .section {
+      position: relative;
+      display: block;
+      padding-right: 10%;
+      padding-left: 10%;
+      text-align: center;
+      width: 80%;
+      float: left;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+
+    }
+
+    .form-div {
+      /*border:2px solid  #0d305f;*/
+      text-align: center;
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+    }
+
+    .form-div p {
+      margin-bottom: 45px;
+      margin-top: 0;
+      letter-spacing: 1px;
+      font-family: Poppins-SemiBold;
+      text-align: center;
+    }
+
+    .txt-field {
+      border-bottom: 1px solid #0d305f !important;
+      padding: 5px 0;
+      margin-bottom: 0;
+      position: relative;
+      color: black;
+      border: none;
+      box-shadow: none;
+      width: 90%;
+      outline: none;
+      float: left;
+      margin-left: 5%;
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 1300px) {
+      .form-coll {
+        width: 29% !important;
+      }
+    }
+
+    .form-coll {
+      display: block;
+      position: relative;
+      float: left;
+      width: 50% !important;
+      padding: 1% 0% 1.5%;
+      min-height: 1px;
+    }
+
+    .submit-btn {
+      background: #eeeeee;
+      cursor: pointer;
+      margin-top: 3.5%;
+      color: #4c4c4c;
+      width: 60%;
+      margin: 4% 20%;
+      font-family: Poppins-SemiBold;
+      padding: 1% 13% 1% 13%;
+      border: none;
+      font-size: 22px;
+      float: left;
+    }
+
+    .form-row {
+      width: 100%;
+      position: relative;
+      float: left;
+      display: block;
+    }
+
+    .form-coll-a {
+      text-align: left;
+      text-align: left;
+      display: block;
+      float: left;
+      position: relative;
+    }
+
+    .form-coll-a a {
+      text-decoration: none;
+      color: #2d2b2b;
+      letter-spacing: 0.5px;
+      font-weight: bold;
+      border-bottom: 1px solid silver;
+      font-size: 12px;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      font-size: 15px;
+      color:black;
+      text-align: left;
+      font-family: Montserrat-Regular;
+    }
+
+    .form-coll a {
+      position: absolute;
+      top: 10px;
+      font-size: 11px;
+      font-family: Montserrat-Regular;
+      text-decoration: none;
+      color: #2d2b2b;
+      font-weight: bold;
+      border-bottom: 1px solid silver;
+    }
+
+    .border-dark {
+      border-bottom: 2px solid #464646 !important;
+    }
+
+    .border-light {
+      border-bottom: 2px solid #464646 !important;
+    }
+
+    .add-btn {
+      font-family: Poppins-SemiBold;
+    }
+  </style>
+
+  <section class="section">
+    <article class="article">
+      <div class="form-div">
+        <p>RECRUITER REGISTRATION</p>
+        <%= form_tag({:action => :sign_up}, {:method => :post}) %>
+
+
+        <div class="form-row">
+          <div class="form-coll">
+            <%= text_field_tag "company_name", params['company_name'], :placeholder => 'Company Name', :class => "txt-field border-light", :size => 15, :required => true %>
+          </div>
+
+          <div class="form-coll">
+            <%= select_tag :industry_name, options_for_select(@allFun), :prompt => 'Industry', :class => "txt-field border-light", :required => true %>
+            <%#= text_field_tag "industry_name", params['industry_name'], :list => 'industry_names', :placeholder => 'Industry Name', :class => "txt-field border-light", :required => true %>
+            <!--            <datalist id="industry_names">-->
+            <%# @allInd.each do |value| %>
+            <!--                <option value="<%#= value %>"></option>-->
+            <%# end %>
+            <!--            </datalist>-->
+            <%= link_to "ADD MORE INDUSTRYES", :class => "add-more-a" %>
+          </div>
+
+        </div>
+
+        <div class="form-row">
+          <div class="form-coll">
+
+            <%= number_field_tag "no_of_emp", params['no_of_emp'], :min => "0", :placeholder => 'Number Of Employees', :class => "txt-field border-light", :size => 15, :required => true %>
+          </div>
+          <div class="form-coll">
+
+            <%= number_field_tag "annual_revenue", params['annual_revenue'], :min => "0", :placeholder => 'Annual Revenue (INR Crore)', :class => "txt-field border-light", :size => 15, :required => true %>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-coll">
+
+            <%= text_field_tag "first_name", params['first_name'], :placeholder => 'First Name', :class => "txt-field border-dark", :size => 15, :required => true %>
+          </div>
+          <div class="form-coll">
+
+            <%= text_field_tag "last_name", params['last_name'], :placeholder => 'Last Name', :class => "txt-field  border-dark", :size => 15, :required => true %>
+          </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+
+          <div class="form-coll">
+
+            <%= text_field_tag "designation", params['designation'], :placeholder => 'Designation', :class => "txt-field border-dark", :size => 15, :required => true %>
+          </div>
+          <div class="form-coll">
+
+            <%= email_field_tag "email", params['email'], :placeholder => 'Email', :class => "txt-field border-dark", :size => 15, :required => true %>
+          </div>
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-coll">
+
+            <%= password_field_tag "password", params['password'], :placeholder => 'Password', :class => "txt-field border-dark", :size => 15, :required => true %>
+          </div>
+          <div class="form-coll">
+
+            <%= password_field_tag "conf_pass", params['conf_pass'], :placeholder => 'Confirm Password', :class => "txt-field border-dark", :size => 15, :required => true %>
+          </div>
+
+        </div>
+
+        <div class="form-row">
+          <%= submit_tag 'REGISTER', :onclick => "return submitform()", :class => "submit-btn" %>
+        </div>
+
+
+      </div>
+
+    </article>
+  </section>
+
+<% else %>
+
+
+  <style>
+    .section {
+      position: relative;
+      display: block;
+      padding-right: 15%;
+      padding-left: 15%;
+      padding-top: 1%;
+      text-align: center;
+      width: 70%;
+      float: left;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+
+    }
+
+    .form-div {
+      /*border:2px solid  #0d305f;*/
+      text-align: center;
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+    }
+
+    .form-div p{
+      /*margin-bottom: 45px;*/
+      padding-left: 6.5%;
+      letter-spacing: 1px;
+      font-family: Poppins-SemiBold;
+      /*margin-top: 0;*/
+      font-size: 22px;
+      text-align: left;
+    }
+
+    .txt-field {
+      border-bottom: 1px solid #0d305f !important;
+      padding: 5px 0;
+      margin-bottom: 0;
+      position: relative;
+      margin-left: 10%;
+      color: black;
+      border: none;
+      line-height: 25px;
+      box-shadow: none;
+      width: 70%;
+      outline: none;
+      float: left;
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 1300px) {
+      .form-coll {
+        width: 29% !important;
+      }
+    }
+
+    .form-coll {
+      display: block;
+      position: relative;
+      float: left;
+      width: 33.33%;
+      padding: 1% 0% 1.5%;
+      min-height: 1px;
+    }
+
+    .submit-btn {
+      background: #eeeeee;
+      cursor: pointer;
+      margin-top: 3.5%;
+      outline: none;
+      color: #4c4c4c;
+      width: 70%;
+      margin-left: 20%;
+      font-family: Poppins-SemiBold;
+      padding: 3% 23% 3% 20%;
+      border: none;
+      font-size: 22px;
+      float: left;
+    }
+
+    #delbtn1 {
+      cursor: pointer;
+    }
+
+    .form-row {
+      width: 100%;
+      position: relative;
+      float: left;
+      display: block;
+    }
+
+    .form-coll-a {
+      text-align: left;
+      text-align: left;
+      display: block;
+      float: left;
+      width: 33.33%;
+      position: relative;
+    }
+
+    .form-coll-a a {
+      position: absolute;
+      top: 20px;
+      left: -15px;
+      text-decoration: none;
+      color: #2d2b2b;
+      letter-spacing: 0.5px;
+      font-weight: bold;
+      border-bottom: 1px solid silver;
+      font-size: 10px;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      font-size: 15px;
+      color:black;
+      text-align: left;
+      font-family: Montserrat-Regular;
+    }
+
+    .border-dark {
+      border-bottom: 2px solid #464646 !important;
+    }
+
+    .border-light {
+      border-bottom: 2px solid #4c4c4c !important;
+    }
+
+    option[value=""] {
+      display: none;
+    }
+
+    .prompt {
+      font-size: 15px;
+    }
+
+    .add-btn {
+      font-family: Poppins-SemiBold;
+    }
+
+    .field-less {
+      margin-left: 20%;
+    }
+
+    .field-add {
+      margin-left: 0;
+    }
+    .field-add-less{
+      margin-left: 10%;
+    }
+  </style>
+
+  <section class="section">
+    <article class="article">
+      <div class="form-div">
+        <p>RECRUITER REGISTRATION</p>
+
+        <%= form_tag({:action => :sign_up}, {:method => :post}) %>
+
+
+        <div class="form-row">
+          <div class="form-coll">
+            <%= text_field_tag "company_name", params['company_name'], :placeholder => 'Company Name', :class => "txt-field border-light field-less", :size => 15, :oninvalid => "this.setCustomValidity('Please Enter Company Name')", :oninput => "setCustomValidity('')",  :required => "" %>
+          </div>
+        </div>
+
+        <!--        <div class="form-row">-->
+        <!--          <div class="form-coll">-->
+        <%#= select_tag :industry_name, options_for_select(@allInd), :prompt => 'Industry', :class => "txt-field border-light prompt field-less", :oninvalid => "this.setCustomValidity('Please Enter Industry')", :oninput => "setCustomValidity('')",  :required => "" %>
+        <%#= text_field_tag "industry_name", params['industry_name'], :list => 'industry_names', :placeholder => 'Industry Name', :class => "txt-field border-light", :required => true %>
+        <!--            <datalist id="industry_names">-->
+        <%# @allInd.each do |value| %>
+        <!--                <option value="<%#= value %>"></option>-->
+        <%# end %>
+        <!--            </datalist>-->
+        <!--          </div>-->
+
+        <!--          <span id="responce1"></span>-->
+        <!--          <span id="responce2"></span>-->
+
+        <!--          <div class="form-coll-a">-->
+        <%#= link_to "ADD MORE INDUSTRIES" %>
+        <!--            <button type="button" class="add-btn" id="add" onclick="addmore()">ADD MORE INDUSTRIES</button>-->
+        <!--          </div>-->
+        <!--        </div>-->
+
+        <!--        <div class="form-row">-->
+        <!--          <div class="form-coll">-->
+
+        <%#= number_field_tag "no_of_emp", params['no_of_emp'], :min => "0", :onkeypress =>"return isNumber(event)", :placeholder => 'Number Of Employees ', :class => "txt-field border-light field-less", :size => 15, :oninvalid => "this.setCustomValidity('Please Enter Number Of Employees')", :oninput => "setCustomValidity('')",  :required => "" %>
+        <!--          </div>-->
+        <!--          <div class="form-coll">-->
+
+        <%#= number_field_tag "annual_revenue", params['annual_revenue'], :min => "0", :onkeypress =>"return isNumber(event)", :placeholder => 'Annual Revenue (INR Crore)', :class => "txt-field border-light", :size => 15, :oninvalid => "this.setCustomValidity('Please Enter Annual Revenue')", :oninput => "setCustomValidity('')",  :required => "" %>
+        <!--          </div>-->
+        <!--          <div class="form-coll">-->
+        <%#= select_tag :geographical_Spread, options_for_select(['Regional (1-5 States)', 'National (5+ States)', 'International (1-5 Countries)', 'Global (5+ Countries)']), :prompt => 'Geographical Spread', :class => "txt-field border-light prompt field-add", :oninvalid => "this.setCustomValidity('Please Enter Geographical Spread')", :oninput => "setCustomValidity('')",  :required => "" %>
+        <!--          </div>-->
+        <!--        </div>-->
+
+        <div class="form-row">
+          <div class="form-coll">
+
+            <%= text_field_tag "first_name", params['first_name'], :placeholder => 'First Name', :class => "txt-field border-dark field-less", :size => 15, :oninvalid => "this.setCustomValidity('Please Enter First Name')", :oninput => "setCustomValidity('')",  :required => "" %>
+          </div>
+          <div class="form-coll">
+
+            <%= text_field_tag "last_name", params['last_name'], :placeholder => 'Last Name', :class => "txt-field border-dark", :size => 15, :oninvalid => "this.setCustomValidity('Please Enter Last Name')", :oninput => "setCustomValidity('')",  :required => "" %>
+          </div>
+          <div class="form-coll">
+
+            <%= text_field_tag "designation", params['designation'], :placeholder => 'Designation', :class => "txt-field border-dark field-add", :size => 15, :oninvalid => "this.setCustomValidity('Please Enter Designation')", :oninput => "setCustomValidity('')",  :required => ""%>
+          </div>
+        </div>
+
+
+        <div class="form-row">
+          <div class="form-coll">
+
+            <%= email_field_tag "email", params['email'], :placeholder => 'Email', :class => "txt-field border-dark field-less", :size => 15, :oninvalid => "this.setCustomValidity('Please Enter Email')", :oninput => "setCustomValidity('')",  :required => "" %>
+          </div>
+          <div class="form-coll">
+
+            <%= password_field_tag "password", params['password'], :placeholder => 'Password', :class => "txt-field  border-dark", :onblur => "return matchpass()", :size => 15, :oninvalid => "this.setCustomValidity('Please Enter Password')", :oninput => "setCustomValidity('')",  :required => "" %>
+          </div>
+          <div class="form-coll">
+
+            <%= password_field_tag "conf_pass", params['conf_pass'], :placeholder => 'Confirm Password', :class => "txt-field border-dark field-add", :onblur => "return matchpass()", :size => 15, :oninvalid => "this.setCustomValidity('Please Enter Confirm Password')", :oninput => "setCustomValidity('')",  :required => "" %>
+          </div>
+
+        </div>
+
+        <div class="form-row">
+          <div class="form-coll">
+            <%= submit_tag 'REGISTER', :onclick => "return matchpass()", :class => "submit-btn" %>
+          </div>
+        </div>
+
+
+      </div>
+
+    </article>
+  </section>
+
+<% end %>
+<script>
+    var countBox = 1;
+
+    function addmore() {
+        if (countBox <= 2) {
+            var boxName = "industry" + countBox;
+            document.getElementById('responce' + countBox).innerHTML = ' <div class="form-coll" id="del' + countBox + '"><select name="' + boxName + '" id="' + boxName + '" class="txt-field border-light prompt field-add-less" required="required"></select><a id="delbtn' + countBox + '" onclick="del(' + countBox + ')">X</a></div>';
+            document.getElementById(boxName).innerHTML =  document.getElementById('industry_name').innerHTML
+            if (countBox == 2) {
+                document.getElementById('add').style.display = 'none';
+            }
+            countBox += 1;
+        }
+        else {
+            document.getElementById('add').style.display = 'none';
+        }
+
+    }
+
+    function del(id) {
+        var parent = document.getElementById("del" + id);
+        var child1 = document.getElementById("industry" + id);
+        var child2 = document.getElementById("delbtn" + id);
+        parent.removeChild(child1);
+        parent.removeChild(child2);
+        parent.style.display = 'none';
+        parent.id = "";
+        countBox -= 1;
+        document.getElementById('add').style.display = 'block';
+    }
+
+    function matchpass() {
+        var alert = document.getElementById('flash');
+        var pass = document.getElementById('password').value;
+        var conf_pass = document.getElementById('conf_pass').value;
+        if (pass != "" && conf_pass != "") {
+            if (pass != conf_pass) {
+                alert.innerHTML = "Password does not match!"
+                alert.classList.add('alert-success')
+                alert.classList.add('show')
+                alert.classList.remove('hide')
+
+                setTimeout(function () {
+                    alert.classList.add('hide')
+                    alert.classList.remove('show')
+                },1000);
+                return false;
+            } else {
+                return true;
+            }
+
+        }
+
+
+    }
+</script>

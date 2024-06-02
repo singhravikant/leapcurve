@@ -1,0 +1,166 @@
+<style>
+    .mb-lg {
+        margin-bottom: 10px;
+    }
+
+    .modal-open {
+        overflow: auto;
+    }
+
+    .modal-open .modal {
+        overflow-x: scroll;
+        overflow-y: auto;
+    }
+</style>
+<section>
+    <div class="modal-header">
+        <button type="button" data-dismiss="modal" aria-hidden="true" ng-click="close()"
+                style="float: right;background: transparent;border: none;font-size: 18px;">x
+        </button>
+        <div class="col-md-2">
+            <img src="assets/logo1.png" class="img-rsponsive" style="height: 50px;">
+        </div>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div style="height: 25px"></div>
+        <div class="col-md-offset-1 col-md-10 col-md-10 mb-lg" style="border:2px solid blue">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-lg" style="border-right:2px solid blue ">
+                <!--row1-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12" >
+                        <h4 style="font-family:verdana;word-spacing:2px;text-align:center;"><b>Already have an account?</b></h4>
+                    </div>
+                </div>
+                <!--row3-->
+                <div class="row">
+                    <div class="col-md-offset-0 col-sm-10 col-md-12 col-lg-12">
+                        <div class="col-sm-12 col-md-12">
+                            <form class="form-group" style="margin-top:10px;">
+
+                                <div class="form-group has-feedback floating-label-wrapper">
+                                    <label for="InputEmailUser">Email</label>
+                                    <input type="email" placeholder="Email" id="InputEmailUser" required=" "
+                                           autocomplete="off" class="form-control " ng-model="loginuserinfo.email"
+                                           with-floating-label
+                                           style="border-bottom-color: blue; border-left:none;border-right:none;border-top:none ;  margin-top:-0px"/>
+                                    <span class="fa fa-envelope form-control-feedback text-muted"></span>
+                                </div>
+                                <div class="form-group has-feedback floating-label-wrapper">
+                                    <label for="InputUserPassword">firstName</label>
+                                    <!--custom-Required-Text array-Len="2"-->
+                                    <input type="password" id="InputUserPassword" placeholder="Password"
+                                           autocomplete="off" required="" ng-pattern="/^[a-zA-Z0-9\  ]/"
+                                           class="form-control text-colorTadqaBrown" ng-model="loginuserinfo.password"
+                                           style="border-left:none;border-bottom-color: blue;border-right:none;border-top:none ;  margin-top:-0px"
+                                           with-floating-label/>
+                                    <span class="fa fa-user form-control-feedback text-muted "></span>
+                                </div>
+                                <div style="height: 25px"></div>
+                                <div style="box-shadow: 2px 2px 2px #888888; ">
+                                    <button type="submit" ng-click="Login()" class="btn btn-primary btn-block"
+                                            style="font-family:verdana;border-radius:0%;width:100%;height:50px;">Login
+                                    </button>
+                                </div>
+                                <div style="height: 25px"></div>
+                                <div class="col-md-12">
+                                    <div class="col-md-4" style="padding: 0px;">
+                                        <hr style="border-color: black;margin-top: 8px;">
+                                    </div>
+                                    <div class="col-md-4"
+                                         style="text-align: center;font-weight:600;/* margin-top: 6px; */">OR
+                                    </div>
+                                    <div class="col-md-4" style="padding: 0px;">
+                                        <hr style="border-color: black;margin-top: 8px;">
+                                    </div>
+
+                                </div>
+                                <div style="height: 25px"></div>
+                                <div style="box-shadow: 2px 2px 2px #888888; margin-top: 2%">
+                                    <button type="button" ng-click="linkedinLogin()" class="btn btn-primary btn-block"
+                                            style="font-family:verdana;border-radius:0%;width:100%;height:50px;">Login
+                                        through Linkedin
+                                    </button>
+                                </div>
+                                <div style="height: 25px"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-lg">
+                <!--row1-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <h4 style="font-family:verdana;word-spacing:2px;text-align:center;"><b>Sign Up With Us </b></h4>
+                    </div>
+                </div>
+                <!--row3-->
+                <div class="row">
+                    <div class="col-md-offset-0 col-sm-10 col-md-12 col-lg-12">
+                        <div class="col-sm-12 col-md-12">
+                            <form class="form-group" style="margin-top:10px;">
+
+                                <div class="form-group has-feedback floating-label-wrapper">
+                                    <label for="InputEmail">Email</label>
+                                    <input type="email" placeholder="Email" id="InputEmail" required=" "
+                                           autocomplete="off" class="form-control " ng-model="guestuserinfo.email"
+                                           with-floating-label
+                                           style="border-left:none;border-bottom-color: blue;border-right:none;border-top:none ;  margin-top:-0px"/>
+                                    <span class="fa fa-envelope form-control-feedback text-muted"></span>
+                                </div>
+                                <div class="form-group has-feedback floating-label-wrapper">
+                                    <label for="InputfirstName1">firstName</label>
+                                    <!--custom-Required-Text array-Len="2"-->
+                                    <input type="password" id="InputfirstName1" placeholder="Password"
+                                           autocomplete="off" required="" ng-pattern="/^[a-zA-Z0-9\  ]/"
+                                           class="form-control text-colorTadqaBrown" ng-model="guestuserinfo.password"
+                                           style="border-left:none;border-bottom-color: blue;border-right:none;border-top:none ;  margin-top:-0px"
+                                           with-floating-label/>
+                                    <span class="fa fa-user form-control-feedback text-muted "></span>
+                                </div>
+                                <!--<div class="form-group">-->
+                                <!--<label class="sr-only" for="password">Password:</label>-->
+                                <!--<div style="box-shadow: 2px 2px 2px #888888; "><input type="password" class="form-control" id="pwd" placeholder="Password"-->
+                                <!--ng-model="guestuserinfo.password" name="password" style="font-family:verdana;text-align:center;width:100%;height:40px;border-radius:0%;border-color:#3366cc;">-->
+                                <!--</div>-->
+                                <!--</div>-->
+                                <div style="height: 25px"></div>
+                                <div style="box-shadow: 2px 2px 2px #888888; ">
+                                    <button type="submit" ng-click="openForm()" class="btn btn-primary btn-block"
+                                            style="font-family:verdana;border-radius:0%;width:100%;height:50px;">Sign Up
+                                    </button>
+                                </div>
+                                <div style="height: 25px"></div>
+                                <div class="col-md-12">
+                                    <div class="col-md-4" style="padding: 0px;">
+                                        <hr style="border-color: black;margin-top: 8px;">
+                                    </div>
+                                    <div class="col-md-4"
+                                         style="text-align: center;font-weight:600;/* margin-top: 6px; */">OR
+                                    </div>
+                                    <div class="col-md-4" style="padding: 0px;">
+                                        <hr style="border-color: black;margin-top: 8px;">
+                                    </div>
+
+                                </div>
+                                <div style="height: 25px"></div>
+                                <div style="box-shadow: 2px 2px 2px #888888; margin-top: 2%">
+                                    <button type="button" ng-click="linkedinLogin()" class="btn btn-primary btn-block"
+                                            style="font-family:verdana;border-radius:0%;width:100%;height:50px;">Sign up
+                                        through Linkedin
+                                    </button>
+                                </div>
+                                <div style="height: 25px"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+    </div>
+</section>

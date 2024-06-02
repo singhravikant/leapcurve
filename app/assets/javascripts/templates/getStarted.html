@@ -1,0 +1,285 @@
+<html>
+<head>
+    <script src="jquery.min.js"></script>
+
+    <style>
+        @media only screen and (width: 1920px) {
+
+            .button-1 {
+                margin-top: 6% !important;
+            }
+        }
+
+        .table td {
+            border-top: 0px !important;
+        }
+
+        section {
+            margin: 0px !important;
+        }
+
+        .layout-boxed .app-container > section {
+            max-width: 100%;
+
+        }
+
+        h3.accordion {
+            margin: 0;
+            margin-bottom: 2px;;
+        }
+
+        .accordion a {
+            padding: 10px;
+            font-size: 20px;
+            font-family: poppins-bold;
+            color: #333;
+            text-decoration: none;
+            cursor: pointer;
+
+            font-weight: bold;
+            display: block;
+            margin-bottom: 1px;
+        }
+
+        .accordion-content {
+
+            margin: 1px 0;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            p {
+                font-size: inherit;
+            }
+        }
+
+        @media (max-width: 991px) {
+
+            .top-h2 {
+                font-size: 20px !important;
+            }
+        }
+
+        @media (max-width: 991px) {
+
+            .accordion a {
+                font-size: 15px;
+                padding-right: 0px;
+
+            }
+        }
+
+        @media (max-width: 991px) {
+            .button-1 {
+                font-size: 18px !important;
+            }
+        }
+
+        @media (max-width: 991px) {
+
+            .pop-text {
+                font-size: 12px !important;
+                text-align: justify !important;
+            }
+        }
+
+        #padd-top {
+            padding-top: 75px;
+        }
+
+        #mrg-top {
+            text-align: center;
+            margin-top: 0px;
+            font-size: 26px;
+        }
+
+        .padd {
+            padding: 0px 0px 0px 75px;
+        }
+
+        .f-family {
+            font-family: poppins-bold;
+            color: black;
+        }
+
+        .txt-alg {
+            text-align: justify ;
+        }
+
+        #top {
+            margin-top: 1%;
+        }
+
+        #b-color {
+            border-radius: 0%;
+            width: 500px;
+            background-color: #797878;
+            border-color: #797878;
+            width: 100%;
+        }
+        #fnt-size{
+            text-align: center;
+            font-size: 26px;
+        }
+        .lst-stl{
+            text-align: justify;
+            margin-left: -30px;
+            list-style: none;
+        }
+        #pos{
+            position: relative;
+            font-size: 40px;
+            top: 6px;
+        }
+        #box-shadow{
+
+            margin-top: 8%;
+            font-size: 24px;
+            font-family: montserrat-bold;
+            box-shadow: none;
+            color: black !important;
+            /* font-weight: 800; */
+            background: transparent;
+
+        }
+        #mrg-btm{
+            margin-bottom: 50px;
+        }
+        .f-size{
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    $(".rotate").click(function () {
+        $(this).toggleClass("down");
+    })
+</script>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-sm-12 col-md-12 col-lg-12  text-right" id="top">
+
+
+            <div class="col-md-2 col-sm-4 col-xs-6 pull-right" ng-if="isLogin" class="padd">
+                <button type="submit" ng-click="logout()" class="btn btn-primary btn-sm button-1"
+                        id="b-color">LOGOUT
+                </button>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row" id="mrg-btm">
+
+
+        <div class="col-md-12 text-center" id="padd-top">
+            <h2 class="top-h2" id="fnt-size"><span class="f-family">ASSESS</span> YOUR
+                CAREER LEVEL AND
+            </h2>
+            <h2 class="top-h2" id="mrg-top"><span class="f-family"> BENCHMARK</span> WITH PEERS
+            </h2>
+
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12  col-sm-12  text-center">
+
+            <h3 class="accordion" ng-class="{active:accordion==1}">
+                <a ng-init="a=1" ng-click="changeClass('l1');a=a+1" data-toggle="collapse">What is career level? <i
+                        id="l1" class="fa fa-chevron-right f-size" ></i></a>
+            </h3></div>
+        <div class="col-md-12">
+            <div class="col-md-3 col-sm-2 "></div>
+            <div class="col-md-6  col-sm-8 pull-center">
+
+                <p class="accordion-content pop-text txt-alg"  class="panel-collapse collapse" ng-show="a%2==0">
+                    Career level is an empirical score arrived at after analyzing your responses to a set of questions
+                    related to your role, industry and the kind of organization you work for. It denotes the complexity
+                    of your role, the level of responsibility you handle and the complexity of the business of your
+                    organization.</p>
+                <p ng-show="a%2==0" class="txt-alg pop-text" >Understanding Career Level helps you to understand
+                    a lot of important question:</p>
+                <ul class="lst-stl  pop-text" ng-show="a%2==0"
+                >
+                    <li>- Where do I stand in my career with respect to the managerial level & role complexity?</li>
+                    <li>-
+                        How does my compensation compare against my peers with similar career levels?
+                    </li>
+                    <li>- Is my organization underpaying me vs. other companies?</li>
+                    <li>- Which industries offer better compensation for my role?</li>
+                    <li>- How difficult is it for me to improve my career level with in my organization and industry?
+                    </li>
+                    <li>- Which industries should I target to improve my career level & compensation?</li>
+                </ul>
+
+
+            </div>
+            <div class="col-md-3 col-sm-2 "></div>
+        </div>
+        <div class="col-md-12 col-sm-12  text-center">
+
+
+            <h3 class="accordion" ng-class="{active:accordion==2}">
+                <a ng-init="b=1" ng-click="changeClass('l2'); b=b+1">How do we arrive at career level score? <i id="l2"
+                                                                                                                class="fa fa-chevron-right f-size "
+                ></i></a>
+            </h3></div>
+        <div class="col-md-12">
+            <div class="col-md-3 col-sm-2 "></div>
+            <div class="col-md-6  col-sm-8 pull-center">
+
+                <p class="accordion-content pop-text" class="txt-alg" ng-show="b%2==0">The 3 most integral factors that
+                    contribute to deriving your career level are:</p>
+                <ul class="lst-stl pop-text"
+                    ng-show="b%2==0">
+                    <li>- Areas of responsibility your role carries</li>
+                    <li>- Impact of your role on your organization</li>
+                    <li>- Complexity of the environment that your organization functions in.</li>
+
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-2 "></div>
+            <div class="col-md-12  col-sm-12 text-center">
+
+                <h3 class="accordion" ng-class="{active:accordion==3}">
+                    <a ng-init="c=1" ng-click="changeClass('l3'); c=c+1">How to read the career level score? <i id="l3"
+                                                                                                                class="fa fa-chevron-right f-size"
+                    ></i></a>
+                </h3></div>
+            <div class="col-md-12">
+                <div class="col-md-3 col-sm-2 "></div>
+                <div class="col-md-6  col-sm-8 pull-center">
+
+                    <p class="accordion-content pop-text txt-alg"  ng-show="c%2==0">Every increase of 10 points
+                        on the score is a noticeable difference. For a career jump, a 50-point increase is considered
+                        ideal. Since many aspects feed into the career level score, your motive should be to improve the
+                        score on a certain aspect, which in turn will affect the overall career level. </p>
+                </div>
+                <div class="col-md-3 col-sm-2 "></div>
+                <div class="col-md-12 text-center">
+
+
+                    <button class="btn btn-md button-1" ng-click="getStarted()" id="box-shadow">GET STARTED <i class="fa fa-angle-right" id="pos"></i></button>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

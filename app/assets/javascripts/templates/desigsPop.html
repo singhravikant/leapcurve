@@ -1,0 +1,73 @@
+<style>
+    .mb-lg {
+        margin-bottom: 10px;
+    }
+
+    .modal-open {
+        overflow: auto;
+    }
+
+    .modal-open .modal {
+        overflow-x: scroll;
+        overflow-y: auto;
+    }
+    .img-height{
+        height: 40px;
+    }
+    .button-style {
+        float: right;
+        background: transparent;
+        border: none;
+        font-size: 18px;
+    }
+    .h4-style {
+        font-family:Poppins-Regular;
+        word-spacing:2px;
+        text-align:center;
+        text-transform: uppercase;
+    }
+    .div-style {
+        font-family:Montserrat-Regular;
+        overflow-y: auto;
+        height: 300px;
+    }
+    .span-style{
+        font-size:11px;
+    }
+
+</style>
+<section>
+    <div class="modal-header">
+        
+        <div class="col-md-12">
+            <img src="assets/logo1.png" class="img-rsponsive img-height">
+            <button type="button" class="button-style" data-dismiss="modal" aria-hidden="true" ng-click="close()">x</button>
+        </div>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <!--row1-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-offset-2 col-md-8 col-lg-8">
+                        <h4 class="h4-style" ><b>{{headText}}</b><br/><b>{{filterText}}</b></h4>
+                    </div>
+                </div>
+                <!--row3-->
+                <div class="row">
+                    <div class=" col-sm-12 col-md-offset-2 col-md-8 col-lg-8" >
+                        <div class="col-sm-12 col-md-12 div-style" >
+
+                            <h5 ng-if="des.length>3" ng-repeat="des in alldesigs">{{des.toString().split('+')[2]}}
+                                <!--<span class="span-style"> ({{des.toString().split('+')[0]}} , {{des.toString().split('+')[1] }})</span>-->
+                                <span class="span-style"> ( {{des.toString().split('+')[1] }} )</span>
+                                </span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

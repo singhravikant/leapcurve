@@ -1,0 +1,655 @@
+<% if browser.device.mobile? %>
+  <style>
+    .section {
+      position: relative;
+      display: block;
+      padding-right: 0%;
+      padding-left: 0%;
+      padding-top: 30px;
+      text-align: center;
+      width: 100%;
+      float: left;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+
+    }
+
+    .form-div {
+      /*border:2px solid  #0d305f;*/
+      text-align: center;
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+    }
+    .form-row{
+      position: relative;
+      float: left;
+      width: 100%;
+      display: block;
+    }
+    .form-coll-50{
+      position: relative;
+      float: left;
+      text-align: center;
+      width: 100%;
+      display: block;
+    }
+    .padding-row{
+      padding-bottom: 40px;
+    }
+
+    .form-coll-50 h3{
+      margin: 0;
+      font-family: Montserrat-Regular;
+      font-size: 13px;
+      padding-bottom: 15px;
+    }
+    .form-coll-50 span{
+      font-family: Montserrat-Regular;
+      font-size: 12px;
+    }
+
+
+    .form-coll-50 a{
+      cursor: pointer;
+      font-size: 12px;
+      text-decoration: underline;
+      color: black;
+      font-family: Montserrat-Regular;
+    }
+
+
+    .top-heading {
+      text-align: center;
+      font-size: 20px;
+      font-family: Montserrat-regular;
+      background-color: white;
+    }
+
+    #flash1 {
+      visibility: hidden;
+      background: #ea3c3c;
+      color: white;
+      padding: 6px 0px;
+      float: left;
+      left: 0;
+      z-index: 4;
+      top: 55px;
+      position: absolute;
+      display: block;
+      width: 100%;
+    }
+
+
+
+
+
+    .sort {
+      position: absolute;
+      width: 80%;
+      border: 2px solid gray;
+      overflow: hidden;
+      z-index: 3;
+      left: 0;
+      bottom: 20px;
+      padding: 20px 2% 5px 2%;
+      right: 0;
+      background-color: #fff;
+      left: 8%;
+    }
+
+    #advance {
+      display: none;
+    }
+
+    .close-col {
+      text-align: right;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .close {
+      cursor: pointer;
+    }
+
+    .forget-email {
+      padding: 6px 24px;
+      margin: 20px 0;
+      outline: none;
+      border: 1px solid black;
+      width: 60%;
+    }
+
+    .sort-para {
+      font-size: 20px;
+      position: relative;
+      font-size: 20px;
+      left: -10px;
+      top: -26px;
+    }
+
+    .forget-btn {
+      width: 34%;
+      margin: 10px 0;
+      boredr: non;
+      padding: 5px;
+      outline: none;
+      border: none;
+      background: #ededed;
+    }
+
+
+
+
+
+  </style>
+
+<% elsif browser.device.tablet? %>
+  <style>
+    .section {
+      position: relative;
+      display: block;
+      padding-right: 5%;
+      padding-left: 5%;
+      text-align: center;
+      padding-top: 50px;
+      width: 90%;
+      float: left;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+
+    }
+
+    .form-div {
+      /*border:2px solid  #0d305f;*/
+      text-align: center;
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+    }
+    .form-row{
+      position: relative;
+      float: left;
+      padding: 20px 0;
+      width: 100%;
+      display: block;
+    }
+    .form-coll-50{
+      position: relative;
+      float: left;
+      text-align: justify;
+      width: 50%;
+      display: block;
+    }
+
+    .form-coll-50 h3{
+      margin: 0;
+      font-family: Montserrat-Regular;
+      font-size: 15px;
+      padding-bottom: 15px;
+    }
+    .form-coll-50 span{
+      font-family: Montserrat-Regular;
+      font-size: 15px;
+    }
+
+
+    .form-coll-50 a{
+      cursor: pointer;
+      font-size: 12px;
+      text-decoration: underline;
+      color: black;
+      font-family: Montserrat-Regular;
+    }
+    .padding-row{
+      padding-left: 60px;
+    }
+
+    .sort {
+      position: absolute;
+      width: 40%;
+      border: 2px solid gray;
+      overflow: hidden;
+      z-index: 3;
+      left: 0;
+      top: -200px;
+      padding: 20px 2% 5px 2%;
+      right: 0;
+      background-color: #fff;
+      left: 36%;
+    }
+
+    #advance {
+      display: none;
+    }
+
+    .close-col {
+      text-align: right;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .close {
+      cursor: pointer;
+    }
+
+    .forget-email {
+      padding: 6px 24px;
+      margin: 20px 0;
+      width: 65%;
+      border: 1px solid black;
+      outline: none;
+    }
+
+    .sort-para {
+      font-size: 20px;
+    }
+
+    .forget-btn {
+      width: 34%;
+      margin: 10px 0;
+      boredr: non;
+      padding: 5px;
+      outline: none;
+      border: none;
+      background: #ededed;
+    }
+
+    .top-heading {
+      text-align: left;
+      padding-left: 60px;
+      font-size: 20px;
+      font-family: Montserrat-regular;
+      padding-bottom: 20px;
+      background-color: white;
+    }
+
+    #flash1 {
+      visibility: hidden;
+      background: #ea3c3c;
+      color: white;
+      padding: 6px 0px;
+      float: left;
+      left: 0;
+      z-index: 4;
+      top: 55px;
+      position: absolute;
+      display: block;
+      width: 100%;
+    }
+  </style>
+
+<% else %>
+  <style>
+    .section {
+      position: relative;
+      display: block;
+      padding-right: 26%;
+      padding-left: 26%;
+      text-align: center;
+      width: 48%;
+      float: left;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+
+    }
+
+    .form-div {
+      /*border:2px solid  #0d305f;*/
+      text-align: center;
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+    }
+      .form-row{
+        position: relative;
+        float: left;
+        padding: 20px 0;
+        width: 100%;
+        display: block;
+      }
+    .form-coll-50{
+        position: relative;
+        float: left;
+      text-align: justify;
+        width: 50%;
+        display: block;
+      }
+
+    .form-coll-50 p{
+      margin: 0;
+      font-family: Montserrat-semibold;
+      font-size: 14px;
+      padding-bottom: 15px;
+    }
+    .form-coll-50 span{
+      font-family: Montserrat-Regular;
+      font-size: 15px;
+    }
+
+
+    .form-coll-50 a{
+      cursor: pointer;
+      font-size: 12px;
+      text-decoration: underline;
+      color: black;
+      font-family: Montserrat-Regular;
+    }
+      .padding-row{
+        padding-left: 60px;
+      }
+
+    .sort {
+      position: absolute;
+      width: 40%;
+      border: 2px solid gray;
+      overflow: hidden;
+      z-index: 3;
+      left: 0;
+      bottom: 50px;
+      padding: 20px 2% 5px 2%;
+      right: 0;
+      background-color: #fff;
+      left: 36%;
+    }
+
+    #advance {
+      display: none;
+    }
+
+    .close-col {
+      text-align: right;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .close
+    {
+      cursor: pointer;
+    }
+
+    .forget-email
+    {
+      padding: 6px 24px;
+      margin: 20px 0;
+      width: 65%;
+      border:1px solid black;
+      outline: none;
+    }
+
+    .sort-para
+    {
+      font-size: 15px;
+      position: relative;
+      font-family: poppins-semibold;
+      top: -30px;
+    }
+
+    .forget-btn
+    {
+      width: 34%;
+      margin: 10px 0;
+      boredr: non;
+      color: #4c4c4c;
+      padding: 5px;
+      font-size: 15px;
+      outline: none;
+      border: none;
+      background: #eeeeee;
+    }
+
+.top-heading
+{
+  text-align: left;
+  padding-left: 60px;
+  font-size: 20px;
+  font-family: Poppins-semibold;
+  padding-bottom: 20px;
+  background-color: white;
+}
+      #flash1
+      {
+        visibility: hidden;
+        background: #ea3c3c;
+        color: white;
+        padding: 6px 0px;
+        float: left;
+        left: 0;
+        z-index: 4;
+        top: 55px;
+        position: absolute;
+        display: block;
+        width: 100%;
+      }
+      ::placeholder{
+        font-family: Montserrat-Regular;
+        color:black;
+        font-size: 12px;
+      }
+  </style>
+  <% end %>
+<section class="section">
+  <article class="article">
+    <div class="form-div">
+      <div class="form-row">
+        <p class="top-heading">Company Profile</p>
+<div class="form-coll-50">
+  <div class="padding-row">
+           <p>COMPANY NAME</p>
+          <span><%= @company['company_name'] %></span><% if !(@account['usertype']=='User') %> (<a href="/corporate/edit_account">Edit</a>)<% end %>
+  </div>
+        </div>
+        <div class="form-coll-50">
+          <div class="padding-row">
+          <p>INDUSTRY</p>
+          <span><%= @company['industry'] %></span> <% if !(@account['usertype']=='User') %> (<a href="/corporate/edit_account">Edit</a>)<% end %>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-div">
+      <div class="form-row">
+<div class="form-coll-50">
+  <div class="padding-row">
+  <p>NUMBER OF EMPLOYEES</p>
+          <span><%= @company['no_of_employees'] %></span> <% if !(@account['usertype']=='User') %>(<a href="/corporate/edit_account">Edit</a>)<% end %>
+        </div>
+</div>
+        <div class="form-coll-50">
+          <!--<h3>Annual Revenue (INR Crore):</h3>-->
+          <div class="padding-row">
+          <p>ANNUAL REVENUE (INR CRORE)</p>
+          <span><%= @company['revenue'] %></span> <% if !(@account['usertype']=='User') %> (<a href="/corporate/edit_account">Edit</a>)<% end %>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-div">
+      <div class="form-row">
+<div class="form-coll-50"><!--<h3>Geographical Spread:</h3>-->
+  <div class="padding-row">
+          <p>GEOGRAPHICAL SPREAD</p>
+          <span><%= @company['geographical_Spread']%></span> <% if !(@account['usertype']=='User') %> (<a href="/corporate/edit_account">Edit</a>)<% end %>
+  </div></div>
+      </div>
+    </div>
+
+    <div class="form-div">
+      <div class="form-row">
+        <p class="top-heading">Personal Information</p>
+        <div class="form-coll-50"><!--<h3>First Name:</h3>-->
+          <div class="padding-row">
+            <p>FIRST NAME</p>
+            <span><%= @account['user_first_name'] %></span> (<a href="/corporate/edit_account">Edit</a>)
+          </div>
+        </div>
+<div class="form-coll-50"><!--<h3>Last Name:</h3>-->
+  <div class="padding-row">
+          <p>LAST NAME</p>
+          <span><%= @account['user_last_name'] %></span>(<a href="/corporate/edit_account">Edit</a>)
+        </div>
+       </div>
+      </div>
+    </div>
+
+    <div class="form-div">
+      <div class="form-row">
+<div class="form-coll-50"><!--<h3>Email:</h3>-->
+  <div class="padding-row">
+          <p>EMAIL</p>
+          <span><%= @account['email'] %></span> (<a href="/corporate/edit_account">Edit</a>)
+  </div>
+</div>
+        <div class="form-coll-50"><!--<h3>Password:</h3>-->
+          <div class="padding-row">
+            <p>PASSWORD</p>
+            <span id="password">******</span>
+             <!--<span id="password"><%# @account['password'].to_s.each_char do |pas| %>*<%# end %></span>-->
+            (<a onclick="advance()">Edit</a>)
+          </div>
+      </div>
+    </div>
+<div class="form-div">
+
+
+  <div class="form-coll-50">
+    <!--<h3>Designation:</h3>-->
+    <div class="padding-row">
+      <p>DESIGNATION</p>
+      <span><%= @account['designation'] %></span> (<a href="/corporate/edit_account">Edit</a>)
+    </div>
+  </div>
+
+
+
+
+        <div id="advance" class="sort hide">
+          <span id="flash1">!</span>
+          <div class="col close-col">
+            <span id="sort1" class="close" onclick="sort1()">&times;</span>
+          </div>
+          <div class="col ">
+            <span class="font-mont sort-para">CHANGE PASSWORD</span>
+          </div>
+          <%#= form_tag 'sort_applicants_advance', :id => "advance_form", :method => :post do %>
+          <%= form_tag({:action => :change_password}, {:method => :post}) do %>
+            <div class="col">
+            <!-- <input type="password" placeholder="Old password" name="password" id="password2" class="forget-email" required>-->
+              <%= password_field_tag "old_Password", params['Password'], :onblur=>"match_password()", :placeholder => 'Old Password', :class => "forget-email", :size => 15, :required => true %>
+              <input type="password" placeholder="New password" name="password" id="password1" class="forget-email" required>
+              <input type="password" placeholder="Confirm password" id="confirm_password" name="confirm-password" class="forget-email" required>
+            </div>
+            <div class="col">
+              <%#= submit_tag 'submit', :class => "forget-btn",  :onclick => "check_password();", :id => "forget",%>
+              <button type="submit" name="submit" id="submit" class="forget-btn" onclick="return check_password()">Submit</button>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<script>
+    function advance() {
+        document.getElementById("advance").style.display = 'block';
+    }
+
+    function sort1() {
+        document.getElementById("advance").style.display = 'none';
+    }
+</script>
+
+<script>
+    var alert=document.getElementById('flash1');
+    function check_password() {
+        var old_pass=document.getElementById('old_Password').value;
+        pass1 = document.getElementById('password1').value;
+        conf_pass=document.getElementById('confirm_password').value;
+        if(old_pass!=pass1) {
+            if (!(pass1 == conf_pass)) {
+                alert.innerHTML = "Password does not Match!"
+                alert.style.visibility = 'visible';
+                // alert.classList.add('alert-success');
+                setTimeout(function () {
+                    alert.innerHTML = "!"
+                    alert.style.visibility = 'hidden';
+                    // alert.classList.remove('alert-success');
+                }, 3000);
+                return false;
+            }
+            else {
+                return true;
+            }
+        }else{
+            alert.innerHTML = "New Password Should be different!!"
+            alert.style.visibility = 'visible';
+            // alert.classList.add('alert-success');
+            setTimeout(function () {
+                alert.innerHTML = "!"
+                alert.style.visibility = 'hidden';
+                // alert.classList.remove('alert-success');
+            }, 3000);
+            return false;
+
+        }
+    }
+
+
+    function match_password() {
+         var old_pass=document.getElementById('old_Password').value;
+        if(!(old_pass=='')){
+        $.ajax({
+            url:"/corporate/match_password",
+            type:'post',
+            data:$('form').serialize(),
+            success:function (response) {
+             if (response=='true'){
+                 document.getElementById('password1').disabled=false;
+                 document.getElementById('confirm_password').disabled=false;
+                 document.getElementById('submit').disabled=false;
+             }
+             else{
+                 // document.getElementById('password1').disabled=true;
+                 // document.getElementById('confirm_password').disabled=true;
+                 document.getElementById('submit').disabled=true;
+                 alert.innerHTML = "Old Password Is Not Match!"
+                 alert.style.visibility = 'visible';
+                 setTimeout(function () {
+                     alert.innerHTML = "!"
+                     alert.style.visibility = 'hidden';
+                 }, 3000);
+                }
+            }
+
+        })
+        }
+    }
+</script>

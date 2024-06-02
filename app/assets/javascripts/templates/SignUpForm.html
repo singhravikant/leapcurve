@@ -1,0 +1,376 @@
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style>
+    .mb-lg {
+        margin-bottom: 10px;
+    }
+
+    .modal-open {
+        overflow: auto;
+    }
+
+
+    .modal-open .modal {
+        overflow-x: scroll;
+        overflow-y: auto;
+    }
+    span.btn.btn-default.form-control.ui-select-toggle {
+        border: none;
+        border-bottom: 1px solid black;
+        text-align: left;
+        font-size: 17px;
+        font-family:Montserrat-Regular;
+
+        margin: 0px;
+        padding: 0px;
+        color: black !important;
+        /* margin-left: -1px; */
+        border-radius: 0px;
+    }
+    span.btn.btn-default.form-control.ui-select-toggle:hover {
+        background: transparent;
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: pink;
+    }
+    .floating-label {
+        font-size: 17px;
+        font-family: Montserrat-Regular;
+    }
+
+
+    element.style {
+        position: relative;
+        font-size: 60px;
+        top: 18px;
+    }
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    user agent stylesheet
+    i, cite, em, var, address, dfn {
+        font-style: italic;
+    }
+    body {
+        overflow-x: hidden;
+        height: 100%;
+        direction: ltr;
+        font-family: 'Roboto', sans-serif;
+    }
+    body {
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #fff;
+    }
+    body {
+        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.52857143;
+        color: #585f69;
+        background-color: #f0f0f0;
+    }
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #fff;
+    }
+    html {
+        font-size: 10px;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    html {
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+    html {
+        font-size: 10px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    html {
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+    html {
+        font-size: 10px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    html {
+        font-family: sans-serif;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+    .fa-angle-right:before {
+        content: "\f105";
+    }
+
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    @media (max-width: 991px) {
+
+        .add-more{
+            position:relative !important;
+            right:0px !important;
+            text-align: center;
+            top:-25px !important;
+
+
+        }}
+    @media (max-width: 991px) {
+.add-more-1{
+    position: relative !important;
+    text-align: center;
+}
+        .delete-1{
+            position:relative !important;
+            right:0px !important;
+            text-align: center;
+            top:-12px;
+        }
+        .modal-body {
+            position: relative;
+            padding: 15px 25px !important;
+        }
+
+    }
+    @media (max-width: 767px) {
+
+        .moblie_1{
+            font-size:20px !important;
+        }}
+    .img-logo{
+        height: 40px;
+    }
+    .logo-btn{
+        float: right !important;
+        background: transparent !important;
+        border: none !important;
+        font-size: 18px !important;  }
+    .moblie_1{
+        font-family:Montserrat-SemiBold; font-size:24px;word-spacing:2px;text-align:center;margin-top:4%;
+    }
+
+.top-div{
+    margin-top:4%;
+}
+    .input-div{
+        margin-bottom:30px;
+    }
+    .add-more-1{
+        padding-left: 0px;position:absolute;right:-90px;    top: 25px; cursor: pointer;
+    }
+    .add-more-1 span{
+        font-size: 16px;
+        font-family: Montserrat-Regular;
+    }
+    .add-more-1 a{
+        text-decoration: underline ;color: black;font-size: 12px;font-family: Montserrat-Regular;
+    }
+    .delete-1-more{
+        padding-left: 0px; position:absolute;right:-100px;cursor: pointer;
+    }
+    .delete-1-more a{
+        text-decoration: underline;
+    }
+    .exp-input{
+        font-size:16px;font-family:Montserrat-Regular ;height:33px;border:none;border-radius: 0px; border-bottom: 1px solid black;border-radius: 0px;
+    }
+.name-span{
+    font-size: 14px; margin: 10px;cursor: pointer;
+}
+    .function-ul{
+        border:none;
+    }
+    .small-function{
+        font-size: 14px; margin: 10px;cursor: pointer;
+    }
+    .company-input{
+        font-size:16px;font-family:Montserrat-Regular ;height:33px;border:none;border-radius: 0px; border-bottom: 1px solid black;border-radius: 0px;
+    }
+    .desi-input{
+        font-size:16px;font-family:Montserrat-Regular ;height:33px;border:none;border-radius: 0px; border-bottom: 1px solid black;border-radius: 0px;
+    }
+    .salary-input{
+        font-size:16px;font-family:Montserrat-Regular ;height:33px;border:none;border-radius: 0px; border-bottom: 1px solid black;border-radius: 0px;
+    }
+    .next-div{
+        padding-right: 0px;
+    }
+    .next-btn{
+        font-family: Montserrat-Regular;font-size: 24px;background: transparent;box-shadow: none !important;
+    }
+    .next-i
+    {
+        position: relative;font-size: 60px !important;top: 18px;
+    }
+    .heder_arrow{
+        height: 40px;
+        position: relative;
+        /*top: -2px;*/
+        left: -10px;
+
+    }
+</style>
+
+<section>
+    <div class="modal-header">
+
+        <div class="col-md-12">
+            <img src="/assets/logo1.png" class="img-rsponsive img-logo">
+            <button type="button" data-dismiss="modal" aria-hidden="true" ng-click="close()" class="logo-btn">x
+            </button>
+        </div>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <!--row1-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <h2  class="moblie_1"><b>TELL US A LITTLE ABOUT YOURSELF</b></h2>
+                    </div>
+                </div>
+                <!--row3-->
+                <div class="row">
+                    <div class="col-md-offset-1 col-sm-offset-1 col-sm-10 col-md-10 col-lg-10 top-div" >
+                        <div class="row">
+                            <form>
+
+                                <div class="col-md-12" ng-repeat="ed in basicInfo track by ed.id">
+                                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                                        <div class="form-group input-div">
+                                            <label for="education{{ed.id}}_{{$index}}"></label>
+                                            <input type="text" id="education{{ed.id}}_{{$index}}" ng-model="ed.Education" placeholder="Highest Degree" with-floating-label name="Institution" uib-typeahead="state for state in degree | filter:$viewValue | limitTo:8" class="form-control" onkeypress="return ((event.charCode >= 65 && event.charCode <=90)|| (event.charCode >= 97 && event.charCode <=122)|| (event.charCode == 32))|| event.charCode==0" />
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                                        <div class="form-group input-div">
+                                            <label for="instution{{ed.id}}_{{$index}}"></label>
+                                            <input type="text" id="instution{{ed.id}}_{{$index}}" ng-model="ed.Company" placeholder="Institution" with-floating-label name="Institution" uib-typeahead="state for state in institutes | filter:$viewValue | limitTo:8" class="form-control" onkeypress="return ((event.charCode >= 65 && event.charCode <=90)|| (event.charCode >= 97 && event.charCode <=122)|| (event.charCode == 32))|| event.charCode==0" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-12 col-xs-12 add-more add-more-1"  ng-if="$last" ><span>+</span> <a  ng-click="addBasicinfo(ed.id);console.log('{{$index}}')"> ADD MORE</a></div>
+                                    <div class="col-md-2 col-sm-12 col-xs-12 delete-1 delete-1-more"  ng-if="$index>0" ><a  ng-click="deleteBasicInfo($index)"> Delete</a></div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                                        <div class="form-group input-div">
+                                            <label for="exprience" >exprience</label>
+
+                                            <input type="number" id="exprience"class="form-control exp-input" min="0"  string-to-number ng-model="userInfo.Experience"  with-floating-label placeholder=" Years Of Experience"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                                        <div class="form-group input-div">
+                                            <ui-select ng-model="userInfo.Industry"  theme="bootstrap" title=""  >
+                                                <ui-select-match placeholder=" Industry">{{$select.selected.Name?$select.selected.Name:userInfo.Industry}}</ui-select-match>
+                                                <ui-select-choices repeat="role in industries | propsFilter: {Name: $select.search}">
+                                                    <small>
+                                                        <span class="name-span">{{role.Name}}</span>
+                                                    </small>
+                                                </ui-select-choices>
+                                            </ui-select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                                        <div class="form-group input-div" >
+                                            <ui-select ng-model="userInfo.Role"   theme="bootstrap" title=""  >
+                                                <ui-select-match  class="function-ul" placeholder="Function">{{$select.selected.Name?$select.selected.Name:userInfo.Role}}</ui-select-match>
+                                                <ui-select-choices repeat="role in functions | propsFilter: {Name: $select.search}">
+                                                    <small>
+                                                        <span class="small-function">{{role.Name}}</span>
+                                                    </small>
+                                                </ui-select-choices>
+                                            </ui-select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                                        <div class="form-group input-div">
+                                            <label for="company" >company</label>
+
+                                            <input type="text" id="company" ng-model="userInfo.Company" placeholder="Company" with-floating-label name="company" uib-typeahead="state for state in Companies | filter:$viewValue | limitTo:8" class="form-control company-input" onkeypress="return ((event.charCode >= 65 && event.charCode <=90)|| (event.charCode >= 97 && event.charCode <=122)|| (event.charCode == 32))|| event.charCode==0"  />
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-12" >
+                                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                                        <div class="form-group input-div" >
+                                            <label for="designation" >designation</label>
+
+                                            <input type="text" id="designation"class="form-control desi-input" onkeypress="return ((event.charCode >= 65 && event.charCode <=90)|| (event.charCode >= 97 && event.charCode <=122)|| (event.charCode == 32))|| event.charCode==0" ng-model="userInfo.Designation" with-floating-label name="Institution" placeholder="Designation"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                                        <div class="form-group input-div">
+                                            <label for="salary" >salary</label>
+
+                                            <input type="number" id="salary"class="form-control salary-input" min="0" ng-model="userInfo.Salary" with-floating-label  placeholder="Annual Salary in INR Lakhs">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class=" col-sm-12 col-md-12 col-lg-12 text-center next-div hidden-xs hidden-sm">
+                                    <button type="submit" class="btn  btn-md next-btn" ng-click="sign_up_user();imapct_question()">Next
+                                    </button>
+                                    <!--<i class="fa fa-angle-right next-i"></i>-->
+                                    <img src="/assets/right.png" class="heder_arrow">
+                                </div>
+                                <div class=" col-sm-12 col-xs-12 text-center hidden-lg hidden-md">
+                                    <button type="submit" class="btn  btn-md next-btn" ng-click="sign_up_user();imapct_question()">Next
+                                    </button>
+                                    <!--<i class="fa fa-angle-right next-i"></i>-->
+                                    <img src="/assets/right.png" class="heder_arrow">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+

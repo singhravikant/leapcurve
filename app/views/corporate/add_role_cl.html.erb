@@ -1,0 +1,910 @@
+<% if browser.device.mobile? %>
+  <style>
+    .comtainer_que {
+      font-family: Arial;
+      width: 80%;
+      /*text-align: center;*/
+      margin: auto;
+    }
+
+    #heading {
+      /*float: left;*/
+    }
+
+    .alert {
+      display: none;
+      float: right;
+      margin: auto;
+      position: absolute;
+      left: 40%;
+      top: 10%;
+      right: 40%;
+      border: 1px solid gray;
+      text-align: center;
+      padding: 10px;
+      color: white;
+      background-color: green;
+      font-weight: bold;
+    }
+
+    .head {
+      display: block;
+      float: left;
+      font-weight: bold;
+      font-size: 19px;
+    }
+
+    .small-txt {
+      font-size: 18px;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .show {
+      display: block !important;
+    }
+
+    .btn {
+      padding: 10px 10px;
+      font-weight: bold;
+      border: 1px solid gray;
+      border-radius: 4px;
+      color: white;
+      background-color: darkgray;
+      margin-top: 10px;
+    }
+
+    .radiobtn {
+
+    }
+
+    .confirmbtn {
+      padding: 10px 10px;
+      font-weight: bold;
+      border: 1px solid gray;
+      border-radius: 4px;
+      color: white;
+      background-color: green;
+      margin-top: 10px;
+    }
+
+    .radio {
+      /*position: absolute;*/
+      /*!* top: 236px; *!*/
+      /*!*left: 93px;*!*/
+      /*!* height: 4px; *!*/
+      /*width: 7px;*/
+      /*background-color: #eee;*/
+      /*!* border-radius: 100px; *!*/
+      /*border: 7px solid black;*/
+    }
+
+    .radiobtn {
+      /*position: absolute;*/
+      /*opacity: 0;*/
+      /*display: none;*/
+      cursor: pointer;
+
+    }
+
+    .optlabel {
+      cursor: pointer;
+    }
+  </style>
+<% elsif browser.device.tablet? %>
+  <style>
+    .comtainer_que {
+      font-family: Arial;
+      width: 80%;
+      /*text-align: center;*/
+      margin: auto;
+    }
+
+    #heading {
+      /*float: left;*/
+    }
+
+    .alert {
+      display: none;
+      float: right;
+      margin: auto;
+      position: absolute;
+      left: 30%;
+      top: 6%;
+      right: 30%;
+      border: 1px solid gray;
+      text-align: center;
+      padding: 10px;
+      color: white;
+      background-color: green;
+      font-weight: bold;
+    }
+
+    .head {
+      display: block;
+      float: left;
+      font-weight: bold;
+      font-size: 19px;
+    }
+
+    .small-txt {
+      font-size: 18px;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .show {
+      display: block !important;
+    }
+
+    .btn {
+      padding: 10px 10px;
+      font-weight: bold;
+      border: 1px solid gray;
+      border-radius: 4px;
+      color: white;
+      background-color: darkgray;
+      margin-top: 10px;
+    }
+
+    .radiobtn {
+
+    }
+
+    .confirmbtn {
+      padding: 10px 10px;
+      font-weight: bold;
+      border: 1px solid gray;
+      border-radius: 4px;
+      color: white;
+      background-color: green;
+      margin-top: 10px;
+    }
+    .radio {
+      /*position: absolute;*/
+      /*!* top: 236px; *!*/
+      /*!*left: 93px;*!*/
+      /*!* height: 4px; *!*/
+      /*width: 7px;*/
+      /*background-color: #eee;*/
+      /*!* border-radius: 100px; *!*/
+      /*border: 7px solid black;*/
+    }
+
+    .radiobtn {
+      /*position: absolute;*/
+      /*opacity: 0;*/
+      /*display: none;*/
+      cursor: pointer;
+
+    }
+
+    .optlabel {
+      cursor: pointer;
+    }
+
+    [type="radio"]
+     {
+      content: '';
+      position: absolute;
+      left: 0;
+
+    }
+  </style>
+<% else %>
+  <style>
+    .comtainer_que {
+      font-family: Arial;
+      width: 80%;
+      /*text-align: center;*/
+      margin: auto;
+    }
+    #heading{
+      /*float: left;*/
+    }
+    .alert{
+      display: none;
+      float: right;
+      margin: auto;
+      position: absolute;
+      left: 40%;
+      top: 10%;
+      right: 40%;
+      border: 1px solid gray;
+      text-align: center;
+      padding: 10px;
+      color: white;
+      background-color: green;
+      font-weight: bold;
+    }
+    .head {
+      display: block;
+      float: left;
+      font-weight: bold;
+      font-size: 19px;
+    }
+
+    .small-txt {
+      font-size: 18px;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .show {
+      display: block !important;
+    }
+
+    .btn {
+      padding: 10px 10px;
+      font-weight: bold;
+      border: 1px solid gray;
+      border-radius: 4px;
+      color: white;
+      background-color: darkgray;
+      margin-top: 10px;
+    }
+
+    .radiobtn {
+
+    }
+
+    .confirmbtn {
+      padding: 10px 10px;
+      font-weight: bold;
+      border: 1px solid gray;
+      border-radius: 4px;
+      color: white;
+      background-color: green;
+      margin-top: 10px;
+    }
+
+
+    .radio {
+
+    
+    }
+
+    .radiobtn {
+      height: 0;
+      width: 0;
+
+    }
+    .radiobtn::before{
+      /*margin: 4px 0px;*/
+      content: " ";
+
+      border: 2px solid black;
+      background-color: black;
+      padding: 8px;
+      left: -10px;
+      top: 1px;
+      position: absolute;
+    }
+    .radiobtn:checked::before{
+      /*margin: 4px 0px;*/
+      content: " ";
+      border: 2px solid black;
+      background-color: white;
+
+
+    }
+    .optlabel{
+      cursor: pointer;
+      line-height: 25px;
+      position: relative;
+    }
+  </style>
+<% end %>
+<div class="comtainer_que">
+  <h2 id="heading">ADD A NEW ROLE</h2><span id="alertmsg" class="alert">Select any option</span>
+  <div class="head">Part 2:Role Career Level</div>
+  <div class="small-txt">(<span id="percen"></span> % Completed)</div>
+  <%= form_tag(:action => :getAllQuestion, :method => :post) %>
+  <%= hidden_field_tag('roleid',@roleid) %>
+  <div class="hide show" id="que1">
+
+    <div>
+      <h3><%= ind = 1 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span>
+                <br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+
+    <%= link_to 'BACK','/corporate/add_role_info/',:class=>'btn'%>
+    <%= button_tag "NEXT", :type => 'button',:class=>'btn', :onclick => 'next(1)' %>
+  </div>
+
+  <div class="hide" id="que2">
+    <div>
+      <h3><%= ind = 2 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)" class='radiobtn' required>
+                <% text = optTxt.split('*') %>
+                <% for i in 0..text.length - 1 do %>
+                  <% if i % 2 == 0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(2)' %>
+    <%= button_tag "NEXT", :type => 'button', :class => 'btn', :onclick => 'next(2)' %>
+  </div>
+  <div class="hide" id="que3">
+
+    <div>
+      <h3><%= ind = 3 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+
+    <div>
+      <h3><%= ind = 4 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(3)' %>
+    <%= button_tag "NEXT", :type => 'button',:class=>'btn', :onclick => 'next(3)' %>
+  </div>
+
+  <div class="hide" id="que4">
+
+    <div>
+      <h3><%= ind = 5 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(4)' %>
+    <%= button_tag "NEXT", :type => 'button',:class=>'btn', :onclick => 'next(4)' %>
+  </div>
+
+  <div class="hide" id="que5">
+
+    <div>
+      <h3><%= ind = 6 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+
+    <div>
+      <h3><%= ind = 7 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(5)' %>
+    <%= button_tag "NEXT", :type => 'button',:class=>'btn', :onclick => 'next(5)' %>
+  </div>
+
+  <div class="hide" id="que6">
+
+    <div>
+      <h3><%= ind = 8 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(6)' %>
+    <%= button_tag "NEXT", :type => 'button',:class=>'btn', :onclick => 'next(6)' %>
+  </div>
+
+  <div class="hide" id="que7">
+
+    <div>
+      <h3><%= ind = 9 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(7)' %>
+    <%= button_tag "NEXT", :type => 'button',:class=>'btn', :onclick => 'next(7)' %>
+  </div>
+
+  <div class="hide" id="que8">
+
+    <div>
+      <h3><%= ind = 10 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(8)' %>
+    <%= button_tag "NEXT", :type => 'button',:class=>'btn', :onclick => 'next(8)' %>
+  </div>
+
+  <div class="hide" id="que9">
+
+    <div>
+      <h3><%= ind = 11 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(9)' %>
+    <%= button_tag "NEXT", :type => 'button',:class=>'btn', :onclick => 'next(9)' %>
+  </div>
+
+  <div class="hide" id="que10">
+
+    <div>
+      <h3><%= ind = 12 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(10)' %>
+    <%= button_tag "NEXT", :type => 'button',:class=>'btn', :onclick => 'next(10)' %>
+  </div>
+
+  <div class="hide" id="que11">
+
+    <div>
+      <h3><%= ind = 13 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(11)' %>
+    <%= button_tag "NEXT", :type => 'button',:class=>'btn', :onclick => 'next(11)' %>
+  </div>
+  <div class="hide" id="que12">
+
+    <div>
+      <h3><%= ind = 14 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(12)' %>
+    <%= button_tag "NEXT", :type => 'button',:class=>'btn', :onclick => 'next(12)' %>
+  </div>
+  <div class="hide" id="que13">
+
+    <div>
+      <h3><%= ind = 15 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(13)' %>
+    <%= button_tag "NEXT", :type => 'button',:class=>'btn', :onclick => 'next(13)' %>
+  </div>
+  <div class="hide" id="que14">
+
+    <div>
+      <h3><%= ind = 16 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(14)' %>
+    <%= button_tag "NEXT", :type => 'button',:class=>'btn', :onclick => 'next(14)' %>
+  </div>
+  <div class="hide" id="que15">
+
+    <div>
+      <h3><%= ind = 17 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(15)' %>
+    <%= button_tag "NEXT", :type => 'button',:class=>'btn', :onclick => 'next(15)' %>
+  </div>
+  <div class="hide" id="que16">
+
+    <div>
+      <h3><%= ind = 18 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(16)' %>
+    <%= button_tag "NEXT", :type => 'button',:class=>'btn', :onclick => 'next(16)' %>
+
+  </div>
+  <div class="hide" id="que17">
+
+    <div>
+      <h3><%= ind = 19 %> <%= @allQues[ind - 1]['queTxt'] %></h3>
+      <div class="opt">
+        <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+          <%#= ind %>
+          <% key.each do |opt, optTxt| %>
+
+            <% if opt == 'optText' %>
+              <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="percent(<%=ind%>)"class='radiobtn'required>
+               <span><% text=optTxt.split('*') %>
+                <% for i in 0..text.length-1 do %>
+                  <% if i%2==0 %>
+                    <%= text[i] %>
+                  <% else %>
+                    <b><%= text[i] %></b>
+                  <% end %>
+                <% end %></span><br></label>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+      <%= button_tag "PREVIOUS", :type => 'button',:class=>'btn', :onclick => 'pre(17)' %>
+      <%= submit_tag 'Confirm',:class=>'confirmbtn' %>
+    </div>
+
+  </div>
+
+
+</div>
+
+<script>
+
+
+    var per=document.getElementById('percen');
+    var value=0;
+    per.innerHTML=value;
+    var old=0;
+    function percent(id) {
+        newvalue=value+parseInt((id*100)/19);
+        if(newvalue>=old){
+            per.innerHTML=newvalue;
+            old=newvalue;
+        }
+
+
+    }
+    function next(id) {
+
+        if(id==1){
+            var questions1=document.getElementsByName('que' +id);
+            // var questions2=document.getElementsByName('que' +( id+1));
+        }else if (id == 2) {
+            var questions1 = document.getElementsByName('que' + id);
+            // var questions2=document.getElementsByName('que' +( id+1));
+        }
+        else if (id == 3) {
+            var questions1 = document.getElementsByName('que' + id );
+            var questions2 = document.getElementsByName('que' + (id + 1));
+        }
+        else if (id == 4) {
+            var questions1 = document.getElementsByName('que' + (id + 1));
+
+        }
+        else if (id == 5) {
+            var questions1 = document.getElementsByName('que' + (id + 1));
+            var questions2 = document.getElementsByName('que' + (id + 2));
+        } else if(id>=6){
+            var questions1=document.getElementsByName('que' +( id+2));
+        }
+        var isAnswer=false;
+        for(var j=0;j<questions1.length;j++){
+            if(questions1[j].checked==true){
+                isAnswer=true;
+                if (id == 3 || id == 5) {
+                    var isAnswer = false;
+                    for (var j = 0; j < questions2.length; j++) {
+                        if (questions2[j].checked == true) {
+                            isAnswer = true;
+                            break;
+                        }
+
+                    }
+                }
+                break;
+            }
+
+
+        }
+
+        if(isAnswer){
+            document.getElementById('que' + id).classList.remove('show');
+            document.getElementById('que' + (id + 1)).classList.add('show');
+            document.getElementById('que' + (id + 1)).classList.remove('hide');
+            document.getElementById('que' + id).classList.add('hide');
+        }else
+        {
+            document.getElementById('alertmsg').classList.add('show');
+            setTimeout(function () {
+                document.getElementById('alertmsg').classList.remove('show');
+            }, 2000)
+        }
+    }
+
+    function pre(id) {
+        document.getElementById('que' + id).classList.remove('show');
+        document.getElementById('que' + (id - 1)).classList.add('show');
+        document.getElementById('que' + (id - 1)).classList.remove('hide');
+        document.getElementById('que' + id).classList.add('hide');
+    }
+</script>

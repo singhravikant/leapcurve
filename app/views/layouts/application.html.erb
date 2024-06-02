@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="{{app.description}}">
+  <%= render :partial => 'layouts/google_analytics' %>
+  <meta name="keywords" content="app, responsive, angular, bootstrap, dashboard, admin">
+  <title data-ng-bind="pageTitle()">Leap Curve</title>
+  <link rel="shortcut icon" type="image/gif/png" href="assets/favcon-titlt.png">
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'appilcation' %>
+  <%= csrf_meta_tags %>
+  <script src="./assets/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.2/angular-animate.min.js"></script>
+  <% if $live %>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+  <% else %>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+  <% end %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="components/highstock/highstock.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script>
+      function get_seo(){
+          $.ajax({
+              url: '/corporate/get_seo',
+              data: {'path': location.hash.split('/')[2]},
+              type: 'get',
+              success: function (responce) {
+                  if(responce!="{}"){
+                      var data = responce.replace(/=>/g, ':')
+                      var data1 = JSON.parse(data)
+                      document.getElementsByName('description')[0].setAttribute('content', data1['description'])
+                      document.getElementsByName('keywords')[0].setAttribute('content', data1['keyword'])
+                      document.getElementsByTagName('title')[0].innerHTML = data1['title']
+                  }else{
+                      document.getElementsByTagName('title')[0].innerHTML = "Leap Curve"
+                  }
+              }
+
+
+          });
+      }
+      get_seo()
+  </script>
+</head>
+<body ng-app="naut" ng-clok="" ng-class="{ 'layout-fixed' : app.layout.isFixed, 'layout-boxed' : app.layout.isBoxed, 'layout-dock' : app.layout.isDocked, 'layout-material': app.layout.isMaterial, 'aside-offscreen' : app.sidebar.isOffscreen, 'aside-mini' : app.sidebar.isMini, 'footer-hidden': app.footer.hidden, 'in-app': !$state.includes('page')}">
+<style>
+
+  .layout_loader-overlay {
+    display: block !important;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1031;
+
+  }
+  .tooltipText {
+    float: left;
+    visibility: hidden;
+    /* width: 120px; */
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+  }
+  .toltip:hover .tooltipText {
+    visibility: visible !important;
+  }
+  .layout_loader {
+    display: block !important;
+    position: fixed;
+    z-index: 1032;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid gray;
+    border-bottom: 16px solid gray;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  @media (max-width: 991px) {
+    .layout_loader {
+      position: fixed;
+      z-index: 1032;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border: 6px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 6px solid gray;
+      border-bottom: 6px solid gray;
+      width: 60px;
+      height: 60px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+</style>
+<div data-ui-view="" data-autoscroll="false" ng-controller="CoreController" class="app-container" style="overflow-y: auto; height: 100vh"></div>
+<div class="loader" ng-show="app.showLoader"></div>
+<div class="loader-overlay" ng-show="app.showLoader"></div>
+<div id="loader" class="hide">
+  <div class="layout_loader"></div>
+  <div class="layout_loader-overlay"></div>
+</div>
+<!-- Settings-->
+<!--<div ng-include="'/assets/templates/settings.html'" ng-class="{'visible': showSettings}" ng-init="showSettings = false" class="settings-wrapper"></div>-->
+<!-- End Settings-->
+<%#= yield %>
+<%= render :partial => 'corporate/normal_confirm' %>
+<script>
+    async function register() {
+        var istrue=await normal_confirm('Are you a recruitment company?');
+        if(istrue){
+            location.href= '/recruiter/registration/'
+        }else {
+            location.href= '/corporate/registration/'
+        }
+
+    }
+    async function forgot_password() {
+        var istrue=await normal_confirm('Are you a recruitment company?');
+        return istrue
+
+    }
+</script>
+<script>
+    var loader = document.getElementById('loader').classList;
+
+    function showloader() {
+        loader.add('show');
+        loader.remove('hide');
+    }
+
+    function hideloader() {
+        loader.remove('show');
+        loader.add('hide');
+    }
+</script>
+</body>
+</html>

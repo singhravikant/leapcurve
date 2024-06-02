@@ -1,0 +1,66 @@
+Product Development - Internet;Engineering+Mine Engineering+Product Development+Product Development - Internet
+Engineering - Electrical & Electronics;Engineering+Mine Engineering+Product Development+Engineering - Electrical & Electronics
+Fashion Design;Fashion Design
+Research and Development;Clinical Research and Development+Research and Development
+Oil and Energy Operations;Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Oil and Energy Operations - Downstream
+Infrastructure Operations;Engineering+Mine Engineering+Product Development+Operations+Infrastructure Operations
+Property Management;Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Oil and Energy Operations+Operations+Piping+Property Management+Retail Operations
+Category Management;Category Management
+Finance - Treasury;Credit+Finance+Financial Services+Finance - Treasury
+Sales;Sales
+Strategy and Corporate Planning;Marketing+Human Resources+Finance+Engineering+Strategy and Corporate Planning
+Marketing - B2C;Marketing+Marketing - B2C
+Human Resources - Compensation & Benefits;Administration+Executive Management+Human Resources+Human Resources - Compensation & Benefits
+Administration;Administration+Executive Management+Human Resources+Medical
+Finance - Taxation;Credit+Finance+Financial Services+Finance - Taxation
+Product Development;Engineering+Mine Engineering+Product Development+Product Development - Hardware+Product Development - Internet+Product Development - Manufacturing
+Construction;Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Supply Chain Management+Marine Operations+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations+Logistics and Supply Chain
+Merchandising;Customer Care - Call Centre+Customer Service+Supply Chain Management+Merchandising+Retail Operations+Logistics and Supply Chain
+Engineering;Engineering+Mine Engineering+Product Development+Engineering - Civil+Engineering - Electrical & Electronics+Engineering - Marine+Design Engineering
+Customer Care - Call Centre;Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Merchandising+Property Management+Retail Operations
+Finance;Credit+Finance+Financial Services+Finance - Audit+Finance - Taxation+Finance - Treasury
+Production and Manufacturing;Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Supply Chain Management+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations+Logistics and Supply Chain
+Quality Assurance;Health, Safety and Environment+Quality Assurance
+Exploration;Exploration
+Legal;Corporate Affairs+Legal
+Corporate Affairs;Corporate Affairs+Legal
+Mining Operations;Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Marine Operations+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Oil and Energy Operations - Downstream
+Agricultural Services and Operations;Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Hatchery+Logistics and Supply Chain+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations
+Project Management;Project Management
+Medical;Administration+Executive Management+Human Resources+Medical
+Marketing;Marketing
+Human Resources - Recruitment;Administration+Executive Management+Human Resources+Human Resources - Recruitment
+Information Technology;Information Technology
+Engineering - Marine;Engineering+Mine Engineering+Product Development+Engineering - Marine
+Oil and Energy Operations - Downstream;Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations+Oil and Energy Operations - Downstream
+Marketing - B2B;Marketing+Marketing - B2B
+Human Resources - Industrial Relations;Administration+Executive Management+Human Resources+Medical+Human Resources - Industrial Relations
+Mine Engineering;Engineering+Mine Engineering+Product Development
+Logistics and Supply Chain;Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Supply Chain Management+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations+Logistics and Supply Chain
+Human Resources;Administration+Executive Management+Human Resources+Medical
+Human Resources - Training;Administration+Executive Management+Human Resources+Human Resources - Training
+Education;Education
+Software Development;Software Development
+Engineering - Civil;Engineering+Mine Engineering+Product Development+Engineering - Civil
+Clinical Research and Development;Clinical Research and Development+Research and Development
+Power Trading;Category Management+Power Trading
+Marketing - B2B and B2C;Marketing+Marketing - B2B and B2C
+EPC Design;Engineering+Mine Engineering+Product Development+EPC Design
+Credit;Credit+Finance+Financial Services
+Operations;Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Supply Chain Management+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations+Oil and Energy Operations - Downstream+Logistics and Supply Chain
+Customer Service;Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Marine Operations+Merchandising+Operations+Piping+Property Management+Retail Operations
+Design Engineering;Engineering+Product Development+Design Engineering
+Product Development - Hardware;Engineering+Mine Engineering+Product Development+Product Development - Hardware
+Risk Management;Operations+Loss Prevention+Risk Management
+Supply Chain Management;Operations+Merchandising+Supply Chain Management+Logistics and Supply Chain
+Loss Prevention;Operations+Loss Prevention+Risk Management
+Retail Operations;Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Merchandising+Operations+Property Management+Retail Operations
+Financial Services;Credit+Finance+Financial Services+Finance - Audit+Finance - Taxation+Finance - Treasury
+Marine Operations;Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations
+Health, Safety and Environment;Health, Safety and Environment+Quality Assurance
+Hatchery;Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Hatchery+Supply Chain Management+Marine Operations+Merchandising+Mining Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations+Logistics and Supply Chain
+Executive Management;Administration+Executive Management+Human Resources+Medical
+Product Development - Manufacturing;Engineering+Mine Engineering+Product Development
+Content Design;Education+Fashion Design+Content Design
+Finance - Audit;Credit+Finance+Financial Services+Finance - Audit
+Piping;Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations+Oil and Energy Operations - Downstream

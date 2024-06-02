@@ -1,0 +1,272 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="/assets/jquery.min.js"></script>
+
+<style>
+    .mb-lg {
+        margin-bottom: 10px;
+    }
+
+    .modal-open {
+        overflow: auto;
+    }
+
+    .modal-open .modal {
+        overflow-x: scroll;
+        overflow-y: auto;
+    }
+    @media (min-width: 200px) and (max-width: 767px) {
+
+        .modal-sm {
+            width: 95% !important;
+        }}
+    @media (min-width: 200px) and (max-width: 567px) {
+
+        .pad-1{
+            padding: 0px 51px 0px 40px;
+        }}
+    @media (min-width: 100px) and (max-width: 500px) {
+
+        .link-btn {
+
+            width: 45% !important;
+            font-size: 14px !important;
+            margin-left: 27% !important;
+
+        }
+    }
+    .head-h4 {
+        font-family: Poppins-SemiBold;
+        position: relative;
+        font-size: 24px;
+        word-spacing: 2px;
+        text-align: center;
+    }
+    @media (max-width:991px) {
+
+        .head-h4 {
+            font-size: 20px !important;
+        }
+    }
+    @media (max-width: 991px) {
+
+        .para-1 {
+            font-size: 12px !important;
+        }
+    }
+    @media (max-width: 991px) {
+
+        .or-text {
+
+        }
+    }
+    @media (max-width: 991px){
+        .floating-label {
+            color: black;
+            font-size: 15px;
+            position: absolute;
+            pointer-events: none;
+            left: 12px;
+            top: 7px;
+            transition: 0.2s ease all;
+            opacity: 0;
+            font-width: 400;
+        }}
+    @media (max-width: 991px) {
+
+        .sing-go-btn {
+            font-size: 15px !important;
+        }
+    }
+    @media (max-width: 991px) {
+
+        .gle-i {
+            font-size: 45px !important;
+            top: 10px !important;
+        }
+    }
+    .hight-logo{
+        height: 40px;
+    }
+    .logo-btn{
+        float: right;background: transparent;border: none;font-size: 18px;
+    }
+    .modal-body-div{
+        height: 15px
+    }
+    .margin-top{
+        margin-top: 0px !important;
+    }
+    .style-p{
+        text-align:center;font-family:Montserrat-Regular;font-size:15px;
+    }
+    .style-p a {
+        text-decoration: underline; color: black;cursor: pointer
+    }
+   .forgot-span {
+        font-size: 11px;font-family: poppins-regular;text-decoration: underline;cursor:pointer;
+    }
+    .linkedin-margin{
+        margin-top: 2%;
+    }
+    .linkedin-btn{
+        border-radius: 0%;
+        width: 65%;
+        height: 30px;
+        line-height: 18px;
+        font-size: 17px;
+        margin-top: 21px;
+        font-family: Montserrat-SemiBold;
+        background: #251872;
+        margin-left: 15%;
+        border: none
+    }
+   .or-div {
+        margin-top: 40px;margin-bottom: 15px;font-family: montserrat semibold;font-size: 18px;
+    }
+    .hr-div{
+        padding: 2px 1px 0px 51px;
+    }
+  .hr-div hr  {
+        border: 1px solid silver;margin-top: 8px;
+    }
+    .or-text{
+        text-align: center;
+        font-weight:600;
+    }
+    .or-text-hr-padding{
+        padding: 2px 56px 0px 3px;
+    }
+ .or-text-hr-padding hr   {
+        border: 1px solid silver;;margin-top: 8px;
+    }
+   .form-grp-margin {
+        margin-top:10px;
+    }
+  .floating-label-wrapper {
+        font-size: 20px;font-family:Montserrat-Regular;
+    }
+   .float-style {
+        border-left:none;    border-radius: 0px;    border-bottom: 2px solid silver;border-right:none;border-top:none ;margin-top:0px
+    }
+    .btn-style{
+        font-size: 21px;
+        font-family:Montserrat-Regular;
+        box-shadow: none !important;
+        color: black !important;
+    /* font-weight: 800; */
+        background: transparent;
+    }
+   .gle-i {
+        position: relative;
+       font-size: 60px !important;
+       top: 18px;
+    }
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #251872;
+        border-color: #204d74;
+    }
+    .heder_arrow{
+        height: 40px;
+        position: relative;
+        /*top: -2px;*/
+        left: -10px;
+
+    }
+</style>
+
+<section>
+    <div class="modal-header">
+
+        <div class="col-md-12">
+            <img src="/assets/logo1.png" class="img-rsponsive hight-logo">
+            <button type="button" data-dismiss="modal" aria-hidden="true" ng-click="close()"
+                class="logo-btn">x
+            </button>
+        </div>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div  class="modal-body-div"></div>
+            <div class="col-md-offset-0 col-md-12 col-md-12 mb-lg" >
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-lg margin-top">
+                    <!--row1-->
+                    <form>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                            <h4 class="head-h4"  ng-if="!showSignUp"><b>SIGN UP WITH US! </b></h4>
+                            <h4  class="head-h4"  ng-if="showSignUp"><b>LOGIN </b></h4>
+                            <p class="para-1 style-p"><a  ng-if="!showSignUp" ng-click="changeForm()">Already have an account? </a></p>
+                            <p class="para-1 style-p"> <a  ng-if="showSignUp" ng-click="changeForm()">Don't have an account? </a></p>
+                            <span ng-click="close(); forgetPassword(); " class="forgot-span" ng-if="showSignUp" >Forgot your password?</span>
+
+                        </div>
+                        <div  class="col-md-12 text-center linkedin-margin">
+                            <button type="button" ng-click="linkedinLogin()" class="btn btn-primary btn-block link-btn linkedin-btn">Linkedin</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 or-div">
+                        <div class="col-md-5 col-sm-5 col-xs-5 hr-div">
+                            <hr>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2 or-text">OR
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-5 or-text-hr-padding">
+                            <hr>
+                        </div>
+
+                    </div>
+                    <!--row3-->
+                    <div class="row">
+                        <div class="col-md-offset-0 col-sm-12 col-md-12 col-lg-12">
+                            <div class="col-sm-12 col-md-12 text-center pad-1">
+                                <div class="form-group form-grp-margin">
+                                    <div class="col-md-1"></div>
+                                    <div class=" col-md-10 form-group has-feedback floating-label-wrapper" >
+                                        <label for="InputEmail" >Email</label>
+                                        <input type="email" placeholder="Email" id="InputEmail" required=" "
+                                               autocomplete="off" class="form-control float-style" ng-model="newuser.Email"
+                                               with-floating-label/>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 text-center pad-1">
+                                <div class="form-group form-grp-margin">
+                                    <div class="col-md-1"></div>
+                                    <div class=" col-md-10 form-group has-feedback floating-label-wrapper" >
+                                        <label for="InputfirstName1">firstName</label>
+                                        <!--custom-Required-Text array-Len="2"-->
+                                        <input type="password" id="InputfirstName1" placeholder="Password"
+                                               autocomplete="off" required="" ng-pattern="/^[a-zA-Z0-9\  ]/"
+                                               class="form-control text-colorTadqaBrown float-style" ng-model="newuser.Password" with-floating-label/>
+                                        <div class="col-md-1"></div>
+                                    </div>
+
+                                </div></div>
+
+                            <div class="col-md-2"></div>
+
+                            <div class="col-md-12 text-center" >
+                                <div class="form-group">
+                                <button type="submit" ng-click="sign_up_user()" ng-if="!showSignUp" class="btn sing-go-btn btn-style">SIGN UP
+                                </button>
+
+
+                                <button type="submit" ng-click="login()" ng-if="showSignUp" class="btn sing-go-btn btn-style">GO
+                                </button><img src="/assets/right.png" class="heder_arrow">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+</section>

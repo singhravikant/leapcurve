@@ -1,0 +1,944 @@
+<style>
+    body {
+
+        background: #1e1d1d;
+    }
+
+    [type="checkbox"]:not(:checked) + label:after {
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        border: 2px solid white !important;
+        z-index: 0;
+    }
+
+    .table_row_item {
+        padding-left: 2%;
+        padding-top: 1%;
+    }
+
+    .table_head_item {
+        padding-top: 2%;
+    }
+
+    .custom_btn {
+        background-color: transparent;
+
+        text-align: left;
+    }
+
+    .custom_btn:hover {
+        background-color: transparent;
+
+        text-align: left;
+    }
+
+    .table_row_item button {
+
+        border-color: white;
+
+    }
+
+    ::placeholder {
+        color: white;
+        opacity: 1; /* Firefox */
+        font-size: 15px;
+    }
+
+    #input {
+
+        width: 200px;
+
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid white;
+        color: white;
+
+    }
+
+    #input1 {
+
+        width: 224px;
+
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid white;
+        color: white;
+
+    }
+
+    .btn-primary:active:hover {
+        background-color: transparent;
+
+    }
+
+    btn-primary:active {
+    }
+
+    /* Remove default checkbox */
+    [type="radio"]:not(:checked),
+    [type="radio"]:checked {
+        position: absolute;
+        left: -9999px;
+    }
+
+    [type="radio"]:not(:checked) + label,
+    [type="radio"]:checked + label {
+        position: relative;
+
+        cursor: pointer;
+        padding: 3px 0px 0px 53px;
+
+        height: 43px;
+        line-height: 38px
+
+    }
+
+    /* checkbox aspect */
+    [type="radio"] + label:before,
+    [type="radio"] + label:after {
+        content: '';
+        position: absolute;
+        left: 0;
+
+    }
+
+    [type="radio"]:not(:checked) + label:after {
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        border: 2px solid white !important;
+        z-index: 0;
+    }
+
+    /* Checked styles */
+    [type="radio"]:checked + label:before {
+
+        width: 40px;
+        height: 40px;
+        border: 7px solid white;
+
+    }
+
+    @media (max-width: 500px) {
+
+        .second h4 {
+
+            color: #69ade3;
+            padding: 0px 15px 17px 10px !important;
+            font-size: 30px;
+            font-family: Poppins-Regular;
+
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        .second1 p {
+
+            color: #69ade3;
+            padding: 2px 0px 0px 15px !important;
+            font-size: 14px;
+            position: relative;
+            top: -20px;
+            font-family: Poppins-Regular;
+        }
+    }
+
+    @media (max-width: 500px) {
+
+        #input, #input1 {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .small-level {
+            margin-left: 12px !important;
+        }
+    }
+
+    @media only screen and (width: 768px) {
+
+        [type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
+            position: relative;
+            cursor: pointer;
+            padding: 3px 0px 0px 53px;
+            margin-left: 40px !important;
+            height: 43px;
+            line-height: 38px;
+        }
+
+    }
+
+    @media (max-width: 800px) {
+        [type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label {
+            margin-left: 11px;
+            position: relative;
+            cursor: pointer;
+            padding: 0px 5px 0px 53px;
+            font-size: 15px;
+            height: 43px;
+            line-height: 18px;
+        }
+    }
+
+    @media only screen and (width: 1024px) {
+
+        [type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
+            position: relative;
+            cursor: pointer;
+            padding: 3px 0px 0px 53px;
+            margin-left: 40px;
+            height: 43px;
+            line-height: 38px;
+        }
+
+    }
+
+    @media (max-width: 800px) {
+        .first-check span b {
+            position: relative !important;
+            top: -20px !important;
+            font-family: Montserrat-Medium;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .heading-1 {
+            padding: 13px !important;
+        }
+    }
+
+    @media only screen and (width: 1024px) {
+        .first-div {
+            margin-left: 60px;
+
+        }
+
+    }
+
+    @media only screen and (width: 768px) {
+        .head-1 {
+            margin-top: 10% !important;
+        }
+    }
+
+    @media only screen and (width: 1440px) {
+
+        .head {
+            margin-left: -110px !important;
+        }
+
+    }
+
+    @media only screen and (width: 1366px) {
+
+        .head {
+
+            margin-left: -110px !important;
+        }
+
+    }
+
+    @media only screen and (width: 1366px) {
+
+        [type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label {
+            margin-left: 0px;
+        }
+
+    }
+
+    @media only screen and (width: 768px) {
+        .top-left {
+            position: relative;
+            top: -52px;
+            text-align: right;
+            left: 230px;
+
+        }
+    }
+
+    @media (max-width: 800px) {
+
+        .teble-res {
+            margin-left: 0px;
+        }
+    }
+
+    @media (min-width: 1020px) {
+        .top-left {
+            position: absolute;
+            left: 120px;
+            top: 13px;
+        }
+    }
+
+    .layout-boxed .app-container > section {
+        max-width: 100%;
+        /* margin: 0 auto !important; */
+    }
+
+    .app {
+        padding: 0px !important;
+        padding-bottom: 0px !important;
+        width: 100%;
+    }
+
+    @media only screen and (width: 768px) {
+        .top-left {
+            position: relative !important;
+            left: -20px !important;
+            top: -5px !important;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .first-check span b {
+            position: relative !important;
+            top: -49px !important;
+            font-family: Montserrat-Medium;
+        }
+    }
+
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    @media (min-width: 1400px) {
+
+        .first-div .para-1 {
+            margin-left: 111px;
+        }
+    }
+
+    @media only screen and (width: 1366px) {
+
+        input#input {
+            margin-left: 86px;
+        }
+    }
+
+    @media only screen and (width: 1920px) {
+
+        input#input {
+            margin-left: 0px !important;
+        }
+    }
+
+    @media only screen and (width: 1920px) {
+
+        .select-1 {
+            margin-left: 0px !important;
+        }
+    }
+
+    @media only screen and (width: 1024px) {
+
+        .first-div .para-1 {
+            margin-left: 30px;
+        }
+    }
+
+    @media (min-width: 992px) {
+
+        .h_1 h2 {
+            margin-left: 88px !important;
+            px;
+        }
+    }
+
+    @media only screen and (width: 1024px) {
+
+        input#input {
+
+            margin-left: 40px;
+        }
+    }
+
+    @media (min-width: 1400px) {
+
+        input#input {
+
+            margin-left: 60px;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        h3.heading-1 {
+            margin-left: 0px;
+        }
+    }
+
+    @media only screen and (width: 1366px) {
+
+        .select-1 {
+            margin-left: 100px !important;
+        }
+    }
+
+    @media only screen and (width: 1024px) {
+
+        .select-1 {
+            margin-left: 100px !important;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .select-1 {
+            margin-left: 80px;
+        }
+    }
+
+    .row.main.ng-scope {
+        display: none;
+    }
+
+    .select-1 {
+
+        width: 200px;
+        boredr: none;
+        background: transparent;
+        height: 30px;
+        border: none;
+        border-bottom: 2px solid;
+        boredr: none;
+        color: white;
+    }
+
+    .select-1 option {
+        background: #222222;
+    }
+
+    @media (min-width: 1000px) {
+        .select-1 {
+            margin-left: 74px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .select-1 {
+            margin-left: 30px;
+        }
+    }
+
+    @media only screen and (width: 1024px) {
+
+        .col-md-3.col-sm-4.col-xs-6.text-center {
+            margin-left: 50px;
+        }
+    }
+
+    container-fluid {
+        padding: 0px;
+    }
+
+    @media (max-width: 991px) {
+
+        .heading-1-1 {
+            margin-top: 70px;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .head {
+            margin-left: 0px !important;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .top-left {
+            position: relative;
+            left: 0px;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 200px) and (max-width: 314px) {
+        .top-left {
+            position: relative;
+            top: -68px;
+            left: 0px;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .head {
+            text-align: center;
+            font-size: 17px !important;
+            margin: 0px;
+
+        }
+    }
+
+    @media (max-width: 991px) {
+        .heading-1 {
+            font-size: 17px !important;
+        }
+    }
+
+    @media (max-width: 991px) {
+        [type="checkbox"]:not(:checked) + label:after {
+            top: 0px;
+            width: 30px;
+            height: 30px;
+            border: 2px solid white !important;
+            z-index: 0;
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        [type="checkbox"]:checked + label:before {
+            width: 30px;
+            height: 30px;
+            border: 5px solid white;
+        }
+    }
+
+    @media (max-width: 991px) {
+        [type="radio"]:not(:checked) + label:after {
+            top: 0px;
+            width: 30px;
+            height: 30px;
+            border: 2px solid white !important;
+            z-index: 0;
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        [type="radio"]:checked + label:before {
+            width: 30px;
+            height: 30px;
+            border: 5px solid white;
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        .first-check span b {
+            top: -25px !important;
+
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        [type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label {
+            padding: 0px 0px 0px 35px;
+
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        .second1 p {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .top-left .a-3 {
+            font-size: 14px !important;
+
+        }
+    }
+
+    @media (max-width: 991px) {
+        .top-left .a-2 {
+            font-size: 14px !important;
+
+        }
+    }
+
+    @media (max-width: 470px) {
+
+        .min-div {
+            width: 100%;
+            text-align: left !important;
+            padding: 5px 15px 35px 15px;
+        }
+    }
+
+    @media (max-width: 470px) {
+
+        .select-1 {
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        .down-row {
+            padding-left: 0px !important;
+        }
+    }
+
+    @media only screen and (width: 1024px) {
+        [type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
+            margin-left: 0px !important;
+        }
+    }
+
+    .top-nav {
+        margin: 0%;
+        background-color: #222222;
+        border-color: #222222;
+        border-bottom: 1px solid #222222
+    }
+
+    .head {
+        color: #66b6bf;
+        font-size: 34px;
+        font-family: Poppins-Regular;
+    }
+
+    .a-2 {
+        font-size: 14px;
+        color: #54bacb !important;
+        padding: 0px 15px 0px 0px !important;
+    }
+
+    .a-3 {
+        font-size: 14px;
+    }
+
+    .i-1 {
+        font-size: 35px;
+    }
+
+    .contain-main {
+        background: #1e1d1d;
+        padding: 0px;
+        margin-top: 7%;
+    }
+
+    .heading-1-1 {
+        color: #66b6bf;
+        padding: 0px 15px 15px 80px;
+        font-size: 30px;
+        font-family: Poppins-Regular;
+    }
+
+    .down-row {
+        padding-left: 110px;
+    }
+
+    .para-1 span b {
+        position: relative !important;
+        top: -20px !important;
+        color: white !important;
+    }
+
+    .small-level1 {
+        margin-left: 0px;
+    }
+
+    .mob-head {
+        color: #66b6bf !important;
+        padding: 0px 15px 15px 80px;
+        font-size: 30px;
+        font-family: Poppins-Regular;
+    }
+
+    .mob-para {
+        color: #66b6bf !important;
+        padding: 0px 15px 15px 100px;
+        font-size: 14px;
+        position: relative;
+        top: -20px;
+        font-family: Poppins-Regular;
+    }
+
+    .row-3 {
+        padding-bottom: 50px;
+    }
+
+    .current-heading {
+        color: #66b6bf !important;
+        padding: 30px 15px 15px 80px;
+        font-size: 30px;
+        font-family: Poppins-Regular;
+    }
+
+    .para-3 label {
+        margin-left: 0px;
+    }
+
+    .para-3 span b {
+        position: relative;
+        top: -25px;
+        color: white;
+    }
+
+    .app-container {
+        background-color: #1e1d1d;
+    }
+
+    @media (max-width: 373px) and (min-width: 100px) {
+        .top-left {
+            position: relative;
+            top: -36px;
+            left: 0px;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 1365px) and (min-width: 992px) {
+        input#input, input#input1 {
+            margin-left: 86px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .top-left {
+            position: absolute;
+            left: 148px;
+            top: 5px;
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 768px) {
+        .top-left {
+            position: relative;
+            top: -5px;
+            left: 0px !important;
+            text-align: center;
+        }
+    }
+
+    .same-text {
+        position: relative;
+        top: -20px;
+        color: white;
+    }
+
+    @media (max-width: 1280px) and (min-width: 992px) {
+        .div-width {
+            width: 50%
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 501px) {
+        .min-div {
+            text-align: left !important;
+        }
+    }
+
+    @media (min-width: 1020px) {
+        .top-left {
+            left: 170px !important;
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 768px) {
+        .head {
+            font-size: 22px !important;
+            margin: 0px !important;
+            padding-left: 22px;
+            position: relative;
+            text-align: center !important;
+            top: 3px;
+        }
+    }
+
+    .small {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .new-same-text{
+        position: relative;
+        top:-20px;
+        left: 55px;
+
+    }
+    @media (max-width: 1300px) and (min-width: 991px) {
+        .new-same-text {
+            width: 90%;
+        }
+        }
+    @font-face {
+        font-family: Montserrat;
+        src: url("/assets/fonts/Montserrat-Thin.otf")
+    }
+    .heder_arrow{
+        height: 40px;
+        position: relative;
+        top: -2px;
+        /*left: 5px;*/
+
+    }
+    .tooltipText{
+        background-color: #4e4a4a;
+    }
+</style>
+
+<header id="header" class="">
+    <nav class="navbar navbar-default navbar-fixed-top top-nav ">
+        <div class="row h_1">
+            <div class="col-md-8 col-sm-12  col-xs-12 text-left">
+                <h2 CLASS="head">PART 1: YOUR ORGANISATION</h2>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="top-left">
+                    <span class="toltip">
+                    <a href="" class="a-2 toltip" ng-if="!ques.isGuest" ng-click="ques.logout()">LOGOUT</a>
+                    <div class="tooltipText" style="">
+                        {{ShowEmail}}
+                    </div>
+                    </span>
+                    <a href="" class="a-2" ng-if="ques.isGuest" ng-click="ques.OpenLogin()">SAVE</a>
+                    <a href="" class="a-3" ng-click="showNextQues(0);showInformation()"><span>N</span>EXT
+                        <keybinding on="n" invoke="showNextQues(0)"/>
+                    </a>
+                    <img src="assets/right.png" class="heder_arrow">
+                    <!--<i class="fa fa-angle-right i-1" aria-hidden="true"></i>-->
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid contain-main">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="heading-1 heading-1-1">1. My company has customers/offices in:</h3>
+        </div>
+    </div>
+    <div class="row  down-row">
+        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12  div-width">
+            <p class="para-1">
+                <input type="checkbox" id="button1" name="question1" ng-click="ques.enableButton('button1')"
+                       ng-model="ques.btn1Selected"/>
+                <label class="small-level  " for="button1"></label>
+                <span><b class="same-text">Regionally (1-5 States)</b></span>
+            </p>
+        </div>
+        <div class="col-md-3  col-lg-3 col-sm-6 col-xs-12 div-width">
+            <p>
+                <input type="checkbox" id="button2" name="question1" ng-click="ques.enableButton('button2')"
+                       ng-model="ques.btn2Selected"/>
+                <label class="small-level small-level1" for="button2"></label>
+                <span><b class="same-text">Nationally (5+ States)</b></span>
+            </p>
+
+        </div>
+        <div class="col-md-3  col-lg-3 col-sm-6 col-xs-12 div-width">
+            <p>
+                <input type="checkbox" id="button3" name="question1" ng-click="ques.enableButton('button3')"
+                       ng-model="ques.btn3Selected"/>
+                <label class="small-level small-level1" for="button3"></label>
+                <span><b class="same-text">Internationally (1-5 Countries)</b></span>
+            </p>
+
+        </div>
+        <div class="col-md-3  col-lg-3 col-sm-6 col-xs-12 div-width">
+            <p>
+                <input type="checkbox" id="button4" name="question1" ng-click="ques.enableButton('button4')"
+                       ng-model="ques.btn4Selected"/>
+                <label class="small-level small-level1" for="button4"></label>
+                <span><b class="same-text">Globally (5+ Countries)</b></span>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 second ">
+            <h4 class="heading-1 mob-head">2. My Company has: </h4>
+        </div>
+        <div class="col-md-12 second1">
+            <p class=" mob-para">(Please enter an approximate number if you are not sure)</p>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-3 col-sm-4 col-xs-6 min-div text-center">
+                <input type="number" id="input" placeholder="Number of Employees" min="0" ng-model="ques.Employee">
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6 min-div ">
+                <input type="number" id="input1" placeholder="Annual Revenue(INR crore)" min="0" ng-model="ques.Revanu">
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-3">
+        <div class="col-md-12 second ">
+            <h4 class="heading-1 current-heading">3. My level in current organization:</h4>
+        </div>
+        <div class="row down-row ">
+            <div class="col-md-6 col-sm-6 col-xs-12  col-lg-6">
+                <p>
+                    <input type="radio" id="button4-1" ng-checked="ques.userLevel==3" name="question1"
+                           ng-model="ques.userLevel" value="3"/>
+                    <label class="small-level small-level1" for="button4-1"></label>
+                    <span><b class="same-text">Top Management </b><span class="same-text small">(Typically top 2 levels)</span></span>
+                </p>
+
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12  col-lg-6">
+                <p>
+                    <input type="radio" id="button3-1" ng-checked="ques.userLevel==2" name="question1"
+                           ng-model="ques.userLevel" value="2"/>
+                    <label class="small-level small-level1" for="button3-1"></label>
+                    <span><b class="same-text">Senior Management </b><span class="same-text small">(Typically third level)</span></span>
+                </p>
+
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6">
+
+                    <input type="radio" id="button2-1" name="question1" ng-checked="ques.userLevel==1"
+                           ng-model="ques.userLevel" value="1"/>
+                    <label class="small-level small-level1" for="button2-1"></label>
+                <p class="new-same-text">  <span class="same-text">
+
+                                                <b>Middle Management
+
+                   <span class="small" >(If you have someone reporting to you who is NOT a workman)</span>
+
+                                                </b>
+
+                    </span>
+                </p>
+
+
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 ">
+
+                <p>
+                    <input type="radio" id="button1-1" name="question1" ng-checked="ques.userLevel==0"
+                           ng-model="ques.userLevel" value="0"/>
+                    <label class="small-level  " for="button1-1"></label>
+                    <span class="same-text">
+                    <b>Junior Management</b> <span class="small">(Typically entry level
+                    professionals)</span></span>
+                </p>
+
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</td>
+</div>
+</div>
+</tr>
+
+</tbody>
+</table>
+</div>

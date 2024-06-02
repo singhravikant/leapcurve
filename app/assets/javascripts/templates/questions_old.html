@@ -1,0 +1,138 @@
+<toaster-container toaster-options="{'close-button':true }"></toaster-container>
+<div class="container" style="margin-top: 0%" ng-if="isInitialques">
+    <div ng-include="'/assets/templates/askabout.html'"></div>
+</div>
+<div class="container" ng-if="ques.showQues" style="margin-top: 7%">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <div class="col-md-12 mt-lg" ng-repeat="que in ques.allQues" ng-if="que['isVisible']"
+                     ng-init="outerIndex=$index">
+                    <div class="col-md-4">
+                        <div class="col-md-2 text-center" style="padding-right: 0px"><h4 class="mt-lg">
+                            {{que['queNo']}}</h4></div>
+                        <div class="col-md-10" style="padding-left: 0px"><h4 class="mt-lg">{{que['queTxt']}}</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-8" ng-if="que['queOption'].length>4">
+
+                        <div class="checkbox c-checkbox needsclick" ng-repeat="opt in que['queOption']"
+                             ng-if="(UserInfo['EffectiveLevel']>=opt['minLvl'] && UserInfo['EffectiveLevel']<=opt['maxLvl'])&& que['showMore']==true && opt['visible']==true"
+                             ng-init="innerIndex=$index">
+                            <label class="needsclick">
+                                <input type="checkbox" value="" ng-model="opt['optSelect']" class="needsclick"
+                                       ng-click="selectOption(innerIndex,outerIndex)">
+                                <span class="fa fa-check"></span>{{opt['optText']}}</label>
+
+                        </div>
+                        <div class="col-md-6" ng-if="ques5selectIndex==4&&que['queNo']==5">
+                            <label>Please specify number:</label>
+                            <input type="number" min="1000" ng-model="ques.empTxtno" ng-change="ques.getEmpNo()"/>
+                        </div>
+
+                        <div class="checkbox c-checkbox needsclick" ng-repeat="opt in que['queOption']"
+                             ng-if="que['showMore']==false && opt['visible']==true" ng-init="innerIndex=$index">
+                            <label class="needsclick">
+                                <input type="checkbox" value="" class="needsclick" ng-model="opt['optSelect']"
+                                       ng-click="selectOption(innerIndex,outerIndex)">
+                                <span class="fa fa-check"></span>{{opt['optText']}}</label>
+                        </div>
+
+                    </div>
+                    <div class="col-md-8" ng-if="que['queOption'].length<=4">
+                        <div class="col-md-2" ng-repeat="opt in que['queOption']" ng-init="innerIndex=$index"
+                             ng-if="opt['visible']==true && (opt['optText'].length<=20)" style="padding-left: 0px">
+                            <div class="checkbox c-checkbox needsclick checkbox-inline"
+                                 ng-if="opt['visible']==true&&(UserInfo['EffectiveLevel']>=opt['minLvl'] && UserInfo['EffectiveLevel']<=opt['maxLvl']&& que['showMore']==true)"
+                                 style="padding-left: 0px">
+                                <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick" ng-model="opt['optSelect']"
+                                           ng-click="selectOption(innerIndex,outerIndex)">
+                                    <span class="fa fa-check"></span>{{opt['optText']}}</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2" ng-repeat="opt in que['queOption']" ng-init="innerIndex=$index"
+                             ng-if="opt['visible']==true && que['showMore']==false && opt['optText'].length<=20"
+                             style="padding-left: 0px">
+                            <div class="checkbox c-checkbox needsclick checkbox-inline" style="padding-left: 0px">
+                                <label class="needsclick">
+                                    <input type="checkbox" value="" class="needsclick" ng-model="opt['optSelect']"
+                                           ng-click="selectOption(innerIndex,outerIndex)">
+                                    <span class="fa fa-check"></span>{{opt['optText']}}</label>
+                            </div>
+
+                        </div>
+                        <div class="checkbox c-checkbox needsclick" ng-repeat="opt in que['queOption']"
+                             ng-init="innerIndex=$index"
+                             ng-if="opt['visible']==true && (UserInfo['EffectiveLevel']>=opt['minLvl'] && UserInfo['EffectiveLevel']<=opt['maxLvl'])&& que['showMore']==true && opt['optText'].length>20">
+                            <label class="needsclick">
+                                <input type="checkbox" value="" class="needsclick" ng-model="opt['optSelect']"
+                                       ng-click="selectOption(innerIndex,outerIndex)">
+                                <span class="fa fa-check"></span>{{opt['optText']}}</label>
+                        </div>
+                        <div class="checkbox c-checkbox needsclick" ng-repeat="opt in que['queOption']"
+                             ng-init="innerIndex=$index"
+                             ng-if="opt['visible']==true &&  que['showMore']==false && opt['optText'].length>20">
+                            <label class="needsclick">
+                                <input type="checkbox" value="" class="needsclick" ng-model="opt['optSelect']"
+                                       ng-click="selectOption(innerIndex,outerIndex)">
+                                <span class="fa fa-check"></span>{{opt['optText']}}</label>
+                        </div>
+
+                    </div>
+                    <div class="col-md-offset-4 col-md-8" ng-if="que['showMore']">
+                        None of the above ? <a ng-click="que['showMore']=false" style="cursor: pointer">Show more
+                        options</a>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-offset-6 col-md-2" ng-if="ques.isFirst" ng-hide="LastQue">
+                            <button class="btn btn-primary btn-block" ng-click="showPreviousButton(outerIndex)">Back
+                            </button>
+                        </div>
+                        <div class=" col-md-2" ng-if="ques.isGuest && ques.isFirst">
+                            <button class="btn btn-primary btn-block"   ng-click="ques.OpenLogin()">Save</button>
+                        </div>
+                        <div class=" col-md-2" ng-if="ques.isFirst" ng-hide="LastQue">
+                            <button class="btn btn-primary btn-block" ng-if=" showNext==true"
+                                    ng-click="showNextQues(outerIndex)">Next
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-offset-8 col-md-4" ng-show="LastQue">
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <button class="btn btn-primary btn-block col-md-6"
+                                        ng-click="showPreviousButton(outerIndex)">Back
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-primary btn-block col-md-6" ng-click="CalculateScore()">Get
+                                    Career Level
+                                </button>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+               <div class="col-md-12">
+                    <div class="col-md-offset-6 col-md-2" ng-if="!ques.isFirst" ng-hide="LastQue">
+                        <button class="btn btn-primary btn-block" ng-click="showPreviousButton(2)">Back</button>
+                    </div>
+                    <div class=" col-md-2" ng-if="ques.isGuest && !ques.isFirst">
+                        <button class="btn btn-primary btn-block"   ng-click="ques.OpenLogin()">Save</button>
+                    </div>
+                    <div class=" col-md-2" ng-if="!ques.isFirst" ng-hide="LastQue">
+                        <button class="btn btn-primary btn-block" ng-click="showNextQues(2,0)">Next</button>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

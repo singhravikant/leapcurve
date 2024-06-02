@@ -1,0 +1,3058 @@
+<% if browser.device.mobile? %>
+  <% if session[:User]['islogin'] %>
+
+    <style>
+      .mob-coll {
+        text-align: left;
+      }
+
+      .mob-cross {
+        position: relative;
+        top: -14px;
+        left: -6px;
+        border: 1px solid;
+        text-decoration: none;
+        padding: 2px 5px !important;
+        font-weight: bold;
+        font-size: 8px;
+      }
+
+      .col-60per ul .filter-underline {
+        position: relative;
+        display: inline;.sort-para
+        font-family: monaserrat-regular;
+        text-decoration: underline;
+      }
+
+      .mob-cross {
+        display: none;
+      }
+
+      .container {
+        margin: auto;
+        width: 90%;
+        padding-top: 50px;
+      }
+
+      .tabs {
+        padding: 0px;
+        margin: 5px 0px;
+        text-align: center;
+      }
+
+      .tab {
+        font-size: 12px;
+        font-family: Montserrat-SemiBold;
+        letter-spacing: 1px;
+        /*font-weight: bold;*/
+        border: 2px solid #f0f0f0;
+        border-radius: 2px;
+        color: #4f4f4f;
+        background-color: #f0f0f0;
+        display: inline-block;
+        padding: 5px 0px 5px 0px;
+        cursor: pointer;
+        width: 100%;
+        padding: 5px 0px;
+        text-align: center;
+        list-style: none;
+        margin: 6px 0px;
+      }
+
+      /*.btn:active {*/
+      /*color: #e8ffff;*/
+      /*background-color: #66b6bf;*/
+      /*}*/
+
+      .expands {
+        text-align: center;
+        /*background-color: #f2ffff;*/
+        list-style: none;
+        alignment: center;
+        width: 99%;
+        padding: 4px;
+        margin: auto;
+        min-height: 350px;
+        font-family: arial;
+      }
+
+      .expands li {
+        display: none;
+      }
+
+      .data {
+        font-size: 12px;
+        font-family: Montserrat-Regular;
+        text-align: center;
+        padding: 20px 10px 20px 10px;
+        background-color: #e0eff2;
+        margin: 18px 0px;
+      }
+
+      .data1 {
+        font-size: 16px;
+        font-family: Montserrat-Regular;
+        padding: 20px;
+        line-height: 20px;
+        background-color: #e0eff2;
+        margin: 18px 0px;
+        color: #717c80;
+      }
+
+      .link1 {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .float {
+        float: left;
+      }
+
+      .add-btn {
+        font-size: 12px;
+        font-family: Montserrat-SemiBold;
+        letter-spacing: 1px;
+        /*font-weight: bold;*/
+        border: 2px solid #f0f0f0;
+        border-radius: 2px;
+        color: #4f4f4f;
+        background-color: #f0f0f0;
+        display: inline-block;
+        padding: 4px;
+        cursor: pointer;
+        margin: 10px 0;
+        width: 50%;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        list-style: none;
+      }
+
+      .active-tab {
+        color: #ffff !important;
+        background-color: #66b6bf;
+        border: 2px solid #66b6bf;
+      }
+
+      .active-expand {
+        padding-top: 15px;
+        display: block !important;
+      }
+
+      .roles {
+        margin: 10px 0px;
+        background-color: #e0eff4;
+        padding: 10px 10px;
+      }
+
+      .role-head {
+        font-size: 12px;
+        font-family: Montserrat-SemiBold;
+        letter-spacing: 1px;
+        text-align: left;
+      }
+
+      .data-items {
+        font-size: 12px !important;
+        color: #717c80;
+        font-family: Montserrat-Regular;
+        line-height: 15px;
+        text-align: left;
+      }
+
+      .sort-padding span {
+        font-size: 12px;
+      }
+
+      .user-roles {
+        /*text-decoration: none;*/
+        color: black;
+      }
+
+      .frmbtn {
+        outline: none;
+        font-size: 12px;
+        border: none;
+        display: inline;
+        font-family: Montserrat-SemiBold;
+        text-decoration: underline;
+        cursor: pointer;
+        background-color: transparent;
+      }
+
+      .permission {
+        position: relative;
+        display: block;
+        width: 100%;
+        /*float: right;*/
+      }
+
+      .link {
+        color: #717c80;
+        /*text-decoration: none;*/
+        font-size: 10px;
+      }
+
+      .welcm-name {
+        font-family: Poppins-SemiBold;
+        font-size: 15px;
+      }
+
+      .col-60per {
+        width: 100%;
+        display: block;
+        position: relative;
+        font-size: 12px;
+        margin-top: 18px;
+        text-align: center;
+      }
+
+      .col-60per ul {
+        padding: 0;
+      }
+
+      .col-60per ul li a {
+        cursor: pointer;
+      }
+
+      .len-9 {
+        font-size: 13px;
+        text-align: left;
+      }
+
+      .app-head {
+        font-size: 12px !important;
+      }
+
+      .disp {
+        display: inline !important;
+        cursor: pointer;
+      }
+
+      .sort-span-text {
+        position: relative;
+        padding-left: 15px;
+        font-size: 11px;
+      }
+
+      .font-pop {
+
+        font-family: Montserrat-Regular;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .checkmark {
+        content: " ";
+        background-color: white;
+        border: 2px solid black;
+        padding: 7px;
+        left: 5px;
+        top: 0px;
+        position: absolute;
+        background-color: white;
+      }
+
+      .optlabel {
+        cursor: pointer;
+        line-height: 30px;
+        position: relative;
+        font-size: 15px;
+        margin-bottom: 12px;
+      }
+
+      .filter-div-padd span {
+        font-size: 14px;
+        font-family: Poppins-SemiBold;
+      }
+
+      .close {
+        float: right;
+        cursor: pointer;
+        position: relative;
+        font-size: 20px !important;
+        top: -55px;
+        font-weight: bold;
+      }
+
+      .filter-close {
+        float: right;
+        cursor: pointer;
+        position: relative;
+        font-size: 1.5em;
+        top: -10px;
+        font-weight: bold;
+      }
+
+      .filter-div-padd {
+        padding: 15px;
+      }
+
+      .ad-sort {
+        position: relative;
+        outline: none;
+        border: 1px solid black;
+      }
+
+      .col1 {
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+      }
+
+      .sort {
+        position: absolute;
+        width: 72%;
+        border: 2px solid gray;
+        overflow: hidden;
+        z-index: 3;
+        left: 0;
+        display: none;
+        padding: 20px 4% 5px 4%;
+        right: 0;
+        background-color: #fff;
+        left: 10%;
+        right: 30%;
+      }
+
+      #sort_tab {
+        display: none;
+      }
+
+      .sort1 {
+        position: absolute;
+        width: 72%;
+        border: 2px solid gray;
+        overflow: hidden;
+        z-index: 3;
+        left: 0;
+        /*display: none;*/
+        padding: 20px 4% 15px 4%;
+        right: 0;
+        background-color: #fff;
+        left: 10%;
+        right: 30%;
+      }
+
+      .advance-a {
+        position: relative;
+        font-size: 14px;
+        cursor: pointer;
+        border-bottom: 1px solid silver;
+      }
+
+      .optlabel input:checked ~ .checkmark {
+        background-color: #ffffff;
+      }
+
+      .less-padd-check {
+        padding: 5px !important;
+      }
+
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      /* Show the indicator (dot/circle) when checked */
+      .optlabel input:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      /* Style the indicator (dot/circle) */
+      .optlabel .checkmark:after {
+        content: " ";
+        background-color: white;
+        border: 4px solid black;
+        padding: 7px;
+        left: -4px;
+        top: -4px;
+        position: absolute;
+      }
+
+      .checked .checkmark:after {
+        /*content: ".";*/
+        border: 4px solid black;
+        padding: 3px;
+        left: 0px;
+        top: 0px;
+        background-color: black;
+        border-color: white;
+        position: absolute;
+        outline: 4px solid;
+      }
+
+      .sort-btn {
+        border: none;
+        padding: 7px 15px;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .mob-align-sort {
+        text-align: left;
+      }
+
+      .mob-back-marg {
+        margin: 0;
+      }
+
+      .permission form {
+        text-align: center;
+        display: inline;
+      }
+
+      @media (max-width: 400px) {
+        .link {
+          font-size: 8px;
+        }
+      }
+
+      .hide {
+        display: none;
+      }
+
+      .row {
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+        padding: 5px 0px;
+      }
+
+      #filter-tab {
+        text-align: center;
+        position: absolute;
+        border: 1px solid;
+        right: 15px;
+        left: 15px;
+        background-color: white;
+        padding: 1.5%;
+        z-index: 1;
+      }
+
+      .select {
+        padding: 15%;
+      }
+
+      .filter-close1 {
+        float: right;
+        cursor: pointer;
+        position: relative;
+        font-size: 1.5em;
+        top: -10px;
+        font-weight: bold;
+      }
+
+      .filter-scroll .sort-padding {
+        text-align: left;
+        padding: 10px;
+      }
+
+      .partial-back-color {
+        background: #ffcccc;
+      }
+    </style>
+    <section class="section">
+      <article class="article">
+        <div class="container">
+          <h3 class="welcm-name">
+            WELCOME <%= @name.upcase %>
+          </h3>
+          <div><%= render :partial => 'confirm' %></div>
+          <ul class="tabs">
+            <li class="tab active-tab" id="role" onclick="show('role')">ROLES</li>
+            <li class="tab" id="appl" onclick="show('appl')">APPLICANTS</li>
+            <li class="tab" id="team" onclick="show('team')">TEAM MEMBERS</li>
+          </ul>
+          <ul class="expands">
+            <li id="role_expand" class="expand active-expand">
+              <div>
+
+                <%= link_to "ADD NEW ROLE", corporate_add_new_role_path, :class => 'add-btn', :id => 'add-btn' %>
+
+                <% if !@data['roles'].empty? %>
+                  <div>
+                    <% @allroles.each do |k, v| %>
+                      <% if (v['partial'].present?) %>
+                        <div class="roles partial-back-color">
+                          <div class="permission">
+                            <%= form_tag(:action => 'deleterole', :method => :post) do %>
+                              <%= hidden_field_tag 'role_id', k %>
+                              <%= button_tag 'DELETE', :value => k, :type => 'button', :onclick => "delete_role('#{k}')", :action => 'deleterole', :class => 'frmbtn' %>
+                            <% end %>
+                            <%= button_tag 'EDIT', :onclick => "window.location.href='/corporate/edit_role/#{k}'", :class => 'frmbtn' %>
+                          </div>
+                          <a class="user-roles" href="/corporate/edit_role/<%= k %>">
+                            <div class="role-head"><%= (v['role_designation'].upcase).strip %>
+                              | <%= (v['role_function'].upcase).strip %>-<%= v['dep_sub_fun'].upcase %></div>
+                          </a>
+                          <div class="data-items">Added by: <%= v['created_by'].capitalize %></div>
+                          <div class="data-items">Application Link:
+                            <a class="link" href="/corporate/application/<%= v['role_id'] %>" target="_blank"> <%= request.host_with_port + '/corporate/application/' %><%= v['role_id'] %></a>
+                          </div>
+                          <div class="data-items">Deadline:
+                            <% if v['role_deadline'].present? %><%= v['role_deadline'] %>
+                            <% end %></div>
+                          <div class="data-items">Total responses: <%= v['responses'].length %></div>
+
+                        </div>
+                      <% end %>
+                    <% end %>
+                  </div>
+
+
+                  <div>
+                    <% @allroles.each do |k, v| %>
+                      <% if (!v['partial'].present?) %>
+                        <div class="roles">
+                          <div class="permission">
+                            <%= form_tag(:action => 'deleterole', :method => :post) do %>
+                              <%= hidden_field_tag 'role_id', k %>
+                              <%= button_tag 'DELETE', :value => k, :type => 'button', :onclick => "delete_role('#{k}')", :action => 'deleterole', :class => 'frmbtn' %>
+                            <% end %>
+                            <%= button_tag 'EDIT', :onclick => "window.location.href='/corporate/edit_role/#{k}'", :class => 'frmbtn' %>
+                          </div>
+                          <a class="user-roles" href="/corporate/summary_report/<%= k %>/?page=1">
+                            <div class="role-head"><%= (v['role_designation'].upcase).strip %>
+                              | <%= (v['role_function'].upcase).strip %>-<%= v['dep_sub_fun'].upcase %></div>
+                          </a>
+                          <div class="data-items">Added by: <%= v['created_by'].capitalize %></div>
+                          <div class="data-items">Application Link:
+                            <a class="link" href="/corporate/application/<%= v['role_id'] %>" target="_blank"> <%= request.host_with_port + '/corporate/application/' %><%= v['role_id'] %></a>
+                          </div>
+                          <div class="data-items">Deadline:
+                            <% if v['role_deadline'].present? %><%= v['role_deadline'] %>
+                            <% end %></div>
+                          <div class="data-items">Total responses: <%= v['responses'].length %></div>
+
+                        </div>
+                      <% end %>
+                    <% end %>
+                  </div>
+                <% else %>
+                  <div class="data">
+                    You have not added any role yet. Click on add new role above to get started!
+                  </div>
+                <% end %>
+              </div>
+
+            </li>
+            <li id="appl_expand" class="expand">
+              <div>
+
+                <%#= link_to "ADD NEW ROLE", corporate_add_new_role_path, :id => 'add-btn' %>
+                <div class="col col-60per">
+                  <ul>
+                    <li class="disp" id="cross1">
+                      <a class="font-pop filter-underline" onclick="select_role();">FILTER</a><a class="font-pop mob-cross" id="cro1" onclick="clearfilter()">X</a>
+                    </li>
+                    <li class="disp" id="cross2">
+                      <a class="font-pop filter-underline" onclick="sort()">SORT</a><a class="font-pop mob-cross" id="cro2" onclick="clearfilter()">X</a>
+                    </li>
+                    <li class="disp" id="cross3">
+                      <a class="font-pop filter-underline" onclick="download_data()"><span>EXPORT</span></a><a class="font-pop mob-cross" id="cro3" onclick="clearfilter()">X</a>
+                    </li>
+                  </ul>
+                </div>
+                <div id="filter-tab" class="hide">
+                  <span id="sort1" class=" filter-close1" onclick="closefilter()">&times;</span>
+                  <div class="filter-div-padd">
+                    <div><span>PLEASE SELECT ROLE FOR FILTERING</span></div>
+
+                    <%= form_tag '', :remote => true do %>
+                      <div class="select"><select name="roleid" class="font-pop">
+                        <% @allroles.each do |key, value| %>
+                          <% if !(value['partial'].present?) %>
+                            <option value="<%= key %>"><%= value['role_designation'] %></option>
+                          <% end %>
+                        <% end %>
+                      </select></div>
+                      <div>
+                        <input type="button" value="CONTINUE" onclick="submit_form('/corporate/select_role')" class="sort-btn font-pop">
+                      </div>
+                    <% end %>
+                  </div>
+                </div>
+                <div id="show-filter">
+
+                </div>
+                <div id="sort_tab">
+                  <div id="sort" class="sort1">
+
+                    <div class="col col-40per">
+                      <span class="font-mont sort-para">SORT BY SINGLE FACTOR:</span>
+                    </div>
+                    <div class="col col-60per">
+                      <a class="advance-a font-mont" onclick="advance()">ADVANCED OPTIONS</a>
+                      <span id="sort1" class="close" onclick="sort1()">&times;</span>
+                    </div>
+                    <%= form_tag 'sort_applicants', :method => :post, :id => "sort_form", :remote => true do %>
+                      <%= hidden_field_tag 'role_id', @roleid %>
+                      <% @url = '/corporate/dashboard' %>
+                      <%#= hidden_field_tag 'applicant', @applicant %>
+                      <%= hidden_field_tag 'url', @url %>
+                      <div class="sort-padding">
+
+                        <div class="col1 mob-coll">
+
+                          <label class="optlabel">
+                            <input type="radio" name="order" value="Ascending" class='radiobtn'>
+                            <span class="checkmark less-padd-check"> </span>
+                            <span class="sort-span-text font-pop">Ascending</span>
+                          </label>
+
+                          <label class="optlabel">
+                            <input type="radio" name="order" value="Descending" class='radiobtn'>
+                            <span class="checkmark less-padd-check"> </span>
+                            <span class="sort-span-text font-pop">Descending</span>
+                          </label>
+
+                        </div>
+
+                        <div class="col1 mob-coll">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="Salary" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Salary</span>
+                          </label>
+                        </div>
+
+                        <div class="col1 mob-coll">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="cl" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Career Level</span>
+                          </label>
+                        </div>
+
+                        <div class="col1 mob-coll">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="Year_of_experience" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Years of Experience</span>
+                          </label>
+                        </div>
+
+                        <div class="col1 mob-coll">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="created_at" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Date of Application</span>
+                          </label>
+                        </div>
+
+
+                        <div class="col1 mob-coll">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="res_score" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Responsibility Score</span>
+                          </label>
+                        </div>
+
+                        <div class="col1 mob-coll">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="eff_score" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Effectiveness Score</span>
+                          </label>
+                        </div>
+
+                        <div class="col1 mob-coll">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="imp_score" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Impact Score</span>
+                          </label>
+                        </div>
+
+                        <div class="col1 padding-sort-col-btn ">
+                          <input type="button" onclick="submit_form('/corporate/sort_applicants')" class="sort-btn font-pop" name="go" value="GO"/>
+                          <input type="reset" onclick="clearfilter()" id="clear_sort1" class="sort-btn font-pop" name="go" value="CLEAR"/>
+                        </div>
+                      </div>
+                    <% end %>
+                  </div>
+
+                  <div id="advance" class="sort">
+
+                    <div class="col1 col-40per">
+                      <span class="font-mont sort-para">SORT BY WEIGHTED AVERAGE SCORE:</span>
+                    </div>
+
+                    <div class="col1 col-60per">
+                      <a class="advance-a font-mont" onclick="back();">BACK</a>
+                      <span id="sort1" class="close" onclick="sort1()">&times;</span>
+                    </div>
+
+                    <%= form_tag 'sort_applicants_advance', :id => "advance_form", :method => :post do %>
+                      <%= hidden_field_tag 'role_id', @roleid %>
+                      <% @url = '/corporate/dashboard' %>
+                      <%#= hidden_field_tag 'applicant', @applicant %>
+                      <%= hidden_field_tag 'url', @url %>
+                      <div class="sort-padding">
+
+                        <div class="col1">
+
+                          <label class="optlabel">
+                            <input type="radio" name="order" value="Ascending" class='radiobtn'>
+                            <span class="checkmark less-padd-check"> </span>
+                            <span class="sort-span-text font-pop">Ascending</span>
+                          </label>
+
+                          <label class="optlabel">
+                            <input type="radio" name="order" value="Descending" class='radiobtn'>
+                            <span class="checkmark less-padd-check"> </span>
+                            <span class="sort-span-text font-pop">Descending</span>
+                          </label>
+
+                        </div>
+
+
+                        <div class="col1">
+                          <span class=" ">Salary (INR Lakhs)</span>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="number" step="any" name="Salary" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+
+                        <div class="col1">
+                          <span class="">Career Level</span>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="number" step="any" name="cl" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <span class="">Year of Experience</span>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="number" step="any" name="" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+                        <div class="col">
+                          <span class="">Responsibility Score</span>
+                        </div>
+
+                        <div class="col">
+                          <label class="optlabel">
+                            <input type="number" step="any" name="res_score" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <span class="">Effectiveness Score</span>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="number" step="any" name="eff_score" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+
+                        <div class="col1">
+                          <span class="">Impact Score</span>
+                        </div>
+
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="number" step="any" name="imp_score" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+
+                        <div class="col1 padding-sort-col-btn ">
+                          <input type="button" onclick="submit_form('/corporate/sort_applicants_advance')" class="sort-btn font-pop" name="go" value="GO"/>
+                          <input type="reset" id="clear_sort2" onclick="clearfilter()" class="sort-btn font-pop" name="go" value="CLEAR"/>
+                        </div>
+
+                      </div>
+                    <% end %>
+
+                  </div>
+                </div>
+                <% if @applicant.empty? %>
+
+                  <div class="data">
+                    THERE ARE NO APPLICANTS YET.
+                  </div>
+                <% else %>
+                  <% @filter1 = alert %>
+
+                  <% if !@filter1.nil? && @filter1.has_key?('filter') && (@filter1['order'].nil? || @filter1['order'] == 'Ascending') %>
+                    <% @sort = @filter1['filter'] %>
+                    <% @applicant = @applicant.sort_by {|k, v| v[@sort]} %>
+                    <% @applicant.to_h %>
+                    <script>
+                        //    window.onload="show('appl')";
+                    </script>
+                  <% elsif !@filter1.nil? && @filter1.has_key?('filter') && !@filter1['order'].nil? && @filter1['order'] == 'Descending' %>
+                    <% @sort = @filter1['filter'] %>
+                    <% @applicant = (@applicant.sort_by {|k, v| v[@sort]}).to_a.reverse %>
+                    <% @applicant.to_h %>
+                    <script>
+                        //     show('appl');
+                    </script>
+                  <% end %>
+                  <% if !@filter1.nil? && @filter1.has_key?('advance') && (@filter1['order'].nil? || @filter1['order'] == 'Ascending') %>
+                    <% @applicant.each do |key, value| %>
+                      <% @applicant[key]['weight'] = ((@applicant[key]['cl']).to_f) * ((@filter1['advance']['cl']).to_f) + ((@applicant[key]['Salary']).to_f) * ((@filter1['advance']['Salary']).to_f) + ((@applicant[key]['res_score']).to_f) * ((@filter1['advance']['res_score']).to_f) + ((@applicant[key]['eff_score']).to_f) * ((@filter1['advance']['eff_score']).to_f) + ((@applicant[key]['imp_score']).to_f) * ((@filter1['advance']['imp_score']).to_f) %>
+                    <% end %>
+                    <% @applicant = @applicant.sort_by {|k, v| v['weight']} %>
+                    <% @applicant.to_h %>
+                    <script>
+                        //     show('appl');
+                    </script>
+                  <% elsif !@filter1.nil? && @filter1.has_key?('advance') && !@filter1['order'].nil? && @filter1['order'] == 'Descending' %>
+                    <% @applicant.each do |key, value| %>
+                      <% @applicant[key]['weight'] = ((@applicant[key]['cl']).to_f) * ((@filter1['advance']['cl']).to_f) + ((@applicant[key]['Salary']).to_f) * ((@filter1['advance']['Salary']).to_f) + ((@applicant[key]['res_score']).to_f) * ((@filter1['advance']['res_score']).to_f) + ((@applicant[key]['eff_score']).to_f) * ((@filter1['advance']['eff_score']).to_f) + ((@applicant[key]['imp_score']).to_f) * ((@filter1['advance']['imp_score']).to_f) %>
+                    <% end %>
+                    <% @applicant = (@applicant.sort_by {|k, v| v['weight']}).to_a.reverse %>
+                    <% @applicant.to_h %>
+                    <script>
+                        //     show('appl');
+                    </script>
+                  <% end %>
+                  <form>
+                    <% if !@all_app_keys.nil? %>
+                      <%= hidden_field_tag 'all_app_keys', @all_app_keys %>
+                    <% end %>
+                  </form>
+                  <div id="normal" class="hide">
+                    <%= render 'applicants' %>
+                  </div>
+                  <div id="partial">
+                    <script>
+                        var id = 1;
+                        var count = [1, 1];
+                    </script>
+                    <%= render 'applicants' %>
+                  </div>
+
+                <% end %>
+              </div>
+            </li>
+
+            <li id="team_expand" class="expand">
+              <div>
+                <%= link_to "ADD NEW TEAM MEMBER", corporate_invite_new_member_path, :class => 'add-btn', :id => 'team-btn' %>
+                <% if @members.nil? || @members.empty? %>
+                  <div class="data">
+                    Looks like you don't have any team members yet. Click on add new member above to get started!
+                    <!--                    COMING SOON!-->
+                  </div>
+                <% else %>
+                  <% @members.each do |key, value| %>
+                    <% if !value.nil? %>
+                      <div class="roles">
+                        <div class="permission">
+                          <%= form_tag(:action => 'delete_member', :method => :post) do %>
+                            <%= hidden_field_tag 'mem_id', key %>
+                            <%= button_tag 'DELETE', :value => key, :onclick => "return confirm('Are you sure you want to delete this Member?')", :action => 'delete_member', :class => 'frmbtn user' %>
+                          <% end %>
+                          <a class="user-roles" href="#">
+                            <div class="role-head"><%= (value['designation'].upcase).strip %>
+                            </div>
+                          </a>
+                          <div class="data-items">Name: <%= value['user_first_name'].capitalize %></div>
+                          <div class="data-items">Email: <%= value['email'].capitalize %></div>
+                          <div class="data-items">User Type: <%= value['usertype'].capitalize %></div>
+                        </div>
+                      </div>
+                    <% end %>
+                  <% end %>
+                <% end %>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </article>
+    </section>
+  <% end %>
+<% elsif browser.device.tablet? %>
+  <% if session[:User]['islogin'] %>
+
+    <style>
+      .align-tab-col {
+        text-align: center;
+      }
+
+      .filter-close1 {
+        float: right;
+        cursor: pointer;
+        position: relative;
+        font-size: 1.5em;
+        top: -10px;
+        font-weight: bold;
+      }
+
+      .mob-cross {
+        position: relative;
+        top: -14px;
+        left: -6px;
+        border: 1px solid;
+        text-decoration: none;
+        padding: 2px 5px !important;
+        font-weight: bold;
+        font-size: 8px;
+
+      }
+
+      .col-60per ul .filter-underline {
+        position: relative;
+        display: inline;
+        text-decoration: underline;
+        font-family: monaserrat-regular;
+      }
+
+      .mob-cross {
+        display: none;
+      }
+
+      .container {
+        margin: auto;
+        /*text-align: center;*/
+        width: 80%;
+        padding-top: 50px;
+      }
+
+      .tabs {
+        padding: 0px;
+        margin: 5px 0px;
+        text-align: center;
+      }
+
+      .tab {
+        font-family: Montserrat-SemiBold;
+        letter-spacing: 1px;
+        /*font-weight: bold;*/
+        border: 2px solid #f0f0f0;
+        border-radius: 2px;
+        color: #4f4f4f;
+        background-color: #f0f0f0;
+        display: inline-block;
+        padding: 4px;
+        cursor: pointer;
+        width: 31%;
+        padding: 5px 0px 5px 0px;
+        text-align: center;
+        list-style: none;
+      }
+
+      /*.btn:active {*/
+      /*color: #e8ffff;*/
+      /*background-color: #66b6bf;*/
+      /*}*/
+
+      .expands {
+        /*background-color: #f2ffff;*/
+        /*text-align: center;*/
+        list-style: none;
+        alignment: center;
+        width: 96%;
+        padding: 10px;
+        margin: auto;
+        min-height: 350px;
+        font-family: arial;
+
+      }
+
+      .expands li {
+        display: none;
+      }
+
+      .data {
+        font-family: Montserrat-Regular;
+        text-align: center;
+        padding: 20px 90px 20px 90px;
+        background-color: #e0eff2;
+        margin: 10px 0px 10px 0px;
+      }
+
+      .data1 {
+        font-size: 16px;
+        font-family: Montserrat-Regular;
+        /* text-align: center; */
+        padding: 20px;
+        line-height: 20px;
+        background-color: #e0eff2;
+        margin: 18px 0px;
+        color: #717c80;
+      }
+
+      .link1 {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .float {
+        float: left;
+      }
+
+      .add-btn {
+        font-size: 14px;
+        font-family: Montserrat-SemiBold;
+        letter-spacing: 1px;
+        /*font-weight: bold;*/
+        border: 2px solid #f0f0f0;
+        border-radius: 2px;
+        color: #4f4f4f;
+        background-color: #f0f0f0;
+        display: inline-block;
+        padding: 4px;
+        cursor: pointer;
+        margin: 10px 0;
+        width: 31%;
+        padding: 10px 0px;
+        text-align: center;
+        text-decoration: none;
+        list-style: none;
+      }
+
+      .active-tab {
+        color: #ffff !important;
+        background-color: #66b6bf;
+        border: 2px solid #66b6bf;
+
+      }
+
+      .active-expand {
+
+        display: block !important;
+        position: relative;
+      }
+
+      .roles {
+        margin: 10px 0px;
+        background-color: #e0eff4;
+        padding: 20px 20px;
+      }
+
+      .role-head {
+        font-size: 15px;
+        font-family: Montserrat-SemiBold;
+        letter-spacing: 1px;
+      }
+
+      .data-items {
+        font-size: 15px;
+        color: #717c80;
+        font-family: Montserrat-Regular;
+        line-height: 20px;
+      }
+
+      .user-roles {
+        /*text-decoration: none;*/
+        color: black;
+      }
+
+      .frmbtn {
+        outline: none;
+        border: none;
+        background: white;
+        font-family: Montserrat-SemiBold;
+        text-decoration: underline;
+        cursor: pointer;
+        background-color: transparent;
+        float: right;
+      }
+
+      .permission {
+        /*float: right;*/
+
+      }
+
+      .link {
+        color: #717c80;
+        /*text-decoration: none;*/
+      }
+
+      .welcm-name {
+        font-family: Poppins-SemiBold;
+        font-size: 18px;
+      }
+
+      .col-60per {
+        width: 100%;
+        display: block;
+        position: relative;
+        text-align: right;
+      }
+
+      .col-60per ul li a {
+        cursor: pointer;
+      }
+
+      .disp {
+        display: inline !important;
+        cursor: pointer;
+      }
+
+      .sort-span-text {
+        position: relative;
+        padding-left: 15px;
+        font-size: 15px;
+      }
+
+      .font-pop {
+        font-family: Montserrat-Regular;
+        padding: 10px;
+        text-decoration: none;
+        color: black
+
+      }
+
+      .checkmark {
+        content: " ";
+        background-color: white;
+        border: 2px solid black;
+        padding: 7px;
+        left: 5px;
+        top: 0px;
+        position: absolute;
+        background-color: white;
+      }
+
+      .optlabel {
+        cursor: pointer;
+        line-height: 40px;
+        position: relative;
+        font-size: 18px;
+        margin-bottom: 12px;
+      }
+
+      .filter-div-padd span {
+        font-size: 16px;
+        font-family: Poppins-SemiBold;
+      }
+
+      .close {
+        float: right;
+        cursor: pointer;
+        position: relative;
+        font-size: 1.5em;
+        top: -30px;
+        font-weight: bold;
+      }
+
+      .filter-close {
+        float: right;
+        cursor: pointer;
+        position: relative;
+        font-size: 1.5em;
+        top: -8px;
+        left: 15px;
+        font-weight: bold;
+      }
+
+      .filter-div-padd {
+        padding: 15px;
+      }
+
+      .ad-sort {
+        float: right;
+        border: 1px solid black;
+        outline: none;
+        position: relative;
+        top: 10px;
+      }
+
+      .col1 {
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+      }
+
+      .sort {
+        position: absolute;
+        width: 90%;
+        top: 0;
+        border: 2px solid gray;
+        overflow: hidden;
+        z-index: 3;
+        left: 0;
+        display: none;
+        padding: 20px 4% 5px 4%;
+        right: 0;
+        background-color: #fff;
+        left: 0.7%;
+      }
+
+      #sort_tab {
+        display: none;
+      }
+
+      .sort1 {
+        position: absolute;
+        width: 90%;
+        border: 2px solid gray;
+        overflow: hidden;
+        top: 0;
+        z-index: 3;
+        left: 0;
+        padding: 20px 4% 15px 4%;
+        right: 0;
+        background-color: #fff;
+        left: 0.7%;
+
+      }
+
+      .advance-a {
+        position: relative;
+        right: 40px;
+        font-size: 14px;
+        cursor: pointer;
+        border-bottom: 1px solid silver;
+        top: -20px;
+      }
+
+      .optlabel input:checked ~ .checkmark {
+        background-color: #ffffff;
+      }
+
+      .less-padd-check {
+        padding: 5px !important;
+        top: 4px;
+      }
+
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      .optlabel input:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      .optlabel .checkmark:after {
+        content: " ";
+        background-color: white;
+        border: 4px solid black;
+        padding: 7px;
+        left: -4px;
+        top: -4px;
+        position: absolute;
+      }
+
+      .checked .checkmark:after {
+        border: 4px solid black;
+        padding: 3px;
+        left: 0px;
+        top: 0px;
+        background-color: black;
+        border-color: white;
+        position: absolute;
+        outline: 4px solid;
+      }
+
+      .sort-btn {
+        border: none;
+        padding: 7px 15px;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .permission form {
+        text-align: center;
+        display: inline;
+      }
+
+      .hide {
+        display: none;
+      }
+
+      .row {
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+        padding: 5px 0px;
+      }
+
+      #filter-tab {
+        text-align: center;
+        position: absolute;
+        border: 1px solid;
+        top: 0;
+        right: 25%;
+        left: 25%;
+        background-color: white;
+        padding: 1.5%;
+        z-index: 1;
+      }
+
+      .select {
+        padding: 15%;
+      }
+
+      .align-col-filter {
+        text-align: right;
+      }
+
+      .partial-back-color {
+        background: #ffcccc;
+      }
+
+    </style>
+    <section class="section">
+      <article class="article">
+        <div class="container">
+          <h3 class="welcm-name">
+            Welcome <%= @name.capitalize %>
+          </h3>
+          <div><%= render :partial => 'confirm' %></div>
+          <ul class="tabs">
+            <li class="tab active-tab" id="role" onclick="show('role')">ROLES</li>
+            <li class="tab" id="appl" onclick="show('appl')">APPLICANTS</li>
+            <li class="tab" id="team" onclick="show('team')">TEAM MEMBERS</li>
+          </ul>
+
+          <ul class="expands">
+
+            <li id="role_expand" class="expand active-expand">
+              <div>
+
+                <%= link_to "ADD NEW ROLE", corporate_add_new_role_path, :class => 'add-btn', :id => 'add-btn' %>
+
+                <% if !@data['roles'].empty? %>
+                  <div>
+                    <% @allroles.each do |k, v| %>
+                      <% if (v['partial'].present?) %>
+                        <div class="roles partial-back-color">
+                          <div class="permission">
+                            <%= form_tag(:action => 'deleterole', :method => :post) do %>
+                              <%= hidden_field_tag 'role_id', k %>
+                              <%= button_tag 'DELETE', :value => k, :type => 'button', :onclick => "delete_role('#{k}')", :action => 'deleterole', :class => 'frmbtn' %>
+                            <% end %>
+                            <%= button_tag 'EDIT', :onclick => "window.location.href='/corporate/edit_role/#{k}'", :class => 'frmbtn' %>
+                          </div>
+                          <a class="user-roles" href="/corporate/edit_role/<%= k %>">
+                            <div class="role-head"><%= (v['role_designation'].upcase).strip %>
+                              | <%= (v['role_function'].upcase).strip %>-<%= v['dep_sub_fun'].upcase %></div>
+                          </a>
+                          <div class="data-items">Added by: <%= v['created_by'].capitalize %></div>
+                          <div class="data-items">Application Link:
+                            <a class="link" href="/corporate/application/<%= v['role_id'] %>" target="_blank"> <%= request.host_with_port + '/corporate/application/' %><%= v['role_id'] %></a>
+                          </div>
+                          <div class="data-items">Deadline:
+                            <% if v['role_deadline'].present? %><%= v['role_deadline'] %>
+                            <% end %></div>
+                          <div class="data-items">Total responses: <%= v['responses'].length %></div>
+
+                        </div>
+                      <% end %>
+                    <% end %>
+                  </div>
+
+
+                  <div>
+                    <% @allroles.each do |k, v| %>
+                      <% if (!v['partial'].present?) %>
+                        <div class="roles">
+                          <div class="permission">
+                            <%= form_tag(:action => 'deleterole', :method => :post) do %>
+                              <%= hidden_field_tag 'role_id', k %>
+                              <%= button_tag 'DELETE', :value => k, :type => 'button', :onclick => "delete_role('#{k}')", :action => 'deleterole', :class => 'frmbtn' %>
+                            <% end %>
+                            <%= button_tag 'EDIT', :onclick => "window.location.href='/corporate/edit_role/#{k}'", :class => 'frmbtn' %>
+                          </div>
+                          <a class="user-roles" href="/corporate/summary_report/<%= k %>/?page=1">
+                            <div class="role-head"><%= (v['role_designation'].upcase).strip %>
+                              | <%= (v['role_function'].upcase).strip %>-<%= v['dep_sub_fun'].upcase %></div>
+                          </a>
+                          <div class="data-items">Added by: <%= v['created_by'].capitalize %></div>
+                          <div class="data-items">Application Link:
+                            <a class="link" href="/corporate/application/<%= v['role_id'] %>" target="_blank"> <%= request.host_with_port + '/corporate/application/' %><%= v['role_id'] %></a>
+                          </div>
+                          <div class="data-items">Deadline:
+                            <% if v['role_deadline'].present? %><%= v['role_deadline'] %>
+                            <% end %></div>
+                          <div class="data-items">Total responses: <%= v['responses'].length %></div>
+
+                        </div>
+                      <% end %>
+                    <% end %>
+                  </div>
+                <% else %>
+                  <div class="data">
+                    You have not added any role yet. Click on add new role above to get started!
+                  </div>
+                <% end %>
+              </div>
+
+            </li>
+            <li id="appl_expand" class="expand">
+              <div>
+                <%#= link_to "ADD NEW ROLE", corporate_add_new_role_path, :id => 'add-btn' %>
+                <div class="col align-tab-col">
+                  <ul>
+                    <li class="disp" id="cross1">
+                      <a class="font-pop filter-underline" onclick="select_role();">FILTER</a><a class="font-pop mob-cross" id="cro1" onclick="clearfilter()">X</a>
+                    </li>
+                    <li class="disp" id="cross2">
+                      <a class="font-pop filter-underline" onclick="sort()">SORT</a><a class="font-pop mob-cross" id="cro2" onclick="clearfilter()">X</a>
+                    </li>
+                    <li class="disp" id="cross3">
+                      <a class="font-pop filter-underline" onclick="download_data()"><span>EXPORT</span></a><a class="font-pop mob-cross" id="cro3" onclick="clearfilter()">X</a>
+                    </li>
+                  </ul>
+                </div>
+                <div id="filter-tab" class="hide">
+                  <span id="sort1" class=" filter-close1" onclick="closefilter()">&times;</span>
+                  <div class="filter-div-padd">
+                    <div><span>PLEASE SELECT ROLE FOR FILTERING</span></div>
+                    <%= form_tag '', :remote => true do %>
+                      <div class="select"><select name="roleid" class="font-pop">
+                        <% @allroles.each do |key, value| %>
+                          <% if !(value['partial'].present?) %>
+                            <option value="<%= key %>"><%= value['role_designation'] %></option>
+                          <% end %>
+                        <% end %>
+                      </select></div>
+                      <div>
+                        <input type="button" value="CONTINUE" onclick="submit_form('/corporate/select_role')" class="sort-btn font-pop">
+                      </div>
+                    <% end %>
+                  </div>
+                </div>
+                <div id="show-filter">
+
+                </div>
+                <div id="sort_tab">
+                  <div id="sort" class="sort1">
+
+                    <div class="col col-40per">
+                      <span class="font-mont sort-para">SORT BY SINGLE FACTOR:</span>
+                    </div>
+                    <div class="col col-60per">
+                      <a class="advance-a font-mont" onclick="advance()">ADVANCED OPTIONS</a>
+                      <span id="sort1" class="close" onclick="sort1()">&times;</span>
+                    </div>
+                    <%= form_tag 'sort_applicants', :method => :post, :id => "sort_form", :remote => true do %>
+                      <%= hidden_field_tag 'role_id', @roleid %>
+                      <% @url = '/corporate/dashboard' %>
+                      <%#= hidden_field_tag 'applicant', @applicant %>
+                      <%= hidden_field_tag 'url', @url %>
+                      <div class="sort-padding">
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="radio" name="order" value="Ascending" class='radiobtn'>
+                            <span class="checkmark less-padd-check"> </span>
+                            <span class="sort-span-text font-pop">Ascending</span>
+                          </label>
+                          <label class="optlabel">
+                            <input type="radio" name="order" value="Descending" class='radiobtn'>
+                            <span class="checkmark less-padd-check"> </span>
+                            <span class="sort-span-text font-pop">Descending</span>
+                          </label>
+                        </div>
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="Salary" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Salary</span>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="cl" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Career Level</span>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="Year_of_experience" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Years of Experience</span>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="created_at" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Date of Application</span>
+                          </label>
+                        </div>
+
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="res_score" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Responsibility Score</span>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="eff_score" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Effectiveness Score</span>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="imp_score" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Impact Score</span>
+                          </label>
+                        </div>
+
+                        <div class="col1 padding-sort-col-btn ">
+                          <input type="button" onclick="submit_form('/corporate/sort_applicants')" class="sort-btn font-pop" name="go" value="GO"/>
+                          <input type="reset" onclick="clearfilter()" id="clear_sort1" class="sort-btn font-pop" name="go" value="CLEAR"/>
+                        </div>
+
+                      </div>
+                    <% end %>
+
+
+                  </div>
+                  <div id="advance" class="sort">
+
+                    <div class="col1 col-40per">
+                      <span class="font-mont sort-para">SORT BY WEIGHTED AVERAGE SCORE:</span>
+                    </div>
+
+                    <div class="col1 col-60per">
+                      <a class="advance-a font-mont" onclick="back();">BACK</a>
+                      <span id="sort1" class="close" onclick="sort1()">&times;</span>
+                    </div>
+
+                    <%= form_tag 'sort_applicants_advance', :id => "advance_form", :method => :post do %>
+                      <%= hidden_field_tag 'role_id', @roleid %>
+                      <% @url = '/corporate/dashboard' %>
+                      <%#= hidden_field_tag 'applicant', @applicant %>
+                      <%= hidden_field_tag 'url', @url %>
+                      <div class="sort-padding">
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="radio" name="order" value="Ascending" class='radiobtn'>
+                            <span class="checkmark less-padd-check"> </span>
+                            <span class="sort-span-text font-pop">Ascending</span>
+                          </label>
+                          <label class="optlabel">
+                            <input type="radio" name="order" value="Descending" class='radiobtn'>
+                            <span class="checkmark less-padd-check"> </span>
+                            <span class="sort-span-text font-pop">Descending</span>
+                          </label>
+                        </div>
+                        <div class="col1">
+                          <label class="optlabel">
+                            <span class=" ">Salary (INR Lakhs)</span>
+                            <input type="number" step="any" name="Salary" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <span class="">Career Level</span>
+                            <input type="number" step="any" name="cl" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <span class="">Year of Experience</span>
+                            <input type="number" step="any" name="" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+                        <div class="col">
+                          <label class="optlabel">
+                            <span class="">Responsibility Score</span>
+                            <input type="number" step="any" name="res_score" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <span class="">Effectiveness Score</span>
+                            <input type="number" step="any" name="eff_score" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <span class="">Impact Score</span>
+                            <input type="number" step="any" name="imp_score" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+                        <div class="col1 padding-sort-col-btn ">
+                          <input type="button" onclick="submit_form('/corporate/sort_applicants_advance')" class="sort-btn font-pop" name="go" value="GO"/>
+                          <input type="reset" onclick="clearfilter()" id="clear_sort2" class="sort-btn font-pop" name="go" value="CLEAR"/>
+                        </div>
+
+                      </div>
+                    <% end %>
+
+                  </div>
+                </div>
+                <% if @applicant.empty? %>
+
+                  <div class="data">
+                    THERE ARE NO APPLICANTS YET.
+                  </div>
+                <% else %>
+                  <% @filter1 = alert %>
+
+                  <% if !@filter1.nil? && @filter1.has_key?('filter') && (@filter1['order'].nil? || @filter1['order'] == 'Ascending') %>
+                    <% @sort = @filter1['filter'] %>
+                    <% @applicant = @applicant.sort_by {|k, v| v[@sort]} %>
+                    <% @applicant.to_h %>
+                    <script>
+                        //    window.onload="show('appl')";
+                    </script>
+                  <% elsif !@filter1.nil? && @filter1.has_key?('filter') && !@filter1['order'].nil? && @filter1['order'] == 'Descending' %>
+                    <% @sort = @filter1['filter'] %>
+                    <% @applicant = (@applicant.sort_by {|k, v| v[@sort]}).to_a.reverse %>
+                    <% @applicant.to_h %>
+                    <script>
+                        //     show('appl');
+                    </script>
+                  <% end %>
+                  <% if !@filter1.nil? && @filter1.has_key?('advance') && (@filter1['order'].nil? || @filter1['order'] == 'Ascending') %>
+                    <% @applicant.each do |key, value| %>
+                      <% @applicant[key]['weight'] = ((@applicant[key]['cl']).to_f) * ((@filter1['advance']['cl']).to_f) + ((@applicant[key]['Salary']).to_f) * ((@filter1['advance']['Salary']).to_f) + ((@applicant[key]['res_score']).to_f) * ((@filter1['advance']['res_score']).to_f) + ((@applicant[key]['eff_score']).to_f) * ((@filter1['advance']['eff_score']).to_f) + ((@applicant[key]['imp_score']).to_f) * ((@filter1['advance']['imp_score']).to_f) %>
+                    <% end %>
+                    <% @applicant = @applicant.sort_by {|k, v| v['weight']} %>
+                    <% @applicant.to_h %>
+                    <script>
+                        //     show('appl');
+                    </script>
+                  <% elsif !@filter1.nil? && @filter1.has_key?('advance') && !@filter1['order'].nil? && @filter1['order'] == 'Descending' %>
+                    <% @applicant.each do |key, value| %>
+                      <% @applicant[key]['weight'] = ((@applicant[key]['cl']).to_f) * ((@filter1['advance']['cl']).to_f) + ((@applicant[key]['Salary']).to_f) * ((@filter1['advance']['Salary']).to_f) + ((@applicant[key]['res_score']).to_f) * ((@filter1['advance']['res_score']).to_f) + ((@applicant[key]['eff_score']).to_f) * ((@filter1['advance']['eff_score']).to_f) + ((@applicant[key]['imp_score']).to_f) * ((@filter1['advance']['imp_score']).to_f) %>
+                    <% end %>
+                    <% @applicant = (@applicant.sort_by {|k, v| v['weight']}).to_a.reverse %>
+                    <% @applicant.to_h %>
+                    <script>
+                        //     show('appl');
+                    </script>
+                  <% end %>
+                  <form>
+                    <% if !@all_app_keys.nil? %>
+                      <%= hidden_field_tag 'all_app_keys', @all_app_keys %>
+                    <% end %>
+                  </form>
+                  <div id="normal" class="hide">
+                    <%= render 'applicants' %>
+                  </div>
+                  <div id="partial">
+                    <script>
+                        var id = 1;
+                        var count = [1, 1];
+                    </script>
+                    <%= render 'applicants' %>
+                  </div>
+
+                <% end %>
+              </div>
+            </li>
+            <li id="team_expand" class="expand">
+
+              <div>
+
+                <%= link_to "ADD NEW TEAM MEMBER", corporate_invite_new_member_path, :class => 'add-btn', :id => 'team-btn' %>
+                <% if @members.nil? || @members.empty? %>
+                  <div class="data">
+                    Looks like you don't have any team members yet. Click on add new member above to get started!
+                    <!--                    COMING SOON!-->
+                  </div>
+                <% else %>
+                  <% @members.each do |key, value| %>
+                    <% if !value.nil? %>
+                      <div class="roles">
+                        <div class="permission">
+                          <%= form_tag(:action => 'delete_member', :method => :post) do %>
+                            <%= hidden_field_tag 'mem_id', key %>
+                            <%= button_tag 'DELETE', :value => key, :onclick => "return confirm('Are you sure you want to delete this Member?')", :action => 'delete_member', :class => 'frmbtn user' %>
+                          <% end %>
+                          <a class="user-roles" href="#">
+                            <div class="role-head"><%= (value['designation'].upcase).strip %>
+                            </div>
+                          </a>
+                          <div class="data-items">Name: <%= value['user_first_name'].capitalize %></div>
+                          <div class="data-items">Email: <%= value['email'].capitalize %></div>
+                          <div class="data-items">User Type: <%= value['usertype'].capitalize %></div>
+                        </div>
+                      </div>
+                    <% end %>
+                  <% end %>
+                <% end %>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  <% end %>
+<% else %>
+  <% if session[:User]['islogin'] %>
+
+    <style>
+      .filter-close1 {
+        float: right;
+        cursor: pointer;
+        position: relative;
+        font-size: 1.5em;
+        top: -10px;
+        font-weight: bold;
+      }
+
+      .container {
+        margin: auto;
+        /*text-align: center;*/
+        width: 60%;
+        padding-top: 50px;
+      }
+
+      .tabs {
+        padding: 0px;
+        margin: 5px 0px;
+        text-align: center;
+      }
+
+      .tab {
+        font-family: Poppins-semibold;
+        letter-spacing: 1px;
+        /*font-weight: bold;*/
+        border: 2px solid #f0f0f0;
+        border-radius: 2px;
+        color: #4c4c4c;
+        background-color: #f0f0f0;
+        display: inline-block;
+        padding: 4px;
+        cursor: pointer;
+        width: 32%;
+        padding: 5px 0px 5px 0px;
+        text-align: center;
+        list-style: none;
+      }
+
+      /*.btn:active {*/
+      /*color: #e8ffff;*/
+      /*background-color: #66b6bf;*/
+      /*}*/
+
+      .expands {
+        /*background-color: #f2ffff;*/
+        /*text-align: center;*/
+        list-style: none;
+        alignment: center;
+        width: 96%;
+        padding: 10px;
+        margin: auto;
+        min-height: 350px;
+        font-family: arial;
+
+      }
+
+      .expands li {
+        display: none;
+      }
+
+      .data {
+        font-family: Montserrat-Regular;
+        text-align: center;
+        padding: 20px 90px 20px 90px;
+        background-color: #e0eff2;
+        margin: 10px 0px 10px 0px;
+      }
+
+      .data1 {
+        font-size: 16px;
+        font-family: Montserrat-Regular;
+        /* text-align: center; */
+        padding: 20px;
+        line-height: 20px;
+        background-color: #e0eff2;
+        margin: 18px 0px;
+        color: #717c80;
+      }
+
+      .link1 {
+        /*color: black;*/
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .float {
+        float: left;
+      }
+
+      .add-btn {
+        font-size: 14px;
+        font-family: Montserrat-SemiBold;
+        letter-spacing: 1px;
+        /*font-weight: bold;*/
+        border: 2px solid #f0f0f0;
+        border-radius: 2px;
+        color: #4f4f4f;
+        background-color: #f0f0f0;
+        margin: 10px 0;
+        display: inline-block;
+        padding: 4px;
+        cursor: pointer;
+        width: 31%;
+        padding: 10px 0px;
+        text-align: center;
+        text-decoration: none;
+        list-style: none;
+      }
+
+      .active-tab {
+        color: #ffff !important;
+        background-color: #66b6bf;
+        border: 2px solid #66b6bf;
+
+      }
+
+      .active-expand {
+
+        display: block !important;
+        position: relative;
+      }
+
+      .roles {
+        margin: 10px 0px;
+        background-color:#66B6Bf33;
+        padding: 20px 20px;
+        position: relative;
+      }
+
+      .role-head {
+        font-size: 15px;
+        font-family: Montserrat-SemiBold;
+        letter-spacing: 1px;
+      }
+
+      .data-items {
+        font-size: 15px;
+        color: #4c4c4c;
+        font-family: Montserrat-Regular;
+        line-height: 20px;
+      }
+
+      .user-roles {
+        /*text-decoration: none;*/
+        color: black;
+      }
+
+      .frmbtn {
+        outline: none;
+        border: none;
+        background: white;
+        font-family: Montserrat-regular;
+        text-decoration: underline;
+        cursor: pointer;
+        background-color: transparent;
+        float: right;
+      }
+
+      .permission {
+        /*float: right;*/
+
+      }
+
+      .link {
+        /*color: #000000;*/
+        color:#4c4c4c;
+        /*text-decoration: none;*/
+      }
+
+      .welcm-name {
+        font-family: Poppins-SemiBold;
+        font-size: 18px;
+      }
+
+      .col-60per {
+        width: 100%;
+        display: block;
+        position: relative;
+        text-align: right;
+      }
+
+      .col-60per ul li a {
+        cursor: pointer;
+      }
+
+      .disp {
+        display: inline !important;
+        cursor: pointer;
+      }
+
+      .sort-span-text {
+        position: relative;
+        padding-left: 15px;
+        font-size: 15px;
+      }
+
+      .font-pop {
+        font-family: Montserrat-Regular;
+        padding: 10px;
+        text-decoration: none;
+        color: black
+
+      }
+      .role-for span{
+        font-family: Montserrat-SemiBold;
+        font-size: 12px;
+      }
+      .align-col-filter .font-pop{
+        text-decoration: underline;
+      }
+      .col-40per-new .sort-para{
+font-family: Montserrat-SemiBold;
+        font-size: 16px;
+      }
+      .checkmark {
+        content: " ";
+        background-color: white;
+        border: 2px solid black;
+        padding: 7px;
+        left: 5px;
+        top: 0px;
+        position: absolute;
+        background-color: white;
+      }
+
+      .optlabel {
+        cursor: pointer;
+        line-height: 40px;
+        position: relative;
+        font-size: 18px;
+        margin-bottom: 12px;
+      }
+
+      .filter-div-padd span {
+        font-size: 16px;
+        font-family: Montserrat-SemiBold;
+      }
+
+      .close {
+        float: right;
+        cursor: pointer;
+        position: relative;
+        font-size: 1.5em;
+        top: -25px;
+        font-weight: bold;
+      }
+
+      .filter-close {
+        float: right;
+        cursor: pointer;
+        position: relative;
+        font-size: 1.5em;
+        top: -7px;
+        left: 17px;
+        font-weight: bold;
+      }
+
+      .filter-div-padd {
+        padding: 15px;
+      }
+
+      .ad-sort {
+        float: right;
+        position: relative;
+        top: 10px;
+        outline: none;
+        border: 1px solid black;
+      }
+
+      .col1 {
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+      }
+
+      .sort {
+        position: absolute;
+        width: 80%;
+        border: 2px solid gray;
+        overflow: hidden;
+        z-index: 3;
+        left: 0;
+        top: 0;
+        display: none;
+        padding: 20px 4% 5px 4%;
+        right: 0;
+        background-color: #fff;
+        left: 6%;
+        right: 30%;
+      }
+
+      #sort_tab {
+        display: none;
+      }
+
+      .sort1 {
+        position: absolute;
+        width: 80%;
+        /* height: 430px; */
+        border: 2px solid gray;
+        overflow: hidden;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        /* display: none; */
+        padding: 20px 4% 15px 4%;
+        right: 0;
+        background-color: #fff;
+        left: 6%;
+        right: 30%;
+        /* z-index: 444452; */
+      }
+
+      .advance-a {
+        position: relative;
+        right: 40px;
+        font-size: 14px;
+        cursor: pointer;
+        border-bottom: 1px solid silver;
+        top: -20px;
+      }
+
+      .optlabel input:checked ~ .checkmark {
+        background-color: #ffffff;
+      }
+
+      .less-padd-check {
+        padding: 5px !important;
+        top: 2px;
+      }
+
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      /* Show the indicator (dot/circle) when checked */
+      .optlabel input:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      /* Style the indicator (dot/circle) */
+      .optlabel .checkmark:after {
+        content: " ";
+        background-color: white;
+        border: 4px solid black;
+        padding: 7px;
+        left: -4px;
+        top: -4px;
+        position: absolute;
+      }
+
+      .checked .checkmark:after {
+        /*content: ".";*/
+        border: 4px solid black;
+        padding: 3px;
+        left: 0px;
+        top: 0px;
+        background-color: black;
+        border-color: white;
+        position: absolute;
+        outline: 4px solid;
+      }
+
+      .sort-btn {
+        border: none;
+        padding: 7px 15px;
+        /*font-weight: bold;*/
+        cursor: pointer;
+        font-family: Poppins-bold;
+        font-size: 16px;
+        outline: none;
+        text-decoration: none;
+        color:#4C4C4C;
+        background: #f0f0f0;
+      }
+
+      .hide {
+        display: none;
+      }
+
+      .row {
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+        padding: 5px 0px;
+      }
+
+      .mob-cross {
+        position: relative;
+        top: -14px;
+        left: -6px;
+        border: 1px solid;
+        text-decoration: none;
+        padding: 2px 5px !important;
+        font-weight: bold;
+        font-size: 8px;
+
+      }
+
+      .col-60per ul .filter-underline {
+        position: relative;
+        display: inline;
+        font-family: monaserrat-regular;
+        text-decoration: underline;
+      }
+
+      .mob-cross {
+        display: none;
+      }
+
+      #filter-tab {
+        text-align: center;
+        position: absolute;
+        border: 1px solid;
+        top: 0;
+        right: 25%;
+        left: 25%;
+        background-color: white;
+        padding: 1.5%;
+        z-index: 1;
+      }
+
+      .select {
+        padding: 15%;
+      }
+
+      .align-col-filter {
+        text-align: right;
+      }
+
+      .partial-back-color {
+        background: #ffcccc;
+      }
+
+      .notification {
+        color: white;
+        position: relative;
+        top: -12px;
+        font-size: 60%;
+        right: -14px;
+        /* border: 1px solid red; */
+        padding: 2px 6px;
+        border-radius: 50%;
+        background-color: #1a909e;
+
+      }
+
+      .noti-img {
+        position: absolute;
+        top: 15px;
+        /*width: 3%;*/
+      }
+
+      .app-head {
+        font-family: Montserrat-SemiBold !important;
+        font-weight: unset !important;
+        font-size: 15px;
+      }
+
+      #flash {
+        position: relative;
+        left: 0;
+        display: block;
+      }
+        .col-40per .sort-para{
+          font-family: Montserrat-SemiBold;
+          font-size: 16px;
+        }
+        .edit{
+          border-right: 1px solid ;
+        }
+        .link-disable{
+          pointer-events: none;
+          cursor: default;
+        }
+    </style>
+
+    <div id="editrole">
+    </div>
+    <section class="section">
+      <article class="article">
+        <div class="container">
+          <p class="welcm-name">
+            WELCOME <%= @name.upcase %>
+          </p>
+          <div><%= render :partial => 'confirm' %></div>
+          <ul class="tabs">
+            <li class="tab active-tab" id="role" onclick="show('role')">ROLES</li>
+            <li class="tab" id="appl" onclick="show('appl')">APPLICANTS</li>
+            <li class="tab" id="team" onclick="show('team')">TEAM MEMBERS</li>
+          </ul>
+          <ul class="expands">
+
+            <li id="role_expand" class="expand active-expand">
+              <div>
+
+                <%= link_to "ADD NEW ROLE", corporate_add_new_role_path, :class => 'add-btn', :id => 'add-btn' %>
+
+                <% if !@data['roles'].empty? %>
+                  <div>
+                    <% @allroles.each do |k, v| %>
+                      <% if (v['partial'].present?) %>
+                        <div class="roles partial-back-color">
+                          <div class="permission">
+                            <%= form_tag(:action => 'deleterole', :method => :post) do %>
+                              <%= hidden_field_tag 'role_id', k %>
+                              <%= button_tag 'DELETE', :value => k, :type => 'button', :onclick => "delete_role('#{k}')", :action => 'deleterole', :class => 'frmbtn' %>
+                            <% end %>
+                            <%= button_tag 'EDIT', :onclick => "window.location.href='/corporate/edit_role/#{k}'", :class => 'frmbtn edit' %>
+                          </div>
+                          <a class="user-roles" href="/corporate/edit_role/<%= k %>">
+                            <div class="role-head"><%= (v['role_designation'].upcase).strip %>
+                              | <%= (v['role_function'].upcase).strip %>-<%= v['dep_sub_fun'].upcase %><% if session['user_type'] == 'recruiter' %> | <%= v['company_name'].upcase %><% end %></div>
+                          </a>
+                          <div class="data-items">Added by: <%= v['created_by'].capitalize %></div>
+                          <div class="data-items">Application Link:
+                            <a class="link link-disable" href="/corporate/application/<%= v['role_id'] %>" target="_blank"> <%= request.host_with_port + '/corporate/application/' %><%= v['role_id'] %></a>
+                          </div>
+                          <div class="data-items">Deadline:
+                            <% if v['role_deadline'].present? %><%= v['role_deadline'] %>
+                            <% end %></div>
+                          <div class="data-items">Total responses: <%= v['responses'].length %></div>
+
+                        </div>
+                      <% end %>
+                    <% end %>
+                  </div>
+
+
+                  <div>
+                    <% @allroles.each do |k, v| %>
+                      <% if (!v['partial'].present?) %>
+                        <div class="roles">
+                          <div class="permission">
+                            <%= form_tag(:action => 'deleterole', :method => :post) do %>
+                              <%= hidden_field_tag 'role_id', k %>
+                              <%= button_tag 'DELETE', :value => k, :type => 'button', :onclick => "delete_role('#{k}')", :action => 'deleterole', :class => 'frmbtn' %>
+                            <% end %>
+                            <%= button_tag 'EDIT', :onclick => "window.location.href='/corporate/edit_role/#{k}'", :class => 'frmbtn edit' %>
+                          </div>
+                          <a class="user-roles" href="/corporate/summary_report/<%= k %>/?page=1">
+                            <div class="role-head"><%= (v['role_designation'].upcase).strip %>
+                              | <%= (v['role_function'].upcase).strip %>-<%= v['dep_sub_fun'].upcase %><% if session['user_type'] == 'recruiter' %> | <%= v['company_name'].upcase %><% end %>
+                              <% if !@unread.nil? && !@unread[v['role_id']].nil? && @unread[v['role_id']] > 0 %>
+                                <img class="noti-img" src="/assets/bell.png">
+                                <span class="notification">
+                                                                                      <%= @unread[v['role_id']] %>
+                                                                                      </span>
+                              <% end %>
+                            </div>
+                          </a>
+                          <div class="data-items">Added by: <%= v['created_by'].capitalize %></div>
+                          <div class="data-items">Application Link:
+                            <a class="link" href="/corporate/application/<%= v['role_id'] %>" target="_blank"> <%= request.host_with_port + '/corporate/application/' %><%= v['role_id'] %></a>
+                          </div>
+                          <div class="data-items">Deadline:
+                            <% if v['role_deadline'].present? %><%= v['role_deadline'] %>
+                            <% end %></div>
+                          <div class="data-items">Total responses: <%= v['responses'].length %></div>
+                          <!--                          <div class="data-items">Unread responses: <%#= @unread[v['role_id']] %></div>-->
+
+                        </div>
+                      <% end %>
+                    <% end %>
+                  </div>
+                <% else %>
+                  <div class="data">
+                    You have not added any role yet. Click on add new role above to get started!
+                  </div>
+                <% end %>
+              </div>
+
+            </li>
+            <li id="appl_expand" class="expand">
+              <div>
+
+                <%#= link_to "ADD NEW ROLE", corporate_add_new_role_path, :id => 'add-btn' %>
+                <div class="col align-col-filter">
+                  <ul>
+                    <li class="disp" id="cross1">
+                      <a class="font-pop filter-underline" onclick="select_role();">FILTER</a><a class="font-pop mob-cross" id="cro1" onclick="clearfilter()">X</a>
+                    </li>
+                    <li class="disp" id="cross2">
+                      <a class="font-pop filter-underline" onclick="sort()">SORT</a><a class="font-pop mob-cross" id="cro2" onclick="clearfilter()">X</a>
+                    </li>
+                    <li class="disp" id="cross3">
+                      <a class="font-pop filter-underline" onclick="download_data()"><span>EXPORT</span></a><a class="font-pop mob-cross" id="cro3" onclick="clearfilter()">X</a>
+                    </li>
+                  </ul>
+                </div>
+                <div id="filter-tab" class="hide">
+                  <span id="sort1" class=" filter-close1" onclick="closefilter()">&times;</span>
+                  <div class="filter-div-padd">
+                    <div><span>PLEASE SELECT ROLE FOR FILTERING</span></div>
+
+                    <%= form_tag '', :remote => true do %>
+                      <div class="select"><select name="roleid" class="font-pop">
+                        <% @allroles.each do |key, value| %>
+                          <% if !(value['partial'].present?) %>
+                            <option value="<%= key %>"><%= value['role_designation'] %></option>
+                          <% end %>
+                        <% end %>
+                      </select></div>
+                      <div>
+                        <input type="button" value="CONTINUE" onclick="submit_form('/corporate/select_role')" class="sort-btn font-pop">
+                      </div>
+                    <% end %>
+
+                  </div>
+                </div>
+                <div id="show-filter">
+
+                </div>
+                <div id="sort_tab">
+                  <div id="sort" class="sort1">
+
+                    <div class="col col-40per">
+                      <span class="font-mont sort-para">SORT BY SINGLE FACTOR:</span>
+                    </div>
+                    <div class="col col-60per">
+                      <a class="advance-a font-mont" onclick="advance()">ADVANCED OPTIONS</a>
+                      <span id="sort1" class="close" onclick="sort1()">&times;</span>
+                    </div>
+                    <%= form_tag 'sort_applicants', :method => :post, :id => "sort_form", :remote => true do %>
+                      <%= hidden_field_tag 'role_id', @roleid %>
+                      <% @url = '/corporate/dashboard' %>
+                      <%#= hidden_field_tag 'applicant', @applicant %>
+                      <%= hidden_field_tag 'url', @url %>
+                      <div class="sort-padding">
+                        <div class="col1 ">
+                          <label class="optlabel">
+                            <input type="radio" name="order" value="Ascending" class='radiobtn'>
+                            <span class="checkmark less-padd-check"> </span>
+                            <span class="sort-span-text font-pop">Ascending</span>
+                          </label>
+                          <label class="optlabel ">
+                            <input type="radio" name="order" value="Descending" class='radiobtn'>
+                            <span class="checkmark less-padd-check"> </span>
+                            <span class="sort-span-text font-pop">Descending</span>
+                          </label>
+                        </div>
+                        <div class="col1 ">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="Salary" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Salary</span>
+                          </label>
+                        </div>
+
+                        <div class="col1 ">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="cl" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Career Level</span>
+                          </label>
+                        </div>
+
+                        <div class="col1 ">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="Year_of_experience" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Years of Experience</span>
+                          </label>
+                        </div>
+
+                        <div class="col1 ">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="created_at" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Date of Application</span>
+                          </label>
+                        </div>
+
+
+                        <div class="col1 ">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="res_score" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Responsibility Score</span>
+                          </label>
+                        </div>
+
+                        <div class="col1 ">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="eff_score" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Effectiveness Score</span>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="radio" name="radio" value="imp_score" class='radiobtn normal_sort'>
+                            <span class="checkmark"> </span>
+                            <span class="sort-span-text font-pop">Impact Score</span>
+                          </label>
+                        </div>
+
+                        <div class="col1 padding-sort-col-btn ">
+                          <input type="button" onclick="submit_form('/corporate/sort_applicants')" class="sort-btn font-pop" name="go" value="GO"/>
+                          <input type="reset" onclick="clearfilter()" id="clear_sort1" class="sort-btn font-pop" name="go" value="CLEAR"/>
+                        </div>
+
+                      </div>
+                    <% end %>
+
+
+                  </div>
+                  <div id="advance" class="sort">
+
+                    <div class="col1 col-40per">
+                      <span class="font-mont sort-para">SORT BY WEIGHTED AVERAGE SCORE:</span>
+                    </div>
+                    <div class="col1 col-60per">
+                      <a class="advance-a font-mont" onclick="back();">BACK</a>
+                      <span id="sort1" class="close" onclick="sort1()">&times;</span>
+                    </div>
+
+                    <%= form_tag 'sort_applicants_advance', :id => "advance_form", :method => :post do %>
+                      <%= hidden_field_tag 'role_id', @roleid %>
+                      <% @url = '/corporate/dashboard' %>
+                      <%#= hidden_field_tag 'applicant', @applicant %>
+                      <%= hidden_field_tag 'url', @url %>
+                      <div class="sort-padding">
+                        <div class="col1">
+                          <label class="optlabel">
+                            <input type="radio" name="order" value="Ascending" class='radiobtn'>
+                            <span class="checkmark less-padd-check"> </span>
+                            <span class="sort-span-text font-pop">Ascending</span>
+                          </label>
+                          <label class="optlabel">
+                            <input type="radio" name="order" value="Descending" class='radiobtn'>
+                            <span class="checkmark less-padd-check"> </span>
+                            <span class="sort-span-text font-pop">Descending</span>
+                          </label>
+                        </div>
+                        <div class="col1">
+                          <label class="optlabel">
+                            <span class=" ">Salary (INR Lakhs)</span>
+                            <input type="number" step="any" name="Salary" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <span class="">Career Level</span>
+                            <input type="number" step="any" name="cl" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <span class="">Year of Experience</span>
+                            <input type="number" step="any" name="" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+                        <div class="col">
+                          <label class="optlabel">
+                            <span class="">Responsibility Score</span>
+                            <input type="number" step="any" name="res_score" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <span class="">Effectiveness Score</span>
+                            <input type="number" step="any" name="eff_score" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+                        <div class="col1">
+                          <label class="optlabel">
+                            <span class="">Impact Score</span>
+                            <input type="number" step="any" name="imp_score" class='ad-sort advance_sort'>
+                          </label>
+                        </div>
+
+                        <div class="col1 padding-sort-col-btn ">
+                          <input type="button" onclick="submit_form('/corporate/sort_applicants_advance')" class="sort-btn font-pop" name="go" value="GO"/>
+                          <input type="reset" onclick="clearfilter()" id="clear_sort2" class="sort-btn font-pop" name="go" value="CLEAR"/>
+                        </div>
+
+                      </div>
+                    <% end %>
+
+                  </div>
+                </div>
+                <% if @applicant.empty? %>
+
+                  <div class="data">
+                    THERE ARE NO APPLICANTS YET.
+                  </div>
+                <% else %>
+                  <% @filter1 = alert %>
+
+                  <% if !@filter1.nil? && @filter1.has_key?('filter') && (@filter1['order'].nil? || @filter1['order'] == 'Ascending') %>
+                    <% @sort = @filter1['filter'] %>
+                    <% @applicant = @applicant.sort_by {|k, v| v[@sort]} %>
+                    <% @applicant.to_h %>
+                    <script>
+                        //    window.onload="show('appl')";
+                    </script>
+                  <% elsif !@filter1.nil? && @filter1.has_key?('filter') && !@filter1['order'].nil? && @filter1['order'] == 'Descending' %>
+                    <% @sort = @filter1['filter'] %>
+                    <% @applicant = (@applicant.sort_by {|k, v| v[@sort]}).to_a.reverse %>
+                    <% @applicant.to_h %>
+                    <script>
+                        //     show('appl');
+                    </script>
+                  <% end %>
+                  <% if !@filter1.nil? && @filter1.has_key?('advance') && (@filter1['order'].nil? || @filter1['order'] == 'Ascending') %>
+                    <% @applicant.each do |key, value| %>
+                      <% @applicant[key]['weight'] = ((@applicant[key]['cl']).to_f) * ((@filter1['advance']['cl']).to_f) + ((@applicant[key]['Salary']).to_f) * ((@filter1['advance']['Salary']).to_f) + ((@applicant[key]['res_score']).to_f) * ((@filter1['advance']['res_score']).to_f) + ((@applicant[key]['eff_score']).to_f) * ((@filter1['advance']['eff_score']).to_f) + ((@applicant[key]['imp_score']).to_f) * ((@filter1['advance']['imp_score']).to_f) %>
+                    <% end %>
+                    <% @applicant = @applicant.sort_by {|k, v| v['weight']} %>
+                    <% @applicant.to_h %>
+                    <script>
+                        //     show('appl');
+                    </script>
+                  <% elsif !@filter1.nil? && @filter1.has_key?('advance') && !@filter1['order'].nil? && @filter1['order'] == 'Descending' %>
+                    <% @applicant.each do |key, value| %>
+                      <% @applicant[key]['weight'] = ((@applicant[key]['cl']).to_f) * ((@filter1['advance']['cl']).to_f) + ((@applicant[key]['Salary']).to_f) * ((@filter1['advance']['Salary']).to_f) + ((@applicant[key]['res_score']).to_f) * ((@filter1['advance']['res_score']).to_f) + ((@applicant[key]['eff_score']).to_f) * ((@filter1['advance']['eff_score']).to_f) + ((@applicant[key]['imp_score']).to_f) * ((@filter1['advance']['imp_score']).to_f) %>
+                    <% end %>
+                    <% @applicant = (@applicant.sort_by {|k, v| v['weight']}).to_a.reverse %>
+                    <% @applicant.to_h %>
+                    <script>
+                        //     show('appl');
+                    </script>
+                  <% end %>
+                  <form>
+                    <% if !@all_app_keys.nil? %>
+                      <%= hidden_field_tag 'all_app_keys', @all_app_keys %>
+                    <% end %>
+                  </form>
+                  <div id="normal" class="hide">
+                    <%= render 'applicants' %>
+                  </div>
+                  <div id="partial">
+                    <script>
+                        var id = 1;
+                        var count = [1, 1];
+                    </script>
+                    <%= render 'applicants' %>
+                  </div>
+
+                <% end %>
+              </div>
+            </li>
+            <li id="team_expand" class="expand">
+
+              <div>
+
+                <%= link_to "ADD NEW TEAM MEMBER", corporate_invite_new_member_path, :class => 'add-btn', :id => 'team-btn' %>
+                <% if @members.nil? || @members.empty? %>
+                  <div class="data">
+                    Looks like you don't have any team members yet. Click on add new member above to get started!
+                    <!--                    COMING SOON!-->
+                  </div>
+                <% else %>
+                  <% @members.each do |key, value| %>
+                    <% if !value.nil? %>
+                      <div class="roles">
+                        <div class="permission">
+                          <%= form_tag(:action => 'delete_member', :method => :post) do %>
+                            <%= hidden_field_tag 'mem_id', key %>
+                            <%= button_tag 'DELETE', :value => key, :onclick => "return confirm('Are you sure you want to delete this Member?')", :action => 'delete_member', :class => 'frmbtn user' %>
+                          <% end %>
+                          <a class="user-roles" href="#">
+                            <div class="role-head"><%= (value['designation'].upcase).strip %>
+                            </div>
+                          </a>
+                          <div class="data-items">Name: <%= value['user_first_name'].capitalize %></div>
+                          <div class="data-items">Email: <%= value['email'].capitalize %></div>
+                          <div class="data-items">User Type: <%= value['usertype'].capitalize %></div>
+                        </div>
+                      </div>
+
+                    <% end %>
+                  <% end %>
+                <% end %>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  <% end %>
+<% end %>
+<script>
+    var status = 'clear';
+    // var id = 1;
+    // var count = 1;
+    // if (count >= 5) {
+    //     document.getElementById('chip_input').disabled = true;
+    // } else {
+    //     document.getElementById('chip_input').disabled = false;
+    // }
+
+
+    function create_chip(e, ind) {
+        var name = '';
+        if (ind == 0) {
+            name = 'skill'
+        } else if (ind == 1) {
+            name = 'keyword'
+        }
+        // else if (ind == 2) {
+        //     name = 'role_technical'
+        // } else if (ind == 3) {
+        //     name = 'role_keyword'
+        // }
+        // alert(e.keyCode)
+        var value = document.getElementById('chip_input' + ind).value;
+        if ((e.composed == false || e.keyCode == 13) && value.length > 0 && count[ind] <= 10) {
+            var spanadd = document.createElement("span");
+            spanadd.classList.add('chip');
+            spanadd.id = 'del' + ind + id;
+            spanadd.innerHTML = '<input type="value" id="chip' + ind + id + '" name="' + name + '[]" value="' + value + '" readonly="true" class="chip_btn" ><span class="dei_chip" onclick="delete_chip(' + id + ',' + ind + ')">x</span>'
+            document.getElementById('chips' + ind).appendChild(spanadd);
+            document.getElementById('chip_input' + ind).value = "";
+            document.getElementById('chip' + ind + id).style.width = ((document.getElementById('chip' + ind + id).value.length + 1) * 8) + 'px';
+            if (count[ind] >= 10) {
+                document.getElementById('chip_input' + ind).disabled = true;
+            } else {
+                document.getElementById('chip_input' + ind).disabled = false;
+            }
+            id = id + 1;
+            count[ind] = count[ind] + 1;
+
+            return false
+        } else if (e.keyCode == 13) {
+            return false
+        }
+    }
+
+    function delete_chip(id, ind) {
+        var chip = document.getElementById('del' + ind + id);
+        document.getElementById('chips' + ind).removeChild(chip);
+        count[ind] = count[ind] - 1;
+        if (count[ind] <= 10) {
+            document.getElementById('chip_input' + ind).disabled = false;
+        } else {
+            document.getElementById('chip_input' + ind).disabled = true;
+        }
+    }
+
+
+    function clearfilter() {
+        document.getElementById('normal').style.display = 'block';
+        document.getElementById('partial').style.display = 'none';
+        var parent = document.getElementById('partial').parentNode;
+        parent.removeChild(document.getElementById('partial'))
+        var div = document.createElement("div")
+        div.id = 'partial'
+        parent.appendChild(div)
+        document.getElementById('cro1').style.display = 'none';
+        document.getElementById('cross1').style.fontWeight = 'unset';
+        document.getElementById('cro2').style.display = 'none';
+        document.getElementById('cross2').style.fontWeight = 'unset';
+        document.getElementById("clear_sort1").click();
+        document.getElementById("clear_sort2").click();
+        var filt = document.getElementById("filter_form");
+        if (filt != null) {
+            document.getElementById("clear_filter").click();
+            filter1();
+        }
+        closefilter();
+        sort1();
+        // filter2();
+        status = 'clear';
+        // document.getElementById("clear_filter").click();
+    }
+
+    function submit_form(id) {
+        showloader();
+        $.ajax({
+            //Your ajax code here to submit from via AJAX. refer jquery site . I gave sample eg.
+            url: id,
+            type: 'post',
+            data: $("form").serialize(),
+            success: function (data) {
+                hideloader();
+                if (id != '/corporate/select_role') {
+                    // clearfilter();
+                    status = 'notclear';
+                    // alert('data'); // show response from the php script.
+                    var filt = document.getElementById("filter_form");
+                    if (filt != null) {
+                        filter1();
+                    }
+
+                    sort1();
+                    document.getElementById('partial').innerHTML = data;
+                    // document.getElementById('part_res').innerHTML = document.getElementById('new_res').innerHTML
+                    document.getElementById('normal').style.display = 'none';
+                    document.getElementById('partial').style.display = 'block';
+                    // document.getElementById('nor_res').style.display = 'none';
+                    // document.getElementById('part_res').style.display = 'inline';
+                    document.getElementById('cro1').style.display = 'none';
+                    document.getElementById('cross1').style.fontWeight = 'unset';
+                    document.getElementById('cro2').style.display = 'none';
+                    document.getElementById('cross2').style.fontWeight = 'unset';
+
+                    if (id == '/corporate/filter_applicants') {
+                        document.getElementById("advance_form").reset();
+                        document.getElementById("sort_form").reset();
+                        var filters = document.getElementsByClassName('filters');
+                        for (var i = 0; i < filters.length; i++) {
+                            if (filters[i].checked == true) {
+                                document.getElementById('cro1').style.display = 'inline';
+                                document.getElementById('cross1').style.fontWeight = 'bold';
+                                break;
+                            }
+                        }
+                    }
+
+                    if (id == '/corporate/sort_applicants' || id == '/corporate/sort_applicants_advance') {
+                        if (id == '/corporate/sort_applicants') {
+                            var filters = document.getElementsByClassName('normal_sort');
+                            for (var i = 0; i < filters.length; i++) {
+                                if (filters[i].checked == true) {
+                                    document.getElementById('cro2').style.display = 'inline';
+                                    // document.getElementById('cro2').style.color = 'black';
+                                    document.getElementById('cross2').style.fontWeight = 'bold';
+                                    document.getElementById("advance_form").reset();
+                                    break;
+                                }
+                            }
+                        }
+
+
+                        if (id == '/corporate/sort_applicants_advance') {
+                            var filters = document.getElementsByClassName('advance_sort');
+                            for (var i = 0; i < filters.length; i++) {
+                                if (!(filters[i].value == "" || filters[i].value == null)) {
+                                    document.getElementById('cro2').style.display = 'inline';
+                                    // document.getElementById('cro2').style.color = 'red';
+                                    // document.getElementById('cro2').style.borderColor = 'black';
+                                    document.getElementById('cross2').style.fontWeight = 'bold';
+                                    document.getElementById("sort_form").reset();
+                                    break;
+                                }
+                            }
+                        }
+
+                        var filt = document.getElementById("filter_form");
+                        if (filt != null) {
+                            document.getElementById("filter_form").reset();
+                        }
+                    }
+
+
+                }
+                else {
+                    document.getElementById('show-filter').innerHTML = data;
+                    // var filt = document.getElementById("filter_form");
+                    // if (filt != null) {
+                    filter();
+                    closefilter();
+                    // }
+                }
+            }
+        });
+    }
+
+    function select_role() {
+        if (status == 'clear') {
+            document.getElementById('filter-tab').style.display = 'block';
+        }
+        else {
+            var filt = document.getElementById("filter_form");
+            if (filt != null) {
+                filter();
+            } else {
+                document.getElementById('filter-tab').style.display = 'block';
+            }
+        }
+    }
+
+    function showtab(id) {
+        document.getElementById("filter").style.display = 'none';
+        document.getElementById(id).style.display = 'block';
+    }
+
+    function filter() {
+        document.getElementById("filter").style.display = 'block';
+        sort1();
+    }
+
+    function filter1() {
+        document.getElementById("filter").style.display = 'none';
+        document.getElementById("responses").style.display = 'none';
+        document.getElementById("degree").style.display = 'none';
+    }
+
+    function select_checkbox(id) {
+        var filters = document.getElementsByName(id);
+        var check = document.getElementsByClassName('filters');
+        var checked = false;
+        for (var i = 0; i < filters.length; i++) {
+            if (filters[i].checked == true || ((filters[i].type == 'text' || filters[i].type == 'value') && filters[i].value != "")) {
+                checked = true;
+                break;
+            }
+        }
+
+        if (id == 'response' && checked == true) {
+            check[3].checked = true;
+            check[3].parentElement.classList.add('checked');
+        } else if (id == 'response' && checked != true) {
+            check[3].checked = false;
+            check[3].parentElement.classList.remove('checked');
+        }
+        if (id == 'effect' && checked == true) {
+            check[4].checked = true;
+            check[4].parentElement.classList.add('checked');
+        } else if (id == 'effect' && checked != true) {
+            check[4].checked = false;
+            check[4].parentElement.classList.remove('checked');
+        }
+        if (id == 'impact' && checked == true) {
+            check[5].checked = true;
+            check[5].parentElement.classList.add('checked');
+        } else if (id == 'impact' && checked != true) {
+            check[5].checked = false;
+            check[5].parentElement.classList.remove('checked');
+        }
+        if (id == 'degree[]' && checked == true) {
+            check[8].checked = true;
+            check[8].parentElement.classList.add('checked');
+        } else if (id == 'degree[]' && checked != true) {
+            check[8].checked = false;
+            check[8].parentElement.classList.remove('checked');
+        }
+        if (id == 'college[]' && checked == true) {
+            check[9].checked = true;
+            check[9].parentElement.classList.add('checked');
+        } else if (id == 'college[]' && checked != true) {
+            check[9].checked = false;
+            check[9].parentElement.classList.remove('checked');
+        }
+        if (id == 'skill[]' && checked == true) {
+            check[10].checked = true;
+            check[10].parentElement.classList.add('checked');
+        } else if (id == 'skill[]' && checked != true) {
+            check[10].checked = false;
+            check[10].parentElement.classList.remove('checked');
+        }
+        if (id == 'keyword[]' && checked == true) {
+            check[11].checked = true;
+            check[11].parentElement.classList.add('checked');
+        } else if (id == 'keyword[]' && checked != true) {
+            check[11].checked = false;
+            check[11].parentElement.classList.remove('checked');
+        }
+
+    }
+
+
+    //
+    // function select_checkbox(id) {
+    //     var filters = document.getElementsByName(id);
+    //     var check = document.getElementsByClassName('filters');
+    //     var checked = false;
+    //     for (var i = 0; i < filters.length; i++) {
+    //         if (filters[i].checked == true||((filters[i].type=='text'||filters[i].type=='value')&&filters[i].value!="")) {
+    //             checked = true;
+    //             break;
+    //         }
+    //     }
+    //
+    //     if (id == 'response' && checked == true) {
+    //         check[3].checked = true;
+    //         check[3].parentElement.classList.add('checked');
+    //     } else if (id == 'response' && checked != true) {
+    //         check[3].checked = false;
+    //         check[3].parentElement.classList.remove('checked');
+    //     }
+    //     if (id == 'effect' && checked == true) {
+    //         check[4].checked = true;
+    //         check[4].parentElement.classList.add('checked');
+    //     } else if (id == 'effect' && checked != true) {
+    //         check[4].checked = false;
+    //         check[4].parentElement.classList.remove('checked');
+    //     }
+    //     if (id == 'impact' && checked == true) {
+    //         check[5].checked = true;
+    //         check[5].parentElement.classList.add('checked');
+    //     } else if (id == 'impact' && checked != true) {
+    //         check[5].checked = false;
+    //         check[5].parentElement.classList.remove('checked');
+    //     }
+    //     if (id == 'degree[]' && checked == true) {
+    //         check[8].checked = true;
+    //         check[8].parentElement.classList.add('checked');
+    //     } else if (id == 'degree[]' && checked != true) {
+    //         check[8].checked = false;
+    //         check[8].parentElement.classList.remove('checked');
+    //     }
+    //     if (id == 'college[]' && checked == true) {
+    //         check[9].checked = true;
+    //         check[9].parentElement.classList.add('checked');
+    //     } else if (id == 'college[]' && checked != true) {
+    //         check[9].checked = false;
+    //         check[9].parentElement.classList.remove('checked');
+    //     }
+    //     if (id == 'skill[]' && checked == true) {
+    //         check[10].checked = true;
+    //         check[10].parentElement.classList.add('checked');
+    //     } else if (id == 'skill[]' && checked != true) {
+    //         check[10].checked = false;
+    //         check[10].parentElement.classList.remove('checked');
+    //     }
+    //
+    // }
+
+    function filter2() {
+        document.getElementById("filter").style.display = 'none';
+        document.getElementById("responses").style.display = 'none';
+        document.getElementById("effects").style.display = 'none';
+        document.getElementById("impacts").style.display = 'none';
+        document.getElementById("degree").style.display = 'none';
+        document.getElementById("college").style.display = 'none';
+        document.getElementById("skill").style.display = 'none';
+        document.getElementById("keyword").style.display = 'none';
+        document.getElementById("filter").style.display = 'block';
+    }
+
+    function closefilter() {
+        document.getElementById('filter-tab').style.display = 'none';
+    }
+
+    function sort() {
+        document.getElementById("sort_tab").style.display = 'block';
+    }
+
+    function sort1() {
+        document.getElementById("sort_tab").style.display = 'none';
+    }
+
+    function advance() {
+        document.getElementById("sort").style.display = 'none';
+        document.getElementById("advance").style.display = 'block';
+    }
+
+    function back() {
+        document.getElementById("sort").style.display = 'block';
+        document.getElementById("advance").style.display = 'none';
+    }
+
+    function show(id) {
+        var tabid = id;
+        var expands = document.getElementsByClassName('expand');
+        for (var i = 0; i < expands.length; i++) {
+            expands[i].classList.remove('active-expand');
+        }
+        var tabs = document.getElementsByClassName('tab');
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove('active-tab');
+        }
+
+        document.getElementById(tabid).classList.add('active-tab');
+        document.getElementById(tabid + '_expand').classList.add('active-expand');
+
+        // expands[id].style.display = 'block';
+        // var btns = document.getElementsByClassName('btn');
+        // for (var i = 0; i < btns.length; i++) {
+        //     btns[i].style.color = '#4f4f4f';
+        //     btns[i].style.backgroundColor = '#f0f0f0';
+        // }
+        // btns[id].style.color = '#e8ffff';
+        // btns[id].style.backgroundColor = '#66b6bf';
+    }
+
+
+    async function delete_role(id) {
+        var bool = await doconfirm('Are you sure you want to delete this role?', true);
+        if (bool) {
+            $.ajax({
+                url: '/corporate/deleterole',
+                type: 'post',
+                data: $('form').serialize() + "&idrole=" + id,
+                success: function (response) {
+                    location.href = '/corporate/dashboard';
+
+                }
+            })
+
+        }
+
+    }
+
+    if ("<%= @session['user_type']%>" == 'User') {
+        document.getElementById('team-btn').style.pointerEvents = 'none';
+    }
+
+    <% if  !@filter1.nil? ||@page==1%>
+    show('appl')
+    <% elsif  !@filter1.nil? ||@page==3%>
+    show('team')
+    <% end %>
+
+    function download_data() {
+        showloader();
+        $.ajax({
+            url: '/corporate/download_data',
+            type: 'post',
+            data: $('form').serialize(),
+            success: function (response) {
+                if (response['data'] != null) {
+                    location.href = "/candidate_" + response['data'] + ".csv"
+                    setTimeout(function () {
+                        location.href = "/resume_" + response['data'] + ".zip"
+                    }, 100)
+                }
+                hideloader();
+                // location.href = '/corporate/dashboard';
+
+            }
+        });
+    }
+</script>
+<% if @session['user_type'] == 'User' %>
+  <style>
+    .user {
+      display: none;
+    }
+  </style>
+
+<% end %>

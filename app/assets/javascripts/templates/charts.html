@@ -1,0 +1,102 @@
+
+
+<div id="report" class="report"  >
+    <toaster-container toaster-options="{'close-button':true }"></toaster-container>
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-offset- col-md-11 col-sm-10" style="margin-top: 6%">
+            <div class="col-md-12 col-sm-12">
+                <div class="col-md-8">
+                    <div class="col-md-6"><ui-select ng-model="chart.selectRole"   theme="bootstrap" title=""  >
+                        <ui-select-match placeholder="Select Role...">{{$select.selected.Name}}</ui-select-match>
+                        <ui-select-choices repeat="role in allRole | propsFilter: {Name: $select.search}">
+                            <!--<div ng-bind-html="industry.Name | highlight: $select.search"></div>-->
+                            <small>
+                                <span style="font-size: 14px; margin: 10px;cursor: pointer">{{role.Name}}</span>
+                            </small>
+                        </ui-select-choices>
+                    </ui-select></div>
+                    <div class="col-md-6"><ui-select ng-model="chart.selectIndustry"  ng-hide="isbtn2selected==true||isbtn4selected==true"  theme="bootstrap" title=""  >
+                        <ui-select-match placeholder="Select Industry...">{{$select.selected.Name}}</ui-select-match>
+                        <ui-select-choices repeat="industry in allIndustries | propsFilter: {Name: $select.search}">
+                            <!--<div ng-bind-html="industry.Name | highlight: $select.search"></div>-->
+                            <small>
+                                <span style="font-size: 14px; margin: 10px;cursor: pointer">{{industry.Name}}</span>
+                            </small>
+                        </ui-select-choices>
+                    </ui-select></div>
+                    <div class="col-md-6"><ui-select ng-model="chart.selectIndustries" multiple="" theme="bootstrap"  sortable="true" close-on-select="false" ng-hide="isbtn1selected==true||isbtn3selected==true" ng-enabled="isbtn2selected==true"  theme="bootstrap" title=""  >
+                        <ui-select-match placeholder="Select Industries">{{$item.Name}}</ui-select-match>
+                        <ui-select-choices repeat="industry in allIndustries | propsFilter: {Name: $select.search}">
+                            <!--<div ng-bind-html="industry.Name | highlight: $select.search"></div>-->
+                            <small>
+                                <span style="font-size: 14px; margin: 10px;cursor: pointer">{{industry.Name}}</span>
+                            </small>
+                        </ui-select-choices>
+                    </ui-select></div>
+
+
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-block btn-amber btn-md"  style="color: black" ng-click="getChartData()">GO</button>
+                </div>
+                </div>
+                <div class="col-md-12 mt-lg">
+                    <div class="col-md-3"><button class="btn btn-block   btn-md" ng-click="enableButton('button1')" ng-class="isbtn1selected?'btn-primary':'btn-chart'">Compensation Comparison</button></div>
+                    <div class="col-md-3"><button class="btn btn-block  btn-md"  ng-click="enableButton('button2')"ng-class="isbtn2selected?'btn-primary':'btn-chart'">Role Premium</button></div>
+                    <div class="col-md-3"><button class="btn btn-block  btn-md"  ng-click="enableButton('button3')"ng-class="isbtn3selected?'btn-primary':'btn-chart'">Promotion Pressures</button></div>
+                    <div class="col-md-3"><button class="btn btn-block  btn-md"  ng-click="enableButton('button4')"ng-class="isbtn4selected?'btn-primary':'btn-chart'">Growth Potential</button></div>
+                </div>
+                <div class="col-md-12 mt-lg">
+                    <div class="col-md-8 ">
+                        <div class="col-md-12 col-sm-12 col-xs-12"  ng-if="isbtn1selected"  >
+                            <p class="col-md-12 text-center" >{{title}}</p>
+
+                            <div class="col-md-12 col-sm-8 col-xs-8" style="border: 1px solid blue;overflow: auto">
+                                <highchart id="chart" ng-if="isbtn1selected" config="chartConfig_comp"></highchart>
+                            </div>
+                            <div class="col-md-12" id="rot" style="z-index: 1;text-align: center; margin-left: -19%; margin-top: -29%;width:31%">Compensation (INR Lakhs)
+                            </div>
+                            <p class=" col-md-12 text-center">{{CompensatioXaxisTitle}}</p>
+
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12"  ng-if="isbtn2selected"  >
+
+                            <p class="col-md-12 text-center" >{{title}}</p>
+                            <div class="col-md-12 col-sm-8 col-xs-8" style="border: 1px solid blue;overflow: auto">
+                                <highchart id="chart"  config="chartConfig"></highchart>
+                            </div>
+                            <div class="col-md-12" id="rot" style="z-index: 1;text-align: center; margin-left: -19%; margin-top: -29%;width:31%">Median Compensation (INR Lakhs)
+                            </div>
+                            <p class=" col-md-12 text-center">Career Level</p>
+
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12" ng-if="isbtn3selected"  >
+                            <p class="col-md-12 text-center" >{{title}}</p>
+                            <div class="col-md-12 col-sm-8 col-xs-8" style="border: 1px solid blue;overflow: auto">
+                                <highchart id="chart"  config="chartConfig"></highchart>
+                            </div>
+                            <div class="col-md-12" id="rot" style="z-index: 1;text-align: center; margin-left: -19%; margin-top: -29%;width:31%">Career Level
+                            </div>
+                            <p class=" col-md-12 text-center">Frequency</p>
+
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12"  ng-if="isbtn4selected"  >
+
+                            <p class="col-md-12 text-center" >{{title}}</p>
+                            <div class="col-md-12 col-sm-8 col-xs-8" style="border: 1px solid blue;overflow: auto">
+                                <highchart id="chart"  config="chartConfig"></highchart>
+                            </div>
+                            <div class="col-md-12" id="rot" style="z-index: 1;text-align: center; margin-left: -19%; margin-top: -29%;width:33%">Higest Possible Carrer Level
+                            </div>
+                            <p class=" col-md-12 text-center">Industries</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="border: 1px solid blue;height: 350px;overflow: auto;margin-top: 3%"></div>
+                </div>
+               
+            </div>
+        </div>
+
+    </div>
+</div>

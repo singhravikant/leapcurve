@@ -1,0 +1,42 @@
+function [x,y]=plotfun(f,name)
+ f.SelectedVariableNames={'Date','Time','Open','High','Low','Close'};
+   data=readall(f);
+   H = height(data);
+  for d=2:H
+lstdate=data{d-1,1};
+if lstdate==data{d,1}
+    
+data.flag{d-1}=0;
+elseif (data{d-1,6}-data{d-1,3})*100/data{d-1,3}<2.5
+data.flag{d-1}=1;
+else
+data.flag{d-1}=0;
+end
+  end
+  for a=1:H
+if data.flag{a}==1
+data.pnl{a}=data{a+1,3}-data{a,6};
+else 
+data.pnl{a}=0;
+end
+  end
+  c=1;
+for b=1:H
+if data.flag{b}==1
+pnl{c}=data.pnl{b};
+date{c}=string(data{b,1});
+c=c+1;
+end
+end
+ x=datetime(cellstr(date));
+ y=cell2mat(pnl);
+ figure;
+ plot(x,y,':bs');
+ t='Open(current day)-Close(previous day) of \bf ';
+ tle = strcat(t,name);
+ title(tle);
+xlabel('Date');
+ylabel('P&N');
+grid on;
+datacursormode on;
+ end

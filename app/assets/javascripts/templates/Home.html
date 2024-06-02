@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="col-md-6" style="margin-top: 5%">
+                <div class="col-md-12"><h2 class="text-center" style="font-size: 24px">Your Career Level :
+                    {{Score}}</h2></div>
+                <div class="col-md-12 mt-lg">
+                    <div class="col-md-6">
+                        <button class="btn btn-block btn-primary btn-md" ui-sref="app.questions">Recalulate</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-block btn-primary btn-md" ng-click="logout()">Logout</button>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-lg"
+                     style="overflow: auto;height: 250px;background-color: #d4d4d4; border: 1px solid #d4d4d4; font-size: 12px;padding: 5px">
+                    <div class="col-md-12">
+                        <p class="text-justify mt-sm">An important step in your career development process is
+                            understanding how to read your current career level and map it to the ideal complexity level
+                            for a job in the future. You can save this customized report in your Career Vault and share
+                            parts of this with hiring managers. </p>
+                        <p class="text-justify mt-sm">Career level is an empirical score arrived at after
+                            analyzing answers to a series of questions related to the complexity of a role, across
+                            various factors. It is indicative of the distance travelled so far in a career, assuming
+                            that higher level of experience entails handling greater levels of complex roles. Thus,
+                            higher complexity in a role makes for a higher career level. </p>
+                        <p class=" text-justify mt-sm">Understanding this is vital to your career development.
+                            With this, you can focus on securing fulfilling roles with greater levels of complexity in
+                            the future and not just on salary or an organization with a 'name' or ‘employer-brand'. </p>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-lg">
+                    <div class="col-md-6" style="padding-left: 0px;background-color: #d4d4d4d4;">
+                        <button class="btn btn-block btn-default btn-md"
+                                style="background-color: #5f5e5e;color: white !important;">Download Now
+                        </button>
+                    </div>
+
+            </div>
+                <div class="col-md-12 mt-lg">
+                    <div class="col-md-12 mt-lg">
+                        <div class="col-md-6 form-group" >
+
+                            <input type="number" class="form-control" min="0" max="67" ng-model="Score" name="Institution" placeholder="Level"
+                                   style="font-size:16px;font-family:verdana;height:33px;border-color:#3366cc;border-radius: 0px"/>
+
+                        </div>
+                        <div class="col-md-6">
+                            <button type="submit" class="btn btn-primary btn-md"
+                                     ng-click="changeLevel()">Change Level
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+                </div>
+            <div class="col-md-6" style="margin-top: 15%" >
+                <div class="col-md-offset-4 col-md-8" style="
+    border-left: 1px solid blue;
+    ">
+                    <hr width="7%" style=" border-top: 1px solid blue;margin-left: -15px; padding-left: 0px;margin-top: 0px;">
+                    <h3 class="" style="margin-top: -32px;">Explore</h3>
+                    <div class="col-md-12" style="margin-top: 15%">
+                        <div class="col-md-12 mt-lg"> <button class="btn btn-block  btn-lg" style="background-color: rgb(148,138,84);color: white;" ui-sref="app.Charts">Role premium</button></div>
+                        <div class="col-md-12 mt-lg"> <button class="btn btn-block  btn-lg" style="background-color: rgb(148,138,84);color: white;" ui-sref="app.Charts">Compensation<br class="hidden-xs"/>Comparison</button></div>
+                        <div class="col-md-12 mt-lg"> <button class="btn btn-block  btn-lg" style="background-color: rgb(148,138,84);color: white;" ui-sref="app.Charts">Growth Potential</button></div>
+                        <div class="col-md-12 mt-lg"> <button class="btn btn-block  btn-lg" style="background-color: rgb(148,138,84);color: white;" ui-sref="app.Charts">Promotion Pressures</button></div>
+                    </div>
+                    <div class="col-md-12" style="height: 100px"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>

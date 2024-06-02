@@ -1,0 +1,47 @@
+<style>
+    .txtStyle{ font-family: Montserrat-Regular;text-align: justify}
+</style>
+<section>
+    <div class="modal-header">
+        <button type="button" data-dismiss="modal" aria-hidden="true" ng-click="close()"
+                style="float: right;background: transparent;border: none;font-size: 18px;">x
+        </button>
+        <div class="col-md-2">
+            <img src="assets/logo1.png" class="img-rsponsive" style="height: 40px;">
+        </div>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div style="height: 15px"></div>
+            <div class="col-md-offset-0 col-md-12 col-md-12 mb-lg">
+                <div class="row" ng-if="infoTxt=='CLG'">
+                        <div class="col-md-offset-0 col-sm-10 col-md-12 col-lg-12">
+                            <p class="txtStyle">Your career level growth score tells you where you stand against other companies, industries and functions in terms of career level growth. It takes into account factors like ease of getting promoted and highest career level reachable.</p>
+                        </div>
+                 </div>
+                <div class="row" ng-if="infoTxt=='SG'">
+                        <div class="col-md-offset-0 col-sm-10 col-md-12 col-lg-12">
+                       <p class="txtStyle">Your salary growth score tells you where you stand against other companies, industries and functions in terms of salary growth. It takes into account factors like salary growth at the highest and next level and average salary growth from one career level to the next.</p>
+                        </div>
+                 </div>
+                <div class="row" ng-if="infoTxt=='PP'">
+                        <div class="col-md-offset-0 col-sm-10 col-md-12 col-lg-12">
+                       <p class="txtStyle">In most industries the number of roles decreases with higher Career Levels - creating <b>"red zones"</b>, i.e. zones that have barriers to growth, promotions & role availability.</p>
+                            <p class="txtStyle">In case you find yourself at these red zones, you may experience promotion barriers, unavailability of roles within your organization or outside and high time-to-offer from companies you may be interviewing with.</p>
+                        </div>
+                 </div>
+                <div class="row" ng-if="infoTxt=='SU'">
+                        <div class="col-md-offset-0 col-sm-10 col-md-12 col-lg-12">
+                            <p class="txtStyle">The following growth scores tell you where you stand against other companies, industries and functions in terms of salary and career level growth. They have been calculated by aggregating factors like ease of getting promoted to the next and highest level, highest growth achievable and salary growth.</p>
+                        </div>
+                 </div>
+                <div class="row" ng-if="infoTxt=='GP'">
+                        <div class="col-md-offset-0 col-sm-10 col-md-12 col-lg-12">
+                            <p class="txtStyle">In the following graph, the bar charts show the maximum career level reachable and the line chart shows the median salary at the maximum career level. A higher maximum career level indicates a higher scope for growth.</p>
+                        </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

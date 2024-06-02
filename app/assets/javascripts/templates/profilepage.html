@@ -1,0 +1,273 @@
+<div ng-init="getUserInfo()">
+    <div class="container-fluid" style="margin-top: 8%">
+        <div class="row" style="padding: 20px;">
+            <div class="col-md-3">
+                <div class="hidden-sm hidden-xs">
+                    <br><br><br>
+                </div>
+                <div class="panel" style="padding: 10px; box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h3 style="font-size: 23px; color: black; font-weight: 100;">{{userInfo.Name}}</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <h5><span style="color: #000000;" class="glyphicon glyphicon-phone"></span></h5>
+                            </div>
+                            <div class="col-xs-9">
+                                <h5> {{userInfo.Contact}}</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <h5><span style="color: #000000;" class="glyphicon glyphicon-envelope"></span></h5>
+                            </div>
+                            <div class="col-xs-9">
+                                <h5 title="{{userInfo.Email}}"> ....@..com</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h5>{{userInfo.Experience}} yrs</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav nav-tabs" ng-init="changeTab('Profile')">
+                    <li class="active"><a data-toggle="tab" href="" ng-click="changeTab('Profile')">Profile</a></li>
+                    <li><a data-toggle="tab" href="" ng-click="changeTab('tab2')">Tab2</a></li>
+                    <li><a data-toggle="tab" href="" ng-click="changeTab('tab3')">Tab3</a></li>
+                </ul>
+                <div class="tab-content" style="border: 1px solid #dfdfdf; border-top: none; padding: 0 10px">
+                    <div ng-if="tabname=='Profile'">
+                        <div class="panel" style="box-shadow: 0 1px 0 rgba(0,0,0,0);">
+                            <div class="panel-heading" style="border-bottom: 1px solid #dfdfdf;">
+                                    <div class="row">
+                                    <div class="col-sm-10"><h4>Basic Info</h4></div>
+                                    <div class="col-sm-2">
+                                        <div ng-if="!editableBasic">
+                                            <h5 style="color: #000000; cursor: pointer;" class="pull-right" ng-click="editbasic()">
+                                                <span class="glyphicon glyphicon-pencil"></span>
+                                            </h5>
+                                        </div>
+                                        <div ng-if="editableBasic">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <h5 style="color: #000000; cursor: pointer;" ng-click="updateUserInfo('basic')">
+                                                        <span class="glyphicon glyphicon-floppy-save"></span>
+                                                    </h5>
+                                                </div>
+                                                <div  class="col-sm-6">
+                                                    <h5 style="color: #000000; cursor: pointer;" ng-click="revertbasic()">
+                                                        <span class="glyphicon glyphicon-remove"></span>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body" ng-if="!editableBasic">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h5 style="color: #000000">Name:</h5><h6>{{userInfo.Name}}</h6>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5 style="color: #000000">Contact:</h5><h6>{{userInfo.Contact}}</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h5 style="color: #000000">Email:</h5><h6>{{userInfo.Email}}</h6>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5 style="color: #000000">Education:</h5><h6>{{userInfo.Education}}</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h5 style="color: #000000">Institute:</h5><h6>{{userInfo.Institute}}</h6>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5 style="color: #000000">Year of Graduation:</h5><h6>{{userInfo.YOG}}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body" ng-if="editableBasic">
+                                <div class="row">
+                                    <form class="form-group col-sm-12">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label style="color: #000000">Name</label>
+                                                <input type="text" placeholder="Name" class="form-control"
+                                                       onkeypress="return ((event.charCode >= 65 && event.charCode <=90)|| (event.charCode >= 97 && event.charCode <=122)|| (event.charCode == 32))|| event.charCode==0"
+                                                       ng-model="userInfo.Name" required="required"/>
+                                                <br class="visible-xs">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label style="color: #000000">Contact</label>
+                                                <input type="text" placeholder="Contact" class="form-control"
+                                                       ng-model="userInfo.Contact"
+                                                       onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode==0"
+                                                       required="required" pattern="[0-9]{10}" minlength="10"
+                                                       maxlength="10"/>
+                                                <br class="visible-xs">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label style="color: #000000">Email</label>
+                                                <input autocomplete="off"
+                                                       class="form-control" name="email" readonly
+                                                       placeholder="Email"
+                                                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                                       required="required" type="email" ng-model="userInfo.Email"/>
+                                                <br class="visible-xs">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label style="color: #000000">Highest Education</label>
+                                                <select class="form-control" required="required"
+                                                        ng-model="userInfo.Education">
+                                                    <option selected>Select Highest Education</option>
+                                                    <option value="Graduate">Graduate</option>
+                                                    <option value="Post Graduate">Post Graduate</option>
+                                                </select>
+                                                <br class="visible-xs">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label style="color: #000000">Institute</label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Institute of Highest Education"
+                                                       ng-model="userInfo.Institute">
+                                                <br class="visible-xs">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label style="color: #000000">Year of Graduation</label>
+                                                <input class="form-control" type="text"
+                                                       placeholder=" Year of Graduation" ng-model="userInfo.YOG">
+                                                <br class="visible-xs">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel" style="box-shadow: 0 1px 1px rgba(0,0,0,0);">
+                            <div class="panel-heading" style="border-bottom: 1px solid #dfdfdf;">
+                                <div class="row">
+                                    <div class="col-sm-10"><h4>Company Info</h4></div>
+                                    <div class="col-sm-2">
+                                        <div ng-if="!editableCompany">
+                                            <h5 style="color: #000000; cursor: pointer;" class="pull-right" ng-click="editcompany()">
+                                                <span class="glyphicon glyphicon-pencil"></span>
+                                            </h5>
+                                        </div>
+                                        <div ng-if="editableCompany">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <h5 style="color: #000000; cursor: pointer;" ng-click="updateUserInfo('company')">
+                                                        <span class="glyphicon glyphicon-floppy-save"></span>
+                                                    </h5>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <h5 style="color: #000000; cursor: pointer;" ng-click="revertcompany()">
+                                                        <span class="glyphicon glyphicon-remove"></span>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body" ng-if="!editableCompany">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h5 style="color: #000000">Designation:</h5><h6>
+                                        {{userInfo.Designation}}</h6>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5 style="color: #000000">Industry:</h5><h6>{{userInfo.Industry}}</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h5 style="color: #000000">Salary In Lacs Per Annum: </h5><h6>
+                                        {{userInfo.Salary}}</h6>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5 style="color: #000000">Experience:</h5><h6>{{userInfo.Experience}}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body" ng-if="editableCompany">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label style="color: #000000">Designation</label>
+                                        <select class="form-control" required="required"
+                                                ng-model="userInfo.Designation">
+                                            <option selected="selected">Select Designation</option>
+                                            <option value="IT">IT</option>
+                                            <option value="HR">HR</option>
+                                            <option value="Finance">Finance</option>
+                                            <option value="Administrator">Administrator</option>
+                                        </select>
+                                        <br class="visible-xs">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label style="color: #000000">Industry</label>
+                                        <select class="form-control" required="required"
+                                                ng-model="userInfo.Industry">
+                                            <option selected>Select Industry</option>
+                                            <option value="IT">IT</option>
+                                            <option value="Infrastructure">Infrastructure</option>
+                                            <option value="Telecommunication">Telecommunication</option>
+                                        </select>
+                                        <br class="visible-xs">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label style="color: #000000">Salary In Lacs Per Annum</label>
+                                        <input autocomplete="off"
+                                               class="form-control" name="number"
+                                               placeholder="Salary in Lacs per Annum"
+                                               min="0" max="50" interval=".5"
+                                               required="required" type="text" ng-model="userInfo.Salary"/>
+                                        <br class="visible-xs">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label style="color: #000000">Experience</label>
+                                        <select class="form-control" required="required"
+                                                ng-model="userInfo.Experience">
+                                            <option selected>Years Of Experience</option>
+                                            <option value="0-5">0-5</option>
+                                            <option value="5-9">5-9</option>
+                                            <option value="9-17">9-17</option>
+                                            <option value="17+">17+</option>
+                                        </select>
+                                        <br class="visible-xs">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-if="tabname=='tab2'">
+
+                    </div>
+                    <div ng-if="tabname=='tab3'">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

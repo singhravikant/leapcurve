@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<% if browser.device.mobile? %>
+<head>
+  <meta charset="UTF-8">
+  <title>Error Page</title>
+  <style>
+    header{
+      display: none;
+    }
+    @font-face {
+      font-family: Montserrat-Regular;
+      src: url("/assets/fonts/Montserrat-Regular.otf")
+    }
+
+    @font-face {
+      font-family: Montserrat-Medium;
+      src: url('/assets/fonts/Montserrat-Medium.otf')
+    }
+
+    @font-face {
+      font-family: Montserrat-SemiBold;
+      src: url('/assets/fonts/Montserrat-SemiBold.otf')
+    }
+
+    @font-face {
+      font-family: Montserrat-Bold;
+      src: url('/assets/fonts/Montserrat-Bold.otf')
+    }
+
+    @font-face {
+      font-family: Poppins-Regular;
+      src: url('/assets/fonts/Poppins-Regular.ttf')
+    }
+
+    @font-face {
+      font-family: Poppins-Medium;
+      src: url('/assets/fonts/Poppins-Medium.ttf')
+    }
+
+    @font-face {
+      font-family: Poppins-SemiBold;
+      src: url('/assets/fonts/Poppins-SemiBold.ttf')
+    }
+
+    @font-face {
+      font-family: Poppins-Bold;
+      src: url('/assets/fonts/Poppins-Bold.ttf')
+    }
+
+    .header{
+      position: fixed;
+      display: block;
+      width: 100%;
+      top: 0;
+      /* float: left; */
+      padding: 0;
+    }
+    .logo{
+      position: relative;
+      display: block;
+      width: 30%;
+      float: left;
+      padding: 0;
+    }
+    .header-link{
+      position: relative;
+      display: block;
+      width: 70%;
+      float: left;
+      text-align: right;
+    }
+    .header-link ul{
+      display: inline-block;
+      padding: 15px 0;
+    }
+
+    .header-link ul li{
+      display: inline-block;
+      padding: 0 5px;
+      color: gray;
+    }
+
+    .header-link ul li a{
+      font-family: Montserrat-SemiBold;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: underline;
+      color: gray;
+    }
+    .error-text{
+      position: relative;
+      float: left;
+      display: block;
+      width: 40%;
+      padding: 12% 30%;
+    }
+
+    .center-div h1{
+      /*text-align: center;*/
+      font-size: 120px;
+      line-height: 85px;
+      margin: 0;
+      font-family: Poppins-bold;
+      color: silver;
+    }
+    .error-p p{
+      margin: 0;
+      color: #154177;
+      font-size: 12px;
+      font-family: Poppins-regular;
+    }
+    .error-p{
+      margin-left: 6px;
+      line-height: 13px;
+    }
+
+    .left-div {
+      position: relative;
+      float: left;
+      display: block;
+      min-height: 1px;
+      width: 12%;
+    }
+
+    .right-div {
+      position: relative;
+      float: left;
+      display: block;
+      min-height: 1px;
+      width: 12%;
+    }
+
+    .center-div {
+      position: relative;
+      float: left;
+      display: block;
+      width: 76%;
+    }
+
+    @media (min-width: 1120px) and (max-width: 1231px) {
+      .center-div {
+        position: relative;
+        float: left;
+        display: block;
+        width: 66%;
+      }
+
+      .left-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 22%;
+      }
+
+      .right-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 22%;
+      }
+    }
+    @media (min-width: 1055px) and (max-width: 1119px) {
+      .center-div {
+        position: relative;
+        float: left;
+        display: block;
+        width: 70%;
+      }
+
+      .left-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 15%;
+      }
+
+      .right-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 15%;
+      }
+    }
+
+    @media (min-width: 1231px) and (max-width: 1335px) {
+      .center-div {
+        position: relative;
+        float: left;
+        display: block;
+        width: 60%;
+      }
+
+      .left-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 20%;
+      }
+
+      .right-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 20%;
+      }
+    }
+
+    @media (min-width: 1335px) and (max-width: 1449px) {
+      .left-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 22%;
+      }
+
+      .right-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 22%;
+      }
+
+      .center-div {
+        position: relative;
+        float: left;
+        display: block;
+        width: 56%;
+      }
+    }
+    .row{
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+    }
+
+    .main{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 99%;
+    }
+
+    @media (min-width: 1450px) and (max-width: 1549px) {
+      .left-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 25%;
+      }
+
+      .right-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 25%;
+      }
+
+      .center-div {
+        position: relative;
+        float: left;
+        display: block;
+        width: 50%;
+      }
+    }
+
+
+    @media (min-width: 1550px) and (max-width: 1850px) {
+      .left-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 28%;
+      }
+
+      .right-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 28%;
+      }
+
+      .center-div {
+        position: relative;
+        float: left;
+        display: block;
+        width: 44%;
+      }
+    }
+
+    @media (min-width: 1851px) and (max-width: 2050px) {
+      .left-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 31%;
+      }
+
+      .right-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 31%;
+      }
+
+      .center-div {
+        position: relative;
+        float: left;
+        display: block;
+        width: 38%;
+      }
+    }
+
+    @media (min-width: 2051px){
+      .left-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 36%;
+      }
+
+      .right-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 36%;
+      }
+
+      .center-div {
+        position: relative;
+        float: left;
+        display: block;
+        width: 28%;
+      }
+    }
+
+
+    .logo1{
+      float: left;
+      height: 50px;
+      padding: 15px 0;
+    }
+    .main-img{
+      width: 70%;
+      padding: 3% 15%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">
+    <img src="/assets/logo1.png" alt="Mylestone" class="logo1">
+  </div>
+  <div class="header-link">
+    <ul>
+      <li>< <a onclick="goBack()">GO BACK</a></li>|<li><a href="/#!/page/index">HOME PAGE</a> ></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="main">
+  <div class="row">
+    <div class="left-div"></div>
+    <div class="center-div">
+      <h1>Link Expired</h1>
+    </div>
+    <div class="right-div"></div>
+
+  </div>
+  <div class="row">
+    <div class="left-div"></div>
+    <div class="center-div">
+      <div class="error-p">
+        <p>SOMETHING WENT WRONG!</p>
+        <p>THE PAGE YOU ARE LOOKING FOR MAY HAVE</p>
+        <p>BEEN MOVED, DELETED OR DOES NOT EXIST..</p>
+      </div>  </div>
+    <div class="right-div"></div>
+  </div>
+</div>
+<!--  <div class="pnf-img">-->
+<!--    <img src="/assets/1.png" alt="Mylestone" class="main-img">-->
+<!--  </div>-->
+</body>
+<% elsif browser.device.tablet? %>
+  <head>
+    <meta charset="UTF-8">
+    <title>Error Page</title>
+    <style>
+      header{
+        display: none;
+      }
+      @font-face {
+        font-family: Montserrat-Regular;
+        src: url("/assets/fonts/Montserrat-Regular.otf")
+      }
+
+      @font-face {
+        font-family: Montserrat-Medium;
+        src: url('/assets/fonts/Montserrat-Medium.otf')
+      }
+
+      @font-face {
+        font-family: Montserrat-SemiBold;
+        src: url('/assets/fonts/Montserrat-SemiBold.otf')
+      }
+
+      @font-face {
+        font-family: Montserrat-Bold;
+        src: url('/assets/fonts/Montserrat-Bold.otf')
+      }
+
+      @font-face {
+        font-family: Poppins-Regular;
+        src: url('/assets/fonts/Poppins-Regular.ttf')
+      }
+
+      @font-face {
+        font-family: Poppins-Medium;
+        src: url('/assets/fonts/Poppins-Medium.ttf')
+      }
+
+      @font-face {
+        font-family: Poppins-SemiBold;
+        src: url('/assets/fonts/Poppins-SemiBold.ttf')
+      }
+
+      @font-face {
+        font-family: Poppins-Bold;
+        src: url('/assets/fonts/Poppins-Bold.ttf')
+      }
+
+      .header{
+        position: fixed;
+        display: block;
+        width: 100%;
+        top: 0;
+        /* float: left; */
+        padding: 0;
+      }
+      .logo{
+        position: relative;
+        display: block;
+        width: 30%;
+        float: left;
+        padding: 0;
+      }
+      .header-link{
+        position: relative;
+        display: block;
+        width: 70%;
+        float: left;
+        text-align: right;
+      }
+      .header-link ul{
+        display: inline-block;
+        padding: 15px 0;
+      }
+
+      .header-link ul li{
+        display: inline-block;
+        padding: 0 5px;
+        color: gray;
+      }
+
+      .header-link ul li a{
+        font-family: Montserrat-SemiBold;
+        font-size: 14px;
+        cursor: pointer;
+        text-decoration: underline;
+        color: gray;
+      }
+      .error-text{
+        position: relative;
+        float: left;
+        display: block;
+        width: 40%;
+        padding: 12% 30%;
+      }
+
+      .center-div h1{
+        /*text-align: center;*/
+        font-size: 120px;
+        line-height: 85px;
+        margin: 0;
+        font-family: Poppins-bold;
+        color: silver;
+      }
+      .error-p p{
+        margin: 0;
+        color: #154177;
+        font-size: 14px;
+        font-family: Poppins-regular;
+      }
+      .error-p{
+        margin-left: 6px;
+        line-height: 13px;
+      }
+
+      .left-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 12%;
+      }
+
+      .right-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 12%;
+      }
+
+      .center-div {
+        position: relative;
+        float: left;
+        display: block;
+        width: 76%;
+      }
+
+      @media (min-width: 1120px) and (max-width: 1231px) {
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 66%;
+        }
+
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 22%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 22%;
+        }
+      }
+      @media (min-width: 1055px) and (max-width: 1119px) {
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 70%;
+        }
+
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 15%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 15%;
+        }
+      }
+
+      @media (min-width: 1231px) and (max-width: 1335px) {
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 60%;
+        }
+
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 20%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 20%;
+        }
+      }
+
+      @media (min-width: 1335px) and (max-width: 1449px) {
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 22%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 22%;
+        }
+
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 56%;
+        }
+      }
+      .row{
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+      }
+
+      .main{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 99%;
+      }
+
+      @media (min-width: 1450px) and (max-width: 1549px) {
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 25%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 25%;
+        }
+
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 50%;
+        }
+      }
+
+
+      @media (min-width: 1550px) and (max-width: 1850px) {
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 28%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 28%;
+        }
+
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 44%;
+        }
+      }
+
+      @media (min-width: 1851px) and (max-width: 2050px) {
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 31%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 31%;
+        }
+
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 38%;
+        }
+      }
+
+      @media (min-width: 2051px){
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 36%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 36%;
+        }
+
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 28%;
+        }
+      }
+
+
+      .logo1{
+        float: left;
+        height: 50px;
+        padding: 15px 0;
+      }
+      .main-img{
+        width: 70%;
+        padding: 3% 15%;
+      }
+    </style>
+  </head>
+  <body>
+
+  <div class="header">
+    <div class="logo">
+      <img src="/assets/logo1.png" alt="Mylestone" class="logo1">
+    </div>
+    <div class="header-link">
+      <ul>
+        <li>< <a onclick="goBack()">GO BACK</a></li>|<li><a href="/#!/page/index">HOME PAGE</a> ></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="main">
+    <div class="row">
+      <div class="left-div"></div>
+      <div class="center-div">
+        <h1>Link Expired</h1>
+      </div>
+      <div class="right-div"></div>
+
+    </div>
+    <div class="row">
+      <div class="left-div"></div>
+      <div class="center-div">
+        <div class="error-p">
+          <p>SOMETHING WENT WRONG!</p>
+          <p>THE PAGE YOU ARE LOOKING FOR MAY HAVE</p>
+          <p>BEEN MOVED, DELETED OR DOES NOT EXIST..</p>
+        </div>  </div>
+      <div class="right-div"></div>
+    </div>
+  </div>
+  <!--  <div class="pnf-img">-->
+  <!--    <img src="/assets/1.png" alt="Mylestone" class="main-img">-->
+  <!--  </div>-->
+  </body>
+  <% else %>
+  <head>
+    <meta charset="UTF-8">
+    <title>Error Page</title>
+    <style>
+      header{
+        display: none;
+      }
+      @font-face {
+        font-family: Montserrat-Regular;
+        src: url("/assets/fonts/Montserrat-Regular.otf")
+      }
+
+      @font-face {
+        font-family: Montserrat-Medium;
+        src: url('/assets/fonts/Montserrat-Medium.otf')
+      }
+
+      @font-face {
+        font-family: Montserrat-SemiBold;
+        src: url('/assets/fonts/Montserrat-SemiBold.otf')
+      }
+
+      @font-face {
+        font-family: Montserrat-Bold;
+        src: url('/assets/fonts/Montserrat-Bold.otf')
+      }
+
+      @font-face {
+        font-family: Poppins-Regular;
+        src: url('/assets/fonts/Poppins-Regular.ttf')
+      }
+
+      @font-face {
+        font-family: Poppins-Medium;
+        src: url('/assets/fonts/Poppins-Medium.ttf')
+      }
+
+      @font-face {
+        font-family: Poppins-SemiBold;
+        src: url('/assets/fonts/Poppins-SemiBold.ttf')
+      }
+
+      @font-face {
+        font-family: Poppins-Bold;
+        src: url('/assets/fonts/Poppins-Bold.ttf')
+      }
+
+      .header{
+        position: fixed;
+        display: block;
+        width: 100%;
+        top: 0;
+        /* float: left; */
+        padding: 0;
+      }
+      .logo{
+        position: relative;
+        display: block;
+        width: 30%;
+        float: left;
+        padding: 0;
+      }
+      .header-link{
+        position: relative;
+        display: block;
+        width: 68%;
+        padding: 0 1%;
+        float: left;
+        text-align: right;
+      }
+      .header-link ul{
+        display: inline-block;
+        padding: 15px 0;
+      }
+
+      .header-link ul li{
+        display: inline-block;
+        padding: 0 5px;
+        color: gray;
+      }
+
+      .header-link ul li a{
+        font-family: Montserrat-SemiBold;
+        font-size: 14px;
+        cursor: pointer;
+        text-decoration: underline;
+        color: gray;
+      }
+      .error-text{
+        position: relative;
+        float: left;
+        display: block;
+        width: 40%;
+        padding: 12% 30%;
+      }
+
+      .center-div h1{
+        /*text-align: center;*/
+        font-size: 120px;
+        line-height: 85px;
+        margin: 0;
+        font-family: Poppins-bold;
+        color: silver;
+      }
+      .error-p p{
+        margin: 0;
+        color: #154177;
+        font-size: 14px;
+        font-family: Poppins-regular;
+      }
+      .error-p{
+        margin-left: 6px;
+        line-height: 15px;
+      }
+
+      .left-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 12%;
+      }
+
+      .right-div {
+        position: relative;
+        float: left;
+        display: block;
+        min-height: 1px;
+        width: 12%;
+      }
+
+      .center-div {
+        position: relative;
+        float: left;
+        display: block;
+        width: 76%;
+      }
+
+      @media (min-width: 1120px) and (max-width: 1231px) {
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 66%;
+        }
+
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 22%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 22%;
+        }
+      }
+      @media (min-width: 1055px) and (max-width: 1119px) {
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 70%;
+        }
+
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 15%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 15%;
+        }
+      }
+
+      @media (min-width: 1231px) and (max-width: 1335px) {
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 60%;
+        }
+
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 20%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 20%;
+        }
+      }
+
+      @media (min-width: 1335px) and (max-width: 1476px) {
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 22%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 22%;
+        }
+
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 56%;
+        }
+      }
+      .row{
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+      }
+
+      .main{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 99%;
+      }
+
+      @media (min-width: 1477px) and (max-width: 1677px) {
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 25%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 25%;
+        }
+
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 50%;
+        }
+      }
+
+
+      @media (min-width: 1678px) and (max-width: 1950px) {
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 28%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 28%;
+        }
+
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 44%;
+        }
+      }
+
+      @media (min-width: 1951px) and (max-width: 2050px) {
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 31%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 31%;
+        }
+
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 38%;
+        }
+      }
+
+      @media (min-width: 2051px){
+        .left-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 36%;
+        }
+
+        .right-div {
+          position: relative;
+          float: left;
+          display: block;
+          min-height: 1px;
+          width: 36%;
+        }
+
+        .center-div {
+          position: relative;
+          float: left;
+          display: block;
+          width: 28%;
+        }
+      }
+
+
+      .logo1{
+        float: left;
+        height: 50px;
+        padding: 15px 0;
+      }
+      .main-img{
+        width: 70%;
+        padding: 3% 15%;
+      }
+    </style>
+  </head>
+  <body>
+
+  <div class="header">
+    <div class="logo">
+      <img src="/assets/logo1.png" alt="Mylestone" class="logo1">
+    </div>
+    <div class="header-link">
+      <ul>
+        <li>< <a onclick="goBack()">GO BACK</a></li>|<li><a href="/#!/page/index">HOME PAGE</a> ></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="main">
+    <div class="row">
+      <div class="left-div"></div>
+      <div class="center-div">
+        <h1>Link Expired</h1>
+      </div>
+      <div class="right-div"></div>
+
+    </div>
+    <div class="row">
+      <div class="left-div"></div>
+      <div class="center-div">
+        <div class="error-p">
+          <p>SORRY. LOOKS LIKE THEY'RE NOT ACCEPTING</p>
+          <p>ANY MORE APPLICANTS.</p>
+
+        </div>  </div>
+      <div class="right-div"></div>
+    </div>
+  </div>
+  <!--  <div class="pnf-img">-->
+  <!--    <img src="/assets/1.png" alt="Mylestone" class="main-img">-->
+  <!--  </div>-->
+  </body>
+<% end %>
+<script>
+    function goBack() {
+       location.href=document.referrer;
+        // var a =url == "http://localhost:3000/corporate/application/role_1540985346320";
+        // if(b==a){
+        //     location.href = '/#!/page/index#home3'
+        // }
+    }
+</script>
+</html>

@@ -1,0 +1,93 @@
+<style>
+  #box {
+    display: none;
+    text-align: center;
+    border-radius: 3px;
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    right: 30%;
+    border: 1px solid gray;
+    padding: 1% 1%;
+    background-color: white;
+    z-index: 888;
+  }
+
+  #row1 {
+    color: #000000;
+    padding: 10px 0px;
+    font-family: Montserrat-regular;
+    font-size: 15px;
+  }
+
+  #row2 {
+
+  }
+
+  #yes_btn {
+    background-color: #cde7ea;
+    color: #4c4c4c;
+    font-family: Montserrat-regular;
+
+  }
+
+  #no_btn {
+    background-color: #b7dde1;
+    color: #4c4c4c;
+    font-family: Montserrat-regular;
+
+  }
+
+  #cancel_btn {
+    background-color: #4c4c4cb3;
+    display: inline-block;
+    color: white;
+    font-family: Montserrat-regular;
+
+  }
+
+  .cmn_btn {
+    padding: 5px 10px;
+    border: 1px;
+    /*color: white;*/
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: .5%;
+  }
+</style>
+<div id="box">
+  <div id="row1">Would you like to save this role before logging out?</div>
+  <div id="row2">
+    <span><input type="button" value="Yes" id="yes_btn" class="cmn_btn"></span>
+    <span><input type="button" value="No" id="no_btn" class="cmn_btn"></span>
+    <span><input type="button" value="Cancel" id="cancel_btn" class="cmn_btn"></span>
+  </div>
+</div>
+
+
+
+
+
+<script>
+    async function advance_confirm(msg) {
+        document.getElementById('row1').innerHTML = msg
+        document.getElementById('box').style.display = 'block'
+        let promise = new Promise((resolve, reject) => {
+            $("#yes_btn").on("click", function () {
+                document.getElementById('box').style.display = 'none'
+                resolve(0);
+            });
+            $("#no_btn").on("click", function () {
+                document.getElementById('box').style.display = 'none'
+                resolve(1);
+            });
+            $("#cancel_btn").on("click", function () {
+                document.getElementById('box').style.display = 'none'
+                resolve(2);
+            });
+        });
+        var result = await promise; // wait till the promise resolves (*)
+        return result;
+    }
+</script>

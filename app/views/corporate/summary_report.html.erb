@@ -1,0 +1,5581 @@
+<html>
+
+<% if browser.device.mobile? %>
+
+  <style>
+
+    .section {
+      position: relative;
+      display: block;
+      padding: 10px;
+
+      text-align: center;
+      width: 100%;
+      float: left;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+
+    }
+
+    .row {
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+
+    }
+
+    .col {
+      position: relative;
+      float: left;
+      display: block;
+      width: 80%;
+    }
+
+    .col h2 {
+      margin: 10px 0px 10px 0px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .col p {
+      margin: 5px 0px 15px 0px;
+      font-size: 12px;
+      color: #716f6f;
+      text-align: center;
+
+    }
+
+    .span-color {
+      color: #3e3c3c !important;
+      font-size: 12px !important;
+      text-align: center;
+    }
+
+    .col .li_border {
+      border-bottom: 1px solid;
+      border-top: 1px solid;
+    }
+
+    .col .per-33 span {
+      width: 100%;
+      width: 100%;
+      position: relative;
+      display: block;
+      text-align: center !important;
+    }
+
+    .col ul {
+      position: relative;
+      display: block;
+      float: left;
+      padding: 0;
+      width: 100%;
+    }
+
+    .col .per-20 {
+      width: 30%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+      text-align: right;
+    }
+
+    .col .per-20 a {
+      border-bottom: 1px solid;
+      font-size: 10px;
+      cursor: pointer;
+    }
+
+    .form-div-right {
+      display: block;
+      position: relative;
+      float: right;
+      width: 100%;
+    }
+
+    .mob-form-div {
+
+    }
+
+    .mob-form-div ul {
+
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .mob-form-div ul li a {
+      cursor: pointer;
+      text-decoration: none;
+      background: #f0f0f0;
+      display: block;
+      font-weight: bold;
+      padding: 6px 5px;
+      color: black;
+    }
+
+    .mob-form-div ul .li-1 {
+      padding: 5px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .mob-form-div ul .li-2 {
+      padding: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .mob-form-div ul .li-3 {
+      padding: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .mob-form-div ul .li-4 {
+      padding: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    @media (min-width: 1600px) {
+      .col-less {
+        width: 80%;
+      }
+    }
+
+    .border-btm {
+      border-bottom: 1px solid;
+      color: #716f6f;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .font-s {
+      font-size: 25px;
+    }
+
+    #myDialog {
+
+    }
+
+    .back-filter {
+      font-weight: unset !important;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .close {
+      float: right;
+      cursor: pointer;
+      position: relative;
+      font-size: 1.5em;
+      top: -2px;
+      left: 5px;
+      font-weight: bold;
+    }
+
+    .quehead {
+      /*font-weight: bold;*/
+      font-size: 1em;
+      font-family: Montserrat-SemiBold;
+      padding: 15px 0px;
+    }
+
+    #nav {
+      position: fixed;
+      left: 0;
+      right: 80%;
+    }
+
+    /*.active {*/
+    /*color: red;*/
+    /*background-color: red;*/
+    /*}*/
+    .salary-h2 {
+      padding-top: 40px;
+      margin-top: 0 !important;
+    }
+
+    #application {
+      padding-top: 30px;
+    }
+
+    .len-9 {
+      background: #e0eff4;
+      width: 100%;
+      float: left;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      position: relative;
+    }
+
+    .len-90 {
+      background: #e0eff4;
+      height: 100px;
+      width: 100%;
+      float: left;
+      position: relative;
+    }
+
+    .text-center {
+      display: unset;
+      position: absolute;
+      margin: auto !important;
+      left: 0;
+      text-align: center;
+      right: 0;
+      bottom: 40%;
+    }
+
+    .chnage-color {
+      color: white !important;
+    }
+
+    .mob-80 {
+      width: 70% !important;
+      text-align: left;
+    }
+
+    .per-20 a {
+      padding-right: 20px;
+      border: none !important;
+    }
+
+    /*#hide-2{*/
+    /*margin-bottom: 10px;*/
+    /*}*/
+
+    /*#hide-1 {*/
+    /*padding-top: 30px;*/
+    /*}*/
+  </style>
+
+  <style>
+    .section {
+      position: relative;
+      display: block;
+
+      text-align: center;
+      width: 100%;
+      float: left;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+
+    }
+
+    .col {
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+
+    }
+
+    .col .per-80 {
+      width: 100%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+    }
+
+    @font-face {
+      font-family: Montserrat-Regular;
+      src: url("/assets/fonts/Montserrat-Regular.otf")
+    }
+
+    @font-face {
+      font-family: Montserrat-Medium;
+      src: url('/assets/fonts/Montserrat-Medium.otf')
+    }
+
+    @font-face {
+      font-family: Montserrat-SemiBold;
+      src: url('/assets/fonts/Montserrat-SemiBold.otf')
+    }
+
+    @font-face {
+      font-family: Montserrat-Bold;
+      src: url('/assets/fonts/Montserrat-Bold.otf')
+    }
+
+    @font-face {
+      font-family: Poppins-Regular;
+      src: url('/assets/fonts/Poppins-Regular.ttf')
+    }
+
+    @font-face {
+      font-family: Poppins-Medium;
+      src: url('/assets/fonts/Poppins-Medium.ttf')
+    }
+
+    @font-face {
+      font-family: Poppins-SemiBold;
+      src: url('/assets/fonts/Poppins-SemiBold.ttf')
+    }
+
+    @font-face {
+      font-family: Poppins-Bold;
+      src: url('/assets/fonts/Poppins-Bold.ttf')
+    }
+
+    .col .per-33 {
+      width: 100%;
+      margin: 0;
+      position: relative;
+      margin-bottom: 15px;
+      display: block;
+      float: left;
+    }
+
+    .per-33-1 {
+      width: 100% !important;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .col .per-33 span {
+      width: 100%;
+      width: 100%;
+      position: relative;
+      display: block;
+      text-align: left;
+      font-size: 20px;
+    }
+
+    .col ul {
+      position: relative;
+      display: block;
+      float: left;
+      padding-bottom: 20px;
+      width: 100%;
+    }
+
+    .col .per-20 a {
+      border-bottom: 1px solid;
+      font-size: 10px;
+      cursor: pointer;
+
+    }
+
+    .mob-form-div ul {
+
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .mob-form-div ul li a {
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 15px;
+      color: black;
+    }
+
+    .mob-form-div ul .li-1 {
+      padding: 5px;
+      margin-bottom: 10px
+    }
+
+    @media (min-width: 1600px) {
+      .col-less {
+        width: 80%;
+      }
+    }
+
+    .role-margin {
+      padding-bottom: 20px;
+    }
+
+    .border-btm {
+      border-bottom: 1px solid;
+      color: #716f6f;
+      cursor: pointer;
+    }
+
+    .font-s {
+      font-size: 25px;
+      text-align: center !important;
+    }
+
+    .all-links li {
+      display: inline;
+      padding: 0px 5px 0px 5px;
+      border-right: 1px solid;
+      font-size: 12px;
+    }
+
+    .all-links {
+      list-style: none;
+      margin-top: 0;
+      margin-bottom: 10px;
+      padding-top: 20px !important;
+    }
+
+    .all-links span {
+      color: #716f6f;
+    }
+
+    .salary-fine {
+      color: black !important;
+      font-size: 13px;
+    }
+
+    .alert-msg {
+      color: darkred !important;
+      font-family: Montserrat-Regular;
+    }
+
+    .background-25 {
+      background: #e0eff4;
+      color: black;
+    }
+
+    .background-50 {
+      background: #67b5bf;
+      color: white;
+    }
+
+    .background-25 .span-color {
+      color: black !important;
+    }
+
+    .background-90 {
+      background: #2e8991;
+      color: white;
+    }
+
+    .all-links li a {
+      cursor: pointer;
+    }
+
+    .changefilter {
+      border: none;
+      cursor: pointer;
+      font-family: Montserrat-Regular;
+      background-color: white;
+
+    }
+
+    .changefilter:active {
+      border: none;
+      cursor: pointer;
+      background-color: white;
+      outline: none;
+      /*border-right: 1px solid gray;*/
+    }
+
+    .changefilter:focus {
+      outline: none;
+    }
+
+    .factive {
+      color: blue;
+      font-family: Montserrat-SemiBold;
+      border: none;
+    }
+
+    .iactive {
+      color: black;
+      text-decoration: underline;
+      border: none;
+      font-family: Montserrat-SemiBold;
+    }
+
+    .model {
+      /*opacity: 0%;*/
+      border: 1px solid gray;
+      color: black !important;
+      background-color: white;
+      padding: 10px;
+      font-family: Montserrat-Regular;
+      /*width: 20%;*/
+      display: none;
+      z-index: 10;
+      font-size: 13px;
+    }
+
+    .active {
+      background-color: #67b5bf !important;
+    }
+
+    .font-mont {
+      font-family: Poppins-Regular;
+      letter-spacing: 1px;
+    }
+
+    .font-pop {
+      font-family: Montserrat-Regular;
+      color: black;
+      text-decoration: none;
+    }
+
+    .frmbtn {
+      outline: none;
+      border: none;
+      background: transparent;
+      font-size: 9px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .app-head {
+      color: black;
+      font-weight: unset;
+      font-size: 15px;
+      font-family: Montserrat-SemiBold;
+      position: absolute;
+      text-decoration: underline;
+    }
+
+    .link {
+      /*text-decoration: none;*/
+      font-size: 10px !important;
+      color: black;
+      font-family: Montserrat-Regular;
+    }
+
+    .dialog {
+      position: fixed;
+      top: 0;
+      width: 98%;
+      overflow: scroll;
+      bottom: 0;
+      z-index: 3;
+      left: 0;
+      padding-left: 3px !important;
+      padding: 0px 2%;
+      right: 0;
+      background-color: #fff;
+      display: none;
+    }
+
+    .dialog1 {
+      position: fixed;
+      top: 10%;
+      width: 98%;
+      overflow: scroll;
+      bottom: 0;
+      z-index: 3;
+      left: 0;
+      padding-left: 3px !important;
+      padding: 0px 2%;
+      right: 0;
+      /*background-color: #fff;*/
+      display: none;
+    }
+
+    .col-40per {
+      width: 40%;
+      display: block;
+      position: relative;
+      float: left;
+    }
+
+    .col-45per {
+      width: 45%;
+      display: block;
+      position: relative;
+      float: left;
+    }
+
+    .col-60per {
+      width: 60%;
+      display: block;
+      position: relative;
+      float: left;
+      text-align: right !important;
+    }
+
+    .col-55per {
+      width: 55%;
+      display: block;
+      position: relative;
+      float: left;
+      text-align: right;
+    }
+
+    .col-60per ul li {
+      position: relative;
+      padding: 0 10px;
+      display: inline;
+      text-decoration: underline;
+    }
+
+    .col-60per ul li a {
+      cursor: pointer;
+    }
+
+    .col-60per ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    .sort {
+      position: absolute;
+      width: 92%;
+      border: 2px solid gray;
+      overflow: hidden;
+      padding: 2%;
+      z-index: 3;
+      left: 1.5%;
+      /*display: none;*/
+      /*padding: 20px 4% 5px 4%;*/
+      right: 0;
+      background-color: #fff;
+      /*left: 5%;*/
+      /*right: 30%;*/
+      /* z-index: 444452; */
+    }
+
+    .sort1 {
+      position: absolute;
+      width: 92%;
+      border: 2px solid gray;
+      overflow: hidden;
+      padding: 2%;
+      z-index: 3;
+      left: 1.5%;
+      display: none;
+      /* padding: 20px 4% 5px 4%; */
+      right: 0;
+      background-color: #fff;
+      /* left: 5%; */
+      /* right: 30%; */
+      /* z-index: 444452; */
+    }
+
+    .advance-a {
+      position: relative;
+      right: 20px;
+      font-size: 10px;
+      cursor: pointer;
+      border-bottom: 1px solid silver;
+    }
+
+    .mob-padding {
+      padding-left: 10px;
+      font-size: 14px;
+    }
+
+    .mob-row {
+      padding-bottom: 40px;
+    }
+
+    .mob-col {
+      text-align: left !important;
+    }
+
+    .mob-text-left {
+      text-align: left;
+    }
+
+    .mob-filters-ul {
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .mob-filters-ul li {
+      padding: 0 4px !important;
+    }
+
+    .mob-resp-font {
+      font-size: 12px;
+    }
+
+    .mob-pad-len-9 {
+      padding: 10px;
+    }
+
+    .mob-pay {
+      font-size: 15px;
+    }
+
+    .mob-font-span {
+      font-size: 13px;
+    }
+  </style>
+
+  <style>
+
+    .radiobtn {
+      height: 30px;
+      width: 0;
+      margin: 0;
+    }
+
+    .radiobtn1 {
+      height: 30px;
+      width: 0;
+      margin: 0;
+    }
+
+    .radiobtn::before {
+      content: " ";
+      background-color: white;
+      border: 4px solid black;
+      padding: 7px;
+      left: -30px;
+      top: -3px;
+      position: absolute;
+    }
+
+    .optlabel {
+      cursor: pointer;
+      line-height: 40px;
+      position: relative;
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    /*.optlabel {*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*padding-left: 35px;*/
+    /*margin-bottom: 12px;*/
+    /*cursor: pointer;*/
+    /*font-size: 22px;*/
+    /*-webkit-user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-ms-user-select: none;*/
+    /*user-select: none;*/
+    /*}*/
+
+    /* Hide the browser's default radio button */
+    .optlabel input[type='radio'] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    /* Create a custom radio button */
+    .checkmark {
+      content: " ";
+      background-color: white;
+      border: 2px solid black;
+      padding: 7px;
+      left: 5px;
+      top: 2px;
+      position: absolute;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .optlabel:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+
+    /* When the radio button is checked, add a blue background */
+    .optlabel input:checked ~ .checkmark {
+      background-color: #ffffff;
+    }
+
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the indicator (dot/circle) when checked */
+    .optlabel input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    /* Style the indicator (dot/circle) */
+    .optlabel .checkmark:after {
+      content: " ";
+      background-color: white;
+      border: 4px solid black;
+      padding: 7px;
+      left: -4px;
+      top: -4px;
+      position: absolute;
+    }
+
+    .checked .checkmark:after {
+      /*content: ".";*/
+      border: 4px solid black;
+      padding: 3px;
+      left: 0px;
+      top: 0px;
+      background-color: black;
+      border-color: white;
+      position: absolute;
+      outline: 4px solid;
+    }
+
+    .radiobtn:checked::before {
+      /*margin: 4px 0px;*/
+      content: " ";
+      border: 6px solid black;
+      padding: 7px;
+      background-color: white;
+
+    }
+
+    .sort-span-text {
+      position: relative;
+      padding-left: 45px;
+      font-size: 15px;
+    }
+
+    .sort-padding {
+      position: relative;
+      display: block;
+      float: left;
+      padding: 10px;
+    }
+
+    .sort-btn {
+      border: none;
+      padding: 7px 15px;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .padding-sort-col-btn {
+      padding-top: 20px;
+    }
+
+    .sort-para {
+      font-size: 10px;
+      font-weight: bold;
+    }
+
+    .li-5 {
+      padding: 0;
+      width: 100%;
+    }
+
+    .submit-btn {
+      border: none;
+      padding: 6px 5px;
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 1px;
+      outline: none;
+      font-family: Poppins-Regular;
+      font-size: 15px;
+      background: #f0f0f0;
+      width: 100%;
+    }
+
+    .ad-sort {
+      float: right;
+      outline: none;
+      position: relative;
+      background: transparent;
+      width: 41%;
+      top: 14px;
+      border: 1px solid;
+    }
+
+    #advance {
+      top: 0;
+    }
+
+    .less-padd-check {
+      padding: 5px !important;
+      top: 4px;
+    }
+
+    .optlabel .less-padd-check:after {
+      padding: 5px;
+    }
+
+    .active {
+      background-color: #67b5bf !important;
+      color: white !important;
+    }
+
+    .dialog-border {
+      border: 2px solid;
+      width: 99%;
+    }
+
+    .filter-para {
+      font-size: 12px !important;
+      text-align: justify !important;
+    }
+
+    .filter-scroll {
+      position: absolute;
+      width: 96%;
+      border: 2px solid gray;
+      z-index: 3;
+      display: none;
+      right: 0;
+      background-color: #fff;
+      left: 1.5%;
+
+    }
+
+    .filter-input {
+      width: 90%;
+      padding: 5px;
+      outline: none;
+      border: 1px solid #797676;
+    }
+
+    .filter-input-30pr {
+      position: relative;
+      width: 50%;
+      display: block;
+      float: left;
+    }
+
+    .filter-col60-padding {
+      padding-top: 10px;
+    }
+
+    .filter-checkmark-left {
+      left: 4px;
+    }
+
+    .filter-span {
+      text-align: center;
+      display: block;
+      position: relative;
+      font-size: 12px;
+      padding-top: 15px;
+    }
+
+    .filter-a {
+      border-bottom: 1px solid;
+    }
+
+    .col-50-filterpera {
+      width: 100%;
+      display: block;
+      position: relative;
+      text-align: left;
+      float: left;
+    }
+
+    .filter-span-text {
+      font-size: 13px;
+      padding-left: 10px;
+    }
+
+    .mob-align-link {
+      font-size: 10px;
+    }
+
+    .mob-link-padd {
+      padding-left: 10px;
+    }
+  </style>
+
+  <style>
+    .mob-cross {
+      position: relative;
+      top: -14px;
+      left: -6px;
+      border: 1px solid;
+      text-decoration: none;
+      padding: 0px 3px;
+      font-weight: bold;
+      font-size: 10px;
+    }
+
+    .mob-cross {
+      display: none;
+    }
+
+    .red-txt {
+      color: darkred;
+      font-size: 13px !important;
+    }
+
+    .edit-btn b {
+      color: black;
+    }
+
+    .edit-btn {
+      text-decoration-color: black
+    }
+
+    #panel, #flip {
+      padding: 10px;
+      text-align: center;
+      background-color: #fff;
+      border: solid 1px #c3c3c3;
+    }
+
+    #panel {
+      display: none;
+    }
+
+    #panel ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .form-div-left {
+      display: none;
+    }
+
+    .mob-60para {
+      width: 50% !important;
+      text-align: left;
+    }
+
+    .mob-40para {
+      width: 50% !important;
+    }
+
+    .sort-padding .col {
+      text-align: left;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    #sort_tab {
+      display: none;
+    }
+
+    .chip {
+      text-align: center;
+      /*width: inherit;*/
+      /*border-radius: 5px;*/
+      font-family: Montserrat-Regular;
+      outline: none;
+      /*border: 1px solid gray;*/
+      background-color: #b9b2b2;
+      color: black;
+      margin: 5px;
+      /*display: inline-block;*/
+      padding: 3px 9px 3px 4px;
+    }
+
+    .chip_btn {
+      background-color: transparent;
+      color: white;
+      outline: none;
+      border: none;
+      pointer-events: none;
+      text-align: center;
+    }
+
+    .dei_chip {
+      cursor: pointer;
+      position: relative;
+      left: 6px;
+      color: gray;
+      padding-right: 5px;
+    }
+
+    .chip-text {
+      text-align: justify;
+      font-family: Montserrat-Regular;
+      font-size: 12px;
+      font-weight: bold;
+      margin: 0;
+      color: black !important;
+      line-height: 15px;
+      padding: 0;
+    }
+
+    .textbox {
+      border: 1px solid black;
+      outline: none;
+      width: 60%;
+      padding: 1%;
+    }
+
+    .notification {
+      color: white;
+      position: relative;
+      top: 0;
+      right: 0;
+      border: 1px solid green;
+      padding: 5px 10px;
+      border-radius: 50%;
+      background-color: green;
+    }
+  </style>
+
+  <% @filter = notice %>
+  <% if @filter == 'Function' %>
+    <% @iactive = '' %>
+    <% @factive = 'factive' %>
+  <% else %>
+    <% @iactive = 'iactive' %>
+    <% @factive = '' %>
+  <% end %>
+  <% if @filter.nil? && @fun %>
+    <% @filter = 'Function' %>
+    <% @iactive = '' %>
+    <% @factive = 'factive' %>
+  <% elsif @filter.nil? && @indfun %>
+    <% @filter = 'Industry and Function' %>
+    <% @iactive = 'iactive' %>
+    <% @factive = '' %>
+  <% end %>
+  <section class="section">
+    <div id="flip">JUMP TO...</div>
+    <div id="panel" class="mob-form-div">
+      <ul>
+        <li class="li-2 "><span class="font-mont"><a href='#hide-2' class="active">SUMMARY</a></span></li>
+        <li class="li-3"><span class="font-mont"><a href='#hide-3'>APPLICATION</a></span></li>
+        <% if !@case4 %>
+          <li class="li-4"><span class="font-mont"><a href='#hide-1'>SALARY</a></span></li>
+        <% end %>
+        <li class="li-5">
+          <span class="font-mont"> <%= button_tag "DASHBOARD", :type => 'button', :id => 'change-color', :class => 'submit-btn', :onclick => 'change(); location.href="/corporate/login"' %></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+<% elsif browser.device.tablet? %>
+
+  <style>
+    .textbox {
+      border: 1px solid black;
+      outline: none;
+      width: 60%;
+      padding: 1%;
+    }
+
+    .background-25 .span-color {
+      font-size: 12px !important;
+    }
+
+    .background-50 .span-color {
+      font-size: 12px !important;
+    }
+
+    .background-90 .span-color {
+      font-size: 12px !important;
+    }
+
+    .section {
+      position: relative;
+      display: block;
+
+      text-align: center;
+      width: 100%;
+      float: left;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+
+    }
+
+    .row {
+      position: relative;
+      float: left;
+      display: block;
+      width: 90%;
+      padding: 0% 6% 2% 2%;
+    }
+
+    .col h2 {
+      margin: 10px 0px 10px 0px;
+      font-size: 20px;
+    }
+
+    .col p {
+      margin: 5px 0px 15px 0px;
+      font-size: 15px;
+      color: #716f6f;
+
+    }
+
+    .span-color {
+      color: #3e3c3c !important;
+      font-size: 15px !important;
+    }
+
+    .col .li_border {
+      border-right: 1px solid;
+      border-left: 1px solid;
+    }
+
+    .col .per-33 span {
+      width: 100%;
+      width: 100%;
+      position: relative;
+      display: block;
+    }
+
+    .col ul {
+      position: relative;
+      display: block;
+      float: left;
+      padding: 0;
+      width: 100%;
+    }
+
+    .col .per-20 {
+      width: 30%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+      text-align: right;
+    }
+
+    .col .per-20 a {
+      border-bottom: 1px solid;
+      font-size: 10px;
+      cursor: pointer;
+
+    }
+
+    .form-div-right {
+      /*border:2px solid  #0d305f;*/
+      text-align: left;
+      display: block;
+      position: relative;
+      float: right;
+      width: 80%;
+    }
+
+    .form-div-left {
+      /*border:2px solid  #0d305f;*/
+      text-align: center;
+      display: block;
+      position: relative;
+      padding: 10% 0% 70% 0;
+      float: left;
+      width: 20%;
+    }
+
+    .form-div-left ul {
+
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .form-div-left ul li a {
+      cursor: pointer;
+      text-decoration: none;
+      background: #f0f0f0;
+      display: block;
+      font-weight: unset;
+      padding: 6px 5px;
+      color: black;
+    }
+
+    .form-div-left ul .li-1 {
+      padding: 5px;
+      margin-bottom: 10px;
+      width: 80%;
+    }
+
+    .form-div-left ul .li-2 {
+      padding: 0;
+      margin-bottom: 10px;
+      width: 80%;
+    }
+
+    .form-div-left ul .li-3 {
+      padding: 0;
+      margin-bottom: 10px;
+      width: 80%;
+    }
+
+    .form-div-left ul .li-4 {
+      padding: 0;
+      margin-bottom: 10px;
+      width: 80%;
+    }
+
+    @media (min-width: 1600px) {
+      .col-less {
+        width: 80%;
+      }
+    }
+
+    .role-margin {
+      margin-bottom: 5px;
+    }
+
+    .border-btm {
+      border-bottom: 1px solid;
+      color: #716f6f;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    #myDialog {
+
+    }
+
+    .close {
+      float: right;
+      cursor: pointer;
+      position: relative;
+      font-size: 2em;
+      top: -10px;
+      left: 15px;
+      font-weight: bold
+    }
+
+    .back-filter {
+      font-weight: unset !important;
+      cursor: pointer;
+      font-size: 13px !important;
+    }
+
+    .quehead {
+      /*font-weight: bold;*/
+      font-size: 1em;
+      font-family: Montserrat-SemiBold;
+      padding: 15px 0px;
+    }
+
+    #nav {
+      position: fixed;
+      left: 0;
+      right: 80%;
+    }
+
+    /*.active {*/
+    /*color: red;*/
+    /*background-color: red;*/
+    /*}*/
+    .salary-h2 {
+      padding-top: 40px;
+      margin-top: 0 !important;
+    }
+
+    #application {
+      padding-top: 30px;
+    }
+
+    .len-9 {
+      padding: 10px;
+      background: #e0eff4;
+      width: 97%;
+      float: left;
+      position: relative;
+    }
+
+    .len-90 {
+      background: #e0eff4;
+      height: 100px;
+      width: 100%;
+      float: left;
+      position: relative;
+    }
+
+    .text-center {
+      display: unset;
+      position: absolute;
+      margin: auto !important;
+      left: 0;
+      text-align: center;
+      right: 0;
+      bottom: 40%;
+    }
+
+    .chnage-color {
+      color: white !important;
+    }
+
+    /*#hide-2{*/
+    /*margin-bottom: 10px;*/
+    /*}*/
+
+    /*#hide-1 {*/
+    /*padding-top: 30px;*/
+    /*}*/
+  </style>
+
+  <style>
+    .section {
+      position: relative;
+      display: block;
+
+      text-align: center;
+      width: 100%;
+      float: left;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+
+    }
+
+    .col {
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+
+    }
+
+    .span-color {
+      color: white;
+      font-size: 12px;
+
+    }
+
+    .col .per-80 {
+      width: 70%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+    }
+
+    @font-face {
+      font-family: Montserrat-Regular;
+      src: url("/assets/fonts/Montserrat-Regular.otf")
+    }
+
+    @font-face {
+      font-family: Montserrat-Medium;
+      src: url('/assets/fonts/Montserrat-Medium.otf')
+    }
+
+    @font-face {
+      font-family: Montserrat-SemiBold;
+      src: url('/assets/fonts/Montserrat-SemiBold.otf')
+    }
+
+    @font-face {
+      font-family: Montserrat-Bold;
+      src: url('/assets/fonts/Montserrat-Bold.otf')
+    }
+
+    @font-face {
+      font-family: Poppins-Regular;
+      src: url('/assets/fonts/Poppins-Regular.ttf')
+    }
+
+    @font-face {
+      font-family: Poppins-Medium;
+      src: url('/assets/fonts/Poppins-Medium.ttf')
+    }
+
+    @font-face {
+      font-family: Poppins-SemiBold;
+      src: url('/assets/fonts/Poppins-SemiBold.ttf')
+    }
+
+    @font-face {
+      font-family: Poppins-Bold;
+      src: url('/assets/fonts/Poppins-Bold.ttf')
+    }
+
+    .col .per-33 {
+      width: 30%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+    }
+
+    .per-33-1 {
+      width: 33% !important;
+    }
+
+    .col .per-33 span {
+      width: 100%;
+      width: 100%;
+      position: relative;
+      display: block;
+      text-align: center;
+    }
+
+    .col ul {
+      position: relative;
+      display: block;
+      float: left;
+      padding-bottom: 20px;
+      width: 100%;
+    }
+
+    .col .per-20 {
+      width: 30%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+      text-align: right;
+    }
+
+    .col .per-20 a {
+      border-bottom: 1px solid;
+      font-size: 10px;
+      cursor: pointer;
+
+    }
+
+    .form-div-right {
+      /*border:2px solid  #0d305f;*/
+      text-align: left;
+      display: block;
+      position: relative;
+      float: right;
+      width: 80%;
+    }
+
+    .form-div-left {
+      /*border:2px solid  #0d305f;*/
+      text-align: center;
+      display: block;
+      position: relative;
+      padding: 10% 0% 70% 0;
+      float: left;
+      width: 20%;
+    }
+
+    .form-div-left ul {
+
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .form-div-left ul li a {
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 15px;
+      color: black;
+    }
+
+    .form-div-left ul .li-1 {
+      padding: 5px;
+      margin-bottom: 10px
+    }
+
+    @media (min-width: 1600px) {
+      .col-less {
+        width: 80%;
+      }
+    }
+
+    .role-margin {
+      padding-bottom: 20px;
+    }
+
+    .border-btm {
+      border-bottom: 1px solid;
+      color: #716f6f;
+      cursor: pointer;
+    }
+
+    .font-s {
+      font-size: 20px;
+      text-align: center !important;
+    }
+
+    .all-links li {
+      display: inline;
+      padding: 0px 5px 0px 5px;
+      border-right: 1px solid;
+      font-size: 12px;
+    }
+
+    .all-links {
+      list-style: none;
+      margin-top: 0;
+      margin-bottom: 10px;
+      padding-top: 20px !important;
+    }
+
+    .all-links span {
+      color: #716f6f;
+    }
+
+    .salary-fine {
+      color: black !important;
+    }
+
+    .alert-msg {
+      text-align: center;
+      color: darkred !important;
+      font-family: Montserrat-Regular;
+    }
+
+    .background-25 {
+      background: #e0eff4;
+      color: black;
+      padding: 5px;
+    }
+
+    .background-50 {
+      margin: 0 10px 0 10px !important;
+      background: #67b5bf;
+      color: white;
+      padding: 5px;
+    }
+
+    .background-25 .span-color {
+      color: black !important;
+    }
+
+    .background-90 {
+      background: #2e8991;
+      color: white;
+      padding: 5px;
+    }
+
+    .all-links li a {
+      cursor: pointer;
+    }
+
+    .changefilter {
+      border: none;
+      cursor: pointer;
+      font-family: Montserrat-Regular;
+      background-color: white;
+      /*border-right: 1px solid gray;*/
+    }
+
+    .changefilter:active {
+      border: none;
+      cursor: pointer;
+      background-color: white;
+      outline: none;
+      /*border-right: 1px solid gray;*/
+    }
+
+    .changefilter:focus {
+      outline: none;
+    }
+
+    .factive {
+      color: blue;
+      border: none;
+      font-family: Montserrat-SemiBold;
+    }
+
+    .iactive {
+      color: black;
+      text-decoration: underline;
+      border: none;
+      font-family: Montserrat-SemiBold;
+    }
+
+    .model {
+      /*opacity: 0%;*/
+      border: 1px solid gray;
+      color: black !important;
+      background-color: white;
+      padding: 10px;
+      font-family: Montserrat-Regular;
+      /*width: 20%;*/
+      display: none;
+      z-index: 10;
+      font-size: 13px;
+    }
+
+    .active {
+      background-color: #67b5bf !important;
+    }
+
+    .font-mont {
+      font-family: Poppins-Regular;
+      letter-spacing: 1px;
+    }
+
+    .font-pop {
+      font-family: Montserrat-Regular;
+      color: black;
+      text-decoration: none;
+    }
+
+    .frmbtn {
+      outline: none;
+      border: none;
+      background: white;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .app-head {
+      color: black;
+      font-family: Montserrat-SemiBold;
+      position: absolute;
+      font-weight: unset;
+      text-decoration: underline;
+    }
+
+    .link {
+      /*text-decoration: none;*/
+      color: black;
+      font-family: Montserrat-Regular;
+    }
+
+    .dialog {
+      position: fixed;
+      top: 0;
+      width: 98%;
+      overflow: scroll;
+      bottom: 0;
+      z-index: 3;
+      left: 0;
+      padding-left: 3px !important;
+      padding: 0px 2%;
+      right: 0;
+      background-color: #fff;
+      display: none;
+    }
+
+    .dialog1 {
+      position: fixed;
+      top: 10%;
+      width: 98%;
+      overflow: scroll;
+      bottom: 0;
+      z-index: 3;
+      left: 0;
+      padding-left: 3px !important;
+      padding: 0px 2%;
+      right: 0;
+      /*background-color: #fff;*/
+      display: none;
+    }
+
+    .col-40per {
+      width: 40%;
+      display: block;
+      position: relative;
+      float: left;
+    }
+
+    .col-45per {
+      width: 45%;
+      display: block;
+      position: relative;
+      float: left;
+    }
+
+    .col-60per {
+      width: 60%;
+      display: block;
+      position: relative;
+      float: left;
+      text-align: right !important;
+    }
+
+    .col-55per {
+      width: 55%;
+      display: block;
+      position: relative;
+      float: left;
+      text-align: right;
+    }
+
+    .col-60per ul li {
+      position: relative;
+      padding: 0 10px;
+      display: inline;
+      text-decoration: underline;
+    }
+
+    .col-60per ul li a {
+      cursor: pointer;
+    }
+
+    .col-60per ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    .sort {
+      position: absolute;
+      width: 90%;
+      border: 2px solid gray;
+      overflow: hidden;
+      z-index: 3;
+      left: 0;
+      /*display: none;*/
+      padding: 20px 4% 5px 4%;
+      right: 0;
+      background-color: #fff;
+      right: 30%;
+      /* z-index: 444452; */
+
+    }
+
+    .sort1 {
+      position: absolute;
+      width: 90%;
+      border: 2px solid gray;
+      overflow: hidden;
+      z-index: 3;
+      left: 0;
+      display: none;
+      padding: 20px 4% 5px 4%;
+      right: 0;
+      background-color: #fff;
+      right: 30%;
+      /* z-index: 444452; */
+    }
+
+    .advance-a {
+      position: relative;
+      right: 40px;
+      font-size: 14px;
+      cursor: pointer;
+      border-bottom: 1px solid silver;
+    }
+  </style>
+
+  <style>
+    .chip-text {
+      text-align: justify;
+      font-family: Montserrat-Regular;
+      font-size: 12px;
+      font-weight: bold;
+      margin: 0;
+      color: black !important;
+      line-height: 15px;
+      padding: 0;
+    }
+
+    .mob-cross {
+      position: relative;
+      top: -14px;
+      left: -6px;
+      border: 1px solid;
+      text-decoration: none;
+      padding: 0px 3px;
+      font-weight: bold;
+      font-size: 10px;
+    }
+
+    .mob-cross {
+      display: none;
+    }
+
+    .radiobtn {
+      height: 30px;
+      width: 0;
+      margin: 0;
+    }
+
+    .radiobtn1 {
+      height: 30px;
+      width: 0;
+      margin: 0;
+    }
+
+    .radiobtn::before {
+      content: " ";
+      background-color: white;
+      border: 4px solid black;
+      padding: 7px;
+      left: -30px;
+      top: -3px;
+      position: absolute;
+    }
+
+    .optlabel {
+      cursor: pointer;
+      line-height: 40px;
+      position: relative;
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    /*.optlabel {*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*padding-left: 35px;*/
+    /*margin-bottom: 12px;*/
+    /*cursor: pointer;*/
+    /*font-size: 22px;*/
+    /*-webkit-user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-ms-user-select: none;*/
+    /*user-select: none;*/
+    /*}*/
+
+    /* Hide the browser's default radio button */
+    .optlabel input[type='radio'] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    /* Create a custom radio button */
+    .checkmark {
+      content: " ";
+      background-color: white;
+      border: 2px solid black;
+      padding: 7px;
+      left: 5px;
+      top: 0px;
+      position: absolute;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .optlabel:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+
+    /* When the radio button is checked, add a blue background */
+    .optlabel input:checked ~ .checkmark {
+      background-color: #ffffff;
+    }
+
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the indicator (dot/circle) when checked */
+    .optlabel input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    /* Style the indicator (dot/circle) */
+    .optlabel .checkmark:after {
+      content: " ";
+      background-color: white;
+      border: 4px solid black;
+      padding: 7px;
+      left: -4px;
+      top: -4px;
+      position: absolute;
+    }
+
+    .checked .checkmark:after {
+      /*content: ".";*/
+      border: 4px solid black;
+      padding: 3px;
+      left: 0px;
+      top: 0px;
+      background-color: black;
+      border-color: white;
+      position: absolute;
+      outline: 4px solid;
+    }
+
+    /*}*/
+
+    .radiobtn:checked::before {
+      /*margin: 4px 0px;*/
+      content: " ";
+      border: 6px solid black;
+      padding: 7px;
+      background-color: white;
+
+    }
+
+    .sort-span-text {
+      position: relative;
+      padding-left: 40px;
+      font-size: 12px;
+    }
+
+    .sort-padding {
+      position: relative;
+      display: block;
+      float: left;
+      padding: 10px;
+    }
+
+    .sort-btn {
+      border: none;
+      padding: 7px 15px;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .padding-sort-col-btn {
+      padding-top: 20px;
+    }
+
+    .sort-para {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .li-5 {
+      padding: 0;
+      width: 80%;
+    }
+
+    .submit-btn {
+      border: none;
+      padding: 6px 5px;
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 1px;
+      outline: none;
+      font-family: Poppins-Regular;
+      font-size: 15px;
+      background: #f0f0f0;
+      width: 100%;
+    }
+
+    .ad-sort {
+      float: right;
+      position: relative;
+      top: 10px;
+    }
+
+    #advance {
+      top: 0;
+    }
+
+    .less-padd-check {
+      padding: 5px !important;
+      top: 4px;
+    }
+
+    .optlabel .less-padd-check:after {
+      padding: 5px;
+    }
+
+    .active {
+      background-color: #67b5bf !important;
+      color: white !important;
+    }
+
+    .dialog-border {
+      border: 2px solid;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .filter-para {
+      font-size: 14px !important;
+      text-align: justify;
+    }
+
+    .filter-scroll {
+      position: absolute;
+      width: 90%;
+      border: 2px solid gray;
+      /* overflow: hidden; */
+      z-index: 3;
+      left: 0;
+      display: none;
+      padding: 20px 4% 5px 4%;
+      right: 0;
+      background-color: #fff;
+      right: 30%;
+    }
+
+    .filter-input {
+      width: 90%;
+      padding: 5px;
+      outline: none;
+      border: 1px solid #797676;
+    }
+
+    .filter-input-30pr {
+      position: relative;
+      width: 50%;
+      display: block;
+      float: left;
+    }
+
+    .filter-col60-padding {
+      padding-top: 10px;
+    }
+
+    .filter-checkmark-left {
+      left: 4px;
+    }
+
+    .filter-span {
+      text-align: center;
+      display: block;
+      position: relative;
+      font-size: 12px;
+      padding-top: 15px;
+    }
+
+    .filter-a {
+      border-bottom: 1px solid;
+    }
+
+    .col-50-filterpera {
+      width: 50%;
+      display: block;
+      position: relative;
+      float: left;
+    }
+
+    .filter-span-text {
+      position: relative;
+      padding-left: 15px;
+      font-size: 12px;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    #sort_tab {
+      display: none;
+    }
+
+    .chip {
+      text-align: center;
+      /*width: inherit;*/
+      /*border-radius: 5px;*/
+      font-family: Montserrat-Regular;
+      outline: none;
+      /*border: 1px solid gray;*/
+      background-color: #b9b2b2;
+      color: black;
+      margin: 5px;
+      /*display: inline-block;*/
+      padding: 3px 9px 3px 4px;
+    }
+
+    .chip_btn {
+      background-color: transparent;
+      color: white;
+      outline: none;
+      border: none;
+      pointer-events: none;
+      text-align: center;
+    }
+
+    .dei_chip {
+      cursor: pointer;
+      position: relative;
+      left: 6px;
+      color: gray;
+      padding-right: 5px;
+    }
+
+    .notification {
+      color: white;
+      position: relative;
+      top: 0;
+      right: 0;
+      border: 1px solid green;
+      padding: 5px 10px;
+      border-radius: 50%;
+      background-color: green;
+    }
+  </style>
+
+<% else %>
+
+
+  <style>
+    @media (min-width: 600px) and (max-width: 1000px) {
+      .background-25 .span-color {
+        font-size: 10px !important;
+      }
+
+      .background-50 .span-color {
+        font-size: 10px !important;
+      }
+
+      .background-90 .span-color {
+        font-size: 10px !important;
+      }
+
+      .col .per-33 {
+        width: 29% !important;
+      }
+
+    }
+
+    .background-25 .span-color {
+      font-size: 12px;
+    }
+
+    .background-50 .span-color {
+      font-size: 12px;
+      color: #f0f0f0 !important;
+      font-family: Poppins-SemiBold;
+    }
+
+    .background-90 .span-color {
+      font-size: 12px;
+      font-family: Poppins-SemiBold;
+    }
+
+    .section {
+      position: relative;
+      display: block;
+      text-align: center;
+      width: 100%;
+      float: left;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+    }
+
+    .row {
+      position: relative;
+      float: left;
+      display: block;
+      width: 65%;
+      padding: 0% 25% 2% 10%;
+    }
+
+    .col {
+      position: relative;
+      float: left;
+      display: block;
+      width: 80%;
+    }
+
+    .col h2 {
+      margin: 10px 0px 10px 0px;
+      font-size: 20px;
+    }
+
+    .col p {
+      margin: 5px 0px 15px 0px;
+      font-size: 15px;
+      color: black;
+      text-transform: uppercase;
+
+    }
+
+    .span-color {
+      color: #3e3c3c !important;
+      font-size: 15px;
+    }
+
+    .col .per-80 {
+      width: 70%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+    }
+
+    .col .li_border {
+      border-right: 1px solid;
+      border-left: 1px solid;
+    }
+
+    .col .per-33 span {
+      width: 100%;
+      width: 100%;
+      position: relative;
+      display: block;
+    }
+
+    .col ul {
+      position: relative;
+      display: block;
+      float: left;
+      padding: 0;
+      width: 100%;
+    }
+
+    .col .per-20 {
+      width: 30%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+      text-align: right;
+    }
+
+    .col .per-20 a {
+      border-bottom: 1px solid;
+      font-size: 10px;
+      cursor: pointer;
+
+    }
+
+    .form-div-right {
+      /*border:2px solid  #0d305f;*/
+      text-align: left;
+      display: block;
+      position: relative;
+      float: right;
+      width: 80%;
+    }
+
+    .form-div-left {
+      /*border:2px solid  #0d305f;*/
+      text-align: center;
+      display: block;
+      position: relative;
+      padding: 10% 0% 70% 0;
+      float: left;
+      width: 20%;
+    }
+
+    .form-div-left ul {
+
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .form-div-left ul li a {
+      cursor: pointer;
+      text-decoration: none;
+      background: #f0f0f0;
+      display: block;
+      font-weight: unset;
+      padding: 6px 5px;
+      color: black;
+    }
+
+    .form-div-left ul .li-1 {
+      padding: 5px;
+      margin-bottom: 10px;
+      width: 80%;
+    }
+
+    .form-div-left ul .li-2 {
+      padding: 0;
+      margin-bottom: 10px;
+      width: 80%;
+    }
+
+    .form-div-left ul .li-3 {
+      padding: 0;
+      margin-bottom: 10px;
+      width: 80%;
+    }
+
+    .form-div-left ul .li-4 {
+      padding: 0;
+      margin-bottom: 10px;
+      width: 80%;
+    }
+
+    @media (min-width: 1600px) {
+      .col-less {
+        width: 80%;
+      }
+    }
+
+    .role-margin {
+      margin-bottom: 5px;
+    }
+
+    .border-btm {
+      border-bottom: 1px solid;
+      color: #716f6f;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .font-s {
+      font-size: 25px;
+    }
+
+    #myDialog {
+
+    }
+
+    .close {
+      float: right;
+      cursor: pointer;
+      position: relative;
+      font-size: 2em;
+      top: -7px;
+      left: 10px;
+      font-weight: bold;
+    }
+
+    .back-filter {
+      font-weight: unset !important;
+      cursor: pointer;
+      font-size: 15px !important;
+    }
+
+    .quehead {
+      font-weight: bold;
+      font-size: 1em;
+      font-family: Montserrat-SemiBold;
+      padding: 15px 0px;
+    }
+
+    #nav {
+      position: fixed;
+      left: 0;
+      right: 80%;
+    }
+
+    /*.active {*/
+    /*color: red;*/
+    /*background-color: red;*/
+    /*}*/
+    .salary-h2 {
+      padding-top: 40px;
+      margin-top: 0 !important;
+    }
+
+    #application {
+      padding-top: 30px;
+    }
+
+    .len-9 {
+      padding: 10px;
+      background: #e0eff4;
+      width: 97%;
+      float: left;
+      position: relative;
+    }
+
+    .len-90 {
+      background: #e0eff4;
+      height: 100px;
+      width: 100%;
+      float: left;
+      position: relative;
+    }
+
+    .text-center {
+      display: unset;
+      position: absolute;
+      margin: auto !important;
+      left: 0;
+      text-align: center;
+      right: 0;
+      bottom: 40%;
+    }
+
+    .chnage-color {
+      color: white !important;
+    }
+
+    /*#hide-2{*/
+    /*margin-bottom: 10px;*/
+    /*}*/
+
+    /*#hide-1 {*/
+    /*padding-top: 30px;*/
+    /*}*/
+  </style>
+
+  <style>
+    .section {
+      position: relative;
+      display: block;
+      text-align: center;
+      width: 100%;
+      float: left;
+      padding-top: 2%;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+    }
+
+    .row {
+      position: relative;
+      float: left;
+      display: block;
+      width: 65%;
+      padding: 0% 25% 2% 10%;
+    }
+
+    .col {
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+    }
+
+    .span-color {
+      color: white;
+    }
+
+    .col .per-80 {
+      width: 70%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+    }
+
+    @font-face {
+      font-family: Montserrat-Regular;
+      src: url("/assets/fonts/Montserrat-Regular.otf")
+    }
+
+    @font-face {
+      font-family: Montserrat-Medium;
+      src: url('/assets/fonts/Montserrat-Medium.otf')
+    }
+
+    @font-face {
+      font-family: Montserrat-SemiBold;
+      src: url('/assets/fonts/Montserrat-SemiBold.otf')
+    }
+
+    @font-face {
+      font-family: Montserrat-Bold;
+      src: url('/assets/fonts/Montserrat-Bold.otf')
+    }
+
+    @font-face {
+      font-family: Poppins-Regular;
+      src: url('/assets/fonts/Poppins-Regular.ttf')
+    }
+
+    @font-face {
+      font-family: Poppins-Medium;
+      src: url('/assets/fonts/Poppins-Medium.ttf')
+    }
+
+    @font-face {
+      font-family: Poppins-SemiBold;
+      src: url('/assets/fonts/Poppins-SemiBold.ttf')
+    }
+
+    @font-face {
+      font-family: Poppins-Bold;
+      src: url('/assets/fonts/Poppins-Bold.ttf')
+    }
+
+    .col .per-33 {
+      width: 27%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+    }
+
+    .per-33-1 {
+      width: 33% !important;
+    }
+
+    .col .per-33 span {
+      width: 100%;
+      width: 100%;
+      position: relative;
+      display: block;
+      text-align: center;
+    }
+
+    .col ul {
+      position: relative;
+      display: block;
+      float: left;
+      padding-bottom: 20px;
+      width: 100%;
+    }
+
+    .col .per-20 {
+      width: 30%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+      text-align: right;
+    }
+
+    .col .per-20 a {
+      border-bottom: 1px solid;
+      font-size: 10px;
+      cursor: pointer;
+
+    }
+
+    .form-div-right {
+      /*border:2px solid  #0d305f;*/
+      text-align: left;
+      display: block;
+      position: relative;
+      float: right;
+      width: 80%;
+    }
+
+    .form-div-left {
+      /*border:2px solid  #0d305f;*/
+      text-align: center;
+      display: block;
+      position: relative;
+      padding: 10% 0% 70% 0;
+      float: left;
+      width: 20%;
+    }
+
+    .form-div-left ul {
+
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .form-div-left ul li a {
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 15px;
+      color: #4c4c4c;
+    }
+
+    .form-div-left ul .li-1 {
+      padding: 5px;
+      margin-bottom: 10px
+    }
+
+    @media (min-width: 1600px) {
+      .col-less {
+        width: 80%;
+      }
+    }
+
+    .role-margin {
+      padding-bottom: 15px;
+    }
+
+    .border-btm {
+      border-bottom: 1px solid;
+      color: black;
+      cursor: pointer;
+    }
+
+    .font-s {
+      font-size: 25px;
+      font-weight: 300;
+      text-align: center !important;
+    }
+
+    .all-links li {
+      display: inline;
+      padding: 0px 5px 0px 5px;
+      border-right: 1px solid;
+      font-size: 12px;
+    }
+
+    .all-links {
+      list-style: none;
+      margin-top: 0;
+      margin-bottom: 10px;
+      padding-top: 20px !important;
+    }
+
+    .all-links span {
+      color: #716f6f;
+    }
+
+    .salary-fine {
+      color: black !important;
+      font-family: Poppins-SemiBold !important;
+      letter-spacing: unset !important;
+    }
+
+    .alert-msg {
+      text-align: center;
+      color: darkred !important;
+      font-family: Montserrat-Regular;
+    }
+
+    .background-25 {
+      background: #e0eff4;
+      color: black;
+      padding: 5px;
+    }
+
+    .background-50 {
+      margin: 0 10px 0 10px !important;
+      background: #67b5bf;
+      color: white;
+      padding: 5px;
+    }
+
+    .background-25 .span-color {
+      color: #4c4c4c !important;
+      font-family: Poppins-SemiBold;
+    }
+
+    .background-25 .font-s {
+      color: #4c4c4c;
+      font-family: Montserrat-bold;
+    }
+
+    .background-50 .font-s {
+      color: #f0f0f0;
+      font-family: Montserrat-bold;
+    }
+
+    .background-90 .font-s {
+      color: #fefefd;
+      font-family: Montserrat-bold;
+    }
+
+    .background-90 {
+      background: #2e8991;
+      color: white;
+      padding: 5px;
+    }
+
+    .all-links li a {
+      cursor: pointer;
+    }
+
+    .changefilter {
+      border: none;
+      cursor: pointer;
+      font-family: Montserrat-Regular;
+      background-color: white;
+      /*border-right: 1px solid gray;*/
+    }
+
+    .changefilter:active {
+      border: none;
+      cursor: pointer;
+      background-color: white;
+      outline: none;
+      /*border-right: 1px solid gray;*/
+    }
+
+    .changefilter:focus {
+      outline: none;
+    }
+
+    .factive {
+      color: black;
+      border: none;
+      text-decoration: underline;
+      font-family: Montserrat-SemiBold;
+    }
+
+    .iactive {
+      color: black;
+      text-decoration: underline;
+      border: none;
+      font-family: Montserrat-SemiBold;
+    }
+
+    .model {
+      /*opacity: 0%;*/
+      border: 1px solid gray;
+      color: black !important;
+      background-color: white;
+      padding: 10px;
+      /*width: 20%;*/
+      position: fixed;
+      font-family: Montserrat-Regular;
+      display: none;
+      z-index: 1;
+      font-size: 13px;
+    }
+
+    .active {
+      background-color: #67b5bf !important;
+    }
+
+    .font-mont {
+      font-family: Poppins-Regular;
+      letter-spacing: 1px;
+    }
+
+    .font-pop {
+      font-family: Montserrat-Regular;
+    }
+
+    .frmbtn {
+      outline: none;
+      border: none;
+      background: white;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .app-head {
+      color: black;
+      font-weight: unset;
+      font-family: Montserrat-SemiBold;
+      position: absolute;
+      text-decoration: underline;
+    }
+
+    .link {
+      /*text-decoration: none;*/
+      color: black !important;
+      font-family: Montserrat-Regular;
+    }
+
+    .dialog {
+      position: fixed;
+      top: 0;
+      width: 98%;
+      overflow: scroll;
+      bottom: 0;
+      z-index: 3;
+      left: 0;
+      padding-left: 3px !important;
+      padding: 0px 2%;
+      right: 0;
+      /*background-color: #fff;*/
+      display: none;
+    }
+
+    .dialog1 {
+      position: fixed;
+      top: 10%;
+      width: 98%;
+      overflow: scroll;
+      bottom: 0;
+      z-index: 3;
+      left: 0;
+      padding-left: 3px !important;
+      padding: 0px 2%;
+      right: 0;
+      /*background-color: #fff;*/
+      display: none;
+    }
+
+    .col-40per {
+      width: 40%;
+      display: block;
+      position: relative;
+      float: left;
+    }
+
+    .col-45per {
+      width: 45%;
+      display: block;
+      position: relative;
+      float: left;
+    }
+
+    .col-60per {
+      width: 60%;
+      display: block;
+      position: relative;
+      float: left;
+      text-align: right !important;
+    }
+
+    .col-55per {
+      width: 55%;
+      display: block;
+      position: relative;
+      float: left;
+      text-align: right;
+    }
+
+    .col-60per ul li {
+      position: relative;
+      padding: 0 10px;
+      display: inline;
+    }
+
+    .col-60per ul li a {
+      cursor: pointer;
+    }
+
+    .col-60per ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    .sort {
+      position: absolute;
+      width: 66%;
+      border: 2px solid gray;
+      overflow: hidden;
+      z-index: 3;
+      left: 0;
+      /*display: none;*/
+      padding: 20px 2% 5px 2%;
+      right: 0;
+      background-color: #fff;
+      left: 7%;
+      right: 30%;
+      /* z-index: 444452; */
+
+    }
+
+    .sort1 {
+      position: absolute;
+      width: 66%;
+      border: 2px solid gray;
+      overflow: hidden;
+      z-index: 3;
+      left: 0;
+      display: none;
+      padding: 20px 2% 5px 2%;
+      right: 0;
+      background-color: #fff;
+      left: 7%;
+      right: 30%;
+      /* z-index: 444452; */
+    }
+
+    .advance-a {
+      position: relative;
+      right: 40px;
+      font-size: 14px;
+      cursor: pointer;
+      border-bottom: 1px solid silver;
+    }
+  </style>
+
+  <style>
+    .textbox {
+      border: 1px solid black;
+      outline: none;
+      width: 60%;
+      padding: 1%;
+      margin-top: 10px;
+    }
+
+    .chip-text {
+      text-align: justify;
+      font-family: Montserrat-Regular;
+      font-size: 12px;
+      font-weight: bold;
+      margin: 0;
+      color: black !important;
+      line-height: 15px;
+      padding: 0;
+    }
+
+    .radiobtn {
+      height: 30px;
+      width: 0;
+      margin: 0;
+    }
+
+    .radiobtn1 {
+      height: 30px;
+      width: 0;
+      margin: 0;
+    }
+
+    .radiobtn::before {
+      content: " ";
+      background-color: white;
+      border: 4px solid black;
+      padding: 7px;
+      left: -30px;
+      top: -3px;
+      position: absolute;
+    }
+
+    .optlabel {
+      cursor: pointer;
+      line-height: 40px;
+      position: relative;
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    /*.optlabel {*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*padding-left: 35px;*/
+    /*margin-bottom: 12px;*/
+    /*cursor: pointer;*/
+    /*font-size: 22px;*/
+    /*-webkit-user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-ms-user-select: none;*/
+    /*user-select: none;*/
+    /*}*/
+
+    /* Hide the browser's default radio button */
+    .optlabel input[type='radio'] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    /* Create a custom radio button */
+    .checkmark {
+      content: " ";
+      background-color: white;
+      border: 2px solid black;
+      padding: 7px;
+      left: 5px;
+      top: 0px;
+      position: absolute;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .optlabel:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+
+    /* When the radio button is checked, add a blue background */
+    .optlabel input:checked ~ .checkmark {
+      background-color: #ffffff;
+    }
+
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the indicator (dot/circle) when checked */
+    .optlabel input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    /* Style the indicator (dot/circle) */
+    .optlabel .checkmark:after {
+      content: " ";
+      background-color: white;
+      border: 4px solid black;
+      padding: 7px;
+      left: -4px;
+      top: -4px;
+      position: absolute;
+    }
+
+    /*.checked .checkmark:after {*/
+    /*!*content: ".";*!*/
+    /*background-color: white;*/
+    /*content: ".";*/
+    /*border: 4px solid black;*/
+    /*padding: 7px;*/
+    /*left: -4px;*/
+    /*top: -4px;*/
+    /*border-color: red;*/
+    /*position: absolute;*/
+    /*}*/
+
+    .checked .checkmark:after {
+      border: 4px solid black;
+      padding: 3px;
+      left: 0px;
+      top: 0px;
+      background-color: black;
+      border-color: white;
+      position: absolute;
+      outline: 4px solid;
+    }
+
+    /*}*/
+
+    .radiobtn:checked::before {
+      /*margin: 4px 0px;*/
+      content: " ";
+      border: 6px solid black;
+      padding: 7px;
+      background-color: white;
+
+    }
+
+    .sort-span-text {
+      position: relative;
+      padding-left: 45px;
+      font-size: 15px;
+    }
+
+    .sort-padding {
+      position: relative;
+      display: block;
+      float: left;
+      padding: 10px;
+    }
+
+    .sort-btn {
+      border: none;
+      padding: 7px 15px;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .padding-sort-col-btn {
+      padding-top: 20px;
+    }
+
+    .sort-para {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .li-5 {
+      padding: 0;
+      width: 80%;
+    }
+
+    .submit-btn {
+      border: none;
+      padding: 6px 5px;
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #4c4c4c;
+      outline: none;
+      font-family: Poppins-Regular;
+      font-size: 15px;
+      background: #f0f0f0;
+      width: 100%;
+    }
+
+    .ad-sort {
+      float: right;
+      position: relative;
+      top: 10px;
+    }
+
+    #advance {
+      top: 0;
+    }
+
+    .less-padd-check {
+      padding: 5px !important;
+      top: 4px;
+    }
+
+    .optlabel .less-padd-check:after {
+      padding: 5px;
+    }
+
+    .active {
+      background-color: #67b5bf !important;
+      color: white !important;
+    }
+
+    .dialog-border {
+      border: 2px solid;
+      padding: 10px;
+      background: white;
+      width: 65%;
+      margin: auto;
+    }
+
+    .dialog-border1 {
+      border: 2px solid;
+      padding: 20px;
+      width: 35%;
+      position: relative;
+      /*left: 20px;*/
+      background-color: white;
+      margin: auto;
+    }
+
+    .close-cl {
+      float: right;
+      cursor: pointer;
+      position: relative;
+      font-size: 2em;
+      top: -7px;
+      left: 0px;
+      font-weight: bold;
+    }
+
+    .filter-para {
+      font-size: 14px !important;
+      text-align: justify;
+      font-family: Montserrat-regular;
+    }
+
+    .filter-scroll {
+      position: absolute;
+      width: 100%;
+      border: 2px solid gray;
+      /* overflow: hidden; */
+      z-index: 3;
+      left: 0;
+      display: none;
+      top: -25px;
+      padding: 20px 4% 5px 4%;
+      right: 0;
+      background-color: #fff;
+      left: -3%;
+      right: 30%;
+    }
+
+    .filter-input {
+      width: 90%;
+      padding: 5px;
+      outline: none;
+      border: 1px solid #797676;
+    }
+
+    .filter-input-30pr {
+      position: relative;
+      width: 50%;
+      display: block;
+      float: left;
+    }
+
+    .filter-col60-padding {
+      padding-top: 10px;
+    }
+
+    .filter-checkmark-left {
+      left: 4px;
+    }
+
+    .filter-span {
+      text-align: center;
+      display: block;
+      position: relative;
+      font-size: 12px;
+      padding-top: 15px;
+    }
+
+    .filter-a {
+      border-bottom: 1px solid;
+    }
+
+    .col-50-filterpera {
+      width: 50%;
+      display: block;
+      position: relative;
+      float: left;
+    }
+
+    .filter-span-text {
+      position: relative;
+      padding-left: 15px;
+      font-size: 15px;
+    }
+
+    .frmbtn {
+      outline: none;
+      border: none;
+      background: white;
+      font-family: Montserrat-Regular;
+      text-decoration: underline;
+      cursor: pointer;
+      background-color: transparent;
+      float: right;
+      /*border-bottom: 1px solid black;*/
+
+    }
+
+    .red-txt {
+      color: darkred;
+      font-size: 13px;
+    }
+
+    .edit-btn {
+      outline: none;
+      border: none;
+      background: white;
+      font-family: Montserrat-Regular;
+      text-decoration: none;
+      cursor: pointer !important;
+      background-color: transparent;
+      float: right;
+      color: black;
+      font-size: 12px !important;
+      font-weight: bold;
+      border-bottom: 1px solid black !important;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .mob-cross {
+      position: relative;
+      top: -14px;
+      left: -6px;
+      border: 1px solid;
+      text-decoration: none;
+      padding: 0px 3px;
+      font-weight: bold;
+      font-size: 10px;
+
+    }
+
+    .col-60per ul .filter-underline {
+      position: relative;
+      display: inline;
+      color: black;
+      font-family: Montserrat-Regular;
+      text-decoration: underline;
+    }
+
+    .mob-cross {
+      display: none;
+    }
+
+    #sort_tab {
+      display: none;
+    }
+
+    .chip {
+      text-align: center;
+      /*width: inherit;*/
+      /*border-radius: 5px;*/
+      font-family: Montserrat-Regular;
+      outline: none;
+      /*border: 1px solid gray;*/
+      background-color: #b9b2b2;
+      color: black;
+      margin: 5px;
+      /*display: inline-block;*/
+      padding: 3px 9px 3px 4px;
+    }
+
+    .chip_btn {
+      background-color: transparent;
+      color: white;
+      outline: none;
+      border: none;
+      pointer-events: none;
+      text-align: center;
+    }
+
+    .dei_chip {
+      cursor: pointer;
+      position: relative;
+      top: -6px;
+      left: 6px;
+      font-size: 15px;
+      padding-right: 5px;
+    }
+
+    .cv-input {
+      width: 100%;
+      text-align: center;
+      padding: 1% 0;
+      outline: none;
+    }
+
+    .cv-chip-text {
+      color: gray !important;
+    }
+
+    .cv-placeholder ::placeholder {
+      font-size: 15px;
+    }
+
+    .span-overflow {
+      white-space: nowrap;
+      width: 165px;
+      position: relative;
+      overflow: hidden;
+      /*display: inline-block;*/
+      text-overflow: ellipsis;
+    }
+
+    .app-link {
+      font-size: 20px;
+    }
+
+    .span-overflow1 {
+      white-space: nowrap;
+      width: 180px;
+      position: relative;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .span-overflow:hover {
+      overflow: visible;
+      display: block;
+      position: relative;
+      width: 100%;
+    }
+
+    .span-overflow:hover > span {
+      display: inherit;
+
+    }
+
+    .span-overflow1:hover {
+      overflow: visible;
+      position: relative;
+    }
+
+    .set-position {
+      position: relative;
+      float: left;
+    }
+
+    .span-overflow span {
+      position: relative;
+      /*display: inherit;*/
+      width: 100%;
+    }
+
+    .add-filter {
+      font-size: 12px;
+      font-family: Montserrat-Regular;
+      padding: 0 0 2% 0;
+      color: #3e3c3c !important;
+    }
+
+    .notification {
+      color: white;
+      position: relative;
+      top: 0;
+      right: 0;
+      border: 1px solid green;
+      padding: 5px 10px;
+      border-radius: 50%;
+      background-color: green;
+    }
+
+    .close1 {
+      float: right;
+      cursor: pointer;
+      position: relative;
+      font-size: 2em;
+      top: -15px;
+      left: 0px;
+      font-weight: bold;
+    }
+
+    .dialog-2 {
+      width: 100%;
+      padding: 0;
+    }
+
+    .optpara {
+      font-family: Montserrat-Regular;
+    }
+
+    .font-mont1 {
+      font-family: Poppins-SemiBold;
+      font-size: 18px;
+    }
+
+    .fun-border {
+      border-left: 1px solid black;
+    }
+
+    .candi-req-text span {
+      color: black !important;
+    }
+
+    .candi-req-text {
+      padding-bottom: 5px;
+
+    }
+
+    .set-color {
+      color: black !important;
+    }
+
+    .salary-head {
+      font-family: Poppins-SemiBold;
+      /*letter-spacing: 1px;*/
+      font-size: 22px !important;
+    }
+
+    .menu_list {
+      font-family: Poppins-SemiBold;
+      letter-spacing: 0.1px;
+    }
+
+  </style>
+
+<% end %>
+<% @filter = notice %>
+<% if @filter == 'Function' %>
+  <% @iactive = '' %>
+  <% @factive = 'factive' %>
+<% else %>
+  <% @iactive = 'iactive' %>
+  <% @factive = '' %>
+<% end %>
+<% if @filter.nil? && @indfun %>
+  <% @filter = 'Industry and Function' %>
+  <% @iactive = 'iactive' %>
+  <% @factive = '' %>
+<% elsif @filter.nil? && @fun %>
+  <% @filter = 'Function' %>
+  <% @iactive = '' %>
+  <% @factive = 'factive' %>
+<% end %>
+
+<section class="section">
+  <article class="article">
+    <div class="form-div-left">
+      <nav id="nav" class="navbar navbar-template">
+        <ul>
+          <li class="li-1 "><span class="menu_list" style="font-family: Montserrat-SemiBold">JUMP TO...</span></li>
+          <li class="li-2 "><span class="menu_list"><a href='#hide-2' class="active">SUMMARY</a></span></li>
+          <li class="li-3"><span class="menu_list"><a href='#hide-3'>APPLICATION</a></span></li>
+          <% if !@case4 %>
+            <li class="li-4"><span class="menu_list"><a href='#hide-1'>SALARY</a></span></li>
+          <% end %>
+          <li class="li-5">
+            <span class="menu_list"> <%= button_tag "DASHBOARD", :type => 'button', :id => 'change-color', :class => 'submit-btn', :onclick => 'change(); location.href="/corporate/login"' %></span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- SUMMARY PART -->
+
+    <div class="form-div-right scrollspy" id="hide-2">
+      <div class="row">
+        <div class="col">
+          <span class="font-mont1">ROLE SUMMARY</span>
+        </div>
+        <div><%= render :partial => 'confirm' %></div>
+        <div class="col">
+          <p class="font-pop">
+            <% if session['user_type'] == 'recruiter' %>
+              <%= @role['role_designation'].capitalize %>, <%= @role['role_function'].capitalize %>
+              - <%= @role['dep_sub_fun'] %>, <%= @role['company_name'].capitalize %>
+            <% else %>
+              <%= @role['role_designation'].capitalize %>, <%= @role['role_function'].capitalize %>
+              - <%= @role['dep_sub_fun'] %>
+            <% end %>
+          </p>
+        </div>
+
+        <div class="col">
+          <div class="per-80 mob-80">
+            <span class="span-color font-pop mob-padding">Added by <span class="span-color"><%= @role['created_by'] %></span> on <%= @role['created_at'].strftime("%b %d, %Y") %></span>
+          </div>
+          <div class="per-20">
+            <%= form_tag(:action => 'deleterole', :method => :post) do %>
+              <%= hidden_field_tag 'roleid', @role['role_id'] %>
+              <%#= button_tag 'DELETE', :value =>@role['role_id'],:type=>'button', :onclick => "delete_role()", :action => 'deleterole', :class => 'frmbtn' %>
+              <%= button_tag 'DELETE ROLE', :value => @role['role_id'], :type => 'button', :onclick => "delete_role('#{@role['role_id']}')", :action => 'deleterole', :class => 'frmbtn' %>
+            <% end %>
+          </div>
+        </div>
+        <div class="col">
+          <div class=" mob-80">
+            <span class="span-color font-pop mob-padding">(last edited on <%= @role['updated_at'].strftime("%b %d, %Y") %>
+              )</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-less">
+          <ul>
+            <li class="per-33 per-33-1 ">
+              <span class="span-color  font-pop" style="color:black !important;">CAREER LEVEL</span><br>
+              <span class="font-s font-pop"><%= @cl %></span>
+
+            </li>
+            <li class="per-33 per-33-1 li_border">
+              <span class="span-color font-pop" style="color:black !important;">RESPONSES</span><br>
+              <span class="font-s font-pop"><%= @role['responses'].length %></span>
+            </li>
+            <li class="per-33 per-33-1">
+              <span class="span-color font-pop" style="color:black !important;">PEER SALARY RANGE</span>
+              <% if @filter == "Industry and Function" %>
+                <span class="add-filter">(in role's industry and function)</span>
+              <% elsif @filter == "Function" %>
+                <span class="add-filter">(in role's function)</span>
+              <% end %>
+              <span class=" font-s font-pop">
+                    <% if (@case1 || @case2 || @case3) && !@out1[@filter].empty? %>
+                  <%= (@out1[@filter][0][0] / 100000).round(2) %>
+                  - <%= (@out1[@filter][0][2] / 100000).round(2) %>  L<% else %>
+                  <span class="red-txt">UNAVAILABLE</span><% end %></span>
+
+              <% if @case3 %>
+                <div class="col">
+                  <div class="alert-msg">(Showing for career level <%= @avcl %>)</div>
+                </div>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="row mob-row">
+        <div class="col role-margin">
+          <div class="per-80 mob-80">
+            <span class="font-mont1 mob-padding" style="color: black">ROLE - INFORMATION</span>
+          </div>
+          <div class="per-20">
+            <a class="edit-btn" href="/corporate/edit_role/<%= @role['role_id'] %>/?page=1"><b>EDIT</b></a>
+          </div>
+        </div>
+        <% if session['user_type'] == 'recruiter' %>
+          <div class="col mob-col">
+            <div class="mob-padding">
+              <span class="span-color font-pop set-color ">Company Name</span> -
+              <span class="span-color font-pop set-color"><%= @role['company_name'] %>
+                   </span>
+            </div>
+          </div>
+        <% end %>
+        <div class="col mob-col">
+          <div class="mob-padding">
+            <span class="span-color font-pop set-color ">Industry</span> -
+            <span class="span-color font-pop set-color"><%= @role['role_industry'] %></span>
+          </div>
+        </div>
+
+        <div class="col mob-col">
+          <div class="mob-padding">
+            <span class="span-color font-pop set-color">Salary Range</span> -
+            <span class="span-color font-pop set-color">(<%= @role['min_salary'] %> - <%= @role['max_salary'] %>
+              L)</span>
+          </div>
+        </div>
+        <div class="col mob-col">
+          <div class="mob-padding">
+            <span class="span-color font-pop set-position set-color">Role Seniority - </span>
+            <div class="span-overflow1">
+              &nbsp <span class="span-color font-pop set-color"><%= @role['seniority'] %></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mob-row">
+        <div class="col role-margin">
+          <div class="per-80 mob-80">
+            <span class="font-mont1 mob-padding">CAREER LEVEL</span>
+          </div>
+          <div class="per-20">
+            <a class="edit-btn" href="/corporate/edit_role/<%= @role['role_id'] %>/?page=2"><b>EDIT</b></a>
+          </div>
+        </div>
+        <div class="col mob-col">
+          <div class="mob-padding">
+            <span class="span-color font-pop" onclick="myFunction(1)"><a class="border-btm">Click to view</a></span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mob-row">
+        <div class="col role-margin">
+          <div class="per-80 mob-80">
+            <span class="font-mont1 mob-padding set-position">CANDIDATE - REQUIREMENTS</span>
+          </div>
+          <div class="per-20">
+            <a class="edit-btn" href="/corporate/edit_role/<%= @role['role_id'] %>/?page=3"><b>EDIT</b></a>
+          </div>
+          <!--          <div class="per-20">-->
+          <!--            <a class="edit-btn" href="/corporate/edit_role/<%#= @role['role_id'] %>/?page=4"><b>EDIT</b></a>-->
+          <!--          </div>-->
+        </div>
+        <div class="col mob-col">
+          <div class="mob-padding candi-req-text">
+            <span class="span-color font-pop">Experience</span> -
+            <span class="span-color font-pop">(<%= @role['min_experience'] %> - <%= @role['max_experience'] %>
+              Years)</span>
+          </div>
+        </div>
+
+        <div class="col mob-col">
+          <div class="mob-padding candi-req-text">
+            <span class="span-color font-pop set-position">Preferred Degrees -</span>
+
+            <% if @role['role_degree'].instance_of?(Array) %>
+              <div class="span-overflow">
+                <% @role['role_degree'].delete("") %>
+                <% @length = @role['role_degree'].length %>
+                <% @role['role_degree'].each_with_index do |role_degree, index| %>
+
+                  <span class="span-color font-pop ">&nbsp
+                    <% if role_degree != "" && index < @length - 1 %><%= role_degree %>,
+
+
+                    <% else %>
+                                        <% if role_degree != "" %><%= role_degree %>
+
+                        <% end %><% end %></span>
+
+                <% end %>
+              </div>
+            <% else %>
+              <%= @role['role_degree'] %>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="col mob-col">
+          <div class="mob-padding candi-req-text">
+            <span class="span-color font-pop set-position">Preferred Colleges -</span>
+            <!--            <span class="span-color font-pop"><%#= @role['role_colleges'] %></span>-->
+            <% if @role['role_colleges'].instance_of?(Array) %>
+              <div class="span-overflow">
+                <% @role['role_colleges'].delete("") %>
+                <% @length = @role['role_colleges'].length %>
+                <% @role['role_colleges'].each_with_index do |role_colleges, index| %>
+                  <span class="span-color font-pop ">&nbsp
+                    <% if role_colleges != "" && index < @length - 1 %><%= role_colleges %>,
+
+
+                     <% else %>
+                                          <% if role_colleges != "" %><%= role_colleges %>
+
+                                        <% end %>
+
+
+                    <% end %></span>
+                <% end %>
+              </div>
+            <% else %>
+              <%= @role['role_colleges'] %>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="col mob-col">
+          <div class="mob-padding candi-req-text">
+            <span class="span-color font-pop set-position">Technical Skills  - &nbsp</span>
+            <!--            <span class="span-color font-pop"><%#= @role['role_technical'] %></span>-->
+            <% if @role['role_technical'].instance_of?(Array) %>
+              <div class="span-overflow1">
+                <% @role['role_technical'].delete("") %>
+                <% @length = @role['role_technical'].length %>
+                <% @role['role_technical'].each_with_index do |role_technical, index| %>
+                   <span class="span-color font-pop">
+                    <% if role_technical != "" && index < @length - 1 %><%= role_technical %>,
+                       <% else %>
+                       <% if role_technical != "" %><%= role_technical %>
+                         <% end %><% end %></span>
+                <% end %>
+              </div>
+            <% else %>
+              <%= @role['role_technical'] %>
+            <% end %>
+          </div>
+        </div>
+        <div class="col mob-col">
+          <div class="mob-padding candi-req-text">
+            <span class="span-color font-pop set-position">CV Keywords -</span>
+            <div class="span-overflow">
+            <span class="span-color font-pop">&nbsp
+              <% @role['role_keyword'].delete("") %>
+              <% @length = @role['role_keyword'].length %>
+              <% if @role['role_keyword'].present? %><% @role['role_keyword'].each_with_index do |key, index| %>
+                  <% if key != "" && index < @length - 1 %><%= key %>,
+
+                    <% else %>
+                                      <% if key != "" %><%= key %>
+                      <% end %><% end %><% end %><% end %></span></div>
+          </div>
+        </div>
+        <div class="col mob-col">
+          <div class="mob-padding candi-req-text">
+            <span class="span-color font-pop set-position">Deadline -</span>
+            <span class="span-color font-pop">&nbsp
+              <% if @role['role_deadline'].present? %><%= @role['role_deadline'] %><% end %></span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mob-row">
+        <div class="col role-margin">
+          <div class="per-80 mob-80">
+            <span class="font-mont mob-padding font-mont1">OPTIONAL QUESTIONS</span>
+          </div>
+          <div class="per-20">
+            <a class="edit-btn" href="/corporate/edit_role/<%= @role['role_id'] %>/?page=4"><b>EDIT</b></a>
+          </div>
+        </div>
+        <% if @role['que_optional'].length > 0 %>
+          <div class="col mob-col">
+            <div class="mob-padding">
+              <span class="span-color font-pop" onclick="myFunction(2)"><a class="border-btm">Click to view</a></span>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
+
+      <div id="myDialog1" class="dialog">
+        <div class="dialog-border">
+          <span id="myDialog" class="close-cl" onclick="myFunction1(1)">&times;</span>
+          <% @allQues.each_with_index do |k, i| %>
+            <div class="quehead"><%= i + 1 %>. <%= k['queTxt'] %></div>
+            <div class="optpara">
+              <% text = k['queOption'][(@role['questions']['que' + (i + 1).to_s]) - 1]['optText'].delete('%').split('*') %>
+              <% for j in 0...text.length do %>
+                <% if j % 2 == 0 %>
+                  <%= text[j] %>
+
+                <% else %>
+                  <b>
+                    <%= text[j] %>
+                  </b>
+                <% end %>
+              <% end %>
+            </div>
+
+          <% end %>
+        </div>
+      </div>
+
+
+      <div id="myDialog2" class="dialog1 dialog-2">
+        <div class="dialog-border1">
+          <span id="myDialog" class="close1" onclick="myFunction1(2)">&times;</span>
+          <% @ind = 0 %>
+          <% @role['que_optional'].each do |k, v| %>
+            <% @ind = @ind + 1 %>
+            <div class="quehead"><%= @ind %>.
+              <% if v['question'].present? %> <%= v['question'] %>
+                <% else %><%= k %>
+              <% end %></div>
+            <% if !v['options'].nil? %>
+              <!--            <div style="font-family:  Montserrat-Regular">OPTIONS</div>-->
+              <% v['options'].each_with_index do |value, ind| %>
+                <div style="font-family: Montserrat-Regular;padding: 5px 0"><span><%= ind + 1 %>.</span>
+                  <span><%= value %></span></div>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="form-div-right scrollspy" id="hide-3">
+      <div class="row bottom-margin">
+        <div class="col  mob-text-left" style="">
+          <span class="font-mont mob-padding app-link" style="color: black;font-family: Poppins-SemiBold">APPLICATION</span>
+        </div>
+      </div>
+
+      <div class="row bottom-margin mob-row">
+        <div class="col mob-col">
+
+          <span class="span-color font-pop mob-link-padd set-color">LINK: </span><a class="border-btm mob-align-link set-color" href="/corporate/application/<%= @role['role_id'] %>" target="_blank"><span class="span-color link"><%= request.host_with_port + '/corporate/application/' %><%= @role['role_id'] %></span></a>
+
+
+        </div>
+      </div>
+      <div class="row bottom-margin">
+        <div class="col col-40per mob-resp-font">
+          <spna class="font-mont">RESPONSES <span id="nor_res">(<%= @applicant.length %>)</span><span class="hide" id="part_res">(<%= @applicant.length %>)</span></spna>
+        </div>
+        <div class="col col-60per">
+          <ul class="mob-filters-ul">
+            <!--            <li class="disp" onclick="clearfilter()"><a class="font-pop">&times;</a></li>-->
+            <li id="cross1">
+              <a class="font-pop filter-underline" onclick="filter()">FILTER </a><a class="font-pop mob-cross" id="cro1" onclick="clearfilter()">X</a>
+            </li>
+            <li id="cross2">
+              <a class="font-pop filter-underline" onclick="sort()">SORT</a><a class="font-pop mob-cross" id="cro2" onclick="clearfilter()">X</a>
+            </li>
+            <li id="cross3">
+              <!--              <a class="font-pop filter-underline" download="candidate_<%#=session['User']['download']%>.csv" href="/candidate_<%#=session['User']['download']%>.csv"><span  onclick="location.href='/resume_<%= session['User']['download'] %>.zip'" >EXPORT</span></a><a class="font-pop mob-cross" id="cro3" onclick="clearfilter()">X</a>-->
+              <a class="font-pop filter-underline" onclick="download_data()"><span>EXPORT</span></a><a class="font-pop mob-cross" id="cro3" onclick="clearfilter()">X</a>
+            </li>
+          </ul>
+        </div>
+
+        <%= form_tag 'filter_applicants', :id => "filter_form", :method => :post, :remote => true do %>
+          <%= hidden_field_tag 'role_id', @roleid %>
+          <%#= hidden_field_tag 'applicant', @applicant %>
+          <%= hidden_field_tag 'role_keys', @role_keys %>
+
+          <div id="filter" class="filter-scroll">
+
+            <div class="sort-padding">
+              <div class="col col-40per">
+                <span class="font-mont sort-para">FILTER BY: </span>
+              </div>
+              <div class="col col-60per">
+                <span id="filter1" class="close" onclick="filter1()">&times;</span>
+              </div>
+              <div class="col">
+                <p class="filter-para font-pop">(Select the options for filtering below. For numerical values, you can
+                  select tolerance levels for filtering or leave the fields empty for exact matches. Example: if
+                  required salary range is 10-12 Lakhs, lower tolerance = 1, than all candidate with salaries 9-14 Lakhs
+                  will be selected. you can also click certain options below for advanced filtering.)</p>
+              </div>
+
+
+              <!--              <div class="col">-->
+              <!--                <label class="optlabel">-->
+              <!--                  <input type="radio" name="order" value="Ascending" class='radiobtn'>-->
+              <!--                  <span class="checkmark less-padd-check"> </span>-->
+              <!--                  <span class="sort-span-text font-pop">Ascending</span>-->
+              <!--                </label>-->
+              <!--                <label class="optlabel">-->
+              <!--                  <input type="radio" name="order" value="Descending" class='radiobtn'>-->
+              <!--                  <span class="checkmark less-padd-check"> </span>-->
+              <!--                  <span class="sort-span-text font-pop">Descending</span>-->
+              <!--                </label>-->
+              <!--              </div>-->
+
+              <div class="col">
+                <div class="col col-50-filterpera">
+                  <label class="optlabel">
+                    <input type="checkbox" class="filters" name="sal" value="{'min'=><%= @role['min_salary'] %>,'max'=><%= @role['max_salary'] %>}">
+                    <span class="checkmark filter-checkmark-left"> </span>
+                    <span class="filter-span-text font-pop">Salary <span>(<%= @role['min_salary'] %>
+                      -<%= @role['max_salary'] %> INR Lakhs)</span></span>
+                  </label>
+                </div>
+                <div class="col col-50-filterpera filter-col60-padding">
+                  <div class="filter-input-30pr">
+                    <input type="number" step="any" class="filter-input" name="salary-low" placeholder="Lower Tolerance">
+                  </div>
+                  <div class="filter-input-30pr">
+                    <input type="number" step="any" class="filter-input" name="salary-up" placeholder="Upper Tolerance">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="col col-50-filterpera">
+                  <label class="optlabel">
+                    <input type="checkbox" class="filters" name="checkcl" value="<%= @role['cl'] %>">
+                    <span class="checkmark filter-checkmark-left"> </span>
+                    <span class="filter-span-text font-pop">Career Level <span>(<%= @role['cl'] %>)</span> </span>
+                  </label></div>
+                <div class="col col-50-filterpera filter-col60-padding">
+                  <div class="filter-input-30pr">
+                    <input type="number" step="any" class="filter-input" name="cl-low" placeholder="Lower Tolerance">
+                  </div>
+                  <div class="filter-input-30pr">
+                    <input type="number" step="any" class="filter-input" name="cl-up" placeholder="Upper Tolerance">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="col col-50-filterpera">
+                  <label class="optlabel">
+                    <input type="checkbox" class="filters" name="exp" value="{'min'=><%= @role['min_experience'] %>,'max'=><%= @role['max_experience'] %>}">
+                    <span class="checkmark filter-checkmark-left"> </span>
+                    <span class="filter-span-text font-pop">Years of Experience <span>(<%= @role['min_experience'] %>
+                      -<%= @role['max_experience'] %>)</span></span>
+                  </label>
+                </div>
+                <div class="col col-50-filterpera filter-col60-padding">
+                  <div class="filter-input-30pr">
+                    <input type="number" step="any" class="filter-input" name="exp-low" placeholder="Lower Tolerance">
+                  </div>
+                  <div class="filter-input-30pr">
+                    <input type="number" step="any" class="filter-input" name="exp-up" placeholder="Upper Tolerance">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="col col-50-filterpera">
+                  <label class="optlabel">
+                    <input type="checkbox" class="filters" name="res" value="imp_score">
+                    <span class="checkmark filter-checkmark-left"> </span></label>
+                  <span class="filter-span-text font-pop"><a class="filter-a" onclick="showtab('responses')">Responsibility Score</a> <span>(<%= @role['res_score'] %>
+                    )</span></span>
+                </div>
+                <div class="col col-50-filterpera filter-col60-padding">
+                  <div class="filter-input-30pr">
+                    <input type="number" step="any" class="filter-input" name="res-low" placeholder="Lower Tolerance">
+                  </div>
+                  <div class="filter-input-30pr">
+                    <input type="number" step="any" class="filter-input" name="res-up" placeholder="Upper Tolerance">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="col col-50-filterpera">
+                  <label class="optlabel">
+                    <input type="checkbox" class="filters" name="eff" value="imp_score">
+                    <span class="checkmark filter-checkmark-left"> </span></label>
+                  <span class="filter-span-text font-pop"><a class="filter-a" onclick="showtab('effects')">Effectiveness Score</a> <span>(<%= @role['eff_score'] %>
+                    )</span></span>
+
+                </div>
+                <div class="col col-50-filterpera filter-col60-padding">
+                  <div class="filter-input-30pr">
+                    <input type="number" step="any" class="filter-input" name="eff-low" placeholder="Lower Tolerance">
+                  </div>
+                  <div class="filter-input-30pr">
+                    <input type="number" step="any" class="filter-input" name="eff-up" placeholder="Upper Tolerance">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="col col-50-filterpera">
+                  <label class="optlabel">
+                    <input type="checkbox" class="filters" name="imp" value="imp_score">
+                    <span class="checkmark filter-checkmark-left"> </span></label>
+                  <span class="filter-span-text font-pop"><a class="filter-a" onclick="showtab('impacts')">Impact Score</a><span>(<%= @role['imp_score'].round(2) %>
+                    )</span></span>
+
+                </div>
+                <div class="col col-50-filterpera filter-col60-padding">
+                  <div class="filter-input-30pr">
+                    <input type="number" step="any" class="filter-input" name="imp-low" placeholder="Lower Tolerance">
+                  </div>
+                  <div class="filter-input-30pr">
+                    <input type="number" step="any" class="filter-input" name="imp-up" placeholder="Upper Tolerance">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="col col-50-filterpera">
+                  <label class="optlabel">
+                    <input type="checkbox" class="filters" name="role_function" value="<%= @role['role_function'].strip %>">
+                    <span class="checkmark filter-checkmark-left"> </span>
+                    <span class="filter-span-text font-pop">Function (<%= @role['role_function'].strip %>)</span>
+                  </label>
+                </div>
+                <div class="col col-50-filterpera">
+                  <span class="filter-span font-pop">Will do an exact match</span>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="col col-50-filterpera">
+                  <label class="optlabel">
+                    <input type="checkbox" class="filters" name="role_industry" value="<%= @role['role_industry'].strip %>">
+                    <span class="checkmark filter-checkmark-left"> </span>
+                    <span class="filter-span-text font-pop">Industry (<%= @role['role_industry'].strip %>)</span>
+                  </label></div>
+                <div class="col col-50-filterpera">
+                  <span class="filter-span font-pop">Will do an exact match</span>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="col col-50-filterpera">
+                  <label class="optlabel">
+                    <input type="checkbox" class="filters" name="deg" value="imp_score">
+                    <span class="checkmark filter-checkmark-left"> </span></label>
+                  <span class="filter-span-text font-pop"><a class="filter-a" onclick="showtab('degree')">Highest Degree</a></span>
+                </div>
+                <div class="col col-50-filterpera">
+                  <span class="filter-span font-pop">Will do an exact match with any of the required degrees</span>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="col col-50-filterpera">
+                  <label class="optlabel">
+                    <input type="checkbox" class="filters" name="col" value="imp_score">
+                    <span class="checkmark filter-checkmark-left"> </span></label>
+                  <span class="filter-span-text font-pop"><a class="filter-a" onclick="showtab('college')">College</a></span>
+
+                </div>
+                <div class="col col-50-filterpera">
+                  <span class="filter-span font-pop">Will do an exact match with any of the required degrees</span>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="col col-50-filterpera">
+                  <label class="optlabel">
+                    <input type="checkbox" class="filters" name="tec" value="imp_score">
+                    <span class="checkmark filter-checkmark-left"> </span></label>
+                  <span class="filter-span-text font-pop"><a class="filter-a" onclick="showtab('skill')">Technical Skills</a></span>
+
+                </div>
+                <div class="col col-50-filterpera">
+                  <span class="filter-span font-pop">Will do an exact match with all of the required skills</span>
+                </div>
+              </div>
+
+
+              <div class="col">
+                <div class="col col-50-filterpera">
+                  <label class="optlabel">
+                    <input type="checkbox" class="filters" name="key" value="imp_score">
+                    <span class="checkmark filter-checkmark-left"> </span></label>
+                  <span class="filter-span-text font-pop"><a class="filter-a" onclick="showtab('keyword')">CV Keywords</a></span>
+
+                </div>
+                <div class="col col-50-filterpera">
+                  <span class="filter-span font-pop"><input type="text" class="cv-input" name="min_per_out" placeholder="Minimum Percentage Match"></span>
+                </div>
+              </div>
+
+
+              <div class="col padding-sort-col-btn ">
+                <input type="button" onclick="submit_form('/corporate/filter_applicants')" class="sort-btn font-pop" name="go" value="GO"/>
+                <input type="reset" class="sort-btn font-pop" id="clear_filter" name="RESET" value="CLEAR FILTER" onclick="clearfilter();"/>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div id="responses" class="filter-scroll">
+
+
+            <%#= form_tag(:action => 'filter_applicants', :method => :post, :remote => true) do %>
+            <%#= hidden_field_tag 'role_id', @roleid %>
+            <%#= hidden_field_tag 'url', '/corporate/summary_report/' + @roleid %>
+
+            <div class="sort-padding">
+              <div class="col col-40per mob-60para">
+                <span class="font-mont sort-para">RESPONSIBILITY SCORE: </span>
+              </div>
+              <div class="col col-60per mob-40para">
+                <a class="font-mont sort-para back-filter" onclick="filter2()">BACK</a>
+                <span id="filter1" class="close" onclick="filter2()">&times;</span>
+              </div>
+              <div class="col">
+                <p class="filter-para">(Select all questions for which you would like the candidate's response to
+                  exactly match the role's requirement )</p>
+              </div>
+
+              <div class="sort-padding">
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="response" value="0" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Range of activities performed</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="response" value="1" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Number of direct reports</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="response" value="2" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Range of activities for direct reports</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="response" value="3" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Control on budget</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="response" value="4" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Ambiguity in role and decision making</span>
+                  </label>
+                </div>
+
+                <div class="col padding-sort-col-btn ">
+                  <input type="button" onclick="filter2();select_checkbox('response')" class="sort-btn font-pop" name="go" value="DONE"/>
+                </div>
+              </div>
+            </div>
+            <%# end %>
+          </div>
+
+          <div id="effects" class="filter-scroll">
+
+
+            <%#= form_tag(:action => 'filter_applicants', :method => :post, :remote => true) do %>
+            <%#= hidden_field_tag 'role_id', @roleid %>
+            <%#= hidden_field_tag 'url', '/corporate/summary_report/' + @roleid %>
+
+            <div class="sort-padding">
+              <div class="col col-40per mob-60para">
+                <span class="font-mont sort-para">EFFECTIVENESS SCORE: </span>
+              </div>
+              <div class="col col-60per mob-40para">
+                <a class="font-mont sort-para back-filter" onclick="filter2()">BACK</a>
+                <span id="filter1" class="close" onclick="filter2()">&times;</span>
+              </div>
+              <div class="col">
+                <p class="filter-para">(Select all questions for which you would like the candidate's response to
+                  exactly match the role's requirement )</p>
+              </div>
+
+              <div class="sort-padding">
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="effect" value="5" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Contribution of the role’s function to the company</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="effect" value="6" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Technical competence required for the role</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="effect" value="7" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Teamwork and Leadership</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="effect" value="8" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Problems Solving</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="effect" value="9" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Level of customer orientation required</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="effect" value="10" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Result orientation</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="effect" value="11" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Process Excellence</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="effect" value="12" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Visioning, Strategy & Planning</span>
+                  </label>
+                </div>
+
+                <div class="col padding-sort-col-btn ">
+                  <input type="button" onclick="filter2();select_checkbox('effect');" class="sort-btn font-pop" name="go" value="DONE"/>
+                </div>
+              </div>
+            </div>
+            <%# end %>
+          </div>
+
+          <div id="impacts" class="filter-scroll">
+
+
+            <%#= form_tag(:action => 'filter_applicants', :method => :post, :remote => true) do %>
+            <%#= hidden_field_tag 'role_id', @roleid %>
+            <%#= hidden_field_tag 'url', '/corporate/summary_report/' + @roleid %>
+
+            <div class="sort-padding">
+              <div class="col col-40per mob-60para">
+                <span class="font-mont sort-para">IMPACT SCORE: </span>
+              </div>
+              <div class="col col-60per mob-40para">
+                <a class="font-mont sort-para back-filter" onclick="filter2()">BACK</a>
+                <span id="filter1" class="close" onclick="filter2()">&times;</span>
+              </div>
+              <div class="col">
+                <p class="filter-para">(Select all questions for which you would like the candidate's response to
+                  exactly match the role's requirement )</p>
+              </div>
+
+              <div class="sort-padding">
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="impact" value="13" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Impact on the Environment</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="impact" value="14" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Impact on employees</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="impact" value="15" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Impact on internal business process</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="impact" value="16" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Impact on customers</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="impact" value="17" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Impact on financial health of company</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="impact" value="18" class='radiobtn'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Impact on suppliers and partners</span>
+                  </label>
+                </div>
+
+                <div class="col padding-sort-col-btn ">
+                  <input type="button" onclick="filter2();select_checkbox('impact')" class="sort-btn font-pop" name="go" value="DONE"/>
+                </div>
+              </div>
+            </div>
+            <%# end %>
+          </div>
+
+          <div id="degree" class="filter-scroll">
+
+
+            <%#= form_tag(:action => 'filter_applicants', :method => :post, :remote => true) do %>
+            <%#= hidden_field_tag 'role_id', @roleid %>
+            <%#= hidden_field_tag 'url', '/corporate/summary_report/' + @roleid %>
+
+            <div class="sort-padding">
+              <div class="col col-40per mob-60para">
+                <span class="font-mont sort-para">HIGHEST DEGREE: </span>
+              </div>
+              <div class="col col-60per mob-40para">
+                <a class="font-mont sort-para back-filter" onclick="filter2()">BACK</a>
+                <span id="filter1" class="close" onclick="filter2()">&times;</span>
+              </div>
+              <div class="col">
+                <p class="filter-para">(The following list provides all of the candidates responses. Click all that you
+                  would like to select.)</p>
+              </div>
+
+              <div class="sort-padding">
+                <% @degree.each do |degree| %>
+                  <div class="col">
+                    <label class="optlabel">
+                      <input type="checkbox" name="degree[]" value="<%= degree %>" class='radiobtn1'>
+                      <span class="checkmark"> </span>
+                      <span class="sort-span-text font-pop"><%= degree %></span>
+                    </label>
+                  </div>
+                <% end %>
+                <div class="col padding-sort-col-btn ">
+                  <input type="button" class="sort-btn font-pop" onclick="filter2();select_checkbox('degree[]');" name="go" value="DONE"/>
+                </div>
+              </div>
+            </div>
+            <%# end %>
+          </div>
+
+          <div id="college" class="filter-scroll">
+
+
+            <%#= form_tag(:action => 'filter_applicants', :method => :post, :remote => true) do %>
+            <%#= hidden_field_tag 'role_id', @roleid %>
+            <%#= hidden_field_tag 'url', '/corporate/summary_report/' + @roleid %>
+
+            <div class="sort-padding">
+              <div class="col col-40per mob-60para">
+                <span class="font-mont sort-para">COLLEGES: </span>
+              </div>
+              <div class="col col-60per mob-40para">
+                <a class="font-mont sort-para back-filter" onclick="filter2()">BACK</a>
+                <span id="filter1" class="close" onclick="filter2()">&times;</span>
+              </div>
+              <div class="col">
+                <p class="filter-para">(The following list provides all of the candidates responses. Click all that you
+                  would like to select.)</p>
+              </div>
+
+              <div class="sort-padding">
+                <% @college.each do |college| %>
+                  <div class="col">
+                    <label class="optlabel">
+                      <input type="checkbox" name="college[]" value="<%= college %>" class='radiobtn1'>
+                      <span class="checkmark"> </span>
+                      <span class="sort-span-text font-pop"><%= college %></span>
+                    </label>
+                  </div>
+                <% end %>
+                <div class="col padding-sort-col-btn ">
+                  <input type="button" class="sort-btn font-pop" onclick="filter2();select_checkbox('college[]');" name="go" value="DONE"/>
+                </div>
+              </div>
+            </div>
+            <%# end %>
+          </div>
+
+          <div id="skill" class="filter-scroll">
+
+
+            <%#= form_tag(:action => 'filter_applicants', :method => :post, :remote => true) do %>
+            <%#= hidden_field_tag 'role_id', @roleid %>
+            <%#= hidden_field_tag 'url', '/corporate/summary_report/' + @roleid %>
+
+            <div class="sort-padding">
+              <div class="col col-40per mob-60para">
+                <span class="font-mont sort-para">TECHNICAL SKILLS: </span>
+              </div>
+              <div class="col col-60per mob-40para">
+                <a class="font-mont sort-para back-filter" onclick="filter2()">BACK</a>
+                <span id="filter1" class="close" onclick="filter2()">&times;</span>
+              </div>
+              <div class="col">
+                <p class="filter-para">(The following list provides all of the candidates responses. Click all that you
+                  would like to select.)</p>
+              </div>
+
+              <div class="sort-padding">
+                <script>
+                    var id = 1;
+                    var count = [1, 1];
+                </script>
+                <% if !@skill.nil? && @skill.length <= 10 %>
+                  <% @skill.each do |skill| %>
+                    <div class="col">
+                      <label class="optlabel">
+                        <input type="checkbox" name="skill[]" value="<%= skill %>" class='radiobtn1'>
+                        <span class="checkmark"> </span>
+                        <span class="sort-span-text font-pop"><%= skill %></span>
+                      </label>
+                    </div>
+                  <% end %>
+                <% elsif !@skill.nil? && @skill.length > 10 %>
+                  <div class="col">
+                    <label class="optlabel">
+                      <div id="chips0">
+
+
+                      </div>
+                      <datalist id="skills">
+                        <% @skill.each do |value| %>
+                          <option value="<%= value.strip %>"></option>
+                        <% end %>
+                      </datalist>
+                      <input type="text" name="skill[]" onkeypress="return create_chip(event,0)" onselect="return create_chip(event,0)" oninput="return create_chip(event,0)" list="skills" id="chip_input0" placeholder="Select Your Skills" class='textbox'>
+                      <p class="chip-text">(You can enter multiple items by typing in the box above and pressing enter
+                        key.)</p>
+                    </label>
+                  </div>
+                <% end %>
+                <div class="col padding-sort-col-btn ">
+                  <input type="button" class="sort-btn font-pop" onclick="filter2();select_checkbox('skill[]');" name="go" value="DONE"/>
+                </div>
+              </div>
+            </div>
+            <%# end %>
+          </div>
+
+          <div id="keyword" class="filter-scroll">
+
+
+            <%#= form_tag(:action => 'filter_applicants', :method => :post, :remote => true) do %>
+            <%#= hidden_field_tag 'role_id', @roleid %>
+            <%#= hidden_field_tag 'url', '/corporate/summary_report/' + @roleid %>
+
+            <div class="sort-padding">
+              <div class="col col-40per mob-60para">
+                <span class="font-mont sort-para">ADD/DELETE CV KEYWORDS: </span>
+              </div>
+              <div class="col col-60per mob-40para">
+                <a class="font-mont sort-para back-filter" onclick="filter2()">BACK</a>
+                <span id="filter1" class="close" onclick="filter2()">&times;</span>
+              </div>
+              <!--              <div class="col">-->
+              <!--                <p class="filter-para">(The following list provides all of the candidates responses. Click all that you-->
+              <!--                  would like to select.)</p>-->
+              <!--              </div>-->
+
+              <div class="sort-padding">
+                <%# if !@skill.nil? && @skill.length <= 10 %>
+                <%# @skill.each do |skill| %>
+                <!--                    <div class="col">-->
+                <!--                      <label class="optlabel">-->
+                <!--                        <input type="checkbox" name="skill[]" value="<%#= skill %>" class='radiobtn1'>-->
+                <!--                        <span class="checkmark"> </span>-->
+                <!--                        <span class="sort-span-text font-pop"><%#= skill %></span>-->
+                <!--                      </label>-->
+                <!--                    </div>-->
+                <%# end %>
+                <%# elsif !@skill.nil? && @skill.length > 10 %>
+                <% @ind1 = 1 %>
+                <div class="col">
+                  <label class="optlabel">
+                    <div id="chips<%= @ind1 %>">
+                      <script>
+                          var id = 1;
+                          // var count = [1, 1, 1];
+                      </script>
+                      <% if !@role.nil? && @role['role_keyword'].present? && @role['role_keyword'].length > 1 %>
+                        <% for i in 0...@role['role_keyword'].length %>
+                          <% if @role['role_keyword'][i] != "" %>
+                            <span class="chip" id="del<%= @ind1 %><%= i + 1 %>"><input type="value" id="chip<%= @ind1 %><%= i + 1 %>" name="keyword[]" value="<%= @role['role_keyword'][i] %>" readonly="true" class="chip_btn"><span class="dei_chip" onclick="delete_chip(<%= i+1 %>,<%= @ind1 %>)">x</span></span>
+                            <script>
+                                document.getElementById('chip' + '<%= @ind1 %>' + '<%= i+1 %>').style.width = ((document.getElementById('chip' + '<%= @ind1 %>' + '<%= i+1 %>').value.length + 1) * 8) + 'px';
+                                id = id + 1;
+                                count[1] = count[1] + 1;
+                            </script>
+                          <% end %>
+                        <% end %>
+                      <% elsif !@role.nil? && @role['role_keyword'].present? && @role['role_keyword'].length == 1 %>
+                        <% @role_keyword = @role['role_keyword'][0] %>
+                        <% %>
+                      <% end %>
+                    </div>
+                  </label>
+                </div>
+                <div class="col cv-placeholder">
+                  <input type="text" name="keyword[]" onkeypress="return create_chip(event,1)" onselect="return create_chip(event,1)" oninput="return create_chip(event,1)" list="skills" id="chip_input1" placeholder="CV keyword" class='textbox'>
+                </div>
+                <div class="col">
+                  <p class="chip-text cv-chip-text"><i>(Enter keyword above and press enter)</i></p>
+                </div>
+                <div class="col cv-placeholder">
+                  <input type="number" name="min_per_in" placeholder="Minimum Percentage Match" min="0" max="100" class='textbox'>
+                </div>
+                <div class="col padding-sort-col-btn ">
+                  <input type="button" class="sort-btn font-pop" onclick="filter2();select_checkbox('keyword[]');" name="go" value="GO"/>
+                </div>
+              </div>
+            </div>
+            <%# end %>
+          </div>
+        <% end %>
+        <div id="sort_tab">
+          <div id="sort" class="sort">
+
+            <div class="col col-40per mob-60para">
+              <span class="font-mont sort-para">SORT BY SINGLE FACTOR:</span>
+            </div>
+            <div class="col col-60per mob-40para">
+              <a class="advance-a font-mont" onclick="advance()">ADVANCED OPTIONS</a>
+              <span id="sort1" class="close" onclick="sort1()">&times;</span>
+            </div>
+            <%= form_tag 'sort_applicants', :method => :post, :id => "sort_form", :remote => true do %>
+              <%= hidden_field_tag 'role_id', @roleid %>
+              <%#= hidden_field_tag 'applicant', @applicant %>
+              <%= hidden_field_tag 'url', '/corporate/summary_report/' + @roleid %>
+              <div class="sort-padding">
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="order" value="Ascending" class='radiobtn normal_sort'>
+                    <span class="checkmark less-padd-check"> </span>
+                    <span class="sort-span-text font-pop">Ascending</span>
+                  </label>
+                  <label class="optlabel">
+                    <input type="radio" name="order" value="Descending" class='radiobtn normal_sort'>
+                    <span class="checkmark less-padd-check"> </span>
+                    <span class="sort-span-text font-pop">Descending</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="radio" value="Salary" class='radiobtn normal_sort'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Salary</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="radio" value="cl" class='radiobtn normal_sort'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Career Level</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="radio" value="Year_of_experience" class='radiobtn normal_sort'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Years of Experience</span>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="radio" value="created_at" class='radiobtn normal_sort'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Date of Application</span>
+                  </label>
+                </div>
+
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="radio" value="res_score" class='radiobtn normal_sort'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Responsibility Score</span>
+                  </label>
+                </div>
+
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="radio" value="eff_score" class='radiobtn normal_sort'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Effectiveness Score</span>
+                  </label>
+                </div>
+
+
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="radio" value="imp_score" class='radiobtn normal_sort'>
+                    <span class="checkmark"> </span>
+                    <span class="sort-span-text font-pop">Impact Score</span>
+                  </label>
+                </div>
+
+
+                <div class="col padding-sort-col-btn ">
+                  <input type="button" onclick="submit_form('/corporate/sort_applicants')" class="sort-btn font-pop" name="go" value="GO"/>
+                  <input type="reset" class="sort-btn font-pop" id="clear_sort1" name="RESET" value="CLEAR FILTER" onclick="clearfilter();"/>
+                </div>
+
+              </div>
+            <% end %>
+          </div>
+
+          <div id="advance" class="sort hide">
+
+            <div class="col col-45per mob-60para">
+              <span class="font-mont sort-para">SORT BY WEIGHTED AVERAGE SCORE:</span>
+            </div>
+            <div class="col col-55per mob-40para">
+              <a class="advance-a font-mont" onclick="back();">BACK</a>
+              <span id="sort1" class="close" onclick="sort1()">&times;</span>
+            </div>
+
+            <%= form_tag 'sort_applicants_advance', :id => "advance_form", :method => :post do %>
+              <%= hidden_field_tag 'role_id', @roleid %>
+              <%#= hidden_field_tag 'applicant', @applicant %>
+              <%= hidden_field_tag 'url', '/corporate/summary_report/' + @roleid %>
+              <div class="sort-padding">
+                <div class="col">
+                  <label class="optlabel">
+                    <input type="radio" name="order" value="Ascending" class='radiobtn '>
+                    <span class="checkmark less-padd-check"> </span>
+                    <span class="sort-span-text font-pop">Ascending</span>
+                  </label>
+                  <label class="optlabel">
+                    <input type="radio" name="order" value="Descending" class='radiobtn'>
+                    <span class="checkmark less-padd-check"> </span>
+                    <span class="sort-span-text font-pop">Descending</span>
+                  </label>
+                </div>
+                <div class="col">
+                  <label class="optlabel">
+                    <span class="font-pop">Salary (INR Lakhs)</span>
+                    <input type="number" step="any" name="Salary" class='ad-sort advance_sort'>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <span class="font-pop">Career Level</span>
+                    <input type="number" step="any" name="cl" class='ad-sort advance_sort'>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <span class="font-pop">Year of Experience</span>
+                    <input type="number" step="any" name="" class='ad-sort advance_sort'>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <span class="font-pop">Responsibility Score</span>
+                    <input type="number" step="any" name="res_score" class='ad-sort advance_sort'>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <span class="font-pop">Effectiveness Score</span>
+                    <input type="number" step="any" name="eff_score" class='ad-sort advance_sort'>
+                  </label>
+                </div>
+
+                <div class="col">
+                  <label class="optlabel">
+                    <span class="font-pop">Impact Score</span>
+                    <input type="number" step="any" name="imp_score" class='ad-sort advance_sort'>
+                  </label>
+                </div>
+
+                <div class="col padding-sort-col-btn ">
+                  <input type="button" onclick="submit_form('/corporate/sort_applicants_advance')" class="sort-btn font-pop" name="go" value="GO"/>
+                  <input type="reset" class="sort-btn font-pop" id="clear_sort2" name="RESET" value="CLEAR FILTER" onclick="clearfilter();"/>
+                </div>
+
+              </div>
+            <% end %>
+
+          </div>
+        </div>
+
+
+      </div>
+
+      <% if @role['responses'].length == 0 %>
+        <div class="row">
+          <div class="col col-less">
+            <div class="len-90">
+              <p class="text-center font-pop">THERE HAVE BEEN NO RESPONSES AT THIS LINK YET.</p>
+            </div>
+          </div>
+        </div>
+      <% else %>
+        <form>
+          <% if !@all_app_keys.nil? %>
+            <%= hidden_field_tag 'all_app_keys', @all_app_keys %>
+          <% end %>
+        </form>
+        <div id="normal">
+          <%= render 'applicants' %>
+        </div>
+        <div id="partial">
+
+        </div>
+
+        <%# @applicant.each do |k, v| %>
+
+        <!--          <div class="row">-->
+        <!--            <div class="col col-less">-->
+        <!--              <div class="len-9">-->
+        <!--                <div class="mob-pad-len-9">-->
+        <!--                  <div class="permission">-->
+        <%#= form_tag(:action => 'delete_applicant', :method => :post) do %>
+        <%#= hidden_field_tag 'app_id', k %>
+        <%#= button_tag 'DELETE', :value => "/corporate/summary_report/#{@role['role_id']}", :onclick => "return confirm('Are you sure you want to delete this Applicant?')", :action => 'deleterole', :class => 'frmbtn' %>
+        <%#= button_tag 'EDIT', :type => 'button', :onclick => "window.location.href='/corporate/edit_application/#{k}/?page=2'", :class => 'frmbtn' %>
+        <%# end %>
+
+        <!--                  </div>-->
+        <!--                  <a class="link" href="/corporate/candidate/<%#= k %>/?page=2">-->
+        <!--                    <div class="app-head"><%#= v['Name'].upcase %> | <%#= v['Designation'].upcase %> --->
+        <!--                      <%#= v['Function'].upcase %> | <%#= v['Company'].upcase %></div>-->
+        <!--                  </a>-->
+        <!--                  <div>Experience: <%#= v['Year_of_experience'] %></div>-->
+        <!--                  <div>Career Level: <%#= v['cl'] %></div>-->
+        <!--                  <div>Salary: <%#= v['Salary'] %></div>-->
+        <!--                  <div>Qualifications: <%#= v['Degree'] %></div>-->
+        <!--                  <div>Email: <%#= v['Email'] %></div>-->
+        <!--                </div>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <%# end %>
+      <% end %>
+    </div>
+
+    <!-- SALARY PART -->
+
+    <% if !@case4 %>
+      <div class="form-div-right scrollspy" id="hide-1">
+        <div class="row" style="padding-bottom: 0">
+          <div class="col">
+            <p class="salary-h2 salary-head">SALARY</p>
+          </div>
+          <% if @case3 %>
+            <div class="col">
+              <div class="alert-msg">SORRY. WE CURRENTLY DON'T HAVE DATA FOR CAREER LEVEL <span><%= @cl %></span>.
+                SHOWING
+                DATA
+                FOR CAREER LEVEL <span><%= @avcl %></span> INSTEAD.
+              </div>
+            </div>
+          <% end %>
+          <div class="col">
+            <%= form_tag(:action => 'changefilter', :method => :post) %>
+            <%= hidden_field_tag 'role_id', @roleid %>
+            <ul class="all-links">
+              <span class="font-pop" style="color: black">VIEW FOR:</span>
+              <!--                <li><a>COMPANY</a></li>-->
+              <% if @indfun == true %>
+                <%# @iactive = 'iactive' %>
+                <%# @factive = '' %>
+                <%= button_tag 'INDUSTRY & FUNCTION', value: "Industry and Function", :class => 'changefilter ' + @iactive %>
+                <!--                <li><a>INDUSTRY & FUNCTION</a></li>-->
+              <% end %>
+              <% if @indfun == true && @fun == true %>
+                <span style="border-right: 1px solid black"></span>
+              <% end %>
+
+              <% if @fun == true %>
+                <%# @factive = 'factive' %>
+                <%# @iactive = '' %>
+                <%= button_tag 'FUNCTION', value: "Function", :class => 'changefilter ' + @factive %>
+                <!--   <li onclick=" <%# @filter = 'Funcion' %>"><a>FUNCTION</a></li>-->
+              <% end %>
+              <!--                <li><a>INDUSTRY</a></li>-->
+              <!--                <li><a>FUNCTION GROUP</a></li>-->
+              <!--                <li><a>INDUSTRY GROUP</a></li>-->
+            </ul>
+          </div>
+
+          <div class="col">
+              <span class="salary-fine font-mont">SALARY RANGE FOR
+                <% if @filter == 'Industry and Function' %><%= @role['role_industry'].upcase %> & <% end %>
+                <%= @role['role_function'].upcase %></span>
+          </div>
+
+        </div>
+        <% if (@case1 || @case2 || @case3) && !@out1[@filter].empty? %>
+          <div class="row">
+            <div class="col col-less">
+              <ul style="padding-bottom: 0">
+                <li class="per-33 background-25" onmousemove="showdata(event ,'model1')" onmouseout="clearCoor('model1')">
+                  <span class="span-color font-pop" style="text-align: left">25TH PERCENTILE</span>
+                  <span class="font-s font-pop"><%= (@out1[@filter][0][0] / 100000).round(2) %> L</span>
+                </li>
+                <li class="per-33 background-50" onmousemove="showdata(event,'model2')" onmouseout="clearCoor('model2')">
+                  <span class="span-color chnage-color font-pop" style="text-align: left">50TH PERCENTILE (MEDIAN)</span>
+                  <span class="font-s font-pop"><%= (@out1[@filter][0][1] / 100000).round(2) %> L</span>
+                </li>
+                <li class="per-33 background-90 " onmousemove="showdata(event,'model3')" onmouseout="clearCoor('model3')">
+                  <span class="span-color chnage-color font-pop" style="text-align: left">90TH PERCENTILE</span>
+                  <span class="font-s font-pop"><%= (@out1[@filter][0][2] / 100000).round(2) %> L</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <% if @out1[@filter][1][0].length != 0 %>
+            <div id='model1' class="model">
+              <% @out1[@filter][1][0].each do |k| %>
+
+                <%# k.each do |key| %>
+                <span>  <%= k[2] %>  <br/></span>
+                <%# end %>
+
+              <% end %>
+            </div>
+          <% else %>
+            <%#= "Don't have data" %>
+          <% end %>
+
+
+          <% if @out1[@filter][1][1].length != 0 %>
+            <div id='model2' class="model">
+              <% @out1[@filter][1][1].each do |k| %>
+
+                <%# k.each do |key| %>
+                <span>  <%= k[2] %>  <br/></span>
+                <%# end %>
+
+              <% end %>
+            </div>
+          <% else %>
+            <%#= "Don't have data" %>
+          <% end %>
+
+
+          <% if @out1[@filter][1][2].length != 0 %>
+            <div id='model3' class="model">
+              <% @out1[@filter][1][2].each do |k| %>
+
+                <%# k.each do |key| %>
+                <span> <%= k[2] %> <br/></span>
+                <%# end %>
+
+              <% end %>
+            </div>
+          <% else %>
+            <%#= "Don't have data" %>
+          <% end %>
+
+        <% end %>
+        <% if @out3[@filter].length >= 2 && @out2[@filter].length >= 2 %>
+          <% if (@case1 || @case3) && !@out3[@filter].empty? %>
+            <div class="row">
+              <div class="col role-margin">
+                <span class="font-mont mob-pay" style="font-family:Poppins-SemiBold">MEDIAN SALARY AT HIGHEST PAYING COMPANIES
+                  <!--                  <#% if @filter == 'Industry and Function' %><#%= @role['role_industry'].upcase %> & <#% end %>-->
+                  <%#= @role['role_function'].upcase %>
+
+                </span>
+              </div>
+              <%
+                @out3[@filter] = @out3[@filter].sort_by {|a, b| a[0][2].to_f <=> b[0][2].to_f}.reverse
+              %>
+              <%
+                @out3[@filter].each_with_index do |filt, index|
+              %>
+                <div class="col role-margin">
+                  <span class="font-pop mob-font-span"><%= index + 1 %>.</span>
+                  <span class="font-pop mob-font-span">
+<!--                  <#%= filt[0] %>-->
+                    <%= ((filt[2]).to_f / 100000).round(2) %>
+                    LAKHS</span>
+                </div>
+              <% end %>
+
+
+              <!--            <div class="col role-margin">-->
+              <!--              <span>1.</span> <span >XYZ</span>-->
+              <!--            </div>-->
+              <!--            <div class="col role-margin">-->
+              <!--              <span>1.</span> <span >XYZ</span>-->
+              <!--            </div>-->
+            </div>
+          <% end %>
+          <% if (@case1 || @case3) && !@out2[@filter].empty? %>
+            <div class="row">
+              <div class="col role-margin">
+              <span class="font-mont mob-pay" style="font-family: Poppins-SemiBold">MEDIAN SALARY AT LOWEST PAYING COMPANIES
+                <!--                <#% if @filter == 'Industry and Function' %><#%= @role['role_industry'].upcase %> & <#% end %>-->
+                <%#= @role['role_function'].upcase %>
+              </span>
+              </div>
+              <%
+                @out2[@filter] = @out2[@filter].sort_by {|a, b| a[0][2].to_f <=> b[0][2].to_f}.reverse
+              %>
+              <%
+                @out2[@filter].each_with_index do |filt, index|
+              %>
+
+                <div class="col role-margin">
+                  <span class="font-pop mob-font-span"><%= index + 1 %>.</span>
+                  <span class="font-pop mob-font-span">
+<!--                  <#%= filt[0] %> -->
+                    <%= ((filt[2]).to_f / 100000).round(2) %>
+                    LAKHS</span>
+                </div>
+              <% end %>
+          <% end %>
+
+
+
+          <!--            <div class="col role-margin">-->
+          <!--              <span>1.</span> <span >XYZ</span>-->
+          <!--            </div>-->
+          <!--            <div class="col role-margin">-->
+          <!--              <span>1.</span> <span >XYZ</span>-->
+          <!--            </div>-->
+          </div>
+        <% end %>
+    <% end %>
+    </div>
+
+  </article>
+</section>
+
+
+<script>
+    //     var id = 1;
+    //     var count = [1,1];
+    // if (count >= 5) {
+    //     document.getElementById('chip_input').disabled = true;
+    // } else {
+    //     document.getElementById('chip_input').disabled = false;
+    // }
+
+
+    function create_chip(e, ind) {
+        var name = '';
+        if (ind == 0) {
+            name = 'skill'
+        } else if (ind == 1) {
+            name = 'keyword'
+        }
+        // else if (ind == 2) {
+        //     name = 'role_technical'
+        // } else if (ind == 3) {
+        //     name = 'role_keyword'
+        // }
+        // alert(e.keyCode)
+        var value = document.getElementById('chip_input' + ind).value;
+        if ((e.composed == false || e.keyCode == 13) && value.length > 0 && count[ind] <= 10) {
+            var spanadd = document.createElement("span");
+            spanadd.classList.add('chip');
+            spanadd.id = 'del' + ind + id;
+            spanadd.innerHTML = '<input type="value" id="chip' + ind + id + '" name="' + name + '[]" value="' + value + '" readonly="true" class="chip_btn" ><span class="dei_chip" onclick="delete_chip(' + id + ',' + ind + ')">x</span>'
+            document.getElementById('chips' + ind).appendChild(spanadd);
+            document.getElementById('chip_input' + ind).value = "";
+            document.getElementById('chip' + ind + id).style.width = ((document.getElementById('chip' + ind + id).value.length + 1) * 8) + 'px';
+            if (count[ind] >= 10) {
+                document.getElementById('chip_input' + ind).disabled = true;
+            } else {
+                document.getElementById('chip_input' + ind).disabled = false;
+            }
+            id = id + 1;
+            count[ind] = count[ind] + 1;
+
+            return false
+        } else if (e.keyCode == 13) {
+            return false
+        }
+    }
+
+    function delete_chip(id, ind) {
+        var chip = document.getElementById('del' + ind + id);
+        document.getElementById('chips' + ind).removeChild(chip);
+        count[ind] = count[ind] - 1;
+        if (count[ind] <= 10) {
+            document.getElementById('chip_input' + ind).disabled = false;
+        } else {
+            document.getElementById('chip_input' + ind).disabled = true;
+        }
+    }
+
+
+    //
+    // function create_chip(e) {
+    //     // alert(e.keyCode)
+    //     var value = document.getElementById('chip_input').value;
+    //     if ((e.keyCode == 13|| e.composed==false) && value.length > 0 ) {
+    //         var spanadd = document.createElement("span");
+    //         spanadd.classList.add('chip');
+    //         spanadd.id = 'del' + id;
+    //         spanadd.innerHTML = '<input type="value" id="chip' + id + '" name="skill[]" value="' + value + '" readonly="true" class="chip_btn" ><span class="dei_chip" onclick="delete_chip(' + id + ')">x</span>'
+    //         document.getElementById('chips').appendChild(spanadd);
+    //         document.getElementById('chip_input').value = "";
+    //         document.getElementById('chip' + id).style.width = ((document.getElementById('chip' + id).value.length + 1) * 8) + 'px';
+    //         // if (count >= 5) {
+    //         //     document.getElementById('chip_input').disabled = true;
+    //         // } else {
+    //         //     document.getElementById('chip_input').disabled = false;
+    //         // }
+    //         id = id + 1;
+    //         count = count + 1;
+    //
+    //         return false
+    //     } else if (e.keyCode == 13|| e.composed==false) {
+    //         return false
+    //     }
+    // }
+    //
+    // function delete_chip(id) {
+    //     var chip = document.getElementById('del' + id);
+    //     document.getElementById('chips').removeChild(chip);
+    //     count = count - 1;
+    //     // if (count <= 5) {
+    //     //     document.getElementById('chip_input').disabled = false;
+    //     // } else {
+    //     //     document.getElementById('chip_input').disabled = true;
+    //     // }
+    // }
+
+
+    function clearfilter() {
+        document.getElementById('normal').style.display = 'block';
+        document.getElementById('partial').style.display = 'none';
+        var parent = document.getElementById('partial').parentNode;
+        parent.removeChild(document.getElementById('partial'))
+        var div = document.createElement("div")
+        div.id = 'partial'
+        parent.appendChild(div)
+        document.getElementById('nor_res').style.display = 'inline';
+        document.getElementById('part_res').style.display = 'none';
+        document.getElementById('cro1').style.display = 'none';
+        document.getElementById('cross1').style.fontWeight = 'unset';
+        document.getElementById('cro2').style.display = 'none';
+        document.getElementById('cross2').style.fontWeight = 'unset';
+        document.getElementById("clear_sort1").click();
+        document.getElementById("clear_sort2").click();
+        document.getElementById("clear_filter").click();
+        filter1();
+        sort1();
+        // filter2();
+    }
+
+    function submit_form(id) {
+        var child = document.getElementById('new_res')
+        if (child != null) {
+            var children = document.getElementById('normal').children;
+            for (var i = 0; i <= children.length; i++) {
+                if (children[i] == child) {
+                    document.getElementById('normal').removeChild(child)
+                }
+            }
+        }
+
+
+        showloader();
+        $.ajax({
+            //Your ajax code here to submit from via AJAX. refer jquery site . I gave sample eg.
+            url: id,
+            type: 'post',
+            data: $("form").serialize(),
+            success: function (data) {
+                hideloader();
+                // alert('data'); // show response from the php script.
+                // clearfilter();
+                filter1();
+                sort1();
+                document.getElementById('partial').innerHTML = data;
+                document.getElementById('part_res').innerHTML = document.getElementById('new_res').innerHTML
+                document.getElementById('normal').style.display = 'none';
+                document.getElementById('partial').style.display = 'block';
+                document.getElementById('nor_res').style.display = 'none';
+                document.getElementById('part_res').style.display = 'inline';
+                document.getElementById('cro1').style.display = 'none';
+                document.getElementById('cross1').style.fontWeight = 'unset';
+                document.getElementById('cro2').style.display = 'none';
+                document.getElementById('cross2').style.fontWeight = 'unset';
+                if (id == '/corporate/filter_applicants') {
+                    document.getElementById("advance_form").reset();
+                    document.getElementById("sort_form").reset();
+                    var filters = document.getElementsByClassName('filters');
+                    for (var i = 0; i < filters.length; i++) {
+                        if (filters[i].checked == true) {
+                            document.getElementById('cro1').style.display = 'inline';
+                            document.getElementById('cross1').style.fontWeight = 'bold';
+                            break;
+                        }
+                    }
+
+
+                }
+                if (id == '/corporate/sort_applicants' || id == '/corporate/sort_applicants_advance') {
+                    if (id == '/corporate/sort_applicants') {
+                        var filters = document.getElementsByClassName('normal_sort');
+                        for (var i = 0; i < filters.length; i++) {
+                            if (filters[i].checked == true) {
+                                document.getElementById('cro2').style.display = 'inline';
+                                document.getElementById('cro2').style.color = 'black';
+                                document.getElementById('cross2').style.fontWeight = 'bold';
+                                document.getElementById("advance_form").reset();
+                                break;
+                            }
+                        }
+                    }
+                    if (id == '/corporate/sort_applicants_advance') {
+                        var filters = document.getElementsByClassName('advance_sort');
+                        for (var i = 0; i < filters.length; i++) {
+                            if (!(filters[i].value == "" || filters[i].value == null)) {
+                                document.getElementById('cro2').style.display = 'inline';
+                                document.getElementById('cro2').style.color = 'red';
+                                document.getElementById('cro2').style.borderColor = 'black';
+                                document.getElementById('cross2').style.fontWeight = 'bold';
+                                document.getElementById("sort_form").reset();
+                                break;
+                            }
+                        }
+                    }
+
+                    document.getElementById("filter_form").reset();
+                }
+
+            }
+        });
+    }
+
+    function showdata(e, id) {
+        var x
+        if (id == "model1") {
+            x = e.clientX - (e.clientX * 3) / 4;
+        } else if (id == "model2") {
+            x = e.clientX - (e.clientX * 2) / 4;
+        } else if (id == "model3") {
+            x = e.clientX - (e.clientX * 2) / 6;
+        }
+
+        var y = e.clientY;
+
+        var mod = document.getElementById(id);
+        if (mod != null) {
+            mod.style.position = 'absolute';
+            mod.style.display = 'block';
+            mod.style.marginLeft = x + 'px';
+            mod.style.marginTop = '160px';
+
+        }
+    }
+
+    function clearCoor(id) {
+        var mod = document.getElementById(id);
+        if (mod != null) {
+            mod.style.position = 'absolute';
+            mod.style.display = 'none';
+        }
+    }
+
+    function myFunction(id) {
+        document.getElementById("myDialog" + id).style.display = 'block';
+        $("body").css("overflow", "hidden");
+    }
+
+    function myFunction1(id) {
+        document.getElementById("myDialog" + id).style.display = 'none';
+        $("body").css("overflow", "auto");
+    }
+
+    function filter() {
+        document.getElementById("filter").style.display = 'block';
+        sort1();
+
+    }
+
+    function filter1() {
+        document.getElementById("filter").style.display = 'none';
+        document.getElementById("responses").style.display = 'none';
+        document.getElementById("degree").style.display = 'none';
+    }
+
+    function select_checkbox(id) {
+        var filters = document.getElementsByName(id);
+        var check = document.getElementsByClassName('filters');
+        var checked = false;
+        for (var i = 0; i < filters.length; i++) {
+            if (filters[i].checked == true || ((filters[i].type == 'text' || filters[i].type == 'value') && filters[i].value != "")) {
+                checked = true;
+                break;
+            }
+        }
+
+        if (id == 'response' && checked == true) {
+            check[3].checked = true;
+            check[3].parentElement.classList.add('checked');
+        } else if (id == 'response' && checked != true) {
+            check[3].checked = false;
+            check[3].parentElement.classList.remove('checked');
+        }
+        if (id == 'effect' && checked == true) {
+            check[4].checked = true;
+            check[4].parentElement.classList.add('checked');
+        } else if (id == 'effect' && checked != true) {
+            check[4].checked = false;
+            check[4].parentElement.classList.remove('checked');
+        }
+        if (id == 'impact' && checked == true) {
+            check[5].checked = true;
+            check[5].parentElement.classList.add('checked');
+        } else if (id == 'impact' && checked != true) {
+            check[5].checked = false;
+            check[5].parentElement.classList.remove('checked');
+        }
+        if (id == 'degree[]' && checked == true) {
+            check[8].checked = true;
+            check[8].parentElement.classList.add('checked');
+        } else if (id == 'degree[]' && checked != true) {
+            check[8].checked = false;
+            check[8].parentElement.classList.remove('checked');
+        }
+        if (id == 'college[]' && checked == true) {
+            check[9].checked = true;
+            check[9].parentElement.classList.add('checked');
+        } else if (id == 'college[]' && checked != true) {
+            check[9].checked = false;
+            check[9].parentElement.classList.remove('checked');
+        }
+        if (id == 'skill[]' && checked == true) {
+            check[10].checked = true;
+            check[10].parentElement.classList.add('checked');
+        } else if (id == 'skill[]' && checked != true) {
+            check[10].checked = false;
+            check[10].parentElement.classList.remove('checked');
+        }
+        if (id == 'keyword[]' && checked == true) {
+            check[11].checked = true;
+            check[11].parentElement.classList.add('checked');
+        } else if (id == 'keyword[]' && checked != true) {
+            check[11].checked = false;
+            check[11].parentElement.classList.remove('checked');
+        }
+
+    }
+
+    function filter2() {
+        document.getElementById("filter").style.display = 'none';
+        document.getElementById("responses").style.display = 'none';
+        document.getElementById("effects").style.display = 'none';
+        document.getElementById("impacts").style.display = 'none';
+        document.getElementById("degree").style.display = 'none';
+        document.getElementById("college").style.display = 'none';
+        document.getElementById("skill").style.display = 'none';
+        document.getElementById("keyword").style.display = 'none';
+        document.getElementById("filter").style.display = 'block';
+    }
+
+    function showtab(id) {
+        document.getElementById("filter").style.display = 'none';
+        document.getElementById(id).style.display = 'block';
+    }
+
+    // function responsibility() {
+    //     document.getElementById("filter").style.display = 'none';
+    //     document.getElementById("responses").style.display = 'block';
+    // }
+    // function effectiveness() {
+    //     document.getElementById("effects").style.display = 'block';
+    //     document.getElementById("filter").style.display = 'none';
+    // }
+    // function impact() {
+    //     document.getElementById("impacts").style.display = 'block';
+    //     document.getElementById("filter").style.display = 'none';
+    // }
+    // function degree() {
+    //     document.getElementById("filter").style.display = 'none';
+    //     document.getElementById("degree").style.display = 'block';
+    // }
+    // function college() {
+    //     document.getElementById("filter").style.display = 'none';
+    //     document.getElementById("college").style.display = 'block';
+    // }
+
+    function sort() {
+        document.getElementById("sort_tab").style.display = 'block';
+        filter1();
+    }
+
+    function back() {
+        document.getElementById("sort").style.display = 'block';
+        document.getElementById("advance").style.display = 'none';
+    }
+
+    function sort1() {
+        document.getElementById("sort_tab").style.display = 'none';
+    }
+
+    function advance() {
+        document.getElementById("sort").style.display = 'none';
+        document.getElementById("advance").style.display = 'block';
+    }
+
+
+    function change() {
+        document.getElementById("change-color").style.background = '#67b5bf';
+        document.getElementById("change-color").style.color = '#fff';
+    }
+</script>
+<script>
+    //     $(document).ready(function () {
+    //         $('ul li ').click(function () {
+    //             $('li ').removeClass("active");
+    //             $(this).addClass("active");
+    //
+    //         });
+    //     });
+    //
+    //     $(window).bind('scroll', function() {
+    //         var currentTop = $(window).scrollTop();
+    //         var elems = $('.scrollspy');
+    //         elems.each(function(index){
+    //             var elemTop 	= $(this).offset().top;
+    //             var elemBottom 	= elemTop + $(this).height();
+    //             if(currentTop >= elemTop && currentTop <= elemBottom){
+    //                 var id 		= $(this).attr('id');
+    //                 var navElem = $('a[href="#' + id+ '"]');
+    //                 navElem.parent().addClass('active').siblings().removeClass( 'active' );
+    //             }
+    //         })
+    //     });
+    //
+    //
+    //
+
+    $(document).ready(function () {
+        $(document).on("scroll", onScroll);
+
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            $(document).off("scroll");
+
+            $('a').each(function () {
+                $(this).removeClass('active');
+            })
+            $(this).addClass('active');
+
+            var target = this.hash,
+                menu = target;
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top + 2
+            }, 500, 'swing', function () {
+                window.location.hash = target;
+                $(document).on("scroll", onScroll);
+            });
+        });
+    });
+
+    function onScroll(event) {
+        var scrollPos = $(document).scrollTop();
+        $('#nav a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('#nav ul li a').removeClass("active");
+                currLink.addClass("active");
+            }
+            else {
+                currLink.removeClass("active");
+            }
+        });
+    }
+
+    async function delete_role(id) {
+        var bool = await doconfirm('Are you sure you want to delete this role?', true);
+        if (bool) {
+            $.ajax({
+                url: '/corporate/deleterole',
+                type: 'post',
+                data: $('form').serialize() + "&idrole=" + id,
+                success: function (response) {
+                    location.href = '/corporate/dashboard';
+
+                }
+            })
+
+        }
+
+    }
+
+    function download_data() {
+        showloader();
+        $.ajax({
+            url: '/corporate/download_data',
+            type: 'post',
+            data: $('form').serialize(),
+            success: function (response) {
+                if (response['data'] != null) {
+                    location.href = "/candidate_" + response['data'] + ".csv"
+                    setTimeout(function () {
+                        location.href = "/resume_" + response['data'] + ".zip"
+                    }, 100)
+                }
+
+                hideloader();
+                // location.href = '/corporate/dashboard';
+
+            }
+        });
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        $("#flip").click(function () {
+            $("#panel").slideToggle("slow");
+        });
+        $('.span-overflow').hover(function () {
+            var data = $('.span-overflow');
+            for (var i = 0; i < data.length; i++) {
+                if (data[i] != this && isOverflown(data[i])) {
+                    // data[i].style.display = "inline-block"
+                } else {
+                    this.style.display = "block"
+                    var childs = this.children;
+                    for (var j = 0; j < childs.length; j++) {
+                        childs[j].style.display = "inherit"
+                    }
+
+
+                }
+            }
+
+        })
+        $('.span-overflow').mouseout(function () {
+            var data = $('.span-overflow');
+            for (var i = 0; i < data.length; i++) {
+                if (data[i].innerText.length > 20) {
+                    data[i].style = ""
+                    var childs = this.children;
+                    for (var j = 0; j < childs.length; j++) {
+                        childs[j].style.display = ""
+                    }
+                }
+            }
+
+        })
+
+        function isOverflown(element) {
+            return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
+        }
+    });
+</script>
+</html>

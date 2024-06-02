@@ -1,0 +1,1182 @@
+<% if browser.device.mobile? %>
+
+  <style>
+    .section {
+      position: relative;
+      display: block;
+
+      text-align: center;
+      width: 100%;
+      float: left;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+
+    }
+
+    .row {
+      position: relative;
+      float: left;
+      display: block;
+      width: 65%;
+      padding: 0% 25% 2% 10%;
+
+    }
+
+    .col {
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+
+    }
+
+    .col h2 {
+      margin: 10px 0px 10px 0px;
+      font-size: 20px;
+    }
+
+    .col p {
+      margin: 5px 0px 15px 0px;
+      font-size: 12px;
+      color: #716f6f;
+
+    }
+
+    .span-color {
+      color: white;
+      font-size: 12px;
+
+    }
+
+    .col .per-80 {
+      width: 70%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+    }
+
+    .col .per-33 {
+      width: 30%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+    }
+
+    .col .per-33 span {
+      width: 100%;
+      width: 100%;
+      position: relative;
+      display: block;
+      text-align: left;
+    }
+
+    .col ul {
+      position: relative;
+      display: block;
+      float: left;
+      padding: 0;
+      width: 100%;
+    }
+
+    .col .per-20 {
+      width: 30%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+      text-align: right;
+    }
+
+    .col .per-20 a {
+      border-bottom: 1px solid;
+      font-size: 10px;
+      cursor: pointer;
+
+    }
+
+    .form-div-right {
+      /*border:2px solid  #0d305f;*/
+      text-align: left;
+      display: block;
+      position: relative;
+      float: left;
+      width: 80%;
+    }
+
+    .form-div-left {
+      /*border:2px solid  #0d305f;*/
+      text-align: center;
+      display: block;
+      position: relative;
+      padding: 10% 0% 10% 0;
+      float: left;
+      width: 20%;
+    }
+
+    .form-div-left ul {
+
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .form-div-left ul li a {
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+    }
+
+    .form-div-left ul .li-1 {
+      padding: 5px;
+      margin-bottom: 10px
+    }
+
+    .form-div-left ul .li-2 {
+      padding: 5px;
+      margin-bottom: 10px;
+      color: black;
+      background: #f0f0f0;
+    }
+
+    .form-div-left ul .li-3 {
+      padding: 5px;
+      margin-bottom: 10px;
+      background: #f0f0f0;
+
+    }
+
+    .form-div-left ul .li-4 {
+      padding: 5px;
+      margin-bottom: 10px;
+      background: #67b5bf;
+      color: white;
+
+    }
+
+    @media (min-width: 1600px) {
+      .col-less {
+        width: 80%;
+      }
+    }
+
+    .role-margin {
+      padding-bottom: 15px;
+    }
+
+    .border-btm {
+      border-bottom: 1px solid;
+      color: #716f6f;
+      cursor: pointer;
+    }
+
+    .font-s {
+      font-size: 30px;
+      text-align: center !important;
+    }
+
+    .all-links li {
+      display: inline;
+      padding: 0px 5px 0px 5px;
+      border-right: 1px solid;
+      font-size: 12px;
+    }
+
+    .all-links {
+      list-style: none;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .all-links span {
+      color: #716f6f;
+    }
+
+    .salary-fine {
+      color: black !important;
+    }
+
+    .alert-msg {
+      color: darkred !important;
+    }
+
+    .background-25 {
+      background: #e0eff4;
+      color: black;
+      padding: 5px;
+    }
+
+    .background-50 {
+      margin: 0 10px 0 10px !important;
+      background: #67b5bf;
+      color: white;
+      padding: 5px;
+    }
+
+    .background-25 .span-color {
+      color: black !important;
+    }
+
+    .background-90 {
+      background: #2e8991;
+      color: white;
+      padding: 5px;
+    }
+
+    .all-links li a {
+      cursor: pointer;
+    }
+  </style>
+
+  <section class="section">
+    <article class="article">
+      <!--<div class="form-div-left">-->
+      <!--<ul>-->
+      <!--<li class="li-1"><span>JUMP TO...</span></li>-->
+      <!--<li class="li-2"><span><a href="/corporate/summary_report">SUMMARY</a></span></li>-->
+      <!--<li class="li-3"><span><a>APPLICATION</a></span></li>-->
+      <!--<li class="li-4"><span><a >SALARY</a></span></li>-->
+      <!--</ul>-->
+      <!--</div>-->
+      <div class="form-div-right">
+        <div class="row">
+          <div class="col">
+            <h2>SALARY</h2>
+          </div>
+          <div class="col">
+            <p class="alert-msg">SORRY. WE CURRENTLY DON'T HAVE DATA FOR CAREER LEVEL <span>26</span>. SHOWING DATA FOR
+              CAREER LEVEL 25 INSTEAD.</p>
+          </div>
+
+
+          <div class="col">
+
+            <ul class="all-links">
+              <span>VIEW FOR :</span>
+              <li><a>COMPANY</a></li>
+              <li onclick="<%= @filter = 'Function' %>"><a>INDUSTRY & FUNCTION</a></li>
+              <li><a>FUNCTION</a></li>
+              <li><a>INDUSTRY</a></li>
+              <li><a>FUNCTION GROUP</a></li>
+              <li><a>INDUSTRY GROUP</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <span class="salary-fine"><b>SALARY RANGE FOR AUTOMOTIVE & FINANCE</b></span>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col col-less">
+            <ul>
+              <li class="per-33 background-25">
+                <span class="span-color">25TH PERCENTILE</span><br>
+                <span class="font-s">11 L</span>
+
+              </li>
+              <li class="per-33 background-50">
+                <span class="span-color">50TH PERCENTILE(MEDIAN)</span><br>
+                <span class="font-s">18 L</span>
+              </li>
+              <li class="per-33 background-90">
+                <span class="span-color">90TH PERCENTILE</span><br>
+                <span class="font-s">31 L</span>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col role-margin">
+            <span><b>HIGHEST PAYING COMPANIES FOR AUTOMOTIVE & FINANCE</b></span>
+          </div>
+          <div class="col role-margin">
+            <span>1.</span> <span>XYZ</span>
+          </div>
+          <div class="col role-margin">
+            <span>1.</span> <span>XYZ</span>
+          </div>
+          <div class="col role-margin">
+            <span>1.</span> <span>XYZ</span>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col role-margin">
+            <span><b>LOWEST PAYING COMPANIES FOR AUTOMOTIVE & FINANCE</b></span>
+          </div>
+          <div class="col role-margin">
+            <span>1.</span> <span>XYZ</span>
+          </div>
+          <div class="col role-margin">
+            <span>1.</span> <span>XYZ</span>
+          </div>
+          <div class="col role-margin">
+            <span>1.</span> <span>XYZ</span>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+
+<% elsif browser.device.tablet? %>
+
+
+  <style>
+    .section {
+      position: relative;
+      display: block;
+
+      text-align: center;
+      width: 100%;
+      float: left;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+
+    }
+
+    .row {
+      position: relative;
+      float: left;
+      display: block;
+      width: 88%;
+      padding: 0% 5% 2% 5%;
+
+    }
+
+    .col {
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+
+    }
+
+    .col h2 {
+      margin: 10px 0px 10px 0px;
+      font-size: 20px;
+    }
+
+    .col p {
+      margin: 5px 0px 15px 0px;
+      font-size: 12px;
+      color: #716f6f;
+
+    }
+
+    .span-color {
+      color: white;
+      font-size: 12px;
+
+    }
+
+    .col .per-80 {
+      width: 70%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+    }
+
+    .col .per-33 {
+      width: 30%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+    }
+
+    .col .per-33 span {
+      width: 100%;
+      width: 100%;
+      position: relative;
+      display: block;
+      text-align: left;
+    }
+
+    .col ul {
+      position: relative;
+      display: block;
+      float: left;
+      padding: 0;
+      width: 100%;
+    }
+
+    .col .per-20 {
+      width: 30%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+      text-align: right;
+    }
+
+    .col .per-20 a {
+      border-bottom: 1px solid;
+      font-size: 10px;
+      cursor: pointer;
+
+    }
+
+    .form-div-right {
+      /*border:2px solid  #0d305f;*/
+      text-align: left;
+      display: block;
+      position: relative;
+      float: left;
+      width: 80%;
+    }
+
+    .form-div-left {
+      /*border:2px solid  #0d305f;*/
+      text-align: center;
+      display: block;
+      position: relative;
+      padding: 10% 0% 10% 0;
+      float: left;
+      width: 20%;
+    }
+
+    .form-div-left ul {
+
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .form-div-left ul li a {
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+    }
+
+    .form-div-left ul .li-1 {
+      padding: 5px;
+      margin-bottom: 10px
+    }
+
+    .form-div-left ul .li-2 {
+      padding: 5px;
+      margin-bottom: 10px;
+      color: black;
+      background: #f0f0f0;
+    }
+
+    .form-div-left ul .li-3 {
+      padding: 5px;
+      margin-bottom: 10px;
+      background: #f0f0f0;
+
+    }
+
+    .form-div-left ul .li-4 {
+      padding: 5px;
+      margin-bottom: 10px;
+      background: #67b5bf;
+      color: white;
+
+    }
+
+    @media (min-width: 1600px) {
+      .col-less {
+        width: 80%;
+      }
+    }
+
+    .role-margin {
+      padding-bottom: 15px;
+    }
+
+    .border-btm {
+      border-bottom: 1px solid;
+      color: #716f6f;
+      cursor: pointer;
+    }
+
+    .font-s {
+      font-size: 30px;
+      text-align: center !important;
+    }
+
+    .all-links li {
+      display: inline;
+      padding: 0px 5px 0px 5px;
+      border-right: 1px solid;
+      font-size: 12px;
+    }
+
+    .all-links {
+      list-style: none;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .all-links span {
+      color: #716f6f;
+    }
+
+    .salary-fine {
+      color: black !important;
+    }
+
+    .alert-msg {
+      color: darkred !important;
+    }
+
+    .background-25 {
+      background: #e0eff4;
+      color: black;
+      padding: 5px;
+    }
+
+    .background-50 {
+      margin: 0 10px 0 10px !important;
+      background: #67b5bf;
+      color: white;
+      padding: 5px;
+    }
+
+    .background-25 .span-color {
+      color: black !important;
+    }
+
+    .background-90 {
+      background: #2e8991;
+      color: white;
+      padding: 5px;
+    }
+
+    .all-links li a {
+      cursor: pointer;
+    }
+  </style>
+
+  <section class="section">
+    <article class="article">
+      <div class="form-div-left">
+        <ul>
+          <li class="li-1"><span>JUMP TO...</span></li>
+          <li class="li-2"><span><a href="/corporate/summary_report">SUMMARY</a></span></li>
+          <li class="li-3"><span><a>APPLICATION</a></span></li>
+          <li class="li-4"><span><a>SALARY</a></span></li>
+        </ul>
+      </div>
+      <div class="form-div-right">
+        <div class="row">
+          <div class="col">
+            <h2>SALARY</h2>
+          </div>
+          <div class="col">
+            <p class="alert-msg">SORRY. WE CURRENTLY DON'T HAVE DATA FOR CAREER LEVEL <span>26</span>. SHOWING DATA FOR
+              CAREER LEVEL 25 INSTEAD.</p>
+          </div>
+
+
+          <div class="col">
+
+            <ul class="all-links">
+              <span>VIEW FOR :</span>
+              <li><a>COMPANY</a></li>
+              <li><a>INDUSTRY & FUNCTION</a></li>
+              <li><a>FUNCTION</a></li>
+              <li><a>INDUSTRY</a></li>
+              <li><a>FUNCTION GROUP</a></li>
+              <li><a>INDUSTRY GROUP</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <span class="salary-fine"><b>SALARY RANGE FOR AUTOMOTIVE & FINANCE</b></span>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col col-less">
+            <ul>
+              <li class="per-33 background-25">
+                <span class="span-color">25TH PERCENTILE</span><br>
+                <span class="font-s">11 L</span>
+
+              </li>
+              <li class="per-33 background-50">
+                <span class="span-color">50TH PERCENTILE(MEDIAN)</span><br>
+                <span class="font-s">18 L</span>
+              </li>
+              <li class="per-33 background-90">
+                <span class="span-color">90TH PERCENTILE</span><br>
+                <span class="font-s">31 L</span>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col role-margin">
+            <span><b>HIGHEST PAYING COMPANIES FOR AUTOMOTIVE & FINANCE</b></span>
+          </div>
+          <div class="col role-margin">
+            <span>1.</span> <span>XYZ</span>
+          </div>
+          <div class="col role-margin">
+            <span>1.</span> <span>XYZ</span>
+          </div>
+          <div class="col role-margin">
+            <span>1.</span> <span>XYZ</span>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col role-margin">
+            <span><b>LOWEST PAYING COMPANIES FOR AUTOMOTIVE & FINANCE</b></span>
+          </div>
+          <div class="col role-margin">
+            <span>1.</span> <span>XYZ</span>
+          </div>
+          <div class="col role-margin">
+            <span>1.</span> <span>XYZ</span>
+          </div>
+          <div class="col role-margin">
+            <span>1.</span> <span>XYZ</span>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+<% else %>
+
+
+  <style>
+    .section {
+      position: relative;
+      display: block;
+
+      text-align: center;
+      width: 100%;
+      float: left;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+
+    }
+
+    .row {
+      position: relative;
+      float: left;
+      display: block;
+      width: 65%;
+      padding: 0% 25% 2% 10%;
+
+    }
+
+    .col {
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+
+    }
+
+    .col h2 {
+      margin: 10px 0px 10px 0px;
+      font-size: 20px;
+    }
+
+    .col p {
+      margin: 5px 0px 15px 0px;
+      font-size: 12px;
+      color: #716f6f;
+
+    }
+
+    .span-color {
+      color: white;
+      font-size: 12px;
+
+    }
+
+    .col .per-80 {
+      width: 70%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+    }
+
+    .col .per-33 {
+      width: 30%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+    }
+
+    .col .per-33 span {
+      width: 100%;
+      width: 100%;
+      position: relative;
+      display: block;
+      text-align: left;
+    }
+
+    .col ul {
+      position: relative;
+      display: block;
+      float: left;
+      padding: 0;
+      width: 100%;
+    }
+
+    .col .per-20 {
+      width: 30%;
+      margin: 0;
+      position: relative;
+      display: block;
+      float: left;
+      text-align: right;
+    }
+
+    .col .per-20 a {
+      border-bottom: 1px solid;
+      font-size: 10px;
+      cursor: pointer;
+
+    }
+
+    .form-div-right {
+      /*border:2px solid  #0d305f;*/
+      text-align: left;
+      display: block;
+      position: relative;
+      float: left;
+      width: 80%;
+    }
+
+    .form-div-left {
+      /*border:2px solid  #0d305f;*/
+      text-align: center;
+      display: block;
+      position: relative;
+      padding: 10% 0% 10% 0;
+      float: left;
+      width: 20%;
+    }
+
+    .form-div-left ul {
+
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .form-div-left ul li a {
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+    }
+
+    .form-div-left ul .li-1 {
+      padding: 5px;
+      margin-bottom: 10px
+    }
+
+    .form-div-left ul .li-2 {
+      padding: 5px;
+      margin-bottom: 10px;
+      color: black;
+      background: #f0f0f0;
+    }
+
+    .form-div-left ul .li-3 {
+      padding: 5px;
+      margin-bottom: 10px;
+      background: #f0f0f0;
+
+    }
+
+    .form-div-left ul .li-4 {
+      padding: 5px;
+      margin-bottom: 10px;
+      background: #67b5bf;
+      color: white;
+
+    }
+
+    @media (min-width: 1600px) {
+      .col-less {
+        width: 80%;
+      }
+    }
+
+    .role-margin {
+      padding-bottom: 15px;
+    }
+
+    .border-btm {
+      border-bottom: 1px solid;
+      color: #716f6f;
+      cursor: pointer;
+    }
+
+    .font-s {
+      font-size: 30px;
+      text-align: center !important;
+    }
+
+    .all-links li {
+      display: inline;
+      padding: 0px 5px 0px 5px;
+      border-right: 1px solid;
+      font-size: 12px;
+    }
+
+    .all-links {
+      list-style: none;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .all-links span {
+      color: #716f6f;
+    }
+
+    .salary-fine {
+      color: black !important;
+    }
+
+    .alert-msg {
+      color: darkred !important;
+    }
+
+    .background-25 {
+      background: #e0eff4;
+      color: black;
+      padding: 5px;
+    }
+
+    .background-50 {
+      margin: 0 10px 0 10px !important;
+      background: #67b5bf;
+      color: white;
+      padding: 5px;
+    }
+
+    .background-25 .span-color {
+      color: black !important;
+    }
+
+    .background-90 {
+      background: #2e8991;
+      color: white;
+      padding: 5px;
+    }
+
+    .all-links li a {
+      cursor: pointer;
+    }
+
+    .changefilter {
+      border: none;
+      cursor: pointer;
+      background-color: white;
+      /*border-right: 1px solid gray;*/
+    }
+
+    .changefilter:active {
+      border: none;
+      cursor: pointer;
+      background-color: white;
+      outline: none;
+      /*border-right: 1px solid gray;*/
+    }
+
+    .changefilter:focus {
+      outline: none;
+    }
+
+    .factive {
+      color: blue;
+      border: none;
+    }
+
+    .iactive {
+      color: blue;
+      border: none;
+    }
+    .model {
+      /*opacity: 0%;*/
+      border: 1px solid gray;
+      color: black !important;
+      background-color: white;
+      padding: 10px;
+      /*width: 20%;*/
+      display: none;
+      z-index: 10;
+      font-size: 13px;
+    }
+
+  </style>
+
+  <section class="section">
+    <article class="article">
+      <div class="form-div-left">
+        <ul>
+          <li class="li-1"><span>JUMP TO...</span></li>
+          <li class="li-2"><span><a href='/corporate/summary_report/<%= @role['role_id'] %>'>SUMMARY</a></span></li>
+          <li class="li-3"><span><a>APPLICATION</a></span></li>
+          <li class="li-4"><span><a>SALARY</a></span></li>
+        </ul>
+      </div>
+      <div class="form-div-right">
+        <div class="row">
+          <div class="col">
+            <h2>SALARY</h2>
+          </div>
+          <% if !@fun && !@indfun %>
+            <div class="col">
+              <p class="alert-msg">SORRY. WE CURRENTLY DON'T HAVE DATA FOR CAREER LEVEL <span><%= @cl %></span>. SHOWING
+                DATA
+                FOR CAREER LEVEL 25 INSTEAD.</p>
+            </div>
+
+          <% else %>
+            <div class="col">
+              <%= form_tag(:action => 'changefilter', :method => :post) %>
+              <%= hidden_field_tag 'role_id', @roleid %>
+              <ul class="all-links">
+                <span>VIEW FOR :</span>
+                <% @filter = notice %>
+                <% if @filter == 'Function' %>
+                  <% @iactive = '' %>
+                  <% @factive = 'factive' %>
+                <% else %>
+                  <% @iactive = 'iactive' %>
+                  <% @factive = '' %>
+                <% end %>
+                <% if @filter.nil? && @fun %>
+                  <% @filter = 'Function' %>
+                  <% @iactive = '' %>
+                  <% @factive = 'factive' %>
+                <% elsif @filter.nil? && @indfun %>
+                  <% @filter = 'Industry and Function' %>
+                  <% @iactive = 'iactive' %>
+                  <% @factive = '' %>
+                <% end %>
+                <!--                <li><a>COMPANY</a></li>-->
+                <% if @indfun == true %>
+                  <%# @iactive = 'iactive' %>
+                  <%# @factive = '' %>
+                  <%= button_tag 'INDUSTRY & FUNCTION', value: "Industry and Function", :class => 'changefilter ' + @iactive %>
+                  <!--                <li><a>INDUSTRY & FUNCTION</a></li>-->
+                <% end %>
+                <% if @fun == true %>
+                  <%# @factive = 'factive' %>
+                  <%# @iactive = '' %>
+                  <%= button_tag 'FUNCTION', value: "Function", :class => 'changefilter ' + @factive %>
+                  <!--                <li onclick=" <%# @filter = 'Funcion' %>"><a>FUNCTION</a></li>-->
+                <% end %>
+                <!--                <li><a>INDUSTRY</a></li>-->
+                <!--                <li><a>FUNCTION GROUP</a></li>-->
+                <!--                <li><a>INDUSTRY GROUP</a></li>-->
+              </ul>
+            </div>
+
+            <div class="col">
+              <span class="salary-fine"><b>SALARY RANGE FOR AUTOMOTIVE & FINANCE</b></span>
+            </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col col-less">
+                <ul>
+                  <li class="per-33 background-25" onmousemove="showdata(event ,'model1')" onmouseout="clearCoor('model1')">
+                    <span class="span-color">25TH PERCENTILE</span><br>
+                    <span class="font-s"><%= (@out1[@filter][0][0] / 100000).round(2) %> L</span>
+                  </li>
+                  <li class="per-33 background-50" onmousemove="showdata(event,'model2')" onmouseout="clearCoor('model2')">
+                    <span class="span-color">50TH PERCENTILE(MEDIAN)</span><br>
+                    <span class="font-s"><%= (@out1[@filter][0][1] / 100000).round(2) %> L</span>
+                  </li>
+                  <li class="per-33 background-90" onmousemove="showdata(event,'model3')" onmouseout="clearCoor('model3')">
+                    <span class="span-color">90TH PERCENTILE</span><br>
+                    <span class="font-s"><%= (@out1[@filter][0][2] / 100000).round(2) %> L</span>
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id='model1' class="model">
+              <% if @out1[@filter][1][0].length != 0 %>
+                <% @out1[@filter][1][0].each do |k| %>
+                  <div>
+                    <% k.each do |key| %>
+                      <span>  <%= key %>  ,</span>
+                    <% end %>
+                  </div>
+                <% end %>
+              <% else %>
+                <%= "Don't have data" %>
+              <% end %>
+            </div>
+            <div id='model2' class="model">
+              <% if @out1[@filter][1][1].length != 0 %>
+                <% @out1[@filter][1][1].each do |k| %>
+                  <div>
+                    <% k.each do |key| %>
+                      <span>  <%= key %>  ,</span>
+                    <% end %>
+                  </div>
+                <% end %>
+              <% else %>
+                <%= "Don't have data" %>
+              <% end %>
+            </div>
+            <div id='model3' class="model">
+              <% if @out1[@filter][1][2].length != 0 %>
+                <% @out1[@filter][1][2].each do |k| %>
+                  <div>
+                    <% k.each do |key| %>
+                      <span>  <%= key %>  ,</span>
+                    <% end %>
+                  </div>
+                <% end %>
+              <% else %>
+                <%= "Don't have data" %>
+              <% end %>
+            </div>
+
+            <div class="row">
+              <div class="col role-margin">
+                <span><b>HIGHEST PAYING COMPANIES FOR AUTOMOTIVE & FINANCE</b></span>
+              </div>
+              <%
+                @out3[@filter] = @out3[@filter].sort_by {|a, b| a[0][2].to_f <=> b[0][2].to_f}.reverse
+              %>
+              <%
+                @out3[@filter].each_with_index do |filt, index|
+              %>
+                <div class="col role-margin">
+                  <span><%= index + 1 %>.</span>
+                  <span><%= filt[0] %> (MEDIAN:<%= ((filt[2]).to_f / 100000).round(2) %>
+                    L)</span>
+                </div>
+              <% end %>
+
+
+              <!--            <div class="col role-margin">-->
+              <!--              <span>1.</span> <span >XYZ</span>-->
+              <!--            </div>-->
+              <!--            <div class="col role-margin">-->
+              <!--              <span>1.</span> <span >XYZ</span>-->
+              <!--            </div>-->
+            </div>
+
+
+            <div class="row">
+              <div class="col role-margin">
+                <span><b>LOWEST PAYING COMPANIES FOR AUTOMOTIVE & FINANCE</b></span>
+              </div>
+
+
+              <%
+                @out2[@filter] = @out2[@filter].sort_by {|a, b| a[0][2].to_f <=> b[0][2].to_f}.reverse
+              %>
+              <%
+                @out2[@filter].each_with_index do |filt, index|
+              %>
+                <div class="col role-margin">
+                  <span><%= index + 1 %>.</span>
+                  <span><%= filt[0] %> (MEDIAN:<%= ((filt[2]).to_f / 100000).round(2) %>
+                    L)</span>
+                </div>
+              <% end %>
+
+
+
+              <!--            <div class="col role-margin">-->
+              <!--              <span>1.</span> <span >XYZ</span>-->
+              <!--            </div>-->
+              <!--            <div class="col role-margin">-->
+              <!--              <span>1.</span> <span >XYZ</span>-->
+              <!--            </div>-->
+            </div>
+          <% end %>
+          </div>
+    </article>
+  </section>
+<% end %>
+<script>
+    function showdata(e, id) {
+        var x = e.clientX - (e.clientX * 2) / 3;
+        var y = e.clientY - e.clientY / 3;
+
+        var mod = document.getElementById(id);
+        mod.style.position = 'absolute';
+        mod.style.display = 'block';
+        mod.style.left = x + 'px';
+        mod.style.top = y + 'px';
+
+    }
+
+    function clearCoor(id) {
+        var mod = document.getElementById(id);
+        mod.style.position = 'absolute';
+        mod.style.display = 'none';
+    }
+</script>

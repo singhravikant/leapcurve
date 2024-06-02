@@ -1,0 +1,123 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        right: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding-right: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .sidenav a:hover {
+        color: black;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+</style>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "150px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+<header id="header" class="" ng-controller="HeaderNavController as header">
+    <nav class="navbar navbar-default navbar-fixed-top hidden-xs hidden-sm"
+         style="margin:0%;background-color:#ffffff;border-color: #ffffff; border-bottom: 1px solid #f1f1f1">
+        <div class="container-fluid" style="border: none;">
+            <div class="navbar-header">
+                <a ui-sref="page.index" class="navbar-brand" style="height: 75px;"><img src="assets/logo1.png"
+                                                                                           style="width:100%;height:100%"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" style="margin-bottom: 0;">
+                    <li style="display:inline;float:right;font-size:18px;font-family:verdana;padding: 8px;cursor:pointer;" ng-if="header.isLogin">
+                        <a ng-click="logout()"
+                           style="color:black;">Logout</a>
+                    </li>
+                    <li style="display:inline;float:right;font-size:18px;font-family:verdana;padding: 8px;cursor:pointer;">
+                        <a href="#"
+                           style="color:black;">Contactus</a></li>
+                    <li style="display:inline;float:right;font-size:18px;font-family:verdana;padding: 8px;cursor:pointer;">
+                        <a href="#"
+                           style="color:black;">Partners</a>
+                    </li>
+                    <li style="display:inline;float:right;font-size:18px;font-family:verdana;padding: 8px;cursor:pointer;">
+                        <a
+                                ui-sref="app.insights" style="color:black;">Insights</a></li>
+                    <li style="display:inline;float:right;font-size:18px;font-family:verdana;padding: 8px;cursor:pointer;">
+                        <a ui-sref="app.about" style="color:black;">About us</a></li>
+                    <li ng-if="header.isShowDashBoard" style="display:inline;float:right;font-size:18px;font-family:verdana;padding: 8px;cursor:pointer;">
+                        <a ng-click="isScoreCalculated()"  style="color:black;">Dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-default navbar-fixed-top hidden-lg hidden-md">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a ui-sref="app.dashboard" class="navbar-brand" style="height: 75px;"><img src="assets/logo1.png"
+                                                                                           style="width:100%;height:100%"></a>
+            </div>
+            <div class="nav navbar-nav navbar-right">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mySidenav"
+                        onclick="openNav()">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul style="list-style:none;margin-top: 20px;">
+                    <li style="display:inline;float:right;font-size:18px;font-family:verdana;padding: 8px;"><a
+                            ui-sref="app.about" style="color:black;">About us</a></li>
+                    <li style="display:inline;float:right;font-size:18px;font-family:verdana;padding: 8px;"><a
+                            ui-sref="app.insights" style="color:black;">Insights</a></li>
+                    <li style="display:inline;float:right;font-size:18px;font-family:verdana;padding: 8px;"><a href="#"
+                                                                                                               style="color:black;">Partners</a>
+                    </li>
+                    <li style="display:inline;float:right;font-size:18px;font-family:verdana;padding: 8px;"><a href="#"
+                                                                                                               style="color:black;">Contactus</a>
+                    </li>
+                    <li style="display:inline;float:right;font-size:18px;font-family:verdana;padding: 8px;" ng-if="header.isShowDashBoard"><a
+                            ng-click="logout()" style="color:black;">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

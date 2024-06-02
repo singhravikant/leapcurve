@@ -1,0 +1,1268 @@
+<style>
+    .highcharts-tooltip > span {
+        font-size: 10px !important;
+        padding: -10px !important;
+        height: 22px !important;
+        width: auto !important;
+
+    }
+
+    .font_size {
+        word-spacing: 2px;
+    }
+
+    .label {
+        padding-left: 1%;
+    }
+
+    @media(max-width:991px){
+      .top-chart {
+        margin-top: -12px;
+        padding: 0px 0px 0px 0px !important;
+    }
+
+    }
+    .top-chart {
+        margin-top: -12px;
+        padding: 0px 0px 0px 6px;
+    }
+
+    .col-md-4 .font_size {
+        font-size: 11px;
+        margin-left: 0px;
+        font-family: "poppins-regular";
+    }
+
+    .col-md-4 .font_size span {
+        font-size: 9px;
+
+    }
+
+    @media (max-width: 1200px) {
+        .top-row {
+            margin-top: 8% !important;
+        }
+
+    }
+
+    .col-md-12.btn-a a {
+        padding-left: 0px;
+        color: black;
+        text-decoration: underline;
+    }
+
+    @media only screen and (width: 768px) {
+        .main-div {
+            margin-top: 20% !important;
+        }
+    }
+
+    @media (max-width: 375px) {
+
+        .sec-para {
+            padding: 10px;
+            padding-top: 60px !important;
+
+        }
+    }
+
+    @media only screen and (width: 320px) {
+        .sec-para {
+            padding: 10px;
+            padding-top: 100px !important;
+
+        }
+    }
+
+    @media only screen and (width: 768px) {
+
+        .salary-margin {
+            margin-left: 0px !important;
+        }
+    }
+
+    .first-a {
+        margin-left: 8%;
+    }
+
+    .btn.active, .btn.active, .btn:hover, .btn:focus {
+        box-shadow: none;
+        color: blue !important;
+    }
+
+    a.btn {
+        border-right: 1px solid silver;
+        padding: 0px 10px 0px 0px;
+        border-radius: 0px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .highcharts-background {
+        fill: transparent;
+    }
+
+    .top-a {
+        display: inline;
+    }
+
+    @media (max-width: 790px) {
+
+        .app-container.ng-scope {
+
+            overflow-y: initial !important;
+
+        }
+    }
+    .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    @media (max-width: 790px) {
+        .top-a a {
+            font-size: 11px !important;
+            border: none;
+        }
+
+    }
+
+    @media (max-width: 790px) {
+
+        .top-box {
+            padding: 0px !important;
+            padding-left: 10px !important;
+
+        }
+    }
+
+    @media (max-width: 767px) {
+        #min-1 {
+            border: none !important;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .text-min {
+            padding: 20px 0px 0px 35px !important;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .chart-para {
+            text-align: left !important;
+            padding-left: 10px;
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        .down-row {
+            margin-left: 15px;
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        .top-min-div {
+            margin-top: 65px;
+        }
+    }
+
+    @media (max-width: 790px) {
+
+        .min-text li a {
+            display: inline !important;
+            text-align: center !important;
+
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        .top-min-first {
+            margin-top: -4% !important;
+        }
+    }
+
+    @media (max-width: 790px) {
+
+        .min-1-h3 {
+            font-size: 15px !important;
+        }
+    }
+
+    @media (max-width: 790px) {
+
+        .font_size_1 {
+            font-size: 18px !important;
+
+        }
+    }
+
+    @media (min-width: 768px) {
+        .min-text {
+            float: right;
+        }
+    }
+
+    .higher-a {
+        text-decoration: underline;
+        font-size: 12px;
+    }
+
+    .higher-a:hover {
+        text-decoration: underline;
+    }
+
+    .nav1 {
+        margin: 0%;
+        background-color: #ffffff;
+        border-color: #ffffff;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .img-height {
+        height: 70px;
+    }
+
+    .mrgin-top {
+        margin-top: 2%;
+    }
+
+    .disp-inline {
+        display: inline;
+        font-size: 15px;
+        font-family: Montserrat-Regular;
+    }
+
+    .wdth {
+        width: 100%;
+    }
+
+    .lst-style {
+        list-style: none;
+        color: #25ad9f;
+    }
+
+    .disp {
+        display: inline-block;
+        color: #25ad9f;
+        padding: 0px 7px 0px 7px;
+        border-right: 1px solid #25ad9f;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .fnt-family {
+        height: 40px !important;
+        font-family: Poppins-Regular !important;
+    }
+
+    .regular {
+        display: inline !important;
+        font-size: 15px !important;
+        font-family: Montserrat-Regular !important;
+    }
+
+    .f-size {
+        font-size: 16px;
+        font-family: Montserrat-Regular;
+    }
+
+    .colr {
+        font-family: Montserrat-SemiBold;
+        color: black;
+        display: inline;
+    }
+
+    .pop {
+        font-size: 20px;
+        font-family: Poppins-Regular;
+    }
+
+    .fs {
+        font-size: 16px;
+    }
+
+    .font-wgt {
+        font-weight: normal;
+    }
+
+    .f-sz {
+        font-size: 12px;
+        position: absolute;
+       
+    }
+    .f-sz-1 {
+        font-size: 12px;
+        position: absolute;
+    top: 3px;
+
+       
+    }
+
+    .cur {
+        color: black;
+        cursor: pointer;
+    }
+
+    .pointt {
+        color: #25ad9f !important;
+        padding: 0px 7px 0px 7px !important;
+        text-decoration: underline !important;
+        cursor: pointer !important;
+        display: inline-block !important;
+    }
+
+    .list-styl {
+        font-family: Montserrat-Regular;
+        padding: 0px;
+        list-style: none;
+    }
+
+    .cur-pointer {
+        cursor: pointer;
+    }
+
+    .over {
+        font-family: Montserrat-Regular;
+        overflow: hidden;
+    }
+
+    .back-btn1 {
+        display: inline-block !important;
+        color: #25ad9f !important;
+        padding: 0px 7px 0px 7px !important;
+        border-right: 1px solid #25ad9f !important;
+        cursor: pointer !important;
+        text-decoration: underline !important;
+    }
+
+    .btn-top {
+        display: inline !important;
+        font-size: 15px !important;
+        font-family: Montserrat-Regular !important;
+    }
+
+    .mrg-tp {
+        margin-top: 1%
+    }
+
+    .lit {
+        list-style: none;
+        color: #25ad9f;
+    }
+
+    .mrg-tl {
+        margin-top: 2%;
+    }
+    .mrg-tl-1 {
+        padding-top: 30px;
+    }
+
+    .popins {
+        font-size: 11px;
+        margin: 0px;
+        font-family: poppins-regular;
+    }
+
+    .bld {
+        font-family: Poppins-Bold;
+    }
+
+    .regu {
+        font-size: 10.6px;
+        font-family: Poppins-Regular;
+        margin-bottom: 15px;
+    }
+
+    .mar-btm {
+        margin-bottom: 2%;
+    }
+
+    .under {
+        text-decoration: underline;
+    }
+
+    .mont {
+        font-family: Montserrat-Regular;
+    }
+
+    .hight {
+        height: 40px !important;
+    }
+
+    .reg-rat {
+        margin: 0px;
+        font-family: Montserrat-Regular;
+    }
+
+    .tpp {
+        margin-top: 3%;
+    }
+
+    .blk {
+        color: black;
+        display: inline;
+        font-family: Montserrat-SemiBold;
+    }
+
+
+    .reg-padd {
+        font-family: Poppins-Regular;
+        padding: 0px 0px 0px 12px;
+    }
+
+    .mar {
+        margin: 0px;
+    }
+
+    .f-fam {
+        font-family: Poppins-Bold;
+    }
+
+    .serrat {
+        font-family: Montserrat-Regular;
+        font-size: 10px;
+        margin-top: 0px;
+    }
+
+    .mtt {
+
+        margin-top: 8px;
+    }
+
+    .lett {
+        margin-top: 4%;
+        font-family: Montserrat-Regular;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    .lst-pad {
+        padding: 20px 0px 0px 22px;
+    }
+
+    .ff-fd {
+        font-family: Montserrat-Bold;
+        font-weight: bold;
+        display: inline;
+    }
+
+    .mo-semi {
+        font-family: Montserrat-SemiBold;
+        color: orange;
+        display: inline;
+    }
+
+    .f-pop {
+        font-size: 22px;
+        font-family: Poppins-bold;
+    }
+
+    .deco {
+        cursor: pointer;
+        text-decoration: underline;
+        color: black;
+    }
+
+    .pop-reg {
+        font-size: 14px;
+        font-family: Poppins-Regular;
+    }
+
+    .mar-btom {
+        font-family: Poppins-Bold;
+        margin-top: 4%;
+        margin-bottom: 1%;
+    }
+
+    .semi-rd {
+        font-family: Montserrat-SemiBold;
+        color: red;
+        display: inline;
+    }
+
+    .in-bld {
+        font-family: Montserrat-Bold;
+        display: inline
+    }
+
+    .ft-bld {
+        font-weight: bold;
+        font-family: Montserrat-Bold;
+    }
+
+    .sm-bld {
+        font-family: Montserrat-SemiBold;
+    }
+    @media (min-width: 1200px) {
+
+        .top-row {
+            /*padding: 0 8% 0 8%;*/
+        }
+    }
+
+</style>
+<style>
+
+    .top-min-div{
+        border-right: 2px solid silver;
+    }
+    .top-min-div-1{
+        border-bottom: 2px solid silver;
+    }
+    .head-para-1{
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    .promotion-div-style {
+        border: 1px solid silver !important;
+    }
+    .mob-high-para{
+        padding-top: 40px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .layout-boxed .app-container > section{
+        max-width:100% !important;
+    }
+    .row{
+        margin-right: 0 !important;
+        margin-left:  0 !important;
+    }
+    .app {
+        padding: 0!important;
+        padding-bottom: 0px !important;
+        width: 100%;
+        height: 100%;
+    }
+    .border-highchart
+    {
+        /*border: 1px solid silver;*/
+    }
+    @media (min-width: 1400px) {
+        .padding-top-row {
+            padding: 0% 18% 0 18%!important;
+        }
+        .lst-pad {
+            padding: 20px 0px 0px 90px;
+        }
+    }
+    @media (max-width: 991px) {
+        .app {
+            padding:0 !important;
+        }
+    }
+    .padding-top-row {
+        padding: 0% 8% 0 8%;
+    }
+    @media only screen and (max-width: 767px) {
+        .navbar-header {
+            width: 100% !important;
+        }
+    }
+</style>
+
+<header id="header" class=" hidden-sm hidden-xs">
+    <nav class="navbar navbar-default navbar-fixed-top nav1">
+        <div class="row">
+            <div class="navbar-header col-sm-2 col-md-2 ">
+                <img src="assets/logo1.png" class="navbar-brand img-height img-responsive">
+            </div>
+
+            <div class=" col-md-9 col-sm-10  col-xs-12 top-min-first mrgin-top">
+
+                <div class="col-md-12 text-center wdth">
+
+                    <ul class="nav navbar-nav min-text lit">
+
+                        <li class="btn-top"><i class="fa fa-angle-left"></i><a class="back-btn1" ui-sref="app.CLreport">BACK</a>
+                        </li>
+
+                        <li class="btn-top toltip" ng-if="!report.isGuest" class="ng-scope"><a class="pointt"
+                                                                                        ng-click="logout()">LOGOUT</a>
+                            <div class="tooltipText" style="">
+                                {{ShowEmail}}
+                            </div>
+                            <i
+                                class="fa fa-angle-right fs"></i></li>
+                        <!-- end ngIf: isLogin -->
+                        <li class="btn-top" ng-if="report.isGuest" class="ng-scope"><a class="pointt"
+                                                                                       ng-click="report.OpenLogin()">SAVE</a><i
+                                class="fa fa-angle-right fs"
+                        ></i></li>
+                        <!-- end ngIf: isLogin -->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-1 hidden-xs"></div>
+
+        </div>
+    </nav>
+</header>
+
+<header id="header" class=" hidden-md hidden-lg">
+    <nav class="navbar navbar-default navbar-fixed-top nav1">
+        <div class="row">
+            <div class="navbar-header col-sm-3 col-xs-12 ">
+                <img src="assets/logo1.png" class="navbar-brand img-height img-responsive">
+            </div>
+
+            <div class="  col-sm-9  col-xs-12 top-min-first mrgin-top">
+
+                <div class="col-xs-12 text-center wdth">
+
+                    <ul class="nav navbar-nav min-text lit">
+
+                        <li class="btn-top"><i class="fa fa-angle-left"></i><a class="back-btn1" ui-sref="app.CLreport">BACK</a>
+                        </li>
+
+                        <li class="btn-top toltip" ng-if="!report.isGuest" class="ng-scope"><a class="pointt"
+                                                                                        ng-click="logout()">LOGOUT</a>
+                            <div class="tooltipText" style="">
+                                {{ShowEmail}}
+                            </div>
+                            <i
+                                class="fa fa-angle-right fs"></i></li>
+                        <!-- end ngIf: isLogin -->
+                        <li class="btn-top" ng-if="report.isGuest" class="ng-scope"><a class="pointt"
+                                                                                       ng-click="report.OpenLogin()">SAVE</a><i
+                                class="fa fa-angle-right fs"
+                        ></i></li>
+                        <!-- end ngIf: isLogin -->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-1 hidden-xs"></div>
+
+        </div>
+    </nav>
+</header>
+
+
+
+
+
+
+<div class="container tpp">
+    <toaster-container toaster-options="{'close-button':true }"></toaster-container>
+
+
+
+
+
+    <div class="row top-row mrg-tl hidden-sm hidden-xs padding-top-row">
+
+
+        <div class="col-md-4 col-lg-4 top-min-div">
+            <div class=" col-md-12 col-lg-12 right-border1 b-rght" id="min-1">
+                <h3 class="min-1-h3 pop">CAREER LEVEL: <span class="bld">{{UserInfo.Level}}</span></h3>
+                <p class="regu">Your career level growth <a class="cur-pointer" ng-click="openInfoPop('CLG')"><i class="fa fa-info-circle"></i></a></p>
+            </div>
+
+            <div class="col-md-12 col-lg-12 top-chart">
+                <highchart id="chart" class="fnt-family font_size" config="chartConfig_CLGrowth"></highchart>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 col-sm-4 top-min-div">
+            <div class=" col-md-12 right-border1 b-rght" id="min-1">
+                <h3 class="min-1-h3 pop salary-margin">SALARY:<span class="bld">INR {{UserInfo.Salary}} Lakhs</span></h3>
+                <p class="regu">Your salary growth <a class="cur-pointer" ng-click="openInfoPop('SG')"> <i class="fa fa-info-circle"></i></a></p>
+            </div>
+
+            <div class="col-md-12 top-chart">
+                <highchart id="chart" class="fnt-family" config="chartConfig_barSalaryGrowth"></highchart>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 col-sm-4  reg-padd">
+            <div class="col-md-12">
+                <h3 class="pop-reg">Company: <span>{{UserInfo.Company}}</span></h3>
+                <p class="font_size mar head-para-1">Industry<span class="blk-color">:</span>
+                    <strong ng-if="UserInfo.Industry.split(' ').length>3" class="font-wgt"
+                            tooltip-placement="bottom" uib-tooltip="{{UserInfo.Industry}}"> {{UserInfo.Industry.split('
+                        ')[0]}} {{UserInfo.Industry.split(' ')[1]}}... </strong>
+                    <strong ng-if="UserInfo.Industry.split(' ').length<=3" class="font-wgt">
+                        {{UserInfo.Industry}}</strong>
+
+                    <a class="cur" ng-if="changeindustry" ng-click="openIndustry()"> <span
+                            class="under">(view industry group)</span></a></p>
+                <p class="font_size popins">Function<span
+                        class="blk-color">:</span>
+                    <strong ng-if="UserInfo.Role.split(' ').length>3" class="font-wgt"
+                            tooltip-placement="bottom" uib-tooltip="{{UserInfo.Role}}">{{UserInfo.Role.split(' ')[0]}}
+                        {{UserInfo.Role.split(' ')[1]}}...</strong>
+                    <strong ng-if="UserInfo.Role.split(' ').length<=3"
+                            class="font-wgt">{{UserInfo.Role}}</strong>
+                    <a class="cur"  ng-if="changefunction" ng-click="openFunction()"><span
+                            class="under">(view function group)</span></a></p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="row top-row mrg-tl-1 hidden-md hidden-lg">
+        <div class="col-sm-12 col-xs-12 top-min-div-1 text-center">
+            <div class=" col-sm-12 col-xs-12 right-border1 b-rght" id="min-1">
+                <h3 class="min-1-h3 pop">CAREER LEVEL: <span class="bld">{{UserInfo.Level}}</span></h3>
+                <p class="regu">Your career level growth <a class="cur-pointer" ng-click="openInfoPop('CLG')"><i class="fa fa-info-circle"></i></a></p>
+            </div>
+
+            <div class="col-sm-12 col-xs-12 top-chart">
+                <highchart id="chart" class="fnt-family font_size" config="chartConfig_CLGrowth"></highchart>
+            </div>
+        </div>
+
+
+
+        <div class="col-sm-12 col-xs-12  top-min-div-1">
+            <div class=" col-sm-12 col-xs-12 right-border1 b-rght text-center" id="min-1">
+                <h3 class="min-1-h3 pop salary-margin">SALARY:<span class="bld">INR {{UserInfo.Salary}} Lakhs</span></h3>
+                <p class="regu">Your salary growth <a class="cur-pointer" ng-click="openInfoPop('SG')"> <i class="fa fa-info-circle"></i></a></p>
+            </div>
+
+            <div class="col-sm-12 col-xs-12 top-chart">
+                <highchart id="chart" class="fnt-family" config="chartConfig_barSalaryGrowth"></highchart>
+            </div>
+        </div>
+
+
+        <div class="col-sm-12 col-xs-12   reg-padd">
+            <div class="col-sm-12 col-xs-12 text-center">
+                <h3 class="pop-reg">Company: <span>{{UserInfo.Company}}</span></h3>
+                <p class="font_size mar head-para-1 popins">Industry<span class="blk-color">:</span>
+                    <strong ng-if="UserInfo.Industry.split(' ').length>3" class="font-wgt"
+                            tooltip-placement="bottom" uib-tooltip="{{UserInfo.Industry}}"> {{UserInfo.Industry.split('
+                        ')[0]}} {{UserInfo.Industry.split(' ')[1]}}... </strong>
+                    <strong ng-if="UserInfo.Industry.split(' ').length<=3" class="font-wgt">
+                        {{UserInfo.Industry}}</strong>
+
+                    <a class="cur" ng-if="changeindustry" ng-click="openIndustry()"> <span
+                            class="under">(view industry group)</span></a></p>
+                <p class="font_size popins">Function<span
+                        class="blk-color">:</span>
+                    <strong ng-if="UserInfo.Role.split(' ').length>3" class="font-wgt"
+                            tooltip-placement="bottom" uib-tooltip="{{UserInfo.Role}}">{{UserInfo.Role.split(' ')[0]}}
+                        {{UserInfo.Role.split(' ')[1]}}...</strong>
+                    <strong ng-if="UserInfo.Role.split(' ').length<=3"
+                            class="font-wgt">{{UserInfo.Role}}</strong>
+                    <a class="cur"  ng-if="changefunction" ng-click="openFunction()"><span
+                            class="under">(view function group)</span></a></p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="row mrgin-top">
+        <div class="col-md-12 text-center">
+            <h3 class="font_size font_size_1 f-fam">GROWTH POTENTIAL IN YOUR {{head}}</h3>
+        </div>
+
+    </div>
+
+    <div class="row mrgin-top">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center" ng-if="btnStatus.length>1">
+            <p class="reg-rat"> CHANGE VIEW</p>
+        </div>
+        <div class="col-md-12 col-sm-12 btn-a text-center mar-btm">
+            <div ng-if="btnComanyPromotion" class="top-a">
+                <a ng-class="comp" type="submit" href="" class="btn" ng-click="getChartPromotion('Com')">COMPANY </a>
+            </div>
+
+            <div ng-if="btnFunIndPromotion" class="top-a">
+                <a type="submit" ng-class="indfun" href="" class="btn" ng-click="getChartPromotion('FunInd')">INDUSTRY &
+                    FUNCTION</a>
+            </div>
+
+            <div ng-if="btnFunPromotion" class="top-a">
+                <a type="submit" ng-class="fun" href="" class="btn" ng-click="getChartPromotion('Fun')">FUNCTION </a>
+            </div>
+
+            <div ng-if="btnIndPromotion" class="top-a">
+                <a type="submit" ng-class="ind" href="" class="btn" ng-click="getChartPromotion('Ind')">INDUSTRY </a>
+            </div>
+
+            <div ng-if="btnFunGrpPromotion && changefunction" class="top-a">
+                <a type="submit" ng-class="fungrp" href="" class="btn" ng-click="getChartPromotion('FunGroup')">FUNCTION
+                    GROUP </a>
+            </div>
+
+            <div ng-if="btnIndGrpPromotion && changeindustry" class="top-a">
+                <a type="submit" ng-class="indgrp" href="" class="btn" ng-click="getChartPromotion('IndGroup')">INDUSTRY
+                    GROUP </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="row padding-top-row">
+    <div class="col-md-6  hidden-sm hidden-xs text-center">
+
+
+        <div class="col-md-12 border-highchart">
+            <h4 class="text-center font_size_1  mont">PROMOTION PRESSURES <a
+                    class="cur-pointer" ng-click="openInfoPop('PP')"> <i class="fa fa-info-circle f-sz-1"></i></a>
+            </h4>
+            <highchart id="chart" config="chartConfig"></highchart>
+        </div>
+
+    </div>
+    <div class="col-md-6 hidden-sm hidden-xs  text-center ">
+        <div class="col-md-12  over border-highchart">
+
+            <h4 class="text-center font_size_1  mont">SALARY GROWTH</h4>
+
+
+            <highchart id="chart" config="chartConfig_Line"></highchart>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="col-sm-12 col-xs-12 hidden-md hidden-lg text-center">
+
+
+        <div class="col-md-12 col-sm-12 col-xs-12 over promotion-div-style">
+            <h4 class="text-center font_size_1  mont">PROMOTION PRESSURES <a
+                    class="cur-pointer" ng-click="openInfoPop('PP')"> <i class="fa fa-info-circle f-sz-1"></i></a>
+            </h4>
+            <highchart id="chart" config="chartConfig"></highchart>
+        </div>
+
+    </div>
+
+
+
+    <div class=" col-sm-12 col-xs-12 hidden-md hidden-lg  mob-high-para">
+        <p ng-if="GrowthFactor['nxtlevlCL']>0"
+           class="ff-fd">Difficulty of Reaching Next
+            Level:</p>
+        <p ng-if="GrowthFactor['nxtlevlCL']>0" class="blk"
+           ng-style="getStyle(diffNxtLvl)"> {{diffNxtLvl}}</p>
+        <ul ng-if="GrowthFactor['nxtlevlCL']>0" class="list-styl">
+            <li>{{diffNxtLvlTxt}} <span ng-if="nextDesigs.length>0" class=" serrat"><a
+                    class="deco"
+                    ng-click="showDesignation('NEXT')">View designations</a></span></li>
+
+        </ul>
+        <p class="ft-bld">Highest Level Reachable: <span
+                class="sm-bld"> {{GrowthFactor["HiLvlReachable"]}}</span> <span
+                ng-if="highestDesigs.length>0" class="serrat"><a
+                class="deco" ng-click="showDesignation('HIGHEST')">View designations</a></span>
+        </p>
+        <p ng-if="GrowthFactor['HiLevelDiff']>0" class="in-bld">Difficulty of
+            Reaching Highest Level: </p>
+        <p ng-if="GrowthFactor['HiLevelDiff']>0" class="semi-rd"
+           ng-style="getStyle(diffHiLvl)"> {{diffHiLvl}}</p>
+        <ul ng-if="GrowthFactor['HiLevelDiff']>0"
+            class="list-styl">
+            <li>{{diffHiLvlTxt}}</li>
+        </ul>
+        <p ng-if="GrowthFactor['avGLevelPer']>0"
+           class="ff-fd">Average Difficulty per Level
+            Jump: </p>
+        <p ng-if="GrowthFactor['avGLevelPer']>0"
+           class="mo-semi" ng-style="getStyle(diffPerLvl)">
+            {{diffPerLvl}}</p>
+        <ul ng-if="GrowthFactor['avGLevelPer']>0"
+            class="list-styl">
+            <li>{{diffPerLvlTxt}}</li>
+        </ul>
+    </div>
+
+
+    <div class="col-sm-12 col-xs-12 hidden-md hidden-lg text-center ">
+        <div class="col-md-12 col-sm-12 col-xs-12 over promotion-div-style">
+
+            <h4 class="text-center font_size_1  mont">SALARY GROWTH</h4>
+
+
+            <highchart id="chart" config="chartConfig_Line"></highchart>
+        </div>
+    </div>
+
+    <div class=" col-sm-12 col-xs-12 hidden-md hidden-lg  mob-high-para">
+        <p ng-if="GrowthFactor['median']>0" class="ff-fd">
+            Salary Growth at Next Level:</p>
+        <p ng-if="GrowthFactor['median']>0" class="colr"
+           ng-style="getStyle(salGrthNxtLvl)"> {{salGrthNxtLvl}}</p>
+        <ul ng-if="GrowthFactor['median']>0" class="list-styl">
+            <li>Median Salary at next level is INR {{(GrowthFactor['median'])}} Lakhs
+                ({{GrowthFactor['medianPer']}}% growth)
+            </li>
+        </ul>
+        <p ng-if="GrowthFactor['HiLevelGrowth']>0"
+           class="ff-fd">Salary Growth at Highest
+            Level: </p>
+        <p ng-if="GrowthFactor['HiLevelGrowth']>0"
+           class="colr" ng-style="getStyle(salGrthHiLvl)">
+            {{salGrthHiLvl}}</p>
+        <ul ng-if="GrowthFactor['HiLevelGrowth']>0"
+            class="list-styl">
+            <li>Median Salary at highest level is INR {{yAxisLine[yAxisLine.length-1]}} Lakhs
+                ({{GrowthFactor['HiLevelGrowth']}}%
+                growth)
+            </li>
+        </ul>
+        <p class="ff-fd">Average Salary Growth per
+            Level </p>
+        <ul class="list-styl">
+            <li>On an average, a level jump gets you a salary increase of INR {{GrowthFactor['avgSalary']}} Lakhs
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<div class="row hidden-sm hidden-xs padding-top-row">
+    <div class="col-md-12 col-sm-12 font_size">
+        <div class="col-md-6 col-sm-6 col-xs-12 text-min lst-pad">
+            <p ng-if="GrowthFactor['nxtlevlCL']>0"
+               class="ff-fd">Difficulty of Reaching Next
+                Level:</p>
+            <p ng-if="GrowthFactor['nxtlevlCL']>0" class="blk"
+               ng-style="getStyle(diffNxtLvl)"> {{diffNxtLvl}}</p>
+            <ul ng-if="GrowthFactor['nxtlevlCL']>0" class="list-styl">
+                <li>{{diffNxtLvlTxt}} <span ng-if="nextDesigs.length>0" class=" serrat"><a
+                        class="deco"
+                        ng-click="showDesignation('NEXT')">View designations</a></span></li>
+
+            </ul>
+            <p class="ft-bld">Highest Level Reachable: <span
+                    class="sm-bld"> {{GrowthFactor["HiLvlReachable"]}}</span> <span
+                    ng-if="highestDesigs.length>0" class="serrat"><a
+                    class="deco" ng-click="showDesignation('HIGHEST')">View designations</a></span>
+            </p>
+            <p ng-if="GrowthFactor['HiLevelDiff']>0" class="in-bld">Difficulty of
+                Reaching Highest Level: </p>
+            <p ng-if="GrowthFactor['HiLevelDiff']>0" class="semi-rd"
+               ng-style="getStyle(diffHiLvl)"> {{diffHiLvl}}</p>
+            <ul ng-if="GrowthFactor['HiLevelDiff']>0"
+                class="list-styl">
+                <li>{{diffHiLvlTxt}}</li>
+            </ul>
+            <p ng-if="GrowthFactor['avGLevelPer']>0"
+               class="ff-fd">Average Difficulty per Level
+                Jump: </p>
+            <p ng-if="GrowthFactor['avGLevelPer']>0"
+               class="mo-semi" ng-style="getStyle(diffPerLvl)">
+                {{diffPerLvl}}</p>
+            <ul ng-if="GrowthFactor['avGLevelPer']>0"
+                class="list-styl">
+                <li>{{diffPerLvlTxt}}</li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 sec-para text-min lst-pad">
+            <p ng-if="GrowthFactor['median']>0" class="ff-fd">
+                Salary Growth at Next Level:</p>
+            <p ng-if="GrowthFactor['median']>0" class="colr"
+               ng-style="getStyle(salGrthNxtLvl)"> {{salGrthNxtLvl}}</p>
+            <ul ng-if="GrowthFactor['median']>0" class="list-styl">
+                <li>Median Salary at next level is INR {{(GrowthFactor['median'])}} Lakhs
+                    ({{GrowthFactor['medianPer']}}% growth)
+                </li>
+            </ul>
+            <p ng-if="GrowthFactor['HiLevelGrowth']>0"
+               class="ff-fd">Salary Growth at Highest
+                Level: </p>
+            <p ng-if="GrowthFactor['HiLevelGrowth']>0"
+               class="colr" ng-style="getStyle(salGrthHiLvl)">
+                {{salGrthHiLvl}}</p>
+            <ul ng-if="GrowthFactor['HiLevelGrowth']>0"
+                class="list-styl">
+                <li>Median Salary at highest level is INR {{yAxisLine[yAxisLine.length-1]}} Lakhs
+                    ({{GrowthFactor['HiLevelGrowth']}}%
+                    growth)
+                </li>
+            </ul>
+            <p class="ff-fd">Average Salary Growth per
+                Level </p>
+            <ul class="list-styl">
+                <li>On an average, a level jump gets you a salary increase of INR {{GrowthFactor['avgSalary']}} Lakhs
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row hidden-md hidden-lg">
+    <div class="col-xs-12  col-sm-12  main-div mar-btom"><p class="text-center font_size_1 f-pop">SUMMARY <a
+            class="cur-pointer" ng-click="openInfoPop('SU')"> <i class="fa fa-info-circle f-sz"></i></a></p>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-12  mont">
+        <div class="col-xs-12 col-sm-12 mtt" ng-if="chartConfig_SalaryGrowthbarCom.xAxis.categories[0]!=null">
+            <p class="text-center  f-size">In your
+                company</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 "
+             ng-if="chartConfig_SalaryGrowthbarCom.xAxis.categories[0]!=null">
+            <highchart id="chart" class="font_size hight"
+                       config="chartConfig_SalaryGrowthbarCom"></highchart>
+        </div>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-12  mont">
+
+        <div class="col-xs-12 col-sm-12 mtt"
+             ng-if="chartConfig_SalaryGrowthbarInFn.xAxis.categories[0]!=null">
+
+            <p class="text-center  f-size">In your Industry
+                and Function</p>
+        </div>
+        <div class="col-xs-12 col-sm-12"
+             ng-if="chartConfig_SalaryGrowthbarInFn.xAxis.categories[0]!=null">
+            <highchart id="chart" class="font_size hight"
+                       config="chartConfig_SalaryGrowthbarInFn"></highchart>
+        </div>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-12  mont">
+
+        <div class="col-xs-12 col-sm-12 mtt"
+             ng-if="chartConfig_SalaryGrowthbarFn.xAxis.categories[0]!=null">
+
+            <p class="text-center  f-size">In your
+                Function</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 "
+             ng-if="chartConfig_SalaryGrowthbarFn.xAxis.categories[0]!=null">
+            <highchart id="chart" class="font_size hight"
+                       config="chartConfig_SalaryGrowthbarFn"></highchart>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12  mont">
+
+        <div class="col-xs-12 col-sm-12 mtt"
+             ng-if="chartConfig_SalaryGrowthbarIn.xAxis.categories[0]!=null">
+
+            <p class="text-center  f-size">In your
+                Industry</p>
+        </div>
+        <div class="col-xs-12 col-sm-12"
+             ng-if="chartConfig_SalaryGrowthbarIn.xAxis.categories[0]!=null">
+            <highchart id="chart" class="font_size hight"
+                       config="chartConfig_SalaryGrowthbarIn"></highchart>
+        </div>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-12 mont">
+
+        <div class="col-xs-12 col-sm-12 mtt"
+             ng-if="chartConfig_SalaryGrowthbarFnGrp.xAxis.categories[0]!=null && changefunction"
+        >
+
+            <p class="text-center  f-size">In your Function
+                Group</p>
+        </div>
+        <div class="col-xs-12 col-sm-12"
+             ng-if="chartConfig_SalaryGrowthbarFnGrp.xAxis.categories[0]!=null && changefunction">
+            <highchart id="chart" class="font_size hight"
+                       config="chartConfig_SalaryGrowthbarFnGrp"></highchart>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 mont">
+
+        <div class="col-xs-12 col-sm-12 mtt"
+             ng-if="chartConfig_SalaryGrowthbarInGrp.xAxis.categories[0]!=null && changeindustry"
+        >
+
+            <p class="text-center  f-size">In your Industry
+                Group</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 mtt"
+             ng-if="chartConfig_SalaryGrowthbarInGrp.xAxis.categories[0]!=null && changeindustry"
+        >
+            <highchart id="chart" class="font_size hight"
+                       config="chartConfig_SalaryGrowthbarInGrp"></highchart>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-md-8 col-md-offset-2">
+            <p class="lett">
+                {{PP_Text}} <a class="higher-a" ui-sref="app.ranking">Where can I have higher growth?</a>
+            </p>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<div class="row down-row hidden-sm hidden-xs padding-top-row">
+    <div class="col-md-12  col-sm-12  main-div mar-btom"><p class="text-center font_size_1 f-pop">SUMMARY <a
+            class="cur-pointer" ng-click="openInfoPop('SU')"> <i class="fa fa-info-circle f-sz"></i></a></p></div>
+
+
+    <div class="col-md-12 col-lg-12  mont">
+        <div class="col-lg-2 col-md-2"></div>
+
+        <div class="col-lg-3 col-md-3 mtt" ng-if="chartConfig_SalaryGrowthbarCom.xAxis.categories[0]!=null">
+            <p class="text-right chart-para f-size">In your
+                company</p>
+        </div>
+        <div class="col-lg-5 col-md-5"
+             ng-if="chartConfig_SalaryGrowthbarCom.xAxis.categories[0]!=null">
+            <highchart id="chart" class="font_size hight"
+                       config="chartConfig_SalaryGrowthbarCom"></highchart>
+        </div>
+        <div class="col-lg-2 col-md-2"></div>
+
+    </div>
+
+
+    <div class="col-md-12 col-lg-12  mont">
+        <div class="col-lg-2 col-md-2"></div>
+
+        <div class="col-lg-3 col-md-3 mtt"
+             ng-if="chartConfig_SalaryGrowthbarInFn.xAxis.categories[0]!=null">
+
+            <p class="text-right chart-para f-size">In your Industry
+                and Function</p>
+        </div>
+        <div class="col-lg-5 col-md-5"
+             ng-if="chartConfig_SalaryGrowthbarInFn.xAxis.categories[0]!=null">
+            <highchart id="chart" class="font_size hight"
+                       config="chartConfig_SalaryGrowthbarInFn"></highchart>
+        </div>
+        <div class="col-lg-2 col-md-2"></div>
+
+    </div>
+
+
+    <div class="col-md-12 col-lg-12  mont">
+        <div class="col-lg-2 col-md-2"></div>
+        <div class="col-md-3  col-lg-3 mtt"
+             ng-if="chartConfig_SalaryGrowthbarFn.xAxis.categories[0]!=null">
+
+            <p class="text-right chart-para f-size">In your
+                Function</p>
+        </div>
+        <div class="col-md-5 col-lg-5 "
+             ng-if="chartConfig_SalaryGrowthbarFn.xAxis.categories[0]!=null">
+            <highchart id="chart" class="font_size hight"
+                       config="chartConfig_SalaryGrowthbarFn"></highchart>
+        </div>
+        <div class="col-lg-2 col-md-2"></div>
+
+    </div>
+
+    <div class="col-md-12 col-lg-12 mont">
+        <div class="col-lg-2 col-md-2"></div>
+
+        <div class="col-md-3  col-lg-3 mtt"
+             ng-if="chartConfig_SalaryGrowthbarIn.xAxis.categories[0]!=null">
+
+            <p class="text-right chart-para f-size">In your
+                Industry</p>
+        </div>
+        <div class="col-md-5 col-lg-5"
+             ng-if="chartConfig_SalaryGrowthbarIn.xAxis.categories[0]!=null">
+            <highchart id="chart" class="font_size hight"
+                       config="chartConfig_SalaryGrowthbarIn"></highchart>
+        </div>
+        <div class="col-lg-2 col-md-2"></div>
+
+    </div>
+
+
+    <div class="col-md-12 col-lg-12  mont">
+        <div class="col-lg-2 col-md-2"></div>
+
+        <div class="col-md-3  col-lg-3 mtt"
+             ng-if="chartConfig_SalaryGrowthbarFnGrp.xAxis.categories[0]!=null && changefunction">
+
+            <p class="text-right chart-para f-size">In your Function
+                Group</p>
+        </div>
+        <div class="col-md-5 col-lg-5"
+             ng-if="chartConfig_SalaryGrowthbarFnGrp.xAxis.categories[0]!=null && changefunction">
+            <highchart id="chart" class="font_size hight"
+                       config="chartConfig_SalaryGrowthbarFnGrp"></highchart>
+        </div>
+        <div class="col-lg-2 col-md-2"></div>
+
+    </div>
+
+    <div class="col-md-12 col-lg-12 mont">
+        <div class="col-lg-2 col-md-2"></div>
+
+        <div class="col-md-3  col-lg-3 mtt"
+             ng-if="chartConfig_SalaryGrowthbarInGrp.xAxis.categories[0]!=null && changeindustry"
+        >
+
+            <p class="text-right chart-para f-size">In your Industry
+                Group</p>
+        </div>
+        <div class="col-md-5 col-lg-5 mtt"
+             ng-if="chartConfig_SalaryGrowthbarInGrp.xAxis.categories[0]!=null && changeindustry"
+        >
+            <highchart id="chart" class="font_size hight"
+                       config="chartConfig_SalaryGrowthbarInGrp"></highchart>
+        </div>
+        <div class="col-lg-2 col-md-2"></div>
+
+    </div>
+
+
+
+    <div class="col-md-2 col-lg-2"></div>
+    <div class="col-md-8">
+        <p class="lett">
+            {{PP_Text}} <a class="higher-a" ui-sref="app.ranking">Where can I have higher growth?</a>
+        </p>
+    </div>
+    <div class="col-md-2 col-lg-2"></div>
+
+
+
+
+</div>
+
+

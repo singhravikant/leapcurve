@@ -1,0 +1,511 @@
+<% if browser.device.mobile? %>
+
+  <style>
+    .expire {
+      font-size: 40px;
+      font-weight: bold;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      right: 29%;
+      left: 29%;
+    }
+    
+    .section {
+      position: relative;
+      display: block;
+      padding-top: 6%;
+      padding-right: 10%;
+      padding-left: 10%;
+      text-align: center;
+      width: 80%;
+      float: left;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 15%;
+
+    }
+
+    .form-div {
+      text-align: center;
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+    }
+
+    .form-div h2 {
+      margin-bottom: 10px;
+      margin-top: 0;
+      letter-spacing: 1px;
+      font-family: Poppins-SemiBold;
+      text-align: center;
+      font-size: 17px;
+
+    }
+
+    .txt-field {
+      border-bottom: 1px solid #0d305f !important;
+      padding: 45px 0 0 0;
+      margin-bottom: 0;
+      position: relative;
+      color: black;
+      border: none;
+      box-shadow: none;
+      width: 100%;
+      outline: none;
+      font-size: 15px;
+    }
+
+    @media screen and (max-width: 1300px) {
+      .form-coll {
+        width: 29% !important;
+      }
+    }
+
+    .form-coll {
+      display: block;
+      position: relative;
+      float: left;
+      width: 100% !important;
+      padding: 1% 0% 1.5%;
+      min-height: 1px;
+    }
+
+    .submit-btn {
+      background: #eeeeee;
+      cursor: pointer;
+      margin-top: 3.5%;
+      color: #4c4c4c;
+      width: 80%;
+      margin-left: 10%;
+      font-family: Poppins-SemiBold;
+      padding: 5% 23% 5% 23%;
+      border: none;
+      font-size: 22px;
+      float: left;
+    }
+
+    .form-row {
+      width: 100%;
+      position: relative;
+      float: left;
+      display: block;
+    }
+
+    .form-coll-a {
+      text-align: left;
+      text-align: left;
+      display: block;
+      float: left;
+      position: relative;
+    }
+
+    .form-coll-a a {
+      text-decoration: none;
+      color: #2d2b2b;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid silver;
+      font-size: 12px;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      font-size: 15px;
+      text-align: left;
+      font-family: Montserrat-Regular;
+    }
+
+    .form-coll a {
+      position: absolute;
+      font-size: 10px;
+      left: 0px;
+      margin-top: 4px;
+      z-index: 999;
+      text-decoration: none;
+      font-family: Montserrat-Regular;
+      color: #2d2b2b;
+      font-weight: bold;
+      border-bottom: 1px solid silver;
+    }
+    .form-coll-a button{
+      font-family: poppins-regular;
+    }
+    .border-dark {
+      border-bottom: 2px solid #464646 !important;
+    }
+
+    .border-light {
+      border-bottom: 2px solid #464646  !important;
+    }
+
+    .add-btn {
+      font-family: Poppins-SemiBold;
+    }
+  </style>
+
+
+<% elsif browser.device.tablet? %>
+
+  <style>
+    .expire {
+      font-size: 40px;
+      font-weight: bold;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      right: 29%;
+      left: 29%;
+    }
+
+    .section {
+      position: relative;
+      display: block;
+      padding-right: 15%;
+      padding-left: 15%;
+      text-align: center;
+      width: 70%;
+      float: left;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+
+    }
+
+    .form-div {
+      /*border:2px solid  #0d305f;*/
+      text-align: center;
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+    }
+
+    .form-div h2 {
+      margin: 45px 0;
+      padding-left: 6%;
+      letter-spacing: 1px;
+      font-family: Poppins-SemiBold;
+      /* margin-top: 0; */
+      text-align: left;
+    }
+
+    .txt-field {
+      border-bottom: 1px solid #0d305f !important;
+      padding: 5px 0;
+      margin-bottom: 0;
+      position: relative;
+      margin-left: 10%;
+      color: black;
+      border: none;
+      line-height: 25px;
+      box-shadow: none;
+      width: 80%;
+      outline: none;
+      float: left;
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 1300px) {
+      .form-coll {
+        width: 29% !important;
+      }
+    }
+
+    .form-coll {
+      display: block;
+      position: relative;
+      float: left;
+      width: 33.33%;
+      padding: 1% 0% 1.5%;
+      min-height: 1px;
+    }
+
+    .submit-btn {
+      background: #eeeeee;
+      cursor: pointer;
+      margin-top: 3.5%;
+      outline: none;
+      color: #4c4c4c;
+      width: 80%;
+      margin-left: 20%;
+      font-family: Poppins-SemiBold;
+      padding: 5% 23% 5% 20%;
+      border: none;
+      font-size: 22px;
+      float: left;
+    }
+    #delbtn1{
+      cursor: pointer;
+    }
+    .form-row {
+      width: 100%;
+      position: relative;
+      float: left;
+      display: block;
+    }
+
+
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      font-size: 15px;
+      text-align: left;
+      font-family: Montserrat-Regular;
+    }
+
+    .border-dark {
+      border-bottom: 2px solid #464646 !important;
+    }
+
+    .border-light {
+      border-bottom: 2px solid #464646  !important;
+    }
+
+    option[value=""] {
+      display: none;
+    }
+
+    .prompt {
+      font-size: 15px;
+    }
+    .add-btn{
+      font-family: Poppins-SemiBold;
+    }
+    .field-less{
+      margin-left: 20%;
+    }
+    .field-add{
+      margin-left: 0;
+    }
+  </style>
+
+
+<% else %>
+
+  <style>
+    .expire {
+      font-size: 40px;
+      font-weight: bold;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      right: 29%;
+      left: 29%;
+    }
+
+    .section {
+      position: relative;
+      display: block;
+      padding-right: 15%;
+      padding-left: 15%;
+      text-align: center;
+      width: 70%;
+      float: left;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 5%;
+
+    }
+
+    .form-div {
+      /*border:2px solid  #0d305f;*/
+      text-align: center;
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+    }
+
+    .form-div h2 {
+      margin: 45px 0;
+      padding-left: 6%;
+      letter-spacing: 1px;
+      font-family: Poppins-SemiBold;
+      /* margin-top: 0; */
+      text-align: left;
+    }
+
+    .txt-field {
+      border-bottom: 1px solid #0d305f !important;
+      padding: 5px 0;
+      margin-bottom: 0;
+      position: relative;
+      margin-left: 10%;
+      color: black;
+      border: none;
+      line-height: 25px;
+      box-shadow: none;
+      width: 80%;
+      outline: none;
+      float: left;
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 1300px) {
+      .form-coll {
+        width: 29% !important;
+      }
+    }
+
+    .form-coll {
+      display: block;
+      position: relative;
+      float: left;
+      width: 33.33%;
+      padding: 1% 0% 1.5%;
+      min-height: 1px;
+    }
+
+    .submit-btn {
+      background: #eeeeee;
+      cursor: pointer;
+      margin-top: 3.5%;
+      outline: none;
+      color: #4c4c4c;
+      width: 80%;
+      margin-left: 20%;
+      font-family: Poppins-SemiBold;
+      padding: 5% 23% 5% 20%;
+      border: none;
+      font-size: 22px;
+      float: left;
+    }
+    #delbtn1{
+      cursor: pointer;
+    }
+    .form-row {
+      width: 100%;
+      position: relative;
+      float: left;
+      display: block;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      font-size: 15px;
+      text-align: left;
+      font-family: Montserrat-Regular;
+    }
+
+    .border-dark {
+      border-bottom: 2px solid #464646 !important;
+    }
+
+    .border-light {
+      border-bottom: 2px solid #464646  !important;
+    }
+
+    option[value=""] {
+      display: none;
+    }
+
+    .prompt {
+      font-size: 15px;
+    }
+    .add-btn{
+      font-family: Poppins-SemiBold;
+    }
+    .field-less{
+      margin-left: 20%;
+    }
+    .field-add{
+      margin-left: 0;
+    }
+  </style>
+
+
+<% end %>
+
+<section class="section">
+  <article class="article">
+    <% if @validlink %>
+    <div class="form-div">
+      <h2> NEW TEAM MEMBER REGISTRATION</h2>
+
+      <%= form_tag({:action => :'save_team_member'}, {:method => :post}) %>
+      <%= hidden_field_tag 'sender' ,@sender%>
+      <%= hidden_field_tag 'usertype' ,@member['access_permission']%>
+      <%= hidden_field_tag 'token' ,@member['token']%>
+      <div class="form-row">
+        <div class="form-coll">
+
+          <%= text_field_tag "first_name", params['first_name'],:value=>@member['first_name'], :placeholder => 'First Name', :class => "txt-field border-dark field-less", :size => 15, :required => true %>
+        </div>
+        <div class="form-coll">
+
+          <%= text_field_tag "last_name", params['last_name'],:value=>@member['last_name'],  :placeholder => 'Last Name', :class => "txt-field border-dark field-less", :size => 15 %>
+        </div>
+
+      </div>
+      <div class="form-row">
+        <div class="form-coll">
+          <%= text_field_tag "designation", params['designation'], :placeholder => 'Designation', :class => "txt-field border-light field-less", :size => 15 %>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-coll">
+          <%= email_field_tag "email", params['email'],:value=>@member['email'],  :placeholder => 'Email', :class => "txt-field border-dark field-less", :size => 15, :required => true,:readonly=>true %>
+        </div>
+        <div class="form-coll">
+          <%= password_field_tag "password", params['password'], :placeholder => 'Password', :class => "txt-field  border-dark field-less", :size => 15, :required => true %>
+        </div>
+      </div>
+
+
+      <div class="form-row">
+        <div class="form-coll">
+          <%= submit_tag 'REGISTER', :class => "submit-btn" %>
+        </div>
+      </div>
+
+
+    </div>
+      <% else %>
+    <span class="expire">
+      This Link Has Been Expired!
+    </span>
+<% end %>
+  </article>
+</section>

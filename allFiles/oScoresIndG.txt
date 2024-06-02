@@ -1,0 +1,162 @@
+[Computer Software+Information Technology and Services+Internet+Semiconductors];41;99682199.61;317.74660294;728318.1083
+[Non-Profit Organization Management];19;7264912.0;443.395949289;965363.428571
+[Maritime+Transportation/Trucking/Railroad];24;12763947.505;202.83111907;366982.198357
+[Design+Fine Art+Entertainment+Publishing];24;14809668.0;4624.31507024;474815.68575
+[Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles];41;17699785.58;721.139739275;984097.375013
+[Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Design];31;39360117.19;7407.07808304;786065.329267
+[International Trade and Development];16;2915172.922;746.015400492;485912.18437
+[Hospital & Health Care+Medical Devices+Pharmaceuticals+Health Care];24;15933685.75;76.8886086302;539080.685488
+[Design+Fine Art+Entertainment+Publishing+Wine and Spirits];24;14645806.57;328.902965886;551222.549771
+[Non-Profit Organization Management+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants];41;66927043.36;1935.66356717;1311565.8587
+[Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Shipping];41;17699785.58;726.590052085;984061.177733
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications];31;16463857.96;188.778973688;525958.559813
+[Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants];41;66927043.36;1477.75701712;1426979.84391
+[Entertainment+Information Services+Publishing+Fine Art+Sporting Goods+Wine and Spirits+Food & Beverages+Food Production+Hospitality+Leisure, Travel & Tourism+Restaurants];41;66927043.36;2140.05671144;1315735.84828
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications];31;16463857.96;188.778973688;525958.559813
+[Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Textiles];41;17699785.58;717.661537279;984846.068147
+[Education Management+e-Learning+Research];27;17328626.46;3940.26661066;459562.187343
+[Accounting+Business Supplies and Equipment+Human Resources+Import and Export+Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Professional Training & Coaching+Civil Engineering+Mechanical or Industrial Engineering+Research+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants];41;66927043.36;3626.19565863;1173612.08017
+[Design+Fine Art+Entertainment+Publishing+Sporting Goods];24;14809668.0;4796.13817408;655603.166607
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications];31;16463857.96;188.778973688;525958.559813
+[Farming+Fishery+Food Production+Agri Industry];35;38768655.3;220.715781091;634769.952861
+[Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles+Oil & Gas];41;17699785.58;726.442781323;984097.375013
+[Maritime+Transportation/Trucking/Railroad+Logistics and Supply Chain];31;39360117.19;64.0155046365;550116.392421
+[Farming+Fishery+Agri Industry];27;20653438.18;304.421370637;740778.246143
+[Entertainment+Information Services+Publishing+Fine Art+Sporting Goods+Wine and Spirits];24;14645806.57;304.210691394;664351.908629
+[Design+Fine Art+Entertainment+Publishing];24;14809668.0;4624.31507024;474815.68575
+[Design+Fine Art+Entertainment+Publishing+Sporting Goods+Wine and Spirits];24;14645806.57;337.925189531;589185.818843
+[Maritime+Transportation/Trucking/Railroad+Transportation];24;12763947.505;203.158354945;368215.615286
+[Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Business Supplies and Equipment+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Packaging and Containers+Heavy Industry+Infrastructure];41;66927043.36;2286.14795751;854044.477893
+[Banking+Financial Services+BFSI];24;10665425.9315;79.8111977383;825255.609829
+[Professional Services];24;22219968.435;100.597123938;1252247.6463
+[Internet+e-Commerce];27;8040357.3015;509.232559259;1158276.998
+[Entertainment+Information Services+Publishing+Fine Art];24;14809668.0;4353.98414558;718985.115821
+[Entertainment+Information Services+Publishing+Fine Art];24;14809668.0;4353.98414558;718985.115821
+[Banking+Financial Services];24;12918868.97;19730.0223367;355352.797933
+[Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+EPC+Heavy Industry+Infrastructure];35;39649766.39;1890.01028635;974906.6352
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+FMCG];41;66927043.36;4608.62665421;1605329.64574
+[Computer Software+Information Technology and Services+Internet+Semiconductors];41;99682199.61;317.74660294;728318.1083
+[Computer Software+Information Technology and Services+Internet+Semiconductors+e-Commerce];41;99682199.61;317.74660294;728318.1083
+[Accounting+Business Supplies and Equipment+Human Resources+Import and Export+Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Professional Training & Coaching+e-Learning+International Trade and Development+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants];41;66927043.36;4347.41661587;1292916.82318
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Industrial Automation+FMCG];41;66927043.36;4628.51394302;1577057.74522
+[FMCG+Consumer Durables];27;29949764.23;98.3893052075;617786.686943
+[Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles+Power & Energy];41;17699785.58;813.914579883;956519.36888
+[Accounting+Business Supplies and Equipment+Human Resources+Import and Export+Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Professional Training & Coaching];31;39360117.19;8074.93307897;830928.909656
+[Chemicals+Machinery+Mining & Metals+Plastics+Shipbuilding+Textiles];31;21839875.79;555.845738542;1090769.62336
+[Farming+Fishery];19;7398362.912;56.6548365362;456312.373833
+[Hospital & Health Care+Medical Devices+Pharmaceuticals];24;15933685.75;76.8886086302;539080.685488
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Business Supplies and Equipment+Industrial Automation+Mechanical or Industrial Engineering+FMCG+Consumer Durables+Agri Industry];41;66927043.36;5245.37074893;1583326.98899
+[Entertainment+Information Services+Publishing];24;14809668.0;8618.1991575;708228.255071
+[Non-Profit Organization Management+Government Administration];19;5368425.0;76.7610802235;630762.785714
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+FMCG];41;66927043.36;4608.62665421;1605329.64574
+[Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants+Food Production+Information Services];41;66927043.36;1927.37681697;1311565.8587
+[Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Accounting+Import and Export+EPC+Heavy Industry];35;39649766.39;1869.48898585;974904.219086
+[Accounting+Business Supplies and Equipment+Human Resources+Import and Export+Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Professional Training & Coaching+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants];41;66927043.36;4242.96693162;1294939.76027
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Aviation & Aerospace+Business Supplies and Equipment+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering];41;66927043.36;5396.50900399;1588070.21416
+[Design+Fine Art+Entertainment+Publishing+Sporting Goods];24;14809668.0;4796.13817408;655603.166607
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications];31;16463857.96;188.778973688;525958.559813
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications];31;16463857.96;188.778973688;525958.559813
+[Accounting+Business Supplies and Equipment+Human Resources+Import and Export+Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Professional Training & Coaching+Entertainment+Fine Art+Publishing+Sporting Goods+Wine and Spirits+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants];41;66927043.36;4389.98911779;1267846.44693
+[Computer Software+Information Technology and Services+Internet+Semiconductors+ITES];41;99682199.61;317.74660294;728318.1083
+[Management Consulting+Outsourcing/Offshoring+Professional Training & Coaching+Professional Services+e-Learning+Education Management];24;17632937.15;7277.58863394;1005529.63181
+[Banking+Financial Services+BFSI];24;10665425.9315;79.8111977383;825255.609829
+[Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles];41;17699785.58;721.139739275;984097.375013
+[Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles];41;17699785.58;721.139739275;984097.375013
+[Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Aviation & Aerospace+Business Supplies and Equipment+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Packaging and Containers+Retail+Wine and Spirits+Heavy Industry];41;66927043.36;2338.18239819;828248.754627
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+e-Learning];31;16463857.96;159.414099652;513510.513875
+[Design+Fine Art+Entertainment+Publishing+Sporting Goods+Wine and Spirits];24;14645806.57;337.925189531;589185.818843
+[Entertainment+Information Services+Publishing+Fine Art+Sporting Goods+Wine and Spirits];24;14645806.57;304.210691394;664351.908629
+[BFSI+Internet+e-Commerce+Computer Software+FMCG];27;37432638.34;107.797706474;730730.184757
+[Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Research+EPC+Heavy Industry+Infrastructure];35;39649766.39;2061.68528231;901226.960886
+[Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+EPC+Heavy Industry+Infrastructure];35;39649766.39;1890.01028635;974906.6352
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+FMCG];41;66927043.36;4608.62665421;1605329.64574
+[Non-Profit Organization Management];19;7264912.0;443.395949289;965363.428571
+[Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding];41;17699785.58;721.139739275;984097.375013
+[Design+Fine Art];16;2225590.413;1747.34200158;347925.568833
+[Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Shipping];41;17699785.58;726.590052085;984061.177733
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+Airlines/Aviation];31;16463857.96;175.127848687;532129.190937
+[Entertainment+Publishing+Fine Art+Sporting Goods+Wine and Spirits+Computer Software];27;48906819.56;322.279445405;556039.999343
+[Computer Software+Information Technology and Services+Internet+Semiconductors];41;99682199.61;317.74660294;728318.1083
+[Maritime+Transportation/Trucking/Railroad+Transportation];24;12763947.505;203.158354945;368215.615286
+[Human Resources+Management Consulting+Outsourcing/Offshoring];22;10236376.78;7031.30996353;756812.749744
+[Hospital & Health Care+Medical Devices+Pharmaceuticals];24;15933685.75;76.8886086302;539080.685488
+[Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles+Oil & Gas+Power & Energy];41;17699785.58;813.914579883;956519.36888
+[Design+Fine Art];16;2225590.413;1747.34200158;347925.568833
+[Information Services];24;15991602.2365;112.934066077;1310775.44388
+[Computer Software+Information Technology and Services+Internet+Semiconductors];41;99682199.61;317.74660294;728318.1083
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Aviation & Aerospace+Business Supplies and Equipment+Industrial Automation+Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants+FMCG];41;66927043.36;4389.80223688;1671880.48155
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Business Supplies and Equipment+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+FMCG];41;66927043.36;5303.26316955;1588097.39206
+[Education Management+e-Learning+Research];27;17328626.46;3940.26661066;459562.187343
+[Education Management+e-Learning+Research];27;17328626.46;3940.26661066;459562.187343
+[Hospital & Health Care+Medical Devices+Pharmaceuticals+Health Care];24;15933685.75;76.8886086302;539080.685488
+[Banking+Financial Services+BFSI];24;10665425.9315;79.8111977383;825255.609829
+[Accounting];19;6135713.813;335.833333333;763625.50632
+[Entertainment+Information Services+Publishing+Fine Art];24;14809668.0;4353.98414558;718985.115821
+[FMCG+Agri Industry];27;25301601.205;136.060836378;483685.153029
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications];31;16463857.96;188.778973688;525958.559813
+[Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants+Food Production+Information Services+Airlines/Aviation+Import and Export+International Trade and Development+Logistics and Supply Chain+Package/Freight Delivery];41;66927043.36;2963.34362705;1322877.0736
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications];31;16463857.96;188.778973688;525958.559813
+[Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants];41;66927043.36;1477.75701712;1426979.84391
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Aviation & Aerospace+Business Supplies and Equipment+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+FMCG];41;66927043.36;5396.50900399;1588070.21416
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+e-Learning+Airlines/Aviation+Hospitality+Import and Export+Leisure, Travel & Tourism+Logistics and Supply Chain+Package/Freight Delivery];31;27911987.575;78.8270785496;2293984.30104
+[Non-Profit Organization Management+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants];35;38768655.3;214.304456722;638419.499822
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+Airlines/Aviation+Pharmaceuticals];31;16463857.96;108.409636046;530865.694613
+[Hospital & Health Care+Medical Devices+Pharmaceuticals+Biotechnology+Defense & Space+Health Care];29;3946580.769;107.634771398;474709.918362
+[Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants+Food Production+Information Services+Airlines/Aviation+Import and Export+International Trade and Development+Logistics and Supply Chain];41;66927043.36;2937.84134231;1319035.07693
+[Information Technology and Services+ITES];41;99682199.61;321.327867443;721702.324543
+[Banking+Financial Services+Airlines/Aviation+Biotechnology+Defense & Space+Pharmaceuticals+Telecommunications];29;3946580.769;111.675217983;232256.296387
+[Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Research+Aviation & Aerospace+Business Supplies and Equipment+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Packaging and Containers+Retail+Wine and Spirits+Manufacturing];41;42313414.47;1659.95118844;1215185.39896
+[Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Research+Aviation & Aerospace+Business Supplies and Equipment+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Packaging and Containers+Heavy Industry+Oil & Gas+Oil & Energy];41;66927043.36;1428.42639783;876798.571387
+[Package/Freight Delivery+Airlines/Aviation+Import and Export+International Trade and Development+Leisure, Travel & Tourism+Logistics and Supply Chain];31;39360117.19;61.7454125225;576227.1804
+[Non-Profit Organization Management+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants+BFSI];41;66927043.36;2375.8774562;1310416.66489
+[Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles];41;17699785.58;721.139739275;984097.375013
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+e-Learning];31;16463857.96;159.414099652;513510.513875
+[Hospital & Health Care+Medical Devices+Pharmaceuticals+Entertainment+Publishing+Sporting Goods+Health Care];24;15752547.25;82.0000321849;540794.115275
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+FMCG];41;66927043.36;4608.62665421;1605329.64574
+[Non-Profit Organization Management+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants];41;66927043.36;1935.66356717;1311565.8587
+[Farming+Fishery];19;7398362.912;56.6548365362;456312.373833
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development];31;16463857.96;173.982240085;722442.714081
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Aviation & Aerospace+Business Supplies and Equipment+Glass, Ceramics & Concrete+Trading];41;66927043.36;5060.56778604;1649255.8997
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+FMCG+Trading];41;66927043.36;4608.62665421;1605329.64574
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Business Supplies and Equipment+Industrial Automation+Mechanical or Industrial Engineering+FMCG];41;66927043.36;5182.07263537;1606086.85299
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications];31;16463857.96;188.778973688;525958.559813
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+FMCG];41;66927043.36;4608.62665421;1605329.64574
+[Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles];41;17699785.58;721.139739275;984097.375013
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Entertainment+FMCG];41;66927043.36;4608.62665421;1605329.64574
+[Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+EPC];35;39649766.39;2021.22974216;1220997.58535
+[Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles];41;17699785.58;721.139739275;984097.375013
+[Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants+Food Production+Information Services];41;66927043.36;1927.37681697;1311565.8587
+[Apparel & Fashion+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Supermarkets+Tobacco+Wholesale+Business Supplies and Equipment+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering];41;66927043.36;5303.25644311;1588097.39206
+[Outsourcing/Offshoring];22;10236376.78;8474.54398298;656780.353622
+[Entertainment+Information Services+Publishing+Fine Art+Sporting Goods+Wine and Spirits];24;14645806.57;304.210691394;664351.908629
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications];31;16463857.96;188.778973688;525958.559813
+[Computer Software+Information Technology and Services+Internet+Semiconductors];41;99682199.61;317.74660294;728318.1083
+[Banking+Financial Services];24;12918868.97;19730.0223367;355352.797933
+[Accounting+Business Supplies and Equipment+Human Resources+Import and Export+Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Real Estate+Airlines/Aviation+Hospitality+International Trade and Development+Leisure, Travel & Tourism+Package/Freight Delivery];31;39360117.19;1878.35083877;891250.366889
+[Human Resources];19;6135713.813;335.833333333;763625.50632
+[Accounting+Business Supplies and Equipment+Human Resources+Import and Export+Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Airlines/Aviation+Hospitality+International Trade and Development+Leisure, Travel & Tourism+Package/Freight Delivery];31;39360117.19;8208.49802471;809565.320489
+[Hospital & Health Care+Medical Devices+Pharmaceuticals+Health Care];24;15933685.75;76.8886086302;539080.685488
+[Human Resources+Management Consulting+Outsourcing/Offshoring+Professional Training & Coaching];22;10236376.78;7042.42100051;756812.749744
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+Business Supplies and Equipment+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Packaging and Containers+Retail+Wine and Spirits+e-Learning];41;66927043.36;6770.88317935;1656098.01249
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+Business Supplies and Equipment+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Packaging and Containers+Airlines/Aviation+Pharmaceuticals];41;66927043.36;6608.94203237;1688342.96956
+[Education Management+e-Learning+Research];27;17328626.46;3940.26661066;459562.187343
+[Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Infrastructure];35;39649766.39;2021.22974216;1220997.58535
+[Management Consulting];19;8302725.544;767.092331843;833383.203386
+[Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Research+Aviation & Aerospace+Business Supplies and Equipment+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Packaging and Containers+Retail+Wine and Spirits];41;66927043.36;3138.15372767;1128369.55146
+[Design+Fine Art+Entertainment+Publishing];24;14809668.0;4624.31507024;474815.68575
+[Hospital & Health Care+Medical Devices+Pharmaceuticals];24;15933685.75;76.8886086302;539080.685488
+[Computer Software+Information Technology and Services+Internet+Semiconductors];41;99682199.61;317.74660294;728318.1083
+[Education Management+e-Learning+Research+Civil Engineering+Mechanical or Industrial Engineering];27;17711655.2;3222.12131507;537773.159689
+[Non-Profit Organization Management+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism];41;66927043.36;1905.91042082;1292317.00092
+[Banking+Financial Services+BFSI];24;10665425.9315;79.8111977383;825255.609829
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Packaging and Containers];41;66927043.36;6582.43074106;1676357.13757
+[Hospital & Health Care+Medical Devices+Pharmaceuticals+Health Care];24;15933685.75;76.8886086302;539080.685488
+[Business Supplies and Equipment+Import and Export+Logistics and Supply Chain+Consumer Goods+Electrical/Electronic Manufacturing+Industrial Automation+Mechanical or Industrial Engineering+Packaging and Containers+Retail+Consumer Durables];41;66927043.36;5463.0034262;1655121.74741
+[Banking+Financial Services+BFSI];24;10665425.9315;79.8111977383;825255.609829
+[Design+Fine Art];16;2225590.413;1747.34200158;347925.568833
+[Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate];35;39649766.39;2021.22974216;1220997.58535
+[Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants+Food Production];41;66927043.36;1835.55289187;1311565.8587
+[Airlines/Aviation+Automotive+Machinery+Oil & Energy+Plastics+Biotechnology+Defense & Space+Pharmaceuticals+Telecommunications+Hospitality+Import and Export+International Trade and Development+Leisure, Travel & Tourism+Logistics and Supply Chain+Package/Freight Delivery];41;17699785.58;813.588045391;1433509.27549
+[Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+EPC+Heavy Industry+Infrastructure];35;39649766.39;1890.01028635;974906.6352
+[Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Aviation & Aerospace+Business Supplies and Equipment+Industrial Automation+Mechanical or Industrial Engineering];41;66927043.36;5275.31559809;1606073.02424
+[Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications];31;16463857.96;188.778973688;525958.559813

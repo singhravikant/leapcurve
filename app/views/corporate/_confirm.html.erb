@@ -1,0 +1,120 @@
+<style>
+  #confirm {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 35%;
+    right: 35%;
+    border: 1px solid gray;
+    width: 30%;
+    padding: 3% 2%;
+    background-color: white;
+    z-index: 5;
+    border-radius: 2%;
+    text-align: center;
+  }
+
+  #ok {
+    background-color: #5bc0de;
+    border: 1px solid #5bc0de;
+    border-radius: 2%;
+    padding: 2% 6%;
+    cursor: pointer;
+  }
+
+  #cancel {
+    background-color: #dadee6;
+    border: 1px solid #dadee6;
+    border-radius: 2%;
+    padding: 2% 6%;
+    cursor: pointer;
+  }
+
+  #checkbox {
+    opacity: 0;
+  }
+
+  #checkbox:checked ~ #checkmark {
+    background-color: black;
+  }
+
+  .padding {
+    padding: 15px 0px;
+    font-size: 1.3em;
+  }
+
+  #checkmark {
+    border: 4px solid white;
+    outline: 5px solid black;
+    position: absolute;
+    left: -15px;
+    top: 5px;
+    padding: 5px;
+    background-color: white;
+  }
+
+  #del {
+    position: relative;
+  }
+
+</style>
+
+
+<div id="confirm">
+  <form id="confirm_form">
+    <label class="padding" id="label"></label>
+    <div class="padding" id="del_appli">
+      <label id="del"><input type="checkbox" id="checkbox" name="delete_applicant" value="true">Delete Applicants also
+        <span id="checkmark"></span></label>
+    </div>
+    <div class="padding">
+      <button type="button" id="ok">Ok</button>
+      <button type="button" id="cancel">Cancel</button>
+    </div>
+  </form>
+  </for>
+</div>
+<script>
+    var role_id;
+
+    async function doconfirm(msg, check) {
+        document.getElementById('confirm').style.display = 'block';
+        if (check) {
+            document.getElementById('del_appli').style.display = 'block';
+        } else {
+
+           var confirm_form= document.getElementById('confirm_form');
+            var checkbox=document.getElementById('del_appli');
+            confirm_form.removeChild(checkbox)
+        }
+        document.getElementById('label').innerHTML = msg;
+        let promise = new Promise((resolve, reject) => {
+            $('#cancel').on('click', function () {
+                document.getElementById('confirm').style.display = 'none';
+                resolve(false)
+            })
+            $('#ok').on('click', function () {
+                document.getElementById('confirm').style.display = 'none';
+                resolve(true)
+            })
+
+        });
+
+        let result = await promise; // wait till the promise resolves (*)
+
+        return result;
+
+        role_id = id;
+    }
+
+    // $('#ok').on('click',function () {
+    //     document.getElementById('confirm').style.display='none';
+    //     delete_role(role_id);
+    //     return true;
+    // })
+    // $('#cancel').on('click',function () {
+    //     document.getElementById('confirm').style.display='none';
+    //     return false;
+    // })
+    // bool=doconfirm("Do you sure want to delete this Role ?",true);
+</script>

@@ -1,0 +1,331 @@
+<% if browser.device.mobile? %>
+
+
+
+<% elsif browser.device.tablet? %>
+
+
+
+<% else %>
+
+
+    <style>
+      .section {
+        position: relative;
+        display: block;
+
+        text-align: center;
+        width: 100%;
+        float: left;
+      }
+
+      form {
+        position: relative;
+        display: block;
+        float: left;
+        width: 100%;
+      }
+
+      .article {
+        padding-left: 0%;
+        padding-right: 0%;
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+        padding-bottom: 5%;
+
+      }
+.row{
+  position: relative;
+  float: left;
+  display: block;
+  width: 65%;
+  padding: 0% 25% 2% 10%;
+
+}
+.col{
+  position: relative;
+  float: left;
+  display: block;
+  width: 100%;
+
+}
+      .col h2{
+        margin: 10px 0px 10px 0px;
+        font-size: 20px;
+      }
+.col p{
+  margin: 5px 0px 15px 0px;
+  font-size: 15px;
+  color: #716f6f;
+
+}
+.span-color{
+  color: #716f6f;
+
+}
+.col .per-80{
+  width: 70%;
+  margin: 0;
+  position: relative;
+  display: block;
+  float: left;
+}
+.col .per-33{
+  width: 33%;
+  margin: 0;
+  position: relative;
+  display: block;
+  float: left;
+}
+.col .li_border{
+  border-right: 1px solid;
+  border-left: 1px solid;
+}
+      .col .per-33 span{
+        width:100%;
+        width: 100%;
+        position: relative;
+        display: block;
+        text-align: center;
+      }
+
+
+.col ul{
+  position: relative;
+  display: block;
+  float: left;
+  padding: 0;
+  width: 100%;
+}
+      .col .per-20{
+        width: 30%;
+        margin: 0;
+        position: relative;
+        display: block;
+        float: left;
+      }
+      .col .per-20 a {
+        border-bottom: 1px solid;
+        font-size: 10px;
+        cursor: pointer;
+
+
+      }
+      .form-div-right {
+        /*border:2px solid  #0d305f;*/
+        text-align: left;
+        display: block;
+        position: relative;
+        float: left;
+        width: 80%;
+      }
+      .form-div-left {
+        /*border:2px solid  #0d305f;*/
+        text-align: center;
+        display: block;
+        position: relative;
+        padding: 10% 0% 10% 0;
+        float: left;
+        width: 20%;
+      }
+
+
+      .form-div-left ul {
+
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .form-div-left ul li a {
+        cursor: pointer;
+      }
+
+
+      .form-div-left ul .li-1 {
+        padding: 5px;
+        margin-bottom: 10px
+      }
+      .form-div-left ul .li-2 {
+        padding: 5px;
+        margin-bottom: 10px;
+        color: white;
+        background: #67b5bf;
+      }
+      .form-div-left ul .li-3 {
+        padding: 5px;
+        margin-bottom: 10px;
+        background: #f0f0f0;
+
+      }
+      .form-div-left ul .li-4 {
+        padding: 5px;
+        margin-bottom: 10px;
+        background: #f0f0f0;
+
+      }
+      @media (min-width: 1600px) {
+        .col-less{
+          width:80%;
+        }
+      }
+        .role-margin {
+  margin-bottom: 5px;
+}
+.border-btm{
+border-bottom:1px solid;
+  color: #716f6f;
+
+}
+.font-s{
+  font-size: 30px;
+}
+    </style>
+
+    <section class="section">
+      <article class="article">
+        <div class="form-div-left">
+          <ul>
+            <li class="li-1"><span>JUMP TO...</span></li>
+            <li class="li-2"><span><a>SUMMARY</a></span></li>
+            <li class="li-3"><span><a>APPLICATION</a></span></li>
+            <li class="li-4"><span><a>SALARY</a></span></li>
+          </ul>
+        </div>
+        <div class="form-div-right">
+          <div class="row">
+            <div class="col">
+          <h2>ROLE SUMMARY</h2>
+            </div>
+            <div class="col">
+              <p>ASSISTANT MANAGER, FINANCE - PAYROLL</p>
+            </div>
+
+            <div class="col">
+              <div class="per-80">
+                <span class="span-color">Added by Pooja Das on Jun XYZ</span>
+              </div>
+              <div class="per-20">
+                <a>DELETE ROLE</a>
+              </div>
+              </div>
+            <div class="col">
+              <span class="span-color">(last edited on Jul XYZ)</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col col-less">
+              <ul>
+              <li class="per-33 ">
+                <span class="span-color">CAREER LEVEL</span><br>
+                <span class="font-s">25</span>
+
+              </li>
+              <li class="per-33 li_border">
+                <span class="span-color">RESPONSES</span><br>
+                <span class="font-s">0</span>
+              </li>
+              <li class="per-33">
+                <span class="span-color">SALARY RANGE</span><br>
+                <span>XYZ</span>
+
+              </li>
+              </ul>
+              </div>
+            </div>
+
+
+             <div class="row">
+            <div class="col role-margin">
+              <div class="per-80">
+                <span ><b>ROLE INFORMATION</b></span>
+              </div>
+              <div class="per-20">
+                <a><b>EDIT</b></a>
+              </div>
+            </div>
+            <div class="col">
+              <span class="span-color">Industry</span> -
+              <span class="span-color">XYZ</span>
+            </div>
+
+            <div class="col">
+              <span class="span-color">Salary Range</span> -
+              <span class="span-color">XYZ</span>
+            </div>
+
+            <div class="col">
+              <span class="span-color">Role Seniority</span> -
+              <span class="span-color">XYZ</span>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col role-margin">
+              <div class="per-80">
+                <span ><b>CAREER LEVEL</b></span>
+              </div>
+              <div class="per-20">
+                <a ><b>EDIT</b></a>
+              </div>
+            </div>
+            <div class="col">
+              <span class="span-color"><a class="border-btm">click to view</a></span>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col role-margin">
+              <div class="per-80">
+                <span ><b>CANDIDATE REQUIREMENTS</b></span>
+              </div>
+              <div class="per-20">
+                <a><b>EDIT</b></a>
+              </div>
+            </div>
+            <div class="col">
+              <span class="span-color">Experience</span> -
+              <span class="span-color">XYZ</span>
+            </div>
+
+            <div class="col">
+              <span class="span-color">Preferred Degrees</span> -
+              <span class="span-color">XYZ</span>
+            </div>
+
+            <div class="col">
+              <span class="span-color">Preferred Colleges</span>
+              <span class="span-color">XYZ</span>
+            </div>
+
+            <div class="col">
+              <span class="span-color">Technical Skills</span>
+              <span class="span-color">XYZ</span>
+            </div>
+
+          </div>
+
+
+          <div class="row">
+            <div class="col role-margin">
+                <span ><b>APPLICATION</b></span>
+              </div>
+
+
+            <div class="col">
+              <span class="span-color">LINK:</span><span class="span-color"><a class="border-btm" href="/#!/page/index">www.leapcurve.com</a></span>
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </article>
+    </section>
+<% end %>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% get_seo_data() %>
+  <title><%= @title %></title>
+  <meta name="description" content="<%= @description %>">
+  <%= render :partial => 'layouts/google_analytics' %>
+  <meta name="keywords" content="<%= @keyword %>">
+  <link rel="shortcut icon" type="image/gif/png" href="/assets/favcon-titlt.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <style>
+    .btn-head {
+      float: right;
+      margin: 10px 10px 10px 0px;
+      padding-right: 10px
+
+    }
+
+    .btn-head a {
+      color: #3e3e3e;
+      font-family: Montserrat-Regular;
+      text-decoration: underline;
+    }
+
+    .brd {
+      border-right: 1px solid black;
+    }
+
+    .tooltip:hover .tooltipText {
+      visibility: visible !important;
+    }
+
+    .tooltipText {
+      float: left;
+      visibility: hidden;
+      /*width: 120px;*/
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 5px;
+
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+      right: 0;
+    }
+
+    .show {
+      visibility: visible !important;
+    }
+
+    #flash {
+      /*float: right;*/
+      /* float: right; */
+      visibility: hidden;
+      top: 50px !important;
+      text-align: center;
+      width: 25%;
+      position: absolute;
+      left: 37%;
+      margin: auto;
+      z-index: 777;
+      font-weight: bold;
+      font-family: Poppins-SemiBold;
+
+    }
+
+    @font-face {
+      font-family: Montserrat-Regular;
+      src: url("/assets/fonts/Montserrat-Regular.otf")
+    }
+
+    @font-face {
+      font-family: Montserrat-Medium;
+      src: url('/assets/fonts/Montserrat-Medium.otf')
+    }
+
+    @font-face {
+      font-family: Montserrat-SemiBold;
+      src: url('/assets/fonts/Montserrat-SemiBold.otf')
+    }
+
+    @font-face {
+      font-family: Montserrat-Bold;
+      src: url('/assets/fonts/Montserrat-Bold.otf')
+    }
+
+    @font-face {
+      font-family: Poppins-Regular;
+      src: url('/assets/fonts/Poppins-Regular.ttf')
+    }
+
+    @font-face {
+      font-family: Poppins-Medium;
+      src: url('/assets/fonts/Poppins-Medium.ttf')
+    }
+
+    @font-face {
+      font-family: Poppins-SemiBold;
+      src: url('/assets/fonts/Poppins-SemiBold.ttf')
+    }
+
+    @font-face {
+      font-family: Poppins-Bold;
+      src: url('/assets/fonts/Poppins-Bold.ttf')
+    }
+
+    .alert-success {
+      /*visibility: visible !important;*/
+      padding: 10px;
+      border-radius: 2px;
+      border: 1px solid gray;
+      color: white;
+      background-color: green;
+    }
+
+    .alert-notice {
+      visibility: hidden;
+      padding: 10px;
+      border-radius: 2px;
+      border: 1px solid gray;
+      color: white;
+      background-color: green;
+
+    }
+
+    .alert-alert {
+      display: none;
+    }
+
+    .alert-warning {
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid gray;
+      color: white;
+      background-color: red;
+    }
+
+    .logo {
+      float: left;
+      height: 50px;
+      font-size: 18px;
+      padding: 15px 30px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .logo {
+        width: 23%;
+        min-height: 50px;
+      }
+
+      #flash {
+        /* float: right; */
+        visibility: hidden;
+        margin-top: 10px;
+        text-align: center;
+        width: 35%;
+        position: absolute;
+        left: 32%;
+        margin: auto;
+        z-index: 777;
+        font-weight: bold;
+        font-family: Arial;
+      }
+    }
+
+    @media only screen and (max-width: 525px) {
+      .logo {
+        padding: 2% 2%;
+        height: 35px;
+        width: 40%;
+        min-height: 0;
+      }
+
+      .btn-head {
+        float: right;
+        margin: 23px 4px 0px 0px;
+        padding-right: 5px;
+        font-size: 12px;
+      }
+
+      #flash {
+        visibility: hidden;
+        margin-top: 10px;
+        text-align: center;
+        width: 50%;
+        position: absolute;
+        margin: auto;
+        font-size: 13px;
+        left: 90px;
+        z-index: 777;
+        font-weight: bold;
+        font-family: Arial;
+      }
+
+      .alert-success {
+        padding: 2px;
+        border-radius: 2px;
+        border: 1px solid gray;
+        color: white;
+        position: absolute;
+        background-color: green;
+        font-size: 12px;
+      }
+    }
+  </style>
+  <style>
+
+    .loader-overlay {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1031;
+
+    }
+
+    .loader {
+      position: fixed;
+      z-index: 1032;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid gray;
+      border-bottom: 16px solid gray;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    @media (max-width: 991px) {
+      .loader {
+        position: fixed;
+        z-index: 1032;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 6px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 6px solid gray;
+        border-bottom: 6px solid gray;
+        width: 60px;
+        height: 60px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+      }
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    a{
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body style=" margin: 0;">
+<header>
+  <% if session.has_key?('User') && session[:User]['islogin'] %>
+    <% @path = '/corporate/dashboard' %>
+  <% else %>
+    <% @path = '/#!/page/index#home3' %>
+  <% end %>
+  <a onclick="return logout(3)"><img src="/assets/logo1.png" alt="Mylestone" class="logo"></a><!--  <img src="assets/logo1.png" class="navbar-brand img-brand" class="img-responsive">-->
+  <div class="btn-head">
+    <% if session.has_key?('User') && session[:User]['islogin'] %>
+      <%#= session[:User]['Name'] %>
+      <div class="tooltip">
+        <%#= link_to "LOGOUT", '', :onclick=>"logout()" %>
+        <a name="LOGOUT" onclick="logout(1)" style="text-decoration: underline; cursor: pointer" class="addrole">LOGOUT</a>
+        <div class="tooltipText">
+          <%= session[:User]['Email'] %>
+        </div>
+      </div>
+    <% else %>
+      <!--      <div class="tooltip">-->
+      <%#= link_to "LOG IN", corporate_login_path %>
+      <!--      </div>-->
+
+    <% end %>
+  </div>
+  <div class="btn-head brd">
+    <% if session.has_key?('User') && session[:User]['islogin'] %>
+      <%#= session[:User]['Name'] %>
+      <%#= link_to "MY ACCOUNT", '' ,:onclick=>"return logout(2);location.href='/corporate/add_new_role'"%>
+      <a onclick="return logout(2)" >MY ACCOUNT</a>
+    <% else %>
+      <!--      <div class="tooltip">-->
+      <%#= link_to "SIGN UP", corporate_registration_path %>
+      <!--      </div>-->
+    <% end %>
+  </div>
+</header>
+<main>
+
+  <div id="flash">
+    <% if flash.blank? %>
+      <div class="alert-notice">!</div>
+    <% else %>
+      <% flash.each do |key, value| %>
+        <div class="alert-<%= key %>"><%= value %></div>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="hide" id="loader">
+    <div class="loader"></div>
+    <div class="loader-overlay"></div>
+  </div>
+
+  <%= yield %>
+  <% if session[:User].present? && session[:User]['que_optional'].present?
+       session[:User]['que_optional'] = Hash.new
+     end
+  %>
+</main>
+<script type="text/javascript">
+    async function submit_role(page) {
+        var part_value=0;
+        var post
+        if (page == 'add_new_role') {
+            post = '/corporate/add_newrole';
+        } else if (page == 'edit_role') {
+            post = '/corporate/update_role';
+        }
+        var partial_btn = $(".question.show button[name='partial']")
+        for (var j = 0; j < partial_btn.length; j++) {
+            if (partial_btn.length > 1 && partial_btn[j].value != '21') {
+                if( parseInt(partial_btn[j].value) > parseInt(part_value)){
+                    part_value = partial_btn[j].value;
+                    // break;
+                }
+            }
+            else {
+                part_value = partial_btn[j].value;
+            }
+
+        }
+        let promise = new Promise((resolve, reject) => {
+            $.ajax({
+                url: post,
+                data: $('form').serialize() + '&partial=' + part_value+ '&logout=' + 'true',
+                type: 'post',
+                success: function (respose) {
+                    resolve(true);
+                }
+            })
+        });
+        var result = await promise; // wait till the promise resolves (*)
+        return result;
+
+    }
+
+    async function logout(id) {
+        var issave;
+        var loc = window.location.pathname.split('/');
+        if (loc[2] == 'add_new_role' || loc[2] == 'edit_role') {
+            // var btn = confirm('Would you like to save this role before logging out?')
+            if(id==1){
+                var btn = await advance_confirm('Would you like to save this role before logging out?')
+                if (btn == 0) {
+                    var btn1 = await submit_role(loc[2]);
+                    logt()
+                } else if (btn == 1) {
+                    logt()
+                } else {
+                    // logt()
+                }
+            }else{
+                var btn = await advance_confirm('Would you like to save this role?')
+                if (btn == 0) {
+                    var btn1 = await submit_role(loc[2]);
+
+                    if (id == 3) {
+                        location.href = '/corporate/dashboard'
+                    }else if(id==2){
+                        location.href = '/corporate/my_account'
+                    }
+                    return true;
+                } else if (btn == 1) {
+                    if (id == 3) {
+                        location.href = '/corporate/dashboard'
+                    } else if (id == 2) {
+                        location.href = '/corporate/my_account'
+                    }
+                    return true;
+                }else if (btn == 2) {
+                    return false;
+                }
+            }
+
+        }
+        else {
+            if(id==1) {
+                logt()
+            }else{
+                if (id == 3) {
+                    location.href = '/corporate/dashboard'
+                }else if(id==2){
+                    location.href = '/corporate/my_account'
+                }
+                return true;
+            }
+        }
+
+    }
+
+    function isNumber(evt) {
+        evt = (evt) ? evt : window.event;
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            return false;
+        }
+        return true;
+    }
+
+    function logt() {
+        showloader();
+        $.ajax({
+            url: '/corporate/logout',
+            data: JSON.stringify({}),
+            type: 'get',
+            success: function (response) {
+                location.href = '/#!/page/index#home3'
+            }
+        })
+
+    }
+
+    function record_log(info) {
+        $.ajax({
+            url: '/corporate/record_log',
+            data: $('form').serialize() + '&data=' + info,
+            type: 'post',
+            success: function () {
+
+            }
+
+        })
+    }
+
+    function message(msg) {
+        var alert = document.getElementById('flash');
+        alert.innerHTML = msg
+        alert.classList.add('alert-success')
+        alert.classList.add('show')
+        alert.classList.remove('hide')
+
+        setTimeout(function () {
+            alert.classList.add('hide')
+            alert.classList.remove('show')
+        }, 5000);
+
+    }
+
+    var loader = document.getElementById('loader').classList;
+
+    function showloader() {
+        loader.add('show');
+        loader.remove('hide');
+    }
+
+    function hideloader() {
+        loader.remove('show');
+        loader.add('hide');
+    }
+
+    setTimeout(function () {
+        document.getElementById('flash').classList.remove('show');
+    }, 5000)
+    var old_url = window.location.pathname;
+    // setInterval(function () {
+    //     if (window.location.pathname != '/corporate/login'&&window.location.pathname != '/corporate/registration') {
+    //         $.ajax({
+    //             url: "/corporate/login_status",
+    //             type: 'post',
+    //             data: $('form').serialize(),
+    //             success: function (response) {
+    //                 if (response == 'false') {
+    //                     location.reload();
+    //                 }
+    //
+    //             }
+    //
+    //         })
+    //     }
+    //     else if (window.location.pathname == '/corporate/login'&&window.location.pathname != '/corporate/registration') {
+    //         $.ajax({
+    //             url: "/corporate/login_status",
+    //             type: 'post',
+    //             data: $('form').serialize(),
+    //             success: function (response) {
+    //                 if (response == 'true') {
+    //                     window.location.pathname = '/corporate/dashboard'
+    //                 }
+    //
+    //             }
+    //
+    //         })
+    //     }
+    // }, 3000)
+</script>
+</body>
+</html>

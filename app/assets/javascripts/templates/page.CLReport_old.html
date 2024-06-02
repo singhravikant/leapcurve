@@ -1,0 +1,177 @@
+<style>
+    .font_size{
+        font-family:Verdana;
+        word-spacing:2px;
+    }
+    .label{
+        padding-left: 1%;
+    }
+</style>
+<div class="container">
+    <div class="row" style="margin-top: 7%">
+        <div class="col-md-12">
+            <div class="col-md-3">
+                <h3 class="font_size">Career Level: {{UserInfo.Level}}</h3>
+                <h4 class="font_size"><i>Salary: INR {{UserInfo.Salary}} Lakhs</i></h4>
+            </div>
+            <div class="col-md-offset-6 col-md-3">
+                <div class="font_size">Company: {{UserInfo.Company}}</div>
+                <div class="font_size">Industry: {{UserInfo.Industry}}</div>
+                <div class="font_size">Function: {{UserInfo.Role}}</div>
+                <div class="font_size"><a style="color: black;cursor: pointer" ng-click="openIndustry()">View Industry Group</a></div>
+                <div class="font_size"><a style="color: black;cursor: pointer" ng-click="openFunction()">View Function Group</a></div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-md-2" style="margin-top: 2%">
+            <b class="font_size" style="float:right "><u>Career Level</u></b>
+        </div>
+        <div class="col-md-6">
+            <highchart id="chart" style="height: 80px;" class="font_size" config="chartConfig_bar"></highchart>
+        </div>
+        <div class="col-md-4" style="margin-top: 2%">
+            <p class="font_size">You are above {{initalBar['levelVal']}}% of the people in {{highestFilter}}</p>
+        </div>
+    </div>
+    <div class="row" ng-if="showChart">
+        <div class="col-md-2" style="margin-top: 2%">
+            <b class="font_size" style="float:right "><u>Salary</u></b>
+        </div>
+        <div class="col-md-6" >
+            <highchart id="chart" style="height: 80px;" config="chartConfig_barSalary"></highchart>
+        </div>
+        <div class="col-md-4" style="margin-top: 2%">
+            <p class="font_size">You are above {{initalBar['SalaryVal']}}% of the people in {{highestFilter}}</p>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 1%;">
+        <div style="padding: 5px; background-color: #BDCDE5">
+            <h3 class="font_size" style="padding-left:10px;">Career Level</h3>
+        </div>
+        <div class="font_size" style="padding-left:15px; margin-top: 1%"><a style="color: black" >View Industry Group</a> | <a style="color: black">View Function Group</a></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="margin-top: 2%">
+            <highchart id="chart" style="height: 180px;" config="chartConfig_barUserPercent"></highchart>
+        </div>
+    </div>
+    <hr/>
+    <div class="row" ng-if="showChart" style="margin-top: 1%;">
+        <div style="padding: 5px; background-color: rgb(195,214,155)">
+            <h3 class="font_size" style="padding-left:10px;">Salary</h3>
+        </div>
+        <!--<div class="font_size" style="padding-left:15px; margin-top: 1%"><a style="color: black">View Industry Group</a> | <a style="color: black">View Function Group</a></div>-->
+    </div>
+    <div class="row" ng-if="showChart" style="margin-top: 2%">
+        <div class="col-md-12 ">
+            <div class="col-md-8 ">
+                <div class="col-md-12">
+                    <div class="col-md-2" ng-if="btnComany">
+                        <button type="submit" ng-click="getChartCompensation('Company')"  class="btn btn-primary btn-md"
+                                >My Company
+                        </button>
+                    </div>
+                    <div class="col-md-3" ng-if="btnFunInd">
+                        <button type="submit" ng-click="getChartCompensation('Industry and Function')" class="btn btn-primary btn-md">My Function & Industry
+                        </button>
+                    </div>
+                    <div class="col-md-2" ng-if="btnFun">
+                        <button type="submit" ng-click="getChartCompensation('Function')" class="btn btn-primary btn-md"
+                                >My Function
+                        </button>
+                    </div>
+                    <div class="col-md-2" ng-if="btnInd">
+                        <button type="submit" ng-click="getChartCompensation('Industry')" class="btn btn-primary btn-md"
+                                >My Industry
+                        </button>
+                    </div>
+                    <div class="col-md-3" ng-if="btnFunGrp">
+                        <button type="submit"ng-click="getChartCompensation('Function Group')" class="btn btn-primary btn-md">My Function Group
+                        </button>
+                    </div>
+                    <div class="col-md-2" ng-if="btnIndGrp">
+                        <button type="submit" ng-click="getChartCompensation('Industry Group')" class="btn btn-primary btn-md">My Industry Group
+                        </button>
+                    </div>
+                </div>
+                <p class="col-md-12 text-center mt-lg font_size">{{title}}</p>
+                <div class="col-md-12 col-sm-8 col-xs-8" style="border: 1px solid blue;overflow: hidden">
+                    <highchart id="chart" class="font_size" config="chartConfig_comp"></highchart>
+                </div>
+                <div class="col-md-12 font_size" id="rot"
+                     style="z-index: 1;text-align: center; margin-left: -17%; margin-top: -25%;">Compensation (INR
+                    Lakhs)
+                </div>
+                <p class=" col-md-12 text-center font_size">{{CompensatioXaxisTitle}}</p>
+            </div>
+
+            <div class="col-md-4" style="margin-top: 5%">
+                <div class="col-md-12 font_size text-center" style="margin-bottom: 2%">
+                    <b>Salary Summary</b>
+                </div>
+                <div class="row" ng-if="chartConfig_barCom.xAxis.categories[0]!=null" style="margin-top: 1%">
+                    <div class="col-md-12">
+                        <p style="text-align: left" class="font_size">{{chartConfig_barCom.xAxis.categories[0]}}</p>
+                        <highchart id="chart" style="height:40px;" class="font_size" config="chartConfig_barCom"></highchart>
+                    </div>
+
+                </div>
+                <div class="row" ng-if="chartConfig_barInFn.xAxis.categories[0]!=null" style="margin-top: 1%">
+                    <div class="col-md-12">
+                        <p style="text-align: left" class="font_size">{{chartConfig_barInFn.xAxis.categories[0]}}</p>
+                        <highchart id="chart" class="font_size" style="height: 40px;" config="chartConfig_barInFn"></highchart>
+                    </div>
+
+                </div>
+                <div class="row" ng-if="chartConfig_barInGrp.xAxis.categories[0]!=null" style="margin-top: 1%">
+                    <div class="col-md-12">
+                        <p style="text-align: left" class="font_size">{{chartConfig_barInGrp.xAxis.categories[0]}}</p>
+                        <highchart id="chart" class="font_size" style="height: 40px; " config="chartConfig_barInGrp"></highchart>
+                    </div>
+
+                </div>
+                <div class="row" ng-if="chartConfig_barFnGrp.xAxis.categories[0]!=null" style="margin-top: 1%">
+                    <div class="col-md-12">
+                        <p style="text-align: left" class="font_size">{{chartConfig_barFnGrp.xAxis.categories[0]}}</p>
+                        <highchart id="chart" class="font_size" style="height: 40px; " config="chartConfig_barFnGrp"></highchart>
+                    </div>
+
+                </div>
+                <div class="row" ng-if="chartConfig_barIn.xAxis.categories[0]!=null" style="margin-top: 1%">
+                    <div class="col-md-12">
+                        <p style="text-align: left " class="font_size">{{chartConfig_barIn.xAxis.categories[0]}}</p>
+                        <highchart id="chart" class="font_size" style="height: 40px; " config="chartConfig_barIn"></highchart>
+                    </div>
+
+                </div>
+                <div class="row" ng-if="chartConfig_barFn.xAxis.categories[0]!=null" style="margin-top: 1%">
+                    <div class="col-md-12">
+                        <p style="text-align: left" class="font_size">{{chartConfig_barFn.xAxis.categories[0]}}</p>
+                        <highchart id="chart" class="font_size" style="height: 40px; " config="chartConfig_barFn"></highchart>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1" style="margin-top: 0%;background-color: rgb(195,214,155)">
+                        <p class="text-center mt-sm font_size">{{CL_Text}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 " ng-if="isbtn2selected" style="border: 1px solid blue;height: 350px;overflow: auto"></div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 3%">
+        <div class="col-md-4 col-sm-4"></div>
+        <div class="col-md-4 col-sm-4">
+
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <button class="btn btn-block btn-primary" style="width:50%;float:right; border-radius: 0px;font-family:verdana;word-spacing:2px;"
+                    ui-sref="app.briefreport">BACK            </button>
+        </div>
+    </div>
+
+</div>

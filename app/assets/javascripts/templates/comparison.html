@@ -1,0 +1,1574 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<style>
+    option[value="? string: ?"]{
+        display: none;
+    }
+    option[value="? string: ?"]:after {
+        content: 'select';
+    }
+    .icon-background1 {
+        color: rgb(108, 102, 192);
+        padding: 0 1%;
+
+    }
+
+    .icon-background2 {
+        color: rgb(192, 102, 102);
+        padding: 0 1%;
+    }
+
+    .select-1 {
+
+        width: 100%;
+        boredr: none;
+        background: transparent;
+        height: 30px;
+        border: none;
+        border-bottom: 2px solid;
+        boredr: none;
+        color: black;
+    }
+
+    .select-1 option {
+        background: #ffffff;
+    }
+
+    .mt-6 {
+        margin-top: 6px;
+    }
+
+    .scoreCls {
+        text-align: center;
+        padding: 0px;
+
+        /*border-bottom: 2px solid black;*/
+
+        text-transform: uppercase;
+        font-family: Poppins-SemiBold;
+        margin-top: 10px;
+
+        /*border-bottom: 1px solid black;*/
+        /*width: auto;*/
+    }
+
+    @media (max-width: 991px) {
+        .scoreCls {
+            text-align: center !important;
+            padding: 0px !important;
+            height: 50px !important;
+            margin-top: 0px !important;
+            /*border-bottom: 1px solid black;*/
+            /*width: auto;*/
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .select-1 {
+            margin-left: 30px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .select-1 {
+            width: 100% !important;
+            margin-left: 0px !important;
+        }
+    }
+
+    /*@media (max-width: 1200px) {*/
+    /*.top-row {*/
+    /*margin-top: 8% !important;*/
+    /*}*/
+    /*}*/
+
+    p.font_size.ng-binding {
+        margin: -5px 0px 0px 0px !important;
+        font-family: Montserrat-Regular;
+        font-size: 16px;
+    }
+
+    h2.font_size.text-center {
+        font-family: Poppins-Bold;
+        font-size: 22px;
+    }
+
+    .font_size {
+        font-family:Poppins-Regular;
+        word-spacing: 2px;
+        margin: 30px 0;
+    }
+
+    #comp_list li {
+        cursor: pointer;
+    }
+
+    #comp_list li.active {
+        color: red;
+    }
+
+    .loader-overlay1 {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1031;
+
+    }
+
+    @media (max-width: 1103px) {
+        .container {
+            margin-top: 3% !important;
+        }
+
+    }
+
+    .nav-style{
+        margin:0% !important;
+        background-color:#ffffff !important;
+        border-color: #ffffff !important;
+    }
+    .nav-img-height{
+        height: 70px !important;
+    }
+    .nav-margin-top{
+        margin-top: 2% !important;
+    }
+    .nav-ul-style{
+        list-style:none !important;
+        width:90% !important;
+    }
+    .nav-li-style{
+        display:inline !important;
+        float:right !important;
+        font-size:15px !important;
+        font-family:Montserrat-Regular !important;
+    }
+    .nav-li-a-style{
+        color:black !important;
+        padding: 0px 7px 0px 7px !important;
+        text-decoration: underline !important;
+        cursor: pointer !important;
+    }
+    .nav-li-a-style2{
+        color:black !important;
+        padding: 0px 7px 0px 7px !important;
+        border-right: 1px solid black !important;
+        cursor: pointer !important;
+        text-decoration: underline !important;
+    }
+
+    .nav-xs-margin-top{
+        margin-top: 0% !important;
+    }
+    .nav-xs-ul-style{
+        list-style:none !important;
+        margin-top: 0% !important;
+        text-align: center !important;
+        white-space: nowrap;
+        margin: 0 !important;
+        width: 100%;
+    }
+    .nav-xs-li-style{
+        display:inline !important;
+        font-size:15px !important;
+        font-family:Montserrat-Regular !important;
+        /* border-right: 1px solid black; */
+    }
+    .nav-xs-li-a-style{
+        color:black !important;
+        padding: 0px 7px 0px 7px !important;
+        display: inline !important;
+        border-right: 1px solid black !important;
+        cursor: pointer !important;
+        text-decoration: underline !important;
+    }
+    .nav-xs-li-a-style2{
+        color:black !important;
+        padding: 0px 7px 0px 7px !important;
+        display: inline !important;
+        text-decoration: underline !important;
+        cursor: pointer !important;
+    }
+    .top-row-style{
+        margin-top: 10% !important;
+    }
+    .div-height{
+        height:75px !important;
+    }
+    .top-row-style1{
+        border-right: 1px solid silver !important;
+        text-align: center;
+        height:65px !important;
+    }
+    .career-style{
+        font-size: 20px !important;
+        font-family: Poppins-Regular !important;
+        margin-top: 0px !important;
+    }
+    .career-span-style{
+        font-family:  Poppins-Bold;
+    }
+
+    .top-row-style2{
+        border-right: 1px solid silver;
+        height: 65px !important;
+        padding: 0;
+        text-align: left;
+    }
+    .company-style{
+        font-size: 14px !important;
+        font-family: Poppins-Regular;
+        margin-top: 0px;
+    }
+    .industry-font-size{
+        font-size: 11px !important;
+    }
+    .industry-a{
+        color: black;
+        cursor: pointer;
+    }
+    .industry-a-span{
+        text-decoration: underline;
+        font-size: 9px;
+    }
+    .function-style{
+        position: relative !important;
+        top: 10px !important;
+        font-size:11px !important;
+    }
+    .function-a{
+        color: black !important;
+        cursor: pointer !important;
+    }
+    .function-a-span{
+        text-decoration: underline;
+        font-size: 9px;
+    }
+    .top-row-style3{
+        font-family:  Poppins-Regular;
+        text-align: center;
+    }
+    .pref-style{
+        font-size:16px !important;
+    }
+    .pref-a-style{
+        color: black !important;
+        cursor: pointer !important;
+    }
+    .pref-i-style{
+        position: relative !important;
+        font-size: 40px !important;
+        top: 7px !important;
+    }
+    .career-top-xs{
+        margin-top: 95px;
+        margin-left: 0px;
+    }
+    .career-align-xs{
+        text-align: center;
+    }
+    .career-style-xs{
+        font-size: 20px !important;
+        font-family: Poppins-Regular !important;
+    }
+    .career-span{
+        font-family:  Poppins-Bold;
+    }
+    .salary-style{
+        font-size: 20px !important;
+        font-family: Poppins-Regular !important;
+        margin-top:0px !important;
+    }
+    .comp-div-style{
+        height: 53px;
+        text-align: center;
+    }
+    .company-style-xs{
+        font-size: 14px;
+        font-family:  Poppins-Regular;
+        margin-left: 0px;
+    }
+    .hr-style{
+        margin-top: 90px;
+    }
+    .pref-div-style{
+        font-family:  Poppins-Regular;
+        text-align: center;
+    }
+    .pref-style-xs{
+        font-size:16px;
+        font-family:Poppins-Regular;
+    }
+    .compare-div-style{
+        margin-left: 0% !important;
+        text-align: left !important;
+    }
+    .compare-div-span-style{
+        font-family: Poppins-Bold;
+        font-size:22px;
+    }
+    .within-span-style{
+        font-family: Poppins-Bold;
+        font-size:22px;
+    }
+    .compare-background{
+        background-color: #f0f0f0;
+        padding: 12px 5% 12px 3%;
+    }
+    .comp-xs-margin{
+        margin-top: -5px;
+    }
+    .within-xs-margin{
+        margin-top:20px;
+    }
+    .row-margin{
+        margin-top: 1%;
+    }
+    .top-font{
+        font-family: Poppins-Bold;
+    }
+    .within-font{
+        font-family:Poppins-Regular;
+    }
+    .click-font{
+        text-align: center;
+        font-size:14px;
+        font-family:Poppins-Regular;
+    }
+    .charts-name{
+        font-family: Poppins-SemiBold;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        left: 3.5%;
+    }
+    .names-font{
+        font-size: 12px;
+    }
+    .chart-top-margin{
+        margin-top: -11px !important;
+        padding-right: 0;
+    }
+    .chart-style{
+        min-width: 420px !important;
+        max-width: 420px !important;
+        /*max-width: 100%;*/
+        height: 65px !important;
+        margin: 0 auto !important;
+    }
+    .score-style{
+        font-family:Montserrat-Regular;
+        font-size:16px !important;
+        text-align: left !important;
+        padding: 0;
+        position: relative;
+        right:2.5%;
+    }
+    @media (min-width:1600px) and (max-width : 1750px){
+        .score-style {
+            right: 0;
+        }
+        }
+
+    /*@media(min-width: 1900px){*/
+        /*.score-style {*/
+            /*right:3.5%;*/
+
+        /*}*/
+    /*}*/
+    .view-more-style{
+        margin-left: 1.5% !important;
+        position: relative;
+        font-family: Montserrat-Regular;
+        font-size: 16px;
+        left: 3.5%;
+    }
+    .view-more-a-style{
+        color:black;cursor: pointer;
+        text-decoration: underline;
+    }
+    .score-div-style{
+        text-transform: uppercase !important;
+        font-family: Poppins-SemiBold !important;
+    }
+    .score-font{
+        font-family: Poppins-Bold;
+    }
+    .for-font{
+        font-family:Poppins-Regular;
+    }
+    .company-font{
+        font-family:Poppins-Regular;
+        font-size:22px;
+    }
+    .top-marg-comp{
+        margin-top: 1%;
+    }
+    .comp-span-font{
+        font-size:12px;
+    }
+    .chart-padd{
+        padding: 0px;
+    }
+    .score-chart-style{
+        min-width: 310px !important;
+        max-width: 800px !important;
+        height: 50px !important;
+        margin: 0 auto !important;
+    }
+    .salary-marg-top{
+        margin-top: 3%;
+    }
+    .salary-font{
+        font-family: Poppins-Bold;
+    }
+    .salary-chart-marg{
+        margin-top:2%;
+        padding: 0;
+    }
+    .promo-pointer{
+        cursor: pointer;
+    }
+    .circle-f_size{
+        font-size: 12px;
+        position: absolute;
+        top: 42%;
+        margin-left: 0px;
+    }
+    .exp-more-style{
+        border-radius: 0;
+        word-spacing: 2px;
+        font-family: Verdana;
+    }
+    .score-chart .highcharts-container{
+        height: 50px !important;
+    }
+    .comp-xs-name{
+        font-family:Poppins-SemiBold;
+        font-size:16px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    .name-font{
+        font-size: 12px;
+    }
+    .chart-div-xs{
+        margin-top: -2px;
+        padding: 0;
+    }
+    .chrats-xs-style{
+        min-width: 25%;
+        max-width: 100%;
+        height: 65px !important;
+    }
+    .score-xs-style{
+        font-family:Montserrat-Regular;
+        font-size:16px;
+        margin-top: -20px;
+    }
+    .view-div-xs{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-family:Montserrat-Regular;
+        font-size:16px;
+    }
+    .view-a-xs-style{
+        color:black;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .view_less-xs{
+        padding: 0px;
+        font-family:Montserrat-Regular;
+        font-size:16px;
+    }
+    .score-xs-div{
+        text-transform: uppercase;
+        font-family: Poppins-SemiBold;
+        padding: 0;
+    }
+    .comp-xs-style{
+        font-family:Poppins-Regular;
+        font-size:22px;
+    }
+    .comp-xs-style-1{
+        margin-top: 27px;
+        text-align: center;
+    }
+    .s-chart-div-xs{
+        margin-top: -25px;
+        margin-bottom: 0px;
+    }
+    .s-chart-xs-style{
+        min-width: 25% !important;
+        max-width: 100% !important;
+        height: 50px !important;
+        margin: 0 auto !important;
+    }
+    .salary-div-xs{
+        margin-top: 80px;
+        width:98%;
+    }
+    .growth-div-xs{
+        margin-top: 10px;
+        width:98%;
+    }
+    .promo-div-xs{
+        margin-top: 10px;
+        width:98%;
+    }
+    .exp-xs-style{
+        border-radius: 0;
+        word-spacing: 2px;
+        font-family: Verdana;
+    }
+
+    .loader1 {
+        position: fixed;
+        z-index: 1032;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid gray;
+        border-bottom: 16px solid gray;
+        width: 75px;
+        height: 75px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @media (min-width: 991px) {
+        .xs-list {
+            float: none !important;
+        }
+    }
+
+    hr {
+        margin-top: 100px;
+        margin-bottom: 0px;
+        border-bottom: 1px solid gray;
+        width: 98%;
+    }
+
+    @media (max-width: 425px) {
+        .career {
+            margin-top: 5px !important;
+        }
+    }
+
+    @media (max-width: 369px) {
+        .hr {
+            margin-top: 120px !important;
+        }
+    }
+
+    @media (max-width: 361px) {
+        .hr {
+            margin-top: 140px !important;
+        }
+    }
+
+    @media (max-width: 350px) {
+        .hr {
+            margin-top: 145px !important;
+        }
+    }
+
+    @media (max-width: 652px) {
+        .mar_from-changeref {
+            margin-top: 5px !important;
+        }
+    }
+    @media (min-width: 1750px) {
+
+        .padd-cl {
+            padding-left: 7%;
+        }
+    }
+    @media (max-width: 350px) {
+        .mar_from-changeref {
+            margin-top: 10px !important;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .nav-botton {
+            margin-left: 0px;
+        }
+    }
+
+
+    @media only screen and (max-width: 991px) {
+        .row {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+        .app {
+            padding: 0px;
+        }
+    }
+
+    #chart tspan {
+        font-family: Montserrat-Regular;
+    }
+    .span-text{
+        border-bottom: 2px solid black;
+    }
+    .div-margin{
+        margin-top: 1%;
+    }
+    .div-margin-1{
+        margin-top: 3%;
+    }
+    .app{
+        padding: 1% 8% 1% 8%;
+    }
+    @media (min-width: 1600px) {
+        .app{
+            padding: 1% 16% 1% 16%;
+        }
+
+
+    }
+    @media (min-width: 1850px) {
+
+        .mid-topbar{
+        padding:0 15% !important;
+    }}
+    .layout-boxed .app-container > section {
+        max-width: 100%;
+        margin: 0 auto !important;
+    }
+    .sorry{
+
+    }
+    .sorry p{
+        margin-top: 25px;
+        text-align: justify;
+        padding: 0px 50px
+    }
+.score-font{
+    font-size: 22px;
+}
+    .row-compare {
+        padding: 3% 14% 1% 14%;
+    }
+    .less-padding{
+        padding: 0;
+    }
+    .change-pref{
+        font-family: Poppins-SemiBold;
+        word-spacing: 2px;
+    }
+    .score-break{
+        word-spacing: 2px;
+        margin: 30px 0 10px 0;
+    }
+    .salary_growth{
+        word-spacing: 2px;
+        margin: 55px 0 5px 0;
+        font-size: 22px;
+    }
+    .growth_poten{
+        margin: 0;
+        font-family: Poppins-bold;
+        word-spacing: 2px;
+        font-size: 22px;
+        margin: 30px 0 5px 0;
+    }
+    .promotion-chart-marg{
+        padding: 0;
+    }
+    .info-link{
+        margin-left: -4px;
+
+    }
+
+    @media (min-width: 1151px) {
+
+        .topbar-row {
+            padding: 0 10%;
+        }
+        .mid-topbar{
+            padding:0 10%;
+        }
+    }
+    @media (min-width: 991px) and  (max-width: 1310px) {
+    .min-topbar {
+        width: 100%;
+    }
+        .score-style{
+            right: unset !important;
+        }
+
+    }
+    @media (min-width: 991px) and (max-width:1150px) {
+        .row-compare {
+            padding: 3% 0% 0 0%;
+        }
+    }
+        @media (min-width: 1250px) and (max-width: 1310px) {
+
+        .row-compare {
+            padding: 3% 10% 0 10%;
+        }
+    }
+        @media (min-width: 1151px) and (max-width: 1250px) {
+        .score-style{
+            right: unset !important;
+        }
+
+        .row-compare {
+            padding: 3% 10% 0 10%;
+        }
+    }
+    @media (min-width: 991px) and (max-width: 1225px){
+    .score-style{
+        text-align: right !important;
+        right: unset !important;
+    }
+    }
+    .heder_arrow{
+        height: 40px;
+        position: relative;
+        /*top: -2px;*/
+        /*left: 5px;*/
+
+    }
+</style>
+
+<header id="header">
+    <nav class="navbar navbar-default navbar-fixed-top nav-style">
+        <div class="row hidden-xs hidden-sm nav-mar">
+            <div class="col-md-6">
+                <img src="assets/logo1.png" class="navbar-brand img-responsive nav-img-height">
+            </div>
+            <div class="col-md-6 nav-margin-top">
+                <div class="col-md-12">
+                    <ul class="nav navbar-nav nav-ul-style">
+                        <li ng-if="isLogin" class="ng-scope nav-li-style toltip">
+                            <a class="nav-li-a-style" ng-click="logout()">LOGOUT</a>
+                            <div class="tooltipText" style="">
+                                {{ShowEmail}}
+                            </div>
+                        </li>
+                        <!--<li style="display:inline;float:right;font-size:15px;font-family:Montserrat-Regular;" ng-if="!isLogin" ><a  style="color:black;padding: 0px 7px 0px 7px;text-decoration: underline;cursor: pointer;" ng-click="brief.OpenLogin()">SAVE</a></li>-->
+                        <li class="nav-li-style">
+                            <a class="nav-li-a-style2" ui-sref="app.briefreport">ASSESS MYSELF</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row hidden-md hidden-lg">
+            <div class="col-xs-12 col-sm-12">
+                <img src="assets/logo1.png" class="navbar-brand img-responsive nav-img-height">
+            </div>
+            <div class="col-xs-12 col-sm-12 nav-botton nav-xs-margin-top">
+                <div class="col-xs-12 col-sm-12">
+                    <ul class="nav nav-xs-ul-style">
+                        <li class="xs-list nav-xs-li-style">
+                            <a class="nav-xs-li-a-style" ui-sref="app.briefreport">ASSESS MYSELF</a>
+                        </li>
+                        <!--<li style="display:inline;float:right;font-size:15px;font-family:Montserrat-Regular;" ng-if="!isLogin" ><a  style="color:black;padding: 0px 7px 0px 7px;text-decoration: underline;cursor: pointer;" ng-click="brief.OpenLogin()">SAVE</a></li>-->
+                        <li class="xs-list nav-xs-li-style toltip" ng-if="isLogin" class="ng-scope">
+                            <a class="nav-xs-li-a-style2" ng-click="logout()">LOGOUT</a>
+                            <div class="tooltipText" style="">
+                                {{ShowEmail}}
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid">
+
+    <div class="row top-row top-row-style hidden-xs hidden-sm topbar-row" style="text-transform: capitalize;">
+        <div class="col-md-4 div-height top-row-style1">
+                <div class="col-md-2"></div>
+                <div class="col-md-10 text-left padd-cl min-topbar">
+                <h3 class="career career-style">CAREER LEVEL: <span class="career-span-style">{{UserInfo.Level}}</span></h3>
+                <h3 class="career career-style"
+                    class="salary-margin">SALARY: <span class="career-span-style">INR {{UserInfo.Salary}} Lakhs</span></h3>
+                </div>
+        </div>
+        <div class="col-md-4 div-height top-row-style2">
+            <div class=" col-md-12  mid-topbar" >
+                <h3 class="company-style" style="text-transform:capitalize">Company: <span>{{UserInfo.Company}}</span></h3>
+                <p class="font_size industry-font-size" style="text-transform:capitalize">Industry: {{UserInfo.Industry}}
+                    <a class="industry-a"  ng-if="changeindustry" ng-click="openIndustry()"><span class="industry-a-span">(View industry group)</span></a>
+                </p>
+                <p class="font_size function-style" style="text-transform:capitalize">Function: {{UserInfo.Role}}
+                    <a class="function-a" ng-if="changefunction" ng-click="openFunction()"><span class="function-a-span">(View function group)</span></a>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 div-height top-row-style3">
+            <div class="col-md-10 min-topbar">
+
+            <p class="change-pref pref-style"><a class="pref-a-style" ng-click="ChangeWeigth()">CHANGE PREFERENCES
+                <img src="assets/right.png" class="heder_arrow"></a></p></div>
+            <div class="col-md-2"></div>
+
+            <!--<p class="font_size" style="position: relative;top: 10px;font-size:11px">Function: {{UserInfo.Role}} <a style="color: black;cursor: pointer" ng-click="openFunction()"><span style="    text-decoration: underline;">(view function group)</span></a></p></p>-->
+        </div>
+    </div>
+
+    <div class="row top-row hidden-md hidden-lg career-top-xs ">
+        <div class="col-xs-12">
+            <div class ="col-xs-12 right-border1 career-align-xs">
+                <h3 class="career career-style-xs">CAREER LEVEL: <span class="career-span">{{UserInfo.Level}}</span></h3>
+
+                <h3 class="salary-margin salary-style">SALARY: <span class="career-span">INR {{UserInfo.Salary}} Lakhs</span></h3>
+            </div>
+        </div>
+        <hr>
+        <div class="col-xs-12">
+            <div class=" col-xs-12 comp-div-style">
+                <h3 class="company-style-xs">Company: <span>{{UserInfo.Company}}</span>
+                </h3>
+
+                <p class="font_size text-center industry-font-size">Industry: {{UserInfo.Industry}}
+                    <a class="industry-a" ng-if="changeindustry" ng-click="openIndustry()"><span class="industry-a-span">(View industry group)</span></a></p>
+
+                <p class="font_size text-center function-style" >Function: {{UserInfo.Role}}
+                    <a class="function-a" ng-if="changefunction" ng-click="openFunction()"><span class="function-a-span"  >(View function group)</span></a>
+                </p>
+            </div>
+        </div>
+        <hr class="hr hr-style">
+        <div class="col-xs-12 pref-div-style">
+            <p class="change-pref pref-style-xs"><a class="pref-a-style" ng-click="ChangeWeigth()">CHANGE PREFERENCE <img src="assets/right.png" class="heder_arrow"></a>
+            </p>
+            <!--<p class="font_size" style="position: relative;top: 10px;font-size:11px">Function: {{UserInfo.Role}} <a style="color: black;cursor: pointer" ng-click="openFunction()"><span style="    text-decoration: underline;">(view function group)</span></a></p></p>-->
+
+        </div>
+    </div>
+
+    <div class="loader1" ng-show="showLoader"></div>
+    <div class="loader-overlay1" ng-show="showLoader"></div>
+
+    <div class="row hidden-xs hidden-sm row-compare">
+        <div class="col-md-12 compare-background" ng-if="showAllFillter">
+            <div class="col-md-6 less-padding">
+                <div class="col-md-5 text-center compare-div-style less-padding">
+                    <span class="compare-div-span-style" style="padding-left: 5%">COMPARE</span>
+                </div>
+                <div class="col-md-7 less-padding"><select class="select-1" ng-model="mode" ng-change="showFillter(mode)">
+                    <option value="">select</option>
+                    <!--<option value="Companies">Companies</option>-->
+                    <option value="Industries">Industries</option>
+                    <option value="Functions">Functions</option>
+                </select>
+                </div>
+            </div>
+            <div class="col-md-6 less-padding">
+                <div class="col-md-5 text-center less-padding"><span class="within-span-style">WITHIN</span></div>
+                <div class="col-md-7 less-padding"><select class="select-1" ng-model="id"
+                                              ng-change="getPageInfo(id)">
+                    <!--<option style="display:none">-->
+                    <option>select</option>
+                    <option ng-if="btnCompanyIndFun && mode=='Companies'" value="1">My Industry and Function
+                    </option>
+                    <option ng-if="btnCompanyFun && mode=='Companies'" value="2">My Function</option>
+                    <option ng-if="btnCompanyInd && mode=='Companies'" value="3">My Industry</option>
+                    <option ng-if="btnCompanyIndGrp && changefunction" value="4">My Function Group</option>
+                    <option ng-if="btnCompanyIndGrp && changeindustry" value="5">My Industry Group</option>
+                    <option ng-if="btnCompanyIndFun && mode=='Functions'&& changefunction" value="6">My Function Group</option>
+                    <option ng-if="btnCompanyInd && mode=='Functions'" value="7">My Industry</option>
+                    <option ng-if="btnCompanyFun && mode=='Functions'" value="8">All Functions</option>
+                    <option ng-if="btnCompanyIndFun && mode=='Industries' && changeindustry" value="9">My Industry Group</option>
+                    <option ng-if="btnCompanyInd && mode=='Industries'" value="11">All Industries</option>
+                    <option ng-if="btnCompanyFun && mode=='Industries'" value="10">My Function</option>
+                </select>
+                </div>
+            </div>
+            <!--<div class="col-md-2 text-right"><span style="font-family: Poppins-Bold;font-size:22px">GO</span></div>-->
+        </div>
+    </div>
+
+    <div class="row hidden-md hidden-lg">
+        <div class="col-xs-12 mar_from-changeref compare-background" ng-if="showAllFillter">
+            <div class="col-xs-12 text-center comp-xs-margin">
+                <span class="compare-div-span-style">COMPARE</span>
+            </div>
+            <div class="col-xs-12">
+                <select class="select-1" ng-model="mode" ng-change="showFillter(mode)">
+                    <option value="">select</option>
+                    <!--<option value="Companies">Companies</option>-->
+                    <option value="Industries">Industries</option>
+                    <option value="Functions">Functions</option>
+                </select>
+            </div>
+
+            <div class="col-xs-12 text-center within-xs-margin">
+                <span class="within-span-style">WITHIN</span>
+            </div>
+            <div class="col-xs-12"><select class="select-1" ng-model="id" ng-change="getPageInfo(id)">
+                <!--<option style="display:none">-->
+                <option>select</option>
+                <option ng-if="btnCompanyIndFun && mode=='Companies'" value="1">My Industry and Function
+                </option>
+                <option ng-if="btnCompanyFun && mode=='Companies'" value="2">My Function</option>
+                <option ng-if="btnCompanyInd && mode=='Companies'" value="3">My Industry</option>
+                <option ng-if="btnCompanyIndGrp && changefunction" value="4">My Function Group</option>
+                <option ng-if="btnCompanyIndGrp && changeindustry" value="5">My Industry Group</option>
+                <option ng-if="btnCompanyIndFun && mode=='Functions' && changefunction" value="6">My Function Group</option>
+                <option ng-if="btnCompanyInd && mode=='Functions'" value="7">My Industry</option>
+                <option ng-if="btnCompanyFun && mode=='Functions'" value="8">All Functions</option>
+                <option ng-if="btnCompanyIndFun && mode=='Industries' && changeindustry" value="9">My Industry Group</option>
+                <option ng-if="btnCompanyInd && mode=='Industries'" value="11">All Industries</option>
+                <option ng-if="btnCompanyFun && mode=='Industries'" value="10">My Function</option>
+            </select>
+            </div>
+            <!--<div class="col-md-2 text-right"><span style="font-family: Poppins-Bold;font-size:22px">GO</span></div>-->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="loader" ng-show="showLoader"></div>
+        <div class="loader-overlay" ng-show="showLoader"></div>
+    </div>
+
+    <div class="row hidden-xs hidden-sm row-margin" ng-if="showData">
+        <div class="col-md-12" ng-if="persons.length>0" style="padding-left: 3%">
+            <h2 class="font_size text-center top-font">TOP {{mode | uppercase }}
+                <span class="within-font">WITHIN YOUR</span><br/>
+                <span class="within-font">{{allFilltersHash[id] | uppercase }}</span>
+            </h2>
+            <p class="click-font">(CLICK NAME TO FIND OUT MORE)</p>
+
+            <div class="col-md-12" ng-repeat='person in persons track by person.actualName'
+                 ng-if="$index<=4 && viewMore==false">
+                <div class="col-lg-1 hidden-md"></div>
+                <div class="col-md-4 col-lg-3 charts-name unclickable"
+                     ng-click="listclick($index)">{{$index+1}}. {{person.name.split('(')[0]}}
+                    <span class="names-font" ng-if="person.name.split('(')[1].length>0"> ({{person.name.split('(')[1]}}</span>
+                </div>
+                <div class="col-md-5 chart-top-margin" ng-if="$index==0">
+                    <highchart id="chart" class="chart-style"
+                               config="chartTop_1"></highchart>
+                </div>
+                <div class="col-md-5 chart-top-margin" ng-if="$index==1">
+                    <highchart id="chart" class="chart-style"
+                               config="chartTop_2"></highchart>
+                </div>
+                <div class="col-md-5 chart-top-margin" ng-if="$index==2">
+                    <highchart id="chart" class="chart-style"
+                               config="chartTop_3"></highchart>
+                </div>
+                <div class="col-md-5 chart-top-margin" ng-if="$index==3">
+                    <highchart id="chart" class="chart-style"
+                               config="chartTop_4"></highchart>
+                </div>
+                <div class="col-md-5 chart-top-margin" ng-if="$index==4">
+                    <highchart id="chart" class="chart-style"
+                               config="chartTop_5"></highchart>
+                </div>
+                <div class="col-md-3 score-style">(SCORE: {{person.value}})
+                </div>
+
+            </div>
+            <div class=" col-md-12" ng-repeat='person in persons track by person.actualName'
+                 ng-if="viewMore">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 charts-name unclickable" ng-click="listclick($index)">{{$index+1}}. {{person.name.split('(')[0]}}
+                    <span class="names-font" ng-if="person.name.split('(')[1].length>0"> ({{person.name.split('(')[1]}}</span>
+                </div>
+                <div class="col-md-5 chart-top-margin" ng-if="$index==0">
+                    <highchart id="chart" class="chart-style"
+                               config="chartTop_1"></highchart>
+                </div>
+                <div class="col-md-5 chart-top-margin" ng-if="$index==1">
+                    <highchart id="chart" class="chart-style"
+                               config="chartTop_2"></highchart>
+                </div>
+                <div class="col-md-5 chart-top-margin" ng-if="$index==2">
+                    <highchart id="chart" class="chart-style"
+                               config="chartTop_3"></highchart>
+                </div>
+                <div class="col-md-5 chart-top-margin" ng-if="$index==3">
+                    <highchart id="chart" class="chart-style"
+                               config="chartTop_4"></highchart>
+                </div>
+                <div class="col-md-5 chart-top-margin" ng-if="$index==4">
+                    <highchart id="chart" class="chart-style"
+                               config="chartTop_5"></highchart>
+                </div>
+                <div class="col-md-5 chart-top-margin" ng-if="$index==5">
+                    <highchart id="chart" class="chart-style"
+                               config="chartTop_6"></highchart>
+                </div>
+                <div class="col-md-5 chart-top-margin" ng-if="$index==6">
+                    <highchart id="chart" class="chart-style"
+                               config="chartTop_7"></highchart>
+                </div>
+                <div class="col-md-5 chart-top-margin" ng-if="$index==7">
+                    <highchart id="chart" class="chart-style"
+                               config="chartTop_8"></highchart>
+                </div>
+                <div class="col-md-5 chart-top-margin" ng-if="$index==8" >
+                    <highchart id="chart" class="chart-style"
+                               config="chartTop_9"></highchart>
+                </div>
+                <div class="col-md-5 chart-top-margin" ng-if="$index==9">
+                    <highchart id="chart" class="chart-style"
+                               config="chartTop_10"></highchart>
+                </div>
+                <div class="col-md-3 score-style">(SCORE: {{person.value}})
+                </div>
+
+
+            </div>
+            <div class="col-md-1"></div>
+
+            <div class="col-md-3 view-more-style"
+                 ng-if="viewMore==false && persons.length>4"><a class="view-more-a-style" ng-click="viewMoreFn()">View more</a>
+            </div>
+
+            <div class="col-md-3 view-more-style"
+                 ng-if="viewMore==true && persons.length>4"><a class="view-more-a-style" ng-click="viewMoreFn()">View less</a>
+            </div>
+        </div>
+
+        <div class="sorry" ng-if="showmaxcl&&persons.length>0"><p>Sorry, we are unable to display the complete report at the moment as we only have data for career levels up to "{{maxcl}}" for this selection. Please try selecting another option in the dropdown menus above.</p></div>
+
+        <div class="sorry" ng-if="hiderp&&!showmaxcl&&persons.length>0"><p>Sorry, we currently don't have sufficient data for your career level to display the complete report. Please try selecting another "{{mode}}" or selecting another combination in the dropdown menus above.</p></div>
+
+        <div class="col-md-12 score-div-style" ng-if="SelectedData&&!(hiderp||showmaxcl)">
+            <div class="text-center" ng-if="selectedCompany.length<=5">
+                <h2 class="font_size score-font">SCORE BREAKUP
+                    <span class="for-font">FOR {{selectedCompany | uppercase}}</span>
+                </h2>
+                <!--<p style="text-align: center;font-size:14px;font-family:Poppins-Regular">(CLICK NAME TO FIND OUT MORE)</p>-->
+            </div>
+            <div class="text-center score-font" ng-if="selectedCompany.length>5">
+                <h2 class="score-break score-font">SCORE BREAKUP <span
+                        class="for-font">FOR</span> <span class="font_size text-center company-font">{{selectedCompany |
+                    uppercase}}</span></h2>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 top-marg-comp" ng-if="selectedCompany.length<=50">
+                    <!--<div class="col-md-6"></div>-->
+                    <!--<div class="col-md-6">-->
+                    <!--</div>-->
+                    <!--<div class="col-md-6"></div>-->
+                    <div class="col-md-12 text-center" ng-if="showUser">  <i class="fa fa-square icon-background1"></i><span> {{selectedCompany}}</span>
+                        <i class="fa fa-square icon-background2"></i>
+                        <span ng-if="mode=='Functions'"> {{UserInfo.Role}}</span>
+                        <span ng-if="mode=='Industries'" > {{UserInfo.Industry}}</span>
+                        <span ng-if="mode=='Companies'" > {{UserInfo.Company}}&nbsp<span class="comp-span-font"> (function: {{UserInfo.Role}})</span></span>
+                    </div>
+                </div>
+
+                <div class="col-md-12 top-marg-comp" ng-if="selectedCompany.length>50">
+                    <!--<div class="col-md-6"></div>-->
+                    <div class="col-md-6">
+                    </div>
+                    <!--<div class="col-md-6"></div>-->
+                    <div class="col-md-12 text-center" ng-if="showUser"><i class="fa fa-square icon-background1"></i><span> {{selectedCompany}}</span>
+                        <i class="fa fa-square icon-background2"></i>
+                        <span ng-if="mode=='Functions'"> {{UserInfo.Role}}</span>
+                        <span ng-if="mode=='Industries'"> {{UserInfo.Industry}}</span>
+                        <span ng-if="mode=='Companies'"> {{UserInfo.Company}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="col-md-12 div-margin-1"
+                         ng-if="chartConfig_1Score.series[0].data.length>0||chartConfig_1User.series[0].data.length>0">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4 scoreCls"
+                             ng-style="{'margin-top' : (chartConfig_1Score.series[0].data.length == 1) ? '3px' : '9px'}">
+                            <span class="span-text">immediate salary improvement</span>
+                        </div>
+                        <div class="col-md-6 chart-padd">
+                            <div class="col-md-12">
+                                <highchart id="chart" class="score-chart-style score-chart" config="chartConfig_1Score"></highchart>
+                            </div>
+                            <!--<div class="col-md-12">-->
+                            <!--<highchart id="chart" style="min-width: 310px; max-width: 800px; height: 50px; margin: 0 auto"  config="chartConfig_1User"></highchart>-->
+                            <!--</div>-->
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <div ng-if="chartConfig_2Score.series[0].data.length>0||chartConfig_2User.series[0].data.length>0"
+                         class="col-md-12  div-margin">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4 scoreCls"
+                             ng-style="{'margin-top' : (chartConfig_2Score.series[0].data.length == 1) ? '3px' : '9px'}">
+                            <span class="span-text">Short term Career Level growth</span>
+                        </div>
+                        <div class="col-md-6 chart-padd">
+                            <div class="col-md-12">
+                                <highchart id="chart" class="score-chart-style" config="chartConfig_2Score"></highchart>
+                            </div>
+                            <!--<div class="col-md-12">-->
+                            <!--<highchart id="chart" style="min-width: 310px; max-width: 800px; height: 50px; margin: 0 auto"  config="chartConfig_2User"></highchart>-->
+                            <!--</div>-->
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+
+                    <div ng-if="chartConfig_3Score.series[0].data.length>0||chartConfig_3User.series[0].data.length>0" class="col-md-12 div-margin">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4 scoreCls"
+                             ng-style="{'margin-top' : (chartConfig_3Score.series[0].data.length == 1) ? '3px' : '9px'}">
+                            <span class="span-text">Short term SALARY growth</span>
+                        </div>
+                        <div class="col-md-6 chart-padd">
+                            <div class="col-md-12">
+                                <highchart id="chart" class="score-chart-style" config="chartConfig_3Score"></highchart>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+
+                    <div ng-if="chartConfig_4Score.series[0].data.length>0||chartConfig_4User.series[0].data.length>0"
+                         class="col-md-12 div-margin">
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-4 scoreCls"
+                             ng-style="{'margin-top' : (chartConfig_4Score.series[0].data.length == 1) ? '3px' : '9px'}">
+                            <span class="span-text">Average salary growth</span>
+                        </div>
+                        <div class="col-md-6 chart-padd">
+                            <div class="col-md-12">
+                                <highchart id="chart" class="score-chart-style" config="chartConfig_4Score"></highchart>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+
+                    <div ng-if="chartConfig_5Score.series[0].data.length>0||chartConfig_5User.series[0].data.length>0"
+                         class="col-md-12 div-margin">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4 scoreCls"
+                             ng-style="{'margin-top' : (chartConfig_5Score.series[0].data.length == 1) ? '3px' : '9px'}">
+                            <span class="span-text">Average Career Level growth</span>
+                        </div>
+                        <div class="col-md-6 chart-padd">
+                            <div class="col-md-12">
+                                <highchart id="chart" class="score-chart-style" config="chartConfig_5Score"></highchart>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+
+                    <div ng-if="chartConfig_6Score.series[0].data.length>0||chartConfig_6User.series[0].data.length>0"
+                         class="col-md-12 div-margin">
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-4 scoreCls" ng-style="{'margin-top' : (chartConfig_6Score.series[0].data.length == 1) ? '3px' : '9px'}">
+                            <span class="span-text">Long term Career Level growth</span>
+                        </div>
+                        <div class="col-md-6 chart-padd">
+                            <div class="col-md-12">
+                                <highchart id="chart" class="score-chart-style" config="chartConfig_6Score"></highchart></div>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+
+                    <div ng-if="chartConfig_7Score.series[0].data.length>0||chartConfig_7User.series[0].data.length>0"
+                         class="col-md-12 div-margin">
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-4 scoreCls" ng-style="{'margin-top' : (chartConfig_7Score.series[0].data.length == 1) ? '3px' : '9px'}">
+                            <span class="span-text">Long term salary growth</span></div>
+                        <div class="col-md-6 chart-padd">
+                            <div class="col-md-12">
+                                <highchart id="chart" class="score-chart-style" config="chartConfig_7Score"></highchart>
+                            </div>
+                            <!--<div class="col-md-12">-->
+                            <!--<highchart id="chart" style="min-width: 310px; max-width: 800px; height: 50px; margin: 0 auto"  config="chartConfig_7User"></highchart>-->
+                            <!--</div>-->
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+
+                    <div class="row salary-marg-top"ng-if="SelectedData&&showRole&&showchart&&!(hiderp||showmaxcl)">
+                        <div class="col-md-12">
+                            <h2 class="salary_growth text-center salary-font" >SALARY GROWTH</h2>
+                            <!--<p style="text-align: center;font-size:14px;font-family:Poppins-Regular">(CLICK NAME TO FIND OUT MORE)</p>-->
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 salary-chart-marg">
+                            <highchart id="chart" config="chartConfigRole"></highchart>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <div class="row " ng-if="SelectedData&&showGrowth&&!(hiderp||showmaxcl)">
+                        <div class="col-md-12">
+                            <h2 class="growth_poten text-center salary-font">GROWTH POTENTIAL
+                            <a class="promo-pointer" ng-click="openInfoPop('GP')">
+                                <i class="fa fa-info-circle info-link circle-f_size"></i></a></h2>
+                            <!--<p style="text-align: center;font-size:14px;font-family:Poppins-Regular">(CLICK NAME TO FIND OUT MORE)</p>-->
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 salary-chart-marg">
+                            <highchart id="chart" config="chartConfigGrowth"></highchart>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <div class="row promotion-chart-marg" ng-if="(SelectedData && (chartConfig!=''||chartConfigPU!='')&&showchart)">
+                        <div class="col-md-12">
+                            <h2 class="growth_poten text-center salary-font" >PROMOTION PRESSURES
+                                <a class="promo-pointer" ng-click="openInfoPop('PP')">
+                                    <i class="fa fa-info-circle circle-f_size"></i></a>
+                            </h2>
+                            <!--<p style="text-align: center;font-size:14px;font-family:Poppins-Regular">(CLICK NAME TO FIND OUT MORE)</p>-->
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 salary-chart-marg" ng-if="chartConfig!=''">
+                            <highchart id="chart" ng-style="ChartStyle" config="chartConfig"></highchart>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 salary-chart-marg" ng-if="chartConfigPU!=''">
+                            <highchart id="chart" config="chartConfigPU"></highchart>
+                        </div>
+                        <div class="col-md-1"></div>
+
+                    </div>
+
+                    <div class="row" ng-if="SelectedData" ng-hide="true">
+                        <div class="col-md-12">
+                            <button class="btn btn-block btn-primary exp-more-style">Explore More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row hidden-md hidden-lg row-margin" ng-if="showData">
+        <div ng-if="persons.length>0">
+            <div class="col-xs-12">
+                <h2 class="font_size text-center top-font">TOP {{mode | uppercase }} <span
+                        class="within-font"  >WITHIN YOUR</span><br/><span
+                        class="within-font">{{allFilltersHash[id] | uppercase }}</span></h2>
+
+                <p class="click-font">(CLICK NAME TO FIND OUT MORE)</p>
+            </div>
+
+            <div ng-repeat='person in persons track by person.actualName'
+                 ng-if="$index<=4 && viewMore==false">
+                <div class="col-xs-12 text-center comp-xs-name unclickable"
+                     ng-click="listclick($index)">{{$index+1}}. {{person.name.split('(')[0]}}
+                    <span class="name-font" ng-if="person.name.split('(')[1].length>0"> ({{person.name.split('(')[1]}}</span>
+                </div>
+                <div class="col-xs-12 chart-div-xs" ng-if="$index==0" >
+                    <highchart id="chart" class="chrats-xs-style"
+                               config="chartTop_1"></highchart>
+                </div>
+                <div class="col-xs-12 chart-div-xs" ng-if="$index==1">
+                    <highchart id="chart" class="chrats-xs-style"
+                               config="chartTop_2"></highchart>
+                </div>
+                <div class="col-xs-12 chart-div-xs" ng-if="$index==2">
+                    <highchart id="chart" class="chrats-xs-style"
+                               config="chartTop_3"></highchart>
+                </div>
+                <div class="col-xs-12 chart-div-xs" ng-if="$index==3">
+                    <highchart id="chart" class="chrats-xs-style"
+                               config="chartTop_4"></highchart>
+                </div>
+                <div class="col-xs-12 chart-div-xs" ng-if="$index==4">
+                    <highchart id="chart" class="chrats-xs-style"
+                               config="chartTop_5"></highchart>
+                </div>
+                <div class="col-xs-12 text-center score-xs-style">(SCORE: {{person.value}})
+                </div>
+            </div>
+            <div  ng-repeat='person in persons track by person.actualName'
+                  ng-if="viewMore">
+                <div class="col-xs-12 text-center comp-xs-name unclickable"
+                     ng-click="listclick($index)">{{$index+1}}. {{person.name.split('(')[0]}}
+                    <span class="name-font"  ng-if="person.name.split('(')[1].length>0"> ({{person.name.split('(')[1]}}</span>
+                </div>
+                <div class="col-xs-12 chart-div-xs" ng-if="$index==0">
+                    <highchart id="chart" class="chrats-xs-style"
+                               config="chartTop_1"></highchart>
+                </div>
+                <div class="col-xs-12 chart-div-xs" ng-if="$index==1" >
+                    <highchart id="chart" class="chrats-xs-style"
+                               config="chartTop_2"></highchart>
+                </div>
+                <div class="col-xs-12 chart-div-xs" ng-if="$index==2" >
+                    <highchart id="chart" class="chrats-xs-style"
+                               config="chartTop_3"></highchart>
+                </div>
+                <div class="col-xs-12 chart-div-xs" ng-if="$index==3" >
+                    <highchart id="chart" class="chrats-xs-style"
+                               config="chartTop_4"></highchart>
+                </div>
+                <div class="col-xs-12 chart-div-xs" ng-if="$index==4" >
+                    <highchart id="chart" class="chrats-xs-style"
+                               config="chartTop_5"></highchart>
+                </div>
+                <div class="col-xs-12 chart-div-xs" ng-if="$index==5" >
+                    <highchart id="chart" class="chrats-xs-style"
+                               config="chartTop_6"></highchart>
+                </div>
+                <div class="col-xs-12 chart-div-xs" ng-if="$index==6">
+                    <highchart id="chart" class="chrats-xs-style"
+                               config="chartTop_7"></highchart>
+                </div>
+                <div class="col-xs-12 chart-div-xs" ng-if="$index==7">
+                    <highchart id="chart" class="chrats-xs-style"
+                               config="chartTop_8"></highchart>
+                </div>
+                <div class="col-xs-12 chart-div-xs" ng-if="$index==8">
+                    <highchart id="chart" class="chrats-xs-style"
+                               config="chartTop_9"></highchart>
+                </div>
+                <div class="col-xs-12 chart-div-xs" ng-if="$index==9">
+                    <highchart id="chart" class="chrats-xs-style"
+                               config="chartTop_10"></highchart>
+                </div>
+                <div class="col-xs-12 text-center score-xs-style">(SCORE: {{person.value}})
+                </div>
+            </div>
+            <div class=" col-xs-12 text-center view-div-xs"
+                 ng-if="viewMore==false && persons.length>4"><a
+                    class="view-a-xs-style" ng-click="viewMoreFn()">View
+                more</a></div>
+            <div class=" col-xs-12 text-center view_less-xs"
+                 ng-if="viewMore==true && persons.length>4"><a
+                    class="view-a-xs-style" ng-click="viewMoreFn()">View
+                less</a></div>
+        </div>
+
+<div class="sorry" ng-if="showmaxcl&&persons.length>0">Sorry, we are unable to display the complete report at the moment as we only have data for career levels up to "{{maxcl}}" for this selection. Please try selecting another option in the dropdown menus above.</div>
+        <div class="sorry" ng-if="hiderp&&!showmaxcl&&persons.length>0">Sorry, we currently don't have sufficient data for your career level to display the complete report. Please try selecting another "{{mode}}" or selecting another combination in the dropdown menus above.</div>
+
+        <div class="col-xs-12 col-sm-12 score-xs-div" ng-if="SelectedData&&!(hiderp||showmaxcl)">
+            <div class="col-xs-12" ng-if="selectedCompany.length<=5">
+                <h2 class="score-break text-center top-font">SCORE BREAKUP <span
+                        class="within-font">FOR {{selectedCompany | uppercase}}</span></h2>
+                <!--<p style="text-align: center;font-size:14px;font-family:Poppins-Regular">(CLICK NAME TO FIND OUT MORE)</p>-->
+            </div>
+            <div class="col-xs-12" ng-if="selectedCompany.length>5">
+                <h2 class="score-break text-center top-font">SCORE BREAKUP <span
+                        class="within-font">FOR</span></h2>
+                <p class="font_size text-center comp-xs-style" >{{selectedCompany |
+                    uppercase}}</p>
+            </div>
+
+            <div class="col-xs-12 comp-xs-style-1" ng-if="selectedCompany.length<=50">
+                <div class="col-xs-12">
+                    <i class="fa fa-square icon-background1"></i><span> {{selectedCompany}}</span>
+                </div>
+                <div class="col-xs-12" ng-if="showUser"><i class="fa fa-square icon-background2"></i>
+                    <span ng-if="mode=='Functions'"> {{UserInfo.Role}}</span>
+                    <span ng-if="mode=='Industries'"> {{UserInfo.Industry}}</span>
+                    <span ng-if="mode=='Companies'"> {{UserInfo.Company}}&nbsp<span class="name-font"> (function: {{UserInfo.Role}})</span></span>
+                </div>
+            </div>
+            <div class="col-xs-12 top-marg-comp" ng-if="selectedCompany.length>50">
+                <div class="col-xs-12">
+                    <i class="fa fa-square icon-background1"></i><span> {{selectedCompany}}</span>
+                </div>
+                <div class="col-xs-12" ng-if="showUser"><i class="fa fa-square icon-background2"></i>
+                    <span ng-if="mode=='Functions'"> {{UserInfo.Role}}</span>
+                    <span ng-if="mode=='Industries'"> {{UserInfo.Industry}}</span>
+                    <span ng-if="mode=='Companies'"> {{UserInfo.Company}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 salary-chart-marg" ></div>
+
+        <div ng-if="chartConfig_1Score.series[0].data.length>0||chartConfig_1User.series[0].data.length>0"
+             class="row">
+            <div class="col-xs-12 scoreCls"
+                 ng-style="{'margin-top' : (chartConfig_1Score.series[0].data.length == 1) ? '7px' : '10px'}">
+                <span class="span-text">Immediate Salary improvement</span>
+            </div>
+            <div class="col-xs-12 s-chart-div-xs">
+
+                <highchart id="chart" class="s-chart s-chart-xs-style"
+                           config="chartConfig_1Score"></highchart>
+                <!--<div class="col-md-12">-->
+                <!--<highchart id="chart" style="min-width: 310px; max-width: 800px; height: 50px; margin: 0 auto"  config="chartConfig_1User"></highchart>-->
+                <!--</div>-->
+
+            </div>
+        </div>
+        <div ng-if="chartConfig_2Score.series[0].data.length>0||chartConfig_2User.series[0].data.length>0"
+             class="row">
+            <div class="col-xs-12 scoreCls"
+                 ng-style="{'margin-top' : (chartConfig_2Score.series[0].data.length == 1) ? '7px' : '10px'}">
+                <span class="span-text">Short term Career Level growth</span>
+            </div>
+            <div class="col-xs-12 s-chart-div-xs">
+                <highchart id="chart" class="s-chart-xs-style"
+                           config="chartConfig_2Score"></highchart>
+                <!--<div class="col-md-12">-->
+                <!--<highchart id="chart" style="min-width: 310px; max-width: 800px; height: 50px; margin: 0 auto"  config="chartConfig_2User"></highchart>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div ng-if="chartConfig_3Score.series[0].data.length>0||chartConfig_3User.series[0].data.length>0" class="row">
+            <div class="col-xs-12 scoreCls"
+                 ng-style="{'margin-top' : (chartConfig_3Score.series[0].data.length == 1) ? '7px' : '10px'}">
+                <span class="span-text">Short term SALARY growth</span>
+            </div>
+            <div class="col-xs-12 s-chart-div-xs">
+                <highchart id="chart" class="s-chart-xs-style"
+                           config="chartConfig_3Score"></highchart>
+            </div>
+            <!--<div class="col-md-12">-->
+            <!--<highchart id="chart" style="min-width: 310px; max-width: 800px; height: 50px; margin: 0 auto"  config="chartConfig_3User"></highchart>-->
+            <!--</div>-->
+        </div>
+
+        <div ng-if="chartConfig_4Score.series[0].data.length>0||chartConfig_4User.series[0].data.length>0"
+             class="row">
+            <div class="col-xs-12 scoreCls"
+                 ng-style="{'margin-top' : (chartConfig_4Score.series[0].data.length == 1) ? '7px' : '10px'}">
+                    <span class="span-text">
+                    Average salary growth</span>
+            </div>
+            <div class="col-xs-12 s-chart-div-xs">
+                <highchart id="chart" class="s-chart-xs-style"
+                           config="chartConfig_4Score"></highchart>
+                <!--<div class="col-md-12">-->
+                <!--<highchart id="chart" style="min-width: 310px; max-width: 800px; height: 50px; margin: 0 auto"  config="chartConfig_4User"></highchart>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div ng-if="chartConfig_5Score.series[0].data.length>0||chartConfig_5User.series[0].data.length>0"
+             class="row">
+            <div class="col-xs-12 scoreCls"
+                 ng-style="{'margin-top' : (chartConfig_5Score.series[0].data.length == 1) ? '7px' : '10px'}">
+                <span class="span-text">Average Career Level growth</span>
+            </div>
+            <div class="col-xs-12 s-chart-div-xs" >
+                <highchart id="chart" class="s-chart-xs-style"
+                           config="chartConfig_5Score"></highchart>
+                <!--<div class="col-md-12">-->
+                <!--<highchart id="chart" style="min-width: 310px; max-width: 800px; height: 50px; margin: 0 auto"  config="chartConfig_5User"></highchart>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div ng-if="chartConfig_6Score.series[0].data.length>0||chartConfig_6User.series[0].data.length>0"
+             class="row">
+            <div class="col-xs-12 scoreCls"
+                 ng-style="{'margin-top' : (chartConfig_6Score.series[0].data.length == 1) ? '7px' : '10px'}">
+                <span class="span-text">Long term Career Level growth</span>
+
+            </div>
+            <div class="col-xs-12 s-chart-div-xs">
+                <highchart id="chart" class="s-chart-xs-style"
+                           config="chartConfig_6Score"></highchart>
+                <!--<div class="col-md-12">-->
+                <!--<highchart id="chart" style="min-width: 310px; max-width: 800px; height: 50px; margin: 0 auto"  config="chartConfig_6User"></highchart>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div ng-if="chartConfig_7Score.series[0].data.length>0||chartConfig_7User.series[0].data.length>0"
+             class="row">
+            <div class="col-xs-12 scoreCls"
+                 ng-style="{'margin-top' : (chartConfig_7Score.series[0].data.length == 1) ? '7px' : '10px'}">
+                <span class="span-text">Long term salary growth</span>
+            </div>
+            <div class="col-xs-12 s-chart-div-xs">
+                <highchart id="chart" class="s-chart-xs-style"
+                           config="chartConfig_7Score"></highchart>
+                <!--<div class="col-md-12">-->
+                <!--<highchart id="chart" style="min-width: 310px; max-width: 800px; height: 50px; margin: 0 auto"  config="chartConfig_7User"></highchart>-->
+                <!--</div>-->
+            </div>
+        </div>
+
+        <div class="row salary-div-xs" ng-if="SelectedData&&showRole&&showchart&&!(hiderp||showmaxcl)">
+            <div class="col-xs-12">
+                <h2 class="font_size text-center score-font">SALARY GROWTH</h2>
+                <!--<p style="text-align: center;font-size:14px;font-family:Poppins-Regular">(CLICK NAME TO FIND OUT MORE)</p>-->
+            </div>
+            <div class="col-xs-12 salary-chart-marg">
+                <highchart id="chart" config="chartConfigRole"></highchart>
+            </div>
+        </div>
+
+        <div class="row" ng-if="SelectedData&&showGrowth&&!(hiderp||showmaxcl)">
+            <div class="col-xs-12 growth-div-xs">
+                <h2 class="font_size text-center score-font">GROWTH POTENTIAL</h2>
+                <!--<p style="text-align: center;font-size:14px;font-family:Poppins-Regular">(CLICK NAME TO FIND OUT MORE)</p>-->
+            </div>
+            <div class="col-xs-12 salary-chart-marg">
+                <highchart id="chart" config="chartConfigGrowth"></highchart>
+            </div>
+        </div>
+
+        <div class="row"
+             ng-if="(SelectedData && (chartConfig!=''||chartConfigPU!='')&&showchart)">
+            <div class="col-xs-12 promo-div-xs">
+                <h2 class="font_size text-center score-font" >PROMOTION PRESSURES <a
+                        class="promo-pointer" ng-click="openInfoPop('PP')"> <i class="fa fa-info-circle circle-f_size"></i></a>
+                </h2>
+                <!--<p style="text-align: center;font-size:14px;font-family:Poppins-Regular">(CLICK NAME TO FIND OUT MORE)</p>-->
+            </div>
+            <div class="col-xs-12 salary-chart-marg" ng-if="chartConfig!=''">
+                <highchart id="chart" ng-style="ChartStyle" config="chartConfig"></highchart>
+            </div>
+            <div class="col-xs-12 salary-chart-marg" ng-if="chartConfigPU!=''">
+                <highchart id="chart" config="chartConfigPU"></highchart>
+            </div>
+
+        </div>
+        <div class="row" ng-if="SelectedData" ng-hide="true">
+            <div class="col-xs-12">
+                <button class="btn btn-block btn-primary exp-xs-style">Explore More
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>

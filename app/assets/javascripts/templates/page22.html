@@ -1,0 +1,83 @@
+<style>
+    .table{
+        border-bottom: 0px!important;
+    }
+
+    .table td{
+        border-top: 0px!important;
+    }
+    .top-div{
+        margin-top: 10%;
+    }
+    .mt-lg{
+        height:380px; border: 1px solid #d4d4d4;
+    }
+     .mt-lg-1{
+    margin-top: 8%;
+             }
+    .salary-div{
+        border: 1px solid deepskyblue;border-radius: 55px;
+    }
+    .salary-para{
+        font-size: 22px; line-height: 22px; margin-top: 10%;
+    }
+    .salary-para span{
+        font-size: 16px;
+    }
+    .salary-div h3{
+        text-align: center;font-size: 23px;
+    }
+    .table{
+        width: 50%!important;
+    }
+    .tr-para{
+        color: #8a1f11;
+    }
+    .height-100{
+        height: 100px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="col-md-6 top-div">
+                <div class="col-md-12 mt-lg">
+                    <div class="col-md-12 top-div">
+
+                        <highchart id="chart1"  config="chartConfig"  ></highchart>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-lg-1">
+                    <div class="col-md-6">
+                        <button class="btn btn-block btn-primary btn-md" ui-sref="app.questions">Recalulate</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-block btn-primary btn-md" ui-sref="app.profile">Update Details</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 top-div"  >
+                <div class=" col-md-10">
+                    <div class="col-md-12 text-center salary-div">
+                        <p class="salary-para"><strong>40% Salary deviation </strong><span> within your Career Level cohort</span></p>
+                        <h3>BENCHMARK YOUR COMPENSATION WITH PEERS WITH SIMILAR CAREER LEVEL</h3>
+                        <div class="form-group text-center">
+                            <table class="table" align="center">
+                                <tr><td><p class="tr-para">Enter Your CTC in INR Lakh</p></td></tr>
+                                <tr><td><input type="number"class="form-control"placeholder="Fixed comp" min="1" max="100" step="0.1" ng-model="stat.fixedComp"/></td></tr>
+                                <tr><td><input type="number"class="form-control"placeholder="Variable comp"  min="1" max="100" step="0.1" ng-model="stat.varComp"/></td></tr>
+                                <tr><td><input type="number"class="form-control"placeholder="Total"  min="1" max="100" step="0.1"  ng-model="stat.totalComp" /></td></tr>
+                                <tr><td><button type="button"class="btn btn-warning form-control" ng-click="stat.generateReport()">Compare and Get Report</button></td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-12 height-100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+

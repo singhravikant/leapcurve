@@ -1,0 +1,3690 @@
+Information Technology and Services;5;0.0;0.0;100.0;0
+Information Technology and Services;6;0.0;0.0;100.0;0
+Information Technology and Services;7;0.0;0.0;100.0;0
+Information Technology and Services;8;0.0;0.0;100.0;0
+Information Technology and Services;9;0.0;0.0;100.0;0
+Information Technology and Services;10;0.0;1.57;98.43;2370
+Information Technology and Services;11;1.57;28.68;69.75;43197
+Information Technology and Services;12;30.25;14.09;55.65;21228
+Information Technology and Services;13;44.35;20.52;35.14;30899
+Information Technology and Services;14;64.86;15.75;19.39;23718
+Information Technology and Services;15;80.61;11.26;8.13;16953
+Information Technology and Services;16;91.87;7.1;1.04;10690
+Information Technology and Services;17;98.96;0.0;1.04;0
+Information Technology and Services;18;98.96;0.78;0.25;1182
+Information Technology and Services;19;99.75;0.16;0.09;244
+Information Technology and Services;20;99.91;0.0;0.09;0
+Information Technology and Services;21;99.91;0.0;0.09;0
+Information Technology and Services;22;99.91;0.07;0.02;101
+Information Technology and Services;23;99.98;0.0;0.02;0
+Information Technology and Services;24;99.98;0.01;0.01;21
+Information Technology and Services;25;99.99;0.0;0.01;0
+Information Technology and Services;26;99.99;0.0;0.01;0
+Information Technology and Services;27;99.99;0.01;0.0;9
+Information Technology and Services;28;100.0;0.0;0.0;0
+Information Technology and Services;29;100.0;0.0;0.0;0
+Information Technology and Services;30;100.0;0.0;0.0;0
+Information Technology and Services;31;100.0;0.0;0.0;1
+Information Technology and Services;32;100.0;0.0;0.0;0
+Information Technology and Services;33;100.0;0.0;0.0;0
+Information Technology and Services;34;100.0;0.0;0.0;0
+Information Technology and Services;35;100.0;0.0;0.0;0
+Information Technology and Services;36;100.0;0.0;0.0;0
+Information Technology and Services;37;100.0;0.0;0.0;0
+Information Technology and Services;38;100.0;0.0;0.0;0
+Information Technology and Services;39;100.0;0.0;0.0;0
+Information Technology and Services;40;100.0;0.0;0.0;0
+Information Technology and Services;41;100.0;0.0;0.0;1
+Information Technology and Services;42;100.0;0.0;0.0;0
+Information Technology and Services;43;100.0;0.0;0.0;0
+Information Technology and Services;44;100.0;0.0;0.0;0
+Information Technology and Services;45;100.0;0.0;0.0;0
+ITES;5;0.0;0.0;100.0;0
+ITES;6;0.0;0.0;100.0;0
+ITES;7;0.0;0.0;100.0;0
+ITES;8;0.0;0.0;100.0;0
+ITES;9;0.0;0.0;100.0;0
+ITES;10;0.0;0.0;100.0;0
+ITES;11;0.0;26.07;73.93;15347
+ITES;12;26.07;7.19;66.73;4233
+ITES;13;33.27;22.47;44.26;13225
+ITES;14;55.74;25.02;19.24;14729
+ITES;15;80.76;10.97;8.27;6455
+ITES;16;91.73;8.27;0.0;4869
+ITES;17;100.0;0.0;0.0;0
+ITES;18;100.0;0.0;0.0;0
+ITES;19;100.0;0.0;0.0;0
+ITES;20;100.0;0.0;0.0;0
+ITES;21;100.0;0.0;0.0;0
+ITES;22;100.0;0.0;0.0;0
+ITES;23;100.0;0.0;0.0;0
+ITES;24;100.0;0.0;0.0;0
+ITES;25;100.0;0.0;0.0;0
+ITES;26;100.0;0.0;0.0;0
+ITES;27;100.0;0.0;0.0;0
+ITES;28;100.0;0.0;0.0;0
+ITES;29;100.0;0.0;0.0;0
+ITES;30;100.0;0.0;0.0;0
+ITES;31;100.0;0.0;0.0;0
+ITES;32;100.0;0.0;0.0;0
+ITES;33;100.0;0.0;0.0;0
+ITES;34;100.0;0.0;0.0;0
+ITES;35;100.0;0.0;0.0;0
+ITES;36;100.0;0.0;0.0;0
+ITES;37;100.0;0.0;0.0;0
+ITES;38;100.0;0.0;0.0;0
+ITES;39;100.0;0.0;0.0;0
+ITES;40;100.0;0.0;0.0;0
+ITES;41;100.0;0.0;0.0;0
+ITES;42;100.0;0.0;0.0;0
+ITES;43;100.0;0.0;0.0;0
+ITES;44;100.0;0.0;0.0;0
+ITES;45;100.0;0.0;0.0;0
+Logistics and Supply Chain;5;0.0;0.0;100.0;0
+Logistics and Supply Chain;6;0.0;0.0;100.0;0
+Logistics and Supply Chain;7;0.0;0.0;100.0;0
+Logistics and Supply Chain;8;0.0;0.0;100.0;0
+Logistics and Supply Chain;9;0.0;0.0;100.0;0
+Logistics and Supply Chain;10;0.0;38.1;61.9;16761
+Logistics and Supply Chain;11;38.1;37.67;24.23;16572
+Logistics and Supply Chain;12;75.77;14.88;9.35;6548
+Logistics and Supply Chain;13;90.65;4.1;5.25;1802
+Logistics and Supply Chain;14;94.75;2.12;3.13;932
+Logistics and Supply Chain;15;96.87;1.54;1.59;677
+Logistics and Supply Chain;16;98.41;1.15;0.44;508
+Logistics and Supply Chain;17;99.56;0.0;0.44;0
+Logistics and Supply Chain;18;99.56;0.26;0.18;115
+Logistics and Supply Chain;19;99.82;0.11;0.07;48
+Logistics and Supply Chain;20;99.93;0.0;0.07;0
+Logistics and Supply Chain;21;99.93;0.0;0.07;0
+Logistics and Supply Chain;22;99.93;0.05;0.02;23
+Logistics and Supply Chain;23;99.98;0.0;0.02;0
+Logistics and Supply Chain;24;99.98;0.01;0.01;3
+Logistics and Supply Chain;25;99.99;0.0;0.01;0
+Logistics and Supply Chain;26;99.99;0.0;0.01;0
+Logistics and Supply Chain;27;99.99;0.01;0.0;3
+Logistics and Supply Chain;28;100.0;0.0;0.0;0
+Logistics and Supply Chain;29;100.0;0.0;0.0;0
+Logistics and Supply Chain;30;100.0;0.0;0.0;0
+Logistics and Supply Chain;31;100.0;0.0;0.0;1
+Logistics and Supply Chain;32;100.0;0.0;0.0;0
+Logistics and Supply Chain;33;100.0;0.0;0.0;0
+Logistics and Supply Chain;34;100.0;0.0;0.0;0
+Logistics and Supply Chain;35;100.0;0.0;0.0;0
+Logistics and Supply Chain;36;100.0;0.0;0.0;0
+Logistics and Supply Chain;37;100.0;0.0;0.0;0
+Logistics and Supply Chain;38;100.0;0.0;0.0;0
+Logistics and Supply Chain;39;100.0;0.0;0.0;0
+Logistics and Supply Chain;40;100.0;0.0;0.0;0
+Logistics and Supply Chain;41;100.0;0.0;0.0;0
+Logistics and Supply Chain;42;100.0;0.0;0.0;0
+Logistics and Supply Chain;43;100.0;0.0;0.0;0
+Logistics and Supply Chain;44;100.0;0.0;0.0;0
+Logistics and Supply Chain;45;100.0;0.0;0.0;0
+Package/Freight Delivery;5;0.0;0.0;100.0;0
+Package/Freight Delivery;6;0.0;0.0;100.0;0
+Package/Freight Delivery;7;0.0;0.0;100.0;0
+Package/Freight Delivery;8;0.0;0.0;100.0;0
+Package/Freight Delivery;9;0.0;0.0;100.0;0
+Package/Freight Delivery;10;0.0;38.02;61.98;8233
+Package/Freight Delivery;11;38.02;32.67;29.32;7074
+Package/Freight Delivery;12;70.68;18.11;11.21;3922
+Package/Freight Delivery;13;88.79;5.19;6.01;1125
+Package/Freight Delivery;14;93.99;2.17;3.85;469
+Package/Freight Delivery;15;96.15;1.87;1.98;405
+Package/Freight Delivery;16;98.02;1.46;0.52;316
+Package/Freight Delivery;17;99.48;0.0;0.52;0
+Package/Freight Delivery;18;99.48;0.24;0.28;51
+Package/Freight Delivery;19;99.72;0.2;0.08;44
+Package/Freight Delivery;20;99.92;0.0;0.08;0
+Package/Freight Delivery;21;99.92;0.0;0.08;0
+Package/Freight Delivery;22;99.92;0.06;0.01;14
+Package/Freight Delivery;23;99.99;0.0;0.01;0
+Package/Freight Delivery;24;99.99;0.01;0.0;3
+Package/Freight Delivery;25;100.0;0.0;0.0;0
+Package/Freight Delivery;26;100.0;0.0;0.0;0
+Package/Freight Delivery;27;100.0;0.0;0.0;0
+Package/Freight Delivery;28;100.0;0.0;0.0;0
+Package/Freight Delivery;29;100.0;0.0;0.0;0
+Package/Freight Delivery;30;100.0;0.0;0.0;0
+Package/Freight Delivery;31;100.0;0.0;0.0;0
+Package/Freight Delivery;32;100.0;0.0;0.0;0
+Package/Freight Delivery;33;100.0;0.0;0.0;0
+Package/Freight Delivery;34;100.0;0.0;0.0;0
+Package/Freight Delivery;35;100.0;0.0;0.0;0
+Package/Freight Delivery;36;100.0;0.0;0.0;0
+Package/Freight Delivery;37;100.0;0.0;0.0;0
+Package/Freight Delivery;38;100.0;0.0;0.0;0
+Package/Freight Delivery;39;100.0;0.0;0.0;0
+Package/Freight Delivery;40;100.0;0.0;0.0;0
+Package/Freight Delivery;41;100.0;0.0;0.0;0
+Package/Freight Delivery;42;100.0;0.0;0.0;0
+Package/Freight Delivery;43;100.0;0.0;0.0;0
+Package/Freight Delivery;44;100.0;0.0;0.0;0
+Package/Freight Delivery;45;100.0;0.0;0.0;0
+Mining & Metals;5;0.0;0.0;100.0;0
+Mining & Metals;6;0.0;0.0;100.0;0
+Mining & Metals;7;0.0;0.0;100.0;0
+Mining & Metals;8;0.0;0.0;100.0;0
+Mining & Metals;9;0.0;0.0;100.0;0
+Mining & Metals;10;0.0;0.31;99.69;72
+Mining & Metals;11;0.31;12.79;86.9;2967
+Mining & Metals;12;13.1;31.86;55.04;7390
+Mining & Metals;13;44.96;21.32;33.71;4946
+Mining & Metals;14;66.29;13.99;19.72;3244
+Mining & Metals;15;80.28;7.13;12.6;1653
+Mining & Metals;16;87.4;10.14;2.46;2351
+Mining & Metals;17;97.54;0.0;2.46;0
+Mining & Metals;18;97.54;1.23;1.23;286
+Mining & Metals;19;98.77;0.85;0.38;196
+Mining & Metals;20;99.62;0.0;0.38;0
+Mining & Metals;21;99.62;0.0;0.38;0
+Mining & Metals;22;99.62;0.23;0.16;53
+Mining & Metals;23;99.84;0.0;0.16;0
+Mining & Metals;24;99.84;0.05;0.11;11
+Mining & Metals;25;99.89;0.0;0.11;0
+Mining & Metals;26;99.89;0.0;0.11;0
+Mining & Metals;27;99.89;0.07;0.03;17
+Mining & Metals;28;99.97;0.0;0.03;0
+Mining & Metals;29;99.97;0.0;0.03;0
+Mining & Metals;30;99.97;0.0;0.03;0
+Mining & Metals;31;99.97;0.03;0.0;8
+Mining & Metals;32;100.0;0.0;0.0;0
+Mining & Metals;33;100.0;0.0;0.0;0
+Mining & Metals;34;100.0;0.0;0.0;0
+Mining & Metals;35;100.0;0.0;0.0;0
+Mining & Metals;36;100.0;0.0;0.0;0
+Mining & Metals;37;100.0;0.0;0.0;0
+Mining & Metals;38;100.0;0.0;0.0;0
+Mining & Metals;39;100.0;0.0;0.0;0
+Mining & Metals;40;100.0;0.0;0.0;0
+Mining & Metals;41;100.0;0.0;0.0;0
+Mining & Metals;42;100.0;0.0;0.0;0
+Mining & Metals;43;100.0;0.0;0.0;0
+Mining & Metals;44;100.0;0.0;0.0;0
+Mining & Metals;45;100.0;0.0;0.0;0
+Power & Energy;5;0.0;0.0;100.0;0
+Power & Energy;6;0.0;0.0;100.0;0
+Power & Energy;7;0.0;0.0;100.0;0
+Power & Energy;8;0.0;0.0;100.0;0
+Power & Energy;9;0.0;0.0;100.0;0
+Power & Energy;10;0.0;7.18;92.82;1849
+Power & Energy;11;7.18;21.3;71.52;5484
+Power & Energy;12;28.48;21.85;49.68;5625
+Power & Energy;13;50.32;19.59;30.09;5043
+Power & Energy;14;69.91;11.38;18.71;2930
+Power & Energy;15;81.29;8.0;10.71;2061
+Power & Energy;16;89.29;8.49;2.21;2187
+Power & Energy;17;97.79;0.0;2.21;0
+Power & Energy;18;97.79;1.11;1.1;287
+Power & Energy;19;98.9;0.71;0.39;182
+Power & Energy;20;99.61;0.0;0.39;0
+Power & Energy;21;99.61;0.0;0.39;0
+Power & Energy;22;99.61;0.29;0.1;74
+Power & Energy;23;99.9;0.0;0.1;0
+Power & Energy;24;99.9;0.07;0.03;19
+Power & Energy;25;99.97;0.0;0.03;0
+Power & Energy;26;99.97;0.0;0.03;0
+Power & Energy;27;99.97;0.03;0.0;8
+Power & Energy;28;100.0;0.0;0.0;0
+Power & Energy;29;100.0;0.0;0.0;0
+Power & Energy;30;100.0;0.0;0.0;0
+Power & Energy;31;100.0;0.0;0.0;0
+Power & Energy;32;100.0;0.0;0.0;0
+Power & Energy;33;100.0;0.0;0.0;0
+Power & Energy;34;100.0;0.0;0.0;0
+Power & Energy;35;100.0;0.0;0.0;0
+Power & Energy;36;100.0;0.0;0.0;0
+Power & Energy;37;100.0;0.0;0.0;0
+Power & Energy;38;100.0;0.0;0.0;0
+Power & Energy;39;100.0;0.0;0.0;0
+Power & Energy;40;100.0;0.0;0.0;0
+Power & Energy;41;100.0;0.0;0.0;0
+Power & Energy;42;100.0;0.0;0.0;0
+Power & Energy;43;100.0;0.0;0.0;0
+Power & Energy;44;100.0;0.0;0.0;0
+Power & Energy;45;100.0;0.0;0.0;0
+Heavy Industry;5;0.0;0.0;100.0;0
+Heavy Industry;6;0.0;0.0;100.0;0
+Heavy Industry;7;0.0;0.0;100.0;0
+Heavy Industry;8;0.0;0.0;100.0;0
+Heavy Industry;9;0.0;0.0;100.0;0
+Heavy Industry;10;0.0;4.48;95.52;2496
+Heavy Industry;11;4.48;14.96;80.56;8330
+Heavy Industry;12;19.44;28.14;52.42;15671
+Heavy Industry;13;47.58;21.98;30.44;12239
+Heavy Industry;14;69.56;12.35;18.1;6877
+Heavy Industry;15;81.9;7.64;10.46;4255
+Heavy Industry;16;89.54;8.5;1.95;4736
+Heavy Industry;17;98.05;0.03;1.92;15
+Heavy Industry;18;98.08;1.07;0.85;596
+Heavy Industry;19;99.15;0.59;0.26;329
+Heavy Industry;20;99.74;0.0;0.26;2
+Heavy Industry;21;99.74;0.0;0.26;0
+Heavy Industry;22;99.74;0.18;0.08;100
+Heavy Industry;23;99.92;0.0;0.08;1
+Heavy Industry;24;99.92;0.04;0.04;24
+Heavy Industry;25;99.96;0.0;0.04;0
+Heavy Industry;26;99.96;0.0;0.04;0
+Heavy Industry;27;99.96;0.03;0.01;16
+Heavy Industry;28;99.99;0.0;0.01;0
+Heavy Industry;29;99.99;0.0;0.01;0
+Heavy Industry;30;99.99;0.0;0.01;0
+Heavy Industry;31;99.99;0.01;0.0;4
+Heavy Industry;32;100.0;0.0;0.0;0
+Heavy Industry;33;100.0;0.0;0.0;0
+Heavy Industry;34;100.0;0.0;0.0;0
+Heavy Industry;35;100.0;0.0;0.0;0
+Heavy Industry;36;100.0;0.0;0.0;0
+Heavy Industry;37;100.0;0.0;0.0;0
+Heavy Industry;38;100.0;0.0;0.0;0
+Heavy Industry;39;100.0;0.0;0.0;0
+Heavy Industry;40;100.0;0.0;0.0;0
+Heavy Industry;41;100.0;0.0;0.0;0
+Heavy Industry;42;100.0;0.0;0.0;0
+Heavy Industry;43;100.0;0.0;0.0;0
+Heavy Industry;44;100.0;0.0;0.0;0
+Heavy Industry;45;100.0;0.0;0.0;0
+Education Management;5;0.0;0.0;100.0;0
+Education Management;6;0.0;0.0;100.0;0
+Education Management;7;0.0;0.0;100.0;0
+Education Management;8;0.0;0.0;100.0;0
+Education Management;9;0.0;0.0;100.0;0
+Education Management;10;0.0;0.14;99.86;5
+Education Management;11;0.14;56.95;42.91;2020
+Education Management;12;57.09;17.17;25.74;609
+Education Management;13;74.26;1.21;24.53;43
+Education Management;14;75.47;17.11;7.41;607
+Education Management;15;92.59;4.31;3.1;153
+Education Management;16;96.9;1.92;1.18;68
+Education Management;17;98.82;0.0;1.18;0
+Education Management;18;98.82;0.93;0.25;33
+Education Management;19;99.75;0.08;0.17;3
+Education Management;20;99.83;0.0;0.17;0
+Education Management;21;99.83;0.0;0.17;0
+Education Management;22;99.83;0.14;0.03;5
+Education Management;23;99.97;0.0;0.03;0
+Education Management;24;99.97;0.03;0.0;1
+Education Management;25;100.0;0.0;0.0;0
+Education Management;26;100.0;0.0;0.0;0
+Education Management;27;100.0;0.0;0.0;0
+Education Management;28;100.0;0.0;0.0;0
+Education Management;29;100.0;0.0;0.0;0
+Education Management;30;100.0;0.0;0.0;0
+Education Management;31;100.0;0.0;0.0;0
+Education Management;32;100.0;0.0;0.0;0
+Education Management;33;100.0;0.0;0.0;0
+Education Management;34;100.0;0.0;0.0;0
+Education Management;35;100.0;0.0;0.0;0
+Education Management;36;100.0;0.0;0.0;0
+Education Management;37;100.0;0.0;0.0;0
+Education Management;38;100.0;0.0;0.0;0
+Education Management;39;100.0;0.0;0.0;0
+Education Management;40;100.0;0.0;0.0;0
+Education Management;41;100.0;0.0;0.0;0
+Education Management;42;100.0;0.0;0.0;0
+Education Management;43;100.0;0.0;0.0;0
+Education Management;44;100.0;0.0;0.0;0
+Education Management;45;100.0;0.0;0.0;0
+Automotive;5;0.0;0.0;100.0;0
+Automotive;6;0.0;0.0;100.0;0
+Automotive;7;0.0;0.0;100.0;0
+Automotive;8;0.0;0.0;100.0;0
+Automotive;9;0.0;0.0;100.0;0
+Automotive;10;0.0;9.37;90.63;3793
+Automotive;11;9.37;12.76;77.87;5165
+Automotive;12;22.13;32.75;45.11;13254
+Automotive;13;54.89;17.27;27.84;6990
+Automotive;14;72.16;12.13;15.72;4907
+Automotive;15;84.28;6.16;9.56;2492
+Automotive;16;90.44;7.2;2.36;2912
+Automotive;17;97.64;0.09;2.27;37
+Automotive;18;97.73;1.32;0.95;534
+Automotive;19;99.05;0.47;0.48;192
+Automotive;20;99.52;0.09;0.39;37
+Automotive;21;99.61;0.01;0.38;3
+Automotive;22;99.62;0.23;0.15;92
+Automotive;23;99.85;0.0;0.15;2
+Automotive;24;99.85;0.11;0.04;45
+Automotive;25;99.96;0.0;0.04;0
+Automotive;26;99.96;0.01;0.03;3
+Automotive;27;99.97;0.02;0.01;9
+Automotive;28;99.99;0.0;0.01;0
+Automotive;29;99.99;0.0;0.01;0
+Automotive;30;99.99;0.0;0.01;0
+Automotive;31;99.99;0.0;0.0;1
+Automotive;32;100.0;0.0;0.0;0
+Automotive;33;100.0;0.0;0.0;0
+Automotive;34;100.0;0.0;0.0;0
+Automotive;35;100.0;0.0;0.0;1
+Automotive;36;100.0;0.0;0.0;0
+Automotive;37;100.0;0.0;0.0;0
+Automotive;38;100.0;0.0;0.0;0
+Automotive;39;100.0;0.0;0.0;0
+Automotive;40;100.0;0.0;0.0;0
+Automotive;41;100.0;0.0;0.0;1
+Automotive;42;100.0;0.0;0.0;0
+Automotive;43;100.0;0.0;0.0;0
+Automotive;44;100.0;0.0;0.0;0
+Automotive;45;100.0;0.0;0.0;0
+Manufacturing;5;0.0;0.0;100.0;0
+Manufacturing;6;0.0;0.0;100.0;0
+Manufacturing;7;0.0;0.0;100.0;0
+Manufacturing;8;0.0;0.0;100.0;0
+Manufacturing;9;0.0;0.0;100.0;0
+Manufacturing;10;0.0;6.21;93.79;5516
+Manufacturing;11;6.21;10.98;82.81;9747
+Manufacturing;12;17.19;36.16;46.65;32116
+Manufacturing;13;53.35;16.6;30.05;14739
+Manufacturing;14;69.95;11.58;18.48;10282
+Manufacturing;15;81.52;8.0;10.48;7104
+Manufacturing;16;89.52;8.44;2.04;7497
+Manufacturing;17;97.96;0.04;2.0;35
+Manufacturing;18;98.0;1.35;0.65;1197
+Manufacturing;19;99.35;0.35;0.3;312
+Manufacturing;20;99.7;0.01;0.29;5
+Manufacturing;21;99.71;0.0;0.29;4
+Manufacturing;22;99.71;0.2;0.08;180
+Manufacturing;23;99.92;0.0;0.08;0
+Manufacturing;24;99.92;0.07;0.02;58
+Manufacturing;25;99.98;0.0;0.02;0
+Manufacturing;26;99.98;0.0;0.02;1
+Manufacturing;27;99.98;0.01;0.0;12
+Manufacturing;28;100.0;0.0;0.0;0
+Manufacturing;29;100.0;0.0;0.0;1
+Manufacturing;30;100.0;0.0;0.0;0
+Manufacturing;31;100.0;0.0;0.0;1
+Manufacturing;32;100.0;0.0;0.0;0
+Manufacturing;33;100.0;0.0;0.0;0
+Manufacturing;34;100.0;0.0;0.0;0
+Manufacturing;35;100.0;0.0;0.0;1
+Manufacturing;36;100.0;0.0;0.0;0
+Manufacturing;37;100.0;0.0;0.0;0
+Manufacturing;38;100.0;0.0;0.0;0
+Manufacturing;39;100.0;0.0;0.0;0
+Manufacturing;40;100.0;0.0;0.0;0
+Manufacturing;41;100.0;0.0;0.0;1
+Manufacturing;42;100.0;0.0;0.0;0
+Manufacturing;43;100.0;0.0;0.0;0
+Manufacturing;44;100.0;0.0;0.0;0
+Manufacturing;45;100.0;0.0;0.0;0
+Chemicals;5;0.0;0.0;100.0;0
+Chemicals;6;0.0;0.0;100.0;0
+Chemicals;7;0.0;0.0;100.0;0
+Chemicals;8;0.0;0.0;100.0;0
+Chemicals;9;0.0;0.0;100.0;0
+Chemicals;10;0.0;14.63;85.37;2486
+Chemicals;11;14.63;16.56;68.81;2815
+Chemicals;12;31.19;24.84;43.98;4222
+Chemicals;13;56.02;14.11;29.86;2399
+Chemicals;14;70.14;10.66;19.2;1812
+Chemicals;15;80.8;7.91;11.29;1345
+Chemicals;16;88.71;7.95;3.34;1352
+Chemicals;17;96.66;0.22;3.12;37
+Chemicals;18;96.88;1.54;1.58;262
+Chemicals;19;98.42;0.79;0.79;134
+Chemicals;20;99.21;0.05;0.74;8
+Chemicals;21;99.26;0.02;0.72;4
+Chemicals;22;99.28;0.42;0.29;72
+Chemicals;23;99.71;0.01;0.29;1
+Chemicals;24;99.71;0.22;0.07;37
+Chemicals;25;99.93;0.0;0.07;0
+Chemicals;26;99.93;0.0;0.07;0
+Chemicals;27;99.93;0.06;0.01;10
+Chemicals;28;99.99;0.0;0.01;0
+Chemicals;29;99.99;0.0;0.01;0
+Chemicals;30;99.99;0.0;0.01;0
+Chemicals;31;99.99;0.01;0.0;2
+Chemicals;32;100.0;0.0;0.0;0
+Chemicals;33;100.0;0.0;0.0;0
+Chemicals;34;100.0;0.0;0.0;0
+Chemicals;35;100.0;0.0;0.0;0
+Chemicals;36;100.0;0.0;0.0;0
+Chemicals;37;100.0;0.0;0.0;0
+Chemicals;38;100.0;0.0;0.0;0
+Chemicals;39;100.0;0.0;0.0;0
+Chemicals;40;100.0;0.0;0.0;0
+Chemicals;41;100.0;0.0;0.0;0
+Chemicals;42;100.0;0.0;0.0;0
+Chemicals;43;100.0;0.0;0.0;0
+Chemicals;44;100.0;0.0;0.0;0
+Chemicals;45;100.0;0.0;0.0;0
+Biotechnology;5;0.0;0.0;100.0;0
+Biotechnology;6;0.0;0.0;100.0;0
+Biotechnology;7;0.0;0.0;100.0;0
+Biotechnology;8;0.0;0.0;100.0;0
+Biotechnology;9;0.0;0.0;100.0;0
+Biotechnology;10;0.0;0.05;99.95;1
+Biotechnology;11;0.05;26.85;73.11;585
+Biotechnology;12;26.89;30.66;42.45;668
+Biotechnology;13;57.55;11.84;30.61;258
+Biotechnology;14;69.39;8.44;22.17;184
+Biotechnology;15;77.83;8.58;13.58;187
+Biotechnology;16;86.42;9.22;4.36;201
+Biotechnology;17;95.64;0.0;4.36;0
+Biotechnology;18;95.64;2.52;1.84;55
+Biotechnology;19;98.16;1.28;0.55;28
+Biotechnology;20;99.45;0.0;0.55;0
+Biotechnology;21;99.45;0.0;0.55;0
+Biotechnology;22;99.45;0.41;0.14;9
+Biotechnology;23;99.86;0.0;0.14;0
+Biotechnology;24;99.86;0.14;0.0;3
+Biotechnology;25;100.0;0.0;0.0;0
+Biotechnology;26;100.0;0.0;0.0;0
+Biotechnology;27;100.0;0.0;0.0;0
+Biotechnology;28;100.0;0.0;0.0;0
+Biotechnology;29;100.0;0.0;0.0;0
+Biotechnology;30;100.0;0.0;0.0;0
+Biotechnology;31;100.0;0.0;0.0;0
+Biotechnology;32;100.0;0.0;0.0;0
+Biotechnology;33;100.0;0.0;0.0;0
+Biotechnology;34;100.0;0.0;0.0;0
+Biotechnology;35;100.0;0.0;0.0;0
+Biotechnology;36;100.0;0.0;0.0;0
+Biotechnology;37;100.0;0.0;0.0;0
+Biotechnology;38;100.0;0.0;0.0;0
+Biotechnology;39;100.0;0.0;0.0;0
+Biotechnology;40;100.0;0.0;0.0;0
+Biotechnology;41;100.0;0.0;0.0;0
+Biotechnology;42;100.0;0.0;0.0;0
+Biotechnology;43;100.0;0.0;0.0;0
+Biotechnology;44;100.0;0.0;0.0;0
+Biotechnology;45;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;5;0.0;0.0;100.0;0
+Electrical/Electronic Manufacturing;6;0.0;0.0;100.0;0
+Electrical/Electronic Manufacturing;7;0.0;0.0;100.0;0
+Electrical/Electronic Manufacturing;8;0.0;0.0;100.0;0
+Electrical/Electronic Manufacturing;9;0.0;0.0;100.0;0
+Electrical/Electronic Manufacturing;10;0.0;3.47;96.53;1682
+Electrical/Electronic Manufacturing;11;3.47;5.96;90.56;2888
+Electrical/Electronic Manufacturing;12;9.44;30.32;60.24;14687
+Electrical/Electronic Manufacturing;13;39.76;20.13;40.11;9751
+Electrical/Electronic Manufacturing;14;59.89;12.66;27.45;6132
+Electrical/Electronic Manufacturing;15;72.55;13.1;14.34;6347
+Electrical/Electronic Manufacturing;16;85.66;11.84;2.5;5735
+Electrical/Electronic Manufacturing;17;97.5;0.01;2.5;3
+Electrical/Electronic Manufacturing;18;97.5;1.39;1.11;673
+Electrical/Electronic Manufacturing;19;98.89;0.76;0.35;368
+Electrical/Electronic Manufacturing;20;99.65;0.04;0.31;19
+Electrical/Electronic Manufacturing;21;99.69;0.0;0.31;1
+Electrical/Electronic Manufacturing;22;99.69;0.22;0.09;105
+Electrical/Electronic Manufacturing;23;99.91;0.0;0.09;0
+Electrical/Electronic Manufacturing;24;99.91;0.08;0.01;38
+Electrical/Electronic Manufacturing;25;99.99;0.0;0.01;0
+Electrical/Electronic Manufacturing;26;99.99;0.0;0.01;2
+Electrical/Electronic Manufacturing;27;99.99;0.01;0.0;3
+Electrical/Electronic Manufacturing;28;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;29;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;30;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;31;100.0;0.0;0.0;1
+Electrical/Electronic Manufacturing;32;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;33;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;34;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;35;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;36;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;37;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;38;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;39;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;40;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;41;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;42;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;43;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;44;100.0;0.0;0.0;0
+Electrical/Electronic Manufacturing;45;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;5;0.0;0.0;100.0;0
+Transportation/Trucking/Railroad;6;0.0;0.0;100.0;0
+Transportation/Trucking/Railroad;7;0.0;0.0;100.0;0
+Transportation/Trucking/Railroad;8;0.0;0.0;100.0;0
+Transportation/Trucking/Railroad;9;0.0;0.0;100.0;0
+Transportation/Trucking/Railroad;10;0.0;0.0;100.0;0
+Transportation/Trucking/Railroad;11;0.0;0.0;100.0;0
+Transportation/Trucking/Railroad;12;0.0;14.07;85.93;358
+Transportation/Trucking/Railroad;13;14.07;25.43;60.5;647
+Transportation/Trucking/Railroad;14;39.5;11.36;49.14;289
+Transportation/Trucking/Railroad;15;50.86;28.22;20.91;718
+Transportation/Trucking/Railroad;16;79.09;18.4;2.52;468
+Transportation/Trucking/Railroad;17;97.48;0.0;2.52;0
+Transportation/Trucking/Railroad;18;97.48;1.85;0.67;47
+Transportation/Trucking/Railroad;19;99.33;0.12;0.55;3
+Transportation/Trucking/Railroad;20;99.45;0.0;0.55;0
+Transportation/Trucking/Railroad;21;99.45;0.0;0.55;0
+Transportation/Trucking/Railroad;22;99.45;0.51;0.04;13
+Transportation/Trucking/Railroad;23;99.96;0.0;0.04;0
+Transportation/Trucking/Railroad;24;99.96;0.04;0.0;1
+Transportation/Trucking/Railroad;25;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;26;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;27;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;28;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;29;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;30;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;31;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;32;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;33;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;34;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;35;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;36;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;37;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;38;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;39;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;40;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;41;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;42;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;43;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;44;100.0;0.0;0.0;0
+Transportation/Trucking/Railroad;45;100.0;0.0;0.0;0
+Oil & Gas;5;0.0;0.0;100.0;0
+Oil & Gas;6;0.0;0.0;100.0;0
+Oil & Gas;7;0.0;0.0;100.0;0
+Oil & Gas;8;0.0;0.0;100.0;0
+Oil & Gas;9;0.0;0.0;100.0;0
+Oil & Gas;10;0.0;0.0;100.0;0
+Oil & Gas;11;0.0;0.0;100.0;0
+Oil & Gas;12;0.0;12.41;87.59;33
+Oil & Gas;13;12.41;20.3;67.29;54
+Oil & Gas;14;32.71;21.8;45.49;58
+Oil & Gas;15;54.51;14.66;30.83;39
+Oil & Gas;16;69.17;18.42;12.41;49
+Oil & Gas;17;87.59;0.0;12.41;0
+Oil & Gas;18;87.59;6.77;5.64;18
+Oil & Gas;19;94.36;4.14;1.5;11
+Oil & Gas;20;98.5;0.0;1.5;0
+Oil & Gas;21;98.5;0.0;1.5;0
+Oil & Gas;22;98.5;1.5;0.0;4
+Oil & Gas;23;100.0;0.0;0.0;0
+Oil & Gas;24;100.0;0.0;0.0;0
+Oil & Gas;25;100.0;0.0;0.0;0
+Oil & Gas;26;100.0;0.0;0.0;0
+Oil & Gas;27;100.0;0.0;0.0;0
+Oil & Gas;28;100.0;0.0;0.0;0
+Oil & Gas;29;100.0;0.0;0.0;0
+Oil & Gas;30;100.0;0.0;0.0;0
+Oil & Gas;31;100.0;0.0;0.0;0
+Oil & Gas;32;100.0;0.0;0.0;0
+Oil & Gas;33;100.0;0.0;0.0;0
+Oil & Gas;34;100.0;0.0;0.0;0
+Oil & Gas;35;100.0;0.0;0.0;0
+Oil & Gas;36;100.0;0.0;0.0;0
+Oil & Gas;37;100.0;0.0;0.0;0
+Oil & Gas;38;100.0;0.0;0.0;0
+Oil & Gas;39;100.0;0.0;0.0;0
+Oil & Gas;40;100.0;0.0;0.0;0
+Oil & Gas;41;100.0;0.0;0.0;0
+Oil & Gas;42;100.0;0.0;0.0;0
+Oil & Gas;43;100.0;0.0;0.0;0
+Oil & Gas;44;100.0;0.0;0.0;0
+Oil & Gas;45;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;5;0.0;0.0;100.0;0
+Mechanical or Industrial Engineering;6;0.0;0.0;100.0;0
+Mechanical or Industrial Engineering;7;0.0;0.0;100.0;0
+Mechanical or Industrial Engineering;8;0.0;0.0;100.0;0
+Mechanical or Industrial Engineering;9;0.0;0.0;100.0;0
+Mechanical or Industrial Engineering;10;0.0;2.4;97.6;380
+Mechanical or Industrial Engineering;11;2.4;19.53;78.06;3091
+Mechanical or Industrial Engineering;12;21.94;32.45;45.62;5134
+Mechanical or Industrial Engineering;13;54.38;24.32;21.3;3848
+Mechanical or Industrial Engineering;14;78.7;8.08;13.22;1278
+Mechanical or Industrial Engineering;15;86.78;6.51;6.71;1030
+Mechanical or Industrial Engineering;16;93.29;5.22;1.49;826
+Mechanical or Industrial Engineering;17;98.51;0.01;1.49;1
+Mechanical or Industrial Engineering;18;98.51;0.92;0.56;146
+Mechanical or Industrial Engineering;19;99.44;0.33;0.23;52
+Mechanical or Industrial Engineering;20;99.77;0.0;0.23;0
+Mechanical or Industrial Engineering;21;99.77;0.0;0.23;0
+Mechanical or Industrial Engineering;22;99.77;0.16;0.08;25
+Mechanical or Industrial Engineering;23;99.92;0.0;0.08;0
+Mechanical or Industrial Engineering;24;99.92;0.07;0.01;11
+Mechanical or Industrial Engineering;25;99.99;0.0;0.01;0
+Mechanical or Industrial Engineering;26;99.99;0.0;0.01;0
+Mechanical or Industrial Engineering;27;99.99;0.01;0.0;1
+Mechanical or Industrial Engineering;28;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;29;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;30;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;31;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;32;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;33;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;34;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;35;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;36;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;37;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;38;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;39;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;40;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;41;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;42;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;43;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;44;100.0;0.0;0.0;0
+Mechanical or Industrial Engineering;45;100.0;0.0;0.0;0
+Business Supplies and Equipment;5;0.0;0.0;100.0;0
+Business Supplies and Equipment;6;0.0;0.0;100.0;0
+Business Supplies and Equipment;7;0.0;0.0;100.0;0
+Business Supplies and Equipment;8;0.0;0.0;100.0;0
+Business Supplies and Equipment;9;0.0;0.0;100.0;0
+Business Supplies and Equipment;10;0.0;0.05;99.95;1
+Business Supplies and Equipment;11;0.05;26.58;73.37;493
+Business Supplies and Equipment;12;26.63;12.45;60.92;231
+Business Supplies and Equipment;13;39.08;19.62;41.29;364
+Business Supplies and Equipment;14;58.71;16.28;25.01;302
+Business Supplies and Equipment;15;74.99;14.72;10.3;273
+Business Supplies and Equipment;16;89.7;5.71;4.58;106
+Business Supplies and Equipment;17;95.42;0.0;4.58;0
+Business Supplies and Equipment;18;95.42;3.18;1.4;59
+Business Supplies and Equipment;19;98.6;0.54;0.86;10
+Business Supplies and Equipment;20;99.14;0.0;0.86;0
+Business Supplies and Equipment;21;99.14;0.0;0.86;0
+Business Supplies and Equipment;22;99.14;0.49;0.38;9
+Business Supplies and Equipment;23;99.62;0.0;0.38;0
+Business Supplies and Equipment;24;99.62;0.38;0.0;7
+Business Supplies and Equipment;25;100.0;0.0;0.0;0
+Business Supplies and Equipment;26;100.0;0.0;0.0;0
+Business Supplies and Equipment;27;100.0;0.0;0.0;0
+Business Supplies and Equipment;28;100.0;0.0;0.0;0
+Business Supplies and Equipment;29;100.0;0.0;0.0;0
+Business Supplies and Equipment;30;100.0;0.0;0.0;0
+Business Supplies and Equipment;31;100.0;0.0;0.0;0
+Business Supplies and Equipment;32;100.0;0.0;0.0;0
+Business Supplies and Equipment;33;100.0;0.0;0.0;0
+Business Supplies and Equipment;34;100.0;0.0;0.0;0
+Business Supplies and Equipment;35;100.0;0.0;0.0;0
+Business Supplies and Equipment;36;100.0;0.0;0.0;0
+Business Supplies and Equipment;37;100.0;0.0;0.0;0
+Business Supplies and Equipment;38;100.0;0.0;0.0;0
+Business Supplies and Equipment;39;100.0;0.0;0.0;0
+Business Supplies and Equipment;40;100.0;0.0;0.0;0
+Business Supplies and Equipment;41;100.0;0.0;0.0;0
+Business Supplies and Equipment;42;100.0;0.0;0.0;0
+Business Supplies and Equipment;43;100.0;0.0;0.0;0
+Business Supplies and Equipment;44;100.0;0.0;0.0;0
+Business Supplies and Equipment;45;100.0;0.0;0.0;0
+Medical Devices;5;0.0;0.0;100.0;0
+Medical Devices;6;0.0;0.0;100.0;0
+Medical Devices;7;0.0;0.0;100.0;0
+Medical Devices;8;0.0;0.0;100.0;0
+Medical Devices;9;0.0;0.0;100.0;0
+Medical Devices;10;0.0;8.64;91.36;302
+Medical Devices;11;8.64;20.55;70.81;718
+Medical Devices;12;29.19;17.83;52.98;623
+Medical Devices;13;47.02;11.96;41.01;418
+Medical Devices;14;58.99;17.77;23.24;621
+Medical Devices;15;76.76;14.11;9.13;493
+Medical Devices;16;90.87;5.95;3.18;208
+Medical Devices;17;96.82;0.0;3.18;0
+Medical Devices;18;96.82;1.92;1.26;67
+Medical Devices;19;98.74;0.77;0.49;27
+Medical Devices;20;99.51;0.0;0.49;0
+Medical Devices;21;99.51;0.0;0.49;0
+Medical Devices;22;99.51;0.29;0.2;10
+Medical Devices;23;99.8;0.0;0.2;0
+Medical Devices;24;99.8;0.2;0.0;7
+Medical Devices;25;100.0;0.0;0.0;0
+Medical Devices;26;100.0;0.0;0.0;0
+Medical Devices;27;100.0;0.0;0.0;0
+Medical Devices;28;100.0;0.0;0.0;0
+Medical Devices;29;100.0;0.0;0.0;0
+Medical Devices;30;100.0;0.0;0.0;0
+Medical Devices;31;100.0;0.0;0.0;0
+Medical Devices;32;100.0;0.0;0.0;0
+Medical Devices;33;100.0;0.0;0.0;0
+Medical Devices;34;100.0;0.0;0.0;0
+Medical Devices;35;100.0;0.0;0.0;0
+Medical Devices;36;100.0;0.0;0.0;0
+Medical Devices;37;100.0;0.0;0.0;0
+Medical Devices;38;100.0;0.0;0.0;0
+Medical Devices;39;100.0;0.0;0.0;0
+Medical Devices;40;100.0;0.0;0.0;0
+Medical Devices;41;100.0;0.0;0.0;0
+Medical Devices;42;100.0;0.0;0.0;0
+Medical Devices;43;100.0;0.0;0.0;0
+Medical Devices;44;100.0;0.0;0.0;0
+Medical Devices;45;100.0;0.0;0.0;0
+Internet;5;0.0;0.0;100.0;0
+Internet;6;0.0;0.0;100.0;0
+Internet;7;0.0;0.0;100.0;0
+Internet;8;0.0;0.0;100.0;0
+Internet;9;0.0;0.0;100.0;0
+Internet;10;0.0;1.32;98.68;60
+Internet;11;1.32;42.12;56.56;1911
+Internet;12;43.44;26.58;29.98;1206
+Internet;13;70.02;11.73;18.25;532
+Internet;14;81.75;5.73;12.52;260
+Internet;15;87.48;6.74;5.77;306
+Internet;16;94.23;3.84;1.94;174
+Internet;17;98.06;0.0;1.94;0
+Internet;18;98.06;1.08;0.86;49
+Internet;19;99.14;0.53;0.33;24
+Internet;20;99.67;0.0;0.33;0
+Internet;21;99.67;0.0;0.33;0
+Internet;22;99.67;0.26;0.07;12
+Internet;23;99.93;0.0;0.07;0
+Internet;24;99.93;0.02;0.04;1
+Internet;25;99.96;0.0;0.04;0
+Internet;26;99.96;0.0;0.04;0
+Internet;27;99.96;0.04;0.0;2
+Internet;28;100.0;0.0;0.0;0
+Internet;29;100.0;0.0;0.0;0
+Internet;30;100.0;0.0;0.0;0
+Internet;31;100.0;0.0;0.0;0
+Internet;32;100.0;0.0;0.0;0
+Internet;33;100.0;0.0;0.0;0
+Internet;34;100.0;0.0;0.0;0
+Internet;35;100.0;0.0;0.0;0
+Internet;36;100.0;0.0;0.0;0
+Internet;37;100.0;0.0;0.0;0
+Internet;38;100.0;0.0;0.0;0
+Internet;39;100.0;0.0;0.0;0
+Internet;40;100.0;0.0;0.0;0
+Internet;41;100.0;0.0;0.0;0
+Internet;42;100.0;0.0;0.0;0
+Internet;43;100.0;0.0;0.0;0
+Internet;44;100.0;0.0;0.0;0
+Internet;45;100.0;0.0;0.0;0
+Oil & Energy;5;0.0;0.0;100.0;0
+Oil & Energy;6;0.0;0.0;100.0;0
+Oil & Energy;7;0.0;0.0;100.0;0
+Oil & Energy;8;0.0;0.0;100.0;0
+Oil & Energy;9;0.0;0.0;100.0;0
+Oil & Energy;10;0.0;6.76;93.24;2180
+Oil & Energy;11;6.76;19.08;74.16;6153
+Oil & Energy;12;25.84;30.02;44.14;9684
+Oil & Energy;13;55.86;17.4;26.74;5613
+Oil & Energy;14;73.26;10.37;16.37;3344
+Oil & Energy;15;83.63;5.83;10.54;1882
+Oil & Energy;16;89.46;7.76;2.77;2504
+Oil & Energy;17;97.23;0.03;2.74;11
+Oil & Energy;18;97.26;1.62;1.11;524
+Oil & Energy;19;98.89;0.69;0.43;221
+Oil & Energy;20;99.57;0.04;0.39;13
+Oil & Energy;21;99.61;0.01;0.38;3
+Oil & Energy;22;99.62;0.26;0.12;84
+Oil & Energy;23;99.88;0.01;0.11;2
+Oil & Energy;24;99.89;0.09;0.02;28
+Oil & Energy;25;99.98;0.0;0.02;0
+Oil & Energy;26;99.98;0.0;0.02;1
+Oil & Energy;27;99.98;0.02;0.0;7
+Oil & Energy;28;100.0;0.0;0.0;0
+Oil & Energy;29;100.0;0.0;0.0;0
+Oil & Energy;30;100.0;0.0;0.0;0
+Oil & Energy;31;100.0;0.0;0.0;0
+Oil & Energy;32;100.0;0.0;0.0;0
+Oil & Energy;33;100.0;0.0;0.0;0
+Oil & Energy;34;100.0;0.0;0.0;0
+Oil & Energy;35;100.0;0.0;0.0;0
+Oil & Energy;36;100.0;0.0;0.0;0
+Oil & Energy;37;100.0;0.0;0.0;0
+Oil & Energy;38;100.0;0.0;0.0;0
+Oil & Energy;39;100.0;0.0;0.0;0
+Oil & Energy;40;100.0;0.0;0.0;0
+Oil & Energy;41;100.0;0.0;0.0;0
+Oil & Energy;42;100.0;0.0;0.0;0
+Oil & Energy;43;100.0;0.0;0.0;0
+Oil & Energy;44;100.0;0.0;0.0;0
+Oil & Energy;45;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;5;0.0;0.0;100.0;0
+Glass, Ceramics & Concrete;6;0.0;0.0;100.0;0
+Glass, Ceramics & Concrete;7;0.0;0.0;100.0;0
+Glass, Ceramics & Concrete;8;0.0;0.0;100.0;0
+Glass, Ceramics & Concrete;9;0.0;0.0;100.0;0
+Glass, Ceramics & Concrete;10;0.0;4.82;95.18;112
+Glass, Ceramics & Concrete;11;4.82;10.5;84.68;244
+Glass, Ceramics & Concrete;12;15.32;35.5;49.18;825
+Glass, Ceramics & Concrete;13;50.82;9.08;40.1;211
+Glass, Ceramics & Concrete;14;59.9;19.19;20.91;446
+Glass, Ceramics & Concrete;15;79.09;7.49;13.43;174
+Glass, Ceramics & Concrete;16;86.57;11.36;2.07;264
+Glass, Ceramics & Concrete;17;97.93;0.0;2.07;0
+Glass, Ceramics & Concrete;18;97.93;1.55;0.52;36
+Glass, Ceramics & Concrete;19;99.48;0.22;0.3;5
+Glass, Ceramics & Concrete;20;99.7;0.0;0.3;0
+Glass, Ceramics & Concrete;21;99.7;0.0;0.3;0
+Glass, Ceramics & Concrete;22;99.7;0.22;0.09;5
+Glass, Ceramics & Concrete;23;99.91;0.0;0.09;0
+Glass, Ceramics & Concrete;24;99.91;0.04;0.04;1
+Glass, Ceramics & Concrete;25;99.96;0.0;0.04;0
+Glass, Ceramics & Concrete;26;99.96;0.0;0.04;0
+Glass, Ceramics & Concrete;27;99.96;0.04;0.0;1
+Glass, Ceramics & Concrete;28;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;29;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;30;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;31;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;32;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;33;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;34;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;35;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;36;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;37;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;38;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;39;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;40;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;41;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;42;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;43;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;44;100.0;0.0;0.0;0
+Glass, Ceramics & Concrete;45;100.0;0.0;0.0;0
+Construction;5;0.0;0.0;100.0;0
+Construction;6;0.0;0.0;100.0;0
+Construction;7;0.0;0.0;100.0;0
+Construction;8;0.0;0.0;100.0;0
+Construction;9;0.0;0.0;100.0;0
+Construction;10;0.0;4.56;95.44;1075
+Construction;11;4.56;20.78;74.66;4901
+Construction;12;25.34;32.56;42.1;7681
+Construction;13;57.9;16.65;25.45;3928
+Construction;14;74.55;10.97;14.48;2587
+Construction;15;85.52;5.91;8.56;1395
+Construction;16;91.44;6.25;2.31;1474
+Construction;17;97.69;0.0;2.31;0
+Construction;18;97.69;1.42;0.9;334
+Construction;19;99.1;0.5;0.39;119
+Construction;20;99.61;0.0;0.39;0
+Construction;21;99.61;0.0;0.39;1
+Construction;22;99.61;0.28;0.11;65
+Construction;23;99.89;0.0;0.11;0
+Construction;24;99.89;0.06;0.06;13
+Construction;25;99.94;0.0;0.06;0
+Construction;26;99.94;0.0;0.06;0
+Construction;27;99.94;0.03;0.03;8
+Construction;28;99.97;0.0;0.03;0
+Construction;29;99.97;0.0;0.03;0
+Construction;30;99.97;0.0;0.03;0
+Construction;31;99.97;0.02;0.0;5
+Construction;32;100.0;0.0;0.0;0
+Construction;33;100.0;0.0;0.0;0
+Construction;34;100.0;0.0;0.0;0
+Construction;35;100.0;0.0;0.0;1
+Construction;36;100.0;0.0;0.0;0
+Construction;37;100.0;0.0;0.0;0
+Construction;38;100.0;0.0;0.0;0
+Construction;39;100.0;0.0;0.0;0
+Construction;40;100.0;0.0;0.0;0
+Construction;41;100.0;0.0;0.0;0
+Construction;42;100.0;0.0;0.0;0
+Construction;43;100.0;0.0;0.0;0
+Construction;44;100.0;0.0;0.0;0
+Construction;45;100.0;0.0;0.0;0
+Building Materials;5;0.0;0.0;100.0;0
+Building Materials;6;0.0;0.0;100.0;0
+Building Materials;7;0.0;0.0;100.0;0
+Building Materials;8;0.0;0.0;100.0;0
+Building Materials;9;0.0;0.0;100.0;0
+Building Materials;10;0.0;0.21;99.79;15
+Building Materials;11;0.21;18.27;81.52;1316
+Building Materials;12;18.48;29.67;51.85;2137
+Building Materials;13;48.15;23.87;27.98;1719
+Building Materials;14;72.02;12.32;15.66;887
+Building Materials;15;84.34;6.64;9.03;478
+Building Materials;16;90.97;6.47;2.55;466
+Building Materials;17;97.45;0.0;2.55;0
+Building Materials;18;97.45;1.4;1.15;101
+Building Materials;19;98.85;0.6;0.56;43
+Building Materials;20;99.44;0.0;0.56;0
+Building Materials;21;99.44;0.0;0.56;0
+Building Materials;22;99.44;0.31;0.25;22
+Building Materials;23;99.75;0.01;0.24;1
+Building Materials;24;99.76;0.1;0.14;7
+Building Materials;25;99.86;0.0;0.14;0
+Building Materials;26;99.86;0.0;0.14;0
+Building Materials;27;99.86;0.08;0.06;6
+Building Materials;28;99.94;0.0;0.06;0
+Building Materials;29;99.94;0.0;0.06;0
+Building Materials;30;99.94;0.0;0.06;0
+Building Materials;31;99.94;0.06;0.0;4
+Building Materials;32;100.0;0.0;0.0;0
+Building Materials;33;100.0;0.0;0.0;0
+Building Materials;34;100.0;0.0;0.0;0
+Building Materials;35;100.0;0.0;0.0;0
+Building Materials;36;100.0;0.0;0.0;0
+Building Materials;37;100.0;0.0;0.0;0
+Building Materials;38;100.0;0.0;0.0;0
+Building Materials;39;100.0;0.0;0.0;0
+Building Materials;40;100.0;0.0;0.0;0
+Building Materials;41;100.0;0.0;0.0;0
+Building Materials;42;100.0;0.0;0.0;0
+Building Materials;43;100.0;0.0;0.0;0
+Building Materials;44;100.0;0.0;0.0;0
+Building Materials;45;100.0;0.0;0.0;0
+Plastics;5;0.0;0.0;100.0;0
+Plastics;6;0.0;0.0;100.0;0
+Plastics;7;0.0;0.0;100.0;0
+Plastics;8;0.0;0.0;100.0;0
+Plastics;9;0.0;0.0;100.0;0
+Plastics;10;0.0;7.97;92.03;614
+Plastics;11;7.97;20.28;71.75;1563
+Plastics;12;28.25;29.85;41.9;2300
+Plastics;13;58.1;12.76;29.15;983
+Plastics;14;70.85;10.98;18.17;846
+Plastics;15;81.83;7.01;11.16;540
+Plastics;16;88.84;7.93;3.23;611
+Plastics;17;96.77;0.0;3.23;0
+Plastics;18;96.77;1.26;1.97;97
+Plastics;19;98.03;1.05;0.92;81
+Plastics;20;99.08;0.0;0.92;0
+Plastics;21;99.08;0.0;0.92;0
+Plastics;22;99.08;0.49;0.43;38
+Plastics;23;99.57;0.0;0.43;0
+Plastics;24;99.57;0.29;0.14;22
+Plastics;25;99.86;0.0;0.14;0
+Plastics;26;99.86;0.0;0.14;0
+Plastics;27;99.86;0.12;0.03;9
+Plastics;28;99.97;0.0;0.03;0
+Plastics;29;99.97;0.0;0.03;0
+Plastics;30;99.97;0.0;0.03;0
+Plastics;31;99.97;0.03;0.0;2
+Plastics;32;100.0;0.0;0.0;0
+Plastics;33;100.0;0.0;0.0;0
+Plastics;34;100.0;0.0;0.0;0
+Plastics;35;100.0;0.0;0.0;0
+Plastics;36;100.0;0.0;0.0;0
+Plastics;37;100.0;0.0;0.0;0
+Plastics;38;100.0;0.0;0.0;0
+Plastics;39;100.0;0.0;0.0;0
+Plastics;40;100.0;0.0;0.0;0
+Plastics;41;100.0;0.0;0.0;0
+Plastics;42;100.0;0.0;0.0;0
+Plastics;43;100.0;0.0;0.0;0
+Plastics;44;100.0;0.0;0.0;0
+Plastics;45;100.0;0.0;0.0;0
+Professional Services;5;0.0;0.0;100.0;0
+Professional Services;6;0.0;0.0;100.0;0
+Professional Services;7;0.0;0.0;100.0;0
+Professional Services;8;0.0;0.0;100.0;0
+Professional Services;9;0.0;0.0;100.0;0
+Professional Services;10;0.0;8.46;91.54;44
+Professional Services;11;8.46;16.92;74.62;88
+Professional Services;12;25.38;21.54;53.08;112
+Professional Services;13;46.92;16.92;36.15;88
+Professional Services;14;63.85;12.88;23.27;67
+Professional Services;15;76.73;11.15;12.12;58
+Professional Services;16;87.88;7.69;4.42;40
+Professional Services;17;95.58;0.0;4.42;0
+Professional Services;18;95.58;2.31;2.12;12
+Professional Services;19;97.88;1.54;0.58;8
+Professional Services;20;99.42;0.0;0.58;0
+Professional Services;21;99.42;0.0;0.58;0
+Professional Services;22;99.42;0.19;0.38;1
+Professional Services;23;99.62;0.0;0.38;0
+Professional Services;24;99.62;0.38;0.0;2
+Professional Services;25;100.0;0.0;0.0;0
+Professional Services;26;100.0;0.0;0.0;0
+Professional Services;27;100.0;0.0;0.0;0
+Professional Services;28;100.0;0.0;0.0;0
+Professional Services;29;100.0;0.0;0.0;0
+Professional Services;30;100.0;0.0;0.0;0
+Professional Services;31;100.0;0.0;0.0;0
+Professional Services;32;100.0;0.0;0.0;0
+Professional Services;33;100.0;0.0;0.0;0
+Professional Services;34;100.0;0.0;0.0;0
+Professional Services;35;100.0;0.0;0.0;0
+Professional Services;36;100.0;0.0;0.0;0
+Professional Services;37;100.0;0.0;0.0;0
+Professional Services;38;100.0;0.0;0.0;0
+Professional Services;39;100.0;0.0;0.0;0
+Professional Services;40;100.0;0.0;0.0;0
+Professional Services;41;100.0;0.0;0.0;0
+Professional Services;42;100.0;0.0;0.0;0
+Professional Services;43;100.0;0.0;0.0;0
+Professional Services;44;100.0;0.0;0.0;0
+Professional Services;45;100.0;0.0;0.0;0
+Infrastructure;5;0.0;0.0;100.0;0
+Infrastructure;6;0.0;0.0;100.0;0
+Infrastructure;7;0.0;0.0;100.0;0
+Infrastructure;8;0.0;0.0;100.0;0
+Infrastructure;9;0.0;0.0;100.0;0
+Infrastructure;10;0.0;1.3;98.7;21
+Infrastructure;11;1.3;12.79;85.92;207
+Infrastructure;12;14.08;41.94;43.98;679
+Infrastructure;13;56.02;16.86;27.12;273
+Infrastructure;14;72.88;10.87;16.24;176
+Infrastructure;15;83.76;5.87;10.38;95
+Infrastructure;16;89.62;7.04;3.34;114
+Infrastructure;17;96.66;0.0;3.34;0
+Infrastructure;18;96.66;2.16;1.17;35
+Infrastructure;19;98.83;0.43;0.74;7
+Infrastructure;20;99.26;0.0;0.74;0
+Infrastructure;21;99.26;0.0;0.74;0
+Infrastructure;22;99.26;0.37;0.37;6
+Infrastructure;23;99.63;0.0;0.37;0
+Infrastructure;24;99.63;0.31;0.06;5
+Infrastructure;25;99.94;0.0;0.06;0
+Infrastructure;26;99.94;0.0;0.06;0
+Infrastructure;27;99.94;0.0;0.06;0
+Infrastructure;28;99.94;0.0;0.06;0
+Infrastructure;29;99.94;0.0;0.06;0
+Infrastructure;30;99.94;0.0;0.06;0
+Infrastructure;31;99.94;0.0;0.06;0
+Infrastructure;32;99.94;0.0;0.06;0
+Infrastructure;33;99.94;0.0;0.06;0
+Infrastructure;34;99.94;0.0;0.06;0
+Infrastructure;35;99.94;0.06;0.0;1
+Infrastructure;36;100.0;0.0;0.0;0
+Infrastructure;37;100.0;0.0;0.0;0
+Infrastructure;38;100.0;0.0;0.0;0
+Infrastructure;39;100.0;0.0;0.0;0
+Infrastructure;40;100.0;0.0;0.0;0
+Infrastructure;41;100.0;0.0;0.0;0
+Infrastructure;42;100.0;0.0;0.0;0
+Infrastructure;43;100.0;0.0;0.0;0
+Infrastructure;44;100.0;0.0;0.0;0
+Infrastructure;45;100.0;0.0;0.0;0
+EPC;5;0.0;0.0;100.0;0
+EPC;6;0.0;0.0;100.0;0
+EPC;7;0.0;0.0;100.0;0
+EPC;8;0.0;0.0;100.0;0
+EPC;9;0.0;0.0;100.0;0
+EPC;10;0.0;1.08;98.92;9
+EPC;11;1.08;13.36;85.56;111
+EPC;12;14.44;45.97;39.59;382
+EPC;13;60.41;15.16;24.43;126
+EPC;14;75.57;10.71;13.72;89
+EPC;15;86.28;6.38;7.34;53
+EPC;16;92.66;4.45;2.89;37
+EPC;17;97.11;0.0;2.89;0
+EPC;18;97.11;1.68;1.2;14
+EPC;19;98.8;0.0;1.2;0
+EPC;20;98.8;0.0;1.2;0
+EPC;21;98.8;0.0;1.2;0
+EPC;22;98.8;0.48;0.72;4
+EPC;23;99.28;0.0;0.72;0
+EPC;24;99.28;0.6;0.12;5
+EPC;25;99.88;0.0;0.12;0
+EPC;26;99.88;0.0;0.12;0
+EPC;27;99.88;0.0;0.12;0
+EPC;28;99.88;0.0;0.12;0
+EPC;29;99.88;0.0;0.12;0
+EPC;30;99.88;0.0;0.12;0
+EPC;31;99.88;0.0;0.12;0
+EPC;32;99.88;0.0;0.12;0
+EPC;33;99.88;0.0;0.12;0
+EPC;34;99.88;0.0;0.12;0
+EPC;35;99.88;0.12;0.0;1
+EPC;36;100.0;0.0;0.0;0
+EPC;37;100.0;0.0;0.0;0
+EPC;38;100.0;0.0;0.0;0
+EPC;39;100.0;0.0;0.0;0
+EPC;40;100.0;0.0;0.0;0
+EPC;41;100.0;0.0;0.0;0
+EPC;42;100.0;0.0;0.0;0
+EPC;43;100.0;0.0;0.0;0
+EPC;44;100.0;0.0;0.0;0
+EPC;45;100.0;0.0;0.0;0
+Consumer Goods;5;0.0;0.0;100.0;0
+Consumer Goods;6;0.0;0.0;100.0;0
+Consumer Goods;7;0.0;0.0;100.0;0
+Consumer Goods;8;0.0;0.0;100.0;0
+Consumer Goods;9;0.0;0.0;100.0;0
+Consumer Goods;10;0.0;21.85;78.15;10888
+Consumer Goods;11;21.85;23.42;54.74;11668
+Consumer Goods;12;45.26;26.03;28.7;12972
+Consumer Goods;13;71.3;10.84;17.86;5401
+Consumer Goods;14;82.14;6.66;11.21;3317
+Consumer Goods;15;88.79;5.6;5.61;2789
+Consumer Goods;16;94.39;3.87;1.75;1926
+Consumer Goods;17;98.25;0.0;1.75;0
+Consumer Goods;18;98.25;0.68;1.06;340
+Consumer Goods;19;98.94;0.62;0.44;311
+Consumer Goods;20;99.56;0.0;0.44;0
+Consumer Goods;21;99.56;0.0;0.44;0
+Consumer Goods;22;99.56;0.29;0.14;147
+Consumer Goods;23;99.86;0.0;0.14;1
+Consumer Goods;24;99.86;0.1;0.04;49
+Consumer Goods;25;99.96;0.0;0.04;0
+Consumer Goods;26;99.96;0.0;0.04;0
+Consumer Goods;27;99.96;0.03;0.01;15
+Consumer Goods;28;99.99;0.0;0.01;0
+Consumer Goods;29;99.99;0.0;0.01;0
+Consumer Goods;30;99.99;0.0;0.01;0
+Consumer Goods;31;99.99;0.01;0.01;3
+Consumer Goods;32;99.99;0.0;0.01;0
+Consumer Goods;33;99.99;0.0;0.01;0
+Consumer Goods;34;99.99;0.0;0.01;0
+Consumer Goods;35;99.99;0.01;0.0;3
+Consumer Goods;36;100.0;0.0;0.0;0
+Consumer Goods;37;100.0;0.0;0.0;0
+Consumer Goods;38;100.0;0.0;0.0;0
+Consumer Goods;39;100.0;0.0;0.0;0
+Consumer Goods;40;100.0;0.0;0.0;0
+Consumer Goods;41;100.0;0.0;0.0;1
+Consumer Goods;42;100.0;0.0;0.0;0
+Consumer Goods;43;100.0;0.0;0.0;0
+Consumer Goods;44;100.0;0.0;0.0;0
+Consumer Goods;45;100.0;0.0;0.0;0
+Machinery;5;0.0;0.0;100.0;0
+Machinery;6;0.0;0.0;100.0;0
+Machinery;7;0.0;0.0;100.0;0
+Machinery;8;0.0;0.0;100.0;0
+Machinery;9;0.0;0.0;100.0;0
+Machinery;10;0.0;2.58;97.42;220
+Machinery;11;2.58;15.77;81.65;1345
+Machinery;12;18.35;23.02;58.64;1963
+Machinery;13;41.36;24.39;34.25;2080
+Machinery;14;65.75;14.35;19.9;1224
+Machinery;15;80.1;7.97;11.92;680
+Machinery;16;88.08;9.23;2.7;787
+Machinery;17;97.3;0.16;2.53;14
+Machinery;18;97.47;1.43;1.1;122
+Machinery;19;98.9;0.75;0.35;64
+Machinery;20;99.65;0.02;0.33;2
+Machinery;21;99.67;0.01;0.32;1
+Machinery;22;99.68;0.22;0.09;19
+Machinery;23;99.91;0.01;0.08;1
+Machinery;24;99.92;0.06;0.02;5
+Machinery;25;99.98;0.0;0.02;0
+Machinery;26;99.98;0.0;0.02;0
+Machinery;27;99.98;0.02;0.0;2
+Machinery;28;100.0;0.0;0.0;0
+Machinery;29;100.0;0.0;0.0;0
+Machinery;30;100.0;0.0;0.0;0
+Machinery;31;100.0;0.0;0.0;0
+Machinery;32;100.0;0.0;0.0;0
+Machinery;33;100.0;0.0;0.0;0
+Machinery;34;100.0;0.0;0.0;0
+Machinery;35;100.0;0.0;0.0;0
+Machinery;36;100.0;0.0;0.0;0
+Machinery;37;100.0;0.0;0.0;0
+Machinery;38;100.0;0.0;0.0;0
+Machinery;39;100.0;0.0;0.0;0
+Machinery;40;100.0;0.0;0.0;0
+Machinery;41;100.0;0.0;0.0;0
+Machinery;42;100.0;0.0;0.0;0
+Machinery;43;100.0;0.0;0.0;0
+Machinery;44;100.0;0.0;0.0;0
+Machinery;45;100.0;0.0;0.0;0
+Food & Beverages;5;0.0;0.0;100.0;0
+Food & Beverages;6;0.0;0.0;100.0;0
+Food & Beverages;7;0.0;0.0;100.0;0
+Food & Beverages;8;0.0;0.0;100.0;0
+Food & Beverages;9;0.0;0.0;100.0;0
+Food & Beverages;10;0.0;1.74;98.26;171
+Food & Beverages;11;1.74;9.54;88.72;935
+Food & Beverages;12;11.28;43.48;45.24;4263
+Food & Beverages;13;54.76;19.89;25.35;1950
+Food & Beverages;14;74.65;8.07;17.29;791
+Food & Beverages;15;82.71;7.84;9.44;769
+Food & Beverages;16;90.56;5.98;3.47;586
+Food & Beverages;17;96.53;0.01;3.46;1
+Food & Beverages;18;96.54;1.34;2.12;131
+Food & Beverages;19;97.88;0.85;1.27;83
+Food & Beverages;20;98.73;0.02;1.25;2
+Food & Beverages;21;98.75;0.0;1.25;0
+Food & Beverages;22;98.75;0.84;0.42;82
+Food & Beverages;23;99.58;0.01;0.41;1
+Food & Beverages;24;99.59;0.29;0.12;28
+Food & Beverages;25;99.88;0.0;0.12;0
+Food & Beverages;26;99.88;0.0;0.12;0
+Food & Beverages;27;99.88;0.08;0.04;8
+Food & Beverages;28;99.96;0.0;0.04;0
+Food & Beverages;29;99.96;0.0;0.04;0
+Food & Beverages;30;99.96;0.0;0.04;0
+Food & Beverages;31;99.96;0.0;0.04;0
+Food & Beverages;32;99.96;0.0;0.04;0
+Food & Beverages;33;99.96;0.0;0.04;0
+Food & Beverages;34;99.96;0.0;0.04;0
+Food & Beverages;35;99.96;0.03;0.01;3
+Food & Beverages;36;99.99;0.0;0.01;0
+Food & Beverages;37;99.99;0.0;0.01;0
+Food & Beverages;38;99.99;0.0;0.01;0
+Food & Beverages;39;99.99;0.0;0.01;0
+Food & Beverages;40;99.99;0.0;0.01;0
+Food & Beverages;41;99.99;0.01;0.0;1
+Food & Beverages;42;100.0;0.0;0.0;0
+Food & Beverages;43;100.0;0.0;0.0;0
+Food & Beverages;44;100.0;0.0;0.0;0
+Food & Beverages;45;100.0;0.0;0.0;0
+Professional Training & Coaching;5;0.0;0.0;100.0;0
+Professional Training & Coaching;6;0.0;0.0;100.0;0
+Professional Training & Coaching;7;0.0;0.0;100.0;0
+Professional Training & Coaching;8;0.0;0.0;100.0;0
+Professional Training & Coaching;9;0.0;0.0;100.0;0
+Professional Training & Coaching;10;0.0;0.0;100.0;0
+Professional Training & Coaching;11;0.0;0.0;100.0;0
+Professional Training & Coaching;12;0.0;0.0;100.0;0
+Professional Training & Coaching;13;0.0;0.0;100.0;0
+Professional Training & Coaching;14;0.0;0.0;100.0;0
+Professional Training & Coaching;15;0.0;0.0;100.0;0
+Professional Training & Coaching;16;0.0;0.0;100.0;0
+Professional Training & Coaching;17;0.0;0.0;100.0;0
+Professional Training & Coaching;18;0.0;100.0;0.0;1
+Professional Training & Coaching;19;100.0;0.0;0.0;0
+Professional Training & Coaching;20;100.0;0.0;0.0;0
+Professional Training & Coaching;21;100.0;0.0;0.0;0
+Professional Training & Coaching;22;100.0;0.0;0.0;0
+Professional Training & Coaching;23;100.0;0.0;0.0;0
+Professional Training & Coaching;24;100.0;0.0;0.0;0
+Professional Training & Coaching;25;100.0;0.0;0.0;0
+Professional Training & Coaching;26;100.0;0.0;0.0;0
+Professional Training & Coaching;27;100.0;0.0;0.0;0
+Professional Training & Coaching;28;100.0;0.0;0.0;0
+Professional Training & Coaching;29;100.0;0.0;0.0;0
+Professional Training & Coaching;30;100.0;0.0;0.0;0
+Professional Training & Coaching;31;100.0;0.0;0.0;0
+Professional Training & Coaching;32;100.0;0.0;0.0;0
+Professional Training & Coaching;33;100.0;0.0;0.0;0
+Professional Training & Coaching;34;100.0;0.0;0.0;0
+Professional Training & Coaching;35;100.0;0.0;0.0;0
+Professional Training & Coaching;36;100.0;0.0;0.0;0
+Professional Training & Coaching;37;100.0;0.0;0.0;0
+Professional Training & Coaching;38;100.0;0.0;0.0;0
+Professional Training & Coaching;39;100.0;0.0;0.0;0
+Professional Training & Coaching;40;100.0;0.0;0.0;0
+Professional Training & Coaching;41;100.0;0.0;0.0;0
+Professional Training & Coaching;42;100.0;0.0;0.0;0
+Professional Training & Coaching;43;100.0;0.0;0.0;0
+Professional Training & Coaching;44;100.0;0.0;0.0;0
+Professional Training & Coaching;45;100.0;0.0;0.0;0
+Maritime;5;0.0;0.0;100.0;0
+Maritime;6;0.0;0.0;100.0;0
+Maritime;7;0.0;0.0;100.0;0
+Maritime;8;0.0;0.0;100.0;0
+Maritime;9;0.0;0.0;100.0;0
+Maritime;10;0.0;3.16;96.84;36
+Maritime;11;3.16;16.13;80.72;184
+Maritime;12;19.28;43.56;37.16;497
+Maritime;13;62.84;15.07;22.09;172
+Maritime;14;77.91;7.01;15.07;80
+Maritime;15;84.93;5.0;10.08;57
+Maritime;16;89.92;6.92;3.16;79
+Maritime;17;96.84;0.0;3.16;0
+Maritime;18;96.84;1.31;1.84;15
+Maritime;19;98.16;0.96;0.88;11
+Maritime;20;99.12;0.0;0.88;0
+Maritime;21;99.12;0.0;0.88;0
+Maritime;22;99.12;0.79;0.09;9
+Maritime;23;99.91;0.0;0.09;0
+Maritime;24;99.91;0.09;0.0;1
+Maritime;25;100.0;0.0;0.0;0
+Maritime;26;100.0;0.0;0.0;0
+Maritime;27;100.0;0.0;0.0;0
+Maritime;28;100.0;0.0;0.0;0
+Maritime;29;100.0;0.0;0.0;0
+Maritime;30;100.0;0.0;0.0;0
+Maritime;31;100.0;0.0;0.0;0
+Maritime;32;100.0;0.0;0.0;0
+Maritime;33;100.0;0.0;0.0;0
+Maritime;34;100.0;0.0;0.0;0
+Maritime;35;100.0;0.0;0.0;0
+Maritime;36;100.0;0.0;0.0;0
+Maritime;37;100.0;0.0;0.0;0
+Maritime;38;100.0;0.0;0.0;0
+Maritime;39;100.0;0.0;0.0;0
+Maritime;40;100.0;0.0;0.0;0
+Maritime;41;100.0;0.0;0.0;0
+Maritime;42;100.0;0.0;0.0;0
+Maritime;43;100.0;0.0;0.0;0
+Maritime;44;100.0;0.0;0.0;0
+Maritime;45;100.0;0.0;0.0;0
+Shipbuilding;5;0.0;0.0;100.0;0
+Shipbuilding;6;0.0;0.0;100.0;0
+Shipbuilding;7;0.0;0.0;100.0;0
+Shipbuilding;8;0.0;0.0;100.0;0
+Shipbuilding;9;0.0;0.0;100.0;0
+Shipbuilding;10;0.0;8.15;91.85;11
+Shipbuilding;11;8.15;36.3;55.56;49
+Shipbuilding;12;44.44;17.78;37.78;24
+Shipbuilding;13;62.22;7.41;30.37;10
+Shipbuilding;14;69.63;8.89;21.48;12
+Shipbuilding;15;78.52;4.44;17.04;6
+Shipbuilding;16;82.96;11.11;5.93;15
+Shipbuilding;17;94.07;0.0;5.93;0
+Shipbuilding;18;94.07;0.74;5.19;1
+Shipbuilding;19;94.81;3.7;1.48;5
+Shipbuilding;20;98.52;0.0;1.48;0
+Shipbuilding;21;98.52;0.0;1.48;0
+Shipbuilding;22;98.52;0.74;0.74;1
+Shipbuilding;23;99.26;0.0;0.74;0
+Shipbuilding;24;99.26;0.74;0.0;1
+Shipbuilding;25;100.0;0.0;0.0;0
+Shipbuilding;26;100.0;0.0;0.0;0
+Shipbuilding;27;100.0;0.0;0.0;0
+Shipbuilding;28;100.0;0.0;0.0;0
+Shipbuilding;29;100.0;0.0;0.0;0
+Shipbuilding;30;100.0;0.0;0.0;0
+Shipbuilding;31;100.0;0.0;0.0;0
+Shipbuilding;32;100.0;0.0;0.0;0
+Shipbuilding;33;100.0;0.0;0.0;0
+Shipbuilding;34;100.0;0.0;0.0;0
+Shipbuilding;35;100.0;0.0;0.0;0
+Shipbuilding;36;100.0;0.0;0.0;0
+Shipbuilding;37;100.0;0.0;0.0;0
+Shipbuilding;38;100.0;0.0;0.0;0
+Shipbuilding;39;100.0;0.0;0.0;0
+Shipbuilding;40;100.0;0.0;0.0;0
+Shipbuilding;41;100.0;0.0;0.0;0
+Shipbuilding;42;100.0;0.0;0.0;0
+Shipbuilding;43;100.0;0.0;0.0;0
+Shipbuilding;44;100.0;0.0;0.0;0
+Shipbuilding;45;100.0;0.0;0.0;0
+Real Estate;5;0.0;0.0;100.0;0
+Real Estate;6;0.0;0.0;100.0;0
+Real Estate;7;0.0;0.0;100.0;0
+Real Estate;8;0.0;0.0;100.0;0
+Real Estate;9;0.0;0.0;100.0;0
+Real Estate;10;0.0;12.11;87.89;852
+Real Estate;11;12.11;32.49;55.39;2286
+Real Estate;12;44.61;24.98;30.42;1757
+Real Estate;13;69.58;9.72;20.7;684
+Real Estate;14;79.3;8.83;11.87;621
+Real Estate;15;88.13;4.32;7.55;304
+Real Estate;16;92.45;5.27;2.27;371
+Real Estate;17;97.73;0.06;2.22;4
+Real Estate;18;97.78;1.24;0.98;87
+Real Estate;19;99.02;0.71;0.27;50
+Real Estate;20;99.73;0.0;0.27;0
+Real Estate;21;99.73;0.0;0.27;0
+Real Estate;22;99.73;0.26;0.01;18
+Real Estate;23;99.99;0.0;0.01;0
+Real Estate;24;99.99;0.0;0.01;0
+Real Estate;25;99.99;0.0;0.01;0
+Real Estate;26;99.99;0.0;0.01;0
+Real Estate;27;99.99;0.01;0.0;1
+Real Estate;28;100.0;0.0;0.0;0
+Real Estate;29;100.0;0.0;0.0;0
+Real Estate;30;100.0;0.0;0.0;0
+Real Estate;31;100.0;0.0;0.0;0
+Real Estate;32;100.0;0.0;0.0;0
+Real Estate;33;100.0;0.0;0.0;0
+Real Estate;34;100.0;0.0;0.0;0
+Real Estate;35;100.0;0.0;0.0;0
+Real Estate;36;100.0;0.0;0.0;0
+Real Estate;37;100.0;0.0;0.0;0
+Real Estate;38;100.0;0.0;0.0;0
+Real Estate;39;100.0;0.0;0.0;0
+Real Estate;40;100.0;0.0;0.0;0
+Real Estate;41;100.0;0.0;0.0;0
+Real Estate;42;100.0;0.0;0.0;0
+Real Estate;43;100.0;0.0;0.0;0
+Real Estate;44;100.0;0.0;0.0;0
+Real Estate;45;100.0;0.0;0.0;0
+Research;5;0.0;0.0;100.0;0
+Research;6;0.0;0.0;100.0;0
+Research;7;0.0;0.0;100.0;0
+Research;8;0.0;0.0;100.0;0
+Research;9;0.0;0.0;100.0;0
+Research;10;0.0;0.06;99.94;3
+Research;11;0.06;1.13;98.81;56
+Research;12;1.19;28.57;70.24;1420
+Research;13;29.76;2.92;67.32;145
+Research;14;32.68;31.75;35.57;1578
+Research;15;64.43;23.02;12.56;1144
+Research;16;87.44;6.94;5.61;345
+Research;17;94.39;0.0;5.61;0
+Research;18;94.39;0.89;4.73;44
+Research;19;95.27;4.14;0.58;206
+Research;20;99.42;0.0;0.58;0
+Research;21;99.42;0.0;0.58;0
+Research;22;99.42;0.3;0.28;15
+Research;23;99.72;0.0;0.28;0
+Research;24;99.72;0.26;0.02;13
+Research;25;99.98;0.0;0.02;0
+Research;26;99.98;0.0;0.02;0
+Research;27;99.98;0.02;0.0;1
+Research;28;100.0;0.0;0.0;0
+Research;29;100.0;0.0;0.0;0
+Research;30;100.0;0.0;0.0;0
+Research;31;100.0;0.0;0.0;0
+Research;32;100.0;0.0;0.0;0
+Research;33;100.0;0.0;0.0;0
+Research;34;100.0;0.0;0.0;0
+Research;35;100.0;0.0;0.0;0
+Research;36;100.0;0.0;0.0;0
+Research;37;100.0;0.0;0.0;0
+Research;38;100.0;0.0;0.0;0
+Research;39;100.0;0.0;0.0;0
+Research;40;100.0;0.0;0.0;0
+Research;41;100.0;0.0;0.0;0
+Research;42;100.0;0.0;0.0;0
+Research;43;100.0;0.0;0.0;0
+Research;44;100.0;0.0;0.0;0
+Research;45;100.0;0.0;0.0;0
+Civil Engineering;5;0.0;0.0;100.0;0
+Civil Engineering;6;0.0;0.0;100.0;0
+Civil Engineering;7;0.0;0.0;100.0;0
+Civil Engineering;8;0.0;0.0;100.0;0
+Civil Engineering;9;0.0;0.0;100.0;0
+Civil Engineering;10;0.0;1.03;98.97;59
+Civil Engineering;11;1.03;14.82;84.15;847
+Civil Engineering;12;15.85;44.09;40.05;2520
+Civil Engineering;13;59.95;16.22;23.83;927
+Civil Engineering;14;76.17;8.5;15.33;486
+Civil Engineering;15;84.67;7.8;7.52;446
+Civil Engineering;16;92.48;6.19;1.33;354
+Civil Engineering;17;98.67;0.0;1.33;0
+Civil Engineering;18;98.67;0.84;0.49;48
+Civil Engineering;19;99.51;0.3;0.19;17
+Civil Engineering;20;99.81;0.0;0.19;0
+Civil Engineering;21;99.81;0.0;0.19;0
+Civil Engineering;22;99.81;0.19;0.0;11
+Civil Engineering;23;100.0;0.0;0.0;0
+Civil Engineering;24;100.0;0.0;0.0;0
+Civil Engineering;25;100.0;0.0;0.0;0
+Civil Engineering;26;100.0;0.0;0.0;0
+Civil Engineering;27;100.0;0.0;0.0;0
+Civil Engineering;28;100.0;0.0;0.0;0
+Civil Engineering;29;100.0;0.0;0.0;0
+Civil Engineering;30;100.0;0.0;0.0;0
+Civil Engineering;31;100.0;0.0;0.0;0
+Civil Engineering;32;100.0;0.0;0.0;0
+Civil Engineering;33;100.0;0.0;0.0;0
+Civil Engineering;34;100.0;0.0;0.0;0
+Civil Engineering;35;100.0;0.0;0.0;0
+Civil Engineering;36;100.0;0.0;0.0;0
+Civil Engineering;37;100.0;0.0;0.0;0
+Civil Engineering;38;100.0;0.0;0.0;0
+Civil Engineering;39;100.0;0.0;0.0;0
+Civil Engineering;40;100.0;0.0;0.0;0
+Civil Engineering;41;100.0;0.0;0.0;0
+Civil Engineering;42;100.0;0.0;0.0;0
+Civil Engineering;43;100.0;0.0;0.0;0
+Civil Engineering;44;100.0;0.0;0.0;0
+Civil Engineering;45;100.0;0.0;0.0;0
+Food Production;5;0.0;0.0;100.0;0
+Food Production;6;0.0;0.0;100.0;0
+Food Production;7;0.0;0.0;100.0;0
+Food Production;8;0.0;0.0;100.0;0
+Food Production;9;0.0;0.0;100.0;0
+Food Production;10;0.0;9.98;90.02;274
+Food Production;11;9.98;40.0;50.02;1098
+Food Production;12;49.98;27.21;22.81;747
+Food Production;13;77.19;5.79;17.01;159
+Food Production;14;82.99;6.67;10.35;183
+Food Production;15;89.65;3.24;7.1;89
+Food Production;16;92.9;4.23;2.88;116
+Food Production;17;97.12;0.0;2.88;0
+Food Production;18;97.12;1.17;1.71;32
+Food Production;19;98.29;0.58;1.13;16
+Food Production;20;98.87;0.0;1.13;0
+Food Production;21;98.87;0.0;1.13;0
+Food Production;22;98.87;0.62;0.51;17
+Food Production;23;99.49;0.04;0.47;1
+Food Production;24;99.53;0.4;0.07;11
+Food Production;25;99.93;0.0;0.07;0
+Food Production;26;99.93;0.0;0.07;0
+Food Production;27;99.93;0.04;0.04;1
+Food Production;28;99.96;0.0;0.04;0
+Food Production;29;99.96;0.0;0.04;0
+Food Production;30;99.96;0.0;0.04;0
+Food Production;31;99.96;0.0;0.04;0
+Food Production;32;99.96;0.0;0.04;0
+Food Production;33;99.96;0.0;0.04;0
+Food Production;34;99.96;0.0;0.04;0
+Food Production;35;99.96;0.04;0.0;1
+Food Production;36;100.0;0.0;0.0;0
+Food Production;37;100.0;0.0;0.0;0
+Food Production;38;100.0;0.0;0.0;0
+Food Production;39;100.0;0.0;0.0;0
+Food Production;40;100.0;0.0;0.0;0
+Food Production;41;100.0;0.0;0.0;0
+Food Production;42;100.0;0.0;0.0;0
+Food Production;43;100.0;0.0;0.0;0
+Food Production;44;100.0;0.0;0.0;0
+Food Production;45;100.0;0.0;0.0;0
+Fishery;5;0.0;0.0;100.0;0
+Fishery;6;0.0;0.0;100.0;0
+Fishery;7;0.0;0.0;100.0;0
+Fishery;8;0.0;0.0;100.0;0
+Fishery;9;0.0;0.0;100.0;0
+Fishery;10;0.0;49.46;50.54;137
+Fishery;11;49.46;25.99;24.55;72
+Fishery;12;75.45;13.72;10.83;38
+Fishery;13;89.17;7.94;2.89;22
+Fishery;14;97.11;2.89;0.0;8
+Fishery;15;100.0;0.0;0.0;0
+Fishery;16;100.0;0.0;0.0;0
+Fishery;17;100.0;0.0;0.0;0
+Fishery;18;100.0;0.0;0.0;0
+Fishery;19;100.0;0.0;0.0;0
+Fishery;20;100.0;0.0;0.0;0
+Fishery;21;100.0;0.0;0.0;0
+Fishery;22;100.0;0.0;0.0;0
+Fishery;23;100.0;0.0;0.0;0
+Fishery;24;100.0;0.0;0.0;0
+Fishery;25;100.0;0.0;0.0;0
+Fishery;26;100.0;0.0;0.0;0
+Fishery;27;100.0;0.0;0.0;0
+Fishery;28;100.0;0.0;0.0;0
+Fishery;29;100.0;0.0;0.0;0
+Fishery;30;100.0;0.0;0.0;0
+Fishery;31;100.0;0.0;0.0;0
+Fishery;32;100.0;0.0;0.0;0
+Fishery;33;100.0;0.0;0.0;0
+Fishery;34;100.0;0.0;0.0;0
+Fishery;35;100.0;0.0;0.0;0
+Fishery;36;100.0;0.0;0.0;0
+Fishery;37;100.0;0.0;0.0;0
+Fishery;38;100.0;0.0;0.0;0
+Fishery;39;100.0;0.0;0.0;0
+Fishery;40;100.0;0.0;0.0;0
+Fishery;41;100.0;0.0;0.0;0
+Fishery;42;100.0;0.0;0.0;0
+Fishery;43;100.0;0.0;0.0;0
+Fishery;44;100.0;0.0;0.0;0
+Fishery;45;100.0;0.0;0.0;0
+Railroad Manufacture;5;0.0;0.0;100.0;0
+Railroad Manufacture;6;0.0;0.0;100.0;0
+Railroad Manufacture;7;0.0;0.0;100.0;0
+Railroad Manufacture;8;0.0;0.0;100.0;0
+Railroad Manufacture;9;0.0;0.0;100.0;0
+Railroad Manufacture;10;0.0;0.0;100.0;0
+Railroad Manufacture;11;0.0;17.28;82.72;84
+Railroad Manufacture;12;17.28;32.92;49.79;160
+Railroad Manufacture;13;50.21;18.93;30.86;92
+Railroad Manufacture;14;69.14;12.55;18.31;61
+Railroad Manufacture;15;81.69;5.56;12.76;27
+Railroad Manufacture;16;87.24;9.47;3.29;46
+Railroad Manufacture;17;96.71;0.0;3.29;0
+Railroad Manufacture;18;96.71;1.44;1.85;7
+Railroad Manufacture;19;98.15;1.65;0.21;8
+Railroad Manufacture;20;99.79;0.0;0.21;0
+Railroad Manufacture;21;99.79;0.0;0.21;0
+Railroad Manufacture;22;99.79;0.0;0.21;0
+Railroad Manufacture;23;99.79;0.0;0.21;0
+Railroad Manufacture;24;99.79;0.0;0.21;0
+Railroad Manufacture;25;99.79;0.0;0.21;0
+Railroad Manufacture;26;99.79;0.21;0.0;1
+Railroad Manufacture;27;100.0;0.0;0.0;0
+Railroad Manufacture;28;100.0;0.0;0.0;0
+Railroad Manufacture;29;100.0;0.0;0.0;0
+Railroad Manufacture;30;100.0;0.0;0.0;0
+Railroad Manufacture;31;100.0;0.0;0.0;0
+Railroad Manufacture;32;100.0;0.0;0.0;0
+Railroad Manufacture;33;100.0;0.0;0.0;0
+Railroad Manufacture;34;100.0;0.0;0.0;0
+Railroad Manufacture;35;100.0;0.0;0.0;0
+Railroad Manufacture;36;100.0;0.0;0.0;0
+Railroad Manufacture;37;100.0;0.0;0.0;0
+Railroad Manufacture;38;100.0;0.0;0.0;0
+Railroad Manufacture;39;100.0;0.0;0.0;0
+Railroad Manufacture;40;100.0;0.0;0.0;0
+Railroad Manufacture;41;100.0;0.0;0.0;0
+Railroad Manufacture;42;100.0;0.0;0.0;0
+Railroad Manufacture;43;100.0;0.0;0.0;0
+Railroad Manufacture;44;100.0;0.0;0.0;0
+Railroad Manufacture;45;100.0;0.0;0.0;0
+Government Administration;5;0.0;0.0;100.0;0
+Government Administration;6;0.0;0.0;100.0;0
+Government Administration;7;0.0;0.0;100.0;0
+Government Administration;8;0.0;0.0;100.0;0
+Government Administration;9;0.0;0.0;100.0;0
+Government Administration;10;0.0;21.94;78.06;131
+Government Administration;11;21.94;20.77;57.29;124
+Government Administration;12;42.71;26.8;30.49;160
+Government Administration;13;69.51;10.05;20.44;60
+Government Administration;14;79.56;9.38;11.06;56
+Government Administration;15;88.94;4.86;6.2;29
+Government Administration;16;93.8;4.86;1.34;29
+Government Administration;17;98.66;0.0;1.34;0
+Government Administration;18;98.66;1.17;0.17;7
+Government Administration;19;99.83;0.17;0.0;1
+Government Administration;20;100.0;0.0;0.0;0
+Government Administration;21;100.0;0.0;0.0;0
+Government Administration;22;100.0;0.0;0.0;0
+Government Administration;23;100.0;0.0;0.0;0
+Government Administration;24;100.0;0.0;0.0;0
+Government Administration;25;100.0;0.0;0.0;0
+Government Administration;26;100.0;0.0;0.0;0
+Government Administration;27;100.0;0.0;0.0;0
+Government Administration;28;100.0;0.0;0.0;0
+Government Administration;29;100.0;0.0;0.0;0
+Government Administration;30;100.0;0.0;0.0;0
+Government Administration;31;100.0;0.0;0.0;0
+Government Administration;32;100.0;0.0;0.0;0
+Government Administration;33;100.0;0.0;0.0;0
+Government Administration;34;100.0;0.0;0.0;0
+Government Administration;35;100.0;0.0;0.0;0
+Government Administration;36;100.0;0.0;0.0;0
+Government Administration;37;100.0;0.0;0.0;0
+Government Administration;38;100.0;0.0;0.0;0
+Government Administration;39;100.0;0.0;0.0;0
+Government Administration;40;100.0;0.0;0.0;0
+Government Administration;41;100.0;0.0;0.0;0
+Government Administration;42;100.0;0.0;0.0;0
+Government Administration;43;100.0;0.0;0.0;0
+Government Administration;44;100.0;0.0;0.0;0
+Government Administration;45;100.0;0.0;0.0;0
+Consumer Durables;5;0.0;0.0;100.0;0
+Consumer Durables;6;0.0;0.0;100.0;0
+Consumer Durables;7;0.0;0.0;100.0;0
+Consumer Durables;8;0.0;0.0;100.0;0
+Consumer Durables;9;0.0;0.0;100.0;0
+Consumer Durables;10;0.0;20.32;79.68;276
+Consumer Durables;11;20.32;43.59;36.08;592
+Consumer Durables;12;63.92;17.82;18.26;242
+Consumer Durables;13;81.74;8.91;9.35;121
+Consumer Durables;14;90.65;3.76;5.6;51
+Consumer Durables;15;94.4;1.25;4.34;17
+Consumer Durables;16;95.66;2.72;1.62;37
+Consumer Durables;17;98.38;0.0;1.62;0
+Consumer Durables;18;98.38;0.81;0.81;11
+Consumer Durables;19;99.19;0.74;0.07;10
+Consumer Durables;20;99.93;0.0;0.07;0
+Consumer Durables;21;99.93;0.0;0.07;0
+Consumer Durables;22;99.93;0.07;0.0;1
+Consumer Durables;23;100.0;0.0;0.0;0
+Consumer Durables;24;100.0;0.0;0.0;0
+Consumer Durables;25;100.0;0.0;0.0;0
+Consumer Durables;26;100.0;0.0;0.0;0
+Consumer Durables;27;100.0;0.0;0.0;0
+Consumer Durables;28;100.0;0.0;0.0;0
+Consumer Durables;29;100.0;0.0;0.0;0
+Consumer Durables;30;100.0;0.0;0.0;0
+Consumer Durables;31;100.0;0.0;0.0;0
+Consumer Durables;32;100.0;0.0;0.0;0
+Consumer Durables;33;100.0;0.0;0.0;0
+Consumer Durables;34;100.0;0.0;0.0;0
+Consumer Durables;35;100.0;0.0;0.0;0
+Consumer Durables;36;100.0;0.0;0.0;0
+Consumer Durables;37;100.0;0.0;0.0;0
+Consumer Durables;38;100.0;0.0;0.0;0
+Consumer Durables;39;100.0;0.0;0.0;0
+Consumer Durables;40;100.0;0.0;0.0;0
+Consumer Durables;41;100.0;0.0;0.0;0
+Consumer Durables;42;100.0;0.0;0.0;0
+Consumer Durables;43;100.0;0.0;0.0;0
+Consumer Durables;44;100.0;0.0;0.0;0
+Consumer Durables;45;100.0;0.0;0.0;0
+Hospitality;5;0.0;0.0;100.0;0
+Hospitality;6;0.0;0.0;100.0;0
+Hospitality;7;0.0;0.0;100.0;0
+Hospitality;8;0.0;0.0;100.0;0
+Hospitality;9;0.0;0.0;100.0;0
+Hospitality;10;0.0;0.0;100.0;0
+Hospitality;11;0.0;32.67;67.33;164
+Hospitality;12;32.67;46.41;20.92;233
+Hospitality;13;79.08;9.56;11.35;48
+Hospitality;14;88.65;2.19;9.16;11
+Hospitality;15;90.84;3.39;5.78;17
+Hospitality;16;94.22;3.78;1.99;19
+Hospitality;17;98.01;0.0;1.99;0
+Hospitality;18;98.01;1.2;0.8;6
+Hospitality;19;99.2;0.4;0.4;2
+Hospitality;20;99.6;0.0;0.4;0
+Hospitality;21;99.6;0.0;0.4;0
+Hospitality;22;99.6;0.0;0.4;0
+Hospitality;23;99.6;0.0;0.4;0
+Hospitality;24;99.6;0.4;0.0;2
+Hospitality;25;100.0;0.0;0.0;0
+Hospitality;26;100.0;0.0;0.0;0
+Hospitality;27;100.0;0.0;0.0;0
+Hospitality;28;100.0;0.0;0.0;0
+Hospitality;29;100.0;0.0;0.0;0
+Hospitality;30;100.0;0.0;0.0;0
+Hospitality;31;100.0;0.0;0.0;0
+Hospitality;32;100.0;0.0;0.0;0
+Hospitality;33;100.0;0.0;0.0;0
+Hospitality;34;100.0;0.0;0.0;0
+Hospitality;35;100.0;0.0;0.0;0
+Hospitality;36;100.0;0.0;0.0;0
+Hospitality;37;100.0;0.0;0.0;0
+Hospitality;38;100.0;0.0;0.0;0
+Hospitality;39;100.0;0.0;0.0;0
+Hospitality;40;100.0;0.0;0.0;0
+Hospitality;41;100.0;0.0;0.0;0
+Hospitality;42;100.0;0.0;0.0;0
+Hospitality;43;100.0;0.0;0.0;0
+Hospitality;44;100.0;0.0;0.0;0
+Hospitality;45;100.0;0.0;0.0;0
+Pharmaceuticals;5;0.0;0.0;100.0;0
+Pharmaceuticals;6;0.0;0.0;100.0;0
+Pharmaceuticals;7;0.0;0.0;100.0;0
+Pharmaceuticals;8;0.0;0.0;100.0;0
+Pharmaceuticals;9;0.0;0.0;100.0;0
+Pharmaceuticals;10;0.0;22.23;77.77;1432
+Pharmaceuticals;11;22.23;42.6;35.18;2744
+Pharmaceuticals;12;64.82;22.18;12.99;1429
+Pharmaceuticals;13;87.01;4.14;8.85;267
+Pharmaceuticals;14;91.15;2.72;6.13;175
+Pharmaceuticals;15;93.87;3.42;2.72;220
+Pharmaceuticals;16;97.28;2.16;0.56;139
+Pharmaceuticals;17;99.44;0.0;0.56;0
+Pharmaceuticals;18;99.44;0.33;0.23;21
+Pharmaceuticals;19;99.77;0.19;0.05;12
+Pharmaceuticals;20;99.95;0.02;0.03;1
+Pharmaceuticals;21;99.97;0.0;0.03;0
+Pharmaceuticals;22;99.97;0.02;0.02;1
+Pharmaceuticals;23;99.98;0.0;0.02;0
+Pharmaceuticals;24;99.98;0.02;0.0;1
+Pharmaceuticals;25;100.0;0.0;0.0;0
+Pharmaceuticals;26;100.0;0.0;0.0;0
+Pharmaceuticals;27;100.0;0.0;0.0;0
+Pharmaceuticals;28;100.0;0.0;0.0;0
+Pharmaceuticals;29;100.0;0.0;0.0;0
+Pharmaceuticals;30;100.0;0.0;0.0;0
+Pharmaceuticals;31;100.0;0.0;0.0;0
+Pharmaceuticals;32;100.0;0.0;0.0;0
+Pharmaceuticals;33;100.0;0.0;0.0;0
+Pharmaceuticals;34;100.0;0.0;0.0;0
+Pharmaceuticals;35;100.0;0.0;0.0;0
+Pharmaceuticals;36;100.0;0.0;0.0;0
+Pharmaceuticals;37;100.0;0.0;0.0;0
+Pharmaceuticals;38;100.0;0.0;0.0;0
+Pharmaceuticals;39;100.0;0.0;0.0;0
+Pharmaceuticals;40;100.0;0.0;0.0;0
+Pharmaceuticals;41;100.0;0.0;0.0;0
+Pharmaceuticals;42;100.0;0.0;0.0;0
+Pharmaceuticals;43;100.0;0.0;0.0;0
+Pharmaceuticals;44;100.0;0.0;0.0;0
+Pharmaceuticals;45;100.0;0.0;0.0;0
+Design;5;0.0;0.0;100.0;0
+Design;6;0.0;0.0;100.0;0
+Design;7;0.0;0.0;100.0;0
+Design;8;0.0;0.0;100.0;0
+Design;9;0.0;0.0;100.0;0
+Design;10;0.0;0.0;100.0;0
+Design;11;0.0;3.28;96.72;80
+Design;12;3.28;69.7;27.01;1698
+Design;13;72.99;9.24;17.78;225
+Design;14;82.22;6.08;11.7;148
+Design;15;88.3;5.3;6.4;129
+Design;16;93.6;6.4;0.0;156
+Design;17;100.0;0.0;0.0;0
+Design;18;100.0;0.0;0.0;0
+Design;19;100.0;0.0;0.0;0
+Design;20;100.0;0.0;0.0;0
+Design;21;100.0;0.0;0.0;0
+Design;22;100.0;0.0;0.0;0
+Design;23;100.0;0.0;0.0;0
+Design;24;100.0;0.0;0.0;0
+Design;25;100.0;0.0;0.0;0
+Design;26;100.0;0.0;0.0;0
+Design;27;100.0;0.0;0.0;0
+Design;28;100.0;0.0;0.0;0
+Design;29;100.0;0.0;0.0;0
+Design;30;100.0;0.0;0.0;0
+Design;31;100.0;0.0;0.0;0
+Design;32;100.0;0.0;0.0;0
+Design;33;100.0;0.0;0.0;0
+Design;34;100.0;0.0;0.0;0
+Design;35;100.0;0.0;0.0;0
+Design;36;100.0;0.0;0.0;0
+Design;37;100.0;0.0;0.0;0
+Design;38;100.0;0.0;0.0;0
+Design;39;100.0;0.0;0.0;0
+Design;40;100.0;0.0;0.0;0
+Design;41;100.0;0.0;0.0;0
+Design;42;100.0;0.0;0.0;0
+Design;43;100.0;0.0;0.0;0
+Design;44;100.0;0.0;0.0;0
+Design;45;100.0;0.0;0.0;0
+Semiconductors;5;0.0;0.0;100.0;0
+Semiconductors;6;0.0;0.0;100.0;0
+Semiconductors;7;0.0;0.0;100.0;0
+Semiconductors;8;0.0;0.0;100.0;0
+Semiconductors;9;0.0;0.0;100.0;0
+Semiconductors;10;0.0;0.0;100.0;0
+Semiconductors;11;0.0;0.0;100.0;0
+Semiconductors;12;0.0;25.0;75.0;2
+Semiconductors;13;25.0;12.5;62.5;1
+Semiconductors;14;37.5;12.5;50.0;1
+Semiconductors;15;50.0;37.5;12.5;3
+Semiconductors;16;87.5;0.0;12.5;0
+Semiconductors;17;87.5;0.0;12.5;0
+Semiconductors;18;87.5;12.5;0.0;1
+Semiconductors;19;100.0;0.0;0.0;0
+Semiconductors;20;100.0;0.0;0.0;0
+Semiconductors;21;100.0;0.0;0.0;0
+Semiconductors;22;100.0;0.0;0.0;0
+Semiconductors;23;100.0;0.0;0.0;0
+Semiconductors;24;100.0;0.0;0.0;0
+Semiconductors;25;100.0;0.0;0.0;0
+Semiconductors;26;100.0;0.0;0.0;0
+Semiconductors;27;100.0;0.0;0.0;0
+Semiconductors;28;100.0;0.0;0.0;0
+Semiconductors;29;100.0;0.0;0.0;0
+Semiconductors;30;100.0;0.0;0.0;0
+Semiconductors;31;100.0;0.0;0.0;0
+Semiconductors;32;100.0;0.0;0.0;0
+Semiconductors;33;100.0;0.0;0.0;0
+Semiconductors;34;100.0;0.0;0.0;0
+Semiconductors;35;100.0;0.0;0.0;0
+Semiconductors;36;100.0;0.0;0.0;0
+Semiconductors;37;100.0;0.0;0.0;0
+Semiconductors;38;100.0;0.0;0.0;0
+Semiconductors;39;100.0;0.0;0.0;0
+Semiconductors;40;100.0;0.0;0.0;0
+Semiconductors;41;100.0;0.0;0.0;0
+Semiconductors;42;100.0;0.0;0.0;0
+Semiconductors;43;100.0;0.0;0.0;0
+Semiconductors;44;100.0;0.0;0.0;0
+Semiconductors;45;100.0;0.0;0.0;0
+Hospital & Health Care;5;0.0;0.0;100.0;0
+Hospital & Health Care;6;0.0;0.0;100.0;0
+Hospital & Health Care;7;0.0;0.0;100.0;0
+Hospital & Health Care;8;0.0;0.0;100.0;0
+Hospital & Health Care;9;0.0;0.0;100.0;0
+Hospital & Health Care;10;0.0;20.49;79.51;1189
+Hospital & Health Care;11;20.49;44.53;34.98;2584
+Hospital & Health Care;12;65.02;22.56;12.42;1309
+Hospital & Health Care;13;87.58;4.0;8.43;232
+Hospital & Health Care;14;91.57;2.31;6.12;134
+Hospital & Health Care;15;93.88;3.67;2.45;213
+Hospital & Health Care;16;97.55;1.88;0.57;109
+Hospital & Health Care;17;99.43;0.0;0.57;0
+Hospital & Health Care;18;99.43;0.38;0.19;22
+Hospital & Health Care;19;99.81;0.16;0.03;9
+Hospital & Health Care;20;99.97;0.0;0.03;0
+Hospital & Health Care;21;99.97;0.0;0.03;0
+Hospital & Health Care;22;99.97;0.03;0.0;2
+Hospital & Health Care;23;100.0;0.0;0.0;0
+Hospital & Health Care;24;100.0;0.0;0.0;0
+Hospital & Health Care;25;100.0;0.0;0.0;0
+Hospital & Health Care;26;100.0;0.0;0.0;0
+Hospital & Health Care;27;100.0;0.0;0.0;0
+Hospital & Health Care;28;100.0;0.0;0.0;0
+Hospital & Health Care;29;100.0;0.0;0.0;0
+Hospital & Health Care;30;100.0;0.0;0.0;0
+Hospital & Health Care;31;100.0;0.0;0.0;0
+Hospital & Health Care;32;100.0;0.0;0.0;0
+Hospital & Health Care;33;100.0;0.0;0.0;0
+Hospital & Health Care;34;100.0;0.0;0.0;0
+Hospital & Health Care;35;100.0;0.0;0.0;0
+Hospital & Health Care;36;100.0;0.0;0.0;0
+Hospital & Health Care;37;100.0;0.0;0.0;0
+Hospital & Health Care;38;100.0;0.0;0.0;0
+Hospital & Health Care;39;100.0;0.0;0.0;0
+Hospital & Health Care;40;100.0;0.0;0.0;0
+Hospital & Health Care;41;100.0;0.0;0.0;0
+Hospital & Health Care;42;100.0;0.0;0.0;0
+Hospital & Health Care;43;100.0;0.0;0.0;0
+Hospital & Health Care;44;100.0;0.0;0.0;0
+Hospital & Health Care;45;100.0;0.0;0.0;0
+Defense & Space;5;0.0;0.0;100.0;0
+Defense & Space;6;0.0;0.0;100.0;0
+Defense & Space;7;0.0;0.0;100.0;0
+Defense & Space;8;0.0;0.0;100.0;0
+Defense & Space;9;0.0;0.0;100.0;0
+Defense & Space;10;0.0;0.0;100.0;0
+Defense & Space;11;0.0;0.0;100.0;0
+Defense & Space;12;0.0;20.76;79.24;1181
+Defense & Space;13;20.76;38.82;40.42;2208
+Defense & Space;14;59.58;0.12;40.3;7
+Defense & Space;15;59.7;2.23;38.06;127
+Defense & Space;16;61.94;36.34;1.72;2067
+Defense & Space;17;98.28;0.0;1.72;0
+Defense & Space;18;98.28;1.67;0.05;95
+Defense & Space;19;99.95;0.02;0.04;1
+Defense & Space;20;99.96;0.0;0.04;0
+Defense & Space;21;99.96;0.0;0.04;0
+Defense & Space;22;99.96;0.02;0.02;1
+Defense & Space;23;99.98;0.0;0.02;0
+Defense & Space;24;99.98;0.0;0.02;0
+Defense & Space;25;99.98;0.0;0.02;0
+Defense & Space;26;99.98;0.0;0.02;0
+Defense & Space;27;99.98;0.0;0.02;0
+Defense & Space;28;99.98;0.0;0.02;0
+Defense & Space;29;99.98;0.02;0.0;1
+Defense & Space;30;100.0;0.0;0.0;0
+Defense & Space;31;100.0;0.0;0.0;0
+Defense & Space;32;100.0;0.0;0.0;0
+Defense & Space;33;100.0;0.0;0.0;0
+Defense & Space;34;100.0;0.0;0.0;0
+Defense & Space;35;100.0;0.0;0.0;0
+Defense & Space;36;100.0;0.0;0.0;0
+Defense & Space;37;100.0;0.0;0.0;0
+Defense & Space;38;100.0;0.0;0.0;0
+Defense & Space;39;100.0;0.0;0.0;0
+Defense & Space;40;100.0;0.0;0.0;0
+Defense & Space;41;100.0;0.0;0.0;0
+Defense & Space;42;100.0;0.0;0.0;0
+Defense & Space;43;100.0;0.0;0.0;0
+Defense & Space;44;100.0;0.0;0.0;0
+Defense & Space;45;100.0;0.0;0.0;0
+Management Consulting;5;0.0;0.0;100.0;0
+Management Consulting;6;0.0;0.0;100.0;0
+Management Consulting;7;0.0;0.0;100.0;0
+Management Consulting;8;0.0;0.0;100.0;0
+Management Consulting;9;0.0;0.0;100.0;0
+Management Consulting;10;0.0;0.13;99.87;26
+Management Consulting;11;0.13;0.15;99.72;31
+Management Consulting;12;0.28;6.82;92.9;1391
+Management Consulting;13;7.1;39.61;53.29;8077
+Management Consulting;14;46.71;27.39;25.9;5586
+Management Consulting;15;74.1;14.48;11.42;2952
+Management Consulting;16;88.58;8.75;2.67;1785
+Management Consulting;17;97.33;0.0;2.67;0
+Management Consulting;18;97.33;2.66;0.0;543
+Management Consulting;19;100.0;0.0;0.0;1
+Management Consulting;20;100.0;0.0;0.0;0
+Management Consulting;21;100.0;0.0;0.0;0
+Management Consulting;22;100.0;0.0;0.0;0
+Management Consulting;23;100.0;0.0;0.0;0
+Management Consulting;24;100.0;0.0;0.0;0
+Management Consulting;25;100.0;0.0;0.0;0
+Management Consulting;26;100.0;0.0;0.0;0
+Management Consulting;27;100.0;0.0;0.0;0
+Management Consulting;28;100.0;0.0;0.0;0
+Management Consulting;29;100.0;0.0;0.0;0
+Management Consulting;30;100.0;0.0;0.0;0
+Management Consulting;31;100.0;0.0;0.0;0
+Management Consulting;32;100.0;0.0;0.0;0
+Management Consulting;33;100.0;0.0;0.0;0
+Management Consulting;34;100.0;0.0;0.0;0
+Management Consulting;35;100.0;0.0;0.0;0
+Management Consulting;36;100.0;0.0;0.0;0
+Management Consulting;37;100.0;0.0;0.0;0
+Management Consulting;38;100.0;0.0;0.0;0
+Management Consulting;39;100.0;0.0;0.0;0
+Management Consulting;40;100.0;0.0;0.0;0
+Management Consulting;41;100.0;0.0;0.0;0
+Management Consulting;42;100.0;0.0;0.0;0
+Management Consulting;43;100.0;0.0;0.0;0
+Management Consulting;44;100.0;0.0;0.0;0
+Management Consulting;45;100.0;0.0;0.0;0
+Retail;5;0.0;0.0;100.0;0
+Retail;6;0.0;0.0;100.0;0
+Retail;7;0.0;0.0;100.0;0
+Retail;8;0.0;0.0;100.0;0
+Retail;9;0.0;0.0;100.0;0
+Retail;10;0.0;54.29;45.71;11254
+Retail;11;54.29;19.3;26.41;4001
+Retail;12;73.59;11.42;14.99;2367
+Retail;13;85.01;7.12;7.87;1475
+Retail;14;92.13;3.45;4.42;716
+Retail;15;95.58;2.11;2.31;437
+Retail;16;97.69;1.6;0.71;332
+Retail;17;99.29;0.0;0.71;0
+Retail;18;99.29;0.32;0.39;66
+Retail;19;99.61;0.27;0.13;55
+Retail;20;99.87;0.0;0.13;0
+Retail;21;99.87;0.0;0.13;0
+Retail;22;99.87;0.05;0.08;10
+Retail;23;99.92;0.0;0.08;0
+Retail;24;99.92;0.02;0.06;4
+Retail;25;99.94;0.0;0.06;0
+Retail;26;99.94;0.0;0.06;0
+Retail;27;99.94;0.04;0.01;9
+Retail;28;99.99;0.0;0.01;0
+Retail;29;99.99;0.0;0.01;0
+Retail;30;99.99;0.0;0.01;0
+Retail;31;99.99;0.01;0.0;3
+Retail;32;100.0;0.0;0.0;0
+Retail;33;100.0;0.0;0.0;0
+Retail;34;100.0;0.0;0.0;0
+Retail;35;100.0;0.0;0.0;0
+Retail;36;100.0;0.0;0.0;0
+Retail;37;100.0;0.0;0.0;0
+Retail;38;100.0;0.0;0.0;0
+Retail;39;100.0;0.0;0.0;0
+Retail;40;100.0;0.0;0.0;0
+Retail;41;100.0;0.0;0.0;0
+Retail;42;100.0;0.0;0.0;0
+Retail;43;100.0;0.0;0.0;0
+Retail;44;100.0;0.0;0.0;0
+Retail;45;100.0;0.0;0.0;0
+Supermarkets;5;0.0;0.0;100.0;0
+Supermarkets;6;0.0;0.0;100.0;0
+Supermarkets;7;0.0;0.0;100.0;0
+Supermarkets;8;0.0;0.0;100.0;0
+Supermarkets;9;0.0;0.0;100.0;0
+Supermarkets;10;0.0;85.71;14.29;7090
+Supermarkets;11;85.71;0.08;14.2;7
+Supermarkets;12;85.8;0.69;13.52;57
+Supermarkets;13;86.48;5.78;7.74;478
+Supermarkets;14;92.26;3.99;3.75;330
+Supermarkets;15;96.25;2.14;1.61;177
+Supermarkets;16;98.39;1.11;0.5;92
+Supermarkets;17;99.5;0.0;0.5;0
+Supermarkets;18;99.5;0.22;0.28;18
+Supermarkets;19;99.72;0.25;0.02;21
+Supermarkets;20;99.98;0.0;0.02;0
+Supermarkets;21;99.98;0.0;0.02;0
+Supermarkets;22;99.98;0.01;0.01;1
+Supermarkets;23;99.99;0.0;0.01;0
+Supermarkets;24;99.99;0.0;0.01;0
+Supermarkets;25;99.99;0.0;0.01;0
+Supermarkets;26;99.99;0.0;0.01;0
+Supermarkets;27;99.99;0.01;0.0;1
+Supermarkets;28;100.0;0.0;0.0;0
+Supermarkets;29;100.0;0.0;0.0;0
+Supermarkets;30;100.0;0.0;0.0;0
+Supermarkets;31;100.0;0.0;0.0;0
+Supermarkets;32;100.0;0.0;0.0;0
+Supermarkets;33;100.0;0.0;0.0;0
+Supermarkets;34;100.0;0.0;0.0;0
+Supermarkets;35;100.0;0.0;0.0;0
+Supermarkets;36;100.0;0.0;0.0;0
+Supermarkets;37;100.0;0.0;0.0;0
+Supermarkets;38;100.0;0.0;0.0;0
+Supermarkets;39;100.0;0.0;0.0;0
+Supermarkets;40;100.0;0.0;0.0;0
+Supermarkets;41;100.0;0.0;0.0;0
+Supermarkets;42;100.0;0.0;0.0;0
+Supermarkets;43;100.0;0.0;0.0;0
+Supermarkets;44;100.0;0.0;0.0;0
+Supermarkets;45;100.0;0.0;0.0;0
+FMCG;5;0.0;0.0;100.0;0
+FMCG;6;0.0;0.0;100.0;0
+FMCG;7;0.0;0.0;100.0;0
+FMCG;8;0.0;0.0;100.0;0
+FMCG;9;0.0;0.0;100.0;0
+FMCG;10;0.0;5.34;94.66;173
+FMCG;11;5.34;7.54;87.12;244
+FMCG;12;12.88;44.83;42.29;1451
+FMCG;13;57.71;15.69;26.6;508
+FMCG;14;73.4;10.91;15.69;353
+FMCG;15;84.31;7.54;8.16;244
+FMCG;16;91.84;5.04;3.12;163
+FMCG;17;96.88;0.0;3.12;0
+FMCG;18;96.88;1.33;1.79;43
+FMCG;19;98.21;0.65;1.14;21
+FMCG;20;98.86;0.0;1.14;0
+FMCG;21;98.86;0.0;1.14;0
+FMCG;22;98.86;0.96;0.19;31
+FMCG;23;99.81;0.0;0.19;0
+FMCG;24;99.81;0.15;0.03;5
+FMCG;25;99.97;0.0;0.03;0
+FMCG;26;99.97;0.0;0.03;0
+FMCG;27;99.97;0.03;0.0;1
+FMCG;28;100.0;0.0;0.0;0
+FMCG;29;100.0;0.0;0.0;0
+FMCG;30;100.0;0.0;0.0;0
+FMCG;31;100.0;0.0;0.0;0
+FMCG;32;100.0;0.0;0.0;0
+FMCG;33;100.0;0.0;0.0;0
+FMCG;34;100.0;0.0;0.0;0
+FMCG;35;100.0;0.0;0.0;0
+FMCG;36;100.0;0.0;0.0;0
+FMCG;37;100.0;0.0;0.0;0
+FMCG;38;100.0;0.0;0.0;0
+FMCG;39;100.0;0.0;0.0;0
+FMCG;40;100.0;0.0;0.0;0
+FMCG;41;100.0;0.0;0.0;0
+FMCG;42;100.0;0.0;0.0;0
+FMCG;43;100.0;0.0;0.0;0
+FMCG;44;100.0;0.0;0.0;0
+FMCG;45;100.0;0.0;0.0;0
+Banking;5;0.0;0.0;100.0;0
+Banking;6;0.0;0.0;100.0;0
+Banking;7;0.0;0.0;100.0;0
+Banking;8;0.0;0.0;100.0;0
+Banking;9;0.0;0.0;100.0;0
+Banking;10;0.0;0.0;100.0;0
+Banking;11;0.0;30.77;69.23;4
+Banking;12;30.77;15.38;53.85;2
+Banking;13;46.15;0.0;53.85;0
+Banking;14;46.15;0.0;53.85;0
+Banking;15;46.15;30.77;23.08;4
+Banking;16;76.92;23.08;0.0;3
+Banking;17;100.0;0.0;0.0;0
+Banking;18;100.0;0.0;0.0;0
+Banking;19;100.0;0.0;0.0;0
+Banking;20;100.0;0.0;0.0;0
+Banking;21;100.0;0.0;0.0;0
+Banking;22;100.0;0.0;0.0;0
+Banking;23;100.0;0.0;0.0;0
+Banking;24;100.0;0.0;0.0;0
+Banking;25;100.0;0.0;0.0;0
+Banking;26;100.0;0.0;0.0;0
+Banking;27;100.0;0.0;0.0;0
+Banking;28;100.0;0.0;0.0;0
+Banking;29;100.0;0.0;0.0;0
+Banking;30;100.0;0.0;0.0;0
+Banking;31;100.0;0.0;0.0;0
+Banking;32;100.0;0.0;0.0;0
+Banking;33;100.0;0.0;0.0;0
+Banking;34;100.0;0.0;0.0;0
+Banking;35;100.0;0.0;0.0;0
+Banking;36;100.0;0.0;0.0;0
+Banking;37;100.0;0.0;0.0;0
+Banking;38;100.0;0.0;0.0;0
+Banking;39;100.0;0.0;0.0;0
+Banking;40;100.0;0.0;0.0;0
+Banking;41;100.0;0.0;0.0;0
+Banking;42;100.0;0.0;0.0;0
+Banking;43;100.0;0.0;0.0;0
+Banking;44;100.0;0.0;0.0;0
+Banking;45;100.0;0.0;0.0;0
+BFSI;5;0.0;0.0;100.0;0
+BFSI;6;0.0;0.0;100.0;0
+BFSI;7;0.0;0.0;100.0;0
+BFSI;8;0.0;0.0;100.0;0
+BFSI;9;0.0;0.0;100.0;0
+BFSI;10;0.0;51.78;48.22;3492
+BFSI;11;51.78;11.45;36.77;772
+BFSI;12;63.23;14.29;22.48;964
+BFSI;13;77.52;4.52;17.96;305
+BFSI;14;82.04;5.9;12.06;398
+BFSI;15;87.94;5.49;6.57;370
+BFSI;16;93.43;5.44;1.13;367
+BFSI;17;98.87;0.0;1.13;0
+BFSI;18;98.87;0.85;0.28;57
+BFSI;19;99.72;0.25;0.03;17
+BFSI;20;99.97;0.0;0.03;0
+BFSI;21;99.97;0.0;0.03;0
+BFSI;22;99.97;0.01;0.01;1
+BFSI;23;99.99;0.0;0.01;0
+BFSI;24;99.99;0.01;0.0;1
+BFSI;25;100.0;0.0;0.0;0
+BFSI;26;100.0;0.0;0.0;0
+BFSI;27;100.0;0.0;0.0;0
+BFSI;28;100.0;0.0;0.0;0
+BFSI;29;100.0;0.0;0.0;0
+BFSI;30;100.0;0.0;0.0;0
+BFSI;31;100.0;0.0;0.0;0
+BFSI;32;100.0;0.0;0.0;0
+BFSI;33;100.0;0.0;0.0;0
+BFSI;34;100.0;0.0;0.0;0
+BFSI;35;100.0;0.0;0.0;0
+BFSI;36;100.0;0.0;0.0;0
+BFSI;37;100.0;0.0;0.0;0
+BFSI;38;100.0;0.0;0.0;0
+BFSI;39;100.0;0.0;0.0;0
+BFSI;40;100.0;0.0;0.0;0
+BFSI;41;100.0;0.0;0.0;0
+BFSI;42;100.0;0.0;0.0;0
+BFSI;43;100.0;0.0;0.0;0
+BFSI;44;100.0;0.0;0.0;0
+BFSI;45;100.0;0.0;0.0;0
+International Trade and Development;5;0.0;0.0;100.0;0
+International Trade and Development;6;0.0;0.0;100.0;0
+International Trade and Development;7;0.0;0.0;100.0;0
+International Trade and Development;8;0.0;0.0;100.0;0
+International Trade and Development;9;0.0;0.0;100.0;0
+International Trade and Development;10;0.0;0.0;100.0;0
+International Trade and Development;11;0.0;1.67;98.33;2
+International Trade and Development;12;1.67;54.17;44.17;65
+International Trade and Development;13;55.83;5.0;39.17;6
+International Trade and Development;14;60.83;15.83;23.33;19
+International Trade and Development;15;76.67;14.17;9.17;17
+International Trade and Development;16;90.83;9.17;0.0;11
+International Trade and Development;17;100.0;0.0;0.0;0
+International Trade and Development;18;100.0;0.0;0.0;0
+International Trade and Development;19;100.0;0.0;0.0;0
+International Trade and Development;20;100.0;0.0;0.0;0
+International Trade and Development;21;100.0;0.0;0.0;0
+International Trade and Development;22;100.0;0.0;0.0;0
+International Trade and Development;23;100.0;0.0;0.0;0
+International Trade and Development;24;100.0;0.0;0.0;0
+International Trade and Development;25;100.0;0.0;0.0;0
+International Trade and Development;26;100.0;0.0;0.0;0
+International Trade and Development;27;100.0;0.0;0.0;0
+International Trade and Development;28;100.0;0.0;0.0;0
+International Trade and Development;29;100.0;0.0;0.0;0
+International Trade and Development;30;100.0;0.0;0.0;0
+International Trade and Development;31;100.0;0.0;0.0;0
+International Trade and Development;32;100.0;0.0;0.0;0
+International Trade and Development;33;100.0;0.0;0.0;0
+International Trade and Development;34;100.0;0.0;0.0;0
+International Trade and Development;35;100.0;0.0;0.0;0
+International Trade and Development;36;100.0;0.0;0.0;0
+International Trade and Development;37;100.0;0.0;0.0;0
+International Trade and Development;38;100.0;0.0;0.0;0
+International Trade and Development;39;100.0;0.0;0.0;0
+International Trade and Development;40;100.0;0.0;0.0;0
+International Trade and Development;41;100.0;0.0;0.0;0
+International Trade and Development;42;100.0;0.0;0.0;0
+International Trade and Development;43;100.0;0.0;0.0;0
+International Trade and Development;44;100.0;0.0;0.0;0
+International Trade and Development;45;100.0;0.0;0.0;0
+Industrial Automation;5;0.0;0.0;100.0;0
+Industrial Automation;6;0.0;0.0;100.0;0
+Industrial Automation;7;0.0;0.0;100.0;0
+Industrial Automation;8;0.0;0.0;100.0;0
+Industrial Automation;9;0.0;0.0;100.0;0
+Industrial Automation;10;0.0;7.1;92.9;519
+Industrial Automation;11;7.1;5.98;86.93;437
+Industrial Automation;12;13.07;48.65;38.28;3557
+Industrial Automation;13;61.72;18.15;20.13;1327
+Industrial Automation;14;79.87;10.74;9.4;785
+Industrial Automation;15;90.6;4.27;5.13;312
+Industrial Automation;16;94.87;3.9;1.23;285
+Industrial Automation;17;98.77;0.0;1.23;0
+Industrial Automation;18;98.77;0.78;0.45;57
+Industrial Automation;19;99.55;0.42;0.03;31
+Industrial Automation;20;99.97;0.0;0.03;0
+Industrial Automation;21;99.97;0.0;0.03;0
+Industrial Automation;22;99.97;0.01;0.01;1
+Industrial Automation;23;99.99;0.0;0.01;0
+Industrial Automation;24;99.99;0.01;0.0;1
+Industrial Automation;25;100.0;0.0;0.0;0
+Industrial Automation;26;100.0;0.0;0.0;0
+Industrial Automation;27;100.0;0.0;0.0;0
+Industrial Automation;28;100.0;0.0;0.0;0
+Industrial Automation;29;100.0;0.0;0.0;0
+Industrial Automation;30;100.0;0.0;0.0;0
+Industrial Automation;31;100.0;0.0;0.0;0
+Industrial Automation;32;100.0;0.0;0.0;0
+Industrial Automation;33;100.0;0.0;0.0;0
+Industrial Automation;34;100.0;0.0;0.0;0
+Industrial Automation;35;100.0;0.0;0.0;0
+Industrial Automation;36;100.0;0.0;0.0;0
+Industrial Automation;37;100.0;0.0;0.0;0
+Industrial Automation;38;100.0;0.0;0.0;0
+Industrial Automation;39;100.0;0.0;0.0;0
+Industrial Automation;40;100.0;0.0;0.0;0
+Industrial Automation;41;100.0;0.0;0.0;0
+Industrial Automation;42;100.0;0.0;0.0;0
+Industrial Automation;43;100.0;0.0;0.0;0
+Industrial Automation;44;100.0;0.0;0.0;0
+Industrial Automation;45;100.0;0.0;0.0;0
+Wine and Spirits;5;0.0;0.0;100.0;0
+Wine and Spirits;6;0.0;0.0;100.0;0
+Wine and Spirits;7;0.0;0.0;100.0;0
+Wine and Spirits;8;0.0;0.0;100.0;0
+Wine and Spirits;9;0.0;0.0;100.0;0
+Wine and Spirits;10;0.0;3.97;96.03;106
+Wine and Spirits;11;3.97;34.51;61.52;921
+Wine and Spirits;12;38.48;16.6;44.92;443
+Wine and Spirits;13;55.08;8.39;36.53;224
+Wine and Spirits;14;63.47;15.74;20.79;420
+Wine and Spirits;15;79.21;9.37;11.43;250
+Wine and Spirits;16;88.57;8.24;3.18;220
+Wine and Spirits;17;96.82;0.0;3.18;0
+Wine and Spirits;18;96.82;0.19;3.0;5
+Wine and Spirits;19;97.0;2.25;0.75;60
+Wine and Spirits;20;99.25;0.0;0.75;0
+Wine and Spirits;21;99.25;0.0;0.75;0
+Wine and Spirits;22;99.25;0.37;0.37;10
+Wine and Spirits;23;99.63;0.0;0.37;0
+Wine and Spirits;24;99.63;0.37;0.0;10
+Wine and Spirits;25;100.0;0.0;0.0;0
+Wine and Spirits;26;100.0;0.0;0.0;0
+Wine and Spirits;27;100.0;0.0;0.0;0
+Wine and Spirits;28;100.0;0.0;0.0;0
+Wine and Spirits;29;100.0;0.0;0.0;0
+Wine and Spirits;30;100.0;0.0;0.0;0
+Wine and Spirits;31;100.0;0.0;0.0;0
+Wine and Spirits;32;100.0;0.0;0.0;0
+Wine and Spirits;33;100.0;0.0;0.0;0
+Wine and Spirits;34;100.0;0.0;0.0;0
+Wine and Spirits;35;100.0;0.0;0.0;0
+Wine and Spirits;36;100.0;0.0;0.0;0
+Wine and Spirits;37;100.0;0.0;0.0;0
+Wine and Spirits;38;100.0;0.0;0.0;0
+Wine and Spirits;39;100.0;0.0;0.0;0
+Wine and Spirits;40;100.0;0.0;0.0;0
+Wine and Spirits;41;100.0;0.0;0.0;0
+Wine and Spirits;42;100.0;0.0;0.0;0
+Wine and Spirits;43;100.0;0.0;0.0;0
+Wine and Spirits;44;100.0;0.0;0.0;0
+Wine and Spirits;45;100.0;0.0;0.0;0
+Outsourcing/Offshoring;5;0.0;0.0;100.0;0
+Outsourcing/Offshoring;6;0.0;0.0;100.0;0
+Outsourcing/Offshoring;7;0.0;0.0;100.0;0
+Outsourcing/Offshoring;8;0.0;0.0;100.0;0
+Outsourcing/Offshoring;9;0.0;0.0;100.0;0
+Outsourcing/Offshoring;10;0.0;0.08;99.92;3
+Outsourcing/Offshoring;11;0.08;58.47;41.45;2261
+Outsourcing/Offshoring;12;58.55;16.58;24.88;641
+Outsourcing/Offshoring;13;75.12;3.31;21.57;128
+Outsourcing/Offshoring;14;78.43;10.58;10.99;409
+Outsourcing/Offshoring;15;89.01;8.04;2.95;311
+Outsourcing/Offshoring;16;97.05;2.77;0.18;107
+Outsourcing/Offshoring;17;99.82;0.03;0.16;1
+Outsourcing/Offshoring;18;99.84;0.1;0.05;4
+Outsourcing/Offshoring;19;99.95;0.03;0.03;1
+Outsourcing/Offshoring;20;99.97;0.0;0.03;0
+Outsourcing/Offshoring;21;99.97;0.0;0.03;0
+Outsourcing/Offshoring;22;99.97;0.03;0.0;1
+Outsourcing/Offshoring;23;100.0;0.0;0.0;0
+Outsourcing/Offshoring;24;100.0;0.0;0.0;0
+Outsourcing/Offshoring;25;100.0;0.0;0.0;0
+Outsourcing/Offshoring;26;100.0;0.0;0.0;0
+Outsourcing/Offshoring;27;100.0;0.0;0.0;0
+Outsourcing/Offshoring;28;100.0;0.0;0.0;0
+Outsourcing/Offshoring;29;100.0;0.0;0.0;0
+Outsourcing/Offshoring;30;100.0;0.0;0.0;0
+Outsourcing/Offshoring;31;100.0;0.0;0.0;0
+Outsourcing/Offshoring;32;100.0;0.0;0.0;0
+Outsourcing/Offshoring;33;100.0;0.0;0.0;0
+Outsourcing/Offshoring;34;100.0;0.0;0.0;0
+Outsourcing/Offshoring;35;100.0;0.0;0.0;0
+Outsourcing/Offshoring;36;100.0;0.0;0.0;0
+Outsourcing/Offshoring;37;100.0;0.0;0.0;0
+Outsourcing/Offshoring;38;100.0;0.0;0.0;0
+Outsourcing/Offshoring;39;100.0;0.0;0.0;0
+Outsourcing/Offshoring;40;100.0;0.0;0.0;0
+Outsourcing/Offshoring;41;100.0;0.0;0.0;0
+Outsourcing/Offshoring;42;100.0;0.0;0.0;0
+Outsourcing/Offshoring;43;100.0;0.0;0.0;0
+Outsourcing/Offshoring;44;100.0;0.0;0.0;0
+Outsourcing/Offshoring;45;100.0;0.0;0.0;0
+Accounting;5;0.0;0.0;100.0;0
+Accounting;6;0.0;0.0;100.0;0
+Accounting;7;0.0;0.0;100.0;0
+Accounting;8;0.0;0.0;100.0;0
+Accounting;9;0.0;0.0;100.0;0
+Accounting;10;0.0;3.57;96.43;1
+Accounting;11;3.57;3.57;92.86;1
+Accounting;12;7.14;42.86;50.0;12
+Accounting;13;50.0;28.57;21.43;8
+Accounting;14;78.57;3.57;17.86;1
+Accounting;15;82.14;10.71;7.14;3
+Accounting;16;92.86;0.0;7.14;0
+Accounting;17;92.86;3.57;3.57;1
+Accounting;18;96.43;0.0;3.57;0
+Accounting;19;96.43;3.57;0.0;1
+Accounting;20;100.0;0.0;0.0;0
+Accounting;21;100.0;0.0;0.0;0
+Accounting;22;100.0;0.0;0.0;0
+Accounting;23;100.0;0.0;0.0;0
+Accounting;24;100.0;0.0;0.0;0
+Accounting;25;100.0;0.0;0.0;0
+Accounting;26;100.0;0.0;0.0;0
+Accounting;27;100.0;0.0;0.0;0
+Accounting;28;100.0;0.0;0.0;0
+Accounting;29;100.0;0.0;0.0;0
+Accounting;30;100.0;0.0;0.0;0
+Accounting;31;100.0;0.0;0.0;0
+Accounting;32;100.0;0.0;0.0;0
+Accounting;33;100.0;0.0;0.0;0
+Accounting;34;100.0;0.0;0.0;0
+Accounting;35;100.0;0.0;0.0;0
+Accounting;36;100.0;0.0;0.0;0
+Accounting;37;100.0;0.0;0.0;0
+Accounting;38;100.0;0.0;0.0;0
+Accounting;39;100.0;0.0;0.0;0
+Accounting;40;100.0;0.0;0.0;0
+Accounting;41;100.0;0.0;0.0;0
+Accounting;42;100.0;0.0;0.0;0
+Accounting;43;100.0;0.0;0.0;0
+Accounting;44;100.0;0.0;0.0;0
+Accounting;45;100.0;0.0;0.0;0
+Human Resources;5;0.0;0.0;100.0;0
+Human Resources;6;0.0;0.0;100.0;0
+Human Resources;7;0.0;0.0;100.0;0
+Human Resources;8;0.0;0.0;100.0;0
+Human Resources;9;0.0;0.0;100.0;0
+Human Resources;10;0.0;3.57;96.43;1
+Human Resources;11;3.57;3.57;92.86;1
+Human Resources;12;7.14;42.86;50.0;12
+Human Resources;13;50.0;28.57;21.43;8
+Human Resources;14;78.57;3.57;17.86;1
+Human Resources;15;82.14;10.71;7.14;3
+Human Resources;16;92.86;0.0;7.14;0
+Human Resources;17;92.86;3.57;3.57;1
+Human Resources;18;96.43;0.0;3.57;0
+Human Resources;19;96.43;3.57;0.0;1
+Human Resources;20;100.0;0.0;0.0;0
+Human Resources;21;100.0;0.0;0.0;0
+Human Resources;22;100.0;0.0;0.0;0
+Human Resources;23;100.0;0.0;0.0;0
+Human Resources;24;100.0;0.0;0.0;0
+Human Resources;25;100.0;0.0;0.0;0
+Human Resources;26;100.0;0.0;0.0;0
+Human Resources;27;100.0;0.0;0.0;0
+Human Resources;28;100.0;0.0;0.0;0
+Human Resources;29;100.0;0.0;0.0;0
+Human Resources;30;100.0;0.0;0.0;0
+Human Resources;31;100.0;0.0;0.0;0
+Human Resources;32;100.0;0.0;0.0;0
+Human Resources;33;100.0;0.0;0.0;0
+Human Resources;34;100.0;0.0;0.0;0
+Human Resources;35;100.0;0.0;0.0;0
+Human Resources;36;100.0;0.0;0.0;0
+Human Resources;37;100.0;0.0;0.0;0
+Human Resources;38;100.0;0.0;0.0;0
+Human Resources;39;100.0;0.0;0.0;0
+Human Resources;40;100.0;0.0;0.0;0
+Human Resources;41;100.0;0.0;0.0;0
+Human Resources;42;100.0;0.0;0.0;0
+Human Resources;43;100.0;0.0;0.0;0
+Human Resources;44;100.0;0.0;0.0;0
+Human Resources;45;100.0;0.0;0.0;0
+Packaging and Containers;5;0.0;0.0;100.0;0
+Packaging and Containers;6;0.0;0.0;100.0;0
+Packaging and Containers;7;0.0;0.0;100.0;0
+Packaging and Containers;8;0.0;0.0;100.0;0
+Packaging and Containers;9;0.0;0.0;100.0;0
+Packaging and Containers;10;0.0;12.9;87.1;81
+Packaging and Containers;11;12.9;23.25;63.85;146
+Packaging and Containers;12;36.15;30.57;33.28;192
+Packaging and Containers;13;66.72;7.96;25.32;50
+Packaging and Containers;14;74.68;14.81;10.51;93
+Packaging and Containers;15;89.49;7.01;3.5;44
+Packaging and Containers;16;96.5;2.39;1.11;15
+Packaging and Containers;17;98.89;0.0;1.11;0
+Packaging and Containers;18;98.89;0.64;0.48;4
+Packaging and Containers;19;99.52;0.16;0.32;1
+Packaging and Containers;20;99.68;0.0;0.32;0
+Packaging and Containers;21;99.68;0.0;0.32;0
+Packaging and Containers;22;99.68;0.16;0.16;1
+Packaging and Containers;23;99.84;0.0;0.16;0
+Packaging and Containers;24;99.84;0.16;0.0;1
+Packaging and Containers;25;100.0;0.0;0.0;0
+Packaging and Containers;26;100.0;0.0;0.0;0
+Packaging and Containers;27;100.0;0.0;0.0;0
+Packaging and Containers;28;100.0;0.0;0.0;0
+Packaging and Containers;29;100.0;0.0;0.0;0
+Packaging and Containers;30;100.0;0.0;0.0;0
+Packaging and Containers;31;100.0;0.0;0.0;0
+Packaging and Containers;32;100.0;0.0;0.0;0
+Packaging and Containers;33;100.0;0.0;0.0;0
+Packaging and Containers;34;100.0;0.0;0.0;0
+Packaging and Containers;35;100.0;0.0;0.0;0
+Packaging and Containers;36;100.0;0.0;0.0;0
+Packaging and Containers;37;100.0;0.0;0.0;0
+Packaging and Containers;38;100.0;0.0;0.0;0
+Packaging and Containers;39;100.0;0.0;0.0;0
+Packaging and Containers;40;100.0;0.0;0.0;0
+Packaging and Containers;41;100.0;0.0;0.0;0
+Packaging and Containers;42;100.0;0.0;0.0;0
+Packaging and Containers;43;100.0;0.0;0.0;0
+Packaging and Containers;44;100.0;0.0;0.0;0
+Packaging and Containers;45;100.0;0.0;0.0;0
+Wholesale;5;0.0;0.0;100.0;0
+Wholesale;6;0.0;0.0;100.0;0
+Wholesale;7;0.0;0.0;100.0;0
+Wholesale;8;0.0;0.0;100.0;0
+Wholesale;9;0.0;0.0;100.0;0
+Wholesale;10;0.0;39.18;60.82;1284
+Wholesale;11;39.18;33.69;27.13;1104
+Wholesale;12;72.87;7.63;19.5;250
+Wholesale;13;80.5;9.46;10.04;310
+Wholesale;14;89.96;1.22;8.82;40
+Wholesale;15;91.18;5.55;3.27;182
+Wholesale;16;96.73;1.71;1.56;56
+Wholesale;17;98.44;0.0;1.56;0
+Wholesale;18;98.44;0.58;0.98;19
+Wholesale;19;99.02;0.79;0.18;26
+Wholesale;20;99.82;0.0;0.18;0
+Wholesale;21;99.82;0.0;0.18;0
+Wholesale;22;99.82;0.18;0.0;6
+Wholesale;23;100.0;0.0;0.0;0
+Wholesale;24;100.0;0.0;0.0;0
+Wholesale;25;100.0;0.0;0.0;0
+Wholesale;26;100.0;0.0;0.0;0
+Wholesale;27;100.0;0.0;0.0;0
+Wholesale;28;100.0;0.0;0.0;0
+Wholesale;29;100.0;0.0;0.0;0
+Wholesale;30;100.0;0.0;0.0;0
+Wholesale;31;100.0;0.0;0.0;0
+Wholesale;32;100.0;0.0;0.0;0
+Wholesale;33;100.0;0.0;0.0;0
+Wholesale;34;100.0;0.0;0.0;0
+Wholesale;35;100.0;0.0;0.0;0
+Wholesale;36;100.0;0.0;0.0;0
+Wholesale;37;100.0;0.0;0.0;0
+Wholesale;38;100.0;0.0;0.0;0
+Wholesale;39;100.0;0.0;0.0;0
+Wholesale;40;100.0;0.0;0.0;0
+Wholesale;41;100.0;0.0;0.0;0
+Wholesale;42;100.0;0.0;0.0;0
+Wholesale;43;100.0;0.0;0.0;0
+Wholesale;44;100.0;0.0;0.0;0
+Wholesale;45;100.0;0.0;0.0;0
+Apparel & Fashion;5;0.0;0.0;100.0;0
+Apparel & Fashion;6;0.0;0.0;100.0;0
+Apparel & Fashion;7;0.0;0.0;100.0;0
+Apparel & Fashion;8;0.0;0.0;100.0;0
+Apparel & Fashion;9;0.0;0.0;100.0;0
+Apparel & Fashion;10;0.0;9.89;90.11;273
+Apparel & Fashion;11;9.89;10.4;79.71;287
+Apparel & Fashion;12;20.29;19.49;60.22;538
+Apparel & Fashion;13;39.78;21.41;38.8;591
+Apparel & Fashion;14;61.2;17.39;21.41;480
+Apparel & Fashion;15;78.59;9.49;11.92;262
+Apparel & Fashion;16;88.08;9.53;2.39;263
+Apparel & Fashion;17;97.61;0.0;2.39;0
+Apparel & Fashion;18;97.61;1.12;1.27;31
+Apparel & Fashion;19;98.73;1.05;0.22;29
+Apparel & Fashion;20;99.78;0.0;0.22;0
+Apparel & Fashion;21;99.78;0.0;0.22;0
+Apparel & Fashion;22;99.78;0.14;0.07;4
+Apparel & Fashion;23;99.93;0.0;0.07;0
+Apparel & Fashion;24;99.93;0.04;0.04;1
+Apparel & Fashion;25;99.96;0.0;0.04;0
+Apparel & Fashion;26;99.96;0.0;0.04;0
+Apparel & Fashion;27;99.96;0.04;0.0;1
+Apparel & Fashion;28;100.0;0.0;0.0;0
+Apparel & Fashion;29;100.0;0.0;0.0;0
+Apparel & Fashion;30;100.0;0.0;0.0;0
+Apparel & Fashion;31;100.0;0.0;0.0;0
+Apparel & Fashion;32;100.0;0.0;0.0;0
+Apparel & Fashion;33;100.0;0.0;0.0;0
+Apparel & Fashion;34;100.0;0.0;0.0;0
+Apparel & Fashion;35;100.0;0.0;0.0;0
+Apparel & Fashion;36;100.0;0.0;0.0;0
+Apparel & Fashion;37;100.0;0.0;0.0;0
+Apparel & Fashion;38;100.0;0.0;0.0;0
+Apparel & Fashion;39;100.0;0.0;0.0;0
+Apparel & Fashion;40;100.0;0.0;0.0;0
+Apparel & Fashion;41;100.0;0.0;0.0;0
+Apparel & Fashion;42;100.0;0.0;0.0;0
+Apparel & Fashion;43;100.0;0.0;0.0;0
+Apparel & Fashion;44;100.0;0.0;0.0;0
+Apparel & Fashion;45;100.0;0.0;0.0;0
+Health Care;5;0.0;0.0;100.0;0
+Health Care;6;0.0;0.0;100.0;0
+Health Care;7;0.0;0.0;100.0;0
+Health Care;8;0.0;0.0;100.0;0
+Health Care;9;0.0;0.0;100.0;0
+Health Care;10;0.0;16.74;83.26;122
+Health Care;11;16.74;14.54;68.72;106
+Health Care;12;31.28;39.23;29.49;286
+Health Care;13;70.51;8.09;21.4;59
+Health Care;14;78.6;11.11;10.29;81
+Health Care;15;89.71;5.35;4.94;39
+Health Care;16;95.06;4.39;0.55;32
+Health Care;17;99.45;0.0;0.55;0
+Health Care;18;99.45;0.27;0.27;2
+Health Care;19;99.73;0.14;0.14;1
+Health Care;20;99.86;0.14;0.0;1
+Health Care;21;100.0;0.0;0.0;0
+Health Care;22;100.0;0.0;0.0;0
+Health Care;23;100.0;0.0;0.0;0
+Health Care;24;100.0;0.0;0.0;0
+Health Care;25;100.0;0.0;0.0;0
+Health Care;26;100.0;0.0;0.0;0
+Health Care;27;100.0;0.0;0.0;0
+Health Care;28;100.0;0.0;0.0;0
+Health Care;29;100.0;0.0;0.0;0
+Health Care;30;100.0;0.0;0.0;0
+Health Care;31;100.0;0.0;0.0;0
+Health Care;32;100.0;0.0;0.0;0
+Health Care;33;100.0;0.0;0.0;0
+Health Care;34;100.0;0.0;0.0;0
+Health Care;35;100.0;0.0;0.0;0
+Health Care;36;100.0;0.0;0.0;0
+Health Care;37;100.0;0.0;0.0;0
+Health Care;38;100.0;0.0;0.0;0
+Health Care;39;100.0;0.0;0.0;0
+Health Care;40;100.0;0.0;0.0;0
+Health Care;41;100.0;0.0;0.0;0
+Health Care;42;100.0;0.0;0.0;0
+Health Care;43;100.0;0.0;0.0;0
+Health Care;44;100.0;0.0;0.0;0
+Health Care;45;100.0;0.0;0.0;0
+Financial Services;5;0.0;0.0;100.0;0
+Financial Services;6;0.0;0.0;100.0;0
+Financial Services;7;0.0;0.0;100.0;0
+Financial Services;8;0.0;0.0;100.0;0
+Financial Services;9;0.0;0.0;100.0;0
+Financial Services;10;0.0;0.06;99.94;2
+Financial Services;11;0.06;66.83;33.12;2347
+Financial Services;12;66.88;10.31;22.81;362
+Financial Services;13;77.19;1.54;21.27;54
+Financial Services;14;78.73;10.56;10.71;371
+Financial Services;15;89.29;7.66;3.05;269
+Financial Services;16;96.95;2.96;0.09;104
+Financial Services;17;99.91;0.0;0.09;0
+Financial Services;18;99.91;0.06;0.03;2
+Financial Services;19;99.97;0.0;0.03;0
+Financial Services;20;99.97;0.0;0.03;0
+Financial Services;21;99.97;0.0;0.03;0
+Financial Services;22;99.97;0.0;0.03;0
+Financial Services;23;99.97;0.0;0.03;0
+Financial Services;24;99.97;0.03;0.0;1
+Financial Services;25;100.0;0.0;0.0;0
+Financial Services;26;100.0;0.0;0.0;0
+Financial Services;27;100.0;0.0;0.0;0
+Financial Services;28;100.0;0.0;0.0;0
+Financial Services;29;100.0;0.0;0.0;0
+Financial Services;30;100.0;0.0;0.0;0
+Financial Services;31;100.0;0.0;0.0;0
+Financial Services;32;100.0;0.0;0.0;0
+Financial Services;33;100.0;0.0;0.0;0
+Financial Services;34;100.0;0.0;0.0;0
+Financial Services;35;100.0;0.0;0.0;0
+Financial Services;36;100.0;0.0;0.0;0
+Financial Services;37;100.0;0.0;0.0;0
+Financial Services;38;100.0;0.0;0.0;0
+Financial Services;39;100.0;0.0;0.0;0
+Financial Services;40;100.0;0.0;0.0;0
+Financial Services;41;100.0;0.0;0.0;0
+Financial Services;42;100.0;0.0;0.0;0
+Financial Services;43;100.0;0.0;0.0;0
+Financial Services;44;100.0;0.0;0.0;0
+Financial Services;45;100.0;0.0;0.0;0
+Restaurants;5;0.0;0.0;100.0;0
+Restaurants;6;0.0;0.0;100.0;0
+Restaurants;7;0.0;0.0;100.0;0
+Restaurants;8;0.0;0.0;100.0;0
+Restaurants;9;0.0;0.0;100.0;0
+Restaurants;10;0.0;48.61;51.39;5910
+Restaurants;11;48.61;25.61;25.78;3114
+Restaurants;12;74.22;14.57;11.22;1771
+Restaurants;13;88.78;5.33;5.89;648
+Restaurants;14;94.11;2.25;3.64;274
+Restaurants;15;96.36;2.58;1.05;314
+Restaurants;16;98.95;0.92;0.13;112
+Restaurants;17;99.87;0.0;0.13;0
+Restaurants;18;99.87;0.07;0.06;9
+Restaurants;19;99.94;0.03;0.02;4
+Restaurants;20;99.98;0.0;0.02;0
+Restaurants;21;99.98;0.0;0.02;0
+Restaurants;22;99.98;0.02;0.0;3
+Restaurants;23;100.0;0.0;0.0;0
+Restaurants;24;100.0;0.0;0.0;0
+Restaurants;25;100.0;0.0;0.0;0
+Restaurants;26;100.0;0.0;0.0;0
+Restaurants;27;100.0;0.0;0.0;0
+Restaurants;28;100.0;0.0;0.0;0
+Restaurants;29;100.0;0.0;0.0;0
+Restaurants;30;100.0;0.0;0.0;0
+Restaurants;31;100.0;0.0;0.0;0
+Restaurants;32;100.0;0.0;0.0;0
+Restaurants;33;100.0;0.0;0.0;0
+Restaurants;34;100.0;0.0;0.0;0
+Restaurants;35;100.0;0.0;0.0;0
+Restaurants;36;100.0;0.0;0.0;0
+Restaurants;37;100.0;0.0;0.0;0
+Restaurants;38;100.0;0.0;0.0;0
+Restaurants;39;100.0;0.0;0.0;0
+Restaurants;40;100.0;0.0;0.0;0
+Restaurants;41;100.0;0.0;0.0;0
+Restaurants;42;100.0;0.0;0.0;0
+Restaurants;43;100.0;0.0;0.0;0
+Restaurants;44;100.0;0.0;0.0;0
+Restaurants;45;100.0;0.0;0.0;0
+e-Learning;5;0.0;0.0;100.0;0
+e-Learning;6;0.0;0.0;100.0;0
+e-Learning;7;0.0;0.0;100.0;0
+e-Learning;8;0.0;0.0;100.0;0
+e-Learning;9;0.0;0.0;100.0;0
+e-Learning;10;0.0;0.0;100.0;0
+e-Learning;11;0.0;61.11;38.89;1705
+e-Learning;12;61.11;16.42;22.47;458
+e-Learning;13;77.53;0.0;22.47;0
+e-Learning;14;77.53;14.7;7.78;410
+e-Learning;15;92.22;4.77;3.01;133
+e-Learning;16;96.99;1.94;1.08;54
+e-Learning;17;98.92;0.0;1.08;0
+e-Learning;18;98.92;0.9;0.18;25
+e-Learning;19;99.82;0.0;0.18;0
+e-Learning;20;99.82;0.0;0.18;0
+e-Learning;21;99.82;0.0;0.18;0
+e-Learning;22;99.82;0.18;0.0;5
+e-Learning;23;100.0;0.0;0.0;0
+e-Learning;24;100.0;0.0;0.0;0
+e-Learning;25;100.0;0.0;0.0;0
+e-Learning;26;100.0;0.0;0.0;0
+e-Learning;27;100.0;0.0;0.0;0
+e-Learning;28;100.0;0.0;0.0;0
+e-Learning;29;100.0;0.0;0.0;0
+e-Learning;30;100.0;0.0;0.0;0
+e-Learning;31;100.0;0.0;0.0;0
+e-Learning;32;100.0;0.0;0.0;0
+e-Learning;33;100.0;0.0;0.0;0
+e-Learning;34;100.0;0.0;0.0;0
+e-Learning;35;100.0;0.0;0.0;0
+e-Learning;36;100.0;0.0;0.0;0
+e-Learning;37;100.0;0.0;0.0;0
+e-Learning;38;100.0;0.0;0.0;0
+e-Learning;39;100.0;0.0;0.0;0
+e-Learning;40;100.0;0.0;0.0;0
+e-Learning;41;100.0;0.0;0.0;0
+e-Learning;42;100.0;0.0;0.0;0
+e-Learning;43;100.0;0.0;0.0;0
+e-Learning;44;100.0;0.0;0.0;0
+e-Learning;45;100.0;0.0;0.0;0
+Agri Industry;5;0.0;0.0;100.0;0
+Agri Industry;6;0.0;0.0;100.0;0
+Agri Industry;7;0.0;0.0;100.0;0
+Agri Industry;8;0.0;0.0;100.0;0
+Agri Industry;9;0.0;0.0;100.0;0
+Agri Industry;10;0.0;0.0;100.0;0
+Agri Industry;11;0.0;28.62;71.38;83
+Agri Industry;12;28.62;30.69;40.69;89
+Agri Industry;13;59.31;23.1;17.59;67
+Agri Industry;14;82.41;10.0;7.59;29
+Agri Industry;15;92.41;0.0;7.59;0
+Agri Industry;16;92.41;4.83;2.76;14
+Agri Industry;17;97.24;0.0;2.76;0
+Agri Industry;18;97.24;0.34;2.41;1
+Agri Industry;19;97.59;0.69;1.72;2
+Agri Industry;20;98.28;0.0;1.72;0
+Agri Industry;21;98.28;0.0;1.72;0
+Agri Industry;22;98.28;1.38;0.34;4
+Agri Industry;23;99.66;0.0;0.34;0
+Agri Industry;24;99.66;0.0;0.34;0
+Agri Industry;25;99.66;0.0;0.34;0
+Agri Industry;26;99.66;0.0;0.34;0
+Agri Industry;27;99.66;0.34;0.0;1
+Agri Industry;28;100.0;0.0;0.0;0
+Agri Industry;29;100.0;0.0;0.0;0
+Agri Industry;30;100.0;0.0;0.0;0
+Agri Industry;31;100.0;0.0;0.0;0
+Agri Industry;32;100.0;0.0;0.0;0
+Agri Industry;33;100.0;0.0;0.0;0
+Agri Industry;34;100.0;0.0;0.0;0
+Agri Industry;35;100.0;0.0;0.0;0
+Agri Industry;36;100.0;0.0;0.0;0
+Agri Industry;37;100.0;0.0;0.0;0
+Agri Industry;38;100.0;0.0;0.0;0
+Agri Industry;39;100.0;0.0;0.0;0
+Agri Industry;40;100.0;0.0;0.0;0
+Agri Industry;41;100.0;0.0;0.0;0
+Agri Industry;42;100.0;0.0;0.0;0
+Agri Industry;43;100.0;0.0;0.0;0
+Agri Industry;44;100.0;0.0;0.0;0
+Agri Industry;45;100.0;0.0;0.0;0
+Architecture & Planning;5;0.0;0.0;100.0;0
+Architecture & Planning;6;0.0;0.0;100.0;0
+Architecture & Planning;7;0.0;0.0;100.0;0
+Architecture & Planning;8;0.0;0.0;100.0;0
+Architecture & Planning;9;0.0;0.0;100.0;0
+Architecture & Planning;10;0.0;0.31;99.69;3
+Architecture & Planning;11;0.31;8.96;90.73;86
+Architecture & Planning;12;9.27;46.35;44.38;445
+Architecture & Planning;13;55.62;8.02;36.35;77
+Architecture & Planning;14;63.65;17.29;19.06;166
+Architecture & Planning;15;80.94;10.73;8.33;103
+Architecture & Planning;16;91.67;5.1;3.23;49
+Architecture & Planning;17;96.77;0.0;3.23;0
+Architecture & Planning;18;96.77;3.02;0.21;29
+Architecture & Planning;19;99.79;0.21;0.0;2
+Architecture & Planning;20;100.0;0.0;0.0;0
+Architecture & Planning;21;100.0;0.0;0.0;0
+Architecture & Planning;22;100.0;0.0;0.0;0
+Architecture & Planning;23;100.0;0.0;0.0;0
+Architecture & Planning;24;100.0;0.0;0.0;0
+Architecture & Planning;25;100.0;0.0;0.0;0
+Architecture & Planning;26;100.0;0.0;0.0;0
+Architecture & Planning;27;100.0;0.0;0.0;0
+Architecture & Planning;28;100.0;0.0;0.0;0
+Architecture & Planning;29;100.0;0.0;0.0;0
+Architecture & Planning;30;100.0;0.0;0.0;0
+Architecture & Planning;31;100.0;0.0;0.0;0
+Architecture & Planning;32;100.0;0.0;0.0;0
+Architecture & Planning;33;100.0;0.0;0.0;0
+Architecture & Planning;34;100.0;0.0;0.0;0
+Architecture & Planning;35;100.0;0.0;0.0;0
+Architecture & Planning;36;100.0;0.0;0.0;0
+Architecture & Planning;37;100.0;0.0;0.0;0
+Architecture & Planning;38;100.0;0.0;0.0;0
+Architecture & Planning;39;100.0;0.0;0.0;0
+Architecture & Planning;40;100.0;0.0;0.0;0
+Architecture & Planning;41;100.0;0.0;0.0;0
+Architecture & Planning;42;100.0;0.0;0.0;0
+Architecture & Planning;43;100.0;0.0;0.0;0
+Architecture & Planning;44;100.0;0.0;0.0;0
+Architecture & Planning;45;100.0;0.0;0.0;0
+Shipping;5;0.0;0.0;100.0;0
+Shipping;6;0.0;0.0;100.0;0
+Shipping;7;0.0;0.0;100.0;0
+Shipping;8;0.0;0.0;100.0;0
+Shipping;9;0.0;0.0;100.0;0
+Shipping;10;0.0;0.97;99.03;8
+Shipping;11;0.97;13.99;85.04;115
+Shipping;12;14.96;54.14;30.9;445
+Shipping;13;69.1;10.58;20.32;87
+Shipping;14;79.68;8.64;11.68;71
+Shipping;15;88.32;5.84;5.84;48
+Shipping;16;94.16;3.77;2.07;31
+Shipping;17;97.93;0.0;2.07;0
+Shipping;18;97.93;1.34;0.73;11
+Shipping;19;99.27;0.12;0.61;1
+Shipping;20;99.39;0.0;0.61;0
+Shipping;21;99.39;0.0;0.61;0
+Shipping;22;99.39;0.61;0.0;5
+Shipping;23;100.0;0.0;0.0;0
+Shipping;24;100.0;0.0;0.0;0
+Shipping;25;100.0;0.0;0.0;0
+Shipping;26;100.0;0.0;0.0;0
+Shipping;27;100.0;0.0;0.0;0
+Shipping;28;100.0;0.0;0.0;0
+Shipping;29;100.0;0.0;0.0;0
+Shipping;30;100.0;0.0;0.0;0
+Shipping;31;100.0;0.0;0.0;0
+Shipping;32;100.0;0.0;0.0;0
+Shipping;33;100.0;0.0;0.0;0
+Shipping;34;100.0;0.0;0.0;0
+Shipping;35;100.0;0.0;0.0;0
+Shipping;36;100.0;0.0;0.0;0
+Shipping;37;100.0;0.0;0.0;0
+Shipping;38;100.0;0.0;0.0;0
+Shipping;39;100.0;0.0;0.0;0
+Shipping;40;100.0;0.0;0.0;0
+Shipping;41;100.0;0.0;0.0;0
+Shipping;42;100.0;0.0;0.0;0
+Shipping;43;100.0;0.0;0.0;0
+Shipping;44;100.0;0.0;0.0;0
+Shipping;45;100.0;0.0;0.0;0
+Farming;5;0.0;0.0;100.0;0
+Farming;6;0.0;0.0;100.0;0
+Farming;7;0.0;0.0;100.0;0
+Farming;8;0.0;0.0;100.0;0
+Farming;9;0.0;0.0;100.0;0
+Farming;10;0.0;0.0;100.0;0
+Farming;11;0.0;36.45;63.55;39
+Farming;12;36.45;54.21;9.35;58
+Farming;13;90.65;5.61;3.74;6
+Farming;14;96.26;0.93;2.8;1
+Farming;15;97.2;0.93;1.87;1
+Farming;16;98.13;0.93;0.93;1
+Farming;17;99.07;0.0;0.93;0
+Farming;18;99.07;0.0;0.93;0
+Farming;19;99.07;0.93;0.0;1
+Farming;20;100.0;0.0;0.0;0
+Farming;21;100.0;0.0;0.0;0
+Farming;22;100.0;0.0;0.0;0
+Farming;23;100.0;0.0;0.0;0
+Farming;24;100.0;0.0;0.0;0
+Farming;25;100.0;0.0;0.0;0
+Farming;26;100.0;0.0;0.0;0
+Farming;27;100.0;0.0;0.0;0
+Farming;28;100.0;0.0;0.0;0
+Farming;29;100.0;0.0;0.0;0
+Farming;30;100.0;0.0;0.0;0
+Farming;31;100.0;0.0;0.0;0
+Farming;32;100.0;0.0;0.0;0
+Farming;33;100.0;0.0;0.0;0
+Farming;34;100.0;0.0;0.0;0
+Farming;35;100.0;0.0;0.0;0
+Farming;36;100.0;0.0;0.0;0
+Farming;37;100.0;0.0;0.0;0
+Farming;38;100.0;0.0;0.0;0
+Farming;39;100.0;0.0;0.0;0
+Farming;40;100.0;0.0;0.0;0
+Farming;41;100.0;0.0;0.0;0
+Farming;42;100.0;0.0;0.0;0
+Farming;43;100.0;0.0;0.0;0
+Farming;44;100.0;0.0;0.0;0
+Farming;45;100.0;0.0;0.0;0
+Non-Profit Organization Management;5;0.0;0.0;100.0;0
+Non-Profit Organization Management;6;0.0;0.0;100.0;0
+Non-Profit Organization Management;7;0.0;0.0;100.0;0
+Non-Profit Organization Management;8;0.0;0.0;100.0;0
+Non-Profit Organization Management;9;0.0;0.0;100.0;0
+Non-Profit Organization Management;10;0.0;2.7;97.3;3
+Non-Profit Organization Management;11;2.7;72.07;25.23;80
+Non-Profit Organization Management;12;74.77;6.31;18.92;7
+Non-Profit Organization Management;13;81.08;9.91;9.01;11
+Non-Profit Organization Management;14;90.99;5.41;3.6;6
+Non-Profit Organization Management;15;96.4;0.9;2.7;1
+Non-Profit Organization Management;16;97.3;0.9;1.8;1
+Non-Profit Organization Management;17;98.2;0.0;1.8;0
+Non-Profit Organization Management;18;98.2;0.9;0.9;1
+Non-Profit Organization Management;19;99.1;0.9;0.0;1
+Non-Profit Organization Management;20;100.0;0.0;0.0;0
+Non-Profit Organization Management;21;100.0;0.0;0.0;0
+Non-Profit Organization Management;22;100.0;0.0;0.0;0
+Non-Profit Organization Management;23;100.0;0.0;0.0;0
+Non-Profit Organization Management;24;100.0;0.0;0.0;0
+Non-Profit Organization Management;25;100.0;0.0;0.0;0
+Non-Profit Organization Management;26;100.0;0.0;0.0;0
+Non-Profit Organization Management;27;100.0;0.0;0.0;0
+Non-Profit Organization Management;28;100.0;0.0;0.0;0
+Non-Profit Organization Management;29;100.0;0.0;0.0;0
+Non-Profit Organization Management;30;100.0;0.0;0.0;0
+Non-Profit Organization Management;31;100.0;0.0;0.0;0
+Non-Profit Organization Management;32;100.0;0.0;0.0;0
+Non-Profit Organization Management;33;100.0;0.0;0.0;0
+Non-Profit Organization Management;34;100.0;0.0;0.0;0
+Non-Profit Organization Management;35;100.0;0.0;0.0;0
+Non-Profit Organization Management;36;100.0;0.0;0.0;0
+Non-Profit Organization Management;37;100.0;0.0;0.0;0
+Non-Profit Organization Management;38;100.0;0.0;0.0;0
+Non-Profit Organization Management;39;100.0;0.0;0.0;0
+Non-Profit Organization Management;40;100.0;0.0;0.0;0
+Non-Profit Organization Management;41;100.0;0.0;0.0;0
+Non-Profit Organization Management;42;100.0;0.0;0.0;0
+Non-Profit Organization Management;43;100.0;0.0;0.0;0
+Non-Profit Organization Management;44;100.0;0.0;0.0;0
+Non-Profit Organization Management;45;100.0;0.0;0.0;0
+Telecommunications;5;0.0;0.0;100.0;0
+Telecommunications;6;0.0;0.0;100.0;0
+Telecommunications;7;0.0;0.0;100.0;0
+Telecommunications;8;0.0;0.0;100.0;0
+Telecommunications;9;0.0;0.0;100.0;0
+Telecommunications;10;0.0;1.36;98.64;235
+Telecommunications;11;1.36;0.49;98.15;85
+Telecommunications;12;1.85;35.53;62.62;6136
+Telecommunications;13;37.38;15.49;47.13;2675
+Telecommunications;14;52.87;18.03;29.1;3114
+Telecommunications;15;70.9;14.06;15.05;2428
+Telecommunications;16;84.95;12.59;2.46;2174
+Telecommunications;17;97.54;0.0;2.46;0
+Telecommunications;18;97.54;1.92;0.54;332
+Telecommunications;19;99.46;0.1;0.43;18
+Telecommunications;20;99.57;0.0;0.43;0
+Telecommunications;21;99.57;0.0;0.43;0
+Telecommunications;22;99.57;0.36;0.08;62
+Telecommunications;23;99.92;0.0;0.08;0
+Telecommunications;24;99.92;0.08;0.0;13
+Telecommunications;25;100.0;0.0;0.0;0
+Telecommunications;26;100.0;0.0;0.0;0
+Telecommunications;27;100.0;0.0;0.0;0
+Telecommunications;28;100.0;0.0;0.0;0
+Telecommunications;29;100.0;0.0;0.0;0
+Telecommunications;30;100.0;0.0;0.0;0
+Telecommunications;31;100.0;0.0;0.0;0
+Telecommunications;32;100.0;0.0;0.0;0
+Telecommunications;33;100.0;0.0;0.0;0
+Telecommunications;34;100.0;0.0;0.0;0
+Telecommunications;35;100.0;0.0;0.0;0
+Telecommunications;36;100.0;0.0;0.0;0
+Telecommunications;37;100.0;0.0;0.0;0
+Telecommunications;38;100.0;0.0;0.0;0
+Telecommunications;39;100.0;0.0;0.0;0
+Telecommunications;40;100.0;0.0;0.0;0
+Telecommunications;41;100.0;0.0;0.0;0
+Telecommunications;42;100.0;0.0;0.0;0
+Telecommunications;43;100.0;0.0;0.0;0
+Telecommunications;44;100.0;0.0;0.0;0
+Telecommunications;45;100.0;0.0;0.0;0
+Fine Art;5;0.0;0.0;100.0;0
+Fine Art;6;0.0;0.0;100.0;0
+Fine Art;7;0.0;0.0;100.0;0
+Fine Art;8;0.0;0.0;100.0;0
+Fine Art;9;0.0;0.0;100.0;0
+Fine Art;10;0.0;25.0;75.0;1
+Fine Art;11;25.0;25.0;50.0;1
+Fine Art;12;50.0;0.0;50.0;0
+Fine Art;13;50.0;0.0;50.0;0
+Fine Art;14;50.0;25.0;25.0;1
+Fine Art;15;75.0;0.0;25.0;0
+Fine Art;16;75.0;25.0;0.0;1
+Fine Art;17;100.0;0.0;0.0;0
+Fine Art;18;100.0;0.0;0.0;0
+Fine Art;19;100.0;0.0;0.0;0
+Fine Art;20;100.0;0.0;0.0;0
+Fine Art;21;100.0;0.0;0.0;0
+Fine Art;22;100.0;0.0;0.0;0
+Fine Art;23;100.0;0.0;0.0;0
+Fine Art;24;100.0;0.0;0.0;0
+Fine Art;25;100.0;0.0;0.0;0
+Fine Art;26;100.0;0.0;0.0;0
+Fine Art;27;100.0;0.0;0.0;0
+Fine Art;28;100.0;0.0;0.0;0
+Fine Art;29;100.0;0.0;0.0;0
+Fine Art;30;100.0;0.0;0.0;0
+Fine Art;31;100.0;0.0;0.0;0
+Fine Art;32;100.0;0.0;0.0;0
+Fine Art;33;100.0;0.0;0.0;0
+Fine Art;34;100.0;0.0;0.0;0
+Fine Art;35;100.0;0.0;0.0;0
+Fine Art;36;100.0;0.0;0.0;0
+Fine Art;37;100.0;0.0;0.0;0
+Fine Art;38;100.0;0.0;0.0;0
+Fine Art;39;100.0;0.0;0.0;0
+Fine Art;40;100.0;0.0;0.0;0
+Fine Art;41;100.0;0.0;0.0;0
+Fine Art;42;100.0;0.0;0.0;0
+Fine Art;43;100.0;0.0;0.0;0
+Fine Art;44;100.0;0.0;0.0;0
+Fine Art;45;100.0;0.0;0.0;0
+e-Commerce;5;0.0;0.0;100.0;0
+e-Commerce;6;0.0;0.0;100.0;0
+e-Commerce;7;0.0;0.0;100.0;0
+e-Commerce;8;0.0;0.0;100.0;0
+e-Commerce;9;0.0;0.0;100.0;0
+e-Commerce;10;0.0;0.67;99.33;27
+e-Commerce;11;0.67;45.76;53.57;1833
+e-Commerce;12;46.43;24.21;29.36;970
+e-Commerce;13;70.64;12.13;17.22;486
+e-Commerce;14;82.78;5.32;11.91;213
+e-Commerce;15;88.09;6.84;5.07;274
+e-Commerce;16;94.93;3.49;1.57;140
+e-Commerce;17;98.43;0.0;1.57;0
+e-Commerce;18;98.43;0.87;0.7;35
+e-Commerce;19;99.3;0.47;0.22;19
+e-Commerce;20;99.78;0.0;0.22;0
+e-Commerce;21;99.78;0.0;0.22;0
+e-Commerce;22;99.78;0.17;0.05;7
+e-Commerce;23;99.95;0.0;0.05;0
+e-Commerce;24;99.95;0.0;0.05;0
+e-Commerce;25;99.95;0.0;0.05;0
+e-Commerce;26;99.95;0.0;0.05;0
+e-Commerce;27;99.95;0.05;0.0;2
+e-Commerce;28;100.0;0.0;0.0;0
+e-Commerce;29;100.0;0.0;0.0;0
+e-Commerce;30;100.0;0.0;0.0;0
+e-Commerce;31;100.0;0.0;0.0;0
+e-Commerce;32;100.0;0.0;0.0;0
+e-Commerce;33;100.0;0.0;0.0;0
+e-Commerce;34;100.0;0.0;0.0;0
+e-Commerce;35;100.0;0.0;0.0;0
+e-Commerce;36;100.0;0.0;0.0;0
+e-Commerce;37;100.0;0.0;0.0;0
+e-Commerce;38;100.0;0.0;0.0;0
+e-Commerce;39;100.0;0.0;0.0;0
+e-Commerce;40;100.0;0.0;0.0;0
+e-Commerce;41;100.0;0.0;0.0;0
+e-Commerce;42;100.0;0.0;0.0;0
+e-Commerce;43;100.0;0.0;0.0;0
+e-Commerce;44;100.0;0.0;0.0;0
+e-Commerce;45;100.0;0.0;0.0;0
+Cosmetics;5;0.0;0.0;100.0;0
+Cosmetics;6;0.0;0.0;100.0;0
+Cosmetics;7;0.0;0.0;100.0;0
+Cosmetics;8;0.0;0.0;100.0;0
+Cosmetics;9;0.0;0.0;100.0;0
+Cosmetics;10;0.0;0.0;100.0;0
+Cosmetics;11;0.0;0.0;100.0;0
+Cosmetics;12;0.0;6.77;93.23;40
+Cosmetics;13;6.77;58.04;35.19;343
+Cosmetics;14;64.81;25.38;9.81;150
+Cosmetics;15;90.19;0.85;8.97;5
+Cosmetics;16;91.03;6.43;2.54;38
+Cosmetics;17;97.46;0.0;2.54;0
+Cosmetics;18;97.46;1.18;1.35;7
+Cosmetics;19;98.65;1.02;0.34;6
+Cosmetics;20;99.66;0.0;0.34;0
+Cosmetics;21;99.66;0.0;0.34;0
+Cosmetics;22;99.66;0.0;0.34;0
+Cosmetics;23;99.66;0.0;0.34;0
+Cosmetics;24;99.66;0.34;0.0;2
+Cosmetics;25;100.0;0.0;0.0;0
+Cosmetics;26;100.0;0.0;0.0;0
+Cosmetics;27;100.0;0.0;0.0;0
+Cosmetics;28;100.0;0.0;0.0;0
+Cosmetics;29;100.0;0.0;0.0;0
+Cosmetics;30;100.0;0.0;0.0;0
+Cosmetics;31;100.0;0.0;0.0;0
+Cosmetics;32;100.0;0.0;0.0;0
+Cosmetics;33;100.0;0.0;0.0;0
+Cosmetics;34;100.0;0.0;0.0;0
+Cosmetics;35;100.0;0.0;0.0;0
+Cosmetics;36;100.0;0.0;0.0;0
+Cosmetics;37;100.0;0.0;0.0;0
+Cosmetics;38;100.0;0.0;0.0;0
+Cosmetics;39;100.0;0.0;0.0;0
+Cosmetics;40;100.0;0.0;0.0;0
+Cosmetics;41;100.0;0.0;0.0;0
+Cosmetics;42;100.0;0.0;0.0;0
+Cosmetics;43;100.0;0.0;0.0;0
+Cosmetics;44;100.0;0.0;0.0;0
+Cosmetics;45;100.0;0.0;0.0;0
+Aviation & Aerospace;5;0.0;0.0;100.0;0
+Aviation & Aerospace;6;0.0;0.0;100.0;0
+Aviation & Aerospace;7;0.0;0.0;100.0;0
+Aviation & Aerospace;8;0.0;0.0;100.0;0
+Aviation & Aerospace;9;0.0;0.0;100.0;0
+Aviation & Aerospace;10;0.0;5.65;94.35;150
+Aviation & Aerospace;11;5.65;7.27;87.09;193
+Aviation & Aerospace;12;12.91;29.1;57.98;773
+Aviation & Aerospace;13;42.02;23.34;34.64;620
+Aviation & Aerospace;14;65.36;3.31;31.33;88
+Aviation & Aerospace;15;68.67;13.37;17.96;355
+Aviation & Aerospace;16;82.04;14.01;3.95;372
+Aviation & Aerospace;17;96.05;0.0;3.95;0
+Aviation & Aerospace;18;96.05;2.37;1.58;63
+Aviation & Aerospace;19;98.42;0.41;1.17;11
+Aviation & Aerospace;20;98.83;0.72;0.45;19
+Aviation & Aerospace;21;99.55;0.0;0.45;0
+Aviation & Aerospace;22;99.55;0.3;0.15;8
+Aviation & Aerospace;23;99.85;0.0;0.15;0
+Aviation & Aerospace;24;99.85;0.04;0.11;1
+Aviation & Aerospace;25;99.89;0.0;0.11;0
+Aviation & Aerospace;26;99.89;0.08;0.04;2
+Aviation & Aerospace;27;99.96;0.0;0.04;0
+Aviation & Aerospace;28;99.96;0.0;0.04;0
+Aviation & Aerospace;29;99.96;0.0;0.04;0
+Aviation & Aerospace;30;99.96;0.0;0.04;0
+Aviation & Aerospace;31;99.96;0.04;0.0;1
+Aviation & Aerospace;32;100.0;0.0;0.0;0
+Aviation & Aerospace;33;100.0;0.0;0.0;0
+Aviation & Aerospace;34;100.0;0.0;0.0;0
+Aviation & Aerospace;35;100.0;0.0;0.0;0
+Aviation & Aerospace;36;100.0;0.0;0.0;0
+Aviation & Aerospace;37;100.0;0.0;0.0;0
+Aviation & Aerospace;38;100.0;0.0;0.0;0
+Aviation & Aerospace;39;100.0;0.0;0.0;0
+Aviation & Aerospace;40;100.0;0.0;0.0;0
+Aviation & Aerospace;41;100.0;0.0;0.0;0
+Aviation & Aerospace;42;100.0;0.0;0.0;0
+Aviation & Aerospace;43;100.0;0.0;0.0;0
+Aviation & Aerospace;44;100.0;0.0;0.0;0
+Aviation & Aerospace;45;100.0;0.0;0.0;0
+Airlines/Aviation;5;0.0;0.0;100.0;0
+Airlines/Aviation;6;0.0;0.0;100.0;0
+Airlines/Aviation;7;0.0;0.0;100.0;0
+Airlines/Aviation;8;0.0;0.0;100.0;0
+Airlines/Aviation;9;0.0;0.0;100.0;0
+Airlines/Aviation;10;0.0;0.0;100.0;0
+Airlines/Aviation;11;0.0;34.85;65.15;214
+Airlines/Aviation;12;34.85;29.32;35.83;180
+Airlines/Aviation;13;64.17;9.28;26.55;57
+Airlines/Aviation;14;73.45;14.82;11.73;91
+Airlines/Aviation;15;88.27;5.37;6.35;33
+Airlines/Aviation;16;93.65;4.23;2.12;26
+Airlines/Aviation;17;97.88;0.0;2.12;0
+Airlines/Aviation;18;97.88;0.65;1.47;4
+Airlines/Aviation;19;98.53;1.47;0.0;9
+Airlines/Aviation;20;100.0;0.0;0.0;0
+Airlines/Aviation;21;100.0;0.0;0.0;0
+Airlines/Aviation;22;100.0;0.0;0.0;0
+Airlines/Aviation;23;100.0;0.0;0.0;0
+Airlines/Aviation;24;100.0;0.0;0.0;0
+Airlines/Aviation;25;100.0;0.0;0.0;0
+Airlines/Aviation;26;100.0;0.0;0.0;0
+Airlines/Aviation;27;100.0;0.0;0.0;0
+Airlines/Aviation;28;100.0;0.0;0.0;0
+Airlines/Aviation;29;100.0;0.0;0.0;0
+Airlines/Aviation;30;100.0;0.0;0.0;0
+Airlines/Aviation;31;100.0;0.0;0.0;0
+Airlines/Aviation;32;100.0;0.0;0.0;0
+Airlines/Aviation;33;100.0;0.0;0.0;0
+Airlines/Aviation;34;100.0;0.0;0.0;0
+Airlines/Aviation;35;100.0;0.0;0.0;0
+Airlines/Aviation;36;100.0;0.0;0.0;0
+Airlines/Aviation;37;100.0;0.0;0.0;0
+Airlines/Aviation;38;100.0;0.0;0.0;0
+Airlines/Aviation;39;100.0;0.0;0.0;0
+Airlines/Aviation;40;100.0;0.0;0.0;0
+Airlines/Aviation;41;100.0;0.0;0.0;0
+Airlines/Aviation;42;100.0;0.0;0.0;0
+Airlines/Aviation;43;100.0;0.0;0.0;0
+Airlines/Aviation;44;100.0;0.0;0.0;0
+Airlines/Aviation;45;100.0;0.0;0.0;0
+Transportation;5;0.0;0.0;100.0;0
+Transportation;6;0.0;0.0;100.0;0
+Transportation;7;0.0;0.0;100.0;0
+Transportation;8;0.0;0.0;100.0;0
+Transportation;9;0.0;0.0;100.0;0
+Transportation;10;0.0;0.0;100.0;0
+Transportation;11;0.0;0.0;100.0;0
+Transportation;12;0.0;27.59;72.41;8
+Transportation;13;27.59;31.03;41.38;9
+Transportation;14;58.62;20.69;20.69;6
+Transportation;15;79.31;10.34;10.34;3
+Transportation;16;89.66;10.34;0.0;3
+Transportation;17;100.0;0.0;0.0;0
+Transportation;18;100.0;0.0;0.0;0
+Transportation;19;100.0;0.0;0.0;0
+Transportation;20;100.0;0.0;0.0;0
+Transportation;21;100.0;0.0;0.0;0
+Transportation;22;100.0;0.0;0.0;0
+Transportation;23;100.0;0.0;0.0;0
+Transportation;24;100.0;0.0;0.0;0
+Transportation;25;100.0;0.0;0.0;0
+Transportation;26;100.0;0.0;0.0;0
+Transportation;27;100.0;0.0;0.0;0
+Transportation;28;100.0;0.0;0.0;0
+Transportation;29;100.0;0.0;0.0;0
+Transportation;30;100.0;0.0;0.0;0
+Transportation;31;100.0;0.0;0.0;0
+Transportation;32;100.0;0.0;0.0;0
+Transportation;33;100.0;0.0;0.0;0
+Transportation;34;100.0;0.0;0.0;0
+Transportation;35;100.0;0.0;0.0;0
+Transportation;36;100.0;0.0;0.0;0
+Transportation;37;100.0;0.0;0.0;0
+Transportation;38;100.0;0.0;0.0;0
+Transportation;39;100.0;0.0;0.0;0
+Transportation;40;100.0;0.0;0.0;0
+Transportation;41;100.0;0.0;0.0;0
+Transportation;42;100.0;0.0;0.0;0
+Transportation;43;100.0;0.0;0.0;0
+Transportation;44;100.0;0.0;0.0;0
+Transportation;45;100.0;0.0;0.0;0
+Information Services;5;0.0;0.0;100.0;0
+Information Services;6;0.0;0.0;100.0;0
+Information Services;7;0.0;0.0;100.0;0
+Information Services;8;0.0;0.0;100.0;0
+Information Services;9;0.0;0.0;100.0;0
+Information Services;10;0.0;0.0;100.0;0
+Information Services;11;0.0;8.32;91.68;47
+Information Services;12;8.32;23.36;68.32;132
+Information Services;13;31.68;22.48;45.84;127
+Information Services;14;54.16;22.83;23.01;129
+Information Services;15;76.99;9.91;13.1;56
+Information Services;16;86.9;9.91;3.19;56
+Information Services;17;96.81;0.0;3.19;0
+Information Services;18;96.81;1.59;1.59;9
+Information Services;19;98.41;0.88;0.71;5
+Information Services;20;99.29;0.0;0.71;0
+Information Services;21;99.29;0.0;0.71;0
+Information Services;22;99.29;0.35;0.35;2
+Information Services;23;99.65;0.0;0.35;0
+Information Services;24;99.65;0.35;0.0;2
+Information Services;25;100.0;0.0;0.0;0
+Information Services;26;100.0;0.0;0.0;0
+Information Services;27;100.0;0.0;0.0;0
+Information Services;28;100.0;0.0;0.0;0
+Information Services;29;100.0;0.0;0.0;0
+Information Services;30;100.0;0.0;0.0;0
+Information Services;31;100.0;0.0;0.0;0
+Information Services;32;100.0;0.0;0.0;0
+Information Services;33;100.0;0.0;0.0;0
+Information Services;34;100.0;0.0;0.0;0
+Information Services;35;100.0;0.0;0.0;0
+Information Services;36;100.0;0.0;0.0;0
+Information Services;37;100.0;0.0;0.0;0
+Information Services;38;100.0;0.0;0.0;0
+Information Services;39;100.0;0.0;0.0;0
+Information Services;40;100.0;0.0;0.0;0
+Information Services;41;100.0;0.0;0.0;0
+Information Services;42;100.0;0.0;0.0;0
+Information Services;43;100.0;0.0;0.0;0
+Information Services;44;100.0;0.0;0.0;0
+Information Services;45;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;5;0.0;0.0;100.0;0
+Luxury Goods & Jewelry;6;0.0;0.0;100.0;0
+Luxury Goods & Jewelry;7;0.0;0.0;100.0;0
+Luxury Goods & Jewelry;8;0.0;0.0;100.0;0
+Luxury Goods & Jewelry;9;0.0;0.0;100.0;0
+Luxury Goods & Jewelry;10;0.0;35.0;65.0;14
+Luxury Goods & Jewelry;11;35.0;17.5;47.5;7
+Luxury Goods & Jewelry;12;52.5;17.5;30.0;7
+Luxury Goods & Jewelry;13;70.0;5.0;25.0;2
+Luxury Goods & Jewelry;14;75.0;2.5;22.5;1
+Luxury Goods & Jewelry;15;77.5;10.0;12.5;4
+Luxury Goods & Jewelry;16;87.5;7.5;5.0;3
+Luxury Goods & Jewelry;17;95.0;0.0;5.0;0
+Luxury Goods & Jewelry;18;95.0;5.0;0.0;2
+Luxury Goods & Jewelry;19;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;20;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;21;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;22;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;23;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;24;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;25;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;26;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;27;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;28;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;29;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;30;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;31;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;32;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;33;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;34;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;35;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;36;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;37;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;38;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;39;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;40;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;41;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;42;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;43;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;44;100.0;0.0;0.0;0
+Luxury Goods & Jewelry;45;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;5;0.0;0.0;100.0;0
+Leisure, Travel & Tourism;6;0.0;0.0;100.0;0
+Leisure, Travel & Tourism;7;0.0;0.0;100.0;0
+Leisure, Travel & Tourism;8;0.0;0.0;100.0;0
+Leisure, Travel & Tourism;9;0.0;0.0;100.0;0
+Leisure, Travel & Tourism;10;0.0;0.0;100.0;0
+Leisure, Travel & Tourism;11;0.0;0.0;100.0;0
+Leisure, Travel & Tourism;12;0.0;33.33;66.67;1
+Leisure, Travel & Tourism;13;33.33;0.0;66.67;0
+Leisure, Travel & Tourism;14;33.33;33.33;33.33;1
+Leisure, Travel & Tourism;15;66.67;0.0;33.33;0
+Leisure, Travel & Tourism;16;66.67;33.33;0.0;1
+Leisure, Travel & Tourism;17;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;18;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;19;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;20;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;21;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;22;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;23;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;24;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;25;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;26;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;27;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;28;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;29;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;30;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;31;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;32;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;33;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;34;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;35;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;36;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;37;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;38;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;39;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;40;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;41;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;42;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;43;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;44;100.0;0.0;0.0;0
+Leisure, Travel & Tourism;45;100.0;0.0;0.0;0
+Entertainment;5;0.0;0.0;100.0;0
+Entertainment;6;0.0;0.0;100.0;0
+Entertainment;7;0.0;0.0;100.0;0
+Entertainment;8;0.0;0.0;100.0;0
+Entertainment;9;0.0;0.0;100.0;0
+Entertainment;10;0.0;0.05;99.95;1
+Entertainment;11;0.05;12.22;87.73;236
+Entertainment;12;12.27;55.54;32.19;1073
+Entertainment;13;67.81;17.49;14.7;338
+Entertainment;14;85.3;6.11;8.59;118
+Entertainment;15;91.41;3.11;5.49;60
+Entertainment;16;94.51;4.4;1.09;85
+Entertainment;17;98.91;0.0;1.09;0
+Entertainment;18;98.91;0.52;0.57;10
+Entertainment;19;99.43;0.36;0.21;7
+Entertainment;20;99.79;0.0;0.21;0
+Entertainment;21;99.79;0.0;0.21;0
+Entertainment;22;99.79;0.21;0.0;4
+Entertainment;23;100.0;0.0;0.0;0
+Entertainment;24;100.0;0.0;0.0;0
+Entertainment;25;100.0;0.0;0.0;0
+Entertainment;26;100.0;0.0;0.0;0
+Entertainment;27;100.0;0.0;0.0;0
+Entertainment;28;100.0;0.0;0.0;0
+Entertainment;29;100.0;0.0;0.0;0
+Entertainment;30;100.0;0.0;0.0;0
+Entertainment;31;100.0;0.0;0.0;0
+Entertainment;32;100.0;0.0;0.0;0
+Entertainment;33;100.0;0.0;0.0;0
+Entertainment;34;100.0;0.0;0.0;0
+Entertainment;35;100.0;0.0;0.0;0
+Entertainment;36;100.0;0.0;0.0;0
+Entertainment;37;100.0;0.0;0.0;0
+Entertainment;38;100.0;0.0;0.0;0
+Entertainment;39;100.0;0.0;0.0;0
+Entertainment;40;100.0;0.0;0.0;0
+Entertainment;41;100.0;0.0;0.0;0
+Entertainment;42;100.0;0.0;0.0;0
+Entertainment;43;100.0;0.0;0.0;0
+Entertainment;44;100.0;0.0;0.0;0
+Entertainment;45;100.0;0.0;0.0;0
+International Affairs;5;0.0;0.0;100.0;0
+International Affairs;6;0.0;0.0;100.0;0
+International Affairs;7;0.0;0.0;100.0;0
+International Affairs;8;0.0;0.0;100.0;0
+International Affairs;9;0.0;0.0;100.0;0
+International Affairs;10;0.0;2.6;97.4;2
+International Affairs;11;2.6;5.19;92.21;4
+International Affairs;12;7.79;28.57;63.64;22
+International Affairs;13;36.36;35.06;28.57;27
+International Affairs;14;71.43;15.58;12.99;12
+International Affairs;15;87.01;9.09;3.9;7
+International Affairs;16;96.1;3.9;0.0;3
+International Affairs;17;100.0;0.0;0.0;0
+International Affairs;18;100.0;0.0;0.0;0
+International Affairs;19;100.0;0.0;0.0;0
+International Affairs;20;100.0;0.0;0.0;0
+International Affairs;21;100.0;0.0;0.0;0
+International Affairs;22;100.0;0.0;0.0;0
+International Affairs;23;100.0;0.0;0.0;0
+International Affairs;24;100.0;0.0;0.0;0
+International Affairs;25;100.0;0.0;0.0;0
+International Affairs;26;100.0;0.0;0.0;0
+International Affairs;27;100.0;0.0;0.0;0
+International Affairs;28;100.0;0.0;0.0;0
+International Affairs;29;100.0;0.0;0.0;0
+International Affairs;30;100.0;0.0;0.0;0
+International Affairs;31;100.0;0.0;0.0;0
+International Affairs;32;100.0;0.0;0.0;0
+International Affairs;33;100.0;0.0;0.0;0
+International Affairs;34;100.0;0.0;0.0;0
+International Affairs;35;100.0;0.0;0.0;0
+International Affairs;36;100.0;0.0;0.0;0
+International Affairs;37;100.0;0.0;0.0;0
+International Affairs;38;100.0;0.0;0.0;0
+International Affairs;39;100.0;0.0;0.0;0
+International Affairs;40;100.0;0.0;0.0;0
+International Affairs;41;100.0;0.0;0.0;0
+International Affairs;42;100.0;0.0;0.0;0
+International Affairs;43;100.0;0.0;0.0;0
+International Affairs;44;100.0;0.0;0.0;0
+International Affairs;45;100.0;0.0;0.0;0
+Textiles;5;0.0;0.0;100.0;0
+Textiles;6;0.0;0.0;100.0;0
+Textiles;7;0.0;0.0;100.0;0
+Textiles;8;0.0;0.0;100.0;0
+Textiles;9;0.0;0.0;100.0;0
+Textiles;10;0.0;0.0;100.0;0
+Textiles;11;0.0;16.67;83.33;1
+Textiles;12;16.67;0.0;83.33;0
+Textiles;13;16.67;0.0;83.33;0
+Textiles;14;16.67;50.0;33.33;3
+Textiles;15;66.67;0.0;33.33;0
+Textiles;16;66.67;33.33;0.0;2
+Textiles;17;100.0;0.0;0.0;0
+Textiles;18;100.0;0.0;0.0;0
+Textiles;19;100.0;0.0;0.0;0
+Textiles;20;100.0;0.0;0.0;0
+Textiles;21;100.0;0.0;0.0;0
+Textiles;22;100.0;0.0;0.0;0
+Textiles;23;100.0;0.0;0.0;0
+Textiles;24;100.0;0.0;0.0;0
+Textiles;25;100.0;0.0;0.0;0
+Textiles;26;100.0;0.0;0.0;0
+Textiles;27;100.0;0.0;0.0;0
+Textiles;28;100.0;0.0;0.0;0
+Textiles;29;100.0;0.0;0.0;0
+Textiles;30;100.0;0.0;0.0;0
+Textiles;31;100.0;0.0;0.0;0
+Textiles;32;100.0;0.0;0.0;0
+Textiles;33;100.0;0.0;0.0;0
+Textiles;34;100.0;0.0;0.0;0
+Textiles;35;100.0;0.0;0.0;0
+Textiles;36;100.0;0.0;0.0;0
+Textiles;37;100.0;0.0;0.0;0
+Textiles;38;100.0;0.0;0.0;0
+Textiles;39;100.0;0.0;0.0;0
+Textiles;40;100.0;0.0;0.0;0
+Textiles;41;100.0;0.0;0.0;0
+Textiles;42;100.0;0.0;0.0;0
+Textiles;43;100.0;0.0;0.0;0
+Textiles;44;100.0;0.0;0.0;0
+Textiles;45;100.0;0.0;0.0;0
+Computer Software;5;0.0;0.0;100.0;0
+Computer Software;6;0.0;0.0;100.0;0
+Computer Software;7;0.0;0.0;100.0;0
+Computer Software;8;0.0;0.0;100.0;0
+Computer Software;9;0.0;0.0;100.0;0
+Computer Software;10;0.0;0.01;99.99;1
+Computer Software;11;0.01;0.12;99.87;8
+Computer Software;12;0.13;13.12;86.75;875
+Computer Software;13;13.25;26.11;60.64;1742
+Computer Software;14;39.36;1.09;59.54;73
+Computer Software;15;40.46;37.18;22.37;2480
+Computer Software;16;77.63;15.77;6.6;1052
+Computer Software;17;93.4;0.0;6.6;0
+Computer Software;18;93.4;3.49;3.1;233
+Computer Software;19;96.9;2.14;0.96;143
+Computer Software;20;99.04;0.0;0.96;0
+Computer Software;21;99.04;0.0;0.96;0
+Computer Software;22;99.04;0.72;0.24;48
+Computer Software;23;99.76;0.0;0.24;0
+Computer Software;24;99.76;0.19;0.04;13
+Computer Software;25;99.96;0.0;0.04;0
+Computer Software;26;99.96;0.0;0.04;0
+Computer Software;27;99.96;0.04;0.0;3
+Computer Software;28;100.0;0.0;0.0;0
+Computer Software;29;100.0;0.0;0.0;0
+Computer Software;30;100.0;0.0;0.0;0
+Computer Software;31;100.0;0.0;0.0;0
+Computer Software;32;100.0;0.0;0.0;0
+Computer Software;33;100.0;0.0;0.0;0
+Computer Software;34;100.0;0.0;0.0;0
+Computer Software;35;100.0;0.0;0.0;0
+Computer Software;36;100.0;0.0;0.0;0
+Computer Software;37;100.0;0.0;0.0;0
+Computer Software;38;100.0;0.0;0.0;0
+Computer Software;39;100.0;0.0;0.0;0
+Computer Software;40;100.0;0.0;0.0;0
+Computer Software;41;100.0;0.0;0.0;0
+Computer Software;42;100.0;0.0;0.0;0
+Computer Software;43;100.0;0.0;0.0;0
+Computer Software;44;100.0;0.0;0.0;0
+Computer Software;45;100.0;0.0;0.0;0
+Tobacco;5;0.0;0.0;100.0;0
+Tobacco;6;0.0;0.0;100.0;0
+Tobacco;7;0.0;0.0;100.0;0
+Tobacco;8;0.0;0.0;100.0;0
+Tobacco;9;0.0;0.0;100.0;0
+Tobacco;10;0.0;0.0;100.0;0
+Tobacco;11;0.0;0.0;100.0;0
+Tobacco;12;0.0;19.05;80.95;16
+Tobacco;13;19.05;25.0;55.95;21
+Tobacco;14;44.05;10.71;45.24;9
+Tobacco;15;54.76;14.29;30.95;12
+Tobacco;16;69.05;25.0;5.95;21
+Tobacco;17;94.05;0.0;5.95;0
+Tobacco;18;94.05;2.38;3.57;2
+Tobacco;19;96.43;0.0;3.57;0
+Tobacco;20;96.43;0.0;3.57;0
+Tobacco;21;96.43;0.0;3.57;0
+Tobacco;22;96.43;3.57;0.0;3
+Tobacco;23;100.0;0.0;0.0;0
+Tobacco;24;100.0;0.0;0.0;0
+Tobacco;25;100.0;0.0;0.0;0
+Tobacco;26;100.0;0.0;0.0;0
+Tobacco;27;100.0;0.0;0.0;0
+Tobacco;28;100.0;0.0;0.0;0
+Tobacco;29;100.0;0.0;0.0;0
+Tobacco;30;100.0;0.0;0.0;0
+Tobacco;31;100.0;0.0;0.0;0
+Tobacco;32;100.0;0.0;0.0;0
+Tobacco;33;100.0;0.0;0.0;0
+Tobacco;34;100.0;0.0;0.0;0
+Tobacco;35;100.0;0.0;0.0;0
+Tobacco;36;100.0;0.0;0.0;0
+Tobacco;37;100.0;0.0;0.0;0
+Tobacco;38;100.0;0.0;0.0;0
+Tobacco;39;100.0;0.0;0.0;0
+Tobacco;40;100.0;0.0;0.0;0
+Tobacco;41;100.0;0.0;0.0;0
+Tobacco;42;100.0;0.0;0.0;0
+Tobacco;43;100.0;0.0;0.0;0
+Tobacco;44;100.0;0.0;0.0;0
+Tobacco;45;100.0;0.0;0.0;0
+Publishing;5;0.0;0.0;100.0;0
+Publishing;6;0.0;0.0;100.0;0
+Publishing;7;0.0;0.0;100.0;0
+Publishing;8;0.0;0.0;100.0;0
+Publishing;9;0.0;0.0;100.0;0
+Publishing;10;0.0;0.0;100.0;0
+Publishing;11;0.0;70.95;29.05;315
+Publishing;12;70.95;19.59;9.46;87
+Publishing;13;90.54;3.83;5.63;17
+Publishing;14;94.37;2.93;2.7;13
+Publishing;15;97.3;1.13;1.58;5
+Publishing;16;98.42;0.68;0.9;3
+Publishing;17;99.1;0.0;0.9;0
+Publishing;18;99.1;0.68;0.23;3
+Publishing;19;99.77;0.0;0.23;0
+Publishing;20;99.77;0.0;0.23;0
+Publishing;21;99.77;0.0;0.23;0
+Publishing;22;99.77;0.0;0.23;0
+Publishing;23;99.77;0.0;0.23;0
+Publishing;24;99.77;0.23;0.0;1
+Publishing;25;100.0;0.0;0.0;0
+Publishing;26;100.0;0.0;0.0;0
+Publishing;27;100.0;0.0;0.0;0
+Publishing;28;100.0;0.0;0.0;0
+Publishing;29;100.0;0.0;0.0;0
+Publishing;30;100.0;0.0;0.0;0
+Publishing;31;100.0;0.0;0.0;0
+Publishing;32;100.0;0.0;0.0;0
+Publishing;33;100.0;0.0;0.0;0
+Publishing;34;100.0;0.0;0.0;0
+Publishing;35;100.0;0.0;0.0;0
+Publishing;36;100.0;0.0;0.0;0
+Publishing;37;100.0;0.0;0.0;0
+Publishing;38;100.0;0.0;0.0;0
+Publishing;39;100.0;0.0;0.0;0
+Publishing;40;100.0;0.0;0.0;0
+Publishing;41;100.0;0.0;0.0;0
+Publishing;42;100.0;0.0;0.0;0
+Publishing;43;100.0;0.0;0.0;0
+Publishing;44;100.0;0.0;0.0;0
+Publishing;45;100.0;0.0;0.0;0
+Sporting Goods;5;0.0;0.0;100.0;0
+Sporting Goods;6;0.0;0.0;100.0;0
+Sporting Goods;7;0.0;0.0;100.0;0
+Sporting Goods;8;0.0;0.0;100.0;0
+Sporting Goods;9;0.0;0.0;100.0;0
+Sporting Goods;10;0.0;0.0;100.0;0
+Sporting Goods;11;0.0;12.57;87.43;23
+Sporting Goods;12;12.57;46.99;40.44;86
+Sporting Goods;13;59.56;12.57;27.87;23
+Sporting Goods;14;72.13;9.84;18.03;18
+Sporting Goods;15;81.97;5.46;12.57;10
+Sporting Goods;16;87.43;8.2;4.37;15
+Sporting Goods;17;95.63;0.0;4.37;0
+Sporting Goods;18;95.63;0.0;4.37;0
+Sporting Goods;19;95.63;3.83;0.55;7
+Sporting Goods;20;99.45;0.0;0.55;0
+Sporting Goods;21;99.45;0.0;0.55;0
+Sporting Goods;22;99.45;0.55;0.0;1
+Sporting Goods;23;100.0;0.0;0.0;0
+Sporting Goods;24;100.0;0.0;0.0;0
+Sporting Goods;25;100.0;0.0;0.0;0
+Sporting Goods;26;100.0;0.0;0.0;0
+Sporting Goods;27;100.0;0.0;0.0;0
+Sporting Goods;28;100.0;0.0;0.0;0
+Sporting Goods;29;100.0;0.0;0.0;0
+Sporting Goods;30;100.0;0.0;0.0;0
+Sporting Goods;31;100.0;0.0;0.0;0
+Sporting Goods;32;100.0;0.0;0.0;0
+Sporting Goods;33;100.0;0.0;0.0;0
+Sporting Goods;34;100.0;0.0;0.0;0
+Sporting Goods;35;100.0;0.0;0.0;0
+Sporting Goods;36;100.0;0.0;0.0;0
+Sporting Goods;37;100.0;0.0;0.0;0
+Sporting Goods;38;100.0;0.0;0.0;0
+Sporting Goods;39;100.0;0.0;0.0;0
+Sporting Goods;40;100.0;0.0;0.0;0
+Sporting Goods;41;100.0;0.0;0.0;0
+Sporting Goods;42;100.0;0.0;0.0;0
+Sporting Goods;43;100.0;0.0;0.0;0
+Sporting Goods;44;100.0;0.0;0.0;0
+Sporting Goods;45;100.0;0.0;0.0;0
+Trading;5;0.0;0.0;100.0;0
+Trading;6;0.0;0.0;100.0;0
+Trading;7;0.0;0.0;100.0;0
+Trading;8;0.0;0.0;100.0;0
+Trading;9;0.0;0.0;100.0;0
+Trading;10;0.0;0.0;100.0;0
+Trading;11;0.0;9.57;90.43;42
+Trading;12;9.57;48.97;41.46;215
+Trading;13;58.54;11.85;29.61;52
+Trading;14;70.39;14.35;15.26;63
+Trading;15;84.74;5.69;9.57;25
+Trading;16;90.43;4.56;5.01;20
+Trading;17;94.99;0.0;5.01;0
+Trading;18;94.99;2.05;2.96;9
+Trading;19;97.04;0.91;2.05;4
+Trading;20;97.95;0.0;2.05;0
+Trading;21;97.95;0.0;2.05;0
+Trading;22;97.95;0.0;2.05;0
+Trading;23;97.95;0.0;2.05;0
+Trading;24;97.95;1.59;0.46;7
+Trading;25;99.54;0.0;0.46;0
+Trading;26;99.54;0.0;0.46;0
+Trading;27;99.54;0.23;0.23;1
+Trading;28;99.77;0.0;0.23;0
+Trading;29;99.77;0.0;0.23;0
+Trading;30;99.77;0.0;0.23;0
+Trading;31;99.77;0.0;0.23;0
+Trading;32;99.77;0.0;0.23;0
+Trading;33;99.77;0.0;0.23;0
+Trading;34;99.77;0.0;0.23;0
+Trading;35;99.77;0.23;0.0;1
+Trading;36;100.0;0.0;0.0;0
+Trading;37;100.0;0.0;0.0;0
+Trading;38;100.0;0.0;0.0;0
+Trading;39;100.0;0.0;0.0;0
+Trading;40;100.0;0.0;0.0;0
+Trading;41;100.0;0.0;0.0;0
+Trading;42;100.0;0.0;0.0;0
+Trading;43;100.0;0.0;0.0;0
+Trading;44;100.0;0.0;0.0;0
+Trading;45;100.0;0.0;0.0;0
+Import and Export;5;0.0;0.0;100.0;0
+Import and Export;6;0.0;0.0;100.0;0
+Import and Export;7;0.0;0.0;100.0;0
+Import and Export;8;0.0;0.0;100.0;0
+Import and Export;9;0.0;0.0;100.0;0
+Import and Export;10;0.0;0.0;100.0;0
+Import and Export;11;0.0;0.0;100.0;0
+Import and Export;12;0.0;0.0;100.0;0
+Import and Export;13;0.0;0.0;100.0;0
+Import and Export;14;0.0;36.36;63.64;4
+Import and Export;15;36.36;36.36;27.27;4
+Import and Export;16;72.73;27.27;0.0;3
+Import and Export;17;100.0;0.0;0.0;0
+Import and Export;18;100.0;0.0;0.0;0
+Import and Export;19;100.0;0.0;0.0;0
+Import and Export;20;100.0;0.0;0.0;0
+Import and Export;21;100.0;0.0;0.0;0
+Import and Export;22;100.0;0.0;0.0;0
+Import and Export;23;100.0;0.0;0.0;0
+Import and Export;24;100.0;0.0;0.0;0
+Import and Export;25;100.0;0.0;0.0;0
+Import and Export;26;100.0;0.0;0.0;0
+Import and Export;27;100.0;0.0;0.0;0
+Import and Export;28;100.0;0.0;0.0;0
+Import and Export;29;100.0;0.0;0.0;0
+Import and Export;30;100.0;0.0;0.0;0
+Import and Export;31;100.0;0.0;0.0;0
+Import and Export;32;100.0;0.0;0.0;0
+Import and Export;33;100.0;0.0;0.0;0
+Import and Export;34;100.0;0.0;0.0;0
+Import and Export;35;100.0;0.0;0.0;0
+Import and Export;36;100.0;0.0;0.0;0
+Import and Export;37;100.0;0.0;0.0;0
+Import and Export;38;100.0;0.0;0.0;0
+Import and Export;39;100.0;0.0;0.0;0
+Import and Export;40;100.0;0.0;0.0;0
+Import and Export;41;100.0;0.0;0.0;0
+Import and Export;42;100.0;0.0;0.0;0
+Import and Export;43;100.0;0.0;0.0;0
+Import and Export;44;100.0;0.0;0.0;0
+Import and Export;45;100.0;0.0;0.0;0

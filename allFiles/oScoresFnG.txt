@@ -1,0 +1,66 @@
+[Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Supply Chain Management+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations+Logistics and Supply Chain];31;10489016.15;1192.47499871;891230.793275
+[Credit+Finance+Financial Services+Finance - Audit+Finance - Taxation+Finance - Treasury];24;18242489.78;606.010410739;1540020.70714
+[Customer Care - Call Centre+Customer Service+Supply Chain Management+Merchandising+Retail Operations+Logistics and Supply Chain];31;10489016.15;796.331545838;1432114.06682
+[Project Management];24;10366686.97;1211.5662184;730680.770622
+[Marketing+Marketing - B2C];27;23933542.96;307.885783708;1130416.72968
+[Operations+Loss Prevention+Risk Management];22;15484973.54;120.36554079;620334.847371
+[Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Hatchery+Supply Chain Management+Marine Operations+Merchandising+Mining Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations+Logistics and Supply Chain];31;10489016.15;1159.7096586;869208.88045
+[Exploration];27;34160824.04;161.423407747;1358655.56882
+[Information Technology];26;15992470.43;2207.87710716;1147237.48873
+[Engineering+Mine Engineering+Product Development];27;8172033.969;1134.35298475;783033.213758
+[Administration+Executive Management+Human Resources+Human Resources - Recruitment];41;66927043.36;827.606435963;1141326.88
+[Marketing+Marketing - B2B and B2C];27;23933542.96;571.863289681;1130416.72968
+[Credit+Finance+Financial Services+Finance - Audit];24;17927595.925;633.34704213;1450407.44881
+[Category Management];24;18132237.43;285.272366522;530548.13925
+[Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Supply Chain Management+Marine Operations+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations+Logistics and Supply Chain];27;15286082.025;1174.64960574;892901.192608
+[Category Management+Power Trading];24;18132237.43;158.354617605;476626.97775
+[Marketing];27;23933542.96;554.792063668;1130416.72968
+[Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Merchandising+Property Management+Retail Operations];31;10489016.15;67.1062308676;2002590.57489
+[Education+Fashion Design+Content Design];24;14809668.0;2662.85747527;698310.406943
+[Health, Safety and Environment+Quality Assurance];27;8168305.0615;502.992705293;786467.854967
+[Administration+Executive Management+Human Resources+Medical];41;66927043.36;824.048030034;1141326.88
+[Engineering+Mine Engineering+Product Development];27;8172033.969;1134.35298475;783033.213758
+[Engineering+Mine Engineering+Product Development+Engineering - Civil+Engineering - Electrical & Electronics+Engineering - Marine+Design Engineering];27;8172033.969;1217.28653146;805851.193946
+[Marketing+Marketing - B2B];27;20653438.18;657.885012376;916677.4838
+[Credit+Finance+Financial Services+Finance - Treasury];24;17981973.965;632.158764024;1488004.26672
+[Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations];31;10489016.15;2485.77696036;835576.913865
+[Administration+Executive Management+Human Resources+Human Resources - Compensation & Benefits];41;66927043.36;826.394120385;1141326.88
+[Administration+Executive Management+Human Resources+Human Resources - Training];41;66927043.36;834.016748902;1141330.60429
+[Marketing+Human Resources+Finance+Engineering+Strategy and Corporate Planning];27;18094683.94;1798.69084093;1274096.16932
+[Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Marine Operations+Merchandising+Operations+Piping+Property Management+Retail Operations];31;10489016.15;67.5692737329;2002740.44189
+[Sales];27;28999518.3955;1356.73216592;1620392.73132
+[Operations+Merchandising+Supply Chain Management+Logistics and Supply Chain];31;10489016.15;485.636559246;1470431.0343
+[Health, Safety and Environment+Quality Assurance];27;8168305.0615;502.992705293;786467.854967
+[Administration+Executive Management+Human Resources+Medical+Human Resources - Industrial Relations];41;66927043.36;828.150562704;1141326.88
+[Engineering+Mine Engineering+Product Development+Product Development - Internet];27;8172033.969;1146.02384699;783791.664925
+[Clinical Research and Development+Research and Development];27;37219402.89;1245.61127825;1111266.76524
+[Credit+Finance+Financial Services];24;17721458.15;614.164972267;1430470.77548
+[Administration+Executive Management+Human Resources+Medical];41;66927043.36;824.048030034;1141326.88
+[Engineering+Product Development+Design Engineering];27;8172033.969;1105.23434531;783033.213758
+[Engineering+Mine Engineering+Product Development+Product Development - Hardware];27;8172033.969;1165.94912032;783791.664925
+[Software Development];27;46911166.005;513.246710677;395381.013367
+[Credit+Finance+Financial Services+Finance - Audit+Finance - Taxation+Finance - Treasury];24;18242489.78;606.010410739;1540020.70714
+[Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Hatchery+Logistics and Supply Chain+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations];31;10489016.15;2485.70645648;835587.21887
+[Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Oil and Energy Operations+Operations+Piping+Property Management+Retail Operations];27;28985861.82;4560.3615668;831007.265456
+[Fashion Design];19;11260340.86;508.281671409;1535509.16409
+[Education];24;14809668.0;6124.88905291;787355.828
+[Credit+Finance+Financial Services+Finance - Taxation];24;18242489.78;573.347385982;1473890.07798
+[Engineering+Mine Engineering+Product Development+EPC Design];27;8172033.969;1135.84517803;783033.213758
+[Operations+Loss Prevention+Risk Management];22;15484973.54;120.36554079;620334.847371
+[Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Oil and Energy Operations - Downstream];31;10489016.15;2353.62636387;829365.17288
+[Engineering+Mine Engineering+Product Development+Engineering - Electrical & Electronics];27;8172033.969;1144.35075558;783033.261908
+[Clinical Research and Development+Research and Development];27;37219402.89;1245.61127825;1111266.76524
+[Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Marine Operations+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Oil and Energy Operations - Downstream];27;10227405.4445;2289.91262275;812671.59848
+[Administration+Executive Management+Human Resources+Medical];41;66927043.36;824.048030034;1141326.88
+[Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Supply Chain Management+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations+Logistics and Supply Chain];31;10489016.15;1192.47499871;891230.793275
+[Corporate Affairs+Legal];27;12593277.47;350.583827634;1150337.14332
+[Corporate Affairs+Legal];27;12593277.47;350.583827634;1150337.14332
+[Engineering+Mine Engineering+Product Development+Engineering - Marine];27;8172033.969;1177.62077127;795200.655017
+[Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations+Oil and Energy Operations - Downstream];31;10489016.15;2509.22370314;835576.22049
+[Agricultural Services and Operations+Construction+Customer Care - Call Centre+Customer Service+Supply Chain Management+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations+Oil and Energy Operations - Downstream+Logistics and Supply Chain];31;10489016.15;1199.02364449;881951.028692
+[Construction+Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Marine Operations+Merchandising+Mining Operations+Oil and Energy Operations+Operations+Piping+Production and Manufacturing+Property Management+Retail Operations+Oil and Energy Operations - Downstream];31;10489016.15;2505.86802175;835576.22049
+[Customer Care - Call Centre+Customer Service+Logistics and Supply Chain+Merchandising+Operations+Property Management+Retail Operations];31;10489016.15;66.4527832186;1927335.89981
+[Engineering+Mine Engineering+Product Development+Engineering - Civil];27;8172033.969;1159.12023438;783791.664925
+[Engineering+Mine Engineering+Product Development+Operations+Infrastructure Operations];27;8172033.969;1231.6642447;782936.887637
+[Administration+Executive Management+Human Resources+Medical];41;66927043.36;824.048030034;1141326.88
+[Engineering+Mine Engineering+Product Development+Product Development - Hardware+Product Development - Internet+Product Development - Manufacturing];27;8172033.969;1223.64058176;795144.026387

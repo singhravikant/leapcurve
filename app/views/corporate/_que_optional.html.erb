@@ -1,0 +1,71 @@
+<style>
+  .questions-tab {
+    background-color: #f3f3f3;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .que-head {
+    font-size: 20px;
+
+  }
+
+  .foot-head {
+    padding: 20px 0px;
+    font-family: Poppins-semibold;
+    text-align: left;
+    display: block;
+    position: relative;
+  }
+    .delete-btn{
+      float: right;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: bold;
+      padding: 0px 5px;
+    }
+    .add-ques span{
+      font-family: Poppins-regular;
+    }
+</style>
+
+
+
+<% @que_optional.each do |key, value| %>
+
+  <div class="questions-tab" id="<%= key %>" name="<%= value['question']  %>">
+    <div CLASS="que-head add-ques">
+      <span>
+        <%if value['question'] %>
+          <%= value['question'] %>
+        <%else %>
+          <%= key %>
+        <%end %>
+      </span>
+      <span class="delete-btn" ONCLICK="delete_que('<%= key %>',true)">
+      DELETE
+      </span>
+
+      <span class="delete-btn" ONCLICK="edit_que('<%= key %>')">
+      EDIT
+      </span>
+    </div>
+
+    <div class="add-ques">
+      <span>
+        <% if value['type'] == 'text'
+             @type='Text'
+         elsif value['type'] == 'radio'
+           @type='Multiple Choice (Single-Answer)'
+        elsif value['type'] == 'checkbox'
+          @type = 'Multiple Choice (Multiple-Answer)'
+         end %>
+        TYPE: <%= @type %>
+      </span>
+    </div>
+  </div>
+<% end %>
+<!--<div>-->
+<!--  <span class="foot-head">ADD MORE:</span>-->
+<!--</div>-->

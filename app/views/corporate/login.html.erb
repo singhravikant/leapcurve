@@ -1,0 +1,1008 @@
+<% if browser.device.mobile? %>
+
+
+  <style>
+    .section {
+      position: relative;
+      display: block;
+      padding-right: 15%;
+      padding-left: 15%;
+      text-align: center;
+      width: 70%;
+      float: left;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+      padding-bottom: 15%;
+    }
+
+    .form-div {
+      text-align: center;
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .form-div h3 {
+      font-size: 15px;
+      margin-bottom: 12%;
+      font-family: Poppins-SemiBold;
+      text-align: center;
+    }
+
+    .for-link {
+      text-decoration: none;
+      color: #000000cf;
+      font-family: Montserrat-Regular;
+      float: right;
+      margin-top: -5%;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .reg-link {
+      text-decoration: none;
+      background-color: #eeeeee;
+      cursor: pointer;
+      padding: 4%;
+      width: 92%;
+      margin-top: 2%;
+      float: none;
+      outline: none;
+      display: block;
+      position: relative;
+      color: #4c4c4c;
+      font-family: Poppins-SemiBold;
+      font-size: 18px;
+    }
+
+    .txt-field {
+      border-bottom: 1px solid black !important;
+      padding: 2%;
+      margin-bottom: 10%;
+      position: relative;
+      color: black;
+      border: none;
+      box-shadow: none;
+      width: 95%;
+      outline: none;
+      float: left;
+      font-size: 15px;
+    }
+
+    .input-field {
+      display: block;
+      position: relative;
+      width: 100%;
+      float: left;
+      padding: 1% 0% 1.5%;
+      min-height: 1%;
+    }
+
+    .submit-btn {
+      border: none;
+      background-color: #4c4c4c;
+      cursor: pointer;
+      font-family: Poppins-SemiBold;
+      padding: 4%;
+      margin-top: 10%;
+      display: block;
+      outline: none;
+      letter-spacing: 1px;
+      width: 100%;
+      color: #eeeeee;
+      font-size: 18px;
+    }
+
+    .txt-reg {
+      width: 100%;
+      position: relative;
+      float: left;
+      display: block;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      font-size: 15px;
+      text-align: left;
+      font-family: Montserrat-Regular;
+    }
+
+    .not {
+      color: red;
+    }
+
+    .sort {
+      position: absolute;
+      width: 100%;
+      border: 2px solid gray;
+      overflow: hidden;
+      z-index: 3;
+      left: 0;
+      padding: 0px 2% 5px 2%;
+      right: 0;
+      background-color: #fff;
+    }
+
+    #advance {
+      display: none;
+    }
+
+    .close-col {
+      text-align: right;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .close {
+      cursor: pointer;
+    }
+
+    .forget-email {
+      margin: 20px 0;
+      width: 60%;
+      border: 1px solid gray;
+      outline: none;
+    }
+
+    .sort-para {
+      font-size: 15px;
+    }
+
+    .forget-btn {
+      width: 34%;
+      margin: 10px 0;
+      boredr: non;
+      padding: 5px;
+      outline: none;
+      border: none;
+      background: #ededed;
+    }
+  </style>
+  <style>
+
+    .loader-overlay {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1031;
+
+    }
+
+    .loader {
+      position: fixed;
+      z-index: 1032;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid gray;
+      border-bottom: 16px solid gray;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    .hide{
+      display: none;
+    }
+
+    @media (max-width: 991px) {
+      .loader {
+        position: fixed;
+        z-index: 1032;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 6px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 6px solid gray;
+        border-bottom: 6px solid gray;
+        width: 60px;
+        height: 60px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+      }
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+  </style>
+  <section class="section">
+    <article class="article">
+      <div class="hide" id="loader">
+        <div class="loader"></div>
+        <div class="loader-overlay"></div>
+      </div>
+      <div class="form-div">
+        <h3>CORPORATE LOGIN</h3>
+        <%= form_tag({:action => :corporate_login}, {:method => :post}) do %>
+
+          <div class="txt-reg">
+            <div class="input-field">
+              <%= email_field_tag "Email",  params['Email'], :placeholder => 'Email', :class => "txt-field ", :size => 15 , :required => true %>
+            </div>
+          </div>
+
+          <div class="txt-reg">
+            <div class="input-field">
+              <%= password_field_tag "Password", params['Password'], :placeholder => 'Password', :class => "txt-field ", :size => 15 , :required => true %>
+              <a class="for-link" onclick="advance()">Forgot password?</a>
+            </div>
+          </div>
+
+
+          <div class="txt-reg">
+            <div class="input-field">
+              <div class="not"><%= notice %></div>
+            </div>
+          </div>
+
+          <div class="txt-reg">
+            <div class="input-field">
+              <%= submit_tag 'LOGIN', :class => "submit-btn" %>
+            </div>
+          </div>
+
+
+          <div class="txt-reg">
+            <div class="input-field">
+              <%= link_to "REGISTER", "/corporate/registration", :class => "reg-link" %>
+            </div>
+          </div>
+
+        <% end %>
+        <div id="advance" class="sort hide">
+          <div class="col close-col">
+            <span id="sort1" class="close" onclick="sort1()">&times;</span>
+          </div>
+          <div class="col ">
+            <span class="font-mont sort-para">FORGET PASSWORD</span>
+          </div>
+
+
+          <%#= form_tag 'sort_applicants_advance', :id => "advance_form", :method => :post do %>
+          <%= form_tag({:action => :corporate_forgot_password}, {:method => :post,:onsubmit=>"document.getElementById('loader').style.display='block';"}) do %>
+            <div class="col">
+              <input type="email" placeholder="Email" id="email" name="email" class="forget-email" required>
+            </div>
+            <div class="col">
+              <%= submit_tag 'submit', :class => "forget-btn", :id => "forget" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </article>
+  </section>
+
+<% elsif browser.device.tablet? %>
+
+
+
+  <style>
+    .section {
+      position: relative;
+      display: block;
+      padding-right: 0%;
+      padding-left: 0%;
+      text-align: center;
+      width: 100%;
+      float: left;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+    }
+
+    .form-div {
+      text-align: center;
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .form-div h3 {
+      text-align: center;
+      font-family: Poppins-SemiBold;
+    }
+
+    .for-link {
+      text-decoration: none;
+      color: #000000cf;
+      float: right;
+      margin-right: 6%;
+      cursor: pointer;
+      font-family: Montserrat-Regular;
+      font-size: 17px;
+    }
+
+    .reg-link {
+      text-decoration: none;
+      background-color: #eeeeee;
+      cursor: pointer;
+      padding: 4%;
+      width: 76%;
+      margin-left: 10%;
+      font-family: Poppins-SemiBold;
+      margin-top: -3%;
+      float: none;
+      outline: none;
+      display: block;
+      position: relative;
+      color: #4c4c4c;
+      font-size: 22px;
+    }
+
+    .txt-field {
+      border-bottom: 2px solid black !important;
+      padding: 2%;
+      margin-bottom: 2%;
+      position: relative;
+      margin-left: 10%;
+      color: black;
+      border: none;
+      box-shadow: none;
+      width: 80%;
+      outline: none;
+      float: left;
+      font-size: 15px;
+    }
+
+    .input-field {
+      display: block;
+      position: relative;
+      padding: 5% 12% 5% 12%;
+      width: 80%;
+      float: left;
+      width: 33.33%;
+      padding: 1% 0% 1.5%;
+      min-height: 1%;
+    }
+
+    .submit-btn {
+      border: none;
+      background-color: #4c4c4c;
+      cursor: pointer;
+      padding: 4%;
+      margin-top: 10%;
+      display: block;
+      margin-left: 10%;
+      outline: none;
+      width: 84%;
+      font-family: Poppins-SemiBold;
+      color: #eeeeee;
+      font-size: 22px;
+    }
+
+    .txt-reg {
+      width: 100%;
+      position: relative;
+      float: left;
+      display: block;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      font-size: 15px;
+      text-align: left;
+      font-family: Montserrat-Regular;
+    }
+
+    .not {
+      color: red;
+    }
+
+    .sort {
+      position: absolute;
+      width: 26%;
+      border: 2px solid gray;
+      overflow: hidden;
+      z-index: 3;
+      left: 0;
+      padding: 20px 2% 5px 2%;
+      right: 0;
+      background-color: #fff;
+      left: 36%;
+    }
+
+    #advance {
+      display: none;
+    }
+
+    .close-col {
+      text-align: right;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .close {
+      cursor: pointer;
+    }
+
+    .forget-email {
+      border: 1px solid gray;
+      margin: 20px 0;
+      outline: none;
+      outline: none;
+    }
+
+    .sort-para {
+      font-size: 20px;
+    }
+
+    .forget-btn {
+      width: 34%;
+      margin: 10px 0;
+      boredr: non;
+      padding: 5px;
+      outline: none;
+      border: none;
+      background: #ededed;
+    }
+  </style>
+  <style>
+
+    .loader-overlay {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1031;
+
+    }
+
+    .loader {
+      position: fixed;
+      z-index: 1032;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid gray;
+      border-bottom: 16px solid gray;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    .hide{
+      display: none;
+    }
+
+    @media (max-width: 991px) {
+      .loader {
+        position: fixed;
+        z-index: 1032;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 6px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 6px solid gray;
+        border-bottom: 6px solid gray;
+        width: 60px;
+        height: 60px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+      }
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+  </style>
+  <section class="section">
+    <article class="article">
+      <div class="hide" id="loader">
+        <div class="loader"></div>
+        <div class="loader-overlay"></div>
+      </div>
+      <div class="form-div">
+        <h3>CORPORATE LOGIN</h3>
+        <%= form_tag({:action => :corporate_login}, {:method => :post}) do %>
+
+          <div class="txt-reg">
+            <div class="input-field">
+
+            </div>
+            <div class="input-field">
+              <%= email_field_tag "Email",  params['Email'], :placeholder => 'Email', :class => "txt-field ", :size => 15 , :required => true %>
+            </div>
+          </div>
+
+          <div class="txt-reg">
+            <div class="input-field">
+
+            </div>
+            <div class="input-field">
+              <%= password_field_tag "Password", params['Password'], :placeholder => 'Password', :class => "txt-field ", :size => 15 , :required => true %>
+              <a class="for-link" onclick="advance()">Forgot password?</a>
+            </div>
+          </div>
+
+          <div class="txt-reg">
+            <div class="input-field">
+
+            </div>
+            <div class="input-field">
+              <div class="not"><%= notice %></div>
+            </div>
+          </div>
+
+          <div class="txt-reg">
+            <div class="input-field">
+
+            </div>
+            <div class="input-field">
+              <%= submit_tag 'LOGIN', :class => "submit-btn" %>
+            </div>
+            <div class="input-field">
+
+            </div>
+          </div>
+
+
+          <div class="txt-reg">
+            <div class="input-field">
+            </div>
+            <div class="input-field">
+              <%= link_to "REGISTER", "/corporate/registration", :class => "reg-link" %>
+            </div>
+            <div class="input-field">
+            </div>
+          </div>
+
+          <div class="txt-reg">
+            <div class="input-field">
+
+            </div>
+          </div>
+        <% end %>
+        <div id="advance" class="sort hide">
+          <div class="col close-col">
+            <span id="sort1" class="close" onclick="sort1()">&times;</span>
+          </div>
+          <div class="col ">
+            <span class="font-mont sort-para">FORGET PASSWORD</span>
+          </div>
+
+
+          <%#= form_tag 'sort_applicants_advance', :id => "advance_form", :method => :post do %>
+          <%= form_tag({:action => :corporate_forgot_password}, {:method => :post,:onsubmit=>"document.getElementById('loader').style.display='block';"}) do %>
+            <div class="col">
+              <input type="email" placeholder="Email" id="email" name="email" class="forget-email" required>
+            </div>
+            <div class="col">
+              <%= submit_tag 'submit', :class => "forget-btn", :id => "forget" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </article>
+  </section>
+<% else %>
+
+
+  <style>
+    .section {
+      position: relative;
+      display: block;
+      padding-right: 15%;
+      padding-left: 15%;
+      text-align: center;
+      width: 70%;
+      float: left;
+    }
+
+    .article {
+      padding-left: 0%;
+      padding-right: 0%;
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+    }
+
+    .form-div {
+      text-align: center;
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+    }
+
+    form {
+      position: relative;
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .form-div h3 {
+      text-align: center;
+      font-family: Poppins-SemiBold;
+      letter-spacing: 0.5px;
+    }
+
+    .for-link {
+      text-decoration: none;
+      color: #000000cf;
+      float: right;
+      font-family: Montserrat-Regular;
+      margin-right: 6%;
+      cursor: pointer;
+      font-size: 17px;
+    }
+
+    .reg-link {
+      text-decoration: none;
+      background-color: #eeeeee;
+      cursor: pointer;
+      padding: 4%;
+      width: 76%;
+      margin-left: 10%;
+      font-family: Poppins-SemiBold;
+      margin-top: -2%;
+      float: none;
+      outline: none;
+      display: block;
+      position: relative;
+      color: #4c4c4c;
+      font-size: 22px;
+    }
+
+    .txt-field {
+      border-bottom: 2px solid black !important;
+      padding: 2%;
+      margin-bottom: 2%;
+      position: relative;
+      margin-left: 10%;
+      color: black;
+      border: none;
+      box-shadow: none;
+      width: 80%;
+      outline: none;
+      float: left;
+      font-size: 15px;
+    }
+
+    .input-field {
+      display: block;
+      position: relative;
+      padding: 5% 12% 5% 12%;
+      width: 80%;
+      float: left;
+      width: 33.33%;
+      padding: 1% 0% 1.5%;
+      min-height: 1%;
+    }
+
+    .submit-btn {
+      border: none;
+      background-color: #4c4c4c;
+      cursor: pointer;
+      padding: 4%;
+      font-family: Poppins-SemiBold;
+      display: block;
+      margin-left: 10%;
+      outline: none;
+      width: 84%;
+      color: #eeeeee;
+      font-size: 22px;
+    }
+
+    .txt-reg {
+      width: 100%;
+      position: relative;
+      float: left;
+      display: block;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      font-size: 15px;
+      text-align: left;
+      font-family: Montserrat-Regular;
+    }
+
+    .not {
+      color: red;
+    }
+
+    .sort {
+      position: absolute;
+      width: 26%;
+      border: 2px solid gray;
+      overflow: hidden;
+      z-index: 3;
+      left: 0;
+      padding: 20px 2% 5px 2%;
+      right: 0;
+      background-color: #fff;
+      left: 36%;
+    }
+
+    #advance{
+      display: none;
+    }
+.close-col{
+  text-align: right;
+  font-size: 30px;
+  font-weight: bold;}
+.close{
+  cursor: pointer;
+}
+      .forget-email{
+        padding: 6px 24px;
+        margin: 20px 0;
+        outline: none;
+      }
+      .sort-para{
+        font-size: 20px;
+      }
+      .forget-btn{
+        width: 34%;
+        margin: 10px 0;
+        boredr: non;
+        padding: 5px;
+        outline: none;
+        border: none;
+        background: #ededed;
+      }
+  </style>
+  <style>
+
+    .loader-overlay {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1031;
+
+    }
+
+    .loader {
+      position: fixed;
+      z-index: 1032;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid gray;
+      border-bottom: 16px solid gray;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    .hide{
+      display: none;
+    }
+
+    @media (max-width: 991px) {
+      .loader {
+        position: fixed;
+        z-index: 1032;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 6px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 6px solid gray;
+        border-bottom: 6px solid gray;
+        width: 60px;
+        height: 60px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+      }
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+  </style>
+  <section class="section">
+    <article class="article">
+      <div class="hide" id="loader">
+        <div class="loader"></div>
+        <div class="loader-overlay"></div>
+      </div>
+      <div class="form-div">
+        <h3>CORPORATE LOGIN</h3>
+        <%= form_tag({:action => :corporate_login}, {:method => :post}) do %>
+
+          <div class="txt-reg">
+            <div class="input-field">
+
+            </div>
+            <div class="input-field">
+              <%= email_field_tag "Email",  params['Email'], :placeholder => 'Email', :class => "txt-field ", :size => 15 , :required => true  %>
+            </div>
+          </div>
+
+          <div class="txt-reg">
+            <div class="input-field">
+            </div>
+            <div class="input-field">
+              <%= password_field_tag "Password", params['Password'], :placeholder => 'Password', :class => "txt-field ", :size => 15  , :required => true %>
+              <a class="for-link" onclick="advance()">Forgot password?</a>
+            </div>
+
+          </div>
+         <div class="txt-reg">
+           <div class="input-field">
+           </div>
+            <div class="input-field">
+              <div class="not"><%= notice %></div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div class="txt-reg">
+            <div class="input-field">
+
+            </div>
+            <div class="input-field">
+              <%= submit_tag 'LOGIN', :class => "submit-btn" %>
+            </div>
+            <div class="input-field">
+
+            </div>
+          </div>
+
+
+          <div class="txt-reg">
+            <div class="input-field">
+            </div>
+            <div class="input-field">
+              <%= link_to "REGISTER", "/corporate/registration", :class => "reg-link" %>
+            </div>
+            <div class="input-field">
+            </div>
+          </div>
+
+          <div class="txt-reg">
+            <div class="input-field">
+
+            </div>
+          </div>
+        <% end %>
+
+        <div id="advance" class="sort hide">
+          <div class="col close-col">
+            <span id="sort1" class="close" onclick="sort1()">&times;</span>
+          </div>
+          <div class="col ">
+            <span class="font-mont sort-para">FORGET PASSWORD</span>
+          </div>
+
+
+          <%#= form_tag 'sort_applicants_advance', :id => "advance_form", :method => :post do %>
+          <%= form_tag({:action => :corporate_forgot_password}, {:method => :post ,:onsubmit=>"document.getElementById('loader').style.display='block';"}) do %>
+            <div class="col">
+              <input type="email" placeholder="Email" id="email" name="email" class="forget-email" required>
+            </div>
+            <div class="col">
+              <%= submit_tag 'submit', :class => "forget-btn", :id => "forget" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </article>
+  </section>
+
+<% end %>
+<script>
+
+    function advance() {
+        document.getElementById("advance").style.display = 'block';
+    }
+
+    function sort1() {
+        document.getElementById("advance").style.display = 'none';
+    }
+
+</script>

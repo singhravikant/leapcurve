@@ -1,0 +1,268 @@
+<style>
+    .font_size{
+        font-family:Verdana;
+        word-spacing:2px;
+    }
+    .label{
+        padding-left: 1%;
+    }
+</style>
+<div class="container">
+    <div class="row" style="margin-top: 7%">
+        <div class="col-md-12">
+            <div class="col-md-3">
+                <h3 class="font_size">Career Level: {{UserInfo.Level}}</h3>
+                <h4 class="font_size"><i>Salary: INR {{UserInfo.Salary}} Lakhs</i></h4>
+            </div>
+            <div class="col-md-offset-6 col-md-3">
+                <div class="font_size">Company: {{UserInfo.Company}}</div>
+                <div class="font_size">Industry: {{UserInfo.Industry}}</div>
+                <div class="font_size">Function: {{UserInfo.Role}}</div>
+                <div class="font_size"><a style="color: black;cursor: pointer" ng-click="openIndustry()">View Industry Group</a></div>
+                <div class="font_size"><a style="color: black;cursor: pointer" ng-click="openFunction()">View Function Group</a></div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+
+    <div class="row">
+        <div class="col-md-2" style="margin-top: 2%">
+            <p style="float:right ">Career Level Growth </p>
+        </div>
+        <div class="col-md-10">
+
+            <highchart id="chart" style="height: 80px; " config="chartConfig_CLGrowth"></highchart>
+
+        </div>
+        <!--<div class="col-md-4" style="margin-top: 2%">-->
+            <!--<p> {{GrowthFactor["nxtlevl"]}} %  people reaching next Level</p>-->
+        <!--</div>-->
+    </div>
+    <div class="row" >
+        <div class="col-md-2" style="margin-top: 2%">
+            <p style="float:right ">Salary Growth</p>
+        </div>
+        <div class="col-md-10">
+
+            <highchart id="chart" style="height: 80px; " config="chartConfig_barSalaryGrowth"></highchart>
+
+        </div>
+        <!--<div class="col-md-4" style="margin-top: 2%">-->
+            <!--<p>Average growth of {{GrowthFactor["avGSalaryPer"]}}% per level-->
+
+
+        <!--</div>-->
+    </div>
+    <hr/>
+
+    <div class="row" style="margin-top: 1%;">
+        <div style="padding: 5px; background-color: #BDCDE5">
+            <h3 class="font_size" style="padding-left:10px;">Career Level and Salary Growth</h3>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 2%">
+        <div class="col-md-8">
+            <div class="col-md-12">
+                <div class="col-md-2" ng-if="btnComanyPromotion">
+                    <button type="submit" ng-click="getChartPromotion('Company')"  class="btn btn-primary btn-md"
+                            >My Company
+                    </button>
+                </div>
+                <div class="col-md-3" ng-if="btnFunIndPromotion">
+                    <button type="submit" ng-click="getChartPromotion('FunInd')" class="btn btn-primary btn-md">My Function & Industry
+                    </button>
+                </div>
+                <div class="col-md-2" ng-if="btnFunPromotion">
+                    <button type="submit" ng-click="getChartPromotion('Fun')" class="btn btn-primary btn-md"
+                            >My Function
+                    </button>
+                </div>
+                <div class="col-md-2" ng-if="btnIndPromotion">
+                    <button type="submit" ng-click="getChartPromotion('Ind')" class="btn btn-primary btn-md"
+                            >My Industry
+                    </button>
+                </div>
+                <div class="col-md-3" ng-if="btnFunGrpPromotion">
+                    <button type="submit"ng-click="getChartPromotion('FunGroup')" class="btn btn-primary btn-md">My Function Group
+                    </button>
+                </div>
+                <div class="col-md-2" ng-if="btnIndGrpPromotion">
+                    <button type="submit" ng-click="getChartPromotion('IndGroup')" class="btn btn-primary btn-md">My Industry Group
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top: 1%">
+            <div class="col-md-4">
+                <h4 class="text-center">Promotion Pressures <span class="glyphicon glyphicon-info-sign"></span></h4>
+                <hr/>
+                <p class="col-md-12 text-center">{{title}}</p>
+                <div class="col-md-12 col-sm-8 col-xs-8" style="border: 1px solid blue;overflow: hidden">
+                    <highchart id="chart" config="chartConfig"></highchart>
+                </div>
+                <div class="col-md-12" id="rot"
+                     style="z-index: 1;text-align: center;margin-left: -22%;margin-top: -47%;width: 31%;}"> Career Level
+                </div>
+                <p class=" col-md-12 text-center mt-lg"> Frequency</p>
+            </div>
+            <div class="col-md-4 " style="margin-top: 6%">
+                <!--<div class="col-md-12 col-sm-8 col-xs-8" style="border: 1px solid blue;overflow: hidden">-->
+                <highchart id="chart" style="width: 250px;" class="pull-right" config="chartConfig_Line"></highchart>
+                <div class="col-md-12" id="rot"
+                     style="z-index: 1;text-align: center; margin-top: 30%;"> Median Compensation
+                    INR in Lakhs
+                </div>
+                <p class=" col-md-12 text-center mt-lg"> Career Level</p>
+            </div>
+            <div class="col-md-4" style="margin-top: 5%">
+                <div class="col-md-12 font_size text-center" style="margin-bottom: 2%">
+                    <b>Growth Summary</b>
+                </div>
+                <div class="row" ng-if="chartConfig_SalaryGrowthbarCom.xAxis.categories[0]!=null" style="margin-top: 1%">
+                    <div class="col-md-5">
+                        <p style="float:right" class="font_size">{{chartConfig_SalaryGrowthbarCom.xAxis.categories[0]}}</p>
+                    </div>
+                    <div class="col-md-7">
+                        <highchart id="chart" style="height:40px;" class="font_size"
+                                   config="chartConfig_SalaryGrowthbarCom"></highchart>
+                    </div>
+                </div>
+                <div class="row" ng-if="chartConfig_SalaryGrowthbarInFn.xAxis.categories[0]!=null" style="margin-top: 1%">
+                    <div class="col-md-5">
+                        <p style="float:right;padding-left: 25%" class="font_size">
+                            {{chartConfig_SalaryGrowthbarInFn.xAxis.categories[0]}}</p>
+                    </div>
+                    <div class="col-md-7">
+                        <highchart id="chart" class="font_size" style="height: 40px;"
+                                   config="chartConfig_SalaryGrowthbarInFn"></highchart>
+                    </div>
+                </div>
+                <div class="row" ng-if="chartConfig_SalaryGrowthbarInGrp.xAxis.categories[0]!=null" style="margin-top: 1%">
+                    <div class="col-md-5">
+                        <p style="float:right;padding-left: 25% " class="font_size">{{chartConfig_SalaryGrowthbarInGrp.xAxis.categories[0]}}</p>
+                    </div>
+                    <div class="col-md-7">
+                        <highchart id="chart" class="font_size" style="height: 40px; "
+                                   config="chartConfig_SalaryGrowthbarInGrp"></highchart>
+                    </div>
+                </div>
+                <div class="row" ng-if="chartConfig_SalaryGrowthbarFnGrp.xAxis.categories[0]!=null" style="margin-top: 1%">
+                    <div class="col-md-5">
+                        <p style="float:right;padding-left: 25% " class="font_size">{{chartConfig_SalaryGrowthbarFnGrp.xAxis.categories[0]}}</p>
+                    </div>
+                    <div class="col-md-7">
+                        <highchart id="chart" class="font_size" style="height: 40px; "
+                                   config="chartConfig_SalaryGrowthbarFnGrp"></highchart>
+                    </div>
+                </div>
+                <div class="row" ng-if="chartConfig_SalaryGrowthbarIn.xAxis.categories[0]!=null" style="margin-top: 1%">
+                    <div class="col-md-5">
+                        <p style="float:right " class="font_size">{{chartConfig_SalaryGrowthbarIn.xAxis.categories[0]}}</p>
+                    </div>
+                    <div class="col-md-7">
+                        <highchart id="chart" class="font_size" style="height: 40px; "
+                                   config="chartConfig_SalaryGrowthbarIn"></highchart>
+                    </div>
+                </div>
+                <div class="row" ng-if="chartConfig_SalaryGrowthbarFn.xAxis.categories[0]!=null" style="margin-top: 1%">
+                    <div class="col-md-5">
+                        <p style="float:right " class="font_size">{{chartConfig_SalaryGrowthbarFn.xAxis.categories[0]}}</p>
+                    </div>
+                    <div class="col-md-7">
+                        <highchart id="chart" class="font_size" style="height: 40px; "
+                                   config="chartConfig_SalaryGrowthbarFn"></highchart>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1" style="margin-top: 0%;background-color: rgb(195,214,155)">
+                        <p class="text-center mt-sm font_size">{{PP_Text}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="col-md-12" style="margin-top: 1%">-->
+            <!--<div class="col-md-12 " style="margin-top: 6%">-->
+        <!--&lt;!&ndash;<div class="col-md-12 col-sm-8 col-xs-8" style="border: 1px solid blue;overflow: hidden">&ndash;&gt;-->
+        <!--<highchart id="chart"  class="pull-right" config="chartConfig_Line"></highchart>-->
+        <!--<div class="col-md-12" id="rot"-->
+             <!--style="z-index: 1;text-align: center; margin-top: 30%;"> Median Compensation-->
+            <!--INR in Lakhs-->
+        <!--</div>-->
+        <!--<p class=" col-md-12 text-center mt-lg"> Career Level</p>-->
+    <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div class="col-md-4">
+        <hr/>
+    </div>
+    <div class="row">
+        <div class="col-md-8 font_size">
+            <div class="col-md-6" style="padding: 10px">
+                <div style="border: 1px solid black; padding: 12px;padding-top: 15px; height:350px">
+                    <p ng-if="GrowthFactor['nxtlevlCL']>0" style="font-weight: bold; display: inline">Difficulty of Reaching Next Level:</p>
+                    <p ng-if="GrowthFactor['nxtlevlCL']>0" style="color: black; display: inline;" ng-style="getStyle(diffNxtLvl)" > {{diffNxtLvl}}</p>
+                    <ul ng-if="GrowthFactor['nxtlevlCL']>0">
+                        <li><b>{{GrowthFactor["nxtlevlCL"]}}% of people</b> in your level manage to reach the next Career Level in your
+                            company
+                        </li>
+                        </li>
+                        </li>
+                    </ul>
+                    <p  style="font-weight: bold;">Highest Level Reachable: {{GrowthFactor["HiLvlReachable"]}}</p>
+                    <p ng-if="GrowthFactor['HiLevelDiff']>0" style="font-weight: bold; display: inline" >Difficulty of Reaching Highest Level: </p>
+                    <p ng-if="GrowthFactor['HiLevelDiff']>0" style="color: red;display: inline;" ng-style="getStyle(diffHiLvl)"> {{diffHiLvl}}</p>
+                    <ul ng-if="GrowthFactor['HiLevelDiff']>0">
+                        <li><b>{{GrowthFactor["HiLevelDiff"]}}% of people</b> in your level manage to reach the highest Career Level in
+                            your company
+                        </li>
+                    </ul>
+                    <p ng-if="GrowthFactor['avGLevelPer']>0" style="font-weight: bold;display: inline;">Average Difficulty per Level Jump: </p>
+                    <p ng-if="GrowthFactor['avGLevelPer']>0" style="color: orange;display: inline;" ng-style="getStyle(diffPerLvl)"> {{diffPerLvl}}</p>
+                    <ul ng-if="GrowthFactor['avGLevelPer']>0">
+                        <li>On an average, <b>{{GrowthFactor["avGLevelPer"]}}% of people</b> manage to jump from one level to the next
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6" style="padding: 10px">
+                <div style="border: 1px solid black; padding:12px;padding-top: 15px; height:350px">
+                    <p ng-if="GrowthFactor['median']>0" style="font-weight: bold; display: inline">Salary Growth at Next Level:</p>
+                        <p ng-if="GrowthFactor['median']>0" style="color: black; display: inline;" ng-style="getStyle(salGrthNxtLvl)"> {{salGrthNxtLvl}}</p>
+                    <ul ng-if="GrowthFactor['median']>0">
+                        <li>Median Salary at next level is INR {{(GrowthFactor['median'])}} Lakhs ({{GrowthFactor['medianPer']}}% growth)</li>
+                        <!--<li>Salary at your percentile is INR {{perNxtSalary}} Lakhs ({{perNxtGrowth}}% growth)</li>-->
+                    </ul>
+                    <p ng-if="GrowthFactor['HiLevelGrowth']>0" style="font-weight: bold; display: inline">Salary Growth at Highest Level: </p>
+                    <p ng-if="GrowthFactor['HiLevelGrowth']>0" style="color: black; display: inline;" ng-style="getStyle(salGrthHiLvl)"> {{salGrthHiLvl}}</p>
+                    <ul ng-if="GrowthFactor['HiLevelGrowth']>0">
+                        <li>Median Salary at highest level is INR {{yAxisLine[yAxisLine.length-1]}} Lakhs ({{GrowthFactor['HiLevelGrowth']}}%
+                            growth)
+                        </li>
+                        <!--<li>Salary at your percentile is INR {{perHghstSalary}} Lakhs ({{perHghstGrowth}}% growth)</li>-->
+                    </ul>
+                    <p style="font-weight: bold;display: inline;">Average Salary Growth per Level </p>
+                    <!--<p style="color: orange;display: inline;" ng-style="getStyle(salGrthPerLvl)"> {{salGrthPerLvl}}</p>-->
+                    <ul>
+                        <li>On an average, a level jump gets you a salary increase of INR {{GrowthFactor['avgSalary']}} Lakhs
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <div class="row" style="margin-top: 3%">
+        <div class="col-md-4 col-sm-4"></div>
+        <div class="col-md-4 col-sm-4">
+
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <button class="btn btn-block btn-primary" style="width:50%; float: right
+             ;border-radius: 0px;font-family:verdana;word-spacing:2px;"
+                    ui-sref="app.briefreport">BACK            </button>
+        </div>
+    </div>
+</div>

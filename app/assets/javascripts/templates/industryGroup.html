@@ -1,0 +1,62 @@
+<style>
+    .mb-lg {
+        margin-bottom: 10px;
+    }
+
+    .modal-open {
+        overflow: auto;
+    }
+
+    .modal-open .modal {
+        overflow-x: scroll;
+        overflow-y: auto;
+    }
+    .img-height-1{
+        height: 40px;
+    }
+    .button-style{
+        float: right;
+        background: transparent;
+        border: none;
+        font-size: 18px;
+    }
+    .h2-style{
+        font-family:verdana;
+        word-spacing:2px;
+        text-align:center;
+    }
+    .div-style{
+        overflow-y: auto;
+        height: 250px;
+    }
+
+</style>
+<section>
+    <div class="modal-header">
+        
+        <div class="col-md-12">
+            <img src="assets/logo1.png" class="img-rsponsive img-height-1">
+            <button type="button" class="button-style" data-dismiss="modal" aria-hidden="true" ng-click="close()">x</button>
+        </div>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <!--row1-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <h2 class="h2-style"><b>Industry Group </b></h2>
+                    </div>
+                </div>
+                <!--row3-->
+                <div class="row">
+                    <div class=" col-sm-12 col-md-12 col-lg-12" >
+                        <div class="col-sm-12 col-md-12 div-style">
+                            <h4 ng-repeat="ind in allindustries">{{$index+1}}.{{ind}}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,55 @@
+<style>
+    .table{
+        border-bottom: 0px!important;
+    }
+
+    .table td{
+        border-top: 0px!important;
+    }
+    .table
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="col-md-6" style="margin-top: 10%">
+                <div class="col-md-12 mt-lg"
+                     style="height:380px; border: 1px solid #d4d4d4;">
+                    <div class="col-md-12" style="margin-top: 10%" >
+                        <highchart id="chart1"  config="chartConfig"  ></highchart>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-lg" style="margin-top: 8%">
+                    <div class="col-md-6">
+                        <button class="btn btn-block btn-primary btn-md" ui-sref="app.questions">Recalulate</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-block btn-primary btn-md" ui-sref="app.profile">Update Details</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6" style="margin-top: 10%" >
+                <div class=" col-md-10" style="">
+                    <div class="col-md-12 text-center" style="border: 1px solid deepskyblue;border-radius: 55px;">
+                        <p style="font-size: 22px; line-height: 22px; margin-top: 10%"><strong>40% Salary deviation </strong><span style="font-size: 16px"> within your Career Level cohort</span></p>
+                        <h3 style="text-align: center;font-size: 23px">BENCHMARK YOUR COMPENSATION WITH PEERS WITH SIMILAR CAREER LEVEL
+                        </h3>
+                        <div class="form-group text-center">
+                            <table class="table" style="width: 50%!important;"align="center">
+                                <tr><td><p style="color: #8a1f11;">Enter Your CTC</p></td></tr>
+                                <tr><td><input type="text"class="form-control"placeholder="Fixed comp" ng-model="fixedComp"/></td></tr>
+                                <tr><td><input type="text"class="form-control"placeholder="Variable comp" ng-model="varComp"/></td></tr>
+                                <tr><td><input type="text"class="form-control"placeholder="Total" ng-model="fixedComp--varComp" readonly/></td></tr>
+                                <tr><td><button type="button"class="btn btn-warning form-control" ng-click="generateReport()">Compare and Get Report</button></td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="height: 100px"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+

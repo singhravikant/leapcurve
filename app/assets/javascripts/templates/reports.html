@@ -1,0 +1,136 @@
+
+<div id="report" class="report" style="margin-top:8%">
+    <toaster-container toaster-options="{'close-button':true }"></toaster-container>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-10">
+
+                <div class="col-md-12">
+                    <div class="col-md-3">
+                        <h4 ng-if="isbtn1selected" style="font-weight: 600">REPORT(1/4)</h4>
+                        <h4 ng-if="isbtn2selected" style="font-weight: 600">REPORT(2/4)</h4>
+                        <h4 ng-if="isbtn3selected" style="font-weight: 600">REPORT(3/4)</h4>
+                        <h4 ng-if="isbtn4selected" style="font-weight: 600">REPORT(4/4)</h4>
+                    </div>
+                </div>
+                <div class="col-md-12 " >
+                    <div class="col-md-8 " ng-if="isbtn1selected">
+                        <p class="col-md-12 text-center">{{title}}</p>
+                        <div class="col-md-12 col-sm-8 col-xs-8" style="border: 1px solid blue;overflow: hidden">
+                            <highchart id="chart" ng-if="isbtn1selected" config="chartConfig_comp"></highchart>
+                        </div>
+                        <div class="col-md-12" id="rot" style="z-index: 1;text-align: center; margin-left: -16%; margin-top: -25%;">Compensation (INR Lakhs)
+                        </div>
+                        <p class=" col-md-12 text-center">Career Level</p>
+                    </div>
+                    <div class="col-md-8 " ng-if="isbtn4selected">
+                        <div class="col-md-12 col-sm-8 col-xs-8" style="border: 1px solid blue;overflow: hidden;margin-top: 5%">
+                            <div ng-if="isbtn4selected"
+                                 style="font-size: 12px;overflow: auto;text-align: justify;padding: 5px">
+                                <p>An important step in your career development process is understanding how to read
+                                    your current career level and map it to the ideal complexity level for a job in the
+                                    future. You can save this customized report in your Career Vault and share parts of
+                                    this with hiring managers.
+
+                                <p>Career level is an empirical score arrived at after analyzing answers to a series of
+                                    questions related to the complexity of a role, across various factors. It is
+                                    indicative of the distance travelled so far in a career, assuming that higher level
+                                    of experience entails handling greater levels of complex roles. Thus, higher
+                                    complexity in a role makes for a higher career level. </p>
+
+                                <p>Understanding this is vital to your career development. With this, you can focus on
+                                    securing fulfilling roles with greater levels of complexity in the future and not
+                                    just on salary or an organization with a 'name' or �employer-brand'. </p>
+                                </p>
+                                <p>An important step in your career development process is understanding how to read
+                                    your current career level and map it to the ideal complexity level for a job in the
+                                    future. You can save this customized report in your Career Vault and share parts of
+                                    this with hiring managers.
+
+                                <p>Career level is an empirical score arrived at after analyzing answers to a series of
+                                    questions related to the complexity of a role, across various factors. It is
+                                    indicative of the distance travelled so far in a career, assuming that higher level
+                                    of experience entails handling greater levels of complex roles. Thus, higher
+                                    complexity in a role makes for a higher career level. </p>
+
+                                <p>Understanding this is vital to your career development. With this, you can focus on
+                                    securing fulfilling roles with greater levels of complexity in the future and not
+                                    just on salary or an organization with a 'name' or �employer-brand'. </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 " ng-if="isbtn2selected">
+                        <p class="col-md-12 text-center">{{title}}</p>
+                        <div class="col-md-12 col-sm-8 col-xs-8" style="border: 1px solid blue;overflow: hidden">
+                            <highchart id="chart" config="chartConfig_promotion"></highchart>
+                        </div>
+                        <div class="col-md-12" id="rot" style="z-index: 1;text-align: center; margin-left: -16%; margin-top: -25%;"> Career Level
+                        </div>
+                        <p class=" col-md-12 text-center mt-lg"> Frequency</p>
+                    </div>
+                    <div class="col-md-8 " ng-if="isbtn3selected">
+                        <p class="col-md-12 text-center">{{title}}</p>
+                        <div class="col-md-12 col-sm-8 col-xs-8" style="border: 1px solid blue;overflow: hidden">
+                            <highchart id="chart" config="chartConfig_growth"></highchart>
+                        </div>
+                        <div class="col-md-12" id="rot" style="z-index: 1;text-align: center; margin-left: -21%; margin-top: -25%;width:33%">Higest Possible Career Level
+                        </div>
+                        <!--<p class=" col-md-12 text-center">Career Level</p>-->
+                    </div>
+                    <div class="col-md-4 "style="border: 1px solid blue;margin-top: 3%; height: 350px;overflow: auto" ng-hide="isbtn2selected"></div>
+                    <div class="col-md-4 "ng-if="isbtn2selected" style="border: 1px solid blue;height: 350px;overflow: auto"></div>
+                </div>
+                <div class="col-md-12 ">
+                    <div class="col-md-offset-10 col-md-2 ">
+                        <div class="col-md-12">
+                            <button class="btn btn-block  btn-md btn-primary" ng-if="isbtn1selected"
+                                    ng-click="enableButton('button2')">Continue
+                            </button>
+                        </div>
+                        </div>
+                    <div class="col-md-offset-8 col-md-4 ">
+
+                        <div class="col-md-6">
+                        <button class="btn btn-block  btn-md btn-primary mt-lg" ng-if="isbtn2selected" ng-click="enableButton('button1')">
+                            Back
+                        </button>
+                            </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-block  btn-md btn-primary mt-lg" ng-if="isbtn2selected" ng-click="enableButton('button3')">
+                                Continue
+                            </button>
+                        </div>
+                            </div>
+                    <div class="col-md-offset-8 col-md-4 ">
+
+                        <div class="col-md-6">
+                        <button class="btn btn-block  btn-md btn-primary" ng-if="isbtn3selected" ng-click="enableButton('button2')">
+                            Back
+                        </button>
+                            </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-block  btn-md btn-primary" ng-if="isbtn3selected" ng-click="enableButton('button4')">
+                                Continue
+                            </button>
+                        </div>
+                            </div>
+                    <div class="col-md-offset-8 col-md-4 ">
+
+                        <div class="col-md-6">
+                        <button class="btn btn-block  btn-md btn-primary mt-lg" ng-if="isbtn4selected" ng-click="enableButton('button3')">Back
+                        </button>
+                            </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-block  btn-md btn-primary mt-lg" ng-if="isbtn4selected" ui-sref="app.dashboard">Next
+                            </button>
+                        </div>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,67 @@
+<html>
+<head>
+    <style>
+        h1 {
+            color: #3e8f3e6e;
+            font-weight: bold;
+
+        }
+
+        .apply-btn {
+            cursor: pointer;
+            float: right;
+        }
+
+        .job-name {
+            float: left;
+            font-size: 20px;
+            color: gray;
+        }
+
+        .jobs {
+            display: inline-block;
+            padding: 5px;
+            width: 50%;
+        }
+
+        .job-btn {
+            border-radius: 5%;
+            color: white;
+            background-color: #008000;
+            outline: none;
+            border: 0px;
+            padding: 5px 10px 5px 10px;
+        }
+
+        .job-btn:active {
+            background-color: #0080006e;
+        }
+        .job-btn:hover {
+          color: white;
+
+        }
+        .desabled{
+            pointer-events: none;
+            background-color: grey;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    Here you can apply for any job
+</h1>
+<div ng-repeat="job in alljobs track by $index">
+    <div class="jobs">
+        <span class="job-name">{{job['role_designation']}} | {{job['Company']}}</span>
+        <div class="apply-btn  desabled">
+            <a  ng-if="applied_roles.includes(job['role_id'])" target="_blank" class="job-btn desabled" >Apply Now</a>
+        </div>
+        <div class="apply-btn">
+            <a href="corporate/job_application/{{job['role_id']}}" ng-if="!applied_roles.includes(job['role_id'])" target="_blank" class="job-btn">Apply Now</a>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

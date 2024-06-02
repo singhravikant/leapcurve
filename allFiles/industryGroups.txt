@@ -1,0 +1,163 @@
+Industry;Industry Group
+Paper & Forest Products;Chemicals+Machinery+Mining & Metals+Plastics+Shipbuilding+Textiles
+Veterinary;Hospital & Health Care+Medical Devices+Pharmaceuticals
+Graphic Design;Design+Fine Art
+Writing and Editing;Design+Fine Art+Entertainment+Publishing+Sporting Goods
+Leisure, Travel & Tourism;Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants+Food Production+Information Services+Airlines/Aviation+Import and Export+International Trade and Development+Logistics and Supply Chain
+Market Research;Accounting+Business Supplies and Equipment+Human Resources+Import and Export+Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Professional Training & Coaching
+Warehousing;Maritime+Transportation/Trucking/Railroad+Logistics and Supply Chain
+International Affairs;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications
+Manufacturing;Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Research+Aviation & Aerospace+Business Supplies and Equipment+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Packaging and Containers+Retail+Wine and Spirits+Manufacturing
+Online Media;Entertainment+Information Services+Publishing
+Industrial Automation;Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Aviation & Aerospace+Business Supplies and Equipment+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Packaging and Containers+Retail+Wine and Spirits+Heavy Industry
+Photography;Design+Fine Art+Entertainment+Publishing+Sporting Goods+Wine and Spirits
+Legislative Office;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications
+Political Organization;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+e-Learning
+Ranching;Farming+Fishery+Agri Industry
+Human Resources;Human Resources
+Government Relations;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications
+ITES;Information Technology and Services+ITES
+Mechanical or Industrial Engineering;Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Research+Aviation & Aerospace+Business Supplies and Equipment+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Packaging and Containers+Retail+Wine and Spirits
+Farming;Farming+Fishery
+Utilities;Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles
+Automotive;Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding
+Defense & Space;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+Airlines/Aviation
+Textiles;Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles
+Plastics;Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles
+Venture Capital & Private Equity;Banking+Financial Services+Airlines/Aviation+Biotechnology+Defense & Space+Pharmaceuticals+Telecommunications
+Consumer Durables;FMCG+Consumer Durables
+Real Estate;Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Accounting+Import and Export+EPC+Heavy Industry
+Outsourcing/Offshoring;Outsourcing/Offshoring
+Banking;Banking+Financial Services+BFSI
+Architecture & Planning;Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+EPC+Heavy Industry+Infrastructure
+Translation and Localization;Accounting+Business Supplies and Equipment+Human Resources+Import and Export+Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Professional Training & Coaching+Civil Engineering+Mechanical or Industrial Engineering+Research+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants
+Recreational Facilities and Services;Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants+Food Production+Information Services
+Individual & Family Services;Non-Profit Organization Management+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants+BFSI
+Heavy Industry;Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Research+Aviation & Aerospace+Business Supplies and Equipment+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Packaging and Containers+Heavy Industry+Oil & Gas+Oil & Energy
+Cosmetics;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+FMCG
+Events Services;Accounting+Business Supplies and Equipment+Human Resources+Import and Export+Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Professional Training & Coaching+Entertainment+Fine Art+Publishing+Sporting Goods+Wine and Spirits+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants
+Civil Engineering;Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Research+EPC+Heavy Industry+Infrastructure
+Consumer Goods;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Business Supplies and Equipment+Industrial Automation+Mechanical or Industrial Engineering+FMCG
+Construction;Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+EPC+Heavy Industry+Infrastructure
+Financial Services;Banking+Financial Services
+Mental Health Care;Hospital & Health Care+Medical Devices+Pharmaceuticals+Health Care
+Law Enforcement;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications
+Health, Wellness and Fitness;Hospital & Health Care+Medical Devices+Pharmaceuticals+Entertainment+Publishing+Sporting Goods+Health Care
+Computer & Network Security;Computer Software+Information Technology and Services+Internet+Semiconductors
+Motion Pictures and Film;Design+Fine Art+Entertainment+Publishing+Sporting Goods
+Nanotechnology;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+Business Supplies and Equipment+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Packaging and Containers+Airlines/Aviation+Pharmaceuticals
+Telecommunications;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+Airlines/Aviation+Pharmaceuticals
+Transportation;Maritime+Transportation/Trucking/Railroad+Transportation
+Power & Energy;Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles+Power & Energy
+Agri Industry;FMCG+Agri Industry
+e-Learning;Education Management+e-Learning+Research
+Design;Design+Fine Art
+Investment Banking;Banking+Financial Services+BFSI
+Logistics and Supply Chain;Accounting+Business Supplies and Equipment+Human Resources+Import and Export+Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Airlines/Aviation+Hospitality+International Trade and Development+Leisure, Travel & Tourism+Package/Freight Delivery
+Insurance;Banking+Financial Services+BFSI
+Apparel & Fashion;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+FMCG
+Shipbuilding;Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Shipping
+Professional Training & Coaching;Management Consulting+Outsourcing/Offshoring+Professional Training & Coaching+Professional Services+e-Learning+Education Management
+Luxury Goods & Jewelry;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+FMCG
+Retail;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Business Supplies and Equipment+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+FMCG
+Information Technology and Services;Computer Software+Information Technology and Services+Internet+Semiconductors+ITES
+Capital Markets;Banking+Financial Services
+Media Production;Entertainment+Information Services+Publishing+Fine Art+Sporting Goods+Wine and Spirits
+Medical Devices;Hospital & Health Care+Medical Devices+Pharmaceuticals+Health Care
+International Trade and Development;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+e-Learning+Airlines/Aviation+Hospitality+Import and Export+Leisure, Travel & Tourism+Logistics and Supply Chain+Package/Freight Delivery
+Package/Freight Delivery;Package/Freight Delivery+Airlines/Aviation+Import and Export+International Trade and Development+Leisure, Travel & Tourism+Logistics and Supply Chain
+Dairy;Farming+Fishery+Food Production+Agri Industry
+Semiconductors;Computer Software+Information Technology and Services+Internet+Semiconductors
+Government Administration;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications
+Environmental Services;Non-Profit Organization Management+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants
+Tobacco;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+FMCG
+FMCG;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Business Supplies and Equipment+Industrial Automation+Mechanical or Industrial Engineering+FMCG+Consumer Durables+Agri Industry
+Wine and Spirits;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Industrial Automation+FMCG
+Consumer Services;Non-Profit Organization Management+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants
+Management Consulting;Management Consulting
+Mining & Metals;Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles
+Printing;Entertainment+Information Services+Publishing+Fine Art
+Food & Beverages;Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants+Food Production
+Biotechnology;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development
+Publishing;Entertainment+Information Services+Publishing+Fine Art
+Facilities Services;Accounting+Business Supplies and Equipment+Human Resources+Import and Export+Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Professional Training & Coaching+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants
+Supermarkets;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+FMCG
+Broadcast Media;Entertainment+Information Services+Publishing+Fine Art
+Gambling & Casinos;Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants
+Alternative Dispute Resolution;International Trade and Development
+Performing Arts;Design+Fine Art+Entertainment+Publishing
+Accounting;Accounting
+Higher Education;Education Management+e-Learning+Research
+Airlines/Aviation;Airlines/Aviation+Automotive+Machinery+Oil & Energy+Plastics+Biotechnology+Defense & Space+Pharmaceuticals+Telecommunications+Hospitality+Import and Export+International Trade and Development+Leisure, Travel & Tourism+Logistics and Supply Chain+Package/Freight Delivery
+Newspapers;Entertainment+Information Services+Publishing+Fine Art+Sporting Goods+Wine and Spirits
+Chemicals;Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Textiles
+Philanthropy;Non-Profit Organization Management
+Information Services;Information Services
+Trading;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Aviation & Aerospace+Business Supplies and Equipment+Glass, Ceramics & Concrete+Trading
+Health Care;Hospital & Health Care+Medical Devices+Pharmaceuticals+Health Care
+Professional Services;Professional Services
+Consumer Electronics;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Aviation & Aerospace+Business Supplies and Equipment+Industrial Automation+Mechanical or Industrial Engineering
+Computer Games;Entertainment+Publishing+Fine Art+Sporting Goods+Wine and Spirits+Computer Software
+Medical Practice;Hospital & Health Care+Medical Devices+Pharmaceuticals+Health Care
+Business Supplies and Equipment;Business Supplies and Equipment+Import and Export+Logistics and Supply Chain+Consumer Goods+Electrical/Electronic Manufacturing+Industrial Automation+Mechanical or Industrial Engineering+Packaging and Containers+Retail+Consumer Durables
+Security and Investigations;Accounting+Business Supplies and Equipment+Human Resources+Import and Export+Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Professional Training & Coaching+e-Learning+International Trade and Development+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants
+Oil & Energy;Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles+Oil & Gas+Power & Energy
+Oil & Gas;Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles+Oil & Gas
+Libraries;Entertainment+Information Services+Publishing+Fine Art+Sporting Goods+Wine and Spirits+Food & Beverages+Food Production+Hospitality+Leisure, Travel & Tourism+Restaurants
+Investment Management;Banking+Financial Services+BFSI
+Fishery;Farming+Fishery
+Commercial Real Estate;Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate
+Import and Export;Accounting+Business Supplies and Equipment+Human Resources+Import and Export+Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Real Estate+Airlines/Aviation+Hospitality+International Trade and Development+Leisure, Travel & Tourism+Package/Freight Delivery
+Music;Design+Fine Art+Entertainment+Publishing
+EPC;Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+EPC
+Civic & Social Organization;Non-Profit Organization Management+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism+Restaurants
+Renewables & Environment;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+Business Supplies and Equipment+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Packaging and Containers+Retail+Wine and Spirits+e-Learning
+Food Production;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Aviation & Aerospace+Business Supplies and Equipment+Industrial Automation+Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants+FMCG
+Public Policy;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications
+Electrical/Electronic Manufacturing;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Aviation & Aerospace+Business Supplies and Equipment+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+FMCG
+Shipping;Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Shipping
+Non-Profit Organization Management;Non-Profit Organization Management+Government Administration
+Wholesale;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+FMCG+Trading
+Internet;Computer Software+Information Technology and Services+Internet+Semiconductors+e-Commerce
+Railroad Manufacture;Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles
+Furniture;Apparel & Fashion+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Supermarkets+Tobacco+Wholesale+Business Supplies and Equipment+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering
+Marketing and Advertising;Logistics and Supply Chain+Management Consulting+Outsourcing/Offshoring+Design
+Computer Hardware;Computer Software+Information Technology and Services+Internet+Semiconductors
+Religious Institutions;Non-Profit Organization Management+Food & Beverages+Food Production+Hospitality+Information Services+Leisure, Travel & Tourism
+Sports;Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants
+Infrastructure;Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Infrastructure
+Animation;Design+Fine Art
+Primary/Secondary Education;Education Management+e-Learning+Research
+Hospitality;Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants+Food Production+Information Services+Airlines/Aviation+Import and Export+International Trade and Development+Logistics and Supply Chain+Package/Freight Delivery
+Fund-Raising;Non-Profit Organization Management
+Maritime;Maritime+Transportation/Trucking/Railroad
+Pharmaceuticals;Hospital & Health Care+Medical Devices+Pharmaceuticals+Biotechnology+Defense & Space+Health Care
+Packaging and Containers;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Aviation & Aerospace+Business Supplies and Equipment+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering
+Glass, Ceramics & Concrete;Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+Business Supplies and Equipment+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Packaging and Containers+Heavy Industry+Infrastructure
+BFSI;Banking+Financial Services+BFSI
+Hospital & Health Care;Hospital & Health Care+Medical Devices+Pharmaceuticals
+Museums and Institutions;Design+Fine Art+Entertainment+Publishing
+Arts and Crafts;Design+Fine Art+Entertainment+Publishing+Sporting Goods+Wine and Spirits
+Public Relations and Communications;Human Resources+Management Consulting+Outsourcing/Offshoring+Professional Training & Coaching
+Entertainment;Entertainment+Information Services+Publishing+Fine Art+Sporting Goods+Wine and Spirits
+Public Safety;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications
+e-Commerce;Internet+e-Commerce
+Research;Education Management+e-Learning+Research+Civil Engineering+Mechanical or Industrial Engineering
+Restaurants;Food & Beverages+Hospitality+Leisure, Travel & Tourism+Restaurants+Food Production+Information Services
+Computer Networking;Computer Software+Information Technology and Services+Internet+Semiconductors
+Education Management;Education Management+e-Learning+Research
+Staffing;Human Resources+Management Consulting+Outsourcing/Offshoring
+Sporting Goods;Apparel & Fashion+Consumer Goods+Cosmetics+Electrical/Electronic Manufacturing+Food Production+Luxury Goods & Jewelry+Packaging and Containers+Retail+Sporting Goods+Supermarkets+Tobacco+Wholesale+Wine and Spirits+Entertainment+FMCG
+Machinery;Airlines/Aviation+Automotive+Chemicals+Machinery+Mining & Metals+Oil & Energy+Plastics+Railroad Manufacture+Shipbuilding+Textiles
+Computer Software;Computer Software+Information Technology and Services+Internet+Semiconductors
+Think Tanks;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+e-Learning
+Fintech;BFSI+Internet+e-Commerce+Computer Software+FMCG
+Transportation/Trucking/Railroad;Maritime+Transportation/Trucking/Railroad+Transportation
+Building Materials;Architecture & Planning+Building Materials+Civil Engineering+Construction+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Real Estate+EPC+Heavy Industry+Infrastructure
+Wireless;Computer Software+Information Technology and Services+Internet+Semiconductors
+Executive Office;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications
+Judiciary;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications
+Aviation & Aerospace;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications+Consumer Goods+Electrical/Electronic Manufacturing+Food Production+Glass, Ceramics & Concrete+Industrial Automation+Mechanical or Industrial Engineering+Packaging and Containers
+Alternative Medicine;Hospital & Health Care+Medical Devices+Pharmaceuticals
+Military;Aviation & Aerospace+Biotechnology+Defense & Space+Government Administration+International Affairs+International Trade and Development+Telecommunications
+Fine Art;Design+Fine Art+Entertainment+Publishing+Wine and Spirits

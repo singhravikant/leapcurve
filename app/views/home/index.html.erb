@@ -1,0 +1,2599 @@
+<html data-ng-app="naut">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+    .btn-1-1:hover {
+      color: #1f497d !important;
+    }
+
+    @media (min-width: 1500px) {
+
+      .heading {
+        /*padding-top: 25%*/
+      }
+
+    }
+
+    @media (max-width: 1499px) {
+
+      .heading {
+        /*padding-top: 20%*/
+      }
+
+    }
+
+    @media only screen and (max-width: 991px) {
+      .heading {
+
+        float: none;
+      }
+    }
+
+    .button-1 {
+      border-radius: 0%;
+      background-color: #797878;
+      border-color: #797878;
+      font-family: Montserrat-Bold;
+      font-size: 13px;
+      width: 100%;
+    }
+
+    .button-1:hover {
+      background-color: #434242;
+    }
+
+    .button-1:hover, .button-1:focus {
+      background-color: #434242;
+    }
+
+    .find-btn:hover {
+      background-color: transparent;
+    }
+
+    .forgot:hover {
+      color: black;
+    }
+
+    .signup:hover, .signup:focus {
+
+      color: black;
+    }
+
+    @-moz-document url-prefix() {
+      .forgot {
+        left: -52px !important;
+        position: relative;
+        cursor: pointer;
+        color: black;
+        font-family: Montserrat-Bold;
+        font-size: 11px;
+      }
+    }
+
+    .forgot {
+      left: -28px;
+      position: relative;
+      cursor: pointer;
+      color: black;
+    }
+
+    .signup {
+      position: relative;
+      left: 12px;
+      color: black;
+    }
+
+    .btn-li {
+
+      left: 10px;
+    }
+
+    a.visible-xs.signup-1 {
+      position: relative;
+      top: 27px;
+      right: 30px;
+      float: right;
+    }
+
+    @media (min-width: 200px) and (max-width: 991px) {
+      .login-1 {
+        display: none;
+      }
+    }
+
+    @media (min-width: 200px) and (max-width: 991px) {
+      .heading {
+        margin: 50px 0px 0px 0px;
+
+      }
+    }
+
+    @media (min-width: 469px) and (max-width: 991px) {
+      .heading {
+        font-size: 30px !important;
+      }
+    }
+
+    @media (min-width: 469px) and (max-width: 991px) {
+      .heading-1 {
+        font-size: 30px !important;
+
+      }
+    }
+
+    @media (min-width: 200px) and (max-width: 468px) {
+      .heading {
+        font-size: 23px !important;
+      }
+    }
+
+    @media (min-width: 200px) and (max-width: 468px) {
+      .heading-1 {
+        font-size: 23px !important;
+
+      }
+    }
+
+    @media (min-width: 200px) and (max-width: 475px) {
+      .assess-btn {
+        font-size: 15px !important;
+      }
+    }
+
+    @media (min-width: 200px) and (max-width: 350px) {
+      .find-btn {
+        font-size: 12px !important;
+        padding: 0px !important;
+      }
+    }
+
+    @media (min-width: 351px) and (max-width: 475px) {
+      .find-btn {
+        font-size: 14px !important;
+        padding: 0px !important;
+      }
+    }
+
+    .img-brand {
+      height: 70px;
+    }
+
+    .signup-1 {
+      font-family: Montserrat-Bold;
+      font-size: 15px
+    }
+
+    .dash-log {
+      margin-top: 1%;
+    }
+
+    .ul-nav {
+      list-style: none;
+      float: right;
+    }
+
+    .ul-nav .li-1 {
+      padding-right: 20px;
+    }
+
+    .ul-nav .li-1 .input-1 {
+      border-radius: initial;
+      border: none;
+      width: 100%;
+      padding: 0px;
+      border-bottom: 2px solid gray;
+      font-family: Montserrat-Regular;
+      font-size: 15px
+    }
+
+    .ul-nav .li-1 .signup {
+      font-family: Montserrat-Bold;
+      font-size: 11px
+    }
+
+    .ul-nav .input-2 {
+      border: none;
+      width: 100%;
+      padding: 0px;
+      border-radius: initial;
+      border-bottom: 2px solid gray;
+      font-family: Montserrat-Regular;
+      font-size: 15px
+    }
+
+    .ul-nav .forgot {
+      font-family: Montserrat-Bold;
+      font-size: 11px
+    }
+
+    .logout-btn {
+      border-radius: 0%;
+      font-family: Montserrat-Bold;
+      font-size: 13px;
+      width: 100%;
+    }
+
+    .form-div {
+      margin-right: -10px;
+    }
+
+    .h4-div {
+      padding: 0%;
+    }
+
+    .h4-div h4 {
+      font-size: 13px;
+      padding: 0;
+      margin-top: -2%;
+      margin-left: -2%;
+      cursor: pointer;
+    }
+
+    .heading {
+      color: black;
+      font-size: 40px;
+      text-align: center;
+      font-family: Poppins-Bold;
+      font-size: 37px;
+    }
+
+    .heading span {
+      /*font-weight: 300;*/
+    }
+
+    .heading-1 {
+      font-weight: 300;
+      font-size: 37px;
+      color: #000000;
+      margin: 0px;
+      font-family: Poppins-Regular;
+    }
+
+    .learn-btn {
+      margin-top: -10px;
+      margin-bottom: 30px;
+    }
+
+    .learn-btn .btn {
+      font-size: 15px;
+      box-shadow: none;
+      background: transparent;
+      font-family: Poppins-Regular;
+      font-size: 19.5px;
+    }
+
+    .mt-lg-1 {
+      margin-bottom: 1%;
+    }
+
+    .assess-btn {
+      font-family: Montserrat-Bold;
+      background: #154177;
+      font-size: 20px;
+      color: white;
+      border-radius: unset;
+      padding: 4% 0%;
+    }
+
+    .assess-btn span {
+      font-family: Montserrat-Bold;
+    }
+
+    .assess-btn:hover {
+      color: white;
+    }
+
+    .find-btn {
+      font-family: Montserrat-Bold;
+      font-size: 20px;
+      background: white;
+      color: #1f497d;
+      border: 2px solid #1f497d;
+    }
+
+    .find-btn span {
+      font-family: Montserrat-Regular;
+      font-weight: 100;
+    }
+
+    .job-div {
+      margin-bottom: 10%;
+    }
+
+    @media (max-width: 991px) {
+      .visible-xs {
+        display: block !important;
+      }
+    }
+  </style>
+  <style>
+
+    .loader-overlay1 {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1031;
+
+    }
+
+    .loader1 {
+      position: fixed;
+      z-index: 1032;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid gray;
+      border-bottom: 16px solid gray;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    @media (max-width: 991px) {
+      .loader1 {
+        position: fixed;
+        z-index: 1032;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 6px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 6px solid gray;
+        border-bottom: 6px solid gray;
+        width: 60px;
+        height: 60px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+      }
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+  </style>
+</head>
+<body data-ng-controller="DashboardController1">
+<script>
+    $(document).ready(function () {
+        $("#signup-1").click(function () {
+            $("#show1").show();
+        });
+    });
+
+</script>
+<script>
+    $(".new-nav ul li a[href^='#']").on('click', function (e) {
+
+        // prevent default anchor click behavior
+        e.preventDefault();
+
+        // store hash
+        var hash = this.hash;
+
+        // animate
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1000, function () {
+
+            // when done, add hash to url
+            // (default click behaviour)
+            window.location.hash = hash;
+        });
+
+    });
+</script>
+<style>
+
+  .new-nav {
+
+  }
+
+  .new-nav .ul-links {
+    list-style: none;
+    padding-top: 12px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .new-nav .ul-login {
+    list-style: none;
+    padding-top: 12px;
+    padding-left: 0;
+    /*text-align: center;*/
+  }
+
+  .new-nav .ul-links li {
+    display: inline-block;
+    position: relative;
+  }
+
+  .new-nav .ul-login li {
+    display: inline-block;
+    position: relative;
+  }
+
+  .new-nav .ul-links li a {
+    cursor: pointer;
+    color: #404040;
+    font-size: 12px;
+    padding: 0 12px;
+    border-right: 1px solid;
+  }
+
+  .new-nav .ul-links li a:active {
+    font-weight: bold;
+  }
+
+  .new-nav .ul-login li a {
+    cursor: pointer;
+    color: white;
+    padding: 4px 14px;
+    font-family: Montserrat-Bold;
+    background: #4c4c4c;
+  }
+
+  .main-div {
+    /*background: url("/assets/Home Page.jpg");*/
+    /* Create the parallax scrolling effect */
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: transparent;
+
+  }
+
+  .resize {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+    transition: height 0s;
+  }
+
+  #navbar {
+    background: white;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    /*border-bottom: 7px solid lightgoldenrodyellow;*/
+    z-index: 3;
+    width: 100%
+  }
+
+  .accelerate-span {
+    color: #154177;
+  }
+
+  .how-work-1, .how-work-2, .how-work-3, .corporate-login, .coroporate-home {
+    padding: 0;
+  }
+
+  .how-work-2 {
+
+  }
+
+  .how-work-3 {
+
+  }
+
+  .corporate-login {
+
+  }
+
+  .coroporate-home {
+
+  }
+
+  body, html {
+    height: 100%;
+  }
+
+  .active {
+    font-weight: bold;
+  }
+
+  .assess-h1 {
+    font-size: 70px;
+    margin: 0;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-family: Poppins-bold;
+    color: #008ec16e;
+  }
+
+  @media (min-width: 991px) and (max-width: 1366px) {
+    .assess-h1 {
+      font-size: 70px !important;
+      margin: 0 !important;
+      margin-top: 10px !important;
+      padding-bottom: 20px !important;
+      font-family: Poppins-bold !important;
+      color: #008ec16e !important;
+    }
+
+    .how-do-h1 {
+      font-size: 16px !important;
+      color: #464646 !important;
+      margin-top: 0 !important;
+      font-family: Montserrat-Regular !important;
+    }
+
+    .assess-ul {
+      list-style: none !important;
+      font-family: Poppins-Regular !important;
+      padding-left: 15px !important;
+      font-size: 14px !important;
+      color: #464646 !important;
+    }
+
+    .assess-p {
+      font-size: 16px !important;
+      line-height: 15px !important;
+      color: #464646 !important;
+      font-family: Poppins-Regular !important;
+    }
+
+    .answer-design-text {
+      line-height: 20px !important;
+    }
+
+    .compare-h1 {
+      font-size: 70px;
+      padding-bottom: 2%;
+      font-family: Poppins-bold;
+      margin-top: 10px;
+      color: #faa61a6e;
+    }
+
+    .contact-h1 {
+      position: relative !important;
+
+    }
+
+    .contact-h3 {
+      /*padding-top: 2% ;*/
+    }
+
+    textarea {
+      /*padding: 15% 0;*/
+    }
+
+  }
+
+  .assess-change-color {
+    color: #008ec1;
+    font-family: Montserrat-Bold;
+  }
+
+  .answer-design-text {
+    font-size: 18px;
+    font-family: Poppins-Regular;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 5px;
+
+  }
+
+  .how-do-h1 {
+    font-size: 18px;
+    color: #464646;
+    /*margin-top: 0;*/
+    font-family: Montserrat-Regular;
+  }
+
+  .assess-ul {
+    list-style: none;
+    font-family: Poppins-Regular;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #464646;
+  }
+
+  .assess-ul > li {
+    position: relative;
+    float: left;
+    display: block;
+    width: 97%;
+  }
+
+  .assess-ul > span {
+    position: relative;
+    float: left;
+    width: 3%;
+  }
+
+  .assess-ul > li:before {
+    /*content: "-";*/
+    /*text-indent: -5px;*/
+  }
+
+  .corporate-ul {
+    list-style: none;
+    font-family: Montserrat-Regular;
+    padding-left: 15px;
+    font-size: 18px;
+    color: #2f2f2f;
+    line-height: 40px;
+    /*padding: 3% 0;*/
+  }
+
+  .txt-reg ::placeholder {
+    color: #2f2f2f;
+  }
+
+  .corporate-ul > li {
+    text-indent: -5px;
+  }
+
+  .corporate-ul > li:before {
+    content: "-";
+    text-indent: -5px;
+  }
+
+  .assess-padd {
+    padding: 0 40px;
+  }
+
+  .benchmark-h1 {
+    font-size: 20px;
+    font-family: Poppins-Regular;
+    /*font-weight: bold;*/
+    margin-top: 0;
+  }
+
+  .compare-h1 {
+    font-size: 70px;
+    padding-bottom: 2%;
+    font-family: Poppins-bold;
+    margin-top: 20px;
+    color: #faa61a6e;
+  }
+
+  .benchmark-h1 span {
+    color: #faa61a;
+    font-family: Poppins-bold;
+  }
+
+  .compare-div {
+    /*padding-top: 3%;*/
+  }
+
+  .compare-img-div {
+    padding: 2% 10% 0;
+  }
+
+  .report-btn {
+    background: #faa61ae0;
+    padding: 15px 70px;
+    color: white;
+    outline: none !important;
+    font-size: 20px;
+    font-family: Montserrat-bold;
+  }
+
+  .view-recomm-btn {
+    background: #e60424e0;
+    padding: 3% 3%;
+    color: white;
+    cursor: pointer;
+    outline: none !important;
+    font-size: 20px;
+    font-family: Montserrat-bold;
+  }
+
+  .view-recomm-btn:hover {
+    color: white;
+  }
+
+  .report-btn:hover {
+    color: white;
+  }
+
+  .acheve-para span {
+    color: #e60424;
+    font-family: Poppins-bold;
+
+  }
+
+  .acheve-para {
+    padding: 30% 20% 10% 0;
+    font-size: 20px;
+    font-family: Poppins-Regular
+  }
+
+  .corporate-div-col {
+    padding: 3% 0 0 5%;
+  }
+
+  .corporate-h1 {
+    font-size: 20px;
+    font-family: Poppins-Regular;
+    color: #2f2f2f;
+    line-height: 25px;
+  }
+
+  .corporate-ul span, .corporate-h1 span {
+    color: #204a54;
+    font-family: "poppins-semibold";
+  }
+
+  .corporate-div-col a {
+    text-decoration: underline;
+    color: #204a54;
+    cursor: pointer;
+    /*font-weight: bold;*/
+    font-size: 13px;
+    font-family: Poppins-bold;
+
+  }
+
+  .corporate-div-col p span {
+
+  }
+
+  .menu-contact {
+    border: none !important;
+  }
+
+  .frc1 {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  .frc1 img {
+    width: 100%;
+    position: relative;
+    float: right;
+  }
+
+  .frc2 {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  .frc2 img {
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-top: -15%;
+
+  }
+
+  .frc3 {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  .frc3 img {
+    width: 100%;
+    position: relative;
+    float: right;
+    margin-top: -15%;
+  }
+
+  .modal-div {
+    position: relative;
+    float: left;
+    width: 100%;
+    display: block;
+    padding: 0% 0 0 23%;
+
+  }
+
+  .border-div {
+    position: fixed;
+    /* display: block; */
+    min-height: 1px;
+    /* float: left; */
+    z-index: 5;
+    margin-top: 70px;
+    border-bottom: 5px solid transparent;
+    width: 100%;
+  }
+</style>
+<style>
+  .section {
+    position: relative;
+    display: block;
+    padding: 0px 24%;
+    text-align: center;
+    float: left;
+  }
+
+  .article {
+    padding-left: 0%;
+    padding-right: 0%;
+    position: relative;
+    float: left;
+    display: block;
+    width: 100%;
+  }
+
+  .form-div {
+    text-align: center;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+  }
+
+  form {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  .form-div h3 {
+    text-align: center;
+    font-family: Poppins-SemiBold;
+    padding-top: 30%;
+    font-size: 18px;
+  }
+
+  .heading-with-span {
+    font-family: Poppins-Regular;
+    color: #000000;
+  }
+
+  .for-link {
+    text-decoration: underline;
+    color: #000000cf;
+    float: right;
+    font-family: Montserrat-Regular;
+    cursor: pointer;
+    font-size: 17px;
+  }
+
+  .for-link:hover {
+    color: #000000cf;
+
+  }
+
+  .reg-link {
+    text-decoration: none;
+    background-color: #9bbcc3;
+    cursor: pointer;
+    padding: 4%;
+    margin-top: 5% !important;
+    width: 100%;
+    font-family: Poppins-SemiBold;
+    margin-top: -2%;
+    float: none;
+    outline: none;
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 22px;
+  }
+
+  .reg-link:hover {
+    color: white
+  }
+
+  .txt-field {
+    border-bottom: 2px solid #2f2f2f !important;
+    padding: 2%;
+    background: transparent;
+    position: relative;
+    color: black;
+    border: none;
+    padding-top: 10%;
+    box-shadow: none;
+    width: 100%;
+    outline: none;
+    float: left;
+    font-size: 15px;
+  }
+
+  .input-field {
+    display: block;
+    position: relative;
+    padding: 5% 12% 5% 12%;
+    width: 100%;
+    text-align: center;
+    padding: 1% 0% 1.5%;
+    min-height: 1%;
+  }
+
+  .submit-btn {
+    border: none;
+    background-color: #a9ccd4;
+    cursor: pointer;
+    padding: 4%;
+    font-family: Poppins-SemiBold;
+    display: block;
+    outline: none;
+    width: 100%;
+    color: #4c4c4c;
+    margin-top: 10%;
+    font-size: 22px;
+  }
+
+  .txt-reg {
+    width: 100%;
+    position: relative;
+    float: left;
+    display: block;
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 15px;
+    text-align: left;
+    font-family: Montserrat-Regular;
+  }
+
+  .not {
+    color: red;
+  }
+
+  .sort {
+    position: absolute;
+    width: 100%;
+    border: 2px solid gray;
+    overflow: hidden;
+    z-index: 3;
+    left: 0;
+    padding: 20px 2% 5px 2%;
+    right: 0;
+    background-color: #fff;
+  }
+
+  #advance {
+    display: none;
+  }
+
+  .close-col {
+    display: block;
+  }
+
+  .close1 {
+    cursor: pointer;
+    position: absolute;
+    right: 7px;
+    top: 0px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .col {
+      display: unset;
+      vertical-align: top;
+      height: 100%;
+    }
+  }
+
+  .forget-email {
+    padding: 6px 24px;
+    margin: 20px 0;
+    outline: none;
+  }
+
+  .sort-para {
+    font-size: 15px;
+  }
+
+  .forget-btn {
+    width: 34%;
+    margin: 10px 0;
+    boredr: non;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background: #ededed;
+  }
+
+  .corporate-h3 {
+    font-weight: bold;
+    color: #204a54;
+    font-size: 20px;
+    font-family: Poppins-bold;
+  }
+
+  .contact-section {
+    width: 100%;
+    padding: 0 40%;
+    float: left;
+  }
+
+  textarea {
+    resize: none;
+    width: 100%;
+    border: 2px solid #4c4c4c;
+    text-align: center;
+    overflow: hidden;
+    background: transparent;
+    padding: 24% 0;
+  }
+
+  .textarea {
+    padding-top: 15%;
+  }
+
+  .corporate-place ::placeholder {
+    text-align: center;
+    color: #4c4c4c;
+    opacity: unset;
+    font-family: Montserrat-Regular;
+  }
+
+  .corporate-place .txt-field, textarea {
+    border-bottom: 2px solid #4c4c4c !important;
+  }
+
+  .contact-login {
+    font-size: 21px;
+    font-family: Montserrat-Regular;
+    box-shadow: none !important;
+    color: #4c4c4c !important;
+    border: none;
+    /* font-weight: 800; */
+    background: transparent;
+  }
+
+  .send-contact {
+    position: relative;
+    top: 4px;
+    color: #4c4c4c;
+    font-size: 35px;
+  }
+
+  .contact-h3 {
+    text-align: center;
+    font-family: Poppins-bold;
+    padding-top: 3%;
+    color: #4c4c4c;
+    font-size: 20px;
+  }
+
+  .contact-h1 {
+    font-size: 70px;
+    position: absolute;
+    width: 100%;
+    /* padding: 0 2%; */
+    text-align: right;
+    /*line-height: .90;*/
+    color: #4c4c4c6e;
+    font-family: Poppins-bold;
+    bottom: 0px !important;
+    display: block;
+    /*margin: 0;*/
+    float: left;
+
+  }
+
+  .corporate-head {
+    font-size: 70px;
+    margin: 0;
+    text-align: left;
+    color: #bcbebd;
+    font-family: Poppins-bold;
+    padding: 2% 0;
+  }
+
+  .assess-p {
+    font-size: 16px;
+    /*line-height: 15px;*/
+    color: #464646;
+    font-family: Poppins-Regular;
+  }
+
+  body {
+    background-color: transparent;
+    /*overflow: scroll !important;*/
+  }
+
+  .home3 {
+    background: url("/assets/corporate.jpg");
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .home2 {
+    background: url("/assets/access.jpg");
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .home21 {
+    background: url("/assets/compare.jpg");
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .home22 {
+    background: url("/assets/Explore.jpg");
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .home4 {
+    background: url("/assets/contact.jpg");
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    heigth: auto;
+  }
+
+  .get-start-btn {
+    padding: 3% 34%;
+  }
+
+  .home {
+    background: url("/assets/Home Page.jpg") no-repeat center center fixed;
+    display: block;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    opacity: 85;
+    overflow-x: hidden;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+  #home-par {
+    background: url("/assets/corporate.jpg") no-repeat center center fixed;
+    display: block;
+    height: 100%;
+    position: fixed;
+    overflow: scroll;
+    width: 100%;
+    overflow-x: hidden;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+  #services {
+    z-index: 2;
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  .assess-animation {
+    -webkit-animation: example ease-in;
+    -o-animation: example ease-in;
+    animation: example ease-in;
+
+    -webkit-animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    -o-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+
+    /*-webkit-animation-delay: 1s;*/
+    /*-moz-animation-delay: 1s;*/
+    /*-o-animation-delay:1s;*/
+    /*animation-delay: 1s;*/
+  }
+
+  @keyframes example {
+    0% {
+      left: -10%;
+      top: 0;
+      opacity: 0;
+    }
+    25% {
+      left: -7.5%;
+      top: 0;
+      opacity: 0.25;
+    }
+    50% {
+      left: -5%;
+      top: 0;
+      opacity: 0.5;
+    }
+    75% {
+      left: -2.5%;
+      top: 0;
+      opacity: 0.75;
+    }
+    100% {
+      left: 0%;
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes example {
+    0% {
+      left: -10%;
+      top: 0;
+      opacity: 0;
+    }
+    25% {
+      left: -7.5%;
+      top: 0;
+      opacity: 0.25;
+    }
+    50% {
+      left: -5%;
+      top: 0;
+      opacity: 0.5;
+    }
+    75% {
+      left: -2.5%;
+      top: 0;
+      opacity: 0.75;
+    }
+    100% {
+      left: 0%;
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  /*.assess-animation2{*/
+  /*padding-left: 15%;*/
+  /*}*/
+
+  .assess-animation2 {
+    -webkit-animation: example2 ease-in;
+    -o-animation: example2 ease-in;
+    animation: example2 ease-in;
+
+    -webkit-animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    -o-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+
+    /*-webkit-animation-delay: 1s;*/
+    /*-moz-animation-delay: 1s;*/
+    /*-o-animation-delay:1s;*/
+    /*animation-delay: 1s;*/
+  }
+
+  @keyframes example2 {
+    0% {
+      left: 10%;
+      top: 0;
+      opacity: 0;
+      transform: rotateY(90deg);
+    }
+    25% {
+      left: 7.5%;
+      top: 0;
+      opacity: 0.25;
+      transform: rotateY(70deg);
+    }
+    50% {
+      left: 5%;
+      top: 0;
+      opacity: 0.5;
+      transform: rotateY(50deg);
+    }
+    75% {
+      left: 2.5%;
+      top: 0;
+      opacity: 0.75;
+      transform: rotateY(25deg);
+    }
+    100% {
+      left: 0%;
+      top: 0;
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
+  }
+
+  @-webkit-keyframes example2 {
+    0% {
+      left: 10%;
+      top: 0;
+      opacity: 0;
+      transform: rotateY(90deg);
+    }
+    25% {
+      left: 7.5%;
+      top: 0;
+      opacity: 0.25;
+      transform: rotateY(70deg);
+    }
+    50% {
+      left: 5%;
+      top: 0;
+      opacity: 0.5;
+      transform: rotateY(50deg);
+    }
+    75% {
+      left: 2.5%;
+      top: 0;
+      opacity: 0.75;
+      transform: rotateY(25deg);
+    }
+    100% {
+      left: 0%;
+      top: 0;
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
+  }
+
+  .assess-animation3 {
+    -webkit-animation: example3 ease-in;
+    -o-animation: example3 ease-in;
+    animation: example3 ease-in;
+
+    -webkit-animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    -o-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+
+    /*-webkit-animation-delay: 1s;*/
+    /*-moz-animation-delay: 1s;*/
+    /*-o-animation-delay:1s;*/
+    /*animation-delay: 1s;*/
+  }
+
+  @keyframes example3 {
+    0% {
+      left: 10%;
+      top: 0;
+      opacity: 0;
+      transform: rotateY(90deg);
+    }
+    25% {
+      left: 7.5%;
+      top: 0;
+      opacity: 0.25;
+      transform: rotateY(70deg);
+    }
+    50% {
+      left: 5%;
+      top: 0;
+      opacity: 0.5;
+      transform: rotateY(50deg);
+    }
+    75% {
+      left: 2.5%;
+      top: 0;
+      opacity: 0.75;
+      transform: rotateY(25deg);
+    }
+    100% {
+      left: 0%;
+      top: 0;
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
+  }
+
+  @-webkit-keyframes example3 {
+    0% {
+      left: 10%;
+      top: 0;
+      opacity: 0;
+      transform: rotateY(90deg);
+    }
+    25% {
+      left: 7.5%;
+      top: 0;
+      opacity: 0.25;
+      transform: rotateY(70deg);
+    }
+    50% {
+      left: 5%;
+      top: 0;
+      opacity: 0.5;
+      transform: rotateY(50deg);
+    }
+    75% {
+      left: 2.5%;
+      top: 0;
+      opacity: 0.75;
+      transform: rotateY(25deg);
+    }
+    100% {
+      left: 0%;
+      top: 0;
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
+  }
+
+  .assess-animation-compare {
+    -webkit-animation: compare ease-in;
+    -o-animation: compare ease-in;
+    animation: compare ease-in;
+
+    -webkit-animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    -o-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+
+    /*-webkit-animation-delay: 1s;*/
+    /*-moz-animation-delay: 1s;*/
+    /*-o-animation-delay:1s;*/
+    /*animation-delay: 1s;*/
+  }
+
+  @keyframes compare {
+    0% {
+      left: 10%;
+      top: 0;
+      opacity: 0;
+    }
+    25% {
+      left: 7.5%;
+      top: 0;
+      opacity: 0.25;
+    }
+    50% {
+      left: 5%;
+      top: 0;
+      opacity: 0.5;
+    }
+    75% {
+      left: 2.5%;
+      top: 0;
+      opacity: 0.75;
+    }
+    100% {
+      left: 0%;
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes compare {
+    0% {
+      left: 10%;
+      top: 0;
+      opacity: 0;
+    }
+    25% {
+      left: 7.5%;
+      top: 0;
+      opacity: 0.25;
+    }
+    50% {
+      left: 5%;
+      top: 0;
+      opacity: 0.5;
+    }
+    75% {
+      left: 2.5%;
+      top: 0;
+      opacity: 0.75;
+    }
+    100% {
+      left: 0%;
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  .assess-animation-comparebtn {
+    -webkit-animation: comparebtn ease-in;
+    -o-animation: comparebtn ease-in;
+    animation: comparebtn ease-in;
+
+    -webkit-animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    -o-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+
+    /*-webkit-animation-delay: 1s;*/
+    /*-moz-animation-delay: 1s;*/
+    /*-o-animation-delay:1s;*/
+    /*animation-delay: 1s;*/
+  }
+
+  @keyframes comparebtn {
+    0% {
+      top: 200px;
+      left: 0;
+      opacity: 0;
+    }
+    25% {
+      top: 150px;
+      left: 0;
+      opacity: 0.25;
+    }
+    50% {
+      top: 100px;
+      left: 0;
+      opacity: 0.5;
+    }
+    75% {
+      top: 50px;
+      left: 0;
+      opacity: 0.75;
+    }
+    100% {
+      top: 0%;
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes comparebtn {
+    0% {
+      top: 200px;
+      left: 0;
+      opacity: 0;
+    }
+    25% {
+      top: 150px;
+      left: 0;
+      opacity: 0.25;
+    }
+    50% {
+      top: 100px;
+      left: 0;
+      opacity: 0.5;
+    }
+    75% {
+      top: 50px;
+      left: 0;
+      opacity: 0.75;
+    }
+    100% {
+      top: 0%;
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  .app-container {
+    overflow: hidden !important;
+    height: auto !important;
+  }
+
+  .opacity-assess {
+    position: relative;
+    opacity: 0;
+    left: -10%;
+  }
+
+  .opacity-assess2 {
+    position: relative;
+    opacity: 0;
+    left: 10%;
+  }
+
+  /*.maped-div{*/
+  /*position: absolute;*/
+  /*margin-top:-70px;*/
+  /*z-index: -1;*/
+  /*}*/
+
+  .compare-btn-div {
+    padding: 3% 0;
+  }
+
+  .out-div {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    border-top: 5px solid #f2f6f9;
+
+  }
+
+  .inner-div {
+    position: relative;
+    top: 57% !important;
+    left: 50%;
+    transform: translate(-49%, -40%);
+    vertical-align: middle;
+  }
+
+  .corpo-row-padd {
+    padding-left: 15%;
+    padding-top: 3%;
+  }
+</style>
+
+<toaster-container toaster-options="{'close-button':true }"></toaster-container>
+<div ng-class="hide" class="{{hide}}" id="loader">
+  <div class="loader1"></div>
+  <div class="loader-overlay1"></div>
+</div>
+<div class="row nav-row fixed-top hidden-xs hidden-sm" id="navbar">
+  <div class="navbar-header col-sm-3 col-md-3 ">
+    <img src="/assets/logo1.png" class="navbar-brand img-brand" class="img-responsive">
+  </div>
+
+  <a class="visible-xs signup-1" ng-click="openSignUp()" href="#">LOGIN </a>
+
+  <div class=" text-right dash-log" ng-if="!dash.isLogin">
+    <div class=" col-md-6 col-lg-6 col-sm-6 new-nav">
+      <ul class="ul-links" id="links">
+        <li><a class="act active" href="#home1" ng-click="changeHeight()">HOME</a></li>
+        <li><a class="act" href="#home2" ng-click="changeHeight()">HOW IT WORKS</a></li>
+        <li><a class="act" href="#home3" ng-click="changeHeight()">CORPORATES</a></li>
+        <li><a class="act menu-contact" href="#home4" ng-click="changeHeight()">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <div class=" col-md-3 col-lg-3 col-sm-3 new-nav">
+
+      <ul class="ul-login">
+        <li><a ng-click="openSignUp()">LOGIN</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="col-sm-9 col-md-9  text-right  dash-log" ng-if="dash.isLogin">
+    <form>
+      <div class="col-md-2  col-sm-2 pull-right login-1">
+        <button type="submit" ng-click="logout()" class="btn btn-primary btn-sm button-1 logout-btn">LOGOUT
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+<!--add border bottom-->
+<div class="border-div" id="add-border"></div>
+
+
+<style>
+  div.navbar-collapse.collapse {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    overflow-y: hidden !important;
+    padding: 0;
+    max-height: 0px;
+    -webkit-transition: max-height .3s ease;
+    -moz-transition: max-height .3s ease;
+    -o-transition: max-height .3s ease;
+    transition: max-height .3s ease;
+  }
+
+  .collapse {
+    overflow-y: hidden;
+  }
+
+  .navbar-collapse {
+    overflow-y: hidden !important;
+    transition-duration: 0.3s;
+  }
+
+  div.navbar-collapse.collapse.in {
+    max-height: 100%;
+  }
+
+  .collapse-btn {
+    margin-top: 20px;
+    padding-right: 20px;
+    boredr: non;
+    border: none;
+    background-color: transparent;
+  }
+
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #fff;
+  }
+
+  .collapse-a a {
+    font-size: 13px;
+    color: black !important;
+  }
+
+  .collapse-div {
+    border-bottom: 2px solid black;
+  }
+
+  @media only screen and (max-width: 425px) {
+    .navbar-header {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .navbar-header {
+      float: right;
+      width: 100%;
+      padding: 0px;
+    }
+
+    /*.nav>li {*/
+    /*position: relative;*/
+    /*display: block;*/
+    /*}*/
+    /*.navbar-nav {*/
+    /*float: left;*/
+    /*width: 100%;*/
+    /*margin: 0;*/
+    /*}*/
+  }
+
+  .collapse-a {
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+  }
+
+  .collapse-a li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .btn-bar-icon {
+    opacity: 1;
+    position: absolute;
+    margin-top: -7px;
+
+    -webkit-transition: opacity .01s;
+    -moz-transition: opacity .01s;
+    -ms-transition: opacity .01s;
+    -o-transition: opacity .01s;
+    transition: opacity .01s;
+  }
+
+  .btn-cross-icon {
+    opacity: 0;
+    -webkit-transition: opacity .05s;
+    -moz-transition: opacity .05s;
+    -ms-transition: opacity .05s;
+    -o-transition: opacity .05s;
+    transition: opacity .05s;
+  }
+
+  .active-nav-btn .btn-cross-icon {
+    opacity: 1 !important;
+  }
+
+  .active-nav-btn .btn-bar-icon {
+    opacity: 0 !important;
+  }
+
+  .icon-1 {
+    transform: rotate(45deg);
+  }
+
+  .icon-2 {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 5px;
+  "
+  }
+
+  @media (max-width: 551px) {
+    .section {
+      padding: 0 10%;
+      padding-bottom: 7%;
+    }
+
+    .contact-section {
+      padding: 0 10%;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .main-div {
+      background: url("/assets/Home Page.jpg");
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      /*background-position: center;*/
+      background-repeat: no-repeat;
+      background-size: cover;
+      /*background: transparent;*/
+    }
+  }
+
+  @media (max-width: 991px) {
+    .main-div {
+      background: url("/assets/Home Page.jpg");
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      /*background-position: center;*/
+      background-repeat: no-repeat;
+      background-size: cover;
+      /*background: transparent;*/
+    }
+
+    .corpo-row-padd {
+      padding-left: unset;
+    }
+
+    .mob-nav-ul li a {
+      text-align: center;
+    }
+
+    .mob-assess-btn {
+      padding: 0;
+    }
+
+    .mob-getstart {
+      padding: 0 25%;
+    }
+
+    .mob-assess-h1 {
+      font-size: 30px;
+      text-align: center;
+      margin: 0;
+      margin-top: 40px;
+      padding-bottom: 40px;
+      font-family: Poppins-bold;
+      color: #97c6df;
+    }
+
+    .mob-corporate-head {
+      font-size: 30px;
+      margin: 0;
+      margin-top: 10%;
+      text-align: center;
+      color: #bcbebd;
+      font-family: Poppins-bold;
+      padding: 2% 0;
+    }
+
+    .mob-contact-h1 {
+      font-size: 30px;
+      position: relative;
+      width: 100%;
+      padding: 0 2%;
+      text-align: center;
+      color: #bcbebd;
+      font-family: Poppins-bold;
+      bottom: 0px !important;
+      display: block;
+      float: left;
+    }
+
+    .mob-compare-h1 {
+      font-size: 30px;
+      padding-bottom: 5%;
+      font-family: Poppins-bold;
+      margin-top: 20px;
+      color: #fdd6a9;
+      text-align: center;
+    }
+
+    .mob-home {
+      background: url(assets/Home Page.jpg) no-repeat center center fixed;
+      display: block;
+      height: 100%;
+      position: fixed;
+      overflow: hidden;
+      width: 100%;
+      opacity: 85;
+      overflow-x: hidden;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-size: unset !important;
+      background-position: center;
+    }
+
+    .mob-assess-padd {
+      padding: 0 10px;
+    }
+
+    .mob-compare-btn-div {
+      padding: 30px 0;
+    }
+
+    .mob-report-btn {
+      padding: 5px 7%;
+    }
+
+    .mob-modal-div {
+      padding: 5% 5%;
+    }
+
+    .mob-acheve-para {
+      padding: 0% 5%;
+      margin-bottom: 7%;
+      text-align: center;
+    }
+
+    .mob-explor {
+      text-align: center !important;
+    }
+
+    .mob-explor-btn {
+      text-align: center !important;
+      margin-bottom: 20px;
+    }
+
+    .mob-view-recomm-btn {
+      padding: 2% 2%;
+      font-size: 15px;
+    }
+
+    .mob-inner-div {
+      transform: translate(-46%, -40%) !important;
+    }
+
+    .mob-modal .mob-modal-content {
+      margin: auto !important;
+      display: block !important;
+      width: 100% !important;
+      height: unset !important;
+    }
+
+    .mob-modal {
+      padding: 35% 10% 0 10% !important;
+    }
+  }
+
+  @font-face {
+    font-family: Montserrat-Thin;
+    src: url("/assets/fonts/Montserrat-Thin.otf")
+  }
+
+  .contact-img {
+    height: 40px;
+    position: relative;
+    top: -2px;
+  }
+</style>
+
+
+<div class="row hidden-md hidden-lg">
+  <div class="col-xs-12 col-sm-12">
+
+    <nav class="navbar navbar-default  navbar-fixed-top top-nav-1" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+
+        <img src="/assets/logo1.png" class="navbar-brand logo-1" class="img-responsive">
+        <button type="button" ng-init="navCollapsed = true" ng-class="{'active-nav-btn': !navCollapsed}" class="navbar-toggle collapse-btn" ng-click="navCollapsed = !navCollapsed;">
+          <div class="btn-bar-icon">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </div>
+
+          <div class="btn-cross-icon navbar-close">
+            <span class="icon-bar icon-1"></span>
+            <span class="icon-bar icon-2"></span>
+          </div>
+
+        </button>
+
+      </div>
+
+      <div class="collapse navbar-collapse mob-nav-ul" uib-collapse="navCollapsed">
+        <ul class="ul-links nav navbar-nav collapse-a col-b">
+          <li><a ng-click="openSignUp()">LOGIN</a></li>
+          <li><a class="act active" href="/#!/page/index#home1" ng-click="changeHeight()">HOME</a></li>
+          <li><a class="act" href="/#!/page/index#home2" ng-click="changeHeight()">HOW IT WORKS</a></li>
+          <li><a class="act" href="/#!/page/index#home3" ng-click="changeHeight()">CORPORATES</a></li>
+          <li><a class="act menu-contact" href="/#!/page/index#home4" ng-click="changeHeight()">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+</div>
+
+<div id="home" class="home mob-home hidden-xs hidden-sm" style="margin-top: 0;">
+  <!--<img src="//assets/Home Page.jpg" alt="home"/>-->
+</div>
+<div id="home" class="home mob-home hidden-lg hidden-md" style="margin-top: 0;">
+  <!--<img src="/assets/Home Page.jpg" alt="home"/>-->
+</div>
+
+<div class="main" id="services">
+  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 how-work-1 home1" id="home10">
+    <div id="home1" ng-style="maped"></div>
+    <div ng-style="maped1">
+      <div class="main-div resize" id="div1">
+        <div class="container-fluid out-div">
+          <div class="row inner-div mob-inner-div">
+            <div class="col-md-2 hidden-xs hidden-sm"></div>
+            <div class="col-md-8 col-sm-12 col-xs-12">
+              <div class=" col-sm-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <h1 class="heading">
+                  <span class="accelerate-span">Accelerate Your Career</span><span class="heading-with-span"> with</span>
+                </h1>
+                <h1 class="heading-1"> the Power of Advanced Analytics</h1>
+              </div>
+              <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 30px;">
+                <div class="get-start-btn mob-getstart">
+                  <a type="button" ng-click="showPopup('AM')" class="btn btn-block  assess-btn mob-assess-btn">GET
+                    STARTED</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 hidden-xs hidden-sm"></div>
+
+          </div>
+
+          <!--<div class="row mt-lg mt-lg-1">-->
+          <!--</div>-->
+          <!--<div class="row mt-lg mt-lg-1" ng-hide="true">-->
+          <!--<div class="col-md-12">-->
+          <!--<div class="col-md-3 col-sm-3 col-xs-1 col-lg-4"></div>-->
+          <!--<div class="col-md-6 col-sm-6 col-xs-10 col-lg-4">-->
+          <!--<button type="button" ng-click="showPopup('FRC')"  class="btn btn-block dashboardBtn btn-1-1 find-btn"><span>Find the </span>RIGHT COMPANY</button>-->
+          <!--</div>-->
+          <!--<div class="col-md-3 col-sm-3 col-xs-1 col-lg-4"></div>-->
+          <!--</div>-->
+          <!--</div>-->
+
+          <!--<div class="row mt-lg job-div"  ng-hide="true">-->
+          <!--<div class="col-md-offset-4 col-md-4">-->
+          <!--<button type="button" ng-click="linkedinLogin()"  class="btn btn-block dashboardBtn">EVALUATE A JOB OFFER-->
+          <!--</button>-->
+          <!--</div>-->
+          <!--</div>-->
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-lg-12 col-md-12  col-xs-12 col-sm-12 how-work-2 home2" style="padding-bottom: 0px;" id="home20">
+    <div id="home2" ng-style="maped"></div>
+    <div class="resize">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-lg-12 text-right">
+            <h1 class="assess-h1 mob-assess-h1" id="scroll-h1"><span>1.</span> <span>ASSESS</span></h1>
+          </div>
+
+        </div>
+        <div class="row assess-padd mob-assess-padd">
+          <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+            <div class="col-md-1 col-lg-1 hidden-sm hidden-xs"></div>
+            <div class="col-md-10 col-lg-10 col-xs-12 col-sm-12 opacity-assess" id="scroll-to" style="text-align: justify;padding: 0">
+              <h1 class="answer-design-text">Answer our emperically designed questionnaire to measure your
+                role's complexity to get a <span class="assess-change-color">standardised score - Career Level</span>,
+                encompassing your company, location, industry and function.</h1>
+              <h1 class="how-do-h1">How do we arrive at the career level score?</h1>
+              <p class="assess-p">The 4 most integral factors that contribute to deriving your career
+                level are:</p>
+              <ul class="assess-ul">
+                <span>-</span>
+                <li>Areas of responsibility your role carries</li>
+                <span>-</span>
+                <li>Impact of your role on your organization</li>
+                <span>-</span>
+                <li>Effectiveness of your role</li>
+                <span>-</span>
+                <li style="margin-bottom: 15px">Complexity of the environment that your organization functions in</li>
+              </ul>
+
+              <h1 class="how-do-h1">How does the career level score help?</h1>
+              <p class="assess-p">We have quantified your role in a way that allows to you to:</p>
+              <ul class="assess-ul">
+                <span>-</span>
+                <li>Objectively compare yourself to your peers in different functions, industries or
+                  even countries
+                </li>
+                <span>-</span>
+                <li>Identify gap areas and take appropriate action to enhance your growth</li>
+                <span>-</span>
+                <li>Find roles that are best-suited to your capabilities</li>
+              </ul>
+            </div>
+            <div class="col-md-1 col-lg-1 hidden-sm hidden-xs"></div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+            <div class="col-md-12 col-lg-12" id="scroll-two">
+              <img src="/assets/home-assess.png" style="width:100%" class="img-responsive">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 how-work-2 home21" id="home21" style="">
+
+    <div class="resize">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-right ">
+            <h1 class="compare-h1 mob-compare-h1" id="animation-comh1"><span>2.</span> <span>COMPARE</span></h1>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center compare-div" id="animation-compara">
+            <h1 class="benchmark-h1"><span>Benchmark</span> your salary and growth against peers from a
+              database of</h1>
+            <h1 class="benchmark-h1"><span>500,000+</span> individuals across <span>450</span> companies,
+              <span>90</span> industries and <span>70</span> functions</h1>
+          </div>
+        </div>
+        <style>
+
+          .img-model {
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s;
+          }
+
+          .overlay:hover {
+            opacity: 0.6;
+          }
+
+          .modal1 {
+            display: none;
+            padding: 3% 10% 0 10%;
+            left: 0;
+            overflow: hidden;
+            right: 0;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            background: white;
+            outline: 0;
+            box-sizing: border-box;
+            z-index: 1050
+          }
+
+          .modal-div1 .modal-content {
+            margin: auto;
+            display: block;
+            width: 100%;
+            height: 95%;
+          }
+
+          .modal-div1 .modal-content {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+          }
+
+          @-webkit-keyframes zoom {
+            from {
+              -webkit-transform: scale(0)
+            }
+            to {
+              -webkit-transform: scale(1)
+            }
+          }
+
+          @keyframes zoom {
+            from {
+              transform: scale(0)
+            }
+            to {
+              transform: scale(1)
+            }
+          }
+
+          .modal-open .modal {
+            overflow: hidden;
+          }
+
+          .modal-open {
+            padding: 0 !important;
+          }
+
+          .close {
+            position: relative;
+            top: 35px;
+            font-size: 30px;
+            z-index: 8;
+            right: 15px;
+            color: black;
+          }
+
+          .modal-col {
+            padding: 1% .3%;
+          }
+
+          @media only screen and (max-width: 700px) {
+            .modal-content {
+              width: 100%;
+            }
+          }
+
+          .overlay:hover .text {
+            opacity: 1;
+            text-align: justify;
+            color: #170101;
+            font-size: 20px;
+            cursor: pointer;
+            position: absolute;
+            z-index: 0;
+            font-weight: 700;
+            font-weight: bold;
+            font-family: Montserrat-Regular;
+          }
+
+          .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            opacity: 0;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+          }
+
+          .over-main1 {
+            position: relative;
+            float: right;
+            width: 60%;
+            display: block;
+          }
+
+          .over-main2 {
+            position: relative;
+            float: left;
+            width: 60%;
+            display: block;
+          }
+
+          .over-main3 {
+            position: relative;
+            float: right;
+            width: 60%;
+            display: block;
+          }
+        </style>
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center compare-img-div " id="animation-comimg">
+            <div class="modal-div1">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 modal-col overlay" ng-click="openmodal('/assets/report1.png')">
+                <img src="/assets/report1.png" id="reportImg" class="img-model" alt="Snow">
+                <div class="text">
+                  <img src="/assets/search-zoom.png">
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-4  col-sm-12 col-xs-12 modal-col overlay" ng-click="openmodal('/assets/report2.png')">
+                <img src="/assets/report2.png" id="reportImg1" class="img-model" alt="Snow">
+                <div class="text">
+                  <img src="/assets/search-zoom.png">
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-4  col-sm-12 col-xs-12 modal-col overlay" ng-click="openmodal('/assets/report3.png')">
+                <img src="/assets/report3.png" id="reportImg2" class="img-model" alt="Snow">
+                <div class="text">
+                  <img src="/assets/search-zoom.png">
+                </div>
+              </div>
+              <div id="myModal" class="modal1 mob-modal">
+                <span class="close" id="close" ng-click="closemodal('myModal')">&times;</span>
+                <img class="modal-content mob-modal-content" id="showimg">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center compare-btn-div mob-compare-btn-div" id="animation-combtn">
+            <a href="" ng-click="showPopup('AM')" class="report-btn mob-report-btn">VIEW REPORTS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 how-work-2 home22" id="home22" style="">
+
+    <div class="resize">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12text-right ">
+            <h1 class="compare-h1 mob-compare-h1" id="scroll-explore-h" style="color:#e604246e;text-align: right">
+              <span>3.</span> <span>EXPLORE</span></h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 hidden-xs hidden-sm text-right " style="padding-bottom: 2%" id="scroll-explore-img">
+            <div class="modal-div mob-modal-div">
+
+              <div class="frc1">
+                <div class="overlay over-main1" ng-click="openmodal('/assets/FRC2.png')">
+                  <img src="/assets/FRC2.png" id="frc1" class="img-model">
+                  <div class="text">
+                    <img src="/assets/search-zoom.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="frc2">
+                <div class="overlay over-main2" ng-click="openmodal('/assets/FRC1.png')">
+                  <img src="/assets/FRC1.png" id="frc2" class="img-model">
+                  <div class="text">
+                    <img src="/assets/search-zoom.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="frc3">
+                <div class="overlay over-main3" ng-click="openmodal('/assets/FRC3.png')">
+                  <img src="/assets/FRC3.png" id="frc3" class="img-model">
+                  <div class="text">
+                    <img src="/assets/search-zoom.png">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!--<div id="myModal1" class="modal">-->
+          <!--<span class="close">&times;</span>-->
+          <!--<img class="modal-content" id="img02">-->
+          <!--</div>-->
+          <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+            <div class="col-md-2 col-lg-2 hidden-xs hidden-sm"></div>
+            <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12 text-left mob-explor" id="scroll-explore">
+              <p class="acheve-para mob-acheve-para">Achieve your short and long term goals by finding the
+                <span>right company</span>
+                through our data-backed recommendations <span>customised</span> to your preferences</p>
+              <a ng-click="showPopup('FRC')" class="view-recomm-btn mob-view-recomm-btn hidden-xs hidden-sm">VIEW
+                RECOMMENDATIONS</a>
+            </div>
+            <div class="col-md-2 col-lg-2 hidden-xs hidden-sm"></div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 hidden-lg hidden-md text-right mob-explor-btn" style="padding-bottom: 3%" id="scroll-explore-img">
+            <div class="modal-div mob-modal-div">
+
+              <div class="frc1">
+                <div class="overlay over-main1" ng-click="openmodal('/assets/FRC2.png')">
+                  <img src="/assets/FRC2.png" id="frc1" class="img-model">
+                  <div class="text">
+                    <img src="/assets/search-zoom.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="frc2">
+                <div class="overlay over-main2" ng-click="openmodal('/assets/FRC1.png')">
+                  <img src="/assets/FRC1.png" id="frc2" class="img-model">
+                  <div class="text">
+                    <img src="/assets/search-zoom.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="frc3">
+                <div class="overlay over-main3" ng-click="openmodal('/assets/FRC3.png')">
+                  <img src="/assets/FRC3.png" id="frc3" class="img-model">
+                  <div class="text">
+                    <img src="/assets/search-zoom.png">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <a ng-click="showPopup('FRC')" class="view-recomm-btn mob-view-recomm-btn hidden-md hidden-lg">VIEW
+              RECOMMENDATIONS</a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 how-work-3 home3" id="home30">
+    <div id="home3" ng-style="maped"></div>
+    <div class="resize" style="">
+
+      <form class="container-fluid">
+        <div class="row text-left">
+          <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+            <h1 class="corporate-head mob-corporate-head" id="corporate-h1-animate" style="color:#204a546e">CORPORATES</h1>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 corporate-div-col" id="corporate-div-animate">
+          <h1 class="corporate-h1"><span>ASSESS</span> POTENTIAL CANDIDATES ACCURATELY AND MAKE THE
+            <span>RIGHT HIRING DECISIONS</span>
+            WITH OUR <span>CORPORATE SOLUTIONS</span></h1>
+          <ul class="corporate-ul">
+            <li> Proprietary <span>candidate fitment</span> algorithms</li>
+            <li><span>Role pricing</span> and benchmarking</li>
+            <li> Customised <span>application link</span></li>
+            <li> Easy to use tools for candidate <span>shortlisting</span></li>
+            <li> Platform for team <span>collaboration</span></li>
+          </ul>
+          <p><a id="mycontact">CONTACT US</a> <span>TO FIND OUT MORE</span></p>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 text-center corpo-row-padd" id="corporate-form-animate">
+          <h3 class="corporate-h3">CORPORATE LOGIN</h3>
+          <section class="section">
+            <article class="article">
+              <div class="form-div">
+                <form ng-submit="corporateLogin()" action="">
+                  <div class="txt-reg">
+                    <div class="input-field">
+                      <input type="email" name="Email" id="Email" ng-model="email"
+                             placeholder="Email" class="txt-field " size="15" required="" oninvalid="this.setCustomValidity('Please enter email address')"
+                             oninput="setCustomValidity('')">
+                    </div>
+                  </div>
+                  <div class="txt-reg">
+                    <div class="input-field">
+                      <input type="password" name="Password" id="Password" ng-model="password"
+                             placeholder="Password" class="txt-field " size="15" oninvalid="this.setCustomValidity('Please enter password')"
+                             oninput="setCustomValidity('')"
+                             required="">
+                      <a class="for-link" ng-click="advance()">Forgot password?</a>
+                    </div>
+
+                  </div>
+                  <div class="txt-reg">
+                    <div class="input-field">
+                      <!--<label><input type="checkbox" name="user_type" id="user_type" ng-model="user_type"-->
+                      <!--placeholder="Email" class="" value="recruiter" >Are You A Recruiter?</label>-->
+                    </div>
+                  </div>
+                  <div class="txt-reg">
+                    <div class="input-field">
+                      <input type="submit" name="commit" value="LOGIN" id="submit"
+                             ng-click="corporateLogin()" class="submit-btn"
+                             data-disable-with="LOGIN">
+                    </div>
+                  </div>
+                  <div class="txt-reg">
+                    <div class="input-field">
+                      <a class="reg-link" onclick="register()">REGISTER</a>
+                    </div>
+                  </div>
+                  <div class="txt-reg"></div>
+                </form>
+                <div id="advance" class="sort">
+                  <div class="col close-col">
+                    <span id="sort1" class="close1" ng-click="sort1()">×</span>
+                  </div>
+                  <div class="col ">
+                    <span class="font-mont sort-para">FORGET PASSWORD</span>
+                  </div>
+
+
+                  <form>
+                    <div class="col">
+                      <input type="email" placeholder="Email" ng-model="email" id="Forgetemail"
+                             required="required" name="email" class="forget-email">
+                    </div>
+                    <div class="col">
+                      <input type="button" name="commit" value="submit" ng-click="ForgetPass()"
+                             class="forget-btn" id="forget" data-disable-with="submit">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12  coroporate-home home4" id="home40">
+    <div id="home4" ng-style="maped"></div>
+    <div class="resize">
+      <div class="container-fluid" id="myform">
+        <h3 class="contact-h3">We would love to hear from you!</h3>
+        <section class="contact-section">
+          <article class="article">
+            <div class="form-div">
+              <form ng-submit="Contact()">
+
+                <div class="txt-reg">
+                  <div class="input-field">
+                  </div>
+                  <div class="input-field corporate-place">
+                    <input type="text" name="Username" ng-model="Username" id="text"
+                           placeholder="Your Name" class="txt-field " size="15" required="" oninvalid="this.setCustomValidity('Please enter your name')"
+                           oninput="setCustomValidity('')">
+                  </div>
+                </div>
+
+
+                <div class="txt-reg">
+                  <div class="input-field">
+                  </div>
+                  <div class="input-field corporate-place">
+                    <input type="email" name="Email" id="Email1" ng-model="Email" placeholder="Your Email" class="txt-field " size="15" required="" oninvalid="this.setCustomValidity('Please enter email address')"
+                           oninput="setCustomValidity('')">
+                  </div>
+                </div>
+
+
+                <div class="txt-reg">
+                  <div class="input-field">
+                  </div>
+                  <div class="input-field textarea corporate-place">
+                                        <textarea name="comment" cols="40" ng-model="comment"
+                                                  PLACEHOLDER="Enter text here" required="" oninvalid="this.setCustomValidity('Please enter text here')"
+                                                  oninput="setCustomValidity('')"></textarea>
+                  </div>
+                </div>
+
+                <div class="txt-reg">
+                  <div class="input-field">
+                  </div>
+                  <!--<div class="input-field">-->
+                  <!--<button type="submit" name="commit"  value="SEND" class="contact-login" data-disable-with="LOGIN">SEND</button>-->
+                  <!--<i class="fa fa-angle-right send-contact" aria-hidden="true"></i>-->
+                  <!--</div>-->
+                  <div class="input-field">
+                    <button type="submit" name="commit" value="SEND" class="contact-login" data-disable-with="LOGIN">SEND
+                      <img src="/assets/right.png" class="contact-img"></button>
+
+                  </div>
+                  <div class="input-field">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </article>
+        </section>
+
+      </div>
+      <div class="contactus-div">
+        <span class="contact-h1 mob-contact-h1">CONTACT US</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!--<footer class="navbar navbar-default" ng-hide="true" style="margin-bottom: 0;border: none;">-->
+<!--<div class="navbar navbar" style="margin:0%;background-color:white;border-color: #ffffff;">-->
+<!--<div class="container" style="border: none;">-->
+<!--<div class="hidden-xs" style="border:  none !important;font-family: Montserrat-Regular ">-->
+<!--<ul class="nav navbar-nav" style="list-style:none;">-->
+<!--<li style="display:inline;float:right;font-size:15px;font-family:Montserrat-Regular;"><a href="#" style="color:black;padding: 0px 7px 0px 7px;">CONTACT US</a></li>-->
+<!--<li style="display:inline;float:right;font-size:15px;font-family:Montserrat-Regular;"><a href="#" style="color:black;padding: 0px 7px 0px 7px;border-right: 1px solid black;">PARTNERS</a></li>-->
+<!--<li style="display:inline;float:right;font-size:15px;font-family:Montserrat-Regular;"><a ui-sref="app.insights" style="color:black;padding: 0px 7px 0px 7px;border-right: 1px solid black;" href="#!/app/insights">INSIGHTS</a></li>-->
+<!--<li style="display:inline;float:right;font-size:15px;font-family:Montserrat-Regular;"><a ui-sref="app.about" style="color:black;padding: 0px 7px 0px 7px;border-right: 1px solid black;" href="#!/app/about">ABOUT US</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</footer>-->
+</body>
+</html>

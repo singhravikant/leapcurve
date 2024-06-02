@@ -1,0 +1,1308 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+    .h_1{
+
+        margin-top:15px;
+    }
+    @media (min-width: 1200px)
+    {
+        .top
+        {
+            width: 1110px !important;
+        }
+    }
+    .top-left i{
+
+
+        color:white;
+        position: relative;
+        top: 7px;
+    }
+    .top-left .i-1{
+
+        top: 7px;
+
+        color:white;
+
+    }
+
+
+    .top-left .a-1{
+
+        color:white;
+        font-family: Montserrat-Regular;
+        font-size: 17px !important;
+        text-decoration: none;
+
+
+    }
+    .top-left{
+        position: absolute;
+        left: 150px;
+
+    }
+    .top-left .a-1 span{
+
+        border-bottom: 1px solid white;
+    }
+    .top-left .a-2{
+
+        color:gray;
+        font-family: Montserrat-Regular;
+        font-size: 17px !important;
+        padding: 10px 10px 10px 10px;
+
+
+        text-decoration: none;
+        top: 28px;
+        left: 276px;
+
+    }
+    .top-left .a-2 span{
+
+        /*border-bottom: 1px solid gray;*/
+    }
+    .top-left .a-3{
+        font-family: Montserrat-Regular;
+        font-size: 17px !important;
+
+
+        text-decoration: none;
+        color: white;
+        top: 28px;
+        left: 327px;
+
+    }
+    .top-left .a-3 span{
+
+        border-bottom: 1px solid white;
+    }
+    .top{
+        background: black;
+        width: 100% !important;
+
+        padding: 2px 53px 14px 0px !important;
+    }
+    .main{
+        background:#5bbf76c7;
+        height:auto;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 50px;
+
+    }
+    /* Remove default checkbox */
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+        position: absolute;
+        left: -9999px;
+    }
+    [type="radio"]:not(:checked),
+    [type="radio"]:checked {
+        position: absolute;
+        left: -9999px;
+    }
+    [type="checkbox"]:not(:checked) + label,
+    [type="checkbox"]:checked + label {
+        position: relative;
+
+        cursor: pointer;
+        padding: 3px 0px 0px 53px;
+        height: 43px;
+        line-height: 35px
+
+
+    }
+    [type="radio"]:not(:checked) + label,
+    [type="radio"]:checked + label {
+        position: relative;
+
+        cursor: pointer;
+        padding: 3px 0px 0px 53px;
+        height: 43px;
+        line-height: 35px
+
+
+    }
+    .down p {
+        margin-bottom: 20px !important;
+    }
+
+    /* checkbox aspect */
+    [type="checkbox"] + label:before,
+    [type="checkbox"] + label:after {
+        content: '';
+        position: absolute;
+        left: 0;
+
+    }
+
+    [type="checkbox"]:not(:checked) + label:after {
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        border: 2px solid black;
+        z-index: 0;
+    }
+    /* Checked styles */
+    [type="checkbox"]:checked + label:before {
+
+        width: 40px; height: 40px;
+        border:7px solid white;
+
+    }
+    [type="radio"] + label:before,
+    [type="radio"] + label:after {
+        content: '';
+        position: absolute;
+        left: 0;
+
+    }
+
+    [type="radio"]:not(:checked) + label:after {
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        border: 2px solid black;
+        z-index: 0;
+    }
+    /* Checked styles */
+    [type="radio"]:checked + label:before {
+
+        width: 40px; height: 40px;
+        border:7px solid white;
+
+    }
+    .top1 p span{
+        font-weight: 100 !important;
+    }
+    .none-para{
+        position: absolute;
+        font-size: 13px;
+        top: 321px;
+        left: 179px;
+    }
+    .heading-1-hd{
+        font-size: 20px !important;
+    }
+    .none-para a{
+        color: black;
+        text-decoration: none;
+        border-bottom: 1px solid #556355;
+    }
+    .top1 p{
+        font-size: 18px;
+        font-family: Montserrat-Medium;
+
+    }
+    #text{
+        border: none;
+        border-bottom: 2px solid black;
+        background: transparent;
+        margin-top: 10px;
+
+    }
+    ::placeholder{
+        text-align: center;
+        color:black;
+    }
+    .down p{
+        margin-bottom: 0px;;
+    }
+
+
+    @media (max-width: 450px) {
+
+        .top-left {
+            position: absolute;
+            left: 100px;
+            top: -17px;
+        }
+
+    }
+    @media (max-width: 350px)
+    {
+
+        .top-left {
+            position: absolute;
+            left: 110px;
+            top: -17px;
+        }
+    }
+    @media only screen and (width:481px)
+    {
+        .head {
+            margin-top: 40px;
+            margin-left: 25px;
+            font-size: 29px !important;
+
+        }
+    }
+    @media only screen and (width:360px)
+    {
+        .heading-1{
+            font-size: 23px !important;
+        }
+        .heading-1-hd{
+            font-size: 20px !important;
+        }
+    }
+    @media only screen and (width:768px)
+    {
+        .top-left {
+            position: relative !important;
+            /*left: 50px !important;*/
+            top: 11px !important;
+        }
+    }
+    @media only screen and (width:768px)
+    {
+        .head{
+            font-size: 26px !important;
+            text-align: left !important;
+            margin-left: 5px !important;
+        }
+    }
+    @media (min-width: 1020px)
+    {
+        .top-left {
+            position: absolute !important;
+            left: 90px !important;
+            top: 13px !important;
+        }
+    }
+    @media (min-width: 640px)
+    {
+        .top-left {
+            position: absolute;
+            left: 210px;
+            top: -13px;
+        }
+    }
+
+    @media (max-width: 800px)
+    {
+        .heading-2 h3{
+            padding: 13px !important;
+        }
+    }
+    @media only screen and (width:768px)
+    {
+        [type="checkbox"]:not(:checked) + label,
+        [type="checkbox"]:checked + label {
+            margin-left: 36px !important;
+            font-size: 18px !important;
+            text-align: inherit !important;
+
+        }
+        [type="radio"]:not(:checked) + label,
+        [type="radio"]:checked + label {
+            margin-left: 36px !important;
+            font-size: 18px !important;
+            text-align: inherit !important;
+
+        }
+    }
+    @media (max-width: 800px)
+    {
+        [type="checkbox"]:not(:checked) + label,
+        [type="checkbox"]:checked + label {
+            margin-left: 11px;
+            position: relative;
+
+
+            cursor: pointer;
+            padding: 0px 5px 0px 53px;
+
+            font-size: 15px;
+            height: 70px;
+            line-height: 18px;
+
+        }
+        [type="radio"]:not(:checked) + label,
+        [type="radio"]:checked + label {
+            margin-left: 11px;
+            position: relative;
+
+
+            cursor: pointer;
+            padding: 0px 5px 0px 53px;
+
+            font-size: 15px;
+            height: 70px;
+            line-height: 18px;
+
+        }
+    }
+    @media (max-width: 800px)
+    {
+        [type="checkbox"]:not(:checked) + label,
+        [type="checkbox"]:checked + label {
+
+        } [type="radio"]:not(:checked) + label,
+        [type="radio"]:checked + label {
+
+        }
+
+    }
+
+    @media (max-width: 800px)
+    {
+        .top1 br{
+            display: none;
+        }
+    }
+
+    @media (max-width: 450px)
+    {
+
+        .head {
+
+            font-size: 29px !important;
+            margin-top: 28px;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (width:768px)
+    {
+        span.none-para1 {
+            margin-left: 90px !important;
+            position: relative;
+            font-size: 13px;
+            /*top: -35px;*/
+        }
+    }
+    @media (max-width: 1200px) and (min-width: 991px) {
+
+        .top-left {
+            position: absolute;
+            left: 80px !important;
+            top: 7px !important;
+        }
+        .head {
+            font-size: 25px !important;
+        }
+
+        }
+    @media (max-width: 400px)
+    {
+        span.none-para1 {
+            margin-left: 60px !important;
+            position: relative;
+            font-size: 0px;
+            top: 0px;
+        }
+    }
+    @media only screen and (width:481px){
+        span.none-para1 {
+            position: relative;
+            top: -31px;
+            left: -95px;
+        }
+    }
+    @media only screen and (width:412px){
+        span.none-para1 {
+            position: relative;
+            top: -25px;
+            left: -95px;
+        }
+    }
+    @media only screen and (width:414px){
+        span.none-para1 {
+            position: relative;
+            top: -25px;
+            left: -95px;
+        }
+    }
+    @media (max-width: 800px) {
+        .first-check span b {
+            position: relative !important;
+            top: -45px !important;
+        }
+    }
+    @media (max-width: 500px) {
+        .small-level {
+            margin-left: 12px !important;
+        }
+    }
+    @media (max-width: 500px) {
+        .input-box{
+            text-align: center;
+        }
+    }
+    .input-box{
+
+    }
+    @media only screen and (width:320px) {
+        .top-left {
+            position: absolute;
+            left: 70px;
+            top: -17px;
+        }
+    }
+    @media only screen and (width:320px) {
+        .head{
+            font-size:21px !important;
+        }
+    }
+    @media only screen and (width:320px) {
+        .first-check span b {
+            font-size: 14px;
+        }
+    }
+    a:hover{
+        text-decoration: none;
+    }
+
+
+    @media only screen and (width:1366px) {
+
+        .mt-lg h3 {
+            padding: 0px 0px 15px 15px;
+
+        }
+    }
+
+    @media only screen and (width:1366px) {
+
+        [type="checkbox"]:not(:checked) + label,
+        [type="checkbox"]:checked + label {
+            margin-left: 50px;
+        } [type="radio"]:not(:checked) + label,
+        [type="radio"]:checked + label {
+            margin-left: 50px;
+        }
+    }
+    p.ng-scope {
+        font-size: 18px;
+        font-family:Montserrat-Medium;
+    }
+   
+
+    @media only screen and (width:640px) {
+        .head{
+
+            margin-left: 40px !important;
+            font-size: 31px !important;
+            margin-top: 34px !important;
+        }
+    }
+    @media only screen and (width:800px) {
+        .head{
+
+            font-size: 24px !important;
+        }
+    }
+
+    @media only screen and (width:800px) {
+        .top-left {
+            position: absolute;
+            left: 55px;
+            top: 8px;
+        }
+    }
+
+    @media (max-width: 400px) {
+
+        [type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label {
+            /* margin-left: 11px; */
+            position: relative;
+            cursor: pointer;
+            padding: 0px 0px 0px 34px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        [type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
+            /* margin-left: 11px; */
+            position: relative;
+            cursor: pointer;
+            padding: 0px 0px 0px 34px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    @media (max-width: 500px) {
+
+        .small-screen {
+            padding: 0px
+        }
+    }
+    @media (max-width: 500px) {
+
+        .small-screen1{
+            padding: 10px 0px 0px 0px !important;
+        }
+    }
+    .container {
+        width: 100% !important;
+    }
+    .layout-boxed .app-container > section {
+        max-width: 100%;
+        /* margin: 0 auto !important; */
+    }
+    .app
+    {
+        padding: 0px !important;
+        padding-bottom: 0px !important;
+        width: 100%;
+    }
+
+    @media only screen and (width: 1024px)
+    {
+        span.none-para1 {
+
+            margin-left: 55px!important;
+
+        }
+    }
+    @media only screen and (width: 1440px)
+    {
+        span.none-para1 {
+
+            margin-left: 55px !important;
+
+        }
+    }
+    @media (min-width: 1400px) {
+        .head{
+            margin-left: 140px !important;
+        }
+    }
+    @media (min-width: 1400px) {
+        h3.heading-1 {
+            margin-left: 80px;
+        }
+    }
+
+
+    @media (min-width: 1400px) {
+        p.ng-scope {
+            margin-left: 108px;
+        }
+    }
+
+
+    @media (min-width: 1400px) {
+        span.none-para1 {
+            margin-left: 161px !important;
+        }
+    }
+    label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: bold !important;
+    }
+
+
+    .loader-overlay{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: rgba(0,0,0,0.5);
+        z-index: 1031;
+
+    }
+
+    .loader {
+        position: fixed;
+        z-index: 1032;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid gray;
+        border-bottom: 16px solid gray;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+    @media (max-width: 991px) {
+        .loader {
+            position: fixed;
+            z-index: 1032;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 6px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 6px solid gray;
+            border-bottom: 6px solid gray;
+            width: 60px;
+            height: 60px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+    }
+
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 991px) and (min-width: 768px) {
+        .head {
+            font-size: 22px !important;
+            margin: 0px !important;
+            padding-left: 22px;
+            position: relative;
+            text-align: left;
+            top: 3px;
+        }
+        .head span{
+            font-size: 17px !important;
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 768px) {
+        .top-left {
+            position: relative;
+            top: -13px !important;
+            left: 0px;
+            text-align: center;
+        }
+        .main{
+            margin-top:50px !important;
+        }
+    }
+
+    @media (max-width: 767px)
+    {
+        .head {
+            text-align: center;
+            font-size: 17px !important;
+            margin: 0px !important;
+            position: relative;
+            top: 30px;
+        }
+        .head span{
+            font-size: 17px !important;
+        }
+    }
+    @media (min-width: 100px) and (max-width: 373px) {
+
+        .top-left {
+            position: relative;
+            top:-50px;
+            left: 0px;
+            text-align: center;
+        }}
+    @media (min-width: 374px) and (max-width: 991px) {
+
+        .top-left {
+            position: relative;
+            top: -40px;
+            left: 0px;
+            text-align: center;
+        }}
+    @media (max-width: 991px){
+
+        [type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label {
+            margin-left: 11px;
+            position: relative;
+            cursor: pointer;
+            padding: 0px 5px 0px 53px;
+            font-size: 15px;
+            height: 40px;
+            line-height: 18px;
+        }
+        [type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
+            margin-left: 11px;
+            position: relative;
+            cursor: pointer;
+            padding: 0px 5px 0px 53px;
+            font-size: 15px;
+            height: 40px;
+            line-height: 18px;
+        }
+    }
+    @media (max-width: 767px){
+
+        .main{
+            margin-top:70px !important;
+        }}
+
+
+
+    @media (max-width: 991px){
+        .heading-1 {
+            font-size: 17px !important;
+        }
+        .heading-1-hd{
+            font-size: 17px !important;
+        }
+    }
+    @media (max-width: 991px) {
+        [type="checkbox"]:not(:checked) + label:after {
+            top: 0px;
+            width: 30px;
+            height: 30px;
+            border: 2px solid white !important;
+            z-index: 0;
+        }
+        [type="radio"]:not(:checked) + label:after {
+            top: 0px;
+            width: 30px;
+            height: 30px;
+            border: 2px solid white !important;
+            z-index: 0;
+        }
+    }
+    @media (max-width: 991px) {
+
+        [type="checkbox"]:checked + label:before {
+            width: 30px;
+            height: 30px;
+            border: 5px solid white;
+        }
+        [type="radio"]:checked + label:before {
+            width: 30px;
+            height: 30px;
+            border: 5px solid white;
+        }
+    }
+    @media (max-width: 991px) {
+
+        .mt-lg {
+            padding: 0px;
+        }
+    }
+    @media (max-width: 991px) {
+
+        .small-pad {
+            padding: 0px;
+        }}
+    @media (max-width: 991px) {
+
+        .min-speci{
+            font-size: 10px !important;
+
+        }}
+    @media (max-width: 991px) {
+
+        .top-left .a-1
+        {
+            font-size:14px !important;}
+    }
+    @media (max-width: 991px) {
+
+        .top-left .a-2
+        {
+            font-size:14px !important;}
+    }
+    @media (max-width: 991px) {
+
+        .top-left .a-3
+        {
+            font-size:14px !important;}
+    }
+    span.styling,  span.styling span {
+        position: relative;
+        display: inline;
+        vertical-align: inherit;
+        margin-left: 0;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        border: none;
+        margin-right: 0;
+        text-align: left;
+        font-weight: 100;
+    }
+.top-div{
+    margin-top: 0%;
+}
+.top-nav{
+    margin:0%;background-color:#222222;border-color: #222222; border-bottom: 1px solid #222222;
+}
+    .head{
+        /*color:rgb(127, 205, 148) !important;*/
+        font-size: 34px;
+        margin-left: 70px;
+        font-family:Poppins-Regular;
+    }
+    .head span{
+        font-size: 23px;
+    }
+    .top-left i{
+        font-size: 35px;
+    }
+    .top-left a{
+        font-size: 14px;
+    }
+    .main{
+        margin-top:5%
+    }
+    .heading-1
+    {
+        color:white;font-size: 27px;font-family:Poppins-Regular;
+    }
+    .min-speci #empNo{
+        background-color: transparent ;margin-left: 50px;
+    }
+    @media (max-width: 991px) {
+        .none-para1 {
+        margin-left: 67px !important;
+        font-size: 13px;
+    }}
+    .none-para a
+    {
+        color: black;border-bottom: 1px solid;cursor: pointer
+    }
+    .length-div{
+        padding-left: 0px;
+    }
+    .length-div p {
+        padding-left: 0px
+    }
+    .none-para1{
+        margin-left: 105px;
+        font-size: 13px;
+    }
+    .none-para1 a
+    {
+        cursor: pointer; color: black;border-bottom: 1px solid;
+    }
+    .font-span{
+        font-size: 14px;
+    }
+</style>
+
+
+<toaster-container toaster-options="{'close-button':true }"></toaster-container>
+<div class="container-fluid top-div"  ng-if="isInitialques">
+    <div ng-include="'/assets/templates/askabout.html'"></div>
+</div>
+<div class="container-fluid top-div" ng-if="ques.showQues">
+    <style>
+        .app-container{
+        background-color:{{ques.mainStlye.background}};
+
+        }
+        .heder_arrow{
+            height: 40px;
+            position: relative;
+            top: -2px;
+            /*left: 5px;*/
+
+        }
+        .tooltipText{
+            background-color: #4e4a4a;
+        }
+    </style>
+    <div ng-if="que['queNo']!=11">
+
+    <header id="header" class="top" >
+        <nav class="navbar navbar-default navbar-fixed-top top-nav ">
+            <div class="row h_1">
+                <div class="col-md-8 col-sm-8 col-xs-12 text-left ">
+                    <h2 CLASS="head" ng-style="ques.headerStyle">{{QuesHeader}} <span>({{quehead[queind]}}% completed)</span></h2>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="top-left">
+                        <!--<i class="fa fa-angle-left" aria-hidden="true"></i>-->
+                        <img src="assets/left.png" class="heder_arrow">
+                        <a href="" class="a-1"  ng-if="ques.isFirst" ng-hide="LastQue" ng-click="showPreviousButton(-1)" ><span>B</span>ACK<keybinding on="b" invoke="showPreviousButton(-1)" /></a>
+                        <a href="" class="a-1"  ng-if="!ques.isFirst" ng-show="show"   ng-click="showPreviousButton(2)" ><span>B</span>ACK<keybinding on="b" invoke="showPreviousButton(2)" /></a>
+                        <a href="" class="a-3"  ng-show="LastQue" ng-click="showPreviousButton(19)"><span>B</span>ACK<keybinding on="b" invoke="showPreviousButton(19)" /></a>
+                        <a href="" class="a-2" ng-if="ques.isGuest && ques.isFirst"  ng-click="ques.OpenLogin()" ng-style="ques.saveStlye">SAVE</a>
+                        <a href="" class="a-2" ng-if="ques.isGuest && !ques.isFirst"  ng-click="ques.OpenLogin()" ng-style="ques.saveStlye">SAVE</a>
+                        <span class="toltip"> <a href="" class="a-2" ng-if="!ques.isGuest && ques.isFirst"  ng-click="ques.logout()">LOGOUT</a>
+                        <div class="tooltipText" style="">
+                            {{ShowEmail}}
+                        </div>     </span>
+                        <span class="toltip">                   <a href="" class="a-2" ng-if="!ques.isGuest && !ques.isFirst"  ng-click="ques.logout()">LOGOUT</a>
+                        <div class="tooltipText" style="">
+                            {{ShowEmail}}
+                        </div></span>
+                        <a href="" class="a-3" ng-if="ques.isFirst" ng-hide="LastQue" ng-click="showNextQues(-1)"><span>N</span>EXT<keybinding on="n" invoke="showNextQues(-1)" /></a>
+                        <a href="" class="a-3" ng-if="!ques.isFirst" ng-hide="LastQue" ng-click="showNextQues(2)"><span>N</span>EXT<keybinding on="n" invoke="showNextQues(2)" /></a>
+                        <a href="" class="a-3"  ng-show="LastQue" ng-click="CalculateScore()"><span>C</span>ONTINUE<keybinding on="c" invoke="CalculateScore()" /></a>
+                        <!--<i class="fa fa-angle-right i-1" aria-hidden="true"></i>-->
+                        <img src="assets/right_.png" class="heder_arrow">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    </div>
+    <div class="row main" ng-style="ques.mainStlye">
+        <div class="col-md-12 small-pad">
+            <div class="col-md-12 small-pad">
+                <div class="col-md-12 mt-lg" ng-repeat="que in ques.allQues" ng-if="que['isVisible']"
+                     ng-init="outerIndex=$index">
+                    <div ng-if="que['queNo']!=11">
+                        <div class="col-md-12 col-sm-12 small-screen ">
+                            <!-- <h3  class="heading-1" style="color:white;font-size: 27px;font-family:Poppins-Regular;">{{que['queNo']}}.-->
+                            <h3 class="heading-1">{{arr[que['queNo']-4]}}.
+
+                                <span ng-if="que['queTxt'].split('-:').length > 1">
+                                <span ng-repeat="hd in que['queTxt'].split('-:') track by $index">
+                                     <span ng-if="($index)==0">{{hd}}</span>
+                                     <span class="heading-1-hd" ng-if="($index)>0"><br>{{hd}}</span>
+                                </span>
+                             </span>
+                                <span ng-if="que['queTxt'].split('-:').length ==1">{{que['queTxt']}}</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div ng-if="que['queNo']==11" id="competency_ques_header">
+                        <div class="col-md-12 col-sm-12 small-screen ">
+                            <!-- <h3  class="heading-1" style="color:white;font-size: 27px;font-family:Poppins-Regular;">{{que['queNo']}}.-->
+                            <h3 class="heading-1">{{arr[que['queNo']-4]}}.
+
+                                <span ng-if="que['queTxt'].split('-:').length > 1">
+                                <span ng-repeat="hd in que['queTxt'].split('-:') track by $index">
+                                     <span ng-if="($index)==0">{{hd}}</span>
+                                     <span class="heading-1-hd" ng-if="($index)>0"><br>{{hd}}</span>
+                                </span>
+                             </span>
+                                <span ng-if="que['queTxt'].split('-:').length ==1">{{que['queTxt']}}</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div  class="loader" ng-show="showLoader"></div>
+                    <div  class="loader-overlay" ng-show="showLoader"></div>
+                    <!--<div class="col-md-2 col-sm-2 small-screen " ng-show="showLoader" data-loading> </div>-->
+                    <div  ng-if="que['queNo']!=11">
+                        <div class="col-md-12 small-screen1 " ng-if="que['queOption'].length>4">
+
+                            <p  ng-repeat="opt in que['queOption']"
+                                ng-if="(UserInfo['EffectiveLevel']>=opt['minLvl'] && UserInfo['EffectiveLevel']<=opt['maxLvl'])&& que['showMore']==true &&opt['visible']==true"
+                                ng-init="innerIndex=$index">
+                                <input type="checkbox" value="" id="{{outerIndex.toString()+innerIndex.toString()}}" ng-model="opt['optSelect']" class=""
+                                       ng-click="selectOption(innerIndex,outerIndex)">
+                                <label for="{{outerIndex.toString()+innerIndex.toString()}}">
+                                   <span class="styling" ng-if="opt['optText'].split('-:').length >1">
+                                      <span ng-repeat="opts in opt['optText'].split('-:') track by $index">
+                                          <span ng-if="$index>0"><br></span>
+                                          <span class="styling" ng-if="opts.split('*').length >1">
+                                              <span ng-repeat="op in opts.split('*') track by $index">
+                                                  <span ng-if="(($index+1)%2)!=0">{{op}}</span>
+                                                  <span ng-if="(($index+1)%2)==0"><b>{{op}}</b></span>
+                                              </span>
+                                          </span>
+                                          <span class="styling" ng-if="opts.split('*').length ==1">{{opts}}</span>
+                                      </span>
+                                </span>
+                                    <span class="styling" ng-if="opt['optText'].split('-:').length ==1">
+                                     <span class="styling" ng-if="opt['optText'].split('*').length >1">
+                                              <span ng-repeat="opts in opt['optText'].split('*') track by $index">
+                                                  <span ng-if="(($index+1)%2)!=0">
+
+                                                  <span ng-repeat="items in opts.split('%')  track by $index">
+                                                  <span ng-if="$index==1"  class="font-span">{{items}}</span>
+                                                  <span ng-if="$index!=1">{{items}}</span>
+                                              </span>
+
+                                                  </span>
+                                                  <span ng-if="(($index+1)%2)==0"><b>{{opts}}</b></span>
+                                              </span>
+                                     </span>
+                                          <span class="styling" ng-if="opt['optText'].split('*').length ==1">{{opt['optText']}}</span>
+                                </span>
+                                </label>
+                            </p>
+
+                            <p  ng-repeat="opt in que['queOption']"
+                                ng-if="que['showMore']==false" ng-init="innerIndex=$index">
+                                <input type="checkbox" value="" id="{{outerIndex.toString()+innerIndex.toString()}}" ng-model="opt['optSelect']" class=""
+                                       ng-click="selectOption(innerIndex,outerIndex)">
+                                <label ng-click="resetEmpTxtno()" for="{{outerIndex.toString()+innerIndex.toString()}}">
+                                 <span class="styling" ng-if="opt['optText'].split('-:').length >1">
+                                      <span ng-repeat="opts in opt['optText'].split('-:') track by $index">
+                                          <span ng-if="$index>0"><br></span>
+                                          <span class="styling" ng-if="opts.split('*').length >1">
+                                              <span ng-repeat="op in opts.split('*') track by $index">
+                                                  <span ng-if="(($index+1)%2)!=0">{{op}}</span>
+                                                  <span ng-if="(($index+1)%2)==0"><b>{{op}}</b></span>
+                                              </span>
+                                          </span>
+                                          <span class="styling" ng-if="opts.split('*').length ==1">{{opts}}</span>
+                                      </span>
+                                </span>
+                                    <span class="styling" ng-if="opt['optText'].split('-:').length ==1">
+                                     <span class="styling" ng-if="opt['optText'].split('*').length >1">
+                                              <span ng-repeat="opts in opt['optText'].split('*') track by $index">
+                                                  <span ng-if="(($index+1)%2)!=0"> <span ng-repeat="items in opts.split('%')  track by $index">
+                                                  <span ng-if="$index==1"  class="font-span">{{items}}</span>
+                                                  <span ng-if="$index!=1">{{items}}</span>
+                                              </span></span>
+                                                  <span ng-if="(($index+1)%2)==0"><b>{{opts}}</b></span>
+                                              </span>
+                                     </span>
+                                          <span class="styling" ng-if="opt['optText'].split('*').length ==1">{{opt['optText']}}</span>
+                                </span>
+                                </label>
+                            </p>
+                            <p  ng-if="ques5selectIndex==4&&que['queNo']==5" class="min-speci">
+
+                                <input id="empNo" type="text"  onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode==0"
+                                       required="required" ng-focus="ques.getEmpNo()"    ng-model="ques.empTxtno"/>
+                                <label for="empNo">Please specify number:</label>
+                            </p>
+
+                            <span class="none-para1"  ng-if="que['showMore']">None of the above? <a  ng-click="que['showMore']=false">Show more options</a></span>
+                        </div>
+                        <div class="col-md-9 down" ng-if="que['queOption'].length<=4">
+                            <div class="col-md-2 length-div" ng-repeat="opt in que['queOption']" ng-init="innerIndex=$index" ng-if="opt['visible']==true && (opt['optText'].length<=20)">
+                                <p ng-if="(UserInfo['EffectiveLevel']>=opt['minLvl'] && UserInfo['EffectiveLevel']<=opt['maxLvl']&& que['showMore']==true)&&opt['visible']==true">
+
+                                    <input type="checkbox" value=""  id="{{outerIndex.toString()+innerIndex.toString()}}"class="needsclick" ng-model="opt['optSelect']"
+                                           ng-click="selectOption(innerIndex,outerIndex)">
+                                    <label for="{{outerIndex.toString()+innerIndex.toString()}}">
+                                      <span class="styling" ng-if="opt['optText'].split('-:').length >1">
+                                      <span ng-repeat="opts in opt['optText'].split('-:') track by $index">
+                                          <span ng-if="$index>0"><br></span>
+                                          <span class="styling" ng-if="opts.split('*').length >1">
+                                              <span ng-repeat="op in opts.split('*') track by $index">
+                                                  <span ng-if="(($index+1)%2)!=0">{{op}}</span>
+                                                  <span ng-if="(($index+1)%2)==0"><b>{{op}}</b></span>
+                                              </span>
+                                          </span>
+                                          <span class="styling" ng-if="opts.split('*').length ==1">{{opts}}</span>
+                                      </span>
+                                </span>
+                                        <span class="styling" ng-if="opt['optText'].split('-:').length ==1">
+                                     <span class="styling" ng-if="opt['optText'].split('*').length >1">
+                                              <span ng-repeat="opts in opt['optText'].split('*') track by $index">
+                                                  <span ng-if="(($index+1)%2)!=0"> <span ng-repeat="items in opts.split('%')  track by $index">
+                                                  <span ng-if="$index==1"  class="font-span">{{items}}</span>
+                                                  <span ng-if="$index!=1">{{items}}</span>
+                                              </span></span>
+                                                  <span ng-if="(($index+1)%2)==0"><b>{{opts}}</b></span>
+                                              </span>
+                                     </span>
+                                          <span class="styling" ng-if="opt['optText'].split('*').length ==1">{{opt['optText']}}</span>
+                                </span>
+                                    </label>
+                                </p>
+                            </div>
+                            <div class="col-md-2 length-div" ng-repeat="opt in que['queOption']" ng-init="innerIndex=$index" ng-if="que['showMore']==false && opt['optText'].length<=20">
+                                <p>
+                                    <input type="checkbox" value=""  id="{{outerIndex.toString()+innerIndex.toString()}}" class="needsclick" ng-model="opt['optSelect']"
+                                           ng-click="selectOption(innerIndex,outerIndex)">
+                                    <label  for="{{outerIndex.toString()+innerIndex.toString()}}">
+                                      <span class="styling" ng-if="opt['optText'].split('-:').length >1">
+                                      <span ng-repeat="opts in opt['optText'].split('-:') track by $index">
+                                          <span ng-if="$index>0"><br></span>
+                                          <span class="styling" ng-if="opts.split('*').length >1">
+                                              <span ng-repeat="op in opts.split('*') track by $index">
+                                                  <span ng-if="(($index+1)%2)!=0">{{op}}</span>
+                                                  <span ng-if="(($index+1)%2)==0"><b>{{op}}</b></span>
+                                              </span>
+                                          </span>
+                                          <span class="styling" ng-if="opts.split('*').length ==1">{{opts}}</span>
+                                      </span>
+                                </span>
+                                        <span class="styling" ng-if="opt['optText'].split('-:').length ==1">
+                                     <span class="styling" ng-if="opt['optText'].split('*').length >1">
+                                              <span ng-repeat="opts in opt['optText'].split('*') track by $index">
+                                                  <span ng-if="(($index+1)%2)!=0"> <span ng-repeat="items in opts.split('%')  track by $index">
+                                                  <span ng-if="$index==1"  class="font-span">{{items}}</span>
+                                                  <span ng-if="$index!=1">{{items}}</span>
+                                              </span></span>
+                                                  <span ng-if="(($index+1)%2)==0"><b>{{opts}}</b></span>
+                                              </span>
+                                     </span>
+                                          <span class="styling" ng-if="opt['optText'].split('*').length ==1">{{opt['optText']}}</span>
+                                </span>
+                                    </label>
+                                </p>
+                                <span class="none-para1 new-none-para"  ng-if="que['showMore']">None of the above? <a  class="more-opt" ng-click="que['showMore']=false">Show more options</a></span>
+
+                            </div>
+                            <p ng-repeat="opt in que['queOption']"
+                               ng-init="innerIndex=$index"
+                               ng-if="(UserInfo['EffectiveLevel']>=opt['minLvl'] && UserInfo['EffectiveLevel']<=opt['maxLvl'])&& que['showMore']==true && opt['optText'].length>20 &&opt['visible']==true">
+
+                                <input type="checkbox" value=""  id="{{outerIndex.toString()+innerIndex.toString()}}" class="needsclick" ng-model="opt['optSelect']"
+                                       ng-click="selectOption(innerIndex,outerIndex)">
+                                <label  for="{{outerIndex.toString()+innerIndex.toString()}}">
+                                 <span class="styling" ng-if="opt['optText'].split('-:').length >1">
+                                      <span ng-repeat="opts in opt['optText'].split('-:') track by $index">
+                                          <span ng-if="$index>0"><br></span>
+                                          <span class="styling" ng-if="opts.split('*').length >1">
+                                              <span ng-repeat="op in opts.split('*') track by $index">
+                                                  <span ng-if="(($index+1)%2)!=0">{{op}}</span>
+                                                  <span ng-if="(($index+1)%2)==0"><b>{{op}}</b></span>
+                                              </span>
+                                          </span>
+                                          <span class="styling" ng-if="opts.split('*').length ==1">{{opts}}</span>
+                                      </span>
+                                </span>
+                                    <span class="styling" ng-if="opt['optText'].split('-:').length ==1">
+                                     <span class="styling" ng-if="opt['optText'].split('*').length >1">
+                                              <span ng-repeat="opts in opt['optText'].split('*') track by $index">
+                                                  <span ng-if="(($index+1)%2)!=0"> <span ng-repeat="items in opts.split('%')  track by $index">
+                                                  <span ng-if="$index==1" class="font-span">{{items}}</span>
+                                                  <span ng-if="$index!=1">{{items}}</span>
+                                              </span></span>
+                                                  <span ng-if="(($index+1)%2)==0"><b>{{opts}}</b></span>
+                                              </span>
+                                     </span>
+                                          <span class="styling" ng-if="opt['optText'].split('*').length ==1">{{opt['optText']}}</span>
+                                </span>
+                                </label>
+                            </p>
+                            <p class="checkbox c-checkbox needsclick" ng-repeat="opt in que['queOption']"
+                               ng-init="innerIndex=$index"
+                               ng-if="que['showMore']==false && opt['optText'].length>20">
+
+                                <input type="checkbox" value=""  id="{{outerIndex.toString()+innerIndex.toString()}}" class="needsclick" ng-model="opt['optSelect']"
+                                       ng-click="selectOption(innerIndex,outerIndex)">
+                                <label  for="{{outerIndex.toString()+innerIndex.toString()}}">
+                                  <span class="styling" ng-if="opt['optText'].split('-:').length >1">
+                                      <span ng-repeat="opts in opt['optText'].split('-:') track by $index">
+                                          <span ng-if="$index>0"><br></span>
+                                          <span class="styling" ng-if="opts.split('*').length >1">
+                                              <span ng-repeat="op in opts.split('*') track by $index">
+                                                  <span ng-if="(($index+1)%2)!=0">{{op}}</span>
+                                                  <span ng-if="(($index+1)%2)==0"><b>{{op}}</b></span>
+                                              </span>
+                                          </span>
+                                          <span class="styling" ng-if="opts.split('*').length ==1">{{opts}}</span>
+                                      </span>
+                                </span>
+                                    <span class="styling" ng-if="opt['optText'].split('-:').length ==1">
+                                     <span class="styling" ng-if="opt['optText'].split('*').length >1">
+                                              <span ng-repeat="opts in opt['optText'].split('*') track by $index">
+                                                  <span ng-if="(($index+1)%2)!=0"> <span ng-repeat="items in opts.split('%')  track by $index">
+                                                  <span ng-if="$index==1"  class="font-span">{{items}}</span>
+                                                  <span ng-if="$index!=1">{{items}}</span>
+                                              </span></span>
+                                                  <span ng-if="(($index+1)%2)==0"><b>{{opts}}</b></span>
+                                              </span>
+                                     </span>
+                                          <span class="styling" ng-if="opt['optText'].split('*').length ==1">{{opt['optText']}}</span>
+                                </span>
+                                </label>
+                            </p>
+                            <span class="none-para1 new-none-para" ng-if="que['showMore']">None of the above? <a ng-click="que['showMore']=false">Show more options</a></span>
+                        </div>
+                    </div>
+                    <div ng-if="que['queNo']==11" >
+                        <div id="main_competency_block">
+                            <style>
+                               .ques_competency {
+                                    /*display: block;*/
+                                    /*float: left;*/
+                                    /*width: 100%;*/
+                                    /*position: relative;*/
+                                    margin-left: 100px;
+                                }
+                               .ques_competency label{
+                                   font-size: 18px;
+                                   font-family: Montserrat-Medium;
+                                   font-weight: 100 !important;
+                               }
+                               #show_selected_ques label{
+                                   font-size: 18px;
+                                   font-family: Montserrat-Medium;
+                                   font-weight: 100 !important;
+                               }  #show_selected_ques h3{
+                                     color: white;
+                                     font-size: 27px;
+                                     font-family: Poppins-Regular;
+                               }
+                            </style>
+                            <div ng-repeat="que in ques_details track by $index" class="ques_competency">
+                                <input type="checkbox" value="{{que.competency_name}}" id="{{que.competency_name}}"
+                                       name="{{que.competency_name}}" class="{{$index}}"
+                                       ng-click="save_copetency_info(que.competency_name)">
+                                <label for="{{que.competency_name}}">
+                                    {{que.competency_name}} - {{que.competency_description}}</label>
+                            </div>
+
+                            <div class="ques_competency">
+                                <input type="checkbox" value="" id="other_competency" name="" class="needsclick"
+                                       ng-click="save_copetency_info('other_competency')">
+                                <label for="other_competency"> Add Other</label>
+                                <textarea id="other_competency_text" name="" rows="4" cols="50" style="display: none"
+                                          required></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="show_selected_ques">
+<!--                            <div ng-repeat="ques in selected_details" ng-show = "selected_details != undefined">-->
+<!--                                <h1>{{que.competency_name}}</h1>-->
+<!--                            </div>-->
+                        </div>
+<!--                        <div id="show_hover_ques" style="display: none"></div>-->
+<!--<style>-->
+<!--    #show_selected_ques label:hover > #show_selected_ques span{-->
+<!--background: red;-->
+<!--        display: block !important;-->
+<!--    }-->
+<!--</style>-->
+                    </div>
+                    <!--<div class="col-md-12">-->
+                    <!--<div class="col-md-offset-6 col-md-2" ng-if="ques.isFirst" ng-hide="LastQue">-->
+                    <!--<button class="btn btn-primary btn-block" ng-click="showPreviousButton(outerIndex)">Back-->
+                    <!--</button>-->
+                    <!--</div>-->
+                    <!--<div class=" col-md-2" ng-if="que.isGuest && ques.isFirst">-->
+                    <!--<button class="btn btn-primary btn-block"   ng-click="ques.OpenLogin()">Save</button>-->
+                    <!--</div>-->
+                    <!--<div class=" col-md-2" ng-if="ques.isFirst" ng-hide="LastQue">-->
+                    <!--<button class="btn btn-primary btn-block" ng-if=" showNext==true"-->
+                    <!--ng-click="showNextQues(outerIndex)">Next-->
+                    <!--</button>-->
+                    <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="col-md-offset-8 col-md-4" ng-show="LastQue">-->
+                    <!--<div class="col-md-12">-->
+                    <!--<div class="col-md-6">-->
+                    <!--<button class="btn btn-primary btn-block col-md-6"-->
+                    <!--ng-click="showPreviousButton(outerIndex)">Back-->
+                    <!--</button>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-6">-->
+                    <!--<button class="btn btn-primary btn-block col-md-6" ng-click="CalculateScore()">Get-->
+                    <!--Career Level-->
+                    <!--</button>-->
+                    <!--</div>-->
+
+
+
+                    <!--</div>-->
+
+                    <!--</div>-->
+                </div>
+                <!--<div class="col-md-12">-->
+                <!--<div class="col-md-offset-6 col-md-2" ng-if="!ques.isFirst" ng-hide="LastQue">-->
+                <!--<button class="btn btn-primary btn-block" ng-click="showPreviousButton(2)">Back</button>-->
+                <!--</div>-->
+                <!--<div class=" col-md-2" ng-if="ques.isGuest && !ques.isFirst">-->
+                <!--<button class="btn btn-primary btn-block"   ng-click="ques.OpenLogin()">Save</button>-->
+                <!--</div>-->
+                <!--<div class=" col-md-2" ng-if="!ques.isFirst" ng-hide="LastQue">-->
+                <!--<button class="btn btn-primary btn-block" ng-click="showNextQues(2,0)">Next</button>-->
+                <!--</div>-->
+
+                <!--</div>-->
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

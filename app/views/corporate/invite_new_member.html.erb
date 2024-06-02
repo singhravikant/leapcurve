@@ -1,0 +1,394 @@
+<% if browser.device.mobile? %>
+
+  <style>
+    .container_inv {
+      font-family: Arial;
+      text-align: center;
+    }
+
+    .last {
+      margin: 0px 30px;
+    }
+
+    .text_field {
+      margin: auto;
+      font-size: 13px;
+      width: 100%;
+      border: none;
+      font-family: Montserrat-Regular;
+      box-shadow: none;
+      line-height: 40px;
+      outline: none;
+      display: block;
+      border-bottom: 2px solid #464646 !important;
+    }
+
+    .row {
+      float: left;
+      width: 100%;
+
+    }
+
+    .col {
+      float: left;
+      padding: 10px 0px;
+      width: 100%;
+      display: inline;
+    }
+
+    .submit {
+      font-size: 16px;
+      /*font-weight: bold;*/
+      font-family: Poppins-SemiBold;
+      border: none;
+      outline: none;
+      background: #c3bbbb38;
+      padding: 10px 73px;
+    }
+
+    .text2 {
+      text-align: justify;
+      font-family:Montserrat-Regular;
+      padding: 2% 0;
+      font-size: 15px;
+    }
+
+    section {
+      position: relative;
+      float: left;
+      display: block;
+      padding: 0 4%;
+      padding-top: 10%;
+      width: 92%;
+    }
+
+    article {
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 15px;
+      font-family: poppins-semibold;
+    }
+
+    ::placeholder {
+      font-size: 13px;
+      font-family: Montserrat-Regular;
+      color: #000000;
+    }
+
+    .text {
+      padding: 5px 0px;
+      font-family: Montserrat-Regular;
+    }
+      .text p{
+        font-size: 13px;
+        margin: 0;
+      }
+  </style>
+  <section>
+    <article>
+      <div class="container_inv">
+        <h2>ADD NEW TEAM MEMBER</h2>
+        <%= form_tag({:action => :invite_member}, {:method => :post ,:onsubmit=>"showloader()"}) %>
+
+        <div class="row">
+          <div class="col">
+            <%= text_field_tag 'first_name', params[:first_name],:placeholder => 'First Name*', :class => "text_field", :required => true %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <%= text_field_tag 'last_name', params[:last_name], :placeholder => 'Last Name', :class => "text_field ", :required => true %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <%= text_field_tag 'email', params[:email], :placeholder => 'Email*', :class => "text_field", :required => true %>
+            <div class="text">
+              <p>(An invitation will sent to this email)</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <%= select_tag :access_permission,  options_for_select(['Master', 'User']),:prompt => 'Access Permission',  :class => "text_field", :required => true %>            <div class="text text2">
+              <p>(Master user can create/delete/edit roles.Add new users and edit/delete all restricted users .
+                Restricted users can create/edit/delete roles but can not add/edit/delete team members.)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <%= submit_tag "SEND INVITE", :class => 'submit' %>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+<% elsif browser.device.tablet? %>
+
+  <style>
+    .container_inv {
+      /* padding: 0px 250px; */
+      font-family: Arial;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+
+    .last {
+      margin: 0px 30px;
+    }
+
+    .text_field {
+      font-size: 18px;
+      border: none;
+      font-family: Montserrat-Regular;
+      box-shadow: none;
+      outline: none;
+      line-height: 40px;
+      display: block;
+      border-bottom: 2px solid #464646 !important;
+      width: 250px;
+    }
+
+    .row {
+      float: left;
+      width: 100%;
+
+    }
+
+    .col {
+      float: left;
+      padding: 10px 0px;
+      width: 250px;
+      display: inline;
+    }
+
+    .submit {
+      font-size: 16px;
+      /*font-weight: bold;*/
+      font-family: Poppins-SemiBold;
+      border: none;
+      background: #c3bbbb38;
+      outline: none;
+      padding: 10px 73px;
+    }
+
+
+
+    .text2{
+      text-align: justify;
+      width: 250px;
+      font-family:Montserrat-Regular;
+      padding: 2% 0;
+      font-size: 15px;
+    }
+    section{
+      position: relative;
+      float: left;
+      display: block;
+      padding-top: 3%;
+      width: 100%;
+    }
+    article{
+      position: relative;
+      float: left;
+      display: block;
+      width: 100%;
+    }
+    h2{
+      font-size: 20px;
+      font-family: poppins-semibold;
+      text-align: left;
+    }
+    ::placeholder{
+      font-size: 18px;
+      font-family: Montserrat-Regular;
+      color: #000000;
+    }
+
+    .text {
+      padding: 5px 0px;
+      font-family: Montserrat-Regular;
+    }
+  </style>
+  <section>
+    <article>
+      <div class="container_inv">
+        <h2>ADD NEW TEAM MEMBER</h2>
+        <%= form_tag({:action => :invite_member}, {:method => :post ,:onsubmit=>"showloader()"}) %>
+
+        <div class="row">
+          <div class="col">
+            <%= text_field_tag 'first_name', params[:first_name],:placeholder => 'First Name*', :class => "text_field", :required => true %>
+          </div>
+          <div class="col">
+            <%= text_field_tag 'last_name', params[:last_name], :placeholder => 'Last Name', :class => "text_field last", :required => true %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <%= text_field_tag 'email', params[:email], :placeholder => 'Email*', :class => "text_field", :required => true %>
+            <div class="text">
+              (An invitation will sent to this email)
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <%= select_tag :access_permission,  options_for_select(['Master', 'User']),:prompt => 'Access Permission',  :class => "text_field", :required => true %>            <div class="text text2">
+              (Master user can create/delete/edit roles.Add new users and edit/delete all restricted users .
+              Restricted users can create/edit/delete roles but can not add/edit/delete team members.)
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <%= submit_tag "SEND INVITE", :class => 'submit' %>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+<% else %>
+
+  <style>
+
+    .container_inv {
+      width: 60%;
+      font-family: Arial;
+      margin: auto;
+    }
+
+    .last{
+      margin: 0px 30px ;
+    }
+
+    .text_field {
+      font-size: 15px;
+      border: none;
+      box-shadow: none;
+      line-height: 40px;
+      outline: none;
+      font-family: Montserrat-Regular;
+      display: block;
+      border-bottom: 2px solid #464646 !important;
+      width: 250px;
+    }
+    .row {
+      float: left;
+      width: 100%;
+
+    }
+
+    .col {
+      float: left;
+      padding: 10px 0px;
+      display: inline;
+    }
+    .submit {
+      font-size: 16px;
+      /*font-weight: bold;*/
+      font-family: Poppins-SemiBold;
+      border: none;
+      background: #c3bbbb38;
+      cursor: pointer;
+      outline: none;
+      padding: 10px 73px;
+    }
+
+      .text2{
+        text-align: justify;
+        width: 250px;
+        font-family:Montserrat-Regular;
+        padding: 2% 0;
+        font-size: 12px;
+      }
+      section{
+        position: relative;
+        float: left;
+        display: block;
+        padding-top: 3%;
+        width: 100%;
+      }
+      article{
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+      }
+      h2{
+        font-size: 20px;
+        font-family: poppins-semibold;
+      }
+      ::placeholder{
+        font-size: 18px;
+        font-family: Montserrat-Regular;
+        color:#000000;
+        font-size: 15px;
+      }
+
+    .text {
+      padding: 5px 0px;
+      font-family: Montserrat-Regular;
+      font-size: 15px;
+    }
+
+  </style>
+  <section>
+    <article>
+      <div class="container_inv">
+        <h2>ADD NEW TEAM MEMBER</h2>
+        <%= form_tag({:action => :invite_member}, {:method => :post,:onsubmit=>"showloader()"}) %>
+
+        <div class="row">
+          <div class="col">
+            <%= text_field_tag 'first_name', params[:first_name],:placeholder => 'First Name*', :class => "text_field", :oninvalid => "this.setCustomValidity('Please Enter First Name')", :oninput => "setCustomValidity('')",  :required => "" %>
+          </div>
+          <div class="col">
+            <%= text_field_tag 'last_name', params[:last_name], :placeholder => 'Last Name', :class => "text_field last", :oninvalid => "this.setCustomValidity('Please Enter Last Name')", :oninput => "setCustomValidity('')",  :required => "" %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <%= email_field_tag 'email', params[:email], :placeholder => 'Email*', :class => "text_field", :oninvalid => "this.setCustomValidity('Please Enter Email')", :oninput => "setCustomValidity('')",  :required => "" %>
+            <div class="text">
+              (An invitation will sent to this email)
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <%= select_tag :access_permission,  options_for_select(['Master', 'User']),:prompt => 'Access Permission',  :class => "text_field", :oninvalid => "this.setCustomValidity('Please Enter Access Permission')", :oninput => "setCustomValidity('')",  :required => ""  %>
+            <div class="text2">
+              (Master user can create/delete/edit roles.Add new users and edit/delete all restricted users .
+              Restricted users can create/edit/delete roles but can not add/edit/delete team members.)
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <%= submit_tag "SEND INVITE", :class=>'submit' %>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+<% end %>

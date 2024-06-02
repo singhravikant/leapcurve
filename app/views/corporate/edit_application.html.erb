@@ -1,0 +1,3378 @@
+<% if browser.device.mobile? %>
+  <style>
+    .submit-btn0 {
+      background: #c3bbbb38;
+    cursor: pointer;
+    margin-top: 0.5%;
+    font-family: Montserrat-Regular;
+    width: 10%;
+    margin-right: 10%;
+    padding: 1% 0%;
+    border: none;
+    font-size: 11px;
+    float: right;
+    }
+    select option {
+      width: 30%;
+      text-align: center;
+    }
+
+    article {
+      font-family: Arial;
+    }
+
+    #alert {
+      display: none;
+      text-align: center;
+      padding: 10px 0px;
+      border-radius: 2px;
+      border: 1px solid green;
+      background-color: green;
+      color: white;
+      position: absolute;
+      top: 8%;
+      left: 40%;
+      right: 40%;
+    }
+
+    .show {
+      display: block !important;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .slide {
+      margin: auto;
+      width: 100%;
+      /*text-align: center;*/
+    }
+
+    .form-col {
+      padding: 10px 0px;
+      text-align: center;
+    }
+
+    .field {
+      border: none;
+      border-bottom: 2px solid gray;
+      text-align: center;
+      outline: none;
+      width: 90%;
+      padding: 10px;
+
+    }
+
+    .field1 {
+      border: none;
+      border-bottom: 2px solid gray;
+      text-align: center;
+      outline: none;
+      width: 90%;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+    .next-btn {
+      border-radius: 3px;
+      padding: 10px 30px;
+      font-weight: bold;
+      border: none;
+      font-family: Montserrat-Regular;
+      background: #c3bbbb38;
+      cursor: pointer;
+    }
+
+    .page-head {
+      font-weight: bold;
+      text-align: center;
+      font-size: 17px;
+    }
+
+    .quehead {
+      font-weight: bold;
+      font-size: 17px;
+      padding: 14px 0px;
+      font-family: Poppins-Regular;
+      text-align: center;
+    }
+
+    .radiobtn {
+      width: 0;
+      height: 35px;
+      cursor: pointer;
+      margin: 0;
+    }
+
+    .radiobtn::before {
+      content: " ";
+      background-color: white;
+      border: 4px solid black;
+      padding: 7px;
+      left: -30px;
+      top: -3px;
+      position: absolute;
+    }
+
+    .radiobtn:checked::before {
+      content: " ";
+      border: 6px solid black;
+      padding: 7px;
+      background-color: white;
+    }
+
+    .optlabel {
+      cursor: pointer;
+      line-height: 40px;
+      position: relative;
+      font-family: Montserrat;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    /*.optlabel {*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*padding-left: 35px;*/
+    /*margin-bottom: 12px;*/
+    /*cursor: pointer;*/
+    /*font-size: 22px;*/
+    /*-webkit-user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-ms-user-select: none;*/
+    /*user-select: none;*/
+    /*}*/
+
+    /* Hide the browser's default radio button */
+    .optlabel input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    /* Create a custom radio button */
+    .checkmark {
+      content: " ";
+      background-color: white;
+      border: 4px solid black;
+      padding: 7px;
+      left: -40px;
+      top: 0px;
+      position: absolute;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .optlabel:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+
+    /* When the radio button is checked, add a blue background */
+    .optlabel input:checked ~ .checkmark {
+      background-color: #ffffff;
+    }
+
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the indicator (dot/circle) when checked */
+    .optlabel input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    /* Style the indicator (dot/circle) */
+    .optlabel .checkmark:after {
+      content: " ";
+      background-color: white;
+      border: 6px solid black;
+      padding: 7px;
+      left: -6px;
+      top: -4px;
+      position: absolute;
+    }
+
+    option[value=""] {
+      display: none;
+    }
+
+    .prompt {
+      width: 96%;
+      text-align-last: center;
+    }
+
+    .center {
+      text-align: center;
+    }
+    .add-btn{
+      cursor: pointer;
+      font-family: Poppins-Regular;
+      margin-top: 20px;
+    }
+    #delbtn11,#delbtn12{
+      cursor:pointer ;
+    }
+
+    #delbtn21,#delbtn22{
+      cursor: pointer;
+      position: absolute;
+      margin-top: 30px;
+    }
+    .opt-margin{
+      margin-left: 46px;
+    }
+  </style>
+
+  <section>
+    <article>
+      <span id="alert"></span>
+      <%#= form_tag(:action => 'application_submit', multipart: true,:method => :post) %>
+      <%= form_tag({action: :update_application}, multipart: true) %>
+      <%= hidden_field_tag 'app_id',@app_id %>
+      <%= hidden_field_tag 'page',@page %>
+      <% @id = 1 %>
+      <div class="show slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CONTACT INFORMATION</div>
+        </div>
+        <div class="form-col">
+          <%= text_field_tag 'Name', params['Name'],:value=>@applicant['Name'], :class => 'field', :placeholder => 'Name*' %>
+        </div>
+        <div class="form-col">
+          <%= email_field_tag 'Email', params['Email'], :value=>@applicant['Email'],:class => 'field', :placeholder => 'Email*' %>
+        </div>
+        <div class="form-col">
+          <%= number_field_tag 'Phone', params['Phone'], :value=>@applicant['Phone'],:onKeyPress => "if(this.value.length==10) return false;", :min => 0, :class => 'field', :placeholder => 'Phone No' %>
+        </div>
+
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 2 %>
+      <div class="hide slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">QUALIFICATIONS</div>
+        </div>
+        <div class="form-col">
+          <datalist id="degrees">
+            <% @allDeg.each do |value| %>
+              <option value="<%= value.strip %>"></option>
+            <% end %>
+          </datalist>
+          <%= text_field_tag "Degree", params['Degree'],:value=>@applicant['Degree'], :list => 'degrees', :placeholder => 'Highest Degree*', :class => "field" %>
+          <span id="responce11"></span>
+          <span id="responce12"></span>
+          <button type="button" class="add-btn" id="add1" onclick="adddegree()">ADD MORE</button>
+          <%#= text_field_tag 'Highest_degree', params['Highest_degree'], :class => 'field', :placeholder => 'Highest Degree*' %>
+        </div>
+        <div class="form-col">
+          <%#= text_field_tag 'Institutions', params['Institutions'], :class => 'field', :placeholder => 'Institutions*' %>
+          <%= text_field_tag :Institutions, params['Institutions'],:value=>@applicant['Institutions'],  :list => 'colleges', :placeholder => 'Institutions*', :class => "field" %>
+          <span id="responce21"></span>
+          <span id="responce22"></span>
+          <datalist id="colleges">
+            <% @allColl.each do |value| %>
+              <option value="<%= value.strip %>"></option>
+            <% end %>
+          </datalist>
+          <button type="button" id="add2" class="add-btn" onclick="addcollege()">ADD MORE</button>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 3 %>
+      <div class="hide slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">EXPERIENCE AND SKILLS</div>
+        </div>
+        <div class="form-col">
+          <%= number_field_tag 'Year_of_experience', params['Year_of_experience'],:value=>@applicant['Year_of_experience'],  :class => 'field',:step=>"any", :placeholder => 'Year Of Experience*' %>
+        </div>
+        <div class="form-col">
+          <%= text_field_tag 'Technical_skills', params['Technical_skills'],:value=>@applicant['Technical_skills'],  :class => 'field', :placeholder => 'Technical Skills*' %>
+          <!--<button type="button" id="add" onclick="addmore()">ADD MORE</button>-->
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+
+      <% @id = 4 %>
+      <div class="hide slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - BASIC INFORMATION</div>
+        </div>
+        <div class="form-col">
+          <%= text_field_tag 'Designation', params['Designation'],:value=>@applicant['Designation'],  :class => 'field', :placeholder => 'Designation*' %>
+        </div>
+        <div class="form-col">
+          <%= text_field_tag 'Company', params['Company*'],:value=>@applicant['Company'],  :class => 'field', :placeholder => 'Company*' %>
+        </div>
+        <div class="form-col">
+          <%= select_tag :Industry, options_for_select(@allInd,:selected=>@applicant['Industry']), :prompt => 'Industry*', :class => "field prompt" %>
+          <%#= text_field_tag 'Industry', params['Industry'], :class => 'field', :placeholder => 'Industry*' %>
+        </div>
+        <div class="form-col">
+          <%= select_tag :Function, options_for_select(@allFun,:selected=>@applicant['Function']), :prompt => 'Function*', :class => "field prompt" %>
+          <%#= text_field_tag 'Function', params['Function'], :class => 'field', :placeholder => 'Function*' %>
+        </div>
+        <div class="form-col">
+          <%= text_field_tag 'Department', params['Department'],:value=>@applicant['Department'],  :class => 'field', :placeholder => 'Department' %>
+        </div>
+        <div class="form-col">
+          <%= number_field_tag 'Salary', params['Salary'],:value=>@applicant['Salary'],  :class => 'field',:step=>"any", :min => 0, :placeholder => 'Salary (INR Lakh)' %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 5 %>
+      <div class="hide slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR ORGANIZATION</div>
+        </div>
+        <div class="form-col">
+
+          <%= select_tag :customers, options_for_select(['Regional (1-5 States)', 'National (5+ States)', 'International (1-5 Countries)', 'Global (5+ Countries)'],:selected=>@applicant['customers']), :prompt => 'My company has customers/offices', :class => "field prompt" %>
+
+          <%#= text_field_tag 'customers', params['customers'], :class => 'field', :placeholder => 'My company has customers/offices' %>
+        </div>
+        <div class="form-col">
+          <%= number_field_tag 'Revenue', params['Revenue'],:value=>@applicant['Revenue'],  :class => 'field', :step=>"any", :min => 0, :placeholder => 'Revenue (INR crore)' %>
+        </div>
+        <div class="form-col">
+          <%= number_field_tag 'Employees', params['Employees'],:value=>@applicant['Employees'],  :class => 'field', :min => 0, :placeholder => 'No of Employees ' %>
+        </div>
+        <div class="form-col">
+          <%= select_tag :level, options_for_select(['Top Management (Typically top 2 levels)', 'Senior Management (Typically third level)', 'Middle Management (If you have someone reporting to you who is NOT a workman)', 'Junior Management (Typically entry level professionals)'],:selected=>@applicant['level']), :prompt => 'My level in the company', :class => "field prompt" %>
+          <%#= text_field_tag 'level', params['level'], :class => 'field', :placeholder => 'My level in the company' %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 6 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR RESPONSIBILITIES</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt,optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 7 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR RESPONSIBILITIES</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 8 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR RESPONSIBILITIES</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 9 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 10 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 11 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 12 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 13 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 14 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 15 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 16 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 17 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 18 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 19 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 20 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 21 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 22 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 23 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+
+      <% @id = 24 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 25 %>
+      <div class="hide slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">PLEASE UPLOAD YOUR RESUME BELOW</div>
+        </div>
+        <div class="form-col">
+          <%= file_field_tag 'file', :onchange => 'upload()', :id => 'file' %>
+          <!--        <input type="file" name="Resume">-->
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <!--        <button type="submit" class="next-btn" >CONFIRM</button>-->
+          <%= submit_tag 'CONFIRM', :class => 'next-btn', :id => 'submit' %>
+        </div>
+      </div>
+
+    </article>
+  </section>
+
+<% elsif browser.device.tablet? %>
+  <style>
+    .submit-btn0 {
+      background: #c3bbbb38;
+    cursor: pointer;
+    margin-top: 0.5%;
+    font-family: Montserrat-Regular;
+    width: 10%;
+    margin-right: 10%;
+    padding: 1% 0%;
+    border: none;
+    font-size: 11px;
+    float: right;
+    }
+    select option {
+      width: 30%;
+      text-align: center;
+    }
+
+    article {
+      font-family: Arial;
+    }
+
+    #alert {
+      display: none;
+      text-align: center;
+      padding: 10px 0px;
+      border-radius: 2px;
+      border: 1px solid green;
+      background-color: green;
+      color: white;
+      position: absolute;
+      top: 8%;
+      left: 40%;
+      right: 40%;
+    }
+
+    .show {
+      display: block !important;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .slide {
+      margin: auto;
+      width: 80%;
+      /*text-align: center;*/
+    }
+
+    .form-col {
+      padding: 10px 0px;
+      text-align: center;
+    }
+
+    .field {
+      border: none;
+      border-bottom: 2px solid gray;
+      text-align: center;
+      outline: none;
+      width: 70%;
+      padding: 10px;
+
+    }
+
+    .field1 {
+      border: none;
+      border-bottom: 2px solid gray;
+      text-align: center;
+      outline: none;
+      width: 70%;
+      padding: 10px;
+      margin-top: 30px;
+
+    }
+
+    .next-btn {
+      border-radius: 3px;
+      padding: 10px 30px;
+      font-weight: bold;
+      font-family: Montserrat-Regular;
+      border: none;
+      background: #c3bbbb38;
+      cursor: pointer;
+    }
+
+    .page-head {
+      font-weight: bold;
+      text-align: center;
+      font-size: 17px;
+    }
+
+    .quehead {
+      font-weight: bold;
+      font-size: 17px;
+      font-family: Poppins-Regular;
+      padding: 14px 0px;
+      text-align: center;
+    }
+
+    .radiobtn {
+      width: 0;
+      height: 35px;
+      cursor: pointer;
+      margin: 0;
+    }
+
+    .radiobtn::before {
+      content: " ";
+      background-color: white;
+      border: 4px solid black;
+      padding: 7px;
+      left: -30px;
+      top: -3px;
+      position: absolute;
+    }
+
+    .radiobtn:checked::before {
+      content: " ";
+      border: 6px solid black;
+      padding: 7px;
+      background-color: white;
+    }
+
+    .optlabel {
+      cursor: pointer;
+      line-height: 40px;
+      position: relative;
+      font-family: Montserrat;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    /*.optlabel {*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*padding-left: 35px;*/
+    /*margin-bottom: 12px;*/
+    /*cursor: pointer;*/
+    /*font-size: 22px;*/
+    /*-webkit-user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-ms-user-select: none;*/
+    /*user-select: none;*/
+    /*}*/
+
+    /* Hide the browser's default radio button */
+    .optlabel input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    /* Create a custom radio button */
+    .checkmark {
+      content: " ";
+      background-color: white;
+      border: 4px solid black;
+      padding: 7px;
+      left: -40px;
+      top: 0px;
+      position: absolute;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .optlabel:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+
+    /* When the radio button is checked, add a blue background */
+    .optlabel input:checked ~ .checkmark {
+      background-color: #ffffff;
+    }
+
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the indicator (dot/circle) when checked */
+    .optlabel input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    /* Style the indicator (dot/circle) */
+    .optlabel .checkmark:after {
+      content: " ";
+      background-color: white;
+      border: 6px solid black;
+      padding: 7px;
+      left: -6px;
+      top: -4px;
+      position: absolute;
+    }
+
+    option[value=""] {
+      display: none;
+    }
+
+    .prompt {
+      width: 72%;
+      text-align-last: center;
+    }
+
+    .center {
+      text-align: center;
+    }
+    .add-btn{
+      cursor: pointer;
+      position: absolute;
+      font-family: Poppins-Regular;
+      margin-top: 5px;
+    }
+    #delbtn11,#delbtn12{
+      cursor: pointer;
+      position: absolute;
+      margin-top: 30px;    }
+
+    #delbtn21,#delbtn22{
+      cursor: pointer;
+      position: absolute;
+      margin-top: 30px;
+    }
+    .opt-margin{
+      margin-left: 46px;
+    }
+  </style>
+
+  <section>
+    <article>
+      <span id="alert"></span>
+      <%#= form_tag(:action => 'application_submit', multipart: true,:method => :post) %>
+      <%= form_tag({action: :update_application}, multipart: true) %>
+      <%= hidden_field_tag 'app_id',@app_id %>
+      <%= hidden_field_tag 'page',@page %>
+      <% @id = 1 %>
+      <div class="show slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CONTACT INFORMATION</div>
+        </div>
+        <div class="form-col">
+          <%= text_field_tag 'Name', params['Name'],:value=>@applicant['Name'], :class => 'field', :placeholder => 'Name*' %>
+        </div>
+        <div class="form-col">
+          <%= email_field_tag 'Email', params['Email'],:value=>@applicant['Email'], :class => 'field', :placeholder => 'Email*' %>
+        </div>
+        <div class="form-col">
+          <%= number_field_tag 'Phone', params['Phone'],:value=>@applicant['Phone'],:onKeyPress => "if(this.value.length==10) return false;", :min => 0, :class => 'field', :placeholder => 'Phone No' %>
+        </div>
+
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 2 %>
+      <div class="hide slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">QUALIFICATIONS</div>
+        </div>
+        <div class="form-col">
+          <datalist id="degrees">
+            <% @allDeg.each do |value| %>
+              <option value="<%= value.strip %>"></option>
+            <% end %>
+          </datalist>
+          <%= text_field_tag "Degree", params['Degree'],:value=>@applicant['Degree'], :list => 'degrees', :placeholder => 'Highest Degree*', :class => "field" %>
+          <span id="responce11"></span>
+          <span id="responce12"></span>
+          <button type="button" class="add-btn" id="add1" onclick="adddegree()">ADD MORE</button>
+          <%#= text_field_tag 'Highest_degree', params['Highest_degree'], :class => 'field', :placeholder => 'Highest Degree*' %>
+        </div>
+        <div class="form-col">
+          <%#= text_field_tag 'Institutions', params['Institutions'], :class => 'field', :placeholder => 'Institutions*' %>
+          <%= text_field_tag :Institutions, params['Institutions'],:value=>@applicant['Institutions'], :list => 'colleges', :placeholder => 'Institutions*', :class => "field" %>
+          <span id="responce21"></span>
+          <span id="responce22"></span>
+          <datalist id="colleges">
+            <% @allColl.each do |value| %>
+              <option value="<%= value.strip %>"></option>
+            <% end %>
+          </datalist>
+          <button type="button" id="add2" class="add-btn" onclick="addcollege()">ADD MORE</button>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 3 %>
+      <div class="hide slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">EXPERIENCE AND SKILLS</div>
+        </div>
+        <div class="form-col">
+          <%= number_field_tag 'Year_of_experience', params['Year_of_experience'], :value=>@applicant['Year_of_experience'],:class => 'field',:step=>"any", :placeholder => 'Year Of Experience*' %>
+        </div>
+        <div class="form-col">
+          <%= text_field_tag 'Technical_skills', params['Technical_skills'],:value=>@applicant['Technical_skills'], :class => 'field', :placeholder => 'Technical Skills*' %>
+          <!--<button type="button" id="add" onclick="addmore()">ADD MORE</button>-->
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+
+      <% @id = 4 %>
+      <div class="hide slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - BASIC INFORMATION</div>
+        </div>
+        <div class="form-col">
+          <%= text_field_tag 'Designation', params['Designation'],:value=>@applicant['Designation'], :class => 'field', :placeholder => 'Designation*' %>
+        </div>
+        <div class="form-col">
+          <%= text_field_tag 'Company', params['Company*'],:value=>@applicant['Company'], :class => 'field', :placeholder => 'Company*' %>
+        </div>
+        <div class="form-col">
+          <%= select_tag :Industry, options_for_select(@allInd,:selected=>@applicant['Industry']), :prompt => 'Industry*', :class => "field prompt" %>
+          <%#= text_field_tag 'Industry', params['Industry'], :class => 'field', :placeholder => 'Industry*' %>
+        </div>
+        <div class="form-col">
+          <%= select_tag :Function, options_for_select(@allFun,:selected=>@applicant['Function']), :prompt => 'Function*', :class => "field prompt" %>
+          <%#= text_field_tag 'Function', params['Function'], :class => 'field', :placeholder => 'Function*' %>
+        </div>
+        <div class="form-col">
+          <%= text_field_tag 'Department', params['Department'],:value=>@applicant['Department'], :class => 'field', :placeholder => 'Department' %>
+        </div>
+        <div class="form-col">
+          <%= number_field_tag 'Salary', params['Salary'],:value=>@applicant['Salary'], :class => 'field',:step=>"any", :min => 0, :placeholder => 'Salary (INR Lakh)' %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 5 %>
+      <div class="hide slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR ORGANIZATION</div>
+        </div>
+        <div class="form-col">
+
+          <%= select_tag :customers, options_for_select(['Regional (1-5 States)', 'National (5+ States)', 'International (1-5 Countries)', 'Global (5+ Countries)'],:selected=>@applicant['customers']), :prompt => 'My company has customers/offices', :class => "field prompt" %>
+
+          <%#= text_field_tag 'customers', params['customers'], :class => 'field', :placeholder => 'My company has customers/offices' %>
+        </div>
+        <div class="form-col">
+          <%= number_field_tag 'Revenue', params['Revenue'],:value=>@applicant['Revenue'], :class => 'field', :step=>"any", :min => 0, :placeholder => 'Revenue (INR crore)' %>
+        </div>
+        <div class="form-col">
+          <%= number_field_tag 'Employees', params['Employees'],:value=>@applicant['Employees'], :class => 'field', :min => 0, :placeholder => 'No of Employees ' %>
+        </div>
+        <div class="form-col">
+          <%= select_tag :level, options_for_select(['Top Management (Typically top 2 levels)', 'Senior Management (Typically third level)', 'Middle Management (If you have someone reporting to you who is NOT a workman)', 'Junior Management (Typically entry level professionals)'],:selected=>@applicant['level']), :prompt => 'My level in the company', :class => "field prompt" %>
+          <%#= text_field_tag 'level', params['level'], :class => 'field', :placeholder => 'My level in the company' %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+
+
+      <% @id = 6 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR RESPONSIBILITIES</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt,optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 7 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR RESPONSIBILITIES</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 8 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR RESPONSIBILITIES</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 9 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 10 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 11 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 12 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 13 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 14 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 15 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 16 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 17 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 18 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 19 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 20 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 21 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 22 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 23 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 24 %>
+      <div class="hide slide" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 25 %>
+      <div class="hide slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">PLEASE UPLOAD YOUR RESUME BELOW</div>
+        </div>
+        <div class="form-col">
+          <%= file_field_tag 'file', :onchange => 'upload()', :id => 'file' %>
+          <!--        <input type="file" name="Resume">-->
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <!--        <button type="submit" class="next-btn" >CONFIRM</button>-->
+          <%= submit_tag 'CONFIRM', :class => 'next-btn', :id => 'submit' %>
+        </div>
+      </div>
+
+    </article>
+  </section>
+
+<% else %>
+  <style>
+    .submit-btn0 {
+      background: #c3bbbb38;
+    cursor: pointer;
+    margin-top: 0.5%;
+    font-family: Montserrat-Regular;
+    width: 10%;
+    margin-right: 10%;
+    padding: 1% 0%;
+    border: none;
+    font-size: 11px;
+    float: right;
+    }
+    select option {
+      width: 30%;
+      text-align: center;
+    }
+
+    article {
+      font-family: Arial;
+    }
+
+    #alert {
+      display: none;
+      text-align: center;
+      padding: 10px 0px;
+      border-radius: 2px;
+      border: 1px solid green;
+      background-color: green;
+      color: white;
+      position: absolute;
+      top: 8%;
+      left: 40%;
+      right: 40%;
+    }
+
+    .show {
+      display: block !important;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .slide {
+      margin: auto;
+      width: 75%;
+      padding-top: 35px;
+      /*text-align: center;*/
+    }
+
+    .form-col {
+      padding: 15px 0px;
+    }
+
+    .field {
+      border: none;
+      border-bottom: 2px solid gray;
+      text-align: center;
+      outline: none;
+      width: 28%;
+      padding: 10px;
+
+    }
+
+    .field1 {
+      border: none;
+      border-bottom: 2px solid gray;
+      text-align: center;
+      outline: none;
+      width: 28%;
+      padding: 10px;
+
+    }
+
+    .next-btn {
+      border-radius: 3px;
+      padding: 1.2% 6%;
+      outline: none;
+      font-family: Montserrat-Regular;
+      font-weight: bold;
+      margin-top: 25px;
+      border: none;
+      background: #c3bbbb38;
+      cursor: pointer;
+    }
+    .new-nxt-pre{
+      padding: 1.2% 4% !important;
+    }
+    .new-nxt-pre1
+    {
+      padding: 1.2% 5% !important;
+    }
+    .page-head {
+      font-weight: bold;
+      font-size: 20px;
+      font-family: Poppins-Regular;
+    }
+
+    .quehead {
+      font-weight: bold;
+      font-size: 20px;
+      font-family: Poppins-Regular;
+      padding: 15px 0px;
+    }
+
+    .radiobtn {
+      width: 0;
+      height: 35px;
+      cursor: pointer;
+      margin: 0;
+    }
+
+    .radiobtn::before {
+      content: " ";
+      background-color: white;
+      border: 4px solid black;
+      padding: 7px;
+      left: -30px;
+      top: -3px;
+      position: absolute;
+    }
+
+    .radiobtn:checked::before {
+      content: " ";
+      border: 6px solid black;
+      padding: 7px;
+      background-color: white;
+    }
+
+    .optlabel {
+      cursor: pointer;
+      line-height: 40px;
+      position: relative;
+      font-family: Montserrat;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    /*.optlabel {*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*padding-left: 35px;*/
+    /*margin-bottom: 12px;*/
+    /*cursor: pointer;*/
+    /*font-size: 22px;*/
+    /*-webkit-user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-ms-user-select: none;*/
+    /*user-select: none;*/
+    /*}*/
+
+    /* Hide the browser's default radio button */
+    .optlabel input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    /* Create a custom radio button */
+    .checkmark {
+      content: " ";
+      background-color: white;
+      border: 4px solid black;
+      padding: 7px;
+      left: -40px;
+      top: 0px;
+      position: absolute;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .optlabel:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+
+    /* When the radio button is checked, add a blue background */
+    .optlabel input:checked ~ .checkmark {
+      background-color: #ffffff;
+    }
+
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the indicator (dot/circle) when checked */
+    .optlabel input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    /* Style the indicator (dot/circle) */
+    .optlabel .checkmark:after {
+      content: " ";
+      background-color: white;
+      border: 6px solid black;
+      padding: 7px;
+      left: -6px;
+      top: -4px;
+      position: absolute;
+    }
+
+    option[value=""] {
+      display: none;
+    }
+
+    .prompt {
+      width: 30%;
+      text-align-last: center;
+    }
+
+    .center {
+      text-align: center;
+    }
+    .add-btn{
+      position: absolute;
+      cursor: pointer;
+      font-family: Poppins-Regular;
+    }
+    #delbtn11,#delbtn12{
+      cursor:pointer ;
+    }
+
+    #delbtn21,#delbtn22{
+      cursor:pointer ;
+    }
+    .opt-margin{
+      margin-left: 40px;
+    }
+    .pre-less-padding{
+      padding: 10px 0;
+    }
+    .new-form-col{
+      padding: 18px 0;
+    }
+    .new-slide-css{
+      padding: 0 !important;
+    }
+    .que-btn{
+      border: none;
+      background: transparent;
+      font-family:Montserrat-Regular ;
+      outline: none;
+    }
+    .new-next-btn{
+      padding: 1.2% 3%;
+    }
+    .new-field{
+      margin-left: 20px;
+    }
+  </style>
+
+  <section>
+
+    <article>
+      <span id="alert"></span>
+      <%#= form_tag(:action => 'application_submit', multipart: true,:method => :post) %>
+      <%= form_tag({action: :update_application}, multipart: true) %>
+      <%#= button_tag 'PARTIAL SAVE' ,:name=>'partial' ,:class=>'submit-btn0' %>
+      <%= hidden_field_tag 'app_id',@app_id %>
+      <%= hidden_field_tag 'page',@page %>
+      <% @id = 1 %>
+      <div class="show slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CONTACT INFORMATION</div>
+        </div>
+        <div class="form-col">
+          <%= text_field_tag 'Name', params['Name'],:value=>@applicant['Name'], :class => 'field', :placeholder => 'Name*' %>
+        </div>
+        <div class="form-col">
+          <%= email_field_tag 'Email', params['Email'],:value=>@applicant['Email'], :class => 'field', :placeholder => 'Email*' %>
+        </div>
+        <div class="form-col">
+          <%= number_field_tag 'Phone', params['Phone'], :value=>@applicant['Phone'],:onKeyPress => "if(this.value.length==10) return false;", :min => 0, :class => 'field', :placeholder => 'Phone No' %>
+        </div>
+
+        <div class="form-col">
+          <button type="button" class="next-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 2 %>
+      <div class="hide slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">QUALIFICATIONS</div>
+        </div>
+        <div class="form-col">
+          <datalist id="degrees">
+            <% @allDeg.each do |value| %>
+              <option value="<%= value.strip %>"></option>
+            <% end %>
+          </datalist>
+          <%= text_field_tag "Degree", params['Degree'], :value=>@applicant['Degree'],:list => 'degrees', :placeholder => 'Highest Degree*', :class => "field" %>
+          <span id="responce11"></span>
+          <span id="responce12"></span>
+          <button type="button" class="add-btn" id="add1" onclick="adddegree()">ADD MORE</button>
+          <%#= text_field_tag 'Highest_degree', params['Highest_degree'], :class => 'field', :placeholder => 'Highest Degree*' %>
+        </div>
+        <div class="form-col">
+          <%#= text_field_tag 'Institutions', params['Institutions'], :class => 'field', :placeholder => 'Institutions*' %>
+          <%= text_field_tag :Institutions, params['Institutions'],:value=>@applicant['Institutions'], :list => 'colleges', :placeholder => 'Institutions*', :class => "field" %>
+          <span id="responce21"></span>
+          <span id="responce22"></span>
+          <datalist id="colleges">
+            <% @allColl.each do |value| %>
+              <option value="<%= value.strip %>"></option>
+            <% end %>
+          </datalist>
+          <button type="button" id="add2" class="add-btn" onclick="addcollege()">ADD MORE</button>
+        </div>
+        <div class="form-col pre-less-padding">
+          <button type="button" class="next-btn new-nxt-pre" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+
+          <button type="button" class="next-btn new-nxt-pre1" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 3 %>
+      <div class="hide slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">EXPERIENCE AND SKILLS</div>
+        </div>
+        <div class="form-col">
+          <%= number_field_tag 'Year_of_experience', params['Year_of_experience'], :value=>@applicant['Year_of_experience'],:class => 'field',:step=>"any", :placeholder => 'Year Of Experience*' %>
+        </div>
+        <div class="form-col">
+          <%= text_field_tag 'Technical_skills', params['Technical_skills'], :value=>@applicant['Technical_skills'],:class => 'field', :placeholder => 'Technical Skills*' %>
+          <!--<button type="button" id="add" onclick="addmore()">ADD MORE</button>-->
+        </div>
+        <div class="form-col pre-less-padding">
+          <button type="button" class="next-btn new-nxt-pre" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+
+          <button type="button" class="next-btn new-nxt-pre1" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 4 %>
+      <div class="hide slide center new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - BASIC INFORMATION</div>
+        </div>
+        <div class="form-col new-form-col">
+          <%= text_field_tag 'Designation', params['Designation'],:value=>@applicant['Designation'], :class => 'field new-field', :placeholder => 'Designation*' %>
+
+          <%= text_field_tag 'Company', params['Company*'],:value=>@applicant['Company'], :class => 'field new-field', :placeholder => 'Company*' %>
+        </div>
+        <div class="form-col new-form-col">
+          <%= select_tag :Industry, options_for_select(@allInd,:selected=>@applicant['Industry']), :prompt => 'Industry*', :class => "field prompt new-field" %>
+          <%#= text_field_tag 'Industry', params['Industry'], :class => 'field', :placeholder => 'Industry*' %>
+
+          <%= select_tag :Function, options_for_select(@allFun,:selected=>@applicant['Function']), :prompt => 'Function*', :class => "field prompt new-field" %>
+          <%#= text_field_tag 'Function', params['Function'], :class => 'field', :placeholder => 'Function*' %>
+        </div>
+        <div class="form-col new-form-col">
+          <%= text_field_tag 'Department', params['Department'],:value=>@applicant['Department'], :class => 'field new-field', :placeholder => 'Department' %>
+
+          <%= number_field_tag 'Salary', params['Salary'],:value=>@applicant['Salary'], :class => 'field  new-field',:step=>"any", :min => 0, :placeholder => 'Salary (INR Lakh)' %>
+        </div>
+        <div class="form-col pre-less-padding new-form-col">
+          <button type="button" class="next-btn new-nxt-pre" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+
+          <button type="button" class="next-btn new-nxt-pre1" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+      </div>
+
+      <% @id = 5 %>
+
+      <div class="hide slide center .new-slide-css" id="slide<%= @id %>">
+
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR ORGANIZATION</div>
+        </div>
+
+        <div class="form-col">
+          <%= select_tag :customers, options_for_select(['Regional (1-5 States)', 'National (5+ States)', 'International (1-5 Countries)', 'Global (5+ Countries)'],:selected=>@applicant['customers']), :prompt => 'My company has customers/offices', :class => "field prompt" %>
+          <%#= text_field_tag 'customers', params['customers'], :class => 'field', :placeholder => 'My company has customers/offices' %>
+        </div>
+
+        <div class="form-col">
+          <%= number_field_tag 'Revenue', params['Revenue'],:value=>@applicant['Revenue'], :class => 'field', :step=>"any", :min => 0, :placeholder => 'Revenue (INR crore)' %>
+        </div>
+        <div class="form-col">
+          <%= number_field_tag 'Employees', params['Employees'],:value=>@applicant['Employees'], :class => 'field', :min => 0, :placeholder => 'No of Employees ' %>
+        </div>
+
+        <div class="form-col">
+          <%= select_tag :level, options_for_select(['Top Management (Typically top 2 levels)', 'Senior Management (Typically third level)', 'Middle Management (If you have someone reporting to you who is NOT a workman)', 'Junior Management (Typically entry level professionals)'],:selected=>@applicant['level']), :prompt => 'My level in the company', :class => "field prompt" %>
+          <%#= text_field_tag 'level', params['level'], :class => 'field', :placeholder => 'My level in the company' %>
+        </div>
+
+        <div class="form-col pre-less-padding">
+          <button type="button" class="next-btn new-nxt-pre" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+
+          <button type="button" class="next-btn new-nxt-pre1" onclick="nextslide(<%= @id%>)">NEXT</button>
+        </div>
+
+      </div>
+
+      <% @id = 6 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR RESPONSIBILITIES</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt,optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 7 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR RESPONSIBILITIES</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 8 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR RESPONSIBILITIES</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 9 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 10 %>
+      <div class="hide slide new-slide-css"  id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 11 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 12 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 13 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 14 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 15 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR EFFECTIVENESS</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 16 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 17 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 18 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 19 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 20 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 21 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <span> < </span><button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button> <span>|</span> <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button><span> > </span>
+        </div>
+      </div>
+
+      <% @id = 22 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <span> < </span>
+          <button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <span>|</span>
+          <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+          <span> > </span>
+        </div>
+      </div>
+
+      <% @id = 23 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <span> < </span>
+          <button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <span>|</span>
+          <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+          <span> > </span>
+        </div>
+      </div>
+
+      <% @id = 24 %>
+      <div class="hide slide new-slide-css" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">CURRENT ROLE - YOUR IMPACT</div>
+        </div>
+        <% ind = @id - 5 %>
+        <div class="quehead"><%= ind %> <%= @allQues[ind - 1]['queTxt'] %></div>
+        <div class="opt-margin">
+          <% @allQues[ind - 1]['queOption'].each_with_index do |key, indx| %>
+            <%#= ind %>
+            <% key.each do |opt, optTxt| %>
+
+              <% if opt == 'optText' %>
+                <label class="optlabel"><input type="radio" name="que<%= ind %>" value="<%= indx %>" onclick="nextslide(<%=@id%>)" class='radiobtn' >
+                  <% text = optTxt.split('*') %>
+                  <% for i in 0..text.length - 1 do %>
+                    <% if i % 2 == 0 %>
+                      <%= text[i] %>
+                    <% else %>
+                      <b><%= text[i] %></b>
+                    <% end %>
+                  <% end %>
+                  <span class="checkmark"></span>
+                  <br></label>
+              <% end %>
+            <% end %>
+          <% end %></div>
+        <div class="form-col">
+          <span> < </span>
+          <button type="button" class="que-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <span>|</span>
+          <button type="button" class="que-btn" onclick="nextslide(<%= @id%>)">NEXT</button>
+          <span> > </span>
+        </div>
+      </div>
+
+      <% @id = 25 %>
+      <div class="hide slide center" id="slide<%= @id %>">
+        <div class="form-col">
+          <div class="page-head">PLEASE UPLOAD YOUR RESUME BELOW</div>
+        </div>
+        <div class="form-col">
+          <%= file_field_tag 'file', :onchange => 'upload()', :id => 'file' %>
+          <!--        <input type="file" name="Resume">-->
+        </div>
+        <div class="form-col">
+          <button type="button" class="next-btn new-next-btn" onclick="prevslide(<%= @id%>)">PREVIOUS</button>
+          <!--        <button type="submit" class="next-btn" >CONFIRM</button>-->
+          <%= submit_tag 'CONFIRM', :class => 'next-btn new-next-btn', :id => 'submit' %>
+        </div>
+      </div>
+
+    </article>
+
+  </section>
+
+<% end %>
+<script>
+    <%
+        for i in 1..@applicant['Questions'].length do
+        %>
+    var opt = document.getElementsByName('que' +<%= i.to_s %>)
+
+    opt[<%=((@applicant['Questions']['que'+i.to_s]).to_i)%>].checked = true
+    <% end %>
+    function upload() {
+        var alert = document.getElementById('alert');
+        var submit = document.getElementById('submit');
+        var file = document.getElementById('file').value;
+        // var index=file.lastIndexOf('.');
+        var ext = file.split('.');
+        if (file == '' || file == null) {
+            submit.disabled = false;
+        }
+        else if (!(ext[ext.length - 1] == 'pdf')) {
+            alert.innerHTML = 'Please Select File of PDF format';
+            alert.style.display = 'block';
+            submit.disabled = true;
+            setTimeout(function () {
+                alert.style.display = 'none'
+            }, 2000);
+        } else {
+            submit.disabled = false;
+
+        }
+    }
+    var answers=new Array();
+    function nextslide(id) {
+        var alert = document.getElementById('alert');
+        var isnext = false;
+        if (id <= 5) {
+            var fields = document.getElementsByClassName('field');
+            if (id == 1) {
+                if (fields[0].value == null || fields[0].value == "") {
+                    alert.innerHTML = 'Please Fill Name';
+                    alert.style.display = 'block';
+                } else if (fields[1].value == null || fields[1].value == "") {
+                    alert.innerHTML = 'Please Fill Email';
+                    alert.style.display = 'block';
+                } else {
+                    var atind = fields[1].value.indexOf('@');
+                    var dotind = fields[1].value.lastIndexOf('.');
+                    if (atind > 0 && dotind - atind > 2 && dotind < (fields[1].value.length - 2)) {
+                        isnext = true;
+                    } else {
+                        alert.innerHTML = 'Please Enter Vailid Email';
+                        alert.style.display = 'block';
+                    }
+
+                }
+            }
+            if (id == 2) {
+                if (fields[3].value == null || fields[3].value == "") {
+                    alert.innerHTML = 'Please Fill Highest Degree';
+                    alert.style.display = 'block';
+                } else if (fields[4].value == null || fields[4].value == "") {
+                    alert.innerHTML = 'Please Fill Institution';
+                    alert.style.display = 'block';
+                } else {
+                    isnext = true;
+                }
+            }
+            if (id == 3) {
+                if (fields[5].value == null || fields[5].value == "") {
+                    alert.innerHTML = 'Please Fill Year Of Experience';
+                    alert.style.display = 'block';
+                } else if (fields[6].value == null || fields[6].value == "") {
+                    alert.innerHTML = 'Please Fill Technical Skills';
+                    alert.style.display = 'block';
+                } else {
+                    isnext = true;
+                }
+            }
+            if (id == 4) {
+                if (fields[7].value == null || fields[7].value == "") {
+                    alert.innerHTML = 'Please Fill Designation';
+                    alert.style.display = 'block';
+                } else if (fields[8].value == null || fields[8].value == "") {
+                    alert.innerHTML = 'Please Fill Company';
+                    alert.style.display = 'block';
+                } else if (fields[9].value == null || fields[9].value == "") {
+                    alert.innerHTML = 'Please Fill Industry';
+                    alert.style.display = 'block';
+                } else if (fields[10].value == null || fields[10].value == "") {
+                    alert.innerHTML = 'Please Fill Function';
+                    alert.style.display = 'block';
+                } else {
+                    isnext = true;
+                }
+            }
+            if (id == 5) {
+                isnext = true;
+            }
+
+        } else {
+            var questions = document.getElementsByName('que' + (id - 5));
+            for (var i = 0; i < questions.length; i++) {
+                if (questions[i].checked) {
+                    isnext = true;
+                    answers[id-6]=[i];
+                    break;
+                }
+            }
+            if (!isnext) {
+                alert.innerHTML = 'Please Select Any Option';
+                alert.style.display = 'block';
+            }
+        }
+        if (isnext) {
+            var slide = document.getElementById('slide' + id);
+            slide.classList.remove('show');
+            slide.classList.add('hide');
+            var questions = document.getElementsByName('que' + (id - 4));
+            id=id-4;
+
+            if (id == 3 && (answers[0] == 10||answers[1] == 0)) {
+                if(answers[0] == 10){
+                    questions[5].checked = true;
+                }
+                if (answers[1] == 0) {
+                    questions[0].checked = true;
+                }
+
+                id = id + 1;
+            }
+            if (id == 6 && (answers[0] == 7 || answers[0] == 8 || answers[0] == 9 || answers[0] == 10  || answers[4] == (6||7))) {
+                questions[3].checked = true;
+                id = id + 1;
+            }
+            if (id == 11 && (answers[4] == 0 || answers[4] ==1 || answers[9] ==10 ) ) {
+
+                if (answers[4] == 0) {
+                    questions[0].checked = true;
+                }
+                if (answers[4] ==1) {
+                    questions[1].checked = true;
+                }
+                if (answers[9] ==10) {
+                    questions[9].checked = true;
+                }
+
+                id = id + 1;
+            }
+            if (id == 12 && (answers[4] == 0 || answers[10] == 0)) {
+                questions[0].checked = true;
+                id = id + 1;
+            }
+            if (id == 13 && (answers[4] == 0 || answers[10] == 0 || answers[11] == 0)) {
+                questions[0].checked = true;
+                id = id + 1;
+            }
+            if (id == 16 && (answers[4] == 0 || answers[10] == 0 || answers[11] == 0)) {
+                questions[0].checked = true;
+                id = id + 1;
+            }
+            if (id == 17 && (answers[9] == 0 )) {
+                questions[0].checked = true;
+                id = id + 1;
+            }
+            if (id == 18 && (answers[0] == 8 || answers[0] == 9 || answers[0] == 10||answers[4] == (6||7))) {
+                if(answers[0] == 8 ){
+                    questions[4].checked = true;
+                }else{
+                    questions[5].checked = true;
+                }
+                id = id + 1;
+            }
+            id=id+4;
+
+
+            var nextslide = document.getElementById('slide' + (id + 1));
+            nextslide.classList.add('show');
+            nextslide.classList.remove('hide');
+        } else {
+            setTimeout(function () {
+                alert.style.display = 'none'
+            }, 2000);
+        }
+
+    }
+
+    function prevslide(id) {
+        var slide = document.getElementById('slide' + id);
+        slide.classList.remove('show');
+        slide.classList.add('hide');
+        id = id - 6;
+        if (id == 18 && (answers[0] == 8 || answers[0] == 9 || answers[0] == 10||answers[4] == (6||7))) {
+            id = id - 1;
+        }
+        if (id == 17 && (answers[9] == 0)) {
+            id = id - 1;
+        }
+        if (id == 16 && (answers[4] == 0 || answers[10] == 0 || answers[11] == 0)) {
+            id = id - 1;
+        }
+        if (id == 13 && (answers[4] == 0 || answers[10] == 0 || answers[11] == 0)) {
+            id = id - 1;
+        }
+        if (id == 12 && (answers[4] == 0 || answers[10] == 0)) {
+            id = id - 1;
+        }
+        if (id == 11 && (answers[4] == 0 || answers[4] == 1 || answers[9] == 10)) {
+            id = id - 1;
+        }
+        if (id == 6 && (answers[0] == 7 || answers[0] == 8 || answers[0] == 9 || answers[0] == 10 || answers[4] == (6 || 7))) {
+            id = id - 1;
+        }
+        if (id == 3 && (answers[0] == 10 || answers[1] == 0)) {
+            id = id - 1;
+        }
+        id = id + 6;
+        var prevslide = document.getElementById('slide' + (id - 1));
+        prevslide.classList.add('show');
+        prevslide.classList.remove('hide');
+
+    }
+
+    var countBox1 = 1;
+    var countBox2 = 1;
+
+    function adddegree() {
+        if (countBox1 <= 2) {
+            var boxName = "Degree" + countBox1;
+            document.getElementById('responce1' + countBox1).innerHTML += ' <span class="form-col" id="del1' + countBox1 + '"><input type="text" id="' + boxName + '"  name="' + boxName + '" placeholder ="Highest Degree*" class = "field1" list ="degrees" /><a id="delbtn1' + countBox1 + '" onclick="del1(' + countBox1 + ')">X</a></span>';
+            if (countBox1 == 2) {
+                document.getElementById('add1').style.display = 'none';
+            }
+            countBox1 += 1;
+        }
+        else {
+            document.getElementById('add1').style.display = 'none';
+        }
+
+    }
+
+    function addcollege() {
+        if (countBox2 <= 2) {
+            var boxName = "Institutions" + countBox2;
+            document.getElementById('responce2' + countBox2).innerHTML += ' <span class="form-col" id="del2' + countBox2 + '"><input type="text" id="' + boxName + '"  name="' + boxName + '" placeholder ="Institutions*" class = "field1" list ="colleges" /><a id="delbtn2' + countBox2 + '" onclick="del2(' + countBox2 + ')">X</a></span>';
+            if (countBox2 == 2) {
+                document.getElementById('add2').style.display = 'none';
+            }
+            countBox2 += 1;
+        }
+        else {
+            document.getElementById('add2').style.display = 'none';
+        }
+
+    }
+
+    function del1(id) {
+        var parent = document.getElementById("del1" + id);
+        var child1 = document.getElementById("Degree" + id);
+        var child2 = document.getElementById("delbtn1" + id);
+        parent.removeChild(child1);
+        parent.removeChild(child2);
+        parent.style.display = 'none';
+        parent.id = "";
+        countBox1 -= 1;
+        document.getElementById('add1').style.display = 'inline-block';
+    }
+
+    function del2(id) {
+        var parent = document.getElementById("del2" + id);
+        var child1 = document.getElementById("Institutions" + id);
+        var child2 = document.getElementById("delbtn2" + id);
+        parent.removeChild(child1);
+        parent.removeChild(child2);
+        parent.style.display = 'none';
+        parent.id = "";
+        countBox2 -= 1;
+        document.getElementById('add2').style.display = 'inline-block';
+    }
+
+</script>

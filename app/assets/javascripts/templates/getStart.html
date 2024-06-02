@@ -1,0 +1,296 @@
+
+<script>
+    $(document).ready(function () {
+        {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                slideshowSpeed: "2000",
+            });
+        }
+    })
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("mySidenavUl").style.width = "200px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    function gotolink(id) {
+//        var ele=document.getElementById(id);
+//        $("html, body").animate({ scrollTop: $('#'+id).position().top-50}, 1000);
+//        ele.scrollIntoView(true,{behavior:'smooth',block:'start'});
+//        closeNav();
+
+    }
+</script>
+<style>
+    .btn-primary:focus, .btn-primary.focus {
+        color: #fff;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .dropdown-menu li span:hover{
+        color:#ff8466;
+    }
+    body.modal-open {
+        padding-right: 0px;
+        overflow: auto;
+    }
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(250px);
+        }
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color:rgba(0,0,0,0.3);
+        overflow: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        /*animation: 1s ease-out 0s 1 slideInFromLeft;*/
+    }
+    .sidenav ul{padding-left: 0px}
+    .sidenav ul li {
+        list-style: none !important;
+        padding: 0px ;
+        font-size: 13px;
+        display: block;
+        float: none;
+        position: static;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover, .offcanvas a:focus{
+        color:#ff8466;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        /*right: 25px;*/
+        font-size: 36px;
+        /*margin-left: 50px;*/
+    }
+ @media only screen and (max-width: 425px) {
+        #report {
+            padding: 100px 24px 0 !important;
+        }
+    }
+
+    @media screen and (max-height: 1024px) {
+        .sidenav {padding-top: 0px;}
+        .sidenav a {font-size: 16px;}
+    }
+
+</style>
+    <header id="header" class="bs-docs-nav navbar navbar-static-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-header">
+                        <a  ng-click="gotolink(' ')" class="navbar-brand hidden-xs"><img src="/assets/logo.png"> </a>
+                        <a  ng-click="gotolink(' ')" class="navbar-brand visible-xs" style="float: right"><img src="/assets/logo.png"> </a>
+                        <!--<%=link_to image_tag("logo1.png"),root_path,class:"navbar-brand"%> </div>-->
+                        <button type="button" style="float: left;" data-toggle="collapse" data-target="#bs-navbar" onclick="openNav()" class="collapsed navbar-toggle visible-sm visible-xs" aria-expanded="false" aria-controls="bs-navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+                    </div>
+                    <nav id="bs-navbar" class="collapse navbar-collapse">
+                        <ul id="top-menu" class="hidden-xs hidden-sm" style="background-color: white">
+                            <li> <a  ng-click="gotolink('about')" style="cursor: pointer;">About</a></li>
+                            <li><a ng-click="gotolink('features')" style="cursor: pointer;">Features</a></li>
+                            <li><a  ng-click="gotolink('journey')" class="journey"  style="cursor: pointer;">Map My Journey</a></li>
+                            <li><a ng-click="gotolink('career')"  style="cursor: pointer;">My Career Level</a></li>
+                            <li><a ng-click="gotolink('compare')"  style="cursor: pointer;">Compare Career Level</a></li>
+                            <li><a ng-click="gotolink('report')" style="cursor: pointer;">Career Report</a></li>
+                            <li class="vault" ng-show="isLogin==true" ><a href="#vault" onclick="gotolink('vault')" >My Vault</a></li>
+                            <li  id="vaultid" class="vault" ng-show="isLogin==false"><a href="#vault" onclick="gotolink('vault')" style="display: inline-block">{{username}}</a>
+                                <!--<i class="fa fa-sign-out" style="margin-left: 5px;color:#ff8466;cursor:pointer" ng-click="logout();"></i>-->
+                                <div class="dropdown" style="display: inline">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="border: 0; padding: 0;margin-top: 0;background-color: transparent !important; color: #ff8466 !important;">
+                                        <i class="fa fa-caret-down"></i></button>
+                                    <ul class="dropdown-menu" style="left: -80px;">
+                                        <li style="display: block;padding: 5px 5px 5px 15px;" ng-click="openProfilePanal()"><span style="background: none;font-size: 15px; text-align: left;cursor: pointer">My Profile</span></li>
+                                        <li style="display: block;padding: 5px 5px 5px 15px;" ng-click="openPasswordPanal()"><span style="background: none;font-size: 15px; text-align: left;cursor: pointer">Change Password</span></li>
+                                        <li style="display: block;padding: 5px 5px 5px 15px;"><span ng-click="logout();" style="background: none;font-size: 15px; text-align: left;cursor: pointer">Logout</span></li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+
+                    </nav>
+                    <div id="mySidenav"  class="sidenav visible-xs visible-sm  animate slideInRight">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <ul  id="mySidenavUl" style="background-color: white;height: 100%;padding-top: 55px;">
+                            <!--<a herf="#about"  onclick="gotolink('about')">About</a>-->
+                            <li> <a  ng-click="gotolink('about')">About</a></li>
+                            <li><a ng-click="gotolink('features')">Features</a></li>
+                            <li><a  ng-click="gotolink('journey')" class="journey" style="cursor: pointer;">Map My Journey</a></li>
+                            <li><a ng-click="gotolink('career')" >My Career Level</a></li>
+                            <li><a ng-click="gotolink('compare')" class="compare"  style="cursor: pointer;" >Compare Career Level</a></li>
+                            <li><a ng-click="gotolink('report')"  >Career Report</a></li>
+                            <li class="vault" ng-show="isLogin==true" ><a ng-click="gotolink('vault')" >My Vault</a></li>
+                            <li  id="vaultid" class="vault" ng-show="isLogin==false"><a href="#vault" ng-click="gotolink('vault')"  style="display: inline-block">{{username}}</a>
+                                <!--<i class="fa fa-sign-out" style="margin-left: 5px;color:#ff8466;cursor:pointer" ng-click="logout();"></i>-->
+                                <div class="dropdown dropdown-submenu" style="display: inline">
+                                    <button class="btn btn-primary" type="button" data-toggle="dropdown"
+                                            style="border: 0; padding: 0;margin-top: 0;background-color: transparent !important; color: #ff8466 !important;">
+                                        <i class="fa fa-caret-down"></i></button>
+                                    <ul class="dropdown-menu" style="left: -135px; border: none; box-shadow: none;">
+                                        <li
+                                                ng-click="openProfilePanal()"><a
+                                                style="background: none;font-size: 15px; text-align: left;cursor: pointer;color: #818181">My Profile</a>
+                                        </li>
+                                        <li
+                                                ng-click="openPasswordPanal()"><a
+                                                style="background: none;font-size: 15px; text-align: left;cursor: pointer;color: #818181">Change Password</a>
+                                        </li>
+                                        <li><a ng-click="logout();"
+                                               style="background: none;font-size: 15px; text-align: left;cursor: pointer;color: #818181">Logout</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!--<div class="navbar-header">-->
+                <!--<a ui-sref="app.dashboard"class="navbar-brand"><img src="/assets/logo1.png"> </a>-->
+                <!--&lt;!&ndash;<%=link_to image_tag("logo1.png"),root_path,class:"navbar-brand"%> </div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>&ndash;&gt;-->
+                <!--<button type="button"  class="collapsed navbar-toggle visible-sm visible-xs" onclick="openNav()">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span> <span class="icon-bar"></span>-->
+                <!--</button>-->
+                <!--</div>-->
+                <!--<nav id="bs-navbar" class="collapse navbar-collapse">-->
+                <!--<ul id="top-menu" class="hidden-xs" style="background-color: white">-->
+                <!--<a herf="#about"  onclick="gotolink('about')">About</a>-->
+                <!--<a onclick="gotolink('features')">Features</a>-->
+                <!--<a onclick="gotolink('journey')" class="journey"  style="cursor: pointer;">Map My Journey</a>-->
+                <!--<a onclick="gotolink('career')" >My Career Level</a>-->
+                <!--<a class="compare"onclick="gotolink('compare')" style="cursor: pointer;" >Compare Career Level</a>-->
+                <!--<a onclick="gotolink('report')" >Career Report</a>-->
+                <!--<a onclick="gotolink('vault')" ng-show="isLogin==true" style="display: inline-block">{{username}}</a>-->
+
+                <!--<li  id="vaultid" class="vault" ng-show="isLogin==false"><a href="#vault" style="display: inline-block">{{username}}</a>-->
+                <!--&lt;!&ndash;<i class="fa fa-sign-out" style="margin-left: 5px;color:#ff8466;cursor:pointer" ng-click="logout();"></i>&ndash;&gt;-->
+                <!--<div class="dropdown" style="display: inline">-->
+                <!--<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="border: 0; padding: 0;margin-top: 0;background-color: transparent !important; color: #ff8466 !important;">-->
+                <!--<i class="fa fa-caret-down"></i></button>-->
+                <!--<ul class="dropdown-menu" style="left: -80px;">-->
+                <!--<li style="display: block;padding: 5px 5px 5px 15px;" ng-click="openProfilePanal()"><span style="background: none;font-size: 15px; text-align: left;cursor: pointer">My Profile</span></li>-->
+                <!--<li style="display: block;padding: 5px 5px 5px 15px;" ng-click="openPasswordPanal()"><span style="background: none;font-size: 15px; text-align: left;cursor: pointer">Change Password</span></li>-->
+                <!--<li style="display: block;padding: 5px 5px 5px 15px;"><span ng-click="logout();" style="background: none;font-size: 15px; text-align: left;cursor: pointer">Logout</span></li>-->
+
+                <!--</ul>-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--</ul>-->
+
+
+                <!--<div id="mySidenav" class="sidenav">-->
+
+                <!--<a  onclick="gotolink('about')">About</a>-->
+                <!--<a onclick="gotolink('features')">Features</a>-->
+                <!--<a onclick="gotolink('journey')" class="journey"  style="cursor: pointer;">Map My Journey</a>-->
+                <!--<a onclick="gotolink('career')" >My Career Level</a>-->
+                <!--<a class="compare"onclick="gotolink('compare')" style="cursor: pointer;" >Compare Career Level</a>-->
+                <!--<a onclick="gotolink('report')" >Career Report</a>-->
+                <!--<a onclick="gotolink('vault')"  style="display: inline-block">{{username}}</a>-->
+
+                <!--&lt;!&ndash;<a href="#">Services</a>&ndash;&gt;-->
+                <!--&lt;!&ndash;<a href="#">Clients</a>&ndash;&gt;-->
+                <!--&lt;!&ndash;<a href="#">Contact</a>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+                <!--&lt;!&ndash;<ul id="top-menu" class="sidenav visible-xs" style="background-color: white">&ndash;&gt;-->
+                <!--&lt;!&ndash;<li> <a href="#about">About</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li><a href="#features" data-toggle="collapse" data-target="#bs-navbar">Features</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li><a  class="journey" href="#journey" data-toggle="collapse" data-target="#bs-navbar" style="cursor: pointer;">Map My Journey</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li><a href="#career" data-toggle="collapse" data-target="#bs-navbar">My Career Level</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li><a class="compare" href="#compare" style="cursor: pointer;" data-toggle="collapse" data-target="#bs-navbar">Compare Career Level</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li><a href="#report" data-toggle="collapse" data-target="#bs-navbar">Career Report</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li class="vault" ng-show="isLogin==true" ><a href="#vault" data-toggle="collapse" data-target="#bs-navbar">My Vault</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li  id="vaultid" class="vault" ng-show="isLogin==false"><a href="#vault" data-toggle="collapse" data-target="#bs-navbar" style="display: inline-block">{{username}}</a>&ndash;&gt;-->
+                <!--&lt;!&ndash;&lt;!&ndash;<i class="fa fa-sign-out" style="margin-left: 5px;color:#ff8466;cursor:pointer" ng-click="logout();"></i>&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="dropdown" style="display: inline">&ndash;&gt;-->
+                <!--&lt;!&ndash;<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="border: 0; padding: 0;margin-top: 0;background-color: transparent !important; color: #ff8466 !important;">&ndash;&gt;-->
+                <!--&lt;!&ndash;<i class="fa fa-caret-down"></i></button>&ndash;&gt;-->
+                <!--&lt;!&ndash;<ul class="dropdown-menu" style="left: -80px;">&ndash;&gt;-->
+                <!--&lt;!&ndash;<li style="display: block;padding: 5px 5px 5px 15px;" ng-click="openProfilePanal()"><span style="background: none;font-size: 15px; text-align: left;cursor: pointer">My Profile</span></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li style="display: block;padding: 5px 5px 5px 15px;" ng-click="openPasswordPanal()"><span style="background: none;font-size: 15px; text-align: left;cursor: pointer">Change Password</span></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li style="display: block;padding: 5px 5px 5px 15px;"><span ng-click="logout();" style="background: none;font-size: 15px; text-align: left;cursor: pointer">Logout</span></li>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                <!--</div>-->
+                <!--</nav>-->
+
+                <!--</div>-->
+            </div>
+        </div>
+    </header>
+<div id="report" class="report" >
+    <toaster-container toaster-options="{'close-button':true }"></toaster-container>
+    <div class="container" onclick="closeNav()">
+        <div class="row">
+            <div class="side-left col-md-4 col-sm-4">
+                <div class="left-side">
+                    <div class="side-img"><img src="/assets/get-start.png" alt="" title=""></div>
+                </div>
+                <div class="heading">
+                    <h2>Get<br>
+                        Started</h2>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-8">
+                <div class="page-des"> <dfn>Answer these questions to know your career level and benchmark it against others with the same experience, industry, institute or a combination of all, making comparison easy and clear.</dfn>
+                    <p>Things to note before you begin:</p>
+                    <ol>
+                        <li>Approximate time taken to complete the questionnaire is 45 mins.</li>
+                        <li>You are answering questions about your current and future role and not your performance within the role.</li>
+                        <li>Modify your previous answers any time during the questionnaire.</li>
+                        <li>Your answers are getting saved automatically. However, we suggest you finish answering in one go.</li>
+                        <li>The questionnaire has 4 sections. Check the indicator to monitor your progress.</li>
+                    </ol>
+                    <a ui-sref="app.quiz"  ng-if="!isLogin"  class="btn">Begin</a>
+                    <a ng-click="openForm()" ng-if="isLogin" class="btn">Log In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<script>-->
+    <!--$('a').bind("click", function() {-->
+        <!--window.location = $(this).data('location');-->
+    <!--});-->
+<!--</script>-->

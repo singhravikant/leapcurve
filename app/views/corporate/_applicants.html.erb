@@ -1,0 +1,116 @@
+<style>
+  .len-9 {
+    background: #66B6Bf33;
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  .mob-pad-len-9 {
+    padding: 10px;
+  }
+  .app-head {
+    color: black;
+    font-weight: unset;
+    text-decoration: none !important;
+  }
+  .data-items {
+    font-size: 15px;
+    color: #4c4c4c;
+    font-family: Montserrat-Regular;
+    line-height: 20px;
+  }
+    .form1 form{
+      display: inline-block !important;
+      width: unset;
+      float: right;
+    }
+    .app-head{
+      /*white-space: nowrap;*/
+      width: 90%;
+      position: relative;
+      /*overflow: hidden;*/
+      /*text-overflow: ellipsis;*/
+    }
+    .app-head:hover {
+      /*display: block;*/
+      /*width: 100%;*/
+    }
+    .notification1{
+      /*top: -2px;*/
+      font-size: 53%;
+      position: absolute;
+      padding: 0px 2px;
+      background: green;
+      color: #ffffff;
+      border: 1px solid green;
+      border-radius: 2px;
+      margin: 0px 6px;
+      padding: 1px 4px;
+    }
+</style>
+<form>
+  <%= hidden_field_tag 'app_keys', @app_keys %>
+</form>
+
+<% @applicant.each do |k, v| %>
+  <% if  !v.nil? %>
+<%# v=json = JSON.parse(val).with_indifferent_access %>
+  <div class="row">
+    <div class="col col-less">
+      <div class="len-9">
+        <div class="mob-pad-len-9">
+            <div class="permission form1">
+          <%= form_tag(:action => 'delete_applicant', :method => :post) do %>
+          <%= hidden_field_tag 'app_id', k %>
+
+                <% if !@role.nil? && @role['role_id'].present?
+               @idurl='/corporate/summary_report/'+@role['role_id']
+                   else
+                     @idurl='/corporate/dashboard'
+               end
+                %>
+
+
+          <%= button_tag 'DELETE', :value => "#{@idurl}", :onclick => "return confirm('Are you sure you want to delete this applicant?')", :action => 'deleterole', :class => 'frmbtn' %>
+          <%#= button_tag 'EDIT', :type => 'button', :onclick => "window.location.href='/corporate/edit_application/#{k}/?page=2'", :class => 'frmbtn' %>
+          <% end %>
+           </div>
+          <a class="link" href="/corporate/candidate/<%= k %>/?page=2">
+            <div class="app-head"><%= v['Name'].upcase %> | <%= v['Designation'].upcase %> -
+              <%= v['Function'].upcase %> | <%= v['Company'].upcase %>
+              <% if !v['isread'].nil?&&!v['isread'] %>
+                                                                                                    <span class="notification1">
+                                                                                                      NEW
+<!--                                                                                                    <img src="/assets/new.png">-->
+                                                                                                    </span>
+              <% end %>
+            </div>
+          </a>
+          <div class="data-items">Experience: <%= v['Year_of_experience'] %></div>
+          <div class="data-items">Career Level: <%= v['cl'] %></div>
+          <div class="data-items">Salary: <%= v['Salary'] %></div>
+          <div class="data-items">Qualifications:
+            <% if !v.nil? && v['Degree'].instance_of?(Array) %>
+              <%# @length = v['Degree'].length %>
+              <% v['Degree'].delete("") %>
+              <% v['Degree'].each_with_index do |degree,index| %>
+                <span>
+                  <% if degree != "" && index < v['Degree'].length - 1 %><%= degree %>,
+                    <% else %>
+                                    <% if degree != "" %><%= degree %>
+                      <% end %>
+                  <% end %>
+                </span>
+              <% end %>
+            <% else %>
+              <span><%= v['Degree'] %></span>
+            <% end %></div>
+          <div class="data-items">Email: <%= v['Email'] %> | Phone: <%= v['Phone'] %></div>
+<!--          <div class="data-items">Phone: <%#= v['Phone'] %></div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+<% end %>
+<span id="new_res" class="hide">(<%= @applicant.length %>)</span>

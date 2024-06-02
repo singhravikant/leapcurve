@@ -1,0 +1,665 @@
+@media only screen and (max-width: 1024px) {
+#bs-navbar ul li {
+	padding: 0px 14px;
+	font-size: 13px;
+}
+#slider h2 {
+	font-size: 40px;
+}
+.banner-des {
+	top: 27px;
+}
+h2 {
+	font-size: 38px;
+}
+dfn {
+	font-size: 30px;
+	line-height: 35px;
+}
+p {
+	font-size: 19px;
+}
+.heading {
+	margin: 3px 17px 0 0;
+}
+#features .heading, #journey .heading {
+	margin-left: 0px;
+}
+#features .page-des, #journey .page-des {
+	margin-left: 52px;
+}
+#features .col-md-4 {
+	width: 33.333%;
+}
+h3 {
+	font-size: 32px;
+}
+#features p {
+	font-size: 16px;
+}
+#journey .col-md-4 {
+	width: 33.333%;
+}
+.career-label::before {
+	background-size: 37px;
+	right: -46px;
+}
+#career .heading {
+	margin-right: 16px;
+}
+#vault .heading {
+	margin-right: 30px;
+}
+#report .heading {
+	margin-right: 50px;
+}
+#slider {
+	margin-top: 94px;
+}
+.career-label span.title {
+	font-size: 18px;
+}
+#report.report .heading {
+	margin-right: 10px;
+}
+p, ol li {
+	font-size: 19px;
+}
+.col-md-12.effectiveness-popup {
+	clear: both;
+	padding-top: 10px;
+}
+.career-report-content .report-arrow {
+	position: absolute;
+	top: 265px;
+	right: 0;
+}
+.career-report-content .question-block-wrp {
+	position: static;
+	margin-top: 0
+}
+.career-report-content .report-arrow {
+	position: relative;
+	margin-top: -7px;
+	top: -183px;
+}
+.career-report-content .pages-content-pagination {
+	position: relative;
+	top: -66px;
+	right: 0;
+}
+.career-report-content #report {
+	padding: 30px 0 18px;
+	margin-bottom: 0px;
+}
+.career-report-content .select-arrow {
+	position: static;
+	margin: 29px 0 34px 0;
+}
+.career-report-content #report.report-third {
+	padding-bottom: 15px;
+}
+.processbar-right {
+	padding: 52px 0 29px 29px;
+}
+.question-div {
+	clear: both;
+}
+}
+ @media only screen and (max-width: 1023px) {
+.experience .box h3 {
+	font-size: 20px;
+}
+.experience .box {
+	float: left;
+	width: 50%;
+}
+.question-div {
+	clear: both;
+	padding-top: 1px;
+}
+.experience select {
+	width: 86%;
+}
+.question-content h3, .question-content h3 {
+	font-size: 22px;
+}
+.col-md-12.border-bottom {
+	clear: both;
+}
+.career-report-content #report.report .side-img {
+	margin-left: -7px;
+}
+.career-report-content #report.report .heading {
+	margin-top: 31px;
+}
+#vault {
+	padding: 120px 0 58px;
+}
+.responsibility-page ul li, .effectiveness ul li, .question-content p {
+	font-size: 16px;
+}
+.navbar-toggle .icon-bar {
+	background: #525252;
+}
+.navbar-toggle {
+	display: block;
+	margin: 4px 0 0 0;
+}
+#bs-navbar {
+	width: 100%;
+	display: none;
+}
+#bs-navbar.in {
+	display: inline-block;
+}
+#bs-navbar ul {
+	padding: 0px;
+}
+#bs-navbar ul li {
+	font-size: 15px;
+	display: block;
+	margin: 20px 0;
+}
+#slider {
+	margin-top: 89px;
+}
+#slider h2 {
+	font-size: 28px;
+}
+.banner-des {
+	top: 8px;
+}
+#about {
+	padding: 150px 0 100px;
+}
+h2 {
+	font-size: 24px;
+}
+.heading {
+	margin: 3px 2px 0 16px;
+}
+.heading h2 {
+	padding-left: 48px;
+	margin: 0px;
+	background-size: 39px;
+}
+dfn {
+	font-size: 24px;
+	line-height: 30px;
+}
+p {
+	font-size: 16px;
+}
+#slider, #about, #features, #journey, #career, #report, #vault, #compare {
+	box-shadow: 1px 1px 1px #ebebeb;
+	/*min-height: 600px;*/
+}
+#slider {
+	min-height: 0px;
+	padding-bottom: 30px;
+}
+h3 {
+	font-size: 22px;
+}
+#features p {
+	font-size: 12px;
+	padding-right: 0;
+	line-height: 17px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#features .page-des, #journey .page-des {
+	margin-left: 33px;
+}
+#journey {
+	padding-top: 125px;
+}
+.career-label::before {
+	display: none;
+}
+#career {
+	padding: 100px 0 100px;
+}
+#features {
+	padding: 124px 0 100px;
+}
+#compare {
+	padding: 105px 0 100px 0;
+}
+#compare .btn {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+#compare .career-label, #compare .career-label .career-img {
+	width: 300px;
+}
+.limited-reriod {
+	bottom: -26%;
+}
+#vault .heading h2 {
+	background-position: left center;
+}
+.vault-links li {
+	font-size: 17px;
+}
+.footer-nav ul li {
+	padding-left: 60px;
+}
+.btn {
+	font-size: 16px;
+}
+.navbar-toggle .icon-bar {
+	width: 32px;
+	height: 4px;
+	border-radius: 1px;
+}
+#bs-navbar.in.active {
+	display: none;
+}
+.side-img {
+	width: 100%;
+}
+.question-block-wrp {
+	margin-top: 4%;
+}
+#report.question .question-block-wrp {
+	float: left;
+	width: 100%;
+}
+.box h3 {
+	margin: 0 -10px 15px;
+	padding: 10px 10px 12px;
+}
+.box {
+	min-height: 0px;
+	border-right: 1px solid #d6d6d6;
+	border-top: none;
+}
+.col-md-3.box {
+	min-height: 0px;
+	border-top: none;
+}
+.col-md-3.box:first-child, .box:first-child {
+	border-top: 1px solid #d6d6d6;
+}
+.box.active:first-child, .box.active, .box:hover, .col-md-3.box.active:first-child, .col-md-3.box.active, .col-md-3.box:hover {
+	border-top: 1px solid #ff5032;
+}
+#report.question.impact .box.col-md-10, #report.question.impact .box.col-md-2 {
+	float: left;
+}
+#report.question.impact .box.col-md-2 {
+	width: 15%
+}
+#report.question.impact .box.col-md-10 {
+	width: 85%
+}
+#report.question.impact .impact-box {
+	overflow: hidden;
+}
+.experience .box {
+	border: none !important;
+}
+.report-third h2 {
+	font-size: 28px;
+}
+.report-third .text-ten {
+	font-size: 50px;
+	padding: 8% 10%;
+}
+.question-block span.question-title {
+	font-size: 30px;
+}
+.career-report-content #header .navbar-header-heading h2 {
+	font-size: 26px;
+	margin: 15px 15px 0px 0px;
+}
+}
+@media only screen and (max-width: 767px) {
+.heading h2{margin-bottom:20px}
+.experience .processbar, .processbar-right {
+	display: none;
+}
+#slider, #about, #features, #journey, #career, #report, #vault, #compare {
+	min-height: 0px;
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+#slider {
+	padding: 0px 0 30px;
+}
+.copyright p {
+	text-align: center;
+}
+.footer-nav ul {
+	float: none;
+}
+#journey .heading {
+	margin: 26px 0px 67px 14px;
+}
+.side-img {
+	width: 65%;
+}
+#compare .heading {
+	margin-top: 62px;
+	margin-left: 32px;
+}
+#report .heading {
+	margin-right: 48px;
+	margin-top: 10px;
+}
+#slider h2 {
+	margin-top: 12px;
+}
+.navbar-header {
+	float: left;
+	width: 25%;
+	padding: 0px;
+}
+#slider h2 {
+	font-size: 17px;
+}
+.side-nav {
+	display: none
+}
+.col-md-8 {
+	float: left;
+}
+.heading {
+	margin: 16px 2px 0 16px;
+	float: left;
+}
+.page-des {
+	clear: both;
+	margin-left: 0px;
+}
+#features .page-des, #journey .page-des {
+	margin-left: 0px;
+}
+#features .col-md-4 {
+	width: auto;
+}
+#features .heading {
+	margin: 95px 0px 0 29px;
+}
+#features h3 {
+	margin: 50px 0 20px 0;
+}
+#journey .col-md-4 {
+	margin: auto;
+	width: 46%;
+}
+.steps {
+	margin: 18px 0 31px;
+}
+.col-md-7 {
+	clear: both;
+}
+#career .heading, #compare .heading, #report .heading, #vault .heading {
+	float: left;
+}
+#compare .col-md-2 {
+	float: left;
+	width: 50%;
+	margin-bottom: 20px;
+}
+#compare .career-label, #compare .career-label .career-img {
+	width: 315px;
+}
+.footer-nav ul li {
+	padding-left: 0;
+	width: 50%;
+	margin: 0 0 13px 0;
+}
+.footer-nav {
+	padding: 37px 0px 4px 0;
+}
+.vtooltip {
+	left: 74%;
+}
+#vault .heading {
+	margin-top: 37px;
+}
+.page-des {
+	padding-right: 0px;
+}
+.banner-des {
+	left: 26px;
+	top: 0px;
+}
+.banner-des-first {
+	right: 0px;
+	left: auto;
+}
+#slider {
+	margin-top: 74px;
+}
+.responsibility-page ul li, .effectiveness ul li, .question-content p, .question-content li {
+	font-size: 14px;
+}
+.processbar {
+	display: none;
+}
+.question-range {
+	border: none;
+}
+#report.question {
+	margin-top: 55px;
+}
+#report.question.impact .box.col-md-2, #report.question.impact .box.col-md-10 {
+	width: 100%;
+}
+#report.question.impact .impact-box .col-md-10 {
+	border: none;
+}
+#report.question.impact .impact-box:hover .col-md-10, #report.question.impact .impact-box.active .col-md-10 {
+	border: none;
+}
+#report.question.impact .box.col-md-2 {
+	border-bottom: 1px solid #d6d6d6;
+	margin: 0 -15px;
+	width: 110%;
+	padding: 0 25px;
+}
+#report.question.impact .impact-box:hover .box.col-md-2 {
+	border-bottom: 1px solid #FF8466;
+}
+#report.question.impact .impact-box.active .box.col-md-2 {
+	border-bottom: 1px solid #ff5032;
+}
+.question-content .scroll-wrapper {
+	border-top: none;
+	max-height: 500px;
+}
+p, ol li {
+	font-size: 16px;
+}
+#report .btn {
+	font-size: 16px;
+	line-height: 36px;
+}
+#report.report .heading {
+	float: left;
+	margin-top: 12px;
+}
+#bs-navbar ul li.user-name span {
+	text-align: center;
+	width: 95%;
+	font-size: 16px;
+}
+.question-content h3, .question-content h3, .experience .box h3 {
+	font-size: 17px;
+}
+.question-content li label {
+	padding-right: 40px;
+}
+.effectiveness-popup .question-block span.question-title {
+	font-size: 26px;
+}
+.letsgo {
+	font-size: 16px;
+}
+.question-block span.question-title {
+	font-size: 24px;
+}
+.button {
+	font-size: 16px;
+}
+.career-report-content #report .heading h2 {
+	margin-top: -24px;
+}
+.progress-congratulations-page h2 {
+	margin: 22px 0px 28px 0px;
+}
+}
+@media only screen and (max-width: 425px) 
+{
+ 
+  #about{
+    padding: 20px 23px 0 !important;}
+  #features {
+    padding: 20px 20px 0 !important;}
+ #career {
+    padding: 20px 20px 0 !important;}
+#compare {
+    padding: 20px 20px 0 !important;}
+#report {
+    padding: 20px 20px 0 !important;}
+#vault {
+    padding: 20px 20px 0 !important;}
+#journey {
+    padding: 20px 25px 0 !important;}
+
+.buttons{    margin-bottom: 25px !important;}
+
+    #bs-navbar {
+        top: 0 !important;
+        right: 0 !important; }
+
+.heading h2{margin-bottom:20px}
+
+#features h3{margin: 10px 0 25px 0 !important;font-size: 20px;}
+
+.zoom-icon {
+    float: right;
+    margin: -25px 73px;
+}
+
+p, ol li {
+	font-size: 15px;
+}
+.experience select {
+	width: 100%;
+}
+.question-content h3, .question-content h3, .experience .box h3 {
+	font-size: 16px;
+}
+.experience .box {
+	width: 100%;
+}
+.career-report-content #header .navbar-header-heading h2 {
+	font-size: 23px;
+	margin: 12px 15px 0px 0px;
+}
+.tooltip-content span {
+	width: 94%;
+	background-size: 100%;
+	padding: 11px 6px 7px 35px;
+	font-size: 8px;
+}
+#slider {
+	margin-top: 70px;
+}
+.navbar-header {
+	width: 36%;
+}
+.navbar-toggle {
+	margin-top: 2px;
+}
+#header {
+	padding: 13px 0 13px 0px;
+}
+#journey .col-md-4 {
+	width: 63.333%;
+}
+.footer-nav ul {
+	float: none;
+}
+.vault-links{ padding: 0px 0 0 0 !important;}
+.vault-links li {
+	font-size: 14px;
+        
+}
+.btn {
+	font-size: 14px;
+	line-height: 32px;
+}
+#compare .col-md-2 {
+	width: 100%;
+}
+#slider h2 {
+	font-size: 12px;
+}
+dfn {
+	font-size: 14px;
+	line-height: 21px;
+}
+.page-des dfn {
+	margin-bottom: 20px !important;
+       line-height: 1.6 !important;
+}
+.page-des p {
+
+       line-height: 1.6;
+}
+
+p, #features p {
+	font-size: 12px;
+	line-height: 20px;
+}
+#journey .heading {
+	margin: 0px 0px 0px 0px !important;
+}
+#career .heading {
+	margin-right: 0;
+	margin-left: 0;
+}
+h2 {
+	font-size: 20px;
+}
+.heading {
+	margin: 16px 2px 0 0px;
+	float: left;
+}
+.career-label{width:600px !important;}
+.career-label span.title {
+	font-size: 15px;
+}
+.steps {
+	font-size: 18px;
+}
+#career .btn {
+	font-size: 16px;
+	line-height: 35px;
+        margin-bottom:20px !important;
+}
+#compare .compare-lavel span {
+	width: 34px;
+	line-height: 30px;
+}
+#compare .compare-lavel {
+	font-size: 16px;
+}
+#compare .side-img {
+	width: 100%;
+}
+#features .heading {
+	margin: 95px 0px 0 13px;
+}
+#report {
+	padding: 133px 0 100px;
+}
+}

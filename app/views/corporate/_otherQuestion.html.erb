@@ -1,0 +1,50 @@
+<style>
+  .other-Ques h3 {
+    font-size: 17px !important;
+    font-weight: bold !important;
+    padding: 0 !important;
+  }
+
+  p {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .option_ans span {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+    float: left;
+  }
+
+  .option_ans {
+    position: relative;
+    display: block;
+    float: left;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+</style>
+<% @othet_question.each do |key, value| %>
+  <!--  <h2>Other Question</h2>-->
+  <div class="other-Ques" id="otherQue">
+    <h3>
+      <span> <% if value['question'] %>
+                                  <%= value['question'] %>
+                                <% else %>
+                                  <%= key %>
+                                <% end %> </span>
+    </h3>
+    <p>
+    <div class="option_ans">
+      <% if value['required'].present? %>
+        <%# value['required'].each do |k| %>
+          <span>
+            <%= value['options'][value['required'].to_i] %>
+          </span>
+        <%# end %>
+      <% end %></div>
+    </p>
+  </div>
+<% end %>
